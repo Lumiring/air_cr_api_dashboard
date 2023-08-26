@@ -856,8 +856,8 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 1270,
-        "y": 520,
+        "x": 1130,
+        "y": 540,
         "wires": []
     },
     {
@@ -1391,6 +1391,33 @@
             [
                 "500b54e0a15a8024"
             ]
+        ]
+    },
+    {
+        "id": "89030fcba072bac2",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 900,
+        "y": 340,
+        "wires": [
+            []
         ]
     },
     {
