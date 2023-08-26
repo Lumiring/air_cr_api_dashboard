@@ -1,1 +1,1643 @@
-[]
+[
+    {
+        "id": "be9f64fbc3682d16",
+        "type": "tab",
+        "label": "Поток 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "692c798b6f9c61de",
+        "type": "tab",
+        "label": "Поток 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "167b727c7eb0d8d3",
+        "type": "tab",
+        "label": "Form 2",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "79737e067a3af084",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt://broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "11f61d797ff1ae20",
+        "type": "mqtt-broker",
+        "name": "158.85.225.154",
+        "broker": "mqtt://158.85.225.154",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "64d879d816cdb063",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ff66d7be436a7f37",
+        "type": "ui_group",
+        "name": "input settings",
+        "tab": "11354ae062708b32",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "11354ae062708b32",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7401752b.90d6a4",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "b5ae1056.1d289",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "b5ae1056.1d289",
+        "type": "ui_tab",
+        "name": "Master Control prototype",
+        "icon": "dashboard",
+        "order": 39,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2db12aa6d86ddd71",
+        "type": "mqtt-broker",
+        "name": "158.85.225.154",
+        "broker": "mqtt://158.85.225.154",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "66aeee775b1d0cb5",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b76cefdaf9bc6c8b",
+        "type": "ui_tab",
+        "name": "AIR CR",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "91a9ce4bbf4bb377",
+        "type": "ui_group",
+        "name": "input settings 1",
+        "tab": "b76cefdaf9bc6c8b",
+        "order": 1,
+        "disp": false,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d68e7be3.88f088",
+        "type": "ui_group",
+        "name": "Forms Example",
+        "tab": "67ff17e9.83751",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "54bca71e.4287f",
+        "type": "ui_group",
+        "name": "Form",
+        "tab": "67ff17e9.83751",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "67ff17e9.83751",
+        "type": "ui_tab",
+        "name": "Forms Example ",
+        "icon": "home",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1cd4a59ae60d4169",
+        "type": "ui_group",
+        "z": "167b727c7eb0d8d3",
+        "name": "Dashboard Event Log",
+        "tab": "67ff17e9.83751",
+        "order": 3,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "2c1ca94835240d5c",
+        "type": "ui_group",
+        "name": "input settings 2",
+        "tab": "b76cefdaf9bc6c8b",
+        "order": 2,
+        "disp": false,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d527c84e4fb2c7b0",
+        "type": "ui_group",
+        "name": "submit",
+        "tab": "b76cefdaf9bc6c8b",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1fddf0a8d296909f",
+        "type": "inject",
+        "z": "be9f64fbc3682d16",
+        "name": "set configuration",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "ece8f4a0d519aec2"
+            ]
+        ]
+    },
+    {
+        "id": "ece8f4a0d519aec2",
+        "type": "file in",
+        "z": "be9f64fbc3682d16",
+        "name": "",
+        "filename": "C:\\air_cr\\air_cr_conf.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 430,
+        "y": 120,
+        "wires": [
+            [
+                "522050f7948dbbe1"
+            ]
+        ]
+    },
+    {
+        "id": "3b8c508c929084e6",
+        "type": "mqtt in",
+        "z": "be9f64fbc3682d16",
+        "name": "224/147/registration/15643804/",
+        "topic": "224/147/registration/15643804/#",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "2db12aa6d86ddd71",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "e52a703e720e6788"
+            ]
+        ]
+    },
+    {
+        "id": "522050f7948dbbe1",
+        "type": "debug",
+        "z": "be9f64fbc3682d16",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "70cedf33c431ae57",
+        "type": "switch",
+        "z": "be9f64fbc3682d16",
+        "name": "conf complete message",
+        "property": "payload.conf_status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 340,
+        "wires": [
+            [
+                "6aa902310eb9139d"
+            ]
+        ]
+    },
+    {
+        "id": "193f180db0be3905",
+        "type": "debug",
+        "z": "be9f64fbc3682d16",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6aa902310eb9139d",
+        "type": "template",
+        "z": "be9f64fbc3682d16",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "configuration status: {{payload.conf_status}}",
+        "output": "str",
+        "x": 880,
+        "y": 340,
+        "wires": [
+            [
+                "193f180db0be3905"
+            ]
+        ]
+    },
+    {
+        "id": "34a89c8a9582d232",
+        "type": "switch",
+        "z": "be9f64fbc3682d16",
+        "name": "event message",
+        "property": "payload.operator",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Event",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 640,
+        "y": 440,
+        "wires": [
+            [
+                "86975e273f042696"
+            ]
+        ]
+    },
+    {
+        "id": "fa3d016086c7c693",
+        "type": "file",
+        "z": "be9f64fbc3682d16",
+        "name": "logging",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1520,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bca885cf7fd7a60a",
+        "type": "template",
+        "z": "be9f64fbc3682d16",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "[{{payload.current_time}}] group - {{payload.info.Group}}, cpoint_idx - {{payload.info.Ctp_idx}}, event id - {{payload.info.Event_id}}",
+        "output": "str",
+        "x": 1280,
+        "y": 440,
+        "wires": [
+            [
+                "fa3d016086c7c693",
+                "309c0fedd466acbe"
+            ]
+        ]
+    },
+    {
+        "id": "86975e273f042696",
+        "type": "function",
+        "z": "be9f64fbc3682d16",
+        "name": "set filename with current date",
+        "func": "\nmsg.filename = \"C:/air_cr/\" + msg.myymd + \".txt\"\nmsg.payload.current_time = msg.mytimes\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 440,
+        "wires": [
+            [
+                "bca885cf7fd7a60a"
+            ]
+        ]
+    },
+    {
+        "id": "e52a703e720e6788",
+        "type": "simpletime",
+        "z": "be9f64fbc3682d16",
+        "name": "add time",
+        "mydate": true,
+        "myymd": true,
+        "myyear": true,
+        "mymonth": true,
+        "mymonthn": true,
+        "mydom": true,
+        "mydoy": true,
+        "myday": true,
+        "myhourpm": true,
+        "myhour": true,
+        "mytime": true,
+        "mytimes": true,
+        "myminute": true,
+        "myminutes": true,
+        "mysecond": true,
+        "mymillis": true,
+        "myepoch": true,
+        "myrawdate": true,
+        "mypm": true,
+        "x": 380,
+        "y": 440,
+        "wires": [
+            [
+                "70cedf33c431ae57",
+                "34a89c8a9582d232"
+            ]
+        ]
+    },
+    {
+        "id": "309c0fedd466acbe",
+        "type": "debug",
+        "z": "be9f64fbc3682d16",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "08668851e35452e7",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Rd0_dir",
+        "label": "Rd0_dir",
+        "tooltip": "",
+        "place": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "entry",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "exit",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd0_dir",
+        "topicType": "str",
+        "className": "",
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "500b54e0a15a8024",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "setInputStorage",
+        "func": "\n// initialise the counter to 0 if it doesn't exist already\nlet inputSettings = global.get('inputSettings') || {};\n\ninputSettings = Object.assign(inputSettings, {[msg.topic]:msg.payload})\n\nglobal.set('inputSettings', inputSettings)\n\n// msg.payload = inputSettings\n\n// return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e167857b09c7f0fd",
+        "type": "ui_toast",
+        "z": "692c798b6f9c61de",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1450,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "5e2a5b920b06e770",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "36afbbbff6d2c65b",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 2",
+        "func": "\nmsg.payload = global.get('inputSettings');\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('inputSettings');\n\nmsg.payload = msgWrapper\n\nlet msg1 = {}\nmsg1.enabled = true\n\nreturn msg1",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce7d8954c3709df1",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Door_sens_Condition",
+        "label": "Door_sens_Condition",
+        "tooltip": "",
+        "place": "Door_sens_Condition",
+        "group": "91a9ce4bbf4bb377",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Open",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Close",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Change",
+                "value": 2,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_sens_Condition",
+        "topicType": "str",
+        "className": "",
+        "x": 280,
+        "y": 440,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "faee72dd518c80d8",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Control_point_idx_DUMMY",
+        "label": "Control_point_idx",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Control_point_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 260,
+        "y": 320,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "3b2f1e24dd57ae16",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Door_sens_opt",
+        "label": "Door_sens_opt",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Door_sens_opt",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 280,
+        "y": 360,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "9abed7ada415d9df",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Door_sens_idx",
+        "label": "Door_sens_idx",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Door_sens_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 280,
+        "y": 400,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "441911e97e3e496a",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Lock_Relay_opt",
+        "label": "Lock_Relay_opt",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Lock_Relay_opt",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 280,
+        "y": 480,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "fc779dbf7b54cf43",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Lock_Relay_idx",
+        "label": "Lock_Relay_idx",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Lock_Relay_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 280,
+        "y": 520,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "1d8a47cdf963be97",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Door_Lock_mode",
+        "label": "Door_Lock_mode",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "2c1ca94835240d5c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "trigger",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "impulse",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_Lock_mode",
+        "topicType": "str",
+        "className": "",
+        "x": 270,
+        "y": 560,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "3670137b10bbba0d",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Door_Lock_type",
+        "label": "Door_Lock_type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "2c1ca94835240d5c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "N-Opened",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "N-Closed",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_Lock_type",
+        "topicType": "str",
+        "className": "",
+        "x": 260,
+        "y": 600,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "14bd0ee69f8813fe",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Door_Lock_puls",
+        "label": "Door_Lock_puls",
+        "tooltip": "",
+        "group": "2c1ca94835240d5c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Door_Lock_puls",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 260,
+        "y": 640,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "8c4c06114feb911e",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Door_Delay",
+        "label": "Door_Delay",
+        "tooltip": "",
+        "group": "2c1ca94835240d5c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Door_Delay",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 270,
+        "y": 680,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "f7faf28598d57587",
+        "type": "ui_switch",
+        "z": "692c798b6f9c61de",
+        "name": "Door_Sens_Autolock",
+        "label": "Door_Sens_Autolock",
+        "tooltip": "",
+        "group": "2c1ca94835240d5c",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "Door_Sens_Autolock",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 240,
+        "y": 720,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "6c4380ae11333540",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Button_rex_opt",
+        "label": "Button_rex_opt",
+        "tooltip": "",
+        "group": "2c1ca94835240d5c",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Button_rex_opt",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 260,
+        "y": 760,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "6b1d8a7811858a5f",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Button_rex_idx",
+        "label": "Button_rex_idx",
+        "tooltip": "",
+        "group": "2c1ca94835240d5c",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Button_rex_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 260,
+        "y": 800,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "e23ab7d6df19c086",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Button_rex_Condition",
+        "label": "Button_rex_Condition",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "2c1ca94835240d5c",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Open",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Close",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Change",
+                "value": 2,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Button_rex_Condition",
+        "topicType": "str",
+        "className": "",
+        "x": 240,
+        "y": 840,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "f9854082c6f330fa",
+        "type": "ui_button",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "group": "d527c84e4fb2c7b0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "str",
+        "x": 710,
+        "y": 800,
+        "wires": [
+            [
+                "36afbbbff6d2c65b"
+            ]
+        ]
+    },
+    {
+        "id": "31d364e6be3997dd",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Rd0_idx",
+        "label": "Rd0_idx",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Rd0_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "94867ebb2d405827",
+        "type": "ui_button",
+        "z": "167b727c7eb0d8d3",
+        "name": "Button",
+        "group": "d68e7be3.88f088",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Button1",
+        "tooltip": "",
+        "color": "#fffff",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-star",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "ButtonTopic",
+        "topicType": "str",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "547212bc85c23f3e"
+            ]
+        ]
+    },
+    {
+        "id": "a8d3bc3a7f5f8379",
+        "type": "ui_dropdown",
+        "z": "167b727c7eb0d8d3",
+        "name": "Choice",
+        "label": "Choose what you want ",
+        "tooltip": "",
+        "place": "",
+        "group": "d68e7be3.88f088",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "options": [
+            {
+                "label": "Choice 1 : String",
+                "value": "String",
+                "type": "str"
+            },
+            {
+                "label": "Choice 2 : Number",
+                "value": 4,
+                "type": "num"
+            },
+            {
+                "label": "Choice 3 :Boolean",
+                "value": true,
+                "type": "bool"
+            }
+        ],
+        "payload": "",
+        "topic": "Choice ",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "547212bc85c23f3e"
+            ]
+        ]
+    },
+    {
+        "id": "25c7b80117ed7791",
+        "type": "debug",
+        "z": "167b727c7eb0d8d3",
+        "name": "Dashboard Log",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "3ac2eeca4e662388",
+        "type": "ui_switch",
+        "z": "167b727c7eb0d8d3",
+        "name": "Light Switch",
+        "label": "switch",
+        "tooltip": "",
+        "group": "d68e7be3.88f088",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "Light Switch ",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "547212bc85c23f3e"
+            ]
+        ]
+    },
+    {
+        "id": "fcc1fa36b4d3a102",
+        "type": "ui_slider",
+        "z": "167b727c7eb0d8d3",
+        "name": "Slider",
+        "label": "slider",
+        "tooltip": "",
+        "group": "d68e7be3.88f088",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "Slider",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "547212bc85c23f3e"
+            ]
+        ]
+    },
+    {
+        "id": "2a5311bfcaa41d02",
+        "type": "ui_numeric",
+        "z": "167b727c7eb0d8d3",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "d68e7be3.88f088",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "Numérique",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": "",
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "547212bc85c23f3e"
+            ]
+        ]
+    },
+    {
+        "id": "34abf57da239e612",
+        "type": "ui_text_input",
+        "z": "167b727c7eb0d8d3",
+        "name": "",
+        "label": "Text Entry Field ",
+        "tooltip": "",
+        "group": "d68e7be3.88f088",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "Text Entry Feild",
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "547212bc85c23f3e"
+            ]
+        ]
+    },
+    {
+        "id": "14608cb776e529ea",
+        "type": "ui_form",
+        "z": "167b727c7eb0d8d3",
+        "name": "",
+        "label": "Form in Node-RED ",
+        "group": "54bca71e.4287f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Name",
+                "value": "Name",
+                "type": "text",
+                "required": true
+            },
+            {
+                "label": "Number",
+                "value": "Number",
+                "type": "number",
+                "required": false
+            },
+            {
+                "label": "Email",
+                "value": "Email",
+                "type": "email",
+                "required": false
+            },
+            {
+                "label": "Password",
+                "value": "Password",
+                "type": "password",
+                "required": false
+            },
+            {
+                "label": "Check Box",
+                "value": "Check Box",
+                "type": "checkbox",
+                "required": false
+            },
+            {
+                "label": "Light Switch",
+                "value": "Light Switch",
+                "type": "switch",
+                "required": false
+            }
+        ],
+        "formValue": {
+            "Name": "",
+            "Number": "",
+            "Email": "",
+            "Password": "",
+            "Check Box": false,
+            "Light Switch": false
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancle",
+        "topic": "Form",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "547212bc85c23f3e"
+            ]
+        ]
+    },
+    {
+        "id": "547212bc85c23f3e",
+        "type": "function",
+        "z": "167b727c7eb0d8d3",
+        "name": "Save Events",
+        "func": "\n// initialise the counter to 0 if it doesn't exist already\nvar dashboardLog = context.get('dashboardLog')|| [];\n\ndashboardLog.push(msg);\nif (dashboardLog.length > 20){\n    // Delete oldest message if > 20\n    dashboardLog.shift();\n    dashboardLog.length = 20;\n} \n\n\n// store the value back\ncontext.set('dashboardLog',dashboardLog);\n\n// make it part of the outgoing msg object\nmsg = {};\nmsg.payload = dashboardLog;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 260,
+        "wires": [
+            [
+                "25c7b80117ed7791",
+                "b00a0721815eaf20"
+            ]
+        ]
+    },
+    {
+        "id": "b00a0721815eaf20",
+        "type": "ui_template",
+        "z": "167b727c7eb0d8d3",
+        "group": "1cd4a59ae60d4169",
+        "name": "Dashboard Event Log ",
+        "order": 1,
+        "width": "8",
+        "height": "10",
+        "format": "<ul>\n <li ng-repeat=\"x in msg.payload\">\n <font color=\"red\">{{x.topic}}</font>\n    <ul>\n        <li>{{x.payload}}</li>\n    </ul>\n </li>\n</ul>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98f28b8fbf4b9d5a",
+        "type": "ui_text_input",
+        "z": "167b727c7eb0d8d3",
+        "name": "",
+        "label": "Email Field",
+        "tooltip": "",
+        "group": "d68e7be3.88f088",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "email",
+        "delay": 300,
+        "topic": "Email Field",
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "547212bc85c23f3e"
+            ]
+        ]
+    },
+    {
+        "id": "7be349bc0c2441df",
+        "type": "ui_text_input",
+        "z": "167b727c7eb0d8d3",
+        "name": "",
+        "label": "Password Field",
+        "tooltip": "",
+        "group": "d68e7be3.88f088",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "password",
+        "delay": 300,
+        "topic": "Password ",
+        "x": 140,
+        "y": 380,
+        "wires": [
+            [
+                "547212bc85c23f3e"
+            ]
+        ]
+    },
+    {
+        "id": "c5bb9f0dd5cd0af4",
+        "type": "ui_text_input",
+        "z": "167b727c7eb0d8d3",
+        "name": "",
+        "label": "Select a color",
+        "tooltip": "",
+        "group": "d68e7be3.88f088",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "color",
+        "delay": 300,
+        "topic": "Select a color",
+        "x": 140,
+        "y": 420,
+        "wires": [
+            [
+                "547212bc85c23f3e"
+            ]
+        ]
+    }
+]
