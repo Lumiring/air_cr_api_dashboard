@@ -2,7 +2,9 @@
     "name": "AIR-CR",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-simpletime": "2.10.4"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flow.json",
