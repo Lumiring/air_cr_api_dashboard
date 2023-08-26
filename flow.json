@@ -196,11 +196,12 @@
         "id": "7401752b.90d6a4",
         "type": "ui_group",
         "name": "Group 1",
-        "tab": "b5ae1056.1d289",
+        "tab": "b76cefdaf9bc6c8b",
         "order": 1,
-        "disp": true,
-        "width": "9",
-        "collapse": false
+        "disp": false,
+        "width": "8",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "b5ae1056.1d289",
@@ -412,7 +413,7 @@
         "name": "submit",
         "tab": "b76cefdaf9bc6c8b",
         "order": 3,
-        "disp": true,
+        "disp": false,
         "width": "6",
         "collapse": false,
         "className": ""
@@ -1229,7 +1230,7 @@
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "button",
+        "label": "Submit",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -1237,9 +1238,9 @@
         "icon": "",
         "payload": "",
         "payloadType": "str",
-        "topic": "topic",
+        "topic": "",
         "topicType": "str",
-        "x": 710,
+        "x": 720,
         "y": 800,
         "wires": [
             [
@@ -1271,33 +1272,6 @@
             [
                 "500b54e0a15a8024"
             ]
-        ]
-    },
-    {
-        "id": "dce495637305491a",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 280,
-        "y": 140,
-        "wires": [
-            []
         ]
     },
     {
