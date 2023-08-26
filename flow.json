@@ -529,7 +529,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1140,
-        "y": 340,
+        "y": 320,
         "wires": []
     },
     {
@@ -751,8 +751,8 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 1450,
-        "y": 440,
+        "x": 1270,
+        "y": 520,
         "wires": []
     },
     {
@@ -1271,6 +1271,33 @@
             [
                 "500b54e0a15a8024"
             ]
+        ]
+    },
+    {
+        "id": "dce495637305491a",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 140,
+        "wires": [
+            []
         ]
     },
     {
