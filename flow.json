@@ -193,17 +193,6 @@
         "hidden": false
     },
     {
-        "id": "7401752b.90d6a4",
-        "type": "ui_group",
-        "name": "Group 1",
-        "tab": "b76cefdaf9bc6c8b",
-        "order": 1,
-        "disp": false,
-        "width": "8",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "b5ae1056.1d289",
         "type": "ui_tab",
         "name": "Master Control prototype",
