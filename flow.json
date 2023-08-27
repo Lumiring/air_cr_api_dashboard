@@ -337,16 +337,6 @@
         "collapse": false
     },
     {
-        "id": "7e327b7a901b149e",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "91a9ce4bbf4bb377",
-        "order": 2,
-        "width": 16,
-        "height": 1
-    },
-    {
         "id": "7f27bb613d7b25d7",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
@@ -1695,7 +1685,7 @@
         "order": 1,
         "width": 14,
         "height": "2",
-        "format": "<div ng-bind-html=\"msg.payload\">\n    <h1>USER CREDS</h1>\n</div>",
+        "format": "<div ng-bind-html=\"msg.payload\">\n    asdadasdasd\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
