@@ -23,7 +23,7 @@
         "info": ""
     },
     {
-        "id": "03df97043b3d0a56",
+        "id": "3d00d5011b39e864",
         "type": "group",
         "z": "692c798b6f9c61de",
         "style": {
@@ -37,6 +37,8 @@
         },
         "nodes": [
             "08668851e35452e7",
+            "500b54e0a15a8024",
+            "36afbbbff6d2c65b",
             "ce7d8954c3709df1",
             "faee72dd518c80d8",
             "3b2f1e24dd57ae16",
@@ -51,11 +53,12 @@
             "6c4380ae11333540",
             "6b1d8a7811858a5f",
             "e23ab7d6df19c086",
+            "f9854082c6f330fa",
             "31d364e6be3997dd"
         ],
-        "x": 114,
+        "x": 254,
         "y": 199,
-        "w": 292,
+        "w": 812,
         "h": 682
     },
     {
@@ -682,7 +685,7 @@
         "id": "08668851e35452e7",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Rd0_dir",
         "label": "Rd0_dir",
         "tooltip": "",
@@ -709,7 +712,7 @@
         "topic": "Rd0_dir",
         "topicType": "str",
         "className": "",
-        "x": 300,
+        "x": 440,
         "y": 280,
         "wires": [
             [
@@ -721,59 +724,25 @@
         "id": "500b54e0a15a8024",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "setInputStorage",
-        "func": "\n// initialise the counter to 0 if it doesn't exist already\nlet inputSettings = global.get('inputSettings') || {};\n\ninputSettings = Object.assign(inputSettings, {[msg.topic]:msg.payload})\n\nglobal.set('inputSettings', inputSettings)\n\n// msg.payload = inputSettings\n\n// return msg;",
+        "g": "3d00d5011b39e864",
+        "name": "SetCtpDoor",
+        "func": "\n// initialise the counter to 0 if it doesn't exist already\nlet stpDoorSet = global.get('stpDoorSet') || {};\n\nstpDoorSet = Object.assign(stpDoorSet, {[msg.topic]:msg.payload})\n\nglobal.set('stpDoorSet', stpDoorSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
+        "x": 830,
         "y": 520,
         "wires": [
             []
         ]
     },
     {
-        "id": "e167857b09c7f0fd",
-        "type": "ui_toast",
-        "z": "692c798b6f9c61de",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "",
-        "x": 1130,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "5e2a5b920b06e770",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1220,
-        "y": 800,
-        "wires": []
-    },
-    {
         "id": "36afbbbff6d2c65b",
         "type": "function",
         "z": "692c798b6f9c61de",
+        "g": "3d00d5011b39e864",
         "name": "function 2",
         "func": "\nmsg.payload = global.get('inputSettings');\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('inputSettings');\n\nmsg.payload = msgWrapper\n\nlet msg1 = {}\nmsg1.enabled = true\n\nreturn msg1",
         "outputs": 1,
@@ -781,8 +750,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
-        "y": 800,
+        "x": 980,
+        "y": 580,
         "wires": [
             []
         ]
@@ -791,7 +760,7 @@
         "id": "ce7d8954c3709df1",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Door_sens_Condition",
         "label": "Door_sens_Condition",
         "tooltip": "",
@@ -823,7 +792,7 @@
         "topic": "Door_sens_Condition",
         "topicType": "str",
         "className": "",
-        "x": 280,
+        "x": 420,
         "y": 440,
         "wires": [
             [
@@ -835,7 +804,7 @@
         "id": "faee72dd518c80d8",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Control_point_idx_DUMMY",
         "label": "Control_point_idx",
         "tooltip": "",
@@ -850,7 +819,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 260,
+        "x": 400,
         "y": 320,
         "wires": [
             [
@@ -862,7 +831,7 @@
         "id": "3b2f1e24dd57ae16",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Door_sens_opt",
         "label": "Door_sens_opt",
         "tooltip": "",
@@ -877,7 +846,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 280,
+        "x": 420,
         "y": 360,
         "wires": [
             [
@@ -889,7 +858,7 @@
         "id": "9abed7ada415d9df",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Door_sens_idx",
         "label": "Door_sens_idx",
         "tooltip": "",
@@ -904,7 +873,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 280,
+        "x": 420,
         "y": 400,
         "wires": [
             [
@@ -916,7 +885,7 @@
         "id": "441911e97e3e496a",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Lock_Relay_opt",
         "label": "Lock_Relay_opt",
         "tooltip": "",
@@ -931,7 +900,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 280,
+        "x": 420,
         "y": 480,
         "wires": [
             [
@@ -943,7 +912,7 @@
         "id": "fc779dbf7b54cf43",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Lock_Relay_idx",
         "label": "Lock_Relay_idx",
         "tooltip": "",
@@ -958,7 +927,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 280,
+        "x": 420,
         "y": 520,
         "wires": [
             [
@@ -970,7 +939,7 @@
         "id": "1d8a47cdf963be97",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Door_Lock_mode",
         "label": "Door_Lock_mode",
         "tooltip": "",
@@ -997,7 +966,7 @@
         "topic": "Door_Lock_mode",
         "topicType": "str",
         "className": "",
-        "x": 270,
+        "x": 410,
         "y": 560,
         "wires": [
             [
@@ -1009,7 +978,7 @@
         "id": "3670137b10bbba0d",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Door_Lock_type",
         "label": "Door_Lock_type",
         "tooltip": "",
@@ -1036,7 +1005,7 @@
         "topic": "Door_Lock_type",
         "topicType": "str",
         "className": "",
-        "x": 260,
+        "x": 400,
         "y": 600,
         "wires": [
             [
@@ -1048,7 +1017,7 @@
         "id": "14bd0ee69f8813fe",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Door_Lock_puls",
         "label": "Door_Lock_puls",
         "tooltip": "",
@@ -1063,7 +1032,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 260,
+        "x": 400,
         "y": 640,
         "wires": [
             [
@@ -1075,7 +1044,7 @@
         "id": "8c4c06114feb911e",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Door_Delay",
         "label": "Door_Delay",
         "tooltip": "",
@@ -1090,7 +1059,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 270,
+        "x": 410,
         "y": 680,
         "wires": [
             [
@@ -1102,7 +1071,7 @@
         "id": "f7faf28598d57587",
         "type": "ui_switch",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Door_Sens_Autolock",
         "label": "Door_Sens_Autolock",
         "tooltip": "",
@@ -1125,7 +1094,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 240,
+        "x": 380,
         "y": 720,
         "wires": [
             [
@@ -1137,7 +1106,7 @@
         "id": "6c4380ae11333540",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Button_rex_opt",
         "label": "Button_rex_opt",
         "tooltip": "",
@@ -1152,7 +1121,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 260,
+        "x": 400,
         "y": 760,
         "wires": [
             [
@@ -1164,7 +1133,7 @@
         "id": "6b1d8a7811858a5f",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Button_rex_idx",
         "label": "Button_rex_idx",
         "tooltip": "",
@@ -1179,7 +1148,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 260,
+        "x": 400,
         "y": 800,
         "wires": [
             [
@@ -1191,7 +1160,7 @@
         "id": "e23ab7d6df19c086",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
+        "g": "3d00d5011b39e864",
         "name": "Button_rex_Condition",
         "label": "Button_rex_Condition",
         "tooltip": "",
@@ -1223,7 +1192,7 @@
         "topic": "Button_rex_Condition",
         "topicType": "str",
         "className": "",
-        "x": 240,
+        "x": 380,
         "y": 840,
         "wires": [
             [
@@ -1233,6 +1202,387 @@
     },
     {
         "id": "f9854082c6f330fa",
+        "type": "ui_button",
+        "z": "692c798b6f9c61de",
+        "g": "3d00d5011b39e864",
+        "name": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 25,
+        "width": 14,
+        "height": 1,
+        "passthru": false,
+        "label": "Submit",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 820,
+        "y": 580,
+        "wires": [
+            [
+                "36afbbbff6d2c65b"
+            ]
+        ]
+    },
+    {
+        "id": "31d364e6be3997dd",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "3d00d5011b39e864",
+        "name": "Rd0_idx",
+        "label": "Rd0_idx",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 14,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Rd0_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 440,
+        "y": 240,
+        "wires": [
+            [
+                "500b54e0a15a8024"
+            ]
+        ]
+    },
+    {
+        "id": "7fd6557c497b4c1e",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Rd_idx",
+        "label": "Rd_idx",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 14,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Rd_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1340,
+        "y": 240,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "80534b3e373cf5db",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Control_point_idx_DUMMY",
+        "label": "Control_point_idx",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 16,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Control_point_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1300,
+        "y": 280,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "af8dcc2750985ece",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Rd_opt",
+        "label": "Rd_opt",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "ff66d7be436a7f37",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Embedded Reader",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Wiegand",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "OSDP",
+                "value": 2,
+                "type": "num"
+            },
+            {
+                "label": "MQTT",
+                "value": 3,
+                "type": "num"
+            },
+            {
+                "label": "Ethernet",
+                "value": 4,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd_opt",
+        "topicType": "str",
+        "className": "",
+        "x": 1340,
+        "y": 320,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "392bed8f5131614f",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Rd_Direction",
+        "label": "Rd_Direction",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "ff66d7be436a7f37",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Entry",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Exit",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd_Direction",
+        "topicType": "str",
+        "className": "",
+        "x": 1350,
+        "y": 360,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "c49221a23de934fa",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Rd_Key_endian",
+        "label": "Rd_Key_endian",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "ff66d7be436a7f37",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Big endian",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Little endian",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd_Key_endian",
+        "topicType": "str",
+        "className": "",
+        "x": 1360,
+        "y": 400,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "11814495f9387d3c",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Rd_beep",
+        "label": "Rd_beep",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "ff66d7be436a7f37",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Sound on",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Sound off",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd_beep",
+        "topicType": "str",
+        "className": "",
+        "x": 1340,
+        "y": 440,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "913abd1f5c57f1b2",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Rd_Wg_type",
+        "label": "Rd_Wg_type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "ff66d7be436a7f37",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Wiegand 4",
+                "value": "0",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 8",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 26",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 34",
+                "value": "3",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 37",
+                "value": "4",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 40",
+                "value": "5",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 42",
+                "value": "6",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd_Wg_type",
+        "topicType": "str",
+        "className": "",
+        "x": 1350,
+        "y": 480,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "f188d012945c3966",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Rd_Wg_idx",
+        "label": "Rd_Wg_idx",
+        "tooltip": "",
+        "group": "ff66d7be436a7f37",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Rd_Wg_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 1350,
+        "y": 520,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "f7673a2b0876c467",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "SetRd",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nlet rdSet = global.get('rdSet') || {};\n\nrdSet = Object.assign(rdSet, { [msg.topic]: msg.payload })\n\nglobal.set('rdSet', rdSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1710,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "edc132442e785b85",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
         "name": "",
@@ -1251,39 +1601,29 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 720,
-        "y": 800,
+        "x": 1580,
+        "y": 580,
         "wires": [
             [
-                "36afbbbff6d2c65b"
+                "74d7e54cc946196e"
             ]
         ]
     },
     {
-        "id": "31d364e6be3997dd",
-        "type": "ui_text_input",
+        "id": "74d7e54cc946196e",
+        "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "03df97043b3d0a56",
-        "name": "Rd0_idx",
-        "label": "Rd0_idx",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 14,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Rd0_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 300,
-        "y": 240,
+        "name": "function 3",
+        "func": "\nmsg.payload = global.get('rdSet');\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rdSet');\n\nmsg.payload = msgWrapper\n\nlet msg1 = {}\nmsg1.enabled = true\n\nreturn msg1",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1740,
+        "y": 580,
         "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
+            []
         ]
     },
     {
