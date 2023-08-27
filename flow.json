@@ -337,7 +337,17 @@
         "collapse": false
     },
     {
-        "id": "7f27bb613d7b25d7",
+        "id": "42ed600d50d4d04d",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 2,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "263184fcb6e46bf9",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -347,7 +357,7 @@
         "height": 1
     },
     {
-        "id": "266c859e831b0611",
+        "id": "599b7e1783603daf",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -357,7 +367,7 @@
         "height": 1
     },
     {
-        "id": "9a1cd20b4f54f691",
+        "id": "be96b3482eabb253",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -367,7 +377,7 @@
         "height": 1
     },
     {
-        "id": "79baef8615a48013",
+        "id": "8225f19f797c00db",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -377,7 +387,7 @@
         "height": 1
     },
     {
-        "id": "01b4f38bf24bca70",
+        "id": "a543c10a5828b708",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -387,7 +397,7 @@
         "height": 1
     },
     {
-        "id": "48ac66205794402d",
+        "id": "ae293ecdd84198ba",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -397,7 +407,7 @@
         "height": 1
     },
     {
-        "id": "1ea168463adf8506",
+        "id": "b66f8d9a1cad09a3",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -407,7 +417,7 @@
         "height": 1
     },
     {
-        "id": "32ac8b96f228fe7b",
+        "id": "cac54863fc3c8575",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -417,7 +427,7 @@
         "height": 1
     },
     {
-        "id": "a95e8c7376615e36",
+        "id": "9b3f57e31a1ad1f7",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -427,7 +437,7 @@
         "height": 1
     },
     {
-        "id": "63aca9e317adb12a",
+        "id": "58feb55edcd136ac",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -437,7 +447,7 @@
         "height": 1
     },
     {
-        "id": "059d44e8c235580a",
+        "id": "9499f47fef27de7c",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -1677,25 +1687,25 @@
         "wires": []
     },
     {
-        "id": "0e202b2dd82fa173",
-        "type": "ui_template",
+        "id": "f0bda0e408f066c3",
+        "type": "ui_text",
         "z": "692c798b6f9c61de",
         "group": "91a9ce4bbf4bb377",
-        "name": "BLA BLA",
         "order": 1,
         "width": 14,
-        "height": "2",
-        "format": "<div ng-bind-html=\"msg.payload\">\n    asdadasdasd\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
+        "height": 1,
+        "name": "",
+        "label": "TITLE",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
         "className": "",
-        "x": 1260,
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1250,
         "y": 260,
-        "wires": [
-            []
-        ]
+        "wires": []
     },
     {
         "id": "00b87fec4019d5bf",
