@@ -23,14 +23,6 @@
         "info": ""
     },
     {
-        "id": "6b1bc86383e99816",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "3d00d5011b39e864",
         "type": "group",
         "z": "692c798b6f9c61de",
@@ -2228,63 +2220,6 @@
             [
                 "547212bc85c23f3e"
             ]
-        ]
-    },
-    {
-        "id": "00b87fec4019d5bf",
-        "type": "ui_button",
-        "z": "6b1bc86383e99816",
-        "name": "",
-        "group": "ff66d7be436a7f37",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 370,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5a97c514cd992c34",
-        "type": "ui_dropdown",
-        "z": "6b1bc86383e99816",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "ff66d7be436a7f37",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "",
-                "value": "",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 400,
-        "y": 300,
-        "wires": [
-            []
         ]
     }
 ]
