@@ -54,11 +54,12 @@
             "6b1d8a7811858a5f",
             "e23ab7d6df19c086",
             "f9854082c6f330fa",
-            "31d364e6be3997dd"
+            "31d364e6be3997dd",
+            "8c8a2053b1a0ceea"
         ],
         "x": 254,
         "y": 199,
-        "w": 812,
+        "w": 672,
         "h": 682
     },
     {
@@ -730,10 +731,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
-        "y": 580,
+        "x": 820,
+        "y": 640,
         "wires": [
-            []
+            [
+                "8c8a2053b1a0ceea"
+            ]
         ]
     },
     {
@@ -1602,6 +1605,46 @@
         "libs": [],
         "x": 1740,
         "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c8a2053b1a0ceea",
+        "type": "mqtt out",
+        "z": "692c798b6f9c61de",
+        "g": "3d00d5011b39e864",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "11f61d797ff1ae20",
+        "x": 830,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "0e202b2dd82fa173",
+        "type": "ui_template",
+        "z": "692c798b6f9c61de",
+        "group": "ff66d7be436a7f37",
+        "name": "",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\">\n    <h1>USER CREDS</h1>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1260,
+        "y": 640,
         "wires": [
             []
         ]
