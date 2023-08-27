@@ -63,12 +63,45 @@
             "e23ab7d6df19c086",
             "f9854082c6f330fa",
             "31d364e6be3997dd",
-            "8c8a2053b1a0ceea"
+            "8c8a2053b1a0ceea",
+            "1951b0e939a5d670"
         ],
-        "x": 254,
-        "y": 199,
+        "x": 114,
+        "y": 299,
         "w": 672,
-        "h": 682
+        "h": 742
+    },
+    {
+        "id": "9c8b5cc8d0de65b1",
+        "type": "group",
+        "z": "692c798b6f9c61de",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7fd6557c497b4c1e",
+            "80534b3e373cf5db",
+            "af8dcc2750985ece",
+            "392bed8f5131614f",
+            "c49221a23de934fa",
+            "11814495f9387d3c",
+            "913abd1f5c57f1b2",
+            "f188d012945c3966",
+            "f7673a2b0876c467",
+            "edc132442e785b85",
+            "74d7e54cc946196e",
+            "f0bda0e408f066c3"
+        ],
+        "x": 834,
+        "y": 379,
+        "w": 672,
+        "h": 462
     },
     {
         "id": "79737e067a3af084",
@@ -288,7 +321,7 @@
     {
         "id": "91a9ce4bbf4bb377",
         "type": "ui_group",
-        "name": "input settings 2",
+        "name": "AIR-CR Settings",
         "tab": "b76cefdaf9bc6c8b",
         "order": 1,
         "disp": false,
@@ -337,122 +370,142 @@
         "collapse": false
     },
     {
-        "id": "42ed600d50d4d04d",
+        "id": "85137c921bdbd9d0",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
         "order": 2,
-        "width": 16,
+        "width": 18,
         "height": 1
     },
     {
-        "id": "263184fcb6e46bf9",
+        "id": "f510ccd6748864de",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 4,
+        "width": 18,
+        "height": 1
+    },
+    {
+        "id": "60b71c1f3e95939c",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
         "order": 5,
-        "width": 2,
+        "width": 30,
         "height": 1
     },
     {
-        "id": "599b7e1783603daf",
+        "id": "288c384ef700e6dc",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 6,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "f9db512fd9558faa",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 7,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "67996993d14997cb",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 8,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "c20fce9e989d360c",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
         "order": 10,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "be96b3482eabb253",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "91a9ce4bbf4bb377",
-        "order": 15,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "8225f19f797c00db",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "91a9ce4bbf4bb377",
-        "order": 20,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "a543c10a5828b708",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "91a9ce4bbf4bb377",
-        "order": 25,
         "width": 16,
         "height": 1
     },
     {
-        "id": "ae293ecdd84198ba",
+        "id": "388b49a50ece0778",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
-        "order": 26,
-        "width": 30,
+        "order": 13,
+        "width": 2,
         "height": 1
     },
     {
-        "id": "b66f8d9a1cad09a3",
+        "id": "d5810c9f3082c311",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
-        "order": 27,
-        "width": 30,
+        "order": 18,
+        "width": 2,
         "height": 1
     },
     {
-        "id": "cac54863fc3c8575",
+        "id": "3bbead866ac8c2b1",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e5d605fe395b5234",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
         "order": 28,
-        "width": 30,
+        "width": 2,
         "height": 1
     },
     {
-        "id": "9b3f57e31a1ad1f7",
+        "id": "c382566ac9ebde13",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
-        "order": 29,
-        "width": 30,
+        "order": 33,
+        "width": 16,
         "height": 1
     },
     {
-        "id": "58feb55edcd136ac",
+        "id": "070c0ee3ba904d77",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
-        "order": 30,
+        "order": 34,
         "width": 30,
         "height": 1
     },
     {
-        "id": "9499f47fef27de7c",
+        "id": "9c8b6fe02b3c73c9",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
-        "order": 32,
+        "order": 36,
         "width": 2,
         "height": 1
     },
@@ -730,7 +783,7 @@
         "tooltip": "",
         "place": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 3,
+        "order": 11,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -751,8 +804,8 @@
         "topic": "Rd0_dir",
         "topicType": "str",
         "className": "",
-        "x": 440,
-        "y": 280,
+        "x": 300,
+        "y": 440,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -771,8 +824,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 830,
-        "y": 520,
+        "x": 690,
+        "y": 680,
         "wires": [
             []
         ]
@@ -789,8 +842,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 640,
+        "x": 680,
+        "y": 800,
         "wires": [
             [
                 "8c8a2053b1a0ceea"
@@ -807,7 +860,7 @@
         "tooltip": "",
         "place": "Door_sens_Condition",
         "group": "91a9ce4bbf4bb377",
-        "order": 9,
+        "order": 17,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -833,8 +886,8 @@
         "topic": "Door_sens_Condition",
         "topicType": "str",
         "className": "",
-        "x": 420,
-        "y": 440,
+        "x": 280,
+        "y": 600,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -850,7 +903,7 @@
         "label": "Control_point_idx",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 7,
+        "order": 15,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -860,8 +913,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 400,
-        "y": 320,
+        "x": 260,
+        "y": 480,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -877,7 +930,7 @@
         "label": "Door_sens_opt",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 21,
+        "order": 29,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -887,8 +940,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 420,
-        "y": 360,
+        "x": 280,
+        "y": 520,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -904,7 +957,7 @@
         "label": "Door_sens_idx",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 22,
+        "order": 30,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -914,8 +967,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 420,
-        "y": 400,
+        "x": 280,
+        "y": 560,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -931,7 +984,7 @@
         "label": "Lock_Relay_opt",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 18,
+        "order": 26,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -941,8 +994,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 420,
-        "y": 480,
+        "x": 280,
+        "y": 640,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -958,7 +1011,7 @@
         "label": "Lock_Relay_idx",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 16,
+        "order": 24,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -968,8 +1021,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 420,
-        "y": 520,
+        "x": 280,
+        "y": 680,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -986,7 +1039,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
-        "order": 4,
+        "order": 12,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -1007,8 +1060,8 @@
         "topic": "Door_Lock_mode",
         "topicType": "str",
         "className": "",
-        "x": 410,
-        "y": 560,
+        "x": 270,
+        "y": 720,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1025,7 +1078,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
-        "order": 8,
+        "order": 16,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -1046,8 +1099,8 @@
         "topic": "Door_Lock_type",
         "topicType": "str",
         "className": "",
-        "x": 400,
-        "y": 600,
+        "x": 260,
+        "y": 760,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1063,7 +1116,7 @@
         "label": "Door_Lock_puls",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 13,
+        "order": 21,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -1073,8 +1126,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 400,
-        "y": 640,
+        "x": 260,
+        "y": 800,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1090,7 +1143,7 @@
         "label": "Door_Delay",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 14,
+        "order": 22,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -1100,8 +1153,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 410,
-        "y": 680,
+        "x": 270,
+        "y": 840,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1117,7 +1170,7 @@
         "label": "Door_Sens_Autolock",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 19,
+        "order": 27,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -1135,8 +1188,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 380,
-        "y": 720,
+        "x": 240,
+        "y": 880,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1152,7 +1205,7 @@
         "label": "Button_rex_opt",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 12,
+        "order": 20,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -1162,8 +1215,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 400,
-        "y": 760,
+        "x": 260,
+        "y": 920,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1179,7 +1232,7 @@
         "label": "Button_rex_idx",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 17,
+        "order": 25,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -1189,8 +1242,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 400,
-        "y": 800,
+        "x": 260,
+        "y": 960,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1207,7 +1260,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
-        "order": 23,
+        "order": 31,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -1233,8 +1286,8 @@
         "topic": "Button_rex_Condition",
         "topicType": "str",
         "className": "",
-        "x": 380,
-        "y": 840,
+        "x": 240,
+        "y": 1000,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1248,7 +1301,7 @@
         "g": "3d00d5011b39e864",
         "name": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 33,
+        "order": 37,
         "width": 14,
         "height": 1,
         "passthru": false,
@@ -1262,8 +1315,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 820,
-        "y": 580,
+        "x": 680,
+        "y": 740,
         "wires": [
             [
                 "36afbbbff6d2c65b"
@@ -1279,7 +1332,7 @@
         "label": "Rd0_idx",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 24,
+        "order": 32,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -1289,8 +1342,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 440,
-        "y": 240,
+        "x": 300,
+        "y": 400,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1301,11 +1354,12 @@
         "id": "7fd6557c497b4c1e",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_idx",
         "label": "Rd_idx",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 6,
+        "order": 14,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -1315,8 +1369,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1260,
-        "y": 300,
+        "x": 1020,
+        "y": 460,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1327,11 +1381,12 @@
         "id": "80534b3e373cf5db",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "name": "Control_point_idx_DUMMY",
         "label": "Control_point_idx",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 11,
+        "order": 19,
         "width": 7,
         "height": 1,
         "passthru": true,
@@ -1341,8 +1396,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1220,
-        "y": 340,
+        "x": 980,
+        "y": 500,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1353,6 +1408,7 @@
         "id": "af8dcc2750985ece",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_opt",
         "label": "Rd_opt",
         "tooltip": "",
@@ -1394,8 +1450,8 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "",
-        "x": 1260,
-        "y": 380,
+        "x": 1020,
+        "y": 540,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1406,6 +1462,7 @@
         "id": "392bed8f5131614f",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_Direction",
         "label": "Rd_Direction",
         "tooltip": "",
@@ -1432,8 +1489,8 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "",
-        "x": 1270,
-        "y": 420,
+        "x": 1030,
+        "y": 580,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1444,6 +1501,7 @@
         "id": "c49221a23de934fa",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_Key_endian",
         "label": "Rd_Key_endian",
         "tooltip": "",
@@ -1470,8 +1528,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "",
-        "x": 1280,
-        "y": 460,
+        "x": 1040,
+        "y": 620,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1482,6 +1540,7 @@
         "id": "11814495f9387d3c",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_beep",
         "label": "Rd_beep",
         "tooltip": "",
@@ -1508,8 +1567,8 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "",
-        "x": 1260,
-        "y": 500,
+        "x": 1020,
+        "y": 660,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1520,6 +1579,7 @@
         "id": "913abd1f5c57f1b2",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_Wg_type",
         "label": "Rd_Wg_type",
         "tooltip": "",
@@ -1571,8 +1631,8 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "",
-        "x": 1270,
-        "y": 540,
+        "x": 1030,
+        "y": 700,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1583,6 +1643,7 @@
         "id": "f188d012945c3966",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_Wg_idx",
         "label": "Rd_Wg_idx",
         "tooltip": "",
@@ -1597,8 +1658,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1270,
-        "y": 580,
+        "x": 1030,
+        "y": 740,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1609,6 +1670,7 @@
         "id": "f7673a2b0876c467",
         "type": "function",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "name": "SetRd",
         "func": "// initialise the counter to 0 if it doesn't exist already\nlet rdSet = global.get('rdSet') || {};\n\nrdSet = Object.assign(rdSet, { [msg.topic]: msg.payload })\n\nglobal.set('rdSet', rdSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
         "outputs": 1,
@@ -1616,8 +1678,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1630,
-        "y": 480,
+        "x": 1390,
+        "y": 640,
         "wires": [
             []
         ]
@@ -1626,9 +1688,10 @@
         "id": "edc132442e785b85",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "name": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 31,
+        "order": 35,
         "width": 14,
         "height": 1,
         "passthru": false,
@@ -1642,8 +1705,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1500,
-        "y": 640,
+        "x": 1260,
+        "y": 800,
         "wires": [
             [
                 "74d7e54cc946196e"
@@ -1654,6 +1717,7 @@
         "id": "74d7e54cc946196e",
         "type": "function",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "name": "function 3",
         "func": "\nmsg.payload = global.get('rdSet');\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rdSet');\n\nmsg.payload = msgWrapper\n\nlet msg1 = {}\nmsg1.enabled = true\n\nreturn msg1",
         "outputs": 1,
@@ -1661,8 +1725,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1660,
-        "y": 640,
+        "x": 1420,
+        "y": 800,
         "wires": [
             []
         ]
@@ -1682,20 +1746,21 @@
         "correl": "",
         "expiry": "",
         "broker": "11f61d797ff1ae20",
-        "x": 830,
-        "y": 720,
+        "x": 690,
+        "y": 880,
         "wires": []
     },
     {
         "id": "f0bda0e408f066c3",
         "type": "ui_text",
         "z": "692c798b6f9c61de",
+        "g": "9c8b5cc8d0de65b1",
         "group": "91a9ce4bbf4bb377",
-        "order": 1,
+        "order": 9,
         "width": 14,
         "height": 1,
         "name": "",
-        "label": "TITLE",
+        "label": "Set reader",
         "format": "{{msg.payload}}",
         "layout": "row-center",
         "className": "",
@@ -1703,8 +1768,99 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1250,
-        "y": 260,
+        "x": 1030,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4fa2839622e9ccb5",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Account ID",
+        "label": "Account ID",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "aid",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "6638c344b98c3138"
+            ]
+        ]
+    },
+    {
+        "id": "4ace46e7e6f5bb94",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Company ID",
+        "label": "Company ID",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 3,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "CID",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "6638c344b98c3138"
+            ]
+        ]
+    },
+    {
+        "id": "6638c344b98c3138",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "setUserCreds",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1951b0e939a5d670",
+        "type": "ui_text",
+        "z": "692c798b6f9c61de",
+        "g": "3d00d5011b39e864",
+        "group": "91a9ce4bbf4bb377",
+        "order": 37,
+        "width": 0,
+        "height": 0,
+        "name": "Set Ctp Door",
+        "label": "Set Ctp Door",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 450,
+        "y": 340,
         "wires": []
     },
     {
