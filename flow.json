@@ -829,7 +829,7 @@
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
         "name": "function 2",
-        "func": "\nmsg.payload = global.get('stpDoorSet');\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = \"node_red_test/in/\"\n\nreturn msg",
+        "func": "\nmsg.payload = global.get('stpDoorSet');\nlet userCreds = global.get('userCreds');\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\n\nmsg.topic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\" + \"Operate\" + \"/\"\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1785,7 +1785,7 @@
         "className": "",
         "topicType": "str",
         "x": 190,
-        "y": 160,
+        "y": 120,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1811,7 +1811,7 @@
         "className": "",
         "topicType": "str",
         "x": 190,
-        "y": 220,
+        "y": 180,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1830,7 +1830,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 180,
+        "y": 160,
         "wires": [
             [
                 "2685eed388e29fcb"
@@ -1872,7 +1872,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 740,
-        "y": 180,
+        "y": 160,
         "wires": []
     },
     {
@@ -1891,6 +1891,32 @@
         "x": 520,
         "y": 960,
         "wires": []
+    },
+    {
+        "id": "d6fd04db60c00fec",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Control point ID",
+        "label": "Control point ID",
+        "tooltip": "",
+        "group": "ff66d7be436a7f37",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "cpid",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "6638c344b98c3138"
+            ]
+        ]
     },
     {
         "id": "94867ebb2d405827",
