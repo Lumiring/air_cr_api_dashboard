@@ -829,7 +829,7 @@
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
         "name": "function 2",
-        "func": "\nmsg.payload = global.get('inputSettings');\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('inputSettings');\n\nmsg.payload = msgWrapper\nmsg.topic = \"dsfsdf\"\n\nreturn msg",
+        "func": "\nmsg.payload = global.get('stpDoorSet');\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = \"dsfsdf\"\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
