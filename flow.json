@@ -16,13 +16,6 @@
         "env": []
     },
     {
-        "id": "167b727c7eb0d8d3",
-        "type": "tab",
-        "label": "Form 2",
-        "disabled": true,
-        "info": ""
-    },
-    {
         "id": "9c8b5cc8d0de65b1",
         "type": "group",
         "z": "692c798b6f9c61de",
@@ -90,12 +83,11 @@
             "8c8a2053b1a0ceea",
             "1951b0e939a5d670",
             "b08f791e87c67c6a",
-            "63f0c8bd2e066ccf",
-            "b66708184e9a1bf7"
+            "83dcae90f8fb7f09"
         ],
         "x": 14,
         "y": 299,
-        "w": 912,
+        "w": 892,
         "h": 742
     },
     {
@@ -269,15 +261,6 @@
         "hidden": false
     },
     {
-        "id": "b5ae1056.1d289",
-        "type": "ui_tab",
-        "name": "Master Control prototype",
-        "icon": "dashboard",
-        "order": 39,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "2db12aa6d86ddd71",
         "type": "mqtt-broker",
         "name": "158.85.225.154",
@@ -307,7 +290,7 @@
     {
         "id": "b76cefdaf9bc6c8b",
         "type": "ui_tab",
-        "name": "AIR CR",
+        "name": "Settings",
         "icon": "dashboard",
         "order": 1,
         "disabled": false,
@@ -328,7 +311,7 @@
         "id": "d68e7be3.88f088",
         "type": "ui_group",
         "name": "Forms Example",
-        "tab": "67ff17e9.83751",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "8",
@@ -338,28 +321,8 @@
         "id": "54bca71e.4287f",
         "type": "ui_group",
         "name": "Form",
-        "tab": "67ff17e9.83751",
+        "tab": "",
         "order": 2,
-        "disp": true,
-        "width": "8",
-        "collapse": false
-    },
-    {
-        "id": "67ff17e9.83751",
-        "type": "ui_tab",
-        "name": "Forms Example ",
-        "icon": "home",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "1cd4a59ae60d4169",
-        "type": "ui_group",
-        "z": "167b727c7eb0d8d3",
-        "name": "Dashboard Event Log",
-        "tab": "67ff17e9.83751",
-        "order": 3,
         "disp": true,
         "width": "8",
         "collapse": false
@@ -1336,19 +1299,18 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
-        "name": "function 2",
+        "name": "sendMqttMessage",
         "func": "msg.payload = global.get('stpDoorSet');\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
+        "x": 590,
         "y": 840,
         "wires": [
             [
-                "8c8a2053b1a0ceea",
-                "b66708184e9a1bf7"
+                "8c8a2053b1a0ceea"
             ],
             [
                 "b08f791e87c67c6a"
@@ -1870,8 +1832,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 810,
-        "y": 780,
+        "x": 830,
+        "y": 840,
         "wires": []
     },
     {
@@ -1914,410 +1876,26 @@
         "y": 920,
         "wires": [
             [
-                "63f0c8bd2e066ccf"
+                "83dcae90f8fb7f09"
             ]
         ]
     },
     {
-        "id": "63f0c8bd2e066ccf",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "g": "3d00d5011b39e864",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 780,
-        "y": 920,
-        "wires": []
-    },
-    {
-        "id": "b66708184e9a1bf7",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "g": "3d00d5011b39e864",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 820,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "94867ebb2d405827",
-        "type": "ui_button",
-        "z": "167b727c7eb0d8d3",
-        "name": "Button",
-        "group": "d68e7be3.88f088",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Button1",
-        "tooltip": "",
-        "color": "#fffff",
-        "bgcolor": "",
-        "className": "",
-        "icon": "fa-star",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "ButtonTopic",
-        "topicType": "str",
-        "x": 150,
-        "y": 100,
-        "wires": [
-            [
-                "547212bc85c23f3e"
-            ]
-        ]
-    },
-    {
-        "id": "a8d3bc3a7f5f8379",
-        "type": "ui_dropdown",
-        "z": "167b727c7eb0d8d3",
-        "name": "Choice",
-        "label": "Choose what you want ",
-        "tooltip": "",
-        "place": "",
-        "group": "d68e7be3.88f088",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "options": [
-            {
-                "label": "Choice 1 : String",
-                "value": "String",
-                "type": "str"
-            },
-            {
-                "label": "Choice 2 : Number",
-                "value": 4,
-                "type": "num"
-            },
-            {
-                "label": "Choice 3 :Boolean",
-                "value": true,
-                "type": "bool"
-            }
-        ],
-        "payload": "",
-        "topic": "Choice ",
-        "x": 160,
-        "y": 140,
-        "wires": [
-            [
-                "547212bc85c23f3e"
-            ]
-        ]
-    },
-    {
-        "id": "25c7b80117ed7791",
-        "type": "debug",
-        "z": "167b727c7eb0d8d3",
-        "name": "Dashboard Log",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "3ac2eeca4e662388",
-        "type": "ui_switch",
-        "z": "167b727c7eb0d8d3",
-        "name": "Light Switch",
-        "label": "switch",
-        "tooltip": "",
-        "group": "d68e7be3.88f088",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "Light Switch ",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 150,
-        "y": 180,
-        "wires": [
-            [
-                "547212bc85c23f3e"
-            ]
-        ]
-    },
-    {
-        "id": "fcc1fa36b4d3a102",
-        "type": "ui_slider",
-        "z": "167b727c7eb0d8d3",
-        "name": "Slider",
-        "label": "slider",
-        "tooltip": "",
-        "group": "d68e7be3.88f088",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "all",
-        "topic": "Slider",
-        "min": 0,
-        "max": 10,
-        "step": 1,
-        "x": 170,
-        "y": 220,
-        "wires": [
-            [
-                "547212bc85c23f3e"
-            ]
-        ]
-    },
-    {
-        "id": "2a5311bfcaa41d02",
-        "type": "ui_numeric",
-        "z": "167b727c7eb0d8d3",
-        "name": "",
-        "label": "numeric",
-        "tooltip": "",
-        "group": "d68e7be3.88f088",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "topic": "Numérique",
-        "format": "{{value}}",
-        "min": 0,
-        "max": 10,
-        "step": "",
-        "x": 160,
-        "y": 260,
-        "wires": [
-            [
-                "547212bc85c23f3e"
-            ]
-        ]
-    },
-    {
-        "id": "34abf57da239e612",
-        "type": "ui_text_input",
-        "z": "167b727c7eb0d8d3",
-        "name": "",
-        "label": "Text Entry Field ",
-        "tooltip": "",
-        "group": "d68e7be3.88f088",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "text",
-        "delay": "0",
-        "topic": "Text Entry Feild",
-        "x": 140,
-        "y": 300,
-        "wires": [
-            [
-                "547212bc85c23f3e"
-            ]
-        ]
-    },
-    {
-        "id": "14608cb776e529ea",
-        "type": "ui_form",
-        "z": "167b727c7eb0d8d3",
-        "name": "",
-        "label": "Form in Node-RED ",
-        "group": "54bca71e.4287f",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "label": "Name",
-                "value": "Name",
-                "type": "text",
-                "required": true
-            },
-            {
-                "label": "Number",
-                "value": "Number",
-                "type": "number",
-                "required": false
-            },
-            {
-                "label": "Email",
-                "value": "Email",
-                "type": "email",
-                "required": false
-            },
-            {
-                "label": "Password",
-                "value": "Password",
-                "type": "password",
-                "required": false
-            },
-            {
-                "label": "Check Box",
-                "value": "Check Box",
-                "type": "checkbox",
-                "required": false
-            },
-            {
-                "label": "Light Switch",
-                "value": "Light Switch",
-                "type": "switch",
-                "required": false
-            }
-        ],
-        "formValue": {
-            "Name": "",
-            "Number": "",
-            "Email": "",
-            "Password": "",
-            "Check Box": false,
-            "Light Switch": false
-        },
-        "payload": "",
-        "submit": "Submit",
-        "cancel": "Cancle",
-        "topic": "Form",
-        "x": 130,
-        "y": 460,
-        "wires": [
-            [
-                "547212bc85c23f3e"
-            ]
-        ]
-    },
-    {
-        "id": "547212bc85c23f3e",
+        "id": "83dcae90f8fb7f09",
         "type": "function",
-        "z": "167b727c7eb0d8d3",
-        "name": "Save Events",
-        "func": "\n// initialise the counter to 0 if it doesn't exist already\nvar dashboardLog = context.get('dashboardLog')|| [];\n\ndashboardLog.push(msg);\nif (dashboardLog.length > 20){\n    // Delete oldest message if > 20\n    dashboardLog.shift();\n    dashboardLog.length = 20;\n} \n\n\n// store the value back\ncontext.set('dashboardLog',dashboardLog);\n\n// make it part of the outgoing msg object\nmsg = {};\nmsg.payload = dashboardLog;\nreturn msg;\n",
+        "z": "692c798b6f9c61de",
+        "g": "3d00d5011b39e864",
+        "name": "function 4",
+        "func": "\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 260,
-        "wires": [
-            [
-                "25c7b80117ed7791",
-                "b00a0721815eaf20"
-            ]
-        ]
-    },
-    {
-        "id": "b00a0721815eaf20",
-        "type": "ui_template",
-        "z": "167b727c7eb0d8d3",
-        "group": "1cd4a59ae60d4169",
-        "name": "Dashboard Event Log ",
-        "order": 1,
-        "width": "8",
-        "height": "10",
-        "format": "<ul>\n <li ng-repeat=\"x in msg.payload\">\n <font color=\"red\">{{x.topic}}</font>\n    <ul>\n        <li>{{x.payload}}</li>\n    </ul>\n </li>\n</ul>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 780,
-        "y": 320,
+        "x": 760,
+        "y": 920,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "98f28b8fbf4b9d5a",
-        "type": "ui_text_input",
-        "z": "167b727c7eb0d8d3",
-        "name": "",
-        "label": "Email Field",
-        "tooltip": "",
-        "group": "d68e7be3.88f088",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "email",
-        "delay": 300,
-        "topic": "Email Field",
-        "x": 150,
-        "y": 340,
-        "wires": [
-            [
-                "547212bc85c23f3e"
-            ]
-        ]
-    },
-    {
-        "id": "7be349bc0c2441df",
-        "type": "ui_text_input",
-        "z": "167b727c7eb0d8d3",
-        "name": "",
-        "label": "Password Field",
-        "tooltip": "",
-        "group": "d68e7be3.88f088",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "password",
-        "delay": 300,
-        "topic": "Password ",
-        "x": 140,
-        "y": 380,
-        "wires": [
-            [
-                "547212bc85c23f3e"
-            ]
-        ]
-    },
-    {
-        "id": "c5bb9f0dd5cd0af4",
-        "type": "ui_text_input",
-        "z": "167b727c7eb0d8d3",
-        "name": "",
-        "label": "Select a color",
-        "tooltip": "",
-        "group": "d68e7be3.88f088",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "color",
-        "delay": 300,
-        "topic": "Select a color",
-        "x": 140,
-        "y": 420,
-        "wires": [
-            [
-                "547212bc85c23f3e"
-            ]
         ]
     }
 ]
