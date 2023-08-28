@@ -56,7 +56,8 @@
             "f9854082c6f330fa",
             "31d364e6be3997dd",
             "8c8a2053b1a0ceea",
-            "1951b0e939a5d670"
+            "1951b0e939a5d670",
+            "d272dcf92113ab25"
         ],
         "x": 114,
         "y": 299,
@@ -828,17 +829,17 @@
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
         "name": "function 2",
-        "func": "\nmsg.payload = global.get('inputSettings');\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('inputSettings');\n\nmsg.payload = msgWrapper\nmsg.topic = \"\"\n\nreturn msg",
+        "func": "\nmsg.payload = global.get('inputSettings');\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('inputSettings');\n\nmsg.payload = msgWrapper\nmsg.topic = \"dsfsdf\"\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 680,
-        "y": 800,
+        "y": 840,
         "wires": [
             [
-                "8c8a2053b1a0ceea"
+                "d272dcf92113ab25"
             ]
         ]
     },
@@ -1308,7 +1309,7 @@
         "topic": "",
         "topicType": "str",
         "x": 680,
-        "y": 740,
+        "y": 780,
         "wires": [
             [
                 "36afbbbff6d2c65b"
@@ -1738,8 +1739,8 @@
         "correl": "",
         "expiry": "",
         "broker": "11f61d797ff1ae20",
-        "x": 690,
-        "y": 880,
+        "x": 530,
+        "y": 920,
         "wires": []
     },
     {
@@ -1871,6 +1872,23 @@
         "statusType": "auto",
         "x": 740,
         "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d272dcf92113ab25",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "g": "3d00d5011b39e864",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 900,
         "wires": []
     },
     {
