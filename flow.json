@@ -90,11 +90,12 @@
             "8c8a2053b1a0ceea",
             "1951b0e939a5d670",
             "b08f791e87c67c6a",
-            "63f0c8bd2e066ccf"
+            "63f0c8bd2e066ccf",
+            "b66708184e9a1bf7"
         ],
         "x": 14,
         "y": 299,
-        "w": 872,
+        "w": 912,
         "h": 742
     },
     {
@@ -1349,7 +1350,8 @@
                 "8c8a2053b1a0ceea"
             ],
             [
-                "b08f791e87c67c6a"
+                "b08f791e87c67c6a",
+                "b66708184e9a1bf7"
             ]
         ]
     },
@@ -1868,8 +1870,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 790,
-        "y": 840,
+        "x": 810,
+        "y": 780,
         "wires": []
     },
     {
@@ -1932,6 +1934,23 @@
         "statusType": "auto",
         "x": 780,
         "y": 920,
+        "wires": []
+    },
+    {
+        "id": "b66708184e9a1bf7",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "g": "3d00d5011b39e864",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 860,
         "wires": []
     },
     {
