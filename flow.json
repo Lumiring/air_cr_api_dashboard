@@ -1804,7 +1804,7 @@
         "passthru": true,
         "mode": "number",
         "delay": 300,
-        "topic": "CID",
+        "topic": "cid",
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
