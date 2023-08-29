@@ -1313,9 +1313,7 @@
             [
                 "8c8a2053b1a0ceea"
             ],
-            [
-                "b08f791e87c67c6a"
-            ]
+            []
         ]
     },
     {
@@ -1865,15 +1863,15 @@
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
         "name": "",
-        "topic": "",
+        "topic": " 224/147/registration/15643804/Ack/",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "79737e067a3af084",
         "nl": false,
         "rap": true,
         "rh": 0,
-        "inputs": 1,
-        "x": 590,
+        "inputs": 0,
+        "x": 680,
         "y": 920,
         "wires": [
             [
@@ -1910,7 +1908,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 780,
