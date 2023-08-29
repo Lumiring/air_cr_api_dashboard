@@ -1889,7 +1889,7 @@
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
         "name": "function 4",
-        "func": "let messageId = global.get(\"messageId\")\nconsole.log(messageId)\nconsole.log(msg.message_id)\n\nif (messageId === msg.message_id) {\n    if(msg.payload.result.errorNo === 0){\n        msg.topic = \"Success\"\n        msg.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else{\n        msg.topic = \"Error\"\n        msg.payload = \"error\"\n        console.log(\"errorNo: 0\")\n    }\n    return msg;\n}\n\n\n",
+        "func": "let messageId = global.get(\"messageId\")\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\n\nif (messageId === msg.message_id) {\n    if(msg.payload.result.errorNo === 0){\n        msg.topic = \"Success\"\n        msg.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else{\n        msg.topic = \"Error\"\n        msg.payload = \"error\"\n        console.log(\"errorNo: 0\")\n    }\n    return msg;\n}\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
