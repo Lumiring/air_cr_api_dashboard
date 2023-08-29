@@ -1301,7 +1301,7 @@
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
         "name": "sendMqttMessage",
-        "func": "msg.payload = global.get('stpDoorSet');\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
+        "func": "msg.payload = global.get('stpDoorSet');\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\n// ackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -1313,7 +1313,9 @@
             [
                 "8c8a2053b1a0ceea"
             ],
-            []
+            [
+                "b08f791e87c67c6a"
+            ]
         ]
     },
     {
@@ -1863,15 +1865,15 @@
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
         "name": "",
-        "topic": " 224/147/registration/15643804/Ack/",
+        "topic": "",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "79737e067a3af084",
         "nl": false,
         "rap": true,
         "rh": 0,
-        "inputs": 0,
-        "x": 680,
+        "inputs": 1,
+        "x": 570,
         "y": 920,
         "wires": [
             [
