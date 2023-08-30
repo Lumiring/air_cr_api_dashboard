@@ -16,38 +16,6 @@
         "env": []
     },
     {
-        "id": "9c8b5cc8d0de65b1",
-        "type": "group",
-        "z": "692c798b6f9c61de",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "7fd6557c497b4c1e",
-            "80534b3e373cf5db",
-            "af8dcc2750985ece",
-            "392bed8f5131614f",
-            "c49221a23de934fa",
-            "11814495f9387d3c",
-            "913abd1f5c57f1b2",
-            "f188d012945c3966",
-            "f7673a2b0876c467",
-            "edc132442e785b85",
-            "74d7e54cc946196e",
-            "f0bda0e408f066c3"
-        ],
-        "x": 1254,
-        "y": 239,
-        "w": 672,
-        "h": 462
-    },
-    {
         "id": "3d00d5011b39e864",
         "type": "group",
         "z": "692c798b6f9c61de",
@@ -726,7 +694,6 @@
         "id": "7fd6557c497b4c1e",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_idx",
         "label": "Rd_idx",
         "tooltip": "",
@@ -741,8 +708,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1440,
-        "y": 320,
+        "x": 1220,
+        "y": 380,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -753,7 +720,6 @@
         "id": "80534b3e373cf5db",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
         "name": "Control_point_idx_DUMMY",
         "label": "Control_point_idx",
         "tooltip": "",
@@ -768,8 +734,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1400,
-        "y": 360,
+        "x": 1180,
+        "y": 420,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -780,7 +746,6 @@
         "id": "af8dcc2750985ece",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_opt",
         "label": "Rd_opt",
         "tooltip": "",
@@ -822,8 +787,8 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "",
-        "x": 1440,
-        "y": 400,
+        "x": 1220,
+        "y": 460,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -834,7 +799,6 @@
         "id": "392bed8f5131614f",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_Direction",
         "label": "Rd_Direction",
         "tooltip": "",
@@ -861,8 +825,8 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "",
-        "x": 1450,
-        "y": 440,
+        "x": 1230,
+        "y": 500,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -873,7 +837,6 @@
         "id": "c49221a23de934fa",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_Key_endian",
         "label": "Rd_Key_endian",
         "tooltip": "",
@@ -900,8 +863,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "",
-        "x": 1460,
-        "y": 480,
+        "x": 1240,
+        "y": 540,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -912,7 +875,6 @@
         "id": "11814495f9387d3c",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_beep",
         "label": "Rd_beep",
         "tooltip": "",
@@ -939,8 +901,8 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "",
-        "x": 1440,
-        "y": 520,
+        "x": 1220,
+        "y": 580,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -951,7 +913,6 @@
         "id": "913abd1f5c57f1b2",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_Wg_type",
         "label": "Rd_Wg_type",
         "tooltip": "",
@@ -1003,8 +964,8 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "",
-        "x": 1450,
-        "y": 560,
+        "x": 1230,
+        "y": 620,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1015,7 +976,6 @@
         "id": "f188d012945c3966",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
         "name": "Rd_Wg_idx",
         "label": "Rd_Wg_idx",
         "tooltip": "",
@@ -1030,8 +990,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1450,
-        "y": 600,
+        "x": 1230,
+        "y": 660,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1042,7 +1002,6 @@
         "id": "f7673a2b0876c467",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
         "name": "SetRd",
         "func": "// initialise the counter to 0 if it doesn't exist already\nlet rdSet = global.get('rdSet') || {};\n\nrdSet = Object.assign(rdSet, { [msg.topic]: msg.payload })\n\nglobal.set('rdSet', rdSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
         "outputs": 1,
@@ -1050,8 +1009,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1810,
-        "y": 500,
+        "x": 1590,
+        "y": 560,
         "wires": [
             []
         ]
@@ -1060,7 +1019,6 @@
         "id": "edc132442e785b85",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
         "name": "",
         "group": "91a9ce4bbf4bb377",
         "order": 38,
@@ -1077,7 +1035,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1690,
+        "x": 1630,
         "y": 660,
         "wires": [
             [
@@ -1089,25 +1047,28 @@
         "id": "74d7e54cc946196e",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
-        "name": "function 3",
-        "func": "\nmsg.payload = global.get('rdSet');\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rdSet');\n\nmsg.payload = msgWrapper\n\nlet msg1 = {}\nmsg1.enabled = true\n\nreturn msg1",
-        "outputs": 1,
+        "name": "sendMqttMessage",
+        "func": "msg.payload = global.get('rdSet');\nlet userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rdSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('rdSet_messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
+        "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1840,
-        "y": 660,
+        "x": 1650,
+        "y": 720,
         "wires": [
-            []
+            [
+                "410d950420bd3341"
+            ],
+            [
+                "9a938d2c9e622fbb"
+            ]
         ]
     },
     {
         "id": "f0bda0e408f066c3",
         "type": "ui_text",
         "z": "692c798b6f9c61de",
-        "g": "9c8b5cc8d0de65b1",
         "group": "91a9ce4bbf4bb377",
         "order": 11,
         "width": 14,
@@ -1121,8 +1082,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1450,
-        "y": 280,
+        "x": 1230,
+        "y": 340,
         "wires": []
     },
     {
@@ -1144,7 +1105,7 @@
         "className": "",
         "topicType": "str",
         "x": 190,
-        "y": 120,
+        "y": 140,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1170,7 +1131,7 @@
         "className": "",
         "topicType": "str",
         "x": 190,
-        "y": 180,
+        "y": 200,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1189,7 +1150,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 160,
+        "y": 180,
         "wires": [
             []
         ]
@@ -1213,7 +1174,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 240,
+        "y": 260,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1283,7 +1244,7 @@
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
         "name": "sendMqttMessage",
-        "func": "msg.payload = global.get('stpDoorSet');\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
+        "func": "msg.payload = global.get('stpDoorSet');\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('stpDoorSet_messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -1815,8 +1776,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 850,
-        "y": 840,
+        "x": 890,
+        "y": 800,
         "wires": []
     },
     {
@@ -1869,7 +1830,7 @@
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
         "name": "ackHandle",
-        "func": "let messageId = global.get(\"messageId\")\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\n\n\nif (messageId === msg.payload.message_id) {\n    if(msg.payload.result.errorNo === 0){\n        msg.topic = \"Success\"\n        msg.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else{\n        msg.topic = \"Error\"\n        msg.payload = \"error\"\n        console.log(\"error\")\n    }\n    return msg;\n}\n\n\n",
+        "func": "let messageId = global.get(\"stpDoorSet_messageId\")\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\n\n\nif (messageId === msg.payload.message_id) {\n    if(msg.payload.result.errorNo === 0){\n        msg.topic = \"Success\"\n        msg.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else{\n        msg.topic = \"Error\"\n        msg.payload = \"error\"\n        console.log(\"error\")\n    }\n    return msg;\n}\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1902,5 +1863,60 @@
         "x": 920,
         "y": 960,
         "wires": []
+    },
+    {
+        "id": "410d950420bd3341",
+        "type": "mqtt out",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "x": 1870,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "9a938d2c9e622fbb",
+        "type": "mqtt in",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "11f61d797ff1ae20",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 1630,
+        "y": 800,
+        "wires": [
+            [
+                "e8178d5e4e978f8f"
+            ]
+        ]
+    },
+    {
+        "id": "e8178d5e4e978f8f",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "ackHandle",
+        "func": "let messageId = global.get(\"rdSet_messageId\")\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        msg.topic = \"Success\"\n        msg.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else {\n        msg.topic = \"Error\"\n        msg.payload = \"error\"\n        console.log(\"error\")\n    }\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1810,
+        "y": 800,
+        "wires": [
+            []
+        ]
     }
 ]
