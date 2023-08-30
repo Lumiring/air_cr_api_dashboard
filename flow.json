@@ -16,6 +16,14 @@
         "env": []
     },
     {
+        "id": "047eb3a926d53708",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3d00d5011b39e864",
         "type": "group",
         "z": "692c798b6f9c61de",
@@ -1992,5 +2000,72 @@
         "x": 1700,
         "y": 980,
         "wires": []
+    },
+    {
+        "id": "7e1575815dae5ea6",
+        "type": "ui_button",
+        "z": "047eb3a926d53708",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 270,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2da6b9ae07fa504",
+        "type": "function",
+        "z": "047eb3a926d53708",
+        "name": "setAccessMode",
+        "func": "\nlet userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetAccessMode\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rdSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('rdSet_messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 260,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "de53d429d462293a",
+        "type": "ui_text_input",
+        "z": "047eb3a926d53708",
+        "name": "Control_point_idx_DUMMY",
+        "label": "Control_point_idx",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 16,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Control_point_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 340,
+        "y": 140,
+        "wires": [
+            []
+        ]
     }
 ]
