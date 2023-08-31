@@ -1729,7 +1729,7 @@
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
         "order": 27,
-        "width": 7,
+        "width": "4",
         "height": 1,
         "passthru": true,
         "decouple": "false",
