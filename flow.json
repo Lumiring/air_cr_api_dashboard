@@ -2066,7 +2066,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Control\"],\"show\":[\"Settings\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\"],\"show\":[\"AIR-CR_Settings\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
