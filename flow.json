@@ -2071,7 +2071,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[]}}",
+        "payload": "{\"group\":{\"hide\":[\"Control\"],\"show\":[\"Settings\"]}}",
         "payloadType": "json",
         "topic": "",
         "topicType": "str",
