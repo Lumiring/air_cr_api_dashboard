@@ -2177,7 +2177,7 @@
         "order": 10,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    .md-button {\n        background-color: background-color: #57D0FA; !important;\n    }\n\n</style>",
+        "format": "<style>\n    .md-button {\n        background-color: background-color: #17D0FA; !important;\n    }\n\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
