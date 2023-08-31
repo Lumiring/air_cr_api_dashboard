@@ -2047,8 +2047,8 @@
         "z": "692c798b6f9c61de",
         "name": "",
         "events": "change",
-        "x": 960,
-        "y": 120,
+        "x": 860,
+        "y": 200,
         "wires": [
             []
         ]
@@ -2105,8 +2105,7 @@
         "y": 280,
         "wires": [
             [
-                "f35f7ebd59ad5459",
-                "f6ef434ae6a766bd"
+                "f35f7ebd59ad5459"
             ]
         ]
     },
@@ -2153,27 +2152,6 @@
             [
                 "f35f7ebd59ad5459"
             ]
-        ]
-    },
-    {
-        "id": "f6ef434ae6a766bd",
-        "type": "ui_template",
-        "z": "692c798b6f9c61de",
-        "group": "78fe50a055b65ca2",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<style>\n    .control_btn > .md.button {\n        background-color: #57D0FA;\n    }\n\n    .settings_btn > .md.button {\n        background-color: green;\n    }\n</style>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 800,
-        "y": 280,
-        "wires": [
-            []
         ]
     }
 ]
