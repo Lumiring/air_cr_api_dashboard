@@ -2150,5 +2150,45 @@
                 "f35f7ebd59ad5459"
             ]
         ]
+    },
+    {
+        "id": "f6ef434ae6a766bd",
+        "type": "ui_template",
+        "z": "692c798b6f9c61de",
+        "group": "d68e7be3.88f088",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 1380,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac2feb2870e17332",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 1",
+        "func": "msg.payload = \"Hello\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 200,
+        "wires": [
+            [
+                "f6ef434ae6a766bd"
+            ]
+        ]
     }
 ]
