@@ -252,6 +252,7 @@
     {
         "id": "ff66d7be436a7f37",
         "type": "ui_group",
+        "d": true,
         "name": "input settings",
         "tab": "11354ae062708b32",
         "order": 1,
@@ -318,6 +319,7 @@
     {
         "id": "d68e7be3.88f088",
         "type": "ui_group",
+        "d": true,
         "name": "Forms Example",
         "tab": "",
         "order": 1,
@@ -328,6 +330,7 @@
     {
         "id": "54bca71e.4287f",
         "type": "ui_group",
+        "d": true,
         "name": "Form",
         "tab": "",
         "order": 2,
@@ -2045,7 +2048,7 @@
         "name": "",
         "events": "change",
         "x": 960,
-        "y": 200,
+        "y": 120,
         "wires": [
             []
         ]
@@ -2064,7 +2067,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "className": "",
+        "className": "settings_btn",
         "icon": "",
         "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\"],\"show\":[\"AIR-CR_Settings\"]}}",
         "payloadType": "json",
@@ -2092,7 +2095,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "className": "",
+        "className": "control_btn",
         "icon": "",
         "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\"],\"show\":[\"AIR-CR_Control\"]}}",
         "payloadType": "json",
@@ -2102,7 +2105,8 @@
         "y": 280,
         "wires": [
             [
-                "f35f7ebd59ad5459"
+                "f35f7ebd59ad5459",
+                "f6ef434ae6a766bd"
             ]
         ]
     },
@@ -2160,35 +2164,16 @@
         "order": 0,
         "width": 0,
         "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "format": "<style>\n    .control_btn {\n        background-color: #57D0FA;\n    }\n\n    .settings_btn {\n        background-color: green\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 1380,
-        "y": 200,
+        "x": 740,
+        "y": 280,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "ac2feb2870e17332",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "name": "function 1",
-        "func": "msg.payload = \"Hello\"\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1200,
-        "y": 200,
-        "wires": [
-            [
-                "f6ef434ae6a766bd"
-            ]
         ]
     }
 ]
