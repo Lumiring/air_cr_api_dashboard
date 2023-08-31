@@ -2217,7 +2217,7 @@
         "order": 9,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    .open_btn {\n        background-color: background-color: rgb(0 0 0);\n    }\n\n</style>",
+        "format": "<style>\n    .open_btn > .md-button {\n        background-color: background-color: rgb(0 0 0);\n    }\n\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
