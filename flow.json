@@ -2164,13 +2164,13 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    .control_btn {\n        background-color: #57D0FA;\n    }\n\n    .settings_btn {\n        background-color: green;\n    }\n</style>",
+        "format": "<style>\n    .control_btn > .md.button {\n        background-color: #57D0FA;\n    }\n\n    .settings_btn > .md.button {\n        background-color: green;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 740,
+        "x": 800,
         "y": 280,
         "wires": [
             []
