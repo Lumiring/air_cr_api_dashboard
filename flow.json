@@ -303,7 +303,7 @@
     {
         "id": "b76cefdaf9bc6c8b",
         "type": "ui_tab",
-        "name": "Settings",
+        "name": "AIR-CR",
         "icon": "dashboard",
         "order": 1,
         "disabled": false,
@@ -312,11 +312,11 @@
     {
         "id": "91a9ce4bbf4bb377",
         "type": "ui_group",
-        "name": "AIR-CR Settings",
+        "name": "Settings",
         "tab": "b76cefdaf9bc6c8b",
         "order": 2,
         "disp": false,
-        "width": 30,
+        "width": "30",
         "collapse": false,
         "className": ""
     },
@@ -2071,8 +2071,8 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "",
-        "payloadType": "str",
+        "payload": "{\"group\":{\"hide\":[]}}",
+        "payloadType": "json",
         "topic": "",
         "topicType": "str",
         "x": 560,
@@ -2104,7 +2104,7 @@
         "topic": "",
         "topicType": "str",
         "x": 560,
-        "y": 280,
+        "y": 240,
         "wires": [
             [
                 "f35f7ebd59ad5459"
