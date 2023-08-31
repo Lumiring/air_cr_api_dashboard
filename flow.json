@@ -2096,8 +2096,8 @@
         "icon": "",
         "payload": "{\"group\":{\"hide\":[\"Settings\"],\"show\":[\"Control\"]}}",
         "payloadType": "json",
-        "topic": "",
-        "topicType": "str",
+        "topic": "topic",
+        "topicType": "msg",
         "x": 560,
         "y": 240,
         "wires": [
