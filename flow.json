@@ -2071,7 +2071,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 560,
-        "y": 100,
+        "y": 220,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -2099,7 +2099,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 560,
-        "y": 240,
+        "y": 280,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -2130,6 +2130,25 @@
         "y": 1340,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "6d7ac608b771c09f",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "dashboardInit",
+        "func": "msg.payload.group = {\n    \"hide\": [\"AIR-CR_Control\"],\n    \"show\": [\"AIR-CR_Settings\"]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 140,
+        "wires": [
+            [
+                "f35f7ebd59ad5459"
+            ]
         ]
     }
 ]
