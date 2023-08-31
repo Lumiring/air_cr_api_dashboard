@@ -2018,8 +2018,8 @@
         "z": "692c798b6f9c61de",
         "name": "",
         "events": "all",
-        "x": 1360,
-        "y": 60,
+        "x": 860,
+        "y": 100,
         "wires": [
             []
         ]
@@ -2028,12 +2028,13 @@
         "id": "ec7459b197b9c702",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "name": "",
-        "order": 0,
+        "name": "Settings",
+        "group": "fc491a4cada0492f",
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "button",
+        "label": "Settings",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -2041,24 +2042,27 @@
         "icon": "",
         "payload": "",
         "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1170,
-        "y": 60,
+        "topic": "",
+        "topicType": "str",
+        "x": 660,
+        "y": 80,
         "wires": [
-            []
+            [
+                "f35f7ebd59ad5459"
+            ]
         ]
     },
     {
-        "id": "77faac8585e06c67",
+        "id": "cc2c84ed43d311b3",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "name": "",
-        "order": 0,
+        "name": "Control",
+        "group": "fc491a4cada0492f",
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "button",
+        "label": "Control",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -2066,12 +2070,14 @@
         "icon": "",
         "payload": "",
         "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 1170,
-        "y": 120,
+        "topic": "",
+        "topicType": "str",
+        "x": 660,
+        "y": 140,
         "wires": [
-            []
+            [
+                "f35f7ebd59ad5459"
+            ]
         ]
     }
 ]
