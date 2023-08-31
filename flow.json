@@ -2190,32 +2190,6 @@
         ]
     },
     {
-        "id": "88f9361be756f961",
-        "type": "ui_button",
-        "z": "692c798b6f9c61de",
-        "name": "Open",
-        "group": "78fe50a055b65ca2",
-        "order": 1,
-        "width": 11,
-        "height": 4,
-        "passthru": false,
-        "label": "Open",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 90,
-        "y": 1300,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "6d7ac608b771c09f",
         "type": "function",
         "z": "692c798b6f9c61de",
@@ -2232,6 +2206,53 @@
             [
                 "f35f7ebd59ad5459"
             ]
+        ]
+    },
+    {
+        "id": "dba127a888a49b39",
+        "type": "ui_template",
+        "z": "692c798b6f9c61de",
+        "group": "fc491a4cada0492f",
+        "name": "",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .open_btn {\n        background-color: background-color: rgb(0 0 0);\n    }\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 260,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88f9361be756f961",
+        "type": "ui_button",
+        "z": "692c798b6f9c61de",
+        "name": "Open",
+        "group": "78fe50a055b65ca2",
+        "order": 1,
+        "width": 11,
+        "height": 4,
+        "passthru": false,
+        "label": "Open",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "open_btn",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 1300,
+        "wires": [
+            []
         ]
     },
     {
