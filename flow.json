@@ -2243,7 +2243,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "className": "open_btn",
+        "className": ".open_btn",
         "icon": "",
         "payload": "",
         "payloadType": "str",
