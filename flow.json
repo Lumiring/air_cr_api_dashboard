@@ -2043,7 +2043,7 @@
         "type": "ui_ui_control",
         "z": "692c798b6f9c61de",
         "name": "",
-        "events": "all",
+        "events": "change",
         "x": 960,
         "y": 200,
         "wires": [
