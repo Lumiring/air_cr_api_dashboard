@@ -2489,22 +2489,6 @@
         ]
     },
     {
-        "id": "f4212a4eb2bdc12a",
-        "type": "ui_table",
-        "z": "692c798b6f9c61de",
-        "group": "78fe50a055b65ca2",
-        "name": "",
-        "order": 8,
-        "width": 29,
-        "height": 9,
-        "columns": [],
-        "outputs": 0,
-        "cts": false,
-        "x": 530,
-        "y": 1620,
-        "wires": []
-    },
-    {
         "id": "c41c7e78b7ab1b2c",
         "type": "inject",
         "z": "692c798b6f9c61de",
@@ -2522,11 +2506,38 @@
         "payload": "[{\"Name\":\"Kazuhito Yokoi\",\"Age\":\"35\",\"Favourite Color\":\"red\",\"Date Of Birth\":\"12/09/1983\"},{\"Name\":\"Oli Bob\",\"Age\":\"12\",\"Favourite Color\":\"cyan\",\"Date Of Birth\":\"12/08/2017\"}]",
         "payloadType": "json",
         "x": 330,
-        "y": 1620,
+        "y": 1700,
         "wires": [
             [
                 "f4212a4eb2bdc12a"
             ]
         ]
+    },
+    {
+        "id": "f4212a4eb2bdc12a",
+        "type": "ui_table",
+        "z": "692c798b6f9c61de",
+        "group": "78fe50a055b65ca2",
+        "name": "",
+        "order": 8,
+        "width": 29,
+        "height": 9,
+        "columns": [
+            {
+                "field": "",
+                "title": "",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 530,
+        "y": 1700,
+        "wires": []
     }
 ]
