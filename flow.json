@@ -2407,5 +2407,21 @@
                 "6638c344b98c3138"
             ]
         ]
+    },
+    {
+        "id": "f4212a4eb2bdc12a",
+        "type": "ui_table",
+        "z": "692c798b6f9c61de",
+        "group": "78fe50a055b65ca2",
+        "name": "",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 530,
+        "y": 1640,
+        "wires": []
     }
 ]
