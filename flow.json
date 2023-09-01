@@ -1251,7 +1251,7 @@
         "className": "",
         "topicType": "str",
         "x": 90,
-        "y": 140,
+        "y": 120,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1277,7 +1277,7 @@
         "className": "",
         "topicType": "str",
         "x": 90,
-        "y": 200,
+        "y": 160,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1320,7 +1320,7 @@
         "className": "",
         "topicType": "str",
         "x": 100,
-        "y": 260,
+        "y": 200,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -2098,7 +2098,7 @@
         "name": "",
         "events": "change",
         "x": 860,
-        "y": 200,
+        "y": 180,
         "wires": [
             []
         ]
@@ -2123,8 +2123,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 560,
-        "y": 220,
+        "x": 600,
+        "y": 180,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -2151,8 +2151,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 560,
-        "y": 280,
+        "x": 600,
+        "y": 220,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -2193,8 +2193,8 @@
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 1060,
-        "y": 200,
+        "x": 1020,
+        "y": 180,
         "wires": [
             []
         ]
@@ -2401,7 +2401,7 @@
         "className": "",
         "topicType": "str",
         "x": 140,
-        "y": 320,
+        "y": 240,
         "wires": [
             [
                 "6638c344b98c3138"
