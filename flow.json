@@ -58,7 +58,7 @@
             "46acc335ad03e666"
         ],
         "x": 14,
-        "y": 379,
+        "y": 459,
         "w": 912,
         "h": 802
     },
@@ -93,8 +93,8 @@
             "e8178d5e4e978f8f",
             "86975053df1143b3"
         ],
-        "x": 994,
-        "y": 379,
+        "x": 974,
+        "y": 459,
         "w": 932,
         "h": 702
     },
@@ -913,8 +913,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1200,
-        "y": 460,
+        "x": 1180,
+        "y": 540,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -940,8 +940,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1140,
-        "y": 500,
+        "x": 1120,
+        "y": 580,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -994,8 +994,8 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "",
-        "x": 1200,
-        "y": 540,
+        "x": 1180,
+        "y": 620,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1033,8 +1033,8 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "",
-        "x": 1190,
-        "y": 580,
+        "x": 1170,
+        "y": 660,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1072,8 +1072,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "",
-        "x": 1180,
-        "y": 620,
+        "x": 1160,
+        "y": 700,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1111,8 +1111,8 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "",
-        "x": 1200,
-        "y": 660,
+        "x": 1180,
+        "y": 740,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1175,8 +1175,8 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "",
-        "x": 1190,
-        "y": 700,
+        "x": 1170,
+        "y": 780,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1202,8 +1202,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1190,
-        "y": 740,
+        "x": 1170,
+        "y": 820,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -1222,8 +1222,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1570,
-        "y": 640,
+        "x": 1550,
+        "y": 720,
         "wires": [
             []
         ]
@@ -1249,8 +1249,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1610,
-        "y": 740,
+        "x": 1590,
+        "y": 820,
         "wires": [
             [
                 "74d7e54cc946196e"
@@ -1269,8 +1269,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1630,
-        "y": 800,
+        "x": 1610,
+        "y": 880,
         "wires": [
             [
                 "410d950420bd3341"
@@ -1298,8 +1298,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1190,
-        "y": 420,
+        "x": 1170,
+        "y": 500,
         "wires": []
     },
     {
@@ -1359,7 +1359,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "setUserCreds",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nlet userCreds = global.get('userCreds') || {};\n\nuserCreds = Object.assign(userCreds, { [msg.topic]: msg.payload })\n\nglobal.set('userCreds', userCreds)\n\nmsg.payload = userCreds\n\nreturn msg;\n",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nlet tempUserCreds = global.get('tempUserCreds') || {};\n\ntempUserCreds = Object.assign(tempUserCreds, { [msg.topic]: msg.payload })\n\nglobal.set('tempUserCreds', tempUserCreds)\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1429,7 +1429,7 @@
         "topicType": "str",
         "className": "",
         "x": 220,
-        "y": 520,
+        "y": 600,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1449,7 +1449,7 @@
         "finalize": "",
         "libs": [],
         "x": 610,
-        "y": 760,
+        "y": 840,
         "wires": [
             []
         ]
@@ -1467,7 +1467,7 @@
         "finalize": "",
         "libs": [],
         "x": 590,
-        "y": 920,
+        "y": 1000,
         "wires": [
             [
                 "8c8a2053b1a0ceea"
@@ -1514,7 +1514,7 @@
         "topicType": "str",
         "className": "",
         "x": 180,
-        "y": 680,
+        "y": 760,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1541,7 +1541,7 @@
         "className": "",
         "topicType": "str",
         "x": 160,
-        "y": 560,
+        "y": 640,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1568,7 +1568,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 600,
+        "y": 680,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1595,7 +1595,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 640,
+        "y": 720,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1622,7 +1622,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 720,
+        "y": 800,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1649,7 +1649,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 760,
+        "y": 840,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1688,7 +1688,7 @@
         "topicType": "str",
         "className": "",
         "x": 190,
-        "y": 800,
+        "y": 880,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1727,7 +1727,7 @@
         "topicType": "str",
         "className": "",
         "x": 200,
-        "y": 840,
+        "y": 920,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1754,7 +1754,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 880,
+        "y": 960,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1781,7 +1781,7 @@
         "className": "",
         "topicType": "str",
         "x": 210,
-        "y": 920,
+        "y": 1000,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1816,7 +1816,7 @@
         "animate": false,
         "className": "",
         "x": 180,
-        "y": 960,
+        "y": 1040,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1843,7 +1843,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 1000,
+        "y": 1080,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1870,7 +1870,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 1040,
+        "y": 1120,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1914,7 +1914,7 @@
         "topicType": "str",
         "className": "",
         "x": 180,
-        "y": 1080,
+        "y": 1160,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1943,7 +1943,7 @@
         "topic": "",
         "topicType": "str",
         "x": 600,
-        "y": 840,
+        "y": 920,
         "wires": [
             [
                 "36afbbbff6d2c65b"
@@ -1970,7 +1970,7 @@
         "className": "",
         "topicType": "str",
         "x": 220,
-        "y": 480,
+        "y": 560,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1993,7 +1993,7 @@
         "expiry": "",
         "broker": "79737e067a3af084",
         "x": 850,
-        "y": 840,
+        "y": 920,
         "wires": []
     },
     {
@@ -2015,7 +2015,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 210,
-        "y": 420,
+        "y": 500,
         "wires": []
     },
     {
@@ -2033,7 +2033,7 @@
         "rh": 0,
         "inputs": 1,
         "x": 590,
-        "y": 980,
+        "y": 1060,
         "wires": [
             [
                 "83dcae90f8fb7f09"
@@ -2053,7 +2053,7 @@
         "finalize": "",
         "libs": [],
         "x": 590,
-        "y": 1080,
+        "y": 1160,
         "wires": [
             [
                 "46acc335ad03e666"
@@ -2077,7 +2077,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 580,
-        "y": 1140,
+        "y": 1220,
         "wires": []
     },
     {
@@ -2095,8 +2095,8 @@
         "correl": "",
         "expiry": "",
         "broker": "11f61d797ff1ae20",
-        "x": 1850,
-        "y": 780,
+        "x": 1830,
+        "y": 860,
         "wires": []
     },
     {
@@ -2113,8 +2113,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 1,
-        "x": 1610,
-        "y": 880,
+        "x": 1590,
+        "y": 960,
         "wires": [
             [
                 "e8178d5e4e978f8f"
@@ -2133,8 +2133,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1630,
-        "y": 960,
+        "x": 1610,
+        "y": 1040,
         "wires": [
             [
                 "86975053df1143b3"
@@ -2157,8 +2157,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1640,
-        "y": 1040,
+        "x": 1620,
+        "y": 1120,
         "wires": []
     },
     {
@@ -2525,7 +2525,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 1,
-        "x": 430,
+        "x": 490,
         "y": 300,
         "wires": [
             []
@@ -2564,13 +2564,13 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "connect",
-        "func": "\nreturn msg;",
+        "func": "global.set('userCreds', global.get('tempUserCreds'))\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 260,
+        "x": 300,
         "y": 300,
         "wires": [
             [
