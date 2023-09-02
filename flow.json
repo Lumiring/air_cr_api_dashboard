@@ -2564,7 +2564,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "connect",
-        "func": "global.set('userCreds', global.get('tempUserCreds'))\n",
+        "func": "let tempUserCreds = global.get('tempUserCreds')\n\nglobal.set('userCreds', tempUserCreds)\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
