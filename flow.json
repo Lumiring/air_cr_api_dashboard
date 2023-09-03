@@ -1923,22 +1923,6 @@
         "wires": []
     },
     {
-        "id": "a6c0bcaab4735d95",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 4",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 940,
-        "y": 440,
-        "wires": []
-    },
-    {
         "id": "4c30f9b315530f2a",
         "type": "switch",
         "z": "692c798b6f9c61de",
@@ -1964,12 +1948,10 @@
         "y": 360,
         "wires": [
             [
-                "160ef0c3c55613af",
-                "40c94052d8244c5c"
+                "160ef0c3c55613af"
             ],
             [
-                "95c8a2503541cab9",
-                "1140edd7f969f8b6"
+                "95c8a2503541cab9"
             ]
         ]
     },
@@ -1997,7 +1979,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "handleAck",
-        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\nconsole.log(msg.payload.result.errorNo)\n\n\nif (messageId === parseInt(msg.payload.message_id)) {\n    console.log(\"1\")\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n        console.log(\"error\")\n    }\n}\n\n\nreturn ackInfo;",
+        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\nif (messageId === parseInt(msg.payload.message_id)) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n        console.log(\"error\")\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2007,8 +1989,7 @@
         "y": 400,
         "wires": [
             [
-                "6c8acdd459e657eb",
-                "a6c0bcaab4735d95"
+                "6c8acdd459e657eb"
             ]
         ]
     },
@@ -2434,38 +2415,6 @@
         "broker": "11f61d797ff1ae20",
         "x": 1170,
         "y": 980,
-        "wires": []
-    },
-    {
-        "id": "1140edd7f969f8b6",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 600,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "40c94052d8244c5c",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 700,
-        "y": 260,
         "wires": []
     }
 ]
