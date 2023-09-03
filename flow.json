@@ -2475,7 +2475,28 @@
         "order": 9,
         "width": 26,
         "height": 1,
-        "columns": [],
+        "columns": [
+            {
+                "field": "Group",
+                "title": "Group",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Ctp_idx",
+                "title": "Ctp_idx",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
         "outputs": 0,
         "cts": false,
         "x": 810,
