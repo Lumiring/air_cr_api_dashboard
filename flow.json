@@ -2448,7 +2448,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "separateMessage",
-        "func": "let eventInfo = {}\nlet ackInfo = {}\n\nswitch(msg.payload.operator) {\n    case 'Event':\n        eventInfo = msg.payload.info\n        break;\n    case 'Ack':\n        let messageId = global.get(\"messageId\")\n        if (messageId === msg.payload.message_id) {\n            if (msg.payload.result.errorNo === 0) {\n                ackInfo.topic = \"Success\"\n                ackInfo.payload = \"Done\"\n                console.log(\"errorNo: 0\")\n\n            } else {\n                ackInfo.topic = \"Error\"\n                ackInfo.payload = \"error\"\n                console.log(\"error\")\n            }\n        }\n\n\n}\n\nreturn [eventInfo, ackInfo]\n\n",
+        "func": "let eventInfoWrapper = {}\nlet eventInfo = {}\nlet ackInfo = {}\n\nswitch(msg.payload.operator) {\n    case 'Event':\n        eventInfo = msg.payload.info\n        eventInfoWrapper.payload.command = \"addData\"\n        eventInfoWrapper.payload.arguments = [eventInfo, true]\n        break;\n    case 'Ack':\n        let messageId = global.get(\"messageId\")\n        if (messageId === msg.payload.message_id) {\n            if (msg.payload.result.errorNo === 0) {\n                ackInfo.topic = \"Success\"\n                ackInfo.payload = \"Done\"\n                console.log(\"errorNo: 0\")\n\n            } else {\n                ackInfo.topic = \"Error\"\n                ackInfo.payload = \"error\"\n                console.log(\"error\")\n            }\n        }\n\n\n}\n\nreturn [eventInfoWrapper, ackInfo]\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
