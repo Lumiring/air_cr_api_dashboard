@@ -1997,7 +1997,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "handleAck",
-        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\nconsole.log(messageId)\nconsole.log(msg.payload.result.errorNo)\n\n\nif (messageId === msg.payload.message_id) {\n    console.log(\"1\")\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n        console.log(\"error\")\n    }\n}\n\n\nreturn ackInfo;",
+        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\nconsole.log(msg.payload.result.errorNo)\n\n\nif (messageId === msg.payload.message_id) {\n    console.log(\"1\")\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n        console.log(\"error\")\n    }\n}\n\n\nreturn ackInfo;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
