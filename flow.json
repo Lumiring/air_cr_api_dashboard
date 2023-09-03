@@ -2260,7 +2260,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 820,
+        "x": 960,
         "y": 400,
         "wires": []
     },
@@ -2300,8 +2300,8 @@
         "y": 360,
         "wires": [
             [
-                "9dc9cb8af63cf021",
-                "dfea38bb406a7e05"
+                "dfea38bb406a7e05",
+                "4c30f9b315530f2a"
             ]
         ]
     },
@@ -2363,16 +2363,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
-        "y": 360,
+        "x": 1070,
+        "y": 120,
         "wires": [
-            [
-                "32d53427bced070c",
-                "a6c0bcaab4735d95"
-            ],
-            [
-                "6c8acdd459e657eb"
-            ]
+            [],
+            []
         ]
     },
     {
@@ -2468,8 +2463,8 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 810,
-        "y": 360,
+        "x": 950,
+        "y": 340,
         "wires": []
     },
     {
@@ -2484,8 +2479,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 820,
-        "y": 280,
+        "x": 880,
+        "y": 80,
         "wires": []
     },
     {
@@ -2503,5 +2498,76 @@
         "x": 600,
         "y": 260,
         "wires": []
+    },
+    {
+        "id": "4c30f9b315530f2a",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "property": "payload.operator",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Event",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "SetAccessMode-Ack",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 570,
+        "y": 360,
+        "wires": [
+            [
+                "160ef0c3c55613af"
+            ],
+            [
+                "95c8a2503541cab9"
+            ]
+        ]
+    },
+    {
+        "id": "160ef0c3c55613af",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "handleEvent",
+        "func": "let eventInfoWrapper = {}\nlet eventInfo = {}\n\neventInfo = msg.payload.info\neventInfoWrapper.payload = {}\neventInfoWrapper.payload.command = \"addData\"\neventInfoWrapper.payload.arguments = [eventInfo, true]\n\nreturn eventInfoWrapper;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 340,
+        "wires": [
+            [
+                "32d53427bced070c"
+            ]
+        ]
+    },
+    {
+        "id": "95c8a2503541cab9",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "handleAck",
+        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n        console.log(\"error\")\n    }\n}\n\n\nreturn ackInfo;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 400,
+        "wires": [
+            [
+                "6c8acdd459e657eb"
+            ]
+        ]
     }
 ]
