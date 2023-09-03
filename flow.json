@@ -2542,7 +2542,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "connect",
-        "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\n\nglobal.set('userCreds', tempUserCreds)\n\n\nlet globalTopic = tempUserCreds.aid + \"/\" + tempUserCreds.cid + \"/\" + \"registration\" + \"/\" + tempUserCreds.cpid + \"/#\"\n",
+        "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\n\nglobal.set('userCreds', tempUserCreds)\n\nlet globalTopic = tempUserCreds.aid + \"/\" + tempUserCreds.cid + \"/\" + \"registration\" + \"/\" + tempUserCreds.cpid + \"/\"\n\n\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\nreturn msg\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
