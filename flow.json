@@ -52,14 +52,12 @@
             "f9854082c6f330fa",
             "31d364e6be3997dd",
             "8c8a2053b1a0ceea",
-            "1951b0e939a5d670",
-            "83dcae90f8fb7f09",
-            "46acc335ad03e666"
+            "1951b0e939a5d670"
         ],
         "x": 14,
-        "y": 459,
+        "y": 499,
         "w": 692,
-        "h": 802
+        "h": 742
     },
     {
         "id": "b2257f44a2c51e87",
@@ -87,14 +85,12 @@
             "edc132442e785b85",
             "74d7e54cc946196e",
             "f0bda0e408f066c3",
-            "410d950420bd3341",
-            "e8178d5e4e978f8f",
-            "86975053df1143b3"
+            "410d950420bd3341"
         ],
-        "x": 974,
-        "y": 459,
+        "x": 734,
+        "y": 499,
         "w": 652,
-        "h": 542
+        "h": 522
     },
     {
         "id": "79737e067a3af084",
@@ -783,411 +779,6 @@
         "wires": []
     },
     {
-        "id": "7fd6557c497b4c1e",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_idx",
-        "label": "Rd_idx",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 7,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Rd_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 1180,
-        "y": 540,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "80534b3e373cf5db",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "Control_point_idx_DUMMY",
-        "label": "Control_point_idx",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 8,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Control_point_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 1120,
-        "y": 580,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "af8dcc2750985ece",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_opt",
-        "label": "Rd_opt",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 12,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Embedded Reader",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Wiegand",
-                "value": 1,
-                "type": "num"
-            },
-            {
-                "label": "OSDP",
-                "value": 2,
-                "type": "num"
-            },
-            {
-                "label": "MQTT",
-                "value": 3,
-                "type": "num"
-            },
-            {
-                "label": "Ethernet",
-                "value": 4,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd_opt",
-        "topicType": "str",
-        "className": "",
-        "x": 1180,
-        "y": 620,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "392bed8f5131614f",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_Direction",
-        "label": "Rd_Direction",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 13,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Entry",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Exit",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd_Direction",
-        "topicType": "str",
-        "className": "",
-        "x": 1170,
-        "y": 660,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "c49221a23de934fa",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_Key_endian",
-        "label": "Rd_Key_endian",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 17,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Big endian",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Little endian",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd_Key_endian",
-        "topicType": "str",
-        "className": "",
-        "x": 1160,
-        "y": 700,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "11814495f9387d3c",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_beep",
-        "label": "Rd_beep",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 18,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Sound on",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Sound off",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd_beep",
-        "topicType": "str",
-        "className": "",
-        "x": 1180,
-        "y": 740,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "913abd1f5c57f1b2",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_Wg_type",
-        "label": "Rd_Wg_type",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 22,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Wiegand 4",
-                "value": "0",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 8",
-                "value": "1",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 26",
-                "value": "2",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 34",
-                "value": "3",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 37",
-                "value": "4",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 40",
-                "value": "5",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 42",
-                "value": "6",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd_Wg_type",
-        "topicType": "str",
-        "className": "",
-        "x": 1170,
-        "y": 780,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "f188d012945c3966",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_Wg_idx",
-        "label": "Rd_Wg_idx",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 23,
-        "width": 7,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Rd_Wg_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 1170,
-        "y": 820,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "f7673a2b0876c467",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "SetRd",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nlet rdSet = global.get('rdSet') || {};\n\nrdSet = Object.assign(rdSet, { [msg.topic]: msg.payload })\n\nglobal.set('rdSet', rdSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1550,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "edc132442e785b85",
-        "type": "ui_button",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 39,
-        "width": 14,
-        "height": 1,
-        "passthru": false,
-        "label": "Submit Rd",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "topicType": "str",
-        "x": 1390,
-        "y": 820,
-        "wires": [
-            [
-                "74d7e54cc946196e"
-            ]
-        ]
-    },
-    {
-        "id": "74d7e54cc946196e",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "sendMqttMessage",
-        "func": "msg.payload = global.get('rdSet');\nlet userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rdSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('rdSet_messageId', msgWrapper.message_id)\n\n\nreturn msg",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1410,
-        "y": 880,
-        "wires": [
-            [
-                "410d950420bd3341"
-            ]
-        ]
-    },
-    {
-        "id": "f0bda0e408f066c3",
-        "type": "ui_text",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "group": "91a9ce4bbf4bb377",
-        "order": 3,
-        "width": 14,
-        "height": 1,
-        "name": "",
-        "label": "Set reader",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 1170,
-        "y": 500,
-        "wires": []
-    },
-    {
         "id": "4fa2839622e9ccb5",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
@@ -1314,7 +905,7 @@
         "topicType": "str",
         "className": "",
         "x": 220,
-        "y": 600,
+        "y": 640,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1334,7 +925,7 @@
         "finalize": "",
         "libs": [],
         "x": 610,
-        "y": 840,
+        "y": 880,
         "wires": [
             []
         ]
@@ -1352,7 +943,7 @@
         "finalize": "",
         "libs": [],
         "x": 590,
-        "y": 1000,
+        "y": 1040,
         "wires": [
             [
                 "8c8a2053b1a0ceea"
@@ -1396,7 +987,7 @@
         "topicType": "str",
         "className": "",
         "x": 180,
-        "y": 760,
+        "y": 800,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1423,7 +1014,7 @@
         "className": "",
         "topicType": "str",
         "x": 160,
-        "y": 640,
+        "y": 680,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1450,7 +1041,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 680,
+        "y": 720,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1477,7 +1068,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 720,
+        "y": 760,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1504,7 +1095,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 800,
+        "y": 840,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1531,7 +1122,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 840,
+        "y": 880,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1570,7 +1161,7 @@
         "topicType": "str",
         "className": "",
         "x": 190,
-        "y": 880,
+        "y": 920,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1609,7 +1200,7 @@
         "topicType": "str",
         "className": "",
         "x": 200,
-        "y": 920,
+        "y": 960,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1636,7 +1227,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 960,
+        "y": 1000,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1663,7 +1254,7 @@
         "className": "",
         "topicType": "str",
         "x": 210,
-        "y": 1000,
+        "y": 1040,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1698,7 +1289,7 @@
         "animate": false,
         "className": "",
         "x": 180,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1725,7 +1316,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 1080,
+        "y": 1120,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1752,7 +1343,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 1120,
+        "y": 1160,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1796,7 +1387,7 @@
         "topicType": "str",
         "className": "",
         "x": 180,
-        "y": 1160,
+        "y": 1200,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1825,7 +1416,7 @@
         "topic": "",
         "topicType": "str",
         "x": 600,
-        "y": 920,
+        "y": 960,
         "wires": [
             [
                 "36afbbbff6d2c65b"
@@ -1852,7 +1443,7 @@
         "className": "",
         "topicType": "str",
         "x": 220,
-        "y": 560,
+        "y": 600,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1875,7 +1466,7 @@
         "expiry": "",
         "broker": "79737e067a3af084",
         "x": 610,
-        "y": 1060,
+        "y": 1100,
         "wires": []
     },
     {
@@ -1897,106 +1488,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 210,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "83dcae90f8fb7f09",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "g": "3d00d5011b39e864",
-        "name": "ackHandle",
-        "func": "let messageId = global.get(\"messageId\")\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\n\n\nif (messageId === msg.payload.message_id) {\n    if(msg.payload.result.errorNo === 0){\n        msg.topic = \"Success\"\n        msg.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else{\n        msg.topic = \"Error\"\n        msg.payload = \"error\"\n        console.log(\"error\")\n    }\n    return msg;\n}\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 590,
-        "y": 1160,
-        "wires": [
-            [
-                "46acc335ad03e666"
-            ]
-        ]
-    },
-    {
-        "id": "46acc335ad03e666",
-        "type": "ui_toast",
-        "z": "692c798b6f9c61de",
-        "g": "3d00d5011b39e864",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": false,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "Ack info",
-        "x": 580,
-        "y": 1220,
-        "wires": []
-    },
-    {
-        "id": "410d950420bd3341",
-        "type": "mqtt out",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "",
-        "topic": "",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "11f61d797ff1ae20",
-        "x": 1410,
-        "y": 940,
-        "wires": []
-    },
-    {
-        "id": "e8178d5e4e978f8f",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "name": "ackHandle",
-        "func": "let messageId = global.get(\"messageId\")\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        msg.topic = \"Success\"\n        msg.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else {\n        msg.topic = \"Error\"\n        msg.payload = \"error\"\n        console.log(\"error\")\n    }\n    return msg;\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1110,
-        "y": 880,
-        "wires": [
-            [
-                "86975053df1143b3"
-            ]
-        ]
-    },
-    {
-        "id": "86975053df1143b3",
-        "type": "ui_toast",
-        "z": "692c798b6f9c61de",
-        "g": "b2257f44a2c51e87",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": false,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "Ack info",
-        "x": 1140,
-        "y": 960,
+        "y": 540,
         "wires": []
     },
     {
@@ -2005,7 +1497,7 @@
         "z": "692c798b6f9c61de",
         "name": "",
         "events": "change",
-        "x": 1720,
+        "x": 1480,
         "y": 80,
         "wires": [
             []
@@ -2031,7 +1523,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1460,
+        "x": 1220,
         "y": 80,
         "wires": [
             [
@@ -2059,7 +1551,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1460,
+        "x": 1220,
         "y": 120,
         "wires": [
             [
@@ -2078,7 +1570,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1440,
+        "x": 1200,
         "y": 40,
         "wires": [
             [
@@ -2101,7 +1593,7 @@
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 1880,
+        "x": 1640,
         "y": 80,
         "wires": [
             []
@@ -2229,23 +1721,6 @@
         "wires": []
     },
     {
-        "id": "0bc882d573d33cef",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "name": "ackHandle",
-        "func": "let messageId = global.get(\"SetAccessMode_messageId\")\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\n\n\nif (messageId === msg.payload.message_id) {\n    if(msg.payload.result.errorNo === 0){\n        msg.topic = \"Success\"\n        msg.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else{\n        msg.topic = \"Error\"\n        msg.payload = \"error\"\n        console.log(\"error\")\n    }\n    return msg;\n}\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 1500,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "6c8acdd459e657eb",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
@@ -2265,25 +1740,6 @@
         "wires": []
     },
     {
-        "id": "627c3facf28957b6",
-        "type": "mqtt in",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "topic": "",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "79737e067a3af084",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 1,
-        "x": 330,
-        "y": 1680,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "9e5fe1c3fe6f0503",
         "type": "mqtt in",
         "z": "692c798b6f9c61de",
@@ -2300,7 +1756,8 @@
         "y": 360,
         "wires": [
             [
-                "4c30f9b315530f2a"
+                "4c30f9b315530f2a",
+                "1140edd7f969f8b6"
             ]
         ]
     },
@@ -2362,7 +1819,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
+        "x": 810,
         "y": 120,
         "wires": [
             [],
@@ -2478,8 +1935,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 880,
-        "y": 80,
+        "x": 940,
+        "y": 440,
         "wires": []
     },
     {
@@ -2549,8 +2006,449 @@
         "y": 400,
         "wires": [
             [
-                "6c8acdd459e657eb"
+                "6c8acdd459e657eb",
+                "a6c0bcaab4735d95"
             ]
         ]
+    },
+    {
+        "id": "7fd6557c497b4c1e",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "Rd_idx",
+        "label": "Rd_idx",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 7,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Rd_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 940,
+        "y": 580,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "80534b3e373cf5db",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "Control_point_idx_DUMMY",
+        "label": "Control_point_idx",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 8,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Control_point_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 880,
+        "y": 620,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "af8dcc2750985ece",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "Rd_opt",
+        "label": "Rd_opt",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 12,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Embedded Reader",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Wiegand",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "OSDP",
+                "value": 2,
+                "type": "num"
+            },
+            {
+                "label": "MQTT",
+                "value": 3,
+                "type": "num"
+            },
+            {
+                "label": "Ethernet",
+                "value": 4,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd_opt",
+        "topicType": "str",
+        "className": "",
+        "x": 940,
+        "y": 660,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "392bed8f5131614f",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "Rd_Direction",
+        "label": "Rd_Direction",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 13,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Entry",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Exit",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd_Direction",
+        "topicType": "str",
+        "className": "",
+        "x": 930,
+        "y": 700,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "c49221a23de934fa",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "Rd_Key_endian",
+        "label": "Rd_Key_endian",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 17,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Big endian",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Little endian",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd_Key_endian",
+        "topicType": "str",
+        "className": "",
+        "x": 920,
+        "y": 740,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "11814495f9387d3c",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "Rd_beep",
+        "label": "Rd_beep",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 18,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Sound on",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Sound off",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd_beep",
+        "topicType": "str",
+        "className": "",
+        "x": 940,
+        "y": 780,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "913abd1f5c57f1b2",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "Rd_Wg_type",
+        "label": "Rd_Wg_type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 22,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Wiegand 4",
+                "value": "0",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 8",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 26",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 34",
+                "value": "3",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 37",
+                "value": "4",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 40",
+                "value": "5",
+                "type": "str"
+            },
+            {
+                "label": "Wiegand 42",
+                "value": "6",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd_Wg_type",
+        "topicType": "str",
+        "className": "",
+        "x": 930,
+        "y": 820,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "f188d012945c3966",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "Rd_Wg_idx",
+        "label": "Rd_Wg_idx",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 23,
+        "width": 7,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Rd_Wg_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 930,
+        "y": 860,
+        "wires": [
+            [
+                "f7673a2b0876c467"
+            ]
+        ]
+    },
+    {
+        "id": "f7673a2b0876c467",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "SetRd",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nlet rdSet = global.get('rdSet') || {};\n\nrdSet = Object.assign(rdSet, { [msg.topic]: msg.payload })\n\nglobal.set('rdSet', rdSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "edc132442e785b85",
+        "type": "ui_button",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 39,
+        "width": 14,
+        "height": 1,
+        "passthru": false,
+        "label": "Submit Rd",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 1150,
+        "y": 860,
+        "wires": [
+            [
+                "74d7e54cc946196e"
+            ]
+        ]
+    },
+    {
+        "id": "74d7e54cc946196e",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "sendMqttMessage",
+        "func": "msg.payload = global.get('rdSet');\nlet userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rdSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('rdSet_messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 920,
+        "wires": [
+            [
+                "410d950420bd3341"
+            ]
+        ]
+    },
+    {
+        "id": "f0bda0e408f066c3",
+        "type": "ui_text",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "group": "91a9ce4bbf4bb377",
+        "order": 3,
+        "width": 14,
+        "height": 1,
+        "name": "",
+        "label": "Set reader",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 930,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "410d950420bd3341",
+        "type": "mqtt out",
+        "z": "692c798b6f9c61de",
+        "g": "b2257f44a2c51e87",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "11f61d797ff1ae20",
+        "x": 1170,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "1140edd7f969f8b6",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 260,
+        "wires": []
     }
 ]
