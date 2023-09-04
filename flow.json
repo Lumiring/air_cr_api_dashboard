@@ -2509,33 +2509,5 @@
                 "8ceb1c5b5fb6e7d7"
             ]
         ]
-    },
-    {
-        "id": "ecbc057331493b7d",
-        "type": "ui_button",
-        "z": "692c798b6f9c61de",
-        "name": "Mqtt settings",
-        "group": "fc491a4cada0492f",
-        "order": 1,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "Mqtt settings",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 610,
-        "y": 220,
-        "wires": [
-            [
-                "f35f7ebd59ad5459"
-            ]
-        ]
     }
 ]
