@@ -1720,7 +1720,7 @@
         "expiry": "",
         "broker": "11f61d797ff1ae20",
         "x": 570,
-        "y": 1360,
+        "y": 1500,
         "wires": []
     },
     {
@@ -2432,7 +2432,7 @@
         "id": "1cbac974e1dbb470",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "function 1",
+        "name": "setCpIdx",
         "func": "\nglobal.set('control_cpIdx', msg.payload)\n\n// msg.payload = inputSettings\n\n// return msg;",
         "outputs": 1,
         "noerr": 0,
@@ -2468,7 +2468,9 @@
         "x": 110,
         "y": 1580,
         "wires": [
-            []
+            [
+                "dfbd635c1022b71c"
+            ]
         ]
     },
     {
@@ -2494,7 +2496,28 @@
         "x": 110,
         "y": 1640,
         "wires": [
-            []
+            [
+                "dfbd635c1022b71c"
+            ]
+        ]
+    },
+    {
+        "id": "dfbd635c1022b71c",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "sendMqttMessage",
+        "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\nlet control_cpIdx = global.get('control_cpIdx');\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"Single_pass\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\n\nmsgWrapper.info = {}\nmsgWrapper.info.Control_point_idx = control_cpIdx\nmsgWrapper.info.Direction = msg.payload\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1580,
+        "wires": [
+            [
+                "8ceb1c5b5fb6e7d7"
+            ]
         ]
     }
 ]
