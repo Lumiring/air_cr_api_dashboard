@@ -2403,7 +2403,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 1",
-        "func": "\n// initialise the counter to 0 if it doesn't exist already\nlet control_cpIdx = global.get('control_cpIdx') || {};\n\nglobal.set('control_cpIdx', control_cpIdx)\n\n// msg.payload = inputSettings\n\n// return msg;",
+        "func": "\nglobal.set('control_cpIdx', msg.payload)\n\n// msg.payload = inputSettings\n\n// return msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
