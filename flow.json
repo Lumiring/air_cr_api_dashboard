@@ -1561,7 +1561,7 @@
         "bgcolor": "",
         "className": "control_btn",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\"],\"show\":[\"AIR-CR_Control\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_Reader\"],\"show\":[\"AIR-CR_Control\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
