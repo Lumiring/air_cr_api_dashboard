@@ -659,6 +659,17 @@
         "height": 1
     },
     {
+        "id": "4e33cabd64714466",
+        "type": "ui_group",
+        "name": "DateTime",
+        "tab": "b76cefdaf9bc6c8b",
+        "order": 5,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "1fddf0a8d296909f",
         "type": "inject",
         "z": "be9f64fbc3682d16",
@@ -1663,7 +1674,7 @@
         "bgcolor": "",
         "className": "settings_btn",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\"],\"show\":[\"AIR-CR_Settings\",\"AIR-CR_Reader\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\"],\"show\":[\"AIR-CR_Settings\",\"AIR-CR_Reader\",\"AIR-CR_DateTime\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
@@ -1691,7 +1702,7 @@
         "bgcolor": "",
         "className": "control_btn",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_Reader\"],\"show\":[\"AIR-CR_Control\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_Reader\",\"AIR-CR_DateTime\"],\"show\":[\"AIR-CR_Control\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
@@ -1708,7 +1719,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "dashboardInit",
-        "func": "msg.payload.group = {\n    \"hide\": [\"AIR-CR_Control\"],\n    \"show\": [\"AIR-CR_Settings\", \"AIR-CR_Reader\"]\n}\nreturn msg;",
+        "func": "msg.payload.group = {\n    \"hide\": [\"AIR-CR_Control\"],\n    \"show\": [\"AIR-CR_Settings\", \"AIR-CR_Reader\", \"AIR-CR_DateTime\"]\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2659,6 +2670,50 @@
             [
                 "8ceb1c5b5fb6e7d7"
             ]
+        ]
+    },
+    {
+        "id": "a5e8a84d7e761340",
+        "type": "ui_date_picker",
+        "z": "692c798b6f9c61de",
+        "name": "Date",
+        "label": "Date",
+        "group": "4e33cabd64714466",
+        "order": 1,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "topic": "Date",
+        "topicType": "str",
+        "className": "",
+        "x": 930,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1a1fa1ee4361a96",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "GMT",
+        "label": "GMT",
+        "tooltip": "",
+        "group": "4e33cabd64714466",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "GMT",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 930,
+        "y": 1180,
+        "wires": [
+            []
         ]
     }
 ]
