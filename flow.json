@@ -2296,16 +2296,24 @@
                 "t": "eq",
                 "v": "SetAccessMode-Ack",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "SetDateTime",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 2,
+        "outputs": 3,
         "x": 410,
         "y": 360,
         "wires": [
             [
                 "160ef0c3c55613af"
+            ],
+            [
+                "95c8a2503541cab9"
             ],
             [
                 "95c8a2503541cab9"
