@@ -3239,7 +3239,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    #companyId {\n        font-size: 25px;\n        display: flex;\n        margin-left: 5px;\n    }\n</style>\n\n<div id=\"companyId\">\n    <div>Company ID: {{msg.payload.companyId}}</div>\n    <div>Account ID:  {{msg.payload.accoubtId}}</div>\n    <div>Device ID:  {{msg.payload.deviceId}}</div>\n</div>",
+        "format": "<style>\n    #companyId {\n        font-size: 25px;\n        display: flex;\n        margin-left: 5px;\n    }\n\n    #companyId div {\n        margin-left: 5px;\n    }\n\n</style>\n\n<div id=\"companyId\">\n    <div>Company ID: {{msg.payload.companyId}}</div>\n    <div>Account ID:  {{msg.payload.accoubtId}}</div>\n    <div>Device ID:  {{msg.payload.deviceId}}</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
