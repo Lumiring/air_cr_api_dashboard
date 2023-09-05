@@ -2908,7 +2908,7 @@
         "order": 2,
         "width": 10,
         "height": 1,
-        "name": "Set Ctp Door",
+        "name": "Set DateTime",
         "label": "Set DateTime",
         "format": "{{msg.payload}}",
         "layout": "row-center",
@@ -2917,8 +2917,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 930,
-        "y": 1140,
+        "x": 940,
+        "y": 1200,
         "wires": []
     },
     {
@@ -2974,27 +2974,66 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1190,
-        "y": 1480,
+        "x": 1170,
+        "y": 1420,
         "wires": [
-            []
+            [
+                "c0dc0386461d30bd"
+            ]
         ]
     },
     {
         "id": "f302fdd67db34f28",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "function 1",
-        "func": "\nreturn msg;",
+        "name": "setDT",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nlet dTSet = global.get('dTSet') || {};\n\ndTSet = Object.assign(dTSet, { [msg.topic]: msg.payload })\n\nglobal.set('dTSet', dTSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 1300,
+        "x": 1130,
+        "y": 1320,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "c0dc0386461d30bd",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "sendMqttMessage",
+        "func": "msg.payload = global.get('dTSet');\nlet userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetDateTime\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('dTSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 1500,
+        "wires": [
+            [
+                "303f207717b36b47"
+            ]
+        ]
+    },
+    {
+        "id": "303f207717b36b47",
+        "type": "mqtt out",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "79737e067a3af084",
+        "x": 1230,
+        "y": 1580,
+        "wires": []
     }
 ]
