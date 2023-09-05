@@ -3239,7 +3239,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    #companyId {\n        font-size: 20px;\n    }\n</style>\n\n<div id=\"companyId\">{{msg.payload}}</div>",
+        "format": "<style>\n    #companyId {\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"companyId\">{{msg.payload}}</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
