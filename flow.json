@@ -465,8 +465,8 @@
         "name": "Header",
         "tab": "b76cefdaf9bc6c8b",
         "order": 2,
-        "disp": false,
-        "width": 26,
+        "disp": true,
+        "width": "26",
         "collapse": false,
         "className": ""
     },
