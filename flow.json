@@ -2715,5 +2715,109 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "c4a23bd25a45be18",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "NTP1",
+        "label": "NTP1",
+        "tooltip": "",
+        "group": "4e33cabd64714466",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "NTP1",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 930,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96c4823bbbbc410f",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "NTP2",
+        "label": "NTP2",
+        "tooltip": "",
+        "group": "4e33cabd64714466",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "NTP2",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 930,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "06543f094dc2c8fb",
+        "type": "ui_switch",
+        "z": "692c798b6f9c61de",
+        "name": "DST_GMT",
+        "label": "DST_GMT",
+        "tooltip": "",
+        "group": "4e33cabd64714466",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "DST_GMT",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 950,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9c6eab7406e724e",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "DST_Shift",
+        "label": "DST_Shift",
+        "tooltip": "",
+        "group": "4e33cabd64714466",
+        "order": 5,
+        "width": "5",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "DST_Shift",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 950,
+        "y": 1460,
+        "wires": [
+            []
+        ]
     }
 ]
