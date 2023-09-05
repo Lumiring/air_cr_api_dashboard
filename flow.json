@@ -3239,7 +3239,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    #companyId {\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"companyId\">\n    <div>ваываыва {{msg.payload}}</div>\n    \n</div>",
+        "format": "<style>\n    #companyId {\n        font-size: 25px;\n        display: flex;\n        margin-left: 5px;\n    }\n</style>\n\n<div id=\"companyId\">\n    <div>Company ID: {{msg.payload.companyId}}</div>\n    <div>Account ID:  {{msg.payload.accoubtId}}</div>\n    <div>Device ID:  {{msg.payload.deviceId}}</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -3258,10 +3258,18 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "payload.companyId",
+                "v": "123123",
+                "vt": "str"
             },
             {
-                "p": "topic",
+                "p": "payload.accountId",
+                "v": "324234",
+                "vt": "str"
+            },
+            {
+                "p": "payload.deviceId",
+                "v": "423423",
                 "vt": "str"
             }
         ],
@@ -3270,9 +3278,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "sdsafsdf",
-        "payloadType": "str",
-        "x": 100,
+        "x": 90,
         "y": 100,
         "wires": [
             [
