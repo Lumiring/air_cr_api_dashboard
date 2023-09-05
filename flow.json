@@ -3084,6 +3084,11 @@
                 "label": "Kyiv",
                 "value": "EET-2EEST,M3.5.0/3,M10.5.0/4",
                 "type": "str"
+            },
+            {
+                "label": "Odessa",
+                "value": "EET-2EEST,M3.5.0/3,M10.5.0/1",
+                "type": "str"
             }
         ],
         "payload": "",
