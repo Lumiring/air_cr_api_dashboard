@@ -1216,7 +1216,7 @@
         "z": "692c798b6f9c61de",
         "g": "d161c1f6a3c909b8",
         "name": "setUserCreds",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nlet tempUserCreds = global.get('tempUserCreds') || {};\n\ntempUserCreds = Object.assign(tempUserCreds, { [msg.topic]: msg.payload })\nglobal.set('tempUserCreds', tempUserCreds)\n\nmsg.payload = tempUserCreds\n\nreturn msg",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nlet tempUserCreds = global.get('tempUserCreds') || {};\n\ntempUserCreds = Object.assign(tempUserCreds, { [msg.topic]: msg.payload })\nglobal.set('tempUserCreds', tempUserCreds)\n\n\nreturn tempUserCreds",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3251,7 +3251,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 560,
+        "x": 580,
         "y": 460,
         "wires": [
             []
@@ -3270,8 +3270,35 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
+        "x": 580,
         "y": 400,
         "wires": []
+    },
+    {
+        "id": "5f326dbc73ad26ae",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 160,
+        "wires": [
+            []
+        ]
     }
 ]
