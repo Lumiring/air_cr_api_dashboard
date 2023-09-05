@@ -2670,30 +2670,5 @@
                 "8ceb1c5b5fb6e7d7"
             ]
         ]
-    },
-    {
-        "id": "b0f2eced891ba74b",
-        "type": "ui_ui-button",
-        "z": "692c798b6f9c61de",
-        "action": "click",
-        "actionType": "str",
-        "name": "Mqtt Settings",
-        "group": "fc491a4cada0492f",
-        "order": 10,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "Mqtt Settings",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "x": 610,
-        "y": 200,
-        "wires": [
-            [
-                "f35f7ebd59ad5459"
-            ]
-        ]
     }
 ]
