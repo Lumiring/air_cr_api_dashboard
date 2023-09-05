@@ -170,7 +170,8 @@
             "32d53427bced070c",
             "4c30f9b315530f2a",
             "160ef0c3c55613af",
-            "95c8a2503541cab9"
+            "95c8a2503541cab9",
+            "6ad93d3e94e2fe69"
         ],
         "x": 14,
         "y": 359,
@@ -471,7 +472,7 @@
         "className": ""
     },
     {
-        "id": "085baf9af49aa8bb",
+        "id": "8e59edc8029f8f5c",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -481,7 +482,7 @@
         "height": 1
     },
     {
-        "id": "18e0c10790ddfa39",
+        "id": "87bed16750703f07",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -491,7 +492,7 @@
         "height": 1
     },
     {
-        "id": "4d586cb3a633c875",
+        "id": "bed811a53c685143",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -501,7 +502,7 @@
         "height": 1
     },
     {
-        "id": "e60ee085026bcc83",
+        "id": "aeed80ef93534e5c",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -511,7 +512,7 @@
         "height": 1
     },
     {
-        "id": "aba9a96a614d7194",
+        "id": "1ac083d88a23f716",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -521,7 +522,7 @@
         "height": 1
     },
     {
-        "id": "f484c06991554572",
+        "id": "544a0e43fc05f36c",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -531,7 +532,7 @@
         "height": 1
     },
     {
-        "id": "9698977371a6455c",
+        "id": "18c49d0de7413e24",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -541,7 +542,7 @@
         "height": 1
     },
     {
-        "id": "3ea64a45677cb8ce",
+        "id": "300588b890884417",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -551,7 +552,7 @@
         "height": 1
     },
     {
-        "id": "c460c1e1812383a7",
+        "id": "a6823ce3472d2632",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -561,7 +562,7 @@
         "height": 1
     },
     {
-        "id": "d1cb12d170ce0e55",
+        "id": "682a7f8be50ac2ad",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -571,7 +572,7 @@
         "height": 1
     },
     {
-        "id": "25510fcf69b86ae6",
+        "id": "9799d25524150859",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -581,7 +582,7 @@
         "height": 1
     },
     {
-        "id": "77c737505df517ad",
+        "id": "4ac6ce27231c9276",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -591,7 +592,7 @@
         "height": 1
     },
     {
-        "id": "9a0bed1b52f227cd",
+        "id": "2e9d1b50e7bd95ff",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -601,7 +602,7 @@
         "height": 1
     },
     {
-        "id": "2b97a0dd93f34776",
+        "id": "9e8a4c960b9495aa",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -611,7 +612,7 @@
         "height": 1
     },
     {
-        "id": "5d98b73f3d8ce641",
+        "id": "8afac7cfbf9fde9f",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -621,7 +622,7 @@
         "height": 1
     },
     {
-        "id": "a62b09f2ebd145b9",
+        "id": "a02adbca90db87ef",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -631,7 +632,7 @@
         "height": 1
     },
     {
-        "id": "8338e729d1097f3b",
+        "id": "5e675fc0e8975b9e",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -641,7 +642,7 @@
         "height": 1
     },
     {
-        "id": "86a8cd7312ac985d",
+        "id": "7211978795c16823",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -651,7 +652,7 @@
         "height": 1
     },
     {
-        "id": "eb2db469cb4b01f9",
+        "id": "78186d74a02d956e",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -661,7 +662,7 @@
         "height": 1
     },
     {
-        "id": "7a8a588bb2e6c02e",
+        "id": "dbdb33a95a3c090a",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -671,7 +672,7 @@
         "height": 1
     },
     {
-        "id": "5944f27aa97c68f0",
+        "id": "b2c3c36abc472767",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -681,7 +682,7 @@
         "height": 1
     },
     {
-        "id": "3af1abb7e366ad86",
+        "id": "6a7dff6460a50781",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -691,7 +692,7 @@
         "height": 1
     },
     {
-        "id": "178a82e2fda13b53",
+        "id": "82c5885e860b0f65",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -701,7 +702,7 @@
         "height": 1
     },
     {
-        "id": "e005ace5c7931210",
+        "id": "af3aa4ef87eb28c2",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -711,7 +712,7 @@
         "height": 1
     },
     {
-        "id": "832fa40649aa9312",
+        "id": "9dd0091406651a0d",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -721,7 +722,7 @@
         "height": 1
     },
     {
-        "id": "7d6c66847345629e",
+        "id": "40029f4007a7b9df",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -731,7 +732,7 @@
         "height": 1
     },
     {
-        "id": "178c044722897d5f",
+        "id": "87eb783a354d0af7",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -741,7 +742,7 @@
         "height": 1
     },
     {
-        "id": "949dca615031b2f4",
+        "id": "90d6cd130927c571",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -751,7 +752,7 @@
         "height": 1
     },
     {
-        "id": "b41e5288f6a0683b",
+        "id": "39446645945b70b7",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -761,7 +762,7 @@
         "height": 1
     },
     {
-        "id": "4c15675775d47ecf",
+        "id": "b343252b77d0c3c2",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -771,7 +772,7 @@
         "height": 1
     },
     {
-        "id": "e213b1c6d8c2073f",
+        "id": "5d10d99c51ef6151",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -781,7 +782,7 @@
         "height": 1
     },
     {
-        "id": "0c1ad0ce75079d61",
+        "id": "527e90614b6ad32d",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -791,7 +792,7 @@
         "height": 1
     },
     {
-        "id": "17d5ecdf3eb9026e",
+        "id": "d642b2d28bf61a8e",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -801,7 +802,7 @@
         "height": 1
     },
     {
-        "id": "8e6b85c45c5eef08",
+        "id": "907d1bbfecfc1439",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -811,7 +812,7 @@
         "height": 1
     },
     {
-        "id": "9d81738974c4f337",
+        "id": "4458d33d9ba1e36d",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -821,7 +822,7 @@
         "height": 1
     },
     {
-        "id": "4282d4cd12a66ce8",
+        "id": "a65935a74565731a",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -831,7 +832,7 @@
         "height": 1
     },
     {
-        "id": "1c65f558a4856b7c",
+        "id": "c67605d5fdb3248f",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -841,7 +842,7 @@
         "height": 1
     },
     {
-        "id": "f1812d4a2dfb9b53",
+        "id": "77e9ba8b8f3349d1",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -851,7 +852,7 @@
         "height": 1
     },
     {
-        "id": "7d836d2471dd53b8",
+        "id": "b7d83da8f7317c8f",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -861,7 +862,7 @@
         "height": 1
     },
     {
-        "id": "f05ec6db8b575a25",
+        "id": "c53ffe0cc0fdd007",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -871,7 +872,7 @@
         "height": 1
     },
     {
-        "id": "8f5f51169178cc6d",
+        "id": "70d4e8c3362dc12b",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -881,7 +882,7 @@
         "height": 1
     },
     {
-        "id": "c755663ab81d8ca8",
+        "id": "dcdf7ea618990fc0",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -1163,7 +1164,7 @@
         "label": "Account ID",
         "tooltip": "",
         "group": "fc491a4cada0492f",
-        "order": 3,
+        "order": 1,
         "width": 3,
         "height": 1,
         "passthru": true,
@@ -1190,7 +1191,7 @@
         "label": "Company ID",
         "tooltip": "",
         "group": "fc491a4cada0492f",
-        "order": 1,
+        "order": 3,
         "width": 3,
         "height": 1,
         "passthru": true,
@@ -1223,7 +1224,9 @@
         "x": 380,
         "y": 460,
         "wires": [
-            []
+            [
+                "6ad93d3e94e2fe69"
+            ]
         ]
     },
     {
@@ -1231,8 +1234,8 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "g": "d161c1f6a3c909b8",
-        "name": "Control point ID",
-        "label": "Control point ID",
+        "name": "Device ID",
+        "label": "Device ID",
         "tooltip": "",
         "group": "fc491a4cada0492f",
         "order": 5,
@@ -1241,11 +1244,11 @@
         "passthru": true,
         "mode": "text",
         "delay": 300,
-        "topic": "cpid",
+        "topic": "deviceId",
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 120,
+        "x": 100,
         "y": 480,
         "wires": [
             [
@@ -1316,7 +1319,7 @@
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
         "name": "sendMqttMessage",
-        "func": "msg.payload = global.get('stpDoorSet');\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
+        "func": "msg.payload = global.get('stpDoorSet');\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2055,7 +2058,7 @@
         "z": "692c798b6f9c61de",
         "g": "673990432da8bf57",
         "name": "sendMqttMessage",
-        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\nlet control_cpIdx = global.get('control_cpIdx');\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetAccessMode\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\n\nmsgWrapper.info = {}\nmsgWrapper.info.Control_point_idx = control_cpIdx\nmsgWrapper.info.Access_mode = msg.payload\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\nlet control_cpIdx = global.get('control_cpIdx');\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetAccessMode\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\n\nmsgWrapper.info = {}\nmsgWrapper.info.Control_point_idx = control_cpIdx\nmsgWrapper.info.Access_mode = msg.payload\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2720,7 +2723,7 @@
         "z": "692c798b6f9c61de",
         "g": "b2257f44a2c51e87",
         "name": "sendMqttMessage",
-        "func": "msg.payload = global.get('rdSet');\nlet userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rdSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "func": "msg.payload = global.get('rdSet');\nlet userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rdSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2884,7 +2887,7 @@
         "z": "692c798b6f9c61de",
         "g": "673990432da8bf57",
         "name": "sendMqttMessage",
-        "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\nlet control_cpIdx = global.get('control_cpIdx');\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"Single_pass\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\n\nmsgWrapper.info = {}\nmsgWrapper.info.Control_point_idx = control_cpIdx\nmsgWrapper.info.Direction = msg.payload\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\nlet control_cpIdx = global.get('control_cpIdx');\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"Single_pass\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\n\nmsgWrapper.info = {}\nmsgWrapper.info.Control_point_idx = control_cpIdx\nmsgWrapper.info.Direction = msg.payload\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3155,7 +3158,7 @@
         "z": "692c798b6f9c61de",
         "g": "56e641507ed69741",
         "name": "sendMqttMessage",
-        "func": "msg.payload = global.get('dTSet');\nlet userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.cpid + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetDateTime\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('dTSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "func": "msg.payload = global.get('dTSet');\nlet userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetDateTime\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('dTSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3234,56 +3237,22 @@
         "id": "6ad93d3e94e2fe69",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
+        "g": "d161c1f6a3c909b8",
         "group": "61a80ff8ccd60942",
         "name": "",
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    #companyId {\n        font-size: 25px;\n        display: flex;\n        margin-left: 5px;\n    }\n\n    #companyId div {\n        margin-left: 20px;\n    }\n\n</style>\n\n<div id=\"companyId\">\n    <div>Company ID: {{msg.payload.companyId}}</div>\n    <div>Account ID:  {{msg.payload.accountId}}</div>\n    <div>Device ID:  {{msg.payload.deviceId}}</div>\n</div>",
+        "format": "<style>\n    #userCreds {\n        font-size: 25px;\n        display: flex;\n        margin-left: 5px;\n    }\n\n    #userCreds div {\n        margin-left: 20px;\n    }\n\n</style>\n\n<div id=\"userCreds\">\n    <div>Account ID: {{msg.payload.aid}}</div>\n    <div>Company ID: {{msg.payload.cid}}</div>\n    <div>Device ID:  {{msg.payload.deviceId}}</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 280,
-        "y": 100,
+        "x": 560,
+        "y": 460,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "05962080f11ff1ae",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload.companyId",
-                "v": "123123",
-                "vt": "str"
-            },
-            {
-                "p": "payload.accountId",
-                "v": "324234",
-                "vt": "str"
-            },
-            {
-                "p": "payload.deviceId",
-                "v": "423423",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 90,
-        "y": 100,
-        "wires": [
-            [
-                "6ad93d3e94e2fe69"
-            ]
         ]
     }
 ]
