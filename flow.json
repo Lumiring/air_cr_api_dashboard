@@ -2677,7 +2677,7 @@
         "type": "ui_date_picker",
         "z": "692c798b6f9c61de",
         "name": "Date",
-        "label": "Date",
+        "label": "",
         "group": "4e33cabd64714466",
         "order": 1,
         "width": "5",
