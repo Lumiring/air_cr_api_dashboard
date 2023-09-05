@@ -1215,7 +1215,7 @@
         "z": "692c798b6f9c61de",
         "g": "d161c1f6a3c909b8",
         "name": "setUserCreds",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nlet tempUserCreds = global.get('tempUserCreds') || {};\n\ntempUserCreds = Object.assign(tempUserCreds, { [msg.topic]: msg.payload })\n\nglobal.set('tempUserCreds', tempUserCreds)\n\n",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nlet tempUserCreds = global.get('tempUserCreds') || {};\n\ntempUserCreds = Object.assign(tempUserCreds, { [msg.topic]: msg.payload })\n\nglobal.set('tempUserCreds', tempUserCreds)\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
