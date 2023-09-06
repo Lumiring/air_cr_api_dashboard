@@ -3379,7 +3379,7 @@
         "order": 3,
         "width": 12,
         "height": 1,
-        "format": "<style>\n    #setDoorHeader{\n        text-align: center;\n        color: #0094CE;\n        font-size: 30px;\n    }\n</style>\n\n\n<div id=\"setDoorHeader\">\n    Door settings\n</div>",
+        "format": "<style>\n    #setDoorHeader{\n        text-align: center;\n        color: #0094CE;\n        font-size: 30px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"setDoorHeader\">\n    Door settings\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
