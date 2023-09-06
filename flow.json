@@ -171,8 +171,7 @@
             "4c30f9b315530f2a",
             "160ef0c3c55613af",
             "95c8a2503541cab9",
-            "6ad93d3e94e2fe69",
-            "83249914468bdb14"
+            "6ad93d3e94e2fe69"
         ],
         "x": 14,
         "y": 239,
@@ -2180,8 +2179,7 @@
                 "6ad93d3e94e2fe69"
             ],
             [
-                "9e5fe1c3fe6f0503",
-                "83249914468bdb14"
+                "9e5fe1c3fe6f0503"
             ]
         ]
     },
@@ -3086,7 +3084,7 @@
         "multiple": false,
         "options": [
             {
-                "label": "Kyiv",
+                "label": "(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius, Jerusalem, Kaliningrad, Tripoli",
                 "value": "EET-2EEST,M3.5.0/3,M10.5.0/4",
                 "type": "str"
             },
@@ -3257,22 +3255,5 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "83249914468bdb14",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 460,
-        "wires": []
     }
 ]
