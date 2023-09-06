@@ -47,7 +47,7 @@
             "21734bc456624e52"
         ],
         "x": 14,
-        "y": 739,
+        "y": 1119,
         "w": 692,
         "h": 742
     },
@@ -80,7 +80,7 @@
             "f9540f44c6078c17"
         ],
         "x": 734,
-        "y": 739,
+        "y": 1119,
         "w": 652,
         "h": 522
     },
@@ -111,7 +111,7 @@
             "a61c2ed9c4cf49f7"
         ],
         "x": 734,
-        "y": 1319,
+        "y": 1699,
         "w": 532,
         "h": 462
     },
@@ -141,7 +141,7 @@
             "dfbd635c1022b71c"
         ],
         "x": 14,
-        "y": 1539,
+        "y": 1919,
         "w": 632,
         "h": 402
     },
@@ -196,12 +196,13 @@
             "ec7459b197b9c702",
             "cc2c84ed43d311b3",
             "6d7ac608b771c09f",
-            "dba127a888a49b39"
+            "dba127a888a49b39",
+            "bcb697e124c3a95e"
         ],
         "x": 974,
         "y": 359,
         "w": 672,
-        "h": 202
+        "h": 282
     },
     {
         "id": "79737e067a3af084",
@@ -1219,8 +1220,8 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
-        "name": "Rd0_dir",
-        "label": "Rd0_dir",
+        "name": "Direction (Rd0_dir)",
+        "label": "Direction (Rd0_dir)",
         "tooltip": "",
         "place": "",
         "group": "91a9ce4bbf4bb377",
@@ -1245,8 +1246,8 @@
         "topic": "Rd0_dir",
         "topicType": "str",
         "className": "",
-        "x": 220,
-        "y": 880,
+        "x": 250,
+        "y": 1260,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1266,7 +1267,7 @@
         "finalize": "",
         "libs": [],
         "x": 610,
-        "y": 1120,
+        "y": 1500,
         "wires": [
             []
         ]
@@ -1284,7 +1285,7 @@
         "finalize": "",
         "libs": [],
         "x": 590,
-        "y": 1280,
+        "y": 1660,
         "wires": [
             [
                 "8c8a2053b1a0ceea"
@@ -1328,7 +1329,7 @@
         "topicType": "str",
         "className": "",
         "x": 180,
-        "y": 1040,
+        "y": 1420,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1355,7 +1356,7 @@
         "className": "",
         "topicType": "str",
         "x": 160,
-        "y": 920,
+        "y": 1300,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1382,7 +1383,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 960,
+        "y": 1340,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1409,7 +1410,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 1000,
+        "y": 1380,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1436,7 +1437,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 1080,
+        "y": 1460,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1463,7 +1464,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 1120,
+        "y": 1500,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1502,7 +1503,7 @@
         "topicType": "str",
         "className": "",
         "x": 190,
-        "y": 1160,
+        "y": 1540,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1541,7 +1542,7 @@
         "topicType": "str",
         "className": "",
         "x": 200,
-        "y": 1200,
+        "y": 1580,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1568,7 +1569,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 1240,
+        "y": 1620,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1595,7 +1596,7 @@
         "className": "",
         "topicType": "str",
         "x": 210,
-        "y": 1280,
+        "y": 1660,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1630,7 +1631,7 @@
         "animate": false,
         "className": "",
         "x": 180,
-        "y": 1320,
+        "y": 1700,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1657,7 +1658,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 1360,
+        "y": 1740,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1684,7 +1685,7 @@
         "className": "",
         "topicType": "str",
         "x": 200,
-        "y": 1400,
+        "y": 1780,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1728,7 +1729,7 @@
         "topicType": "str",
         "className": "",
         "x": 180,
-        "y": 1440,
+        "y": 1820,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1757,7 +1758,7 @@
         "topic": "",
         "topicType": "str",
         "x": 600,
-        "y": 1200,
+        "y": 1580,
         "wires": [
             [
                 "36afbbbff6d2c65b"
@@ -1784,7 +1785,7 @@
         "className": "",
         "topicType": "str",
         "x": 220,
-        "y": 840,
+        "y": 1220,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1807,7 +1808,7 @@
         "expiry": "",
         "broker": "11f61d797ff1ae20",
         "x": 610,
-        "y": 1340,
+        "y": 1720,
         "wires": []
     },
     {
@@ -1845,7 +1846,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 1150,
-        "y": 520,
+        "y": 600,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1874,7 +1875,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 1120,
-        "y": 480,
+        "y": 560,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1923,7 +1924,7 @@
         "topic": "",
         "topicType": "str",
         "x": 120,
-        "y": 1640,
+        "y": 2020,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1952,7 +1953,7 @@
         "topic": "",
         "topicType": "str",
         "x": 100,
-        "y": 1700,
+        "y": 2080,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1981,7 +1982,7 @@
         "topic": "",
         "topicType": "str",
         "x": 110,
-        "y": 1760,
+        "y": 2140,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -2001,7 +2002,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 1700,
+        "y": 2080,
         "wires": [
             [
                 "8ceb1c5b5fb6e7d7"
@@ -2024,7 +2025,7 @@
         "expiry": "",
         "broker": "11f61d797ff1ae20",
         "x": 570,
-        "y": 1760,
+        "y": 2140,
         "wires": []
     },
     {
@@ -2313,7 +2314,7 @@
         "className": "",
         "topicType": "str",
         "x": 940,
-        "y": 820,
+        "y": 1200,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -2340,7 +2341,7 @@
         "className": "",
         "topicType": "str",
         "x": 880,
-        "y": 860,
+        "y": 1240,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -2394,7 +2395,7 @@
         "topicType": "str",
         "className": "",
         "x": 940,
-        "y": 900,
+        "y": 1280,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -2433,7 +2434,7 @@
         "topicType": "str",
         "className": "",
         "x": 930,
-        "y": 940,
+        "y": 1320,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -2472,7 +2473,7 @@
         "topicType": "str",
         "className": "",
         "x": 920,
-        "y": 980,
+        "y": 1360,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -2511,7 +2512,7 @@
         "topicType": "str",
         "className": "",
         "x": 940,
-        "y": 1020,
+        "y": 1400,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -2575,7 +2576,7 @@
         "topicType": "str",
         "className": "",
         "x": 930,
-        "y": 1060,
+        "y": 1440,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -2602,7 +2603,7 @@
         "className": "",
         "topicType": "str",
         "x": 930,
-        "y": 1100,
+        "y": 1480,
         "wires": [
             [
                 "f7673a2b0876c467"
@@ -2622,7 +2623,7 @@
         "finalize": "",
         "libs": [],
         "x": 1310,
-        "y": 1000,
+        "y": 1380,
         "wires": [
             []
         ]
@@ -2649,7 +2650,7 @@
         "topic": "",
         "topicType": "str",
         "x": 1150,
-        "y": 1100,
+        "y": 1480,
         "wires": [
             [
                 "74d7e54cc946196e"
@@ -2669,7 +2670,7 @@
         "finalize": "",
         "libs": [],
         "x": 1170,
-        "y": 1160,
+        "y": 1540,
         "wires": [
             [
                 "410d950420bd3341"
@@ -2692,7 +2693,7 @@
         "expiry": "",
         "broker": "11f61d797ff1ae20",
         "x": 1170,
-        "y": 1220,
+        "y": 1600,
         "wires": []
     },
     {
@@ -2715,7 +2716,7 @@
         "className": "",
         "topicType": "str",
         "x": 130,
-        "y": 1580,
+        "y": 1960,
         "wires": [
             [
                 "1cbac974e1dbb470"
@@ -2735,7 +2736,7 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 1580,
+        "y": 1960,
         "wires": [
             []
         ]
@@ -2762,7 +2763,7 @@
         "topic": "",
         "topicType": "str",
         "x": 110,
-        "y": 1840,
+        "y": 2220,
         "wires": [
             [
                 "dfbd635c1022b71c"
@@ -2791,7 +2792,7 @@
         "topic": "",
         "topicType": "str",
         "x": 110,
-        "y": 1900,
+        "y": 2280,
         "wires": [
             [
                 "dfbd635c1022b71c"
@@ -2811,7 +2812,7 @@
         "finalize": "",
         "libs": [],
         "x": 350,
-        "y": 1840,
+        "y": 2220,
         "wires": [
             [
                 "8ceb1c5b5fb6e7d7"
@@ -2838,7 +2839,7 @@
         "className": "",
         "topicType": "str",
         "x": 850,
-        "y": 1400,
+        "y": 1780,
         "wires": [
             [
                 "f302fdd67db34f28"
@@ -2865,7 +2866,7 @@
         "className": "",
         "topicType": "str",
         "x": 850,
-        "y": 1440,
+        "y": 1820,
         "wires": [
             [
                 "f302fdd67db34f28"
@@ -2892,7 +2893,7 @@
         "className": "",
         "topicType": "str",
         "x": 850,
-        "y": 1480,
+        "y": 1860,
         "wires": [
             [
                 "f302fdd67db34f28"
@@ -2927,7 +2928,7 @@
         "animate": false,
         "className": "",
         "x": 830,
-        "y": 1560,
+        "y": 1940,
         "wires": [
             [
                 "f302fdd67db34f28"
@@ -2954,7 +2955,7 @@
         "className": "",
         "topicType": "str",
         "x": 830,
-        "y": 1600,
+        "y": 1980,
         "wires": [
             [
                 "f302fdd67db34f28"
@@ -3128,7 +3129,7 @@
         "topicType": "str",
         "className": "",
         "x": 850,
-        "y": 1520,
+        "y": 1900,
         "wires": [
             [
                 "f302fdd67db34f28"
@@ -3157,7 +3158,7 @@
         "topic": "",
         "topicType": "str",
         "x": 1110,
-        "y": 1580,
+        "y": 1960,
         "wires": [
             [
                 "c0dc0386461d30bd"
@@ -3177,7 +3178,7 @@
         "finalize": "",
         "libs": [],
         "x": 1070,
-        "y": 1480,
+        "y": 1860,
         "wires": [
             []
         ]
@@ -3195,7 +3196,7 @@
         "finalize": "",
         "libs": [],
         "x": 1150,
-        "y": 1660,
+        "y": 2040,
         "wires": [
             [
                 "303f207717b36b47"
@@ -3218,7 +3219,7 @@
         "expiry": "",
         "broker": "11f61d797ff1ae20",
         "x": 1170,
-        "y": 1740,
+        "y": 2120,
         "wires": []
     },
     {
@@ -3302,7 +3303,7 @@
         "templateScope": "local",
         "className": "",
         "x": 230,
-        "y": 780,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -3324,7 +3325,7 @@
         "templateScope": "local",
         "className": "",
         "x": 960,
-        "y": 780,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -3346,9 +3347,38 @@
         "templateScope": "local",
         "className": "",
         "x": 870,
-        "y": 1360,
+        "y": 1740,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "bcb697e124c3a95e",
+        "type": "ui_button",
+        "z": "692c798b6f9c61de",
+        "g": "f43b51b8dd2762ef",
+        "name": "Connection options",
+        "group": "fc491a4cada0492f",
+        "order": 24,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Connection options",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_Reader\",\"AIR-CR_DateTime\"],\"show\":[\"AIR-CR_Control\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1090,
+        "y": 520,
+        "wires": [
+            [
+                "f35f7ebd59ad5459"
+            ]
         ]
     }
 ]
