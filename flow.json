@@ -110,9 +110,9 @@
             "303f207717b36b47",
             "a61c2ed9c4cf49f7"
         ],
-        "x": 994,
+        "x": 974,
         "y": 1699,
-        "w": 532,
+        "w": 552,
         "h": 462
     },
     {
@@ -2978,8 +2978,8 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "56e641507ed69741",
-        "name": "tz",
-        "label": "tz",
+        "name": "Timezone (tz)",
+        "label": "Timezone (tz)",
         "tooltip": "",
         "place": "Select option",
         "group": "4e33cabd64714466",
@@ -3139,7 +3139,7 @@
         "topic": "tz",
         "topicType": "str",
         "className": "",
-        "x": 1110,
+        "x": 1080,
         "y": 1900,
         "wires": [
             [
