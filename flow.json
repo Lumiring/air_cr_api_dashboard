@@ -3084,13 +3084,123 @@
         "multiple": false,
         "options": [
             {
+                "label": "(UTC-12:00) International Date Line West",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-11:00) Coordinated Universal Time-11",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-10:00) Aleutian Islands, Hawaii",
+                "value": "3",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-09:30) Marquesas Islands",
+                "value": "4",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-09:00) Alaska",
+                "value": "5",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-08:00) Pacific Time (US & Canada)",
+                "value": "6",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-07:00) Chihuahua, La Paz, Mazatlan, Arizona",
+                "value": "7",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-06:00) Guadalajara, Mexico City, Monterrey, Saskatchewan, Easter Island",
+                "value": "8",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-05:00) Bogota, Lima, Quito, Rio Branco, Chetumal, Haiti, Havana",
+                "value": "9",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-04:00) Georgetown, La Paz, Manaus, San Juan",
+                "value": "12",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-03:30) Newfoundland",
+                "value": "13",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-03:00) Araguaina, Brasilia, Cayenne, Fortaleza, Salvador",
+                "value": "14",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-02:00) Mid-Atlantic - Old",
+                "value": "15",
+                "type": "str"
+            },
+            {
+                "label": "(UTC-01:00) Azores",
+                "value": "16",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+00:00) Dublin, Edinburgh, Lisbon, London",
+                "value": "17",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+01:00) Amsterdam, Berlin, Budapest, Ljubljana, Prague, Brussels, Copenhagen, Madrid, Paris",
+                "value": "18",
+                "type": "str"
+            },
+            {
                 "label": "(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius, Jerusalem, Kaliningrad, Tripoli",
                 "value": "EET-2EEST,M3.5.0/3,M10.5.0/4",
                 "type": "str"
             },
             {
-                "label": "Rome",
-                "value": "CET-1CEST,M3.5.0,M10.5.0/3",
+                "label": "(UTC+03:00) Kuwait, Riyadh, Baghdad, Istanbul, Minsk, Moscow, St. Petersburg, Volgograd",
+                "value": "77",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+03:30) Tehran",
+                "value": "22",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+04:00) Abu Dhabi, Muscat, Astrakhan, Ulyanovsk, Baku, Izhevsk, Samara",
+                "value": "23",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+04:30) Kabul",
+                "value": "25",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+05:00) Ashgabat, Tashkent, Ekaterinburg, Islamabad, Karachi",
+                "value": "26",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi",
+                "value": "33",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+05:45) Kathmandu",
+                "value": "35",
                 "type": "str"
             }
         ],
