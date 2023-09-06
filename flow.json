@@ -46,9 +46,9 @@
             "8c8a2053b1a0ceea",
             "21734bc456624e52"
         ],
-        "x": 14,
+        "x": -6,
         "y": 1119,
-        "w": 752,
+        "w": 772,
         "h": 742
     },
     {
@@ -1565,8 +1565,8 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
-        "name": "Door_Lock_puls",
-        "label": "Door_Lock_puls",
+        "name": "Impulse duration (sec) (Door_Lock_puls)",
+        "label": "Impulse duration (sec) (Door_Lock_puls)",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
         "order": 12,
@@ -1579,7 +1579,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 260,
+        "x": 180,
         "y": 1620,
         "wires": [
             [
@@ -1592,8 +1592,8 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
-        "name": "Door_Delay",
-        "label": "Door_Delay",
+        "name": "Hold duration (sec) Door_Delay",
+        "label": "Hold duration (sec) Door_Delay",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
         "order": 11,
@@ -1606,7 +1606,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 270,
+        "x": 210,
         "y": 1660,
         "wires": [
             [
@@ -1708,10 +1708,10 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
-        "name": "Button_rex_Condition",
-        "label": "Button_rex_Condition",
+        "name": "Button condition (Button_rex_Condition)",
+        "label": "Button condition (Button_rex_Condition)",
         "tooltip": "",
-        "place": "Select option",
+        "place": "Select button condition",
         "group": "91a9ce4bbf4bb377",
         "order": 14,
         "width": 10,
@@ -1739,7 +1739,7 @@
         "topic": "Button_rex_Condition",
         "topicType": "str",
         "className": "",
-        "x": 240,
+        "x": 180,
         "y": 1820,
         "wires": [
             [
@@ -3313,7 +3313,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 290,
+        "x": 270,
         "y": 1160,
         "wires": [
             []
