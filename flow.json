@@ -3389,7 +3389,7 @@
         "order": 5,
         "width": 12,
         "height": 1,
-        "format": "<div>\n    dxfdsfsdfsdfsdfsdf\n</div>",
+        "format": "<style>\n    #setDoorHeader{\n        font-size: 20px;\n    }\n</style>\n\n\n<div id=\"setDoorHeader\">\n    dxfdsfsdfsdfsdfsdf\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
