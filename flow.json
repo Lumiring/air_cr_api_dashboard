@@ -3085,82 +3085,72 @@
         "options": [
             {
                 "label": "(UTC-12:00) International Date Line West",
-                "value": "1",
+                "value": "<-12>12",
                 "type": "str"
             },
             {
                 "label": "(UTC-11:00) Coordinated Universal Time-11",
-                "value": "2",
+                "value": "SST11",
                 "type": "str"
             },
             {
                 "label": "(UTC-10:00) Aleutian Islands, Hawaii",
-                "value": "3",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-09:30) Marquesas Islands",
-                "value": "4",
+                "value": "HST10",
                 "type": "str"
             },
             {
                 "label": "(UTC-09:00) Alaska",
-                "value": "5",
+                "value": "<-09>9",
                 "type": "str"
             },
             {
                 "label": "(UTC-08:00) Pacific Time (US & Canada)",
-                "value": "6",
+                "value": "PST8PDT,M3.2.0,M11.1.0",
                 "type": "str"
             },
             {
                 "label": "(UTC-07:00) Chihuahua, La Paz, Mazatlan, Arizona",
-                "value": "7",
+                "value": "MST7MDT,M4.1.0,M10.5.0",
                 "type": "str"
             },
             {
                 "label": "(UTC-06:00) Guadalajara, Mexico City, Monterrey, Saskatchewan, Easter Island",
-                "value": "8",
+                "value": "CST6CDT,M4.1.0,M10.5.0",
                 "type": "str"
             },
             {
                 "label": "(UTC-05:00) Bogota, Lima, Quito, Rio Branco, Chetumal, Haiti, Havana",
-                "value": "9",
+                "value": "<-05>5",
                 "type": "str"
             },
             {
                 "label": "(UTC-04:00) Georgetown, La Paz, Manaus, San Juan",
-                "value": "12",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-03:30) Newfoundland",
-                "value": "13",
+                "value": "<-04>4",
                 "type": "str"
             },
             {
                 "label": "(UTC-03:00) Araguaina, Brasilia, Cayenne, Fortaleza, Salvador",
-                "value": "14",
+                "value": "<-03>3",
                 "type": "str"
             },
             {
                 "label": "(UTC-02:00) Mid-Atlantic - Old",
-                "value": "15",
+                "value": "<-02>2",
                 "type": "str"
             },
             {
                 "label": "(UTC-01:00) Azores",
-                "value": "16",
+                "value": "<-01>1<+00>,M3.5.0/0,M10.5.0/1",
                 "type": "str"
             },
             {
                 "label": "(UTC+00:00) Dublin, Edinburgh, Lisbon, London",
-                "value": "17",
+                "value": "GMT0",
                 "type": "str"
             },
             {
                 "label": "(UTC+01:00) Amsterdam, Berlin, Budapest, Ljubljana, Prague, Brussels, Copenhagen, Madrid, Paris",
-                "value": "18",
+                "value": "CET-1CEST,M3.5.0,M10.5.0/3",
                 "type": "str"
             },
             {
@@ -3170,37 +3160,72 @@
             },
             {
                 "label": "(UTC+03:00) Kuwait, Riyadh, Baghdad, Istanbul, Minsk, Moscow, St. Petersburg, Volgograd",
-                "value": "77",
+                "value": "MSK-3",
                 "type": "str"
             },
             {
                 "label": "(UTC+03:30) Tehran",
-                "value": "22",
+                "value": "<+0330>-3:30<+0430>,J79/24,J263/24",
                 "type": "str"
             },
             {
                 "label": "(UTC+04:00) Abu Dhabi, Muscat, Astrakhan, Ulyanovsk, Baku, Izhevsk, Samara",
-                "value": "23",
+                "value": "<+04>-4",
                 "type": "str"
             },
             {
                 "label": "(UTC+04:30) Kabul",
-                "value": "25",
+                "value": "<+0430>-4:30",
                 "type": "str"
             },
             {
                 "label": "(UTC+05:00) Ashgabat, Tashkent, Ekaterinburg, Islamabad, Karachi",
-                "value": "26",
+                "value": "PKT-5",
                 "type": "str"
             },
             {
-                "label": "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi",
-                "value": "33",
+                "label": "(UTC+06:00) Astana, Dhaka, Omsk",
+                "value": "<+06>-6",
                 "type": "str"
             },
             {
-                "label": "(UTC+05:45) Kathmandu",
-                "value": "35",
+                "label": "(UTC+07:00) Bangkok, Hanoi, Jakarta, Barnaul, Gorno-Altaysk, Krasnoyarsk, Novosibirsk",
+                "value": "<+07>-7",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi, Irkutsk, Kuala Lumpur, Singapore",
+                "value": "HKT-8",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+09:00) Chita, Osaka, Sapporo, Tokyo, Seoul, Yakutsk",
+                "value": "JST-9",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+09:30) Adelaide, Darwin",
+                "value": "ACST-9:30",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+10:00) Brisbane, Canberra, Melbourne, Sydney, Vladivostok",
+                "value": "<+10>-10",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+11:00) Bougainville Island, Chokurdakh, Magadan, Norfolk Island, Sakhalin",
+                "value": "<+11>-11",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+12:00) Anadyr, Petropavlovsk-Kamchatsky, Auckland, Wellington",
+                "value": "NZST-12NZDT,M9.5.0,M4.1.0/3",
+                "type": "str"
+            },
+            {
+                "label": "(UTC+13:00) Nuku'alofa, Samoa",
+                "value": "<+13>-13",
                 "type": "str"
             }
         ],
