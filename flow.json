@@ -175,7 +175,7 @@
             "83249914468bdb14"
         ],
         "x": 14,
-        "y": 359,
+        "y": 239,
         "w": 832,
         "h": 362
     },
@@ -199,7 +199,7 @@
             "6d7ac608b771c09f",
             "dba127a888a49b39"
         ],
-        "x": 874,
+        "x": 974,
         "y": 359,
         "w": 672,
         "h": 202
@@ -1176,7 +1176,7 @@
         "className": "",
         "topicType": "str",
         "x": 110,
-        "y": 400,
+        "y": 280,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1203,7 +1203,7 @@
         "className": "",
         "topicType": "str",
         "x": 110,
-        "y": 440,
+        "y": 320,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1223,7 +1223,7 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 460,
+        "y": 340,
         "wires": [
             []
         ]
@@ -1248,7 +1248,7 @@
         "className": "",
         "topicType": "str",
         "x": 100,
-        "y": 480,
+        "y": 360,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1880,7 +1880,7 @@
         "g": "f43b51b8dd2762ef",
         "name": "",
         "events": "change",
-        "x": 1280,
+        "x": 1380,
         "y": 440,
         "wires": [
             []
@@ -1907,7 +1907,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1050,
+        "x": 1150,
         "y": 520,
         "wires": [
             [
@@ -1936,7 +1936,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1020,
+        "x": 1120,
         "y": 480,
         "wires": [
             [
@@ -1956,7 +1956,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
+        "x": 1080,
         "y": 400,
         "wires": [
             [
@@ -2107,7 +2107,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 760,
-        "y": 680,
+        "y": 560,
         "wires": []
     },
     {
@@ -2125,7 +2125,7 @@
         "rh": 0,
         "inputs": 1,
         "x": 270,
-        "y": 640,
+        "y": 520,
         "wires": [
             [
                 "4c30f9b315530f2a"
@@ -2154,7 +2154,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 100,
-        "y": 580,
+        "y": 460,
         "wires": [
             [
                 "2b2d85fbc2c145a5"
@@ -2174,7 +2174,7 @@
         "finalize": "",
         "libs": [],
         "x": 280,
-        "y": 580,
+        "y": 460,
         "wires": [
             [
                 "6ad93d3e94e2fe69"
@@ -2280,7 +2280,7 @@
         "outputs": 0,
         "cts": false,
         "x": 750,
-        "y": 620,
+        "y": 500,
         "wires": []
     },
     {
@@ -2307,7 +2307,7 @@
         "repair": false,
         "outputs": 2,
         "x": 410,
-        "y": 640,
+        "y": 520,
         "wires": [
             [
                 "160ef0c3c55613af"
@@ -2330,7 +2330,7 @@
         "finalize": "",
         "libs": [],
         "x": 590,
-        "y": 620,
+        "y": 500,
         "wires": [
             [
                 "32d53427bced070c"
@@ -2343,14 +2343,14 @@
         "z": "692c798b6f9c61de",
         "g": "d161c1f6a3c909b8",
         "name": "handleAck",
-        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\nconsole.log(\"1\")\n\nif (messageId === parseInt(msg.payload.message_id)) {\n    console.log(\"2\")\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n        console.log(\"error\")\n    }\n}\n\nreturn ackInfo;",
+        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\nconsole.log(messageId)\nconsole.log(parseInt(msg.payload.message_id))\n\n\nif (messageId === parseInt(msg.payload.message_id)) {\n    console.log(\"2\")\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n        console.log(\"error\")\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 590,
-        "y": 680,
+        "y": 560,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -3210,7 +3210,7 @@
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 1460,
+        "x": 1560,
         "y": 440,
         "wires": [
             []
@@ -3253,7 +3253,7 @@
         "templateScope": "local",
         "className": "",
         "x": 500,
-        "y": 540,
+        "y": 420,
         "wires": [
             []
         ]
@@ -3272,7 +3272,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 640,
-        "y": 580,
+        "y": 460,
         "wires": []
     }
 ]
