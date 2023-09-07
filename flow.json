@@ -3551,7 +3551,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "setMqttSettings",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nlet mqttSettings = global.get('mqttSettings') || {};\n\nmqttSettings = Object.assign(mqttSettings, { [msg.topic]: msg.payload })\n\nglobal.set('mqttSettings', mqttSettings)\n",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nlet mqttSettings = global.get('mqttSettings') || {};\n\nmqttSettings = Object.assign(mqttSettings, { [msg.topic]: msg.payload })\n\nglobal.set('mqttSettings', mqttSettings)\n\nreturn mqttSettings\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3560,7 +3560,9 @@
         "x": 400,
         "y": 740,
         "wires": [
-            []
+            [
+                "f6a17f47b4de55b6"
+            ]
         ]
     },
     {
@@ -3704,6 +3706,22 @@
         "statusType": "auto",
         "x": 640,
         "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f6a17f47b4de55b6",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 800,
         "wires": []
     }
 ]
