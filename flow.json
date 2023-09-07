@@ -1,17 +1,17 @@
 [
     {
-        "id": "be9f64fbc3682d16",
-        "type": "tab",
-        "label": "Поток 1",
-        "disabled": true,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "692c798b6f9c61de",
         "type": "tab",
         "label": "Поток 2",
         "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "be9f64fbc3682d16",
+        "type": "tab",
+        "label": "Поток 1",
+        "disabled": true,
         "info": "",
         "env": []
     },
@@ -474,47 +474,57 @@
         "className": ""
     },
     {
-        "id": "ceb8e44d41b7d297",
+        "id": "e5677e44c9f47072",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "fc491a4cada0492f",
         "order": 2,
-        "width": 1,
+        "width": 4,
         "height": 1
     },
     {
-        "id": "bb2e8d713d0f4143",
+        "id": "621f512a2bed6f2f",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "fc491a4cada0492f",
+        "order": 3,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "4ec4c4f24f8bf779",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "fc491a4cada0492f",
         "order": 4,
-        "width": 1,
+        "width": 4,
         "height": 1
     },
     {
-        "id": "c9bea90ac779c1d7",
+        "id": "2fa7ef20fbd1e95d",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "fc491a4cada0492f",
-        "order": 6,
-        "width": 1,
+        "order": 7,
+        "width": 4,
         "height": 1
     },
     {
-        "id": "7f3dbe19ee62e5b1",
+        "id": "3a0f1d04ba6b6208",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "fc491a4cada0492f",
         "order": 8,
-        "width": 1,
+        "width": 4,
         "height": 1
     },
     {
-        "id": "69b77f53a87c2f0f",
+        "id": "4a4069680772ac5f",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -524,7 +534,37 @@
         "height": 1
     },
     {
-        "id": "b21b9d855fa1bc7d",
+        "id": "6fcc9cc8a82fc7c1",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "fc491a4cada0492f",
+        "order": 10,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "da7e397eb57098e2",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "fc491a4cada0492f",
+        "order": 11,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "dc4d53e870900129",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "fc491a4cada0492f",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "baa99c7bd9de5691",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -534,7 +574,7 @@
         "height": 1
     },
     {
-        "id": "604778e6192e1134",
+        "id": "bbd769534bcdbf18",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -544,7 +584,7 @@
         "height": 1
     },
     {
-        "id": "33b761b9cd5adcdc",
+        "id": "c92772c64dc5d23d",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -554,7 +594,7 @@
         "height": 1
     },
     {
-        "id": "97955de64146efc6",
+        "id": "e0bb557d87d1b02e",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -564,7 +604,7 @@
         "height": 1
     },
     {
-        "id": "42ab7a8e2c5bab47",
+        "id": "6372c3b0be4a2815",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -574,7 +614,7 @@
         "height": 1
     },
     {
-        "id": "9b803d5d7caaec25",
+        "id": "e8b55890453a45fa",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -584,7 +624,7 @@
         "height": 1
     },
     {
-        "id": "d46feec40fd74b48",
+        "id": "dc08f434b32352cd",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -594,7 +634,7 @@
         "height": 1
     },
     {
-        "id": "7afa3672ba9486b5",
+        "id": "db701a5ff56f654f",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -604,67 +644,7 @@
         "height": 1
     },
     {
-        "id": "7cf5c17ed44fac2b",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "fc491a4cada0492f",
-        "order": 21,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "76ef1e0c3b987b75",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "fc491a4cada0492f",
-        "order": 22,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "27bba55477fb7972",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "fc491a4cada0492f",
-        "order": 23,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "1f12e92e7bf7fa85",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "fc491a4cada0492f",
-        "order": 24,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "494ba5451065fc6e",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "fc491a4cada0492f",
-        "order": 25,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "9163866d0e74a584",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "fc491a4cada0492f",
-        "order": 26,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "fd35f01a36ded84f",
+        "id": "d0367d0b382224af",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -674,7 +654,7 @@
         "height": 1
     },
     {
-        "id": "59e63e67ea4f5066",
+        "id": "ab8feae7a7fa96a5",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -684,7 +664,7 @@
         "height": 1
     },
     {
-        "id": "692d5e5f0cda678e",
+        "id": "935b7e0207c94589",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -694,7 +674,7 @@
         "height": 1
     },
     {
-        "id": "d5dfe9d80acab43f",
+        "id": "d8262974de6e9a94",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -704,7 +684,7 @@
         "height": 1
     },
     {
-        "id": "cb07ae7c925b68ae",
+        "id": "226a9a4aa7d91c0d",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -714,7 +694,27 @@
         "height": 1
     },
     {
-        "id": "7869d4bc04848cfe",
+        "id": "2b16ecbc9cfd4f11",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "08691a1abdc449f7",
+        "order": 5,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "65d829319e8d308c",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "08691a1abdc449f7",
+        "order": 6,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "05e6b529867d4b8f",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -724,7 +724,7 @@
         "height": 1
     },
     {
-        "id": "0f2cfdf65de741b2",
+        "id": "18e253fa230efa65",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -734,7 +734,7 @@
         "height": 1
     },
     {
-        "id": "890a53709052cf2d",
+        "id": "d6019f9d838f7c65",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -744,7 +744,7 @@
         "height": 1
     },
     {
-        "id": "b5a92aa60f96685a",
+        "id": "2148461b134fcec9",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -754,7 +754,7 @@
         "height": 1
     },
     {
-        "id": "3e5b671d8c131bed",
+        "id": "28e11c6f7ccc7998",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -764,7 +764,7 @@
         "height": 1
     },
     {
-        "id": "f46c68a758a6d4b3",
+        "id": "0f99a50f5b5ed012",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -774,7 +774,7 @@
         "height": 1
     },
     {
-        "id": "f6252d96342cf3e5",
+        "id": "6297c17dd8d87eee",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -784,7 +784,7 @@
         "height": 1
     },
     {
-        "id": "1a4b96ab91e1075c",
+        "id": "2ad4b02c002e9e21",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -794,7 +794,7 @@
         "height": 1
     },
     {
-        "id": "b02e1a985235655f",
+        "id": "fed72bf82a587bf6",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -804,7 +804,7 @@
         "height": 1
     },
     {
-        "id": "ce036e7b9e291c1e",
+        "id": "2b092f413d8d9709",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -814,7 +814,7 @@
         "height": 1
     },
     {
-        "id": "1da750d581f04022",
+        "id": "557ada91e6c2380d",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -824,7 +824,7 @@
         "height": 1
     },
     {
-        "id": "e1bd851d06a0662e",
+        "id": "f5296bf4eb2f1f9d",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -834,7 +834,7 @@
         "height": 1
     },
     {
-        "id": "29d2ec74ecf1d361",
+        "id": "d6d150a830db78a7",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -844,7 +844,7 @@
         "height": 1
     },
     {
-        "id": "7fe3ddd4e1c59a42",
+        "id": "732dfbaacb2078be",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -854,7 +854,7 @@
         "height": 1
     },
     {
-        "id": "097e1bec1f901d61",
+        "id": "5229a8c1498877e2",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -862,270 +862,6 @@
         "order": 12,
         "width": 10,
         "height": 1
-    },
-    {
-        "id": "1fddf0a8d296909f",
-        "type": "inject",
-        "z": "be9f64fbc3682d16",
-        "name": "set configuration",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 180,
-        "y": 120,
-        "wires": [
-            [
-                "ece8f4a0d519aec2"
-            ]
-        ]
-    },
-    {
-        "id": "ece8f4a0d519aec2",
-        "type": "file in",
-        "z": "be9f64fbc3682d16",
-        "name": "",
-        "filename": "C:\\air_cr\\air_cr_conf.json",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 430,
-        "y": 120,
-        "wires": [
-            [
-                "522050f7948dbbe1"
-            ]
-        ]
-    },
-    {
-        "id": "3b8c508c929084e6",
-        "type": "mqtt in",
-        "z": "be9f64fbc3682d16",
-        "name": "224/147/registration/15643804/",
-        "topic": "224/147/registration/15643804/#",
-        "qos": "0",
-        "datatype": "json",
-        "broker": "79737e067a3af084",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 150,
-        "y": 440,
-        "wires": [
-            [
-                "e52a703e720e6788"
-            ]
-        ]
-    },
-    {
-        "id": "522050f7948dbbe1",
-        "type": "debug",
-        "z": "be9f64fbc3682d16",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "70cedf33c431ae57",
-        "type": "switch",
-        "z": "be9f64fbc3682d16",
-        "name": "conf complete message",
-        "property": "payload.conf_status",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "nnull"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 670,
-        "y": 340,
-        "wires": [
-            [
-                "6aa902310eb9139d"
-            ]
-        ]
-    },
-    {
-        "id": "193f180db0be3905",
-        "type": "debug",
-        "z": "be9f64fbc3682d16",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1140,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "6aa902310eb9139d",
-        "type": "template",
-        "z": "be9f64fbc3682d16",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "configuration status: {{payload.conf_status}}",
-        "output": "str",
-        "x": 880,
-        "y": 340,
-        "wires": [
-            [
-                "193f180db0be3905"
-            ]
-        ]
-    },
-    {
-        "id": "34a89c8a9582d232",
-        "type": "switch",
-        "z": "be9f64fbc3682d16",
-        "name": "event message",
-        "property": "payload.operator",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Event",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 640,
-        "y": 440,
-        "wires": [
-            [
-                "86975e273f042696"
-            ]
-        ]
-    },
-    {
-        "id": "fa3d016086c7c693",
-        "type": "file",
-        "z": "be9f64fbc3682d16",
-        "name": "logging",
-        "filename": "filename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 1520,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bca885cf7fd7a60a",
-        "type": "template",
-        "z": "be9f64fbc3682d16",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "[{{payload.current_time}}] group - {{payload.info.Group}}, cpoint_idx - {{payload.info.Ctp_idx}}, event id - {{payload.info.Event_id}}",
-        "output": "str",
-        "x": 1280,
-        "y": 440,
-        "wires": [
-            [
-                "fa3d016086c7c693",
-                "309c0fedd466acbe"
-            ]
-        ]
-    },
-    {
-        "id": "86975e273f042696",
-        "type": "function",
-        "z": "be9f64fbc3682d16",
-        "name": "set filename with current date",
-        "func": "\nmsg.filename = \"C:/air_cr/\" + msg.myymd + \".txt\"\nmsg.payload.current_time = msg.mytimes\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 980,
-        "y": 440,
-        "wires": [
-            [
-                "bca885cf7fd7a60a"
-            ]
-        ]
-    },
-    {
-        "id": "e52a703e720e6788",
-        "type": "simpletime",
-        "z": "be9f64fbc3682d16",
-        "name": "add time",
-        "mydate": true,
-        "myymd": true,
-        "myyear": true,
-        "mymonth": true,
-        "mymonthn": true,
-        "mydom": true,
-        "mydoy": true,
-        "myday": true,
-        "myhourpm": true,
-        "myhour": true,
-        "mytime": true,
-        "mytimes": true,
-        "myminute": true,
-        "myminutes": true,
-        "mysecond": true,
-        "mymillis": true,
-        "myepoch": true,
-        "myrawdate": true,
-        "mypm": true,
-        "x": 380,
-        "y": 440,
-        "wires": [
-            [
-                "70cedf33c431ae57",
-                "34a89c8a9582d232"
-            ]
-        ]
-    },
-    {
-        "id": "309c0fedd466acbe",
-        "type": "debug",
-        "z": "be9f64fbc3682d16",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1520,
-        "y": 500,
-        "wires": []
     },
     {
         "id": "4fa2839622e9ccb5",
@@ -1161,7 +897,7 @@
         "label": "Company ID",
         "tooltip": "",
         "group": "08691a1abdc449f7",
-        "order": 3,
+        "order": 2,
         "width": 3,
         "height": 1,
         "passthru": true,
@@ -1204,8 +940,8 @@
         "label": "Device ID",
         "tooltip": "",
         "group": "08691a1abdc449f7",
-        "order": 5,
-        "width": 3,
+        "order": 4,
+        "width": 6,
         "height": 1,
         "passthru": true,
         "mode": "text",
@@ -1838,7 +1574,7 @@
         "g": "f43b51b8dd2762ef",
         "name": "Settings (for devs)",
         "group": "fc491a4cada0492f",
-        "order": 11,
+        "order": 5,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -1867,7 +1603,7 @@
         "g": "f43b51b8dd2762ef",
         "name": "Control",
         "group": "fc491a4cada0492f",
-        "order": 12,
+        "order": 6,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -2083,8 +1819,8 @@
         "z": "692c798b6f9c61de",
         "g": "1d912909a4bec57b",
         "name": "Subscribe to account",
-        "group": "fc491a4cada0492f",
-        "order": 7,
+        "group": "08691a1abdc449f7",
+        "order": 3,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -3236,7 +2972,7 @@
         "g": "f43b51b8dd2762ef",
         "group": "fc491a4cada0492f",
         "name": "",
-        "order": 27,
+        "order": 21,
         "width": 4,
         "height": 1,
         "format": "<style>\n    .md-button {\n        background-color: #17D0FA; !important;\n    }\n\n</style>",
@@ -3346,7 +3082,7 @@
         "g": "f43b51b8dd2762ef",
         "name": "Connection options",
         "group": "fc491a4cada0492f",
-        "order": 10,
+        "order": 1,
         "width": 4,
         "height": 1,
         "passthru": false,
@@ -3398,7 +3134,7 @@
         "label": "Name",
         "tooltip": "",
         "group": "08691a1abdc449f7",
-        "order": 1,
+        "order": 7,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -3425,7 +3161,7 @@
         "label": "Client ID",
         "tooltip": "",
         "group": "08691a1abdc449f7",
-        "order": 2,
+        "order": 8,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -3451,7 +3187,7 @@
         "label": "Host",
         "tooltip": "",
         "group": "08691a1abdc449f7",
-        "order": 3,
+        "order": 9,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -3477,7 +3213,7 @@
         "label": "Port",
         "tooltip": "",
         "group": "08691a1abdc449f7",
-        "order": 4,
+        "order": 10,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -3503,7 +3239,7 @@
         "label": "Username",
         "tooltip": "",
         "group": "08691a1abdc449f7",
-        "order": 5,
+        "order": 11,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -3529,7 +3265,7 @@
         "label": "Password",
         "tooltip": "",
         "group": "08691a1abdc449f7",
-        "order": 6,
+        "order": 12,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -3573,7 +3309,7 @@
         "g": "1d912909a4bec57b",
         "name": "Connect to MQTT",
         "group": "08691a1abdc449f7",
-        "order": 7,
+        "order": 13,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -3623,7 +3359,7 @@
         "z": "692c798b6f9c61de",
         "name": "Disconnect",
         "group": "08691a1abdc449f7",
-        "order": 8,
+        "order": 14,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -3739,6 +3475,270 @@
         "statusType": "auto",
         "x": 580,
         "y": 800,
+        "wires": []
+    },
+    {
+        "id": "1fddf0a8d296909f",
+        "type": "inject",
+        "z": "be9f64fbc3682d16",
+        "name": "set configuration",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "ece8f4a0d519aec2"
+            ]
+        ]
+    },
+    {
+        "id": "ece8f4a0d519aec2",
+        "type": "file in",
+        "z": "be9f64fbc3682d16",
+        "name": "",
+        "filename": "C:\\air_cr\\air_cr_conf.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 430,
+        "y": 120,
+        "wires": [
+            [
+                "522050f7948dbbe1"
+            ]
+        ]
+    },
+    {
+        "id": "3b8c508c929084e6",
+        "type": "mqtt in",
+        "z": "be9f64fbc3682d16",
+        "name": "224/147/registration/15643804/",
+        "topic": "224/147/registration/15643804/#",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "79737e067a3af084",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "e52a703e720e6788"
+            ]
+        ]
+    },
+    {
+        "id": "522050f7948dbbe1",
+        "type": "debug",
+        "z": "be9f64fbc3682d16",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "70cedf33c431ae57",
+        "type": "switch",
+        "z": "be9f64fbc3682d16",
+        "name": "conf complete message",
+        "property": "payload.conf_status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 340,
+        "wires": [
+            [
+                "6aa902310eb9139d"
+            ]
+        ]
+    },
+    {
+        "id": "193f180db0be3905",
+        "type": "debug",
+        "z": "be9f64fbc3682d16",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6aa902310eb9139d",
+        "type": "template",
+        "z": "be9f64fbc3682d16",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "configuration status: {{payload.conf_status}}",
+        "output": "str",
+        "x": 880,
+        "y": 340,
+        "wires": [
+            [
+                "193f180db0be3905"
+            ]
+        ]
+    },
+    {
+        "id": "34a89c8a9582d232",
+        "type": "switch",
+        "z": "be9f64fbc3682d16",
+        "name": "event message",
+        "property": "payload.operator",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Event",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 640,
+        "y": 440,
+        "wires": [
+            [
+                "86975e273f042696"
+            ]
+        ]
+    },
+    {
+        "id": "fa3d016086c7c693",
+        "type": "file",
+        "z": "be9f64fbc3682d16",
+        "name": "logging",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1520,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bca885cf7fd7a60a",
+        "type": "template",
+        "z": "be9f64fbc3682d16",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "[{{payload.current_time}}] group - {{payload.info.Group}}, cpoint_idx - {{payload.info.Ctp_idx}}, event id - {{payload.info.Event_id}}",
+        "output": "str",
+        "x": 1280,
+        "y": 440,
+        "wires": [
+            [
+                "fa3d016086c7c693",
+                "309c0fedd466acbe"
+            ]
+        ]
+    },
+    {
+        "id": "86975e273f042696",
+        "type": "function",
+        "z": "be9f64fbc3682d16",
+        "name": "set filename with current date",
+        "func": "\nmsg.filename = \"C:/air_cr/\" + msg.myymd + \".txt\"\nmsg.payload.current_time = msg.mytimes\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 440,
+        "wires": [
+            [
+                "bca885cf7fd7a60a"
+            ]
+        ]
+    },
+    {
+        "id": "e52a703e720e6788",
+        "type": "simpletime",
+        "z": "be9f64fbc3682d16",
+        "name": "add time",
+        "mydate": true,
+        "myymd": true,
+        "myyear": true,
+        "mymonth": true,
+        "mymonthn": true,
+        "mydom": true,
+        "mydoy": true,
+        "myday": true,
+        "myhourpm": true,
+        "myhour": true,
+        "mytime": true,
+        "mytimes": true,
+        "myminute": true,
+        "myminutes": true,
+        "mysecond": true,
+        "mymillis": true,
+        "myepoch": true,
+        "myrawdate": true,
+        "mypm": true,
+        "x": 380,
+        "y": 440,
+        "wires": [
+            [
+                "70cedf33c431ae57",
+                "34a89c8a9582d232"
+            ]
+        ]
+    },
+    {
+        "id": "309c0fedd466acbe",
+        "type": "debug",
+        "z": "be9f64fbc3682d16",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 500,
         "wires": []
     }
 ]
