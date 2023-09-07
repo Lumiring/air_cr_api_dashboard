@@ -3412,7 +3412,8 @@
         "y": 660,
         "wires": [
             [
-                "7184e0269f48110f"
+                "7184e0269f48110f",
+                "e2f3f1d328aa7adf"
             ]
         ]
     },
@@ -3551,7 +3552,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "setMqttSettings",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nlet mqttSettings = global.get('mqttSettings') || {};\n\nmqttSettings = Object.assign(mqttSettings, { [msg.topic]: msg.payload })\n\nglobal.set('mqttSettings', mqttSettings)\n\nreturn mqttSettings\n",
+        "func": "// initialise the counter to 0 if it doesn't exist already\nlet mqttSettings = global.get('mqttSettings') || {};\n\nmqttSettings = Object.assign(mqttSettings, { [msg.topic]: msg.payload })\n\nglobal.set('mqttSettings', mqttSettings)\n\nreturn mqttSettings\n\n\n\n\n\n// initialise the counter to 0 if it doesn't exist already\nlet stpDoorSet = global.get('stpDoorSet') || {};\n\nstpDoorSet = Object.assign(stpDoorSet, { [msg.topic]: msg.payload })\n\nglobal.set('stpDoorSet', stpDoorSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3722,6 +3723,22 @@
         "statusType": "auto",
         "x": 600,
         "y": 800,
+        "wires": []
+    },
+    {
+        "id": "e2f3f1d328aa7adf",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 660,
         "wires": []
     }
 ]
