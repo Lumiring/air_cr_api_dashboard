@@ -3561,9 +3561,7 @@
         "x": 400,
         "y": 740,
         "wires": [
-            [
-                "f6a17f47b4de55b6"
-            ]
+            []
         ]
     },
     {
@@ -3601,7 +3599,7 @@
         "z": "692c798b6f9c61de",
         "g": "1d912909a4bec57b",
         "name": "connectToMqttBroker",
-        "func": "let mqttSettings = global.get('mqttSettings')\nconsole.log(mqttSettings.host)\n\n// msg.action = \"connect\"\n// msg.broker = {\n//     broker : mqttSettings.host,\n//     port : mqttSettings.port\n// }\n\nreturn mqttSettings;",
+        "func": "let mqttSettings = global.get('mqtt_settings')\nconsole.log(mqttSettings.host)\n\n// msg.action = \"connect\"\n// msg.broker = {\n//     broker : mqttSettings.host,\n//     port : mqttSettings.port\n// }\n\nreturn mqttSettings;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3707,22 +3705,6 @@
         "statusType": "auto",
         "x": 640,
         "y": 680,
-        "wires": []
-    },
-    {
-        "id": "f6a17f47b4de55b6",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 600,
-        "y": 800,
         "wires": []
     },
     {
