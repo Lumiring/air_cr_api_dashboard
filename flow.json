@@ -198,12 +198,12 @@
             "5c0f4a3dd94ecbbf",
             "1f7ea9be7c722e68",
             "df01a4a6be99cf44",
-            "7cd984d22f2fea7c"
+            "d81bab586132c7e4"
         ],
         "x": 74,
-        "y": 259,
+        "y": 219,
         "w": 1192,
-        "h": 262
+        "h": 382
     },
     {
         "id": "79737e067a3af084",
@@ -1811,7 +1811,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 1180,
-        "y": 380,
+        "y": 340,
         "wires": []
     },
     {
@@ -1828,8 +1828,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 1,
-        "x": 650,
-        "y": 340,
+        "x": 690,
+        "y": 300,
         "wires": [
             [
                 "4c30f9b315530f2a"
@@ -1858,7 +1858,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 280,
-        "y": 440,
+        "y": 480,
         "wires": [
             [
                 "2b2d85fbc2c145a5"
@@ -1877,8 +1877,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 440,
+        "x": 480,
+        "y": 480,
         "wires": [
             [
                 "df01a4a6be99cf44"
@@ -1983,7 +1983,7 @@
         "outputs": 0,
         "cts": false,
         "x": 1170,
-        "y": 300,
+        "y": 260,
         "wires": []
     },
     {
@@ -2010,7 +2010,7 @@
         "repair": false,
         "outputs": 2,
         "x": 830,
-        "y": 340,
+        "y": 300,
         "wires": [
             [
                 "160ef0c3c55613af"
@@ -2033,7 +2033,7 @@
         "finalize": "",
         "libs": [],
         "x": 1010,
-        "y": 300,
+        "y": 260,
         "wires": [
             [
                 "32d53427bced070c"
@@ -2053,7 +2053,7 @@
         "finalize": "",
         "libs": [],
         "x": 1010,
-        "y": 380,
+        "y": 340,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -3027,7 +3027,7 @@
         "templateScope": "local",
         "className": "",
         "x": 660,
-        "y": 480,
+        "y": 560,
         "wires": [
             []
         ]
@@ -3339,12 +3339,12 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "",
-        "payloadType": "str",
+        "payload": "{\"action\":\"connect\"}",
+        "payloadType": "json",
         "topic": "",
         "topicType": "str",
         "x": 190,
-        "y": 360,
+        "y": 320,
         "wires": [
             [
                 "1f7ea9be7c722e68"
@@ -3356,20 +3356,19 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "g": "1d912909a4bec57b",
-        "name": "connectToMqttBroker",
-        "func": "let mqttSettings = global.get('mqtt_settings')\n\n\nmsg.action = \"connect\"\nmsg.broker = {\n    broker : mqttSettings.broker,\n    port : mqttSettings.port,\n    username: mqttSettings.username,\n    password: mqttSettings.password\n}\n\nconsole.log(msg)\n\nreturn msg;",
+        "name": "handleMqttBroker",
+        "func": "let mqttSettings = global.get('mqtt_settings')\n\nconsole.log(msg)\n\nmsg.action = \"connect\"\nmsg.broker = {\n    broker : mqttSettings.broker,\n    port : mqttSettings.port,\n    username: mqttSettings.username,\n    password: mqttSettings.password\n}\n\nconsole.log(msg)\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 360,
+        "x": 470,
+        "y": 320,
         "wires": [
             [
                 "df01a4a6be99cf44",
-                "9e5fe1c3fe6f0503",
-                "930a7b5a33d43149"
+                "9e5fe1c3fe6f0503"
             ]
         ]
     },
@@ -3377,6 +3376,7 @@
         "id": "d81bab586132c7e4",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
+        "g": "1d912909a4bec57b",
         "name": "Disconnect",
         "group": "08691a1abdc449f7",
         "order": 11,
@@ -3393,8 +3393,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1070,
-        "y": 1020,
+        "x": 170,
+        "y": 280,
         "wires": [
             []
         ]
@@ -3414,77 +3414,9 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 650,
-        "y": 400,
+        "x": 690,
+        "y": 360,
         "wires": []
-    },
-    {
-        "id": "7cd984d22f2fea7c",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "1d912909a4bec57b",
-        "name": "disconnect",
-        "props": [
-            {
-                "p": "action",
-                "v": "disconnect",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 460,
-        "y": 300,
-        "wires": [
-            [
-                "9e5fe1c3fe6f0503",
-                "df01a4a6be99cf44"
-            ]
-        ]
-    },
-    {
-        "id": "930a7b5a33d43149",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "8d15e7bad32931d7",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "connect",
-        "props": [
-            {
-                "p": "action",
-                "v": "connect",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 430,
-        "y": 220,
-        "wires": [
-            [
-                "9e5fe1c3fe6f0503"
-            ]
-        ]
     },
     {
         "id": "1fddf0a8d296909f",
