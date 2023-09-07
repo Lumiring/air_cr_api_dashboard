@@ -3198,8 +3198,7 @@
         "y": 660,
         "wires": [
             [
-                "7184e0269f48110f",
-                "e2f3f1d328aa7adf"
+                "7184e0269f48110f"
             ]
         ]
     },
@@ -3347,9 +3346,7 @@
         "x": 400,
         "y": 740,
         "wires": [
-            [
-                "c58b7fc7413dd44a"
-            ]
+            []
         ]
     },
     {
@@ -3387,7 +3384,7 @@
         "z": "692c798b6f9c61de",
         "g": "1d912909a4bec57b",
         "name": "connectToMqttBroker",
-        "func": "let mqttSettings = global.get('mqtt_settings')\nconsole.log(mqttSettings)\n\nmsg.action = \"connect\"\nmsg.broker = {\n    broker : mqttSettings.broker,\n    port : mqttSettings.port\n}\n\nreturn msg;",
+        "func": "let mqttSettings = global.get('mqtt_settings')\nconsole.log(mqttSettings)\n\nmsg.action = \"connect\"\nmsg.broker = {\n    broker : mqttSettings.broker,\n    port : mqttSettings.port,\n    username: mqttSettings.username,\n    password: mqttSettings.password\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3493,38 +3490,6 @@
         "statusType": "auto",
         "x": 640,
         "y": 680,
-        "wires": []
-    },
-    {
-        "id": "e2f3f1d328aa7adf",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 400,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "c58b7fc7413dd44a",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 7",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 800,
         "wires": []
     },
     {
