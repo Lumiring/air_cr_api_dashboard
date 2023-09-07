@@ -3427,13 +3427,8 @@
         "props": [
             {
                 "p": "action",
-                "v": "connect",
+                "v": "disconnect",
                 "vt": "str"
-            },
-            {
-                "p": "broker",
-                "v": "{\"broker\":\"broker.emqx.io\",\"port\":\"1883\"}",
-                "vt": "json"
             }
         ],
         "repeat": "",
@@ -3445,7 +3440,8 @@
         "y": 340,
         "wires": [
             [
-                "9e5fe1c3fe6f0503"
+                "9e5fe1c3fe6f0503",
+                "df01a4a6be99cf44"
             ]
         ]
     },
