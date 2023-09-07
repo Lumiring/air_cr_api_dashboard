@@ -890,10 +890,10 @@
         "id": "da2021ec62b164a5",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "158.85.225.154",
+        "broker": "mqtt://158.85.225.154",
         "port": "1883",
         "clientid": "",
-        "autoConnect": false,
+        "autoConnect": true,
         "usetls": false,
         "protocolVersion": "4",
         "keepalive": "60",
@@ -1599,7 +1599,7 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "79737e067a3af084",
+        "broker": "da2021ec62b164a5",
         "x": 650,
         "y": 1760,
         "wires": []
@@ -1816,7 +1816,7 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "79737e067a3af084",
+        "broker": "da2021ec62b164a5",
         "x": 570,
         "y": 2140,
         "wires": []
@@ -2484,7 +2484,7 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "79737e067a3af084",
+        "broker": "da2021ec62b164a5",
         "x": 1230,
         "y": 1600,
         "wires": []
@@ -3010,7 +3010,7 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "79737e067a3af084",
+        "broker": "da2021ec62b164a5",
         "x": 1250,
         "y": 2080,
         "wires": []
