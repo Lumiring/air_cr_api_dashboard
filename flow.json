@@ -893,7 +893,7 @@
         "broker": "mqtt://158.85.225.154",
         "port": "1883",
         "clientid": "",
-        "autoConnect": true,
+        "autoConnect": false,
         "usetls": false,
         "protocolVersion": "4",
         "keepalive": "60",
