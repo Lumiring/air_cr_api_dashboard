@@ -3357,7 +3357,7 @@
         "z": "692c798b6f9c61de",
         "g": "1d912909a4bec57b",
         "name": "connectToMqttBroker",
-        "func": "let mqttSettings = global.get('mqtt_settings')\n\n\nmsg.action = \"connect\"\nmsg.broker = {\n    broker : mqttSettings.broker,\n    port : mqttSettings.port\n    // username: mqttSettings.username,\n    // password: mqttSettings.password\n}\n\nconsole.log(msg)\n\nreturn msg;",
+        "func": "let mqttSettings = global.get('mqtt_settings')\n\n\nmsg.action = \"connect\"\nmsg.broker = {\n    broker : mqttSettings.broker,\n    port : mqttSettings.port,\n    username: mqttSettings.username,\n    password: mqttSettings.password\n}\n\nconsole.log(msg)\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
