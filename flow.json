@@ -147,39 +147,6 @@
         "h": 442
     },
     {
-        "id": "d161c1f6a3c909b8",
-        "type": "group",
-        "z": "692c798b6f9c61de",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "4fa2839622e9ccb5",
-            "4ace46e7e6f5bb94",
-            "6638c344b98c3138",
-            "d6fd04db60c00fec",
-            "6c8acdd459e657eb",
-            "9e5fe1c3fe6f0503",
-            "1302f6d68dca2105",
-            "2b2d85fbc2c145a5",
-            "32d53427bced070c",
-            "4c30f9b315530f2a",
-            "160ef0c3c55613af",
-            "95c8a2503541cab9",
-            "6ad93d3e94e2fe69"
-        ],
-        "x": 14,
-        "y": 259,
-        "w": 832,
-        "h": 362
-    },
-    {
         "id": "f43b51b8dd2762ef",
         "type": "group",
         "z": "692c798b6f9c61de",
@@ -200,13 +167,13 @@
             "dba127a888a49b39",
             "bcb697e124c3a95e"
         ],
-        "x": 974,
-        "y": 359,
+        "x": 1554,
+        "y": 239,
         "w": 672,
         "h": 282
     },
     {
-        "id": "2f21202357ff2a57",
+        "id": "1d912909a4bec57b",
         "type": "group",
         "z": "692c798b6f9c61de",
         "style": {
@@ -219,18 +186,23 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "a941964922c99e0d",
-            "fb340be7e461e2fe",
-            "0c769e6742acebb0",
-            "a122ea34e40556e4",
-            "ad3a558f7afdccbf",
-            "58d2480b2eff322c",
-            "7184e0269f48110f"
+            "6c8acdd459e657eb",
+            "9e5fe1c3fe6f0503",
+            "1302f6d68dca2105",
+            "2b2d85fbc2c145a5",
+            "32d53427bced070c",
+            "4c30f9b315530f2a",
+            "160ef0c3c55613af",
+            "95c8a2503541cab9",
+            "6ad93d3e94e2fe69",
+            "5c0f4a3dd94ecbbf",
+            "1f7ea9be7c722e68",
+            "df01a4a6be99cf44"
         ],
-        "x": 14,
-        "y": 679,
-        "w": 532,
-        "h": 282
+        "x": 94,
+        "y": 299,
+        "w": 1192,
+        "h": 262
     },
     {
         "id": "79737e067a3af084",
@@ -1158,11 +1130,10 @@
         "id": "4fa2839622e9ccb5",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
         "name": "Account ID",
         "label": "Account ID",
         "tooltip": "",
-        "group": "fc491a4cada0492f",
+        "group": "08691a1abdc449f7",
         "order": 1,
         "width": 3,
         "height": 1,
@@ -1173,8 +1144,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 110,
-        "y": 300,
+        "x": 130,
+        "y": 920,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1185,11 +1156,10 @@
         "id": "4ace46e7e6f5bb94",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
         "name": "Company ID",
         "label": "Company ID",
         "tooltip": "",
-        "group": "fc491a4cada0492f",
+        "group": "08691a1abdc449f7",
         "order": 3,
         "width": 3,
         "height": 1,
@@ -1200,8 +1170,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 110,
-        "y": 340,
+        "x": 130,
+        "y": 960,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1212,7 +1182,6 @@
         "id": "6638c344b98c3138",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
         "name": "setUserCreds",
         "func": "// initialise the counter to 0 if it doesn't exist already\nlet tempUserCreds = global.get('tempUserCreds') || {};\n\ntempUserCreds = Object.assign(tempUserCreds, { [msg.topic]: msg.payload })\nglobal.set('tempUserCreds', tempUserCreds)\n\nlet obj = {}\nobj.payload = tempUserCreds\nreturn obj",
         "outputs": 1,
@@ -1220,8 +1189,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
-        "y": 340,
+        "x": 400,
+        "y": 960,
         "wires": [
             []
         ]
@@ -1230,11 +1199,10 @@
         "id": "d6fd04db60c00fec",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
         "name": "Device ID",
         "label": "Device ID",
         "tooltip": "",
-        "group": "fc491a4cada0492f",
+        "group": "08691a1abdc449f7",
         "order": 5,
         "width": 3,
         "height": 1,
@@ -1245,8 +1213,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 100,
-        "y": 380,
+        "x": 140,
+        "y": 1000,
         "wires": [
             [
                 "6638c344b98c3138"
@@ -1856,8 +1824,8 @@
         "g": "f43b51b8dd2762ef",
         "name": "",
         "events": "change",
-        "x": 1380,
-        "y": 440,
+        "x": 1960,
+        "y": 320,
         "wires": [
             []
         ]
@@ -1883,8 +1851,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1150,
-        "y": 600,
+        "x": 1730,
+        "y": 480,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1912,8 +1880,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1120,
-        "y": 560,
+        "x": 1700,
+        "y": 440,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1932,8 +1900,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1080,
-        "y": 400,
+        "x": 1660,
+        "y": 280,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -2070,7 +2038,7 @@
         "id": "6c8acdd459e657eb",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
+        "g": "1d912909a4bec57b",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -2082,15 +2050,15 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 760,
-        "y": 580,
+        "x": 1200,
+        "y": 420,
         "wires": []
     },
     {
         "id": "9e5fe1c3fe6f0503",
         "type": "mqtt in",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
+        "g": "1d912909a4bec57b",
         "name": "",
         "topic": "",
         "qos": "2",
@@ -2100,8 +2068,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 1,
-        "x": 270,
-        "y": 540,
+        "x": 670,
+        "y": 380,
         "wires": [
             [
                 "4c30f9b315530f2a"
@@ -2112,14 +2080,14 @@
         "id": "1302f6d68dca2105",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
-        "name": "Connect",
+        "g": "1d912909a4bec57b",
+        "name": "Subscribe to account",
         "group": "fc491a4cada0492f",
         "order": 7,
         "width": 3,
         "height": 1,
         "passthru": false,
-        "label": "Connect",
+        "label": "Subscribe to account",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -2129,7 +2097,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 100,
+        "x": 300,
         "y": 480,
         "wires": [
             [
@@ -2141,22 +2109,22 @@
         "id": "2b2d85fbc2c145a5",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
-        "name": "connect",
-        "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\n\nglobal.set('userCreds', tempUserCreds)\n\nlet globalTopic = tempUserCreds.aid + \"/\" + tempUserCreds.cid + \"/\" + \"registration\" + \"/\" + tempUserCreds.deviceId + \"/\"\n\n\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\nlet obj = {}\nobj.payload = tempUserCreds\n\nreturn [obj, msg]\n",
+        "g": "1d912909a4bec57b",
+        "name": "subscribe",
+        "func": "\n\nlet tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nglobal.set('userCreds', tempUserCreds)\nlet globalTopic = tempUserCreds.aid + \"/\" + tempUserCreds.cid + \"/\" + \"registration\" + \"/\" + tempUserCreds.deviceId + \"/\"\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\n\n\nlet obj = {}\nobj.payload = tempUserCreds\n\nreturn [msg, obj]\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 280,
+        "x": 480,
         "y": 480,
         "wires": [
             [
-                "6ad93d3e94e2fe69"
+                "df01a4a6be99cf44"
             ],
             [
-                "9e5fe1c3fe6f0503"
+                "6ad93d3e94e2fe69"
             ]
         ]
     },
@@ -2164,7 +2132,7 @@
         "id": "32d53427bced070c",
         "type": "ui_table",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
+        "g": "1d912909a4bec57b",
         "group": "78fe50a055b65ca2",
         "name": "",
         "order": 13,
@@ -2254,15 +2222,15 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 750,
-        "y": 520,
+        "x": 1190,
+        "y": 340,
         "wires": []
     },
     {
         "id": "4c30f9b315530f2a",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
+        "g": "1d912909a4bec57b",
         "name": "",
         "property": "payload.operator",
         "propertyType": "msg",
@@ -2281,8 +2249,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 410,
-        "y": 540,
+        "x": 850,
+        "y": 380,
         "wires": [
             [
                 "160ef0c3c55613af"
@@ -2296,7 +2264,7 @@
         "id": "160ef0c3c55613af",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
+        "g": "1d912909a4bec57b",
         "name": "handleEvent",
         "func": "let eventInfoWrapper = {}\nlet eventInfo = {}\n\neventInfo = msg.payload.info\neventInfoWrapper.payload = {}\neventInfoWrapper.payload.command = \"addData\"\neventInfoWrapper.payload.arguments = [eventInfo, true]\n\nreturn eventInfoWrapper;",
         "outputs": 1,
@@ -2304,8 +2272,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
-        "y": 520,
+        "x": 1030,
+        "y": 340,
         "wires": [
             [
                 "32d53427bced070c"
@@ -2316,7 +2284,7 @@
         "id": "95c8a2503541cab9",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
+        "g": "1d912909a4bec57b",
         "name": "handleAck",
         "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\n\n\nif (messageId === msg.payload.message_id) {\n    console.log(\"2\")\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n        console.log(\"error\")\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
@@ -2324,8 +2292,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
-        "y": 580,
+        "x": 1030,
+        "y": 420,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -3276,8 +3244,8 @@
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 1560,
-        "y": 440,
+        "x": 2140,
+        "y": 320,
         "wires": [
             []
         ]
@@ -3286,7 +3254,7 @@
         "id": "6ad93d3e94e2fe69",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "d161c1f6a3c909b8",
+        "g": "1d912909a4bec57b",
         "group": "61a80ff8ccd60942",
         "name": "",
         "order": 1,
@@ -3298,8 +3266,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 500,
-        "y": 440,
+        "x": 680,
+        "y": 520,
         "wires": [
             []
         ]
@@ -3391,8 +3359,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1090,
-        "y": 520,
+        "x": 1670,
+        "y": 400,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -3425,7 +3393,6 @@
         "id": "a941964922c99e0d",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "2f21202357ff2a57",
         "name": "Name",
         "label": "Name",
         "tooltip": "",
@@ -3440,8 +3407,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 130,
-        "y": 720,
+        "x": 150,
+        "y": 660,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -3452,7 +3419,6 @@
         "id": "fb340be7e461e2fe",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "2f21202357ff2a57",
         "name": "Client ID",
         "label": "Client ID",
         "tooltip": "",
@@ -3467,8 +3433,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 120,
-        "y": 760,
+        "x": 140,
+        "y": 700,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -3479,7 +3445,6 @@
         "id": "0c769e6742acebb0",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "2f21202357ff2a57",
         "name": "Host",
         "label": "Host",
         "tooltip": "",
@@ -3494,8 +3459,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 130,
-        "y": 800,
+        "x": 150,
+        "y": 740,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -3506,7 +3471,6 @@
         "id": "a122ea34e40556e4",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "2f21202357ff2a57",
         "name": "Port",
         "label": "Port",
         "tooltip": "",
@@ -3521,8 +3485,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 130,
-        "y": 840,
+        "x": 150,
+        "y": 780,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -3533,7 +3497,6 @@
         "id": "ad3a558f7afdccbf",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "2f21202357ff2a57",
         "name": "Username",
         "label": "Username",
         "tooltip": "",
@@ -3548,8 +3511,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 110,
-        "y": 880,
+        "x": 130,
+        "y": 820,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -3560,7 +3523,6 @@
         "id": "58d2480b2eff322c",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "2f21202357ff2a57",
         "name": "Password",
         "label": "Password",
         "tooltip": "",
@@ -3575,8 +3537,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 120,
-        "y": 920,
+        "x": 140,
+        "y": 860,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -3587,7 +3549,6 @@
         "id": "7184e0269f48110f",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "2f21202357ff2a57",
         "name": "setMqttSettings",
         "func": "// initialise the counter to 0 if it doesn't exist already\nlet mqttSettings = global.get('mqttSettings') || {};\n\nmqttSettings = Object.assign(mqttSettings, { [msg.topic]: msg.payload })\nglobal.set('mqttSettings', mqttSettings)\n",
         "outputs": 1,
@@ -3595,8 +3556,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
-        "y": 800,
+        "x": 400,
+        "y": 740,
         "wires": [
             []
         ]
@@ -3605,13 +3566,14 @@
         "id": "5c0f4a3dd94ecbbf",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "name": "Connect",
+        "g": "1d912909a4bec57b",
+        "name": "Connect to MQTT",
         "group": "08691a1abdc449f7",
         "order": 7,
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Connect",
+        "label": "Connect to MQTT",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -3621,8 +3583,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 680,
-        "y": 960,
+        "x": 210,
+        "y": 400,
         "wires": [
             [
                 "1f7ea9be7c722e68"
@@ -3633,6 +3595,7 @@
         "id": "1f7ea9be7c722e68",
         "type": "function",
         "z": "692c798b6f9c61de",
+        "g": "1d912909a4bec57b",
         "name": "connectToMqttBroker",
         "func": "let mqttSettings = global.get('mqttSettings')\n\nmsg.action = \"connect\"\nmsg.broker = {\n    broker : mqttSettings.host,\n    port : mqttSettings.port\n}\n\nreturn msg;",
         "outputs": 1,
@@ -3640,11 +3603,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 960,
+        "x": 440,
+        "y": 400,
         "wires": [
             [
-                "df01a4a6be99cf44"
+                "df01a4a6be99cf44",
+                "9e5fe1c3fe6f0503"
             ]
         ]
     },
@@ -3668,7 +3632,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 690,
+        "x": 1070,
         "y": 1020,
         "wires": [
             []
@@ -3678,6 +3642,7 @@
         "id": "df01a4a6be99cf44",
         "type": "mqtt out",
         "z": "692c798b6f9c61de",
+        "g": "1d912909a4bec57b",
         "name": "",
         "topic": "",
         "qos": "0",
@@ -3688,8 +3653,8 @@
         "correl": "",
         "expiry": "",
         "broker": "11f61d797ff1ae20",
-        "x": 1150,
-        "y": 960,
+        "x": 670,
+        "y": 440,
         "wires": []
     }
 ]
