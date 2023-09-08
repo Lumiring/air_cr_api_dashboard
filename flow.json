@@ -139,12 +139,11 @@
             "5e83605c1e8b1345",
             "804d8ac17c0ee538",
             "dfbd635c1022b71c",
-            "c5f7a3022f0a71d4",
-            "9bfb1c5f68425835"
+            "c5f7a3022f0a71d4"
         ],
         "x": 14,
         "y": 1879,
-        "w": 672,
+        "w": 632,
         "h": 442
     },
     {
@@ -198,11 +197,12 @@
             "6ad93d3e94e2fe69",
             "5c0f4a3dd94ecbbf",
             "1f7ea9be7c722e68",
-            "d81bab586132c7e4"
+            "d81bab586132c7e4",
+            "881c61e409196bd8"
         ],
         "x": 74,
         "y": 99,
-        "w": 1192,
+        "w": 1312,
         "h": 362
     },
     {
@@ -1771,8 +1771,7 @@
         "y": 2080,
         "wires": [
             [
-                "8ceb1c5b5fb6e7d7",
-                "9bfb1c5f68425835"
+                "8ceb1c5b5fb6e7d7"
             ]
         ]
     },
@@ -1811,8 +1810,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1180,
-        "y": 220,
+        "x": 1300,
+        "y": 180,
         "wires": []
     },
     {
@@ -1983,7 +1982,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1170,
+        "x": 1290,
         "y": 140,
         "wires": []
     },
@@ -2005,11 +2004,16 @@
                 "t": "eq",
                 "v": "SetAccessMode-Ack",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Single_pass-Ack",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 2,
+        "outputs": 3,
         "x": 830,
         "y": 180,
         "wires": [
@@ -2018,6 +2022,9 @@
             ],
             [
                 "95c8a2503541cab9"
+            ],
+            [
+                "881c61e409196bd8"
             ]
         ]
     },
@@ -2046,15 +2053,15 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "g": "1d912909a4bec57b",
-        "name": "handleAck",
-        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\n\n\nif (messageId === msg.payload.message_id) {\n    console.log(\"2\")\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n        console.log(\"errorNo: 0\")\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n        console.log(\"error\")\n    }\n}\n\nreturn ackInfo;",
+        "name": "HandleSetAccessMode-Ack",
+        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\n\nif (messageId === msg.payload.message_id) {\n\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1010,
-        "y": 220,
+        "x": 1040,
+        "y": 180,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -2582,8 +2589,7 @@
         "y": 2220,
         "wires": [
             [
-                "8ceb1c5b5fb6e7d7",
-                "9bfb1c5f68425835"
+                "8ceb1c5b5fb6e7d7"
             ]
         ]
     },
@@ -3403,21 +3409,24 @@
         ]
     },
     {
-        "id": "9bfb1c5f68425835",
-        "type": "debug",
+        "id": "881c61e409196bd8",
+        "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 2200,
-        "wires": []
+        "g": "1d912909a4bec57b",
+        "name": "Single_pass-Ack",
+        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n\n    }\n}\n\nreturn ackInfo;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 220,
+        "wires": [
+            [
+                "6c8acdd459e657eb"
+            ]
+        ]
     },
     {
         "id": "1fddf0a8d296909f",
