@@ -1874,7 +1874,7 @@
         "z": "692c798b6f9c61de",
         "g": "1d912909a4bec57b",
         "name": "subscribe",
-        "func": "\n\nlet tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nglobal.set('userCreds', tempUserCreds)\nlet globalTopic = tempUserCreds.aid + \"/\" + tempUserCreds.cid + \"/\" + \"registration\" + \"/\" + tempUserCreds.deviceId + \"/\"\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\n\n\nlet obj = {}\nobj.payload = tempUserCreds\n\nreturn [msg, obj]\n",
+        "func": "\n\nlet tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nglobal.set('userCreds', tempUserCreds)\nlet globalTopic = tempUserCreds.aid + \"/\" + tempUserCreds.cid + \"/\" + \"registration\" + \"/\" + tempUserCreds.deviceId + \"/\"\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\n\nconsole.log(msg)\nlet obj = {}\nobj.payload = tempUserCreds\n\nreturn [msg, obj]\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
