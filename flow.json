@@ -3434,15 +3434,13 @@
         "z": "692c798b6f9c61de",
         "name": "",
         "scope": [
-            "9e5fe1c3fe6f0503",
-            "8ceb1c5b5fb6e7d7"
+            "8ceb1c5b5fb6e7d7",
+            "9e5fe1c3fe6f0503"
         ],
         "x": 360,
         "y": 540,
         "wires": [
-            [
-                "8c874e528a33d725"
-            ]
+            []
         ]
     },
     {
@@ -3460,6 +3458,23 @@
         "x": 580,
         "y": 540,
         "wires": []
+    },
+    {
+        "id": "9520b0a7dbd245b9",
+        "type": "complete",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "scope": [
+            "9e5fe1c3fe6f0503"
+        ],
+        "uncaught": false,
+        "x": 350,
+        "y": 580,
+        "wires": [
+            [
+                "8c874e528a33d725"
+            ]
+        ]
     },
     {
         "id": "1fddf0a8d296909f",
