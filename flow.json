@@ -197,7 +197,6 @@
             "6ad93d3e94e2fe69",
             "5c0f4a3dd94ecbbf",
             "1f7ea9be7c722e68",
-            "df01a4a6be99cf44",
             "d81bab586132c7e4",
             "ee826fa8331f0346",
             "1bdc8e07d24214f5"
@@ -3403,25 +3402,6 @@
                 "1f7ea9be7c722e68"
             ]
         ]
-    },
-    {
-        "id": "df01a4a6be99cf44",
-        "type": "mqtt out",
-        "z": "692c798b6f9c61de",
-        "g": "1d912909a4bec57b",
-        "name": "",
-        "topic": "",
-        "qos": "0",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "79737e067a3af084",
-        "x": 670,
-        "y": 340,
-        "wires": []
     },
     {
         "id": "ee826fa8331f0346",
