@@ -3495,6 +3495,43 @@
         ]
     },
     {
+        "id": "e7f3dac39423143b",
+        "type": "mqtt in",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "79737e067a3af084",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 350,
+        "y": 620,
+        "wires": [
+            [
+                "23f503d3b4344079"
+            ]
+        ]
+    },
+    {
+        "id": "23f503d3b4344079",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 620,
+        "wires": []
+    },
+    {
         "id": "1fddf0a8d296909f",
         "type": "inject",
         "z": "be9f64fbc3682d16",
