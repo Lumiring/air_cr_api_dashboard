@@ -199,9 +199,10 @@
             "1f7ea9be7c722e68",
             "df01a4a6be99cf44",
             "d81bab586132c7e4",
-            "ee826fa8331f0346"
+            "ee826fa8331f0346",
+            "1bdc8e07d24214f5"
         ],
-        "x": 74,
+        "x": 54,
         "y": 179,
         "w": 1192,
         "h": 362
@@ -1811,7 +1812,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1180,
+        "x": 1160,
         "y": 300,
         "wires": []
     },
@@ -1829,7 +1830,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 1,
-        "x": 690,
+        "x": 670,
         "y": 260,
         "wires": [
             [
@@ -1859,7 +1860,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 220,
+        "x": 200,
         "y": 440,
         "wires": [
             [
@@ -1879,11 +1880,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
+        "x": 400,
         "y": 440,
         "wires": [
             [
-                "df01a4a6be99cf44"
+                "df01a4a6be99cf44",
+                "1bdc8e07d24214f5"
             ],
             [
                 "6ad93d3e94e2fe69"
@@ -1984,7 +1986,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1170,
+        "x": 1150,
         "y": 220,
         "wires": []
     },
@@ -2011,7 +2013,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 830,
+        "x": 810,
         "y": 260,
         "wires": [
             [
@@ -2034,7 +2036,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1010,
+        "x": 990,
         "y": 220,
         "wires": [
             [
@@ -2054,7 +2056,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1010,
+        "x": 990,
         "y": 300,
         "wires": [
             [
@@ -3028,7 +3030,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 620,
+        "x": 600,
         "y": 500,
         "wires": [
             []
@@ -3345,7 +3347,7 @@
         "payloadType": "json",
         "topic": "",
         "topicType": "str",
-        "x": 190,
+        "x": 170,
         "y": 280,
         "wires": [
             [
@@ -3365,7 +3367,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
+        "x": 450,
         "y": 260,
         "wires": [
             [
@@ -3394,7 +3396,7 @@
         "payloadType": "json",
         "topic": "",
         "topicType": "str",
-        "x": 170,
+        "x": 150,
         "y": 240,
         "wires": [
             [
@@ -3417,7 +3419,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 610,
+        "x": 590,
         "y": 400,
         "wires": []
     },
@@ -3434,7 +3436,24 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 820,
+        "x": 800,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "1bdc8e07d24214f5",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "g": "1d912909a4bec57b",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
         "y": 340,
         "wires": []
     },
