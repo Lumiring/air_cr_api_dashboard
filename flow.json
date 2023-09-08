@@ -202,8 +202,8 @@
             "ee826fa8331f0346",
             "1bdc8e07d24214f5"
         ],
-        "x": 54,
-        "y": 179,
+        "x": 74,
+        "y": 99,
         "w": 1192,
         "h": 362
     },
@@ -1812,8 +1812,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1160,
-        "y": 300,
+        "x": 1180,
+        "y": 220,
         "wires": []
     },
     {
@@ -1830,8 +1830,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 1,
-        "x": 670,
-        "y": 260,
+        "x": 650,
+        "y": 200,
         "wires": [
             [
                 "4c30f9b315530f2a",
@@ -1860,8 +1860,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 200,
-        "y": 440,
+        "x": 220,
+        "y": 360,
         "wires": [
             [
                 "2b2d85fbc2c145a5"
@@ -1880,12 +1880,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 440,
+        "x": 420,
+        "y": 360,
         "wires": [
             [
-                "df01a4a6be99cf44",
-                "1bdc8e07d24214f5"
+                "1bdc8e07d24214f5",
+                "9e5fe1c3fe6f0503"
             ],
             [
                 "6ad93d3e94e2fe69"
@@ -1986,8 +1986,8 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1150,
-        "y": 220,
+        "x": 1170,
+        "y": 140,
         "wires": []
     },
     {
@@ -2013,8 +2013,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 810,
-        "y": 260,
+        "x": 830,
+        "y": 180,
         "wires": [
             [
                 "160ef0c3c55613af"
@@ -2036,8 +2036,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 220,
+        "x": 1010,
+        "y": 140,
         "wires": [
             [
                 "32d53427bced070c"
@@ -2056,8 +2056,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 300,
+        "x": 1010,
+        "y": 220,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -3030,8 +3030,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 600,
-        "y": 500,
+        "x": 620,
+        "y": 420,
         "wires": [
             []
         ]
@@ -3347,8 +3347,8 @@
         "payloadType": "json",
         "topic": "",
         "topicType": "str",
-        "x": 170,
-        "y": 280,
+        "x": 190,
+        "y": 200,
         "wires": [
             [
                 "1f7ea9be7c722e68"
@@ -3367,8 +3367,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 260,
+        "x": 470,
+        "y": 180,
         "wires": [
             [
                 "9e5fe1c3fe6f0503"
@@ -3396,8 +3396,8 @@
         "payloadType": "json",
         "topic": "",
         "topicType": "str",
-        "x": 150,
-        "y": 240,
+        "x": 170,
+        "y": 160,
         "wires": [
             [
                 "1f7ea9be7c722e68"
@@ -3419,8 +3419,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 590,
-        "y": 400,
+        "x": 670,
+        "y": 340,
         "wires": []
     },
     {
@@ -3436,8 +3436,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 800,
-        "y": 340,
+        "x": 820,
+        "y": 260,
         "wires": []
     },
     {
@@ -3453,8 +3453,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 600,
-        "y": 340,
+        "x": 960,
+        "y": 400,
         "wires": []
     },
     {
