@@ -3444,36 +3444,6 @@
         ]
     },
     {
-        "id": "ead0d1b3f9ce8a3e",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 820,
-        "y": 600,
-        "wires": []
-    },
-    {
-        "id": "943bb3bc128ebf6a",
-        "type": "event-in",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "topic": "topic",
-        "x": 610,
-        "y": 600,
-        "wires": [
-            [
-                "ead0d1b3f9ce8a3e"
-            ]
-        ]
-    },
-    {
         "id": "1fddf0a8d296909f",
         "type": "inject",
         "z": "be9f64fbc3682d16",
