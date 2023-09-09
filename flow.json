@@ -201,13 +201,13 @@
             "881c61e409196bd8",
             "f0dcea6337a38f54",
             "84cef9c2bb45ee64",
-            "a6bc2afee2283815",
-            "e40de5f8388ffc68"
+            "e40de5f8388ffc68",
+            "2f28a02598ca6e15"
         ],
         "x": 54,
         "y": 159,
         "w": 1312,
-        "h": 402
+        "h": 382
     },
     {
         "id": "79737e067a3af084",
@@ -3442,8 +3442,8 @@
         "scope": [
             "9e5fe1c3fe6f0503"
         ],
-        "x": 260,
-        "y": 520,
+        "x": 220,
+        "y": 480,
         "wires": [
             [
                 "84cef9c2bb45ee64"
@@ -3456,39 +3456,22 @@
         "z": "692c798b6f9c61de",
         "g": "1d912909a4bec57b",
         "name": "function 1",
-        "func": "let mqttSettings = global.get('mqtt_settings')\n\nif (msg.status.text === \"node-red:common.status.connecting\") {\n    msg.payload = \"Connecting to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    msg.payload = \"Connected to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    msg.payload = \"Mqtt disconnected\"\n}\n\nreturn msg;",
-        "outputs": 1,
+        "func": "let mqttSettings = global.get('mqtt_settings')\nlet message = {}\n\nif (msg.status.text === \"node-red:common.status.connecting\") {\n    msg.payload.connectionStatus = \"Status: Connecting...\"\n    message.payload = \"Connecting to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    msg.payload.connectionStatus = \"Status: Connected to \" + mqttSettings.broker + \":\" + mqttSettings.port\n    message.payload = \"Connected to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    msg.payload.connectionStatus = \"Status: Connection OFF\"\n    message.payload = \"Mqtt disconnected\"\n}\n\nreturn [message, msg]\n\n",
+        "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
-        "y": 520,
+        "x": 420,
+        "y": 480,
         "wires": [
             [
-                "a6bc2afee2283815"
+                "6ad93d3e94e2fe69"
+            ],
+            [
+                "2f28a02598ca6e15"
             ]
         ]
-    },
-    {
-        "id": "a6bc2afee2283815",
-        "type": "ui_toast",
-        "z": "692c798b6f9c61de",
-        "g": "1d912909a4bec57b",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "",
-        "x": 650,
-        "y": 520,
-        "wires": []
     },
     {
         "id": "e40de5f8388ffc68",
@@ -3506,6 +3489,26 @@
         "statusType": "auto",
         "x": 620,
         "y": 360,
+        "wires": []
+    },
+    {
+        "id": "2f28a02598ca6e15",
+        "type": "ui_toast",
+        "z": "692c798b6f9c61de",
+        "g": "1d912909a4bec57b",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 630,
+        "y": 500,
         "wires": []
     },
     {
