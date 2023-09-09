@@ -199,12 +199,14 @@
             "1f7ea9be7c722e68",
             "d81bab586132c7e4",
             "881c61e409196bd8",
-            "f0dcea6337a38f54"
+            "f0dcea6337a38f54",
+            "84cef9c2bb45ee64",
+            "a6bc2afee2283815"
         ],
         "x": 54,
         "y": 159,
         "w": 1312,
-        "h": 322
+        "h": 402
     },
     {
         "id": "79737e067a3af084",
@@ -1872,7 +1874,7 @@
         "z": "692c798b6f9c61de",
         "g": "1d912909a4bec57b",
         "name": "subscribe",
-        "func": "\n\nlet tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nglobal.set('userCreds', tempUserCreds)\nlet globalTopic = tempUserCreds.aid + \"/\" + tempUserCreds.cid + \"/\" + \"registration\" + \"/\" + tempUserCreds.deviceId + \"/\"\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\n\nconsole.log(msg)\nlet obj = {}\nobj.payload = tempUserCreds\n\nreturn [msg, obj]\n",
+        "func": "\n\nlet tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nglobal.set('userCreds', tempUserCreds)\nlet globalTopic = tempUserCreds.aid + \"/\" + tempUserCreds.cid + \"/\" + \"registration\" + \"/\" + tempUserCreds.deviceId + \"/\"\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\n\nconsole.log(msg)\nlet obj = {}\nobj.payload.cid = \"Company ID: \" + tempUserCreds.cid\nobj.payload.aid = \"Account ID: \" + tempUserCreds.aid\nobj.payload.deviceId = \"Device ID: \" + tempUserCreds.deviceId\nreturn [msg, obj]\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -3029,7 +3031,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    #userCreds {\n        font-size: 25px;\n        display: flex;\n        margin-left: 5px;\n    }\n\n    #userCreds div {\n        margin-left: 20px;\n    }\n\n</style>\n\n<div id=\"userCreds\">\n    <div>Account ID: {{msg.payload.aid}}</div>\n    <div>Company ID: {{msg.payload.cid}}</div>\n    <div>Device ID:  {{msg.payload.deviceId}}</div>\n</div>",
+        "format": "<style>\n    #userCreds {\n        font-size: 25px;\n        display: flex;\n        margin-left: 5px;\n    }\n\n    #userCreds div {\n        margin-left: 20px;\n    }\n\n</style>\n\n<div id=\"userCreds\">\n    <div>{{msg.payload.aid}}</div>\n    <div>{{msg.payload.cid}}</div>\n    <div>{{msg.payload.deviceId}}</div>\n    <div>{{msg.payload.connectionStatus}}</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -3438,12 +3440,11 @@
         "scope": [
             "9e5fe1c3fe6f0503"
         ],
-        "x": 760,
-        "y": 440,
+        "x": 260,
+        "y": 520,
         "wires": [
             [
-                "84cef9c2bb45ee64",
-                "5790df03628a858a"
+                "84cef9c2bb45ee64"
             ]
         ]
     },
@@ -3451,6 +3452,7 @@
         "id": "84cef9c2bb45ee64",
         "type": "function",
         "z": "692c798b6f9c61de",
+        "g": "1d912909a4bec57b",
         "name": "function 1",
         "func": "let mqttSettings = global.get('mqtt_settings')\n\nif (msg.status.text === \"node-red:common.status.connecting\") {\n    msg.payload = \"Connecting to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    msg.payload = \"Connected to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    msg.payload = \"Mqtt disconnected\"\n}\n\nreturn msg;",
         "outputs": 1,
@@ -3458,8 +3460,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 940,
-        "y": 380,
+        "x": 440,
+        "y": 520,
         "wires": [
             [
                 "a6bc2afee2283815"
@@ -3470,6 +3472,7 @@
         "id": "a6bc2afee2283815",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
+        "g": "1d912909a4bec57b",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -3481,136 +3484,8 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 1130,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "5790df03628a858a",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 960,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "120b767b603dd651",
-        "type": "complete",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "scope": [
-            "9e5fe1c3fe6f0503"
-        ],
-        "uncaught": false,
-        "x": 630,
-        "y": 540,
-        "wires": [
-            [
-                "1d3486654f18e042"
-            ]
-        ]
-    },
-    {
-        "id": "1d3486654f18e042",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 860,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "ef4f96708fe64680",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "name": "function 2",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 880,
-        "y": 640,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c4c6197e16208b5c",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 700,
-        "y": 640,
-        "wires": [
-            [
-                "ef4f96708fe64680"
-            ]
-        ]
-    },
-    {
-        "id": "6753e24a271374aa",
-        "type": "complete",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "scope": [
-            "ef4f96708fe64680"
-        ],
-        "uncaught": false,
-        "x": 690,
-        "y": 740,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "15e9df8d70054adb",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 880,
-        "y": 740,
+        "x": 650,
+        "y": 520,
         "wires": []
     },
     {
