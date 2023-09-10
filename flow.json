@@ -3521,9 +3521,9 @@
         "name": "",
         "props": [
             {
-                "p": "enabled",
-                "v": "true",
-                "vt": "bool"
+                "p": "status.text",
+                "v": "\"node-red:common.status.disconnected\"",
+                "vt": "str"
             }
         ],
         "repeat": "",
@@ -3531,11 +3531,11 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 410,
-        "y": 180,
+        "x": 210,
+        "y": 660,
         "wires": [
             [
-                "d81bab586132c7e4"
+                "642df87e4871a1c4"
             ]
         ]
     },
