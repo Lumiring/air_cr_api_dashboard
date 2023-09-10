@@ -3409,13 +3409,13 @@
         "id": "d81bab586132c7e4",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "name": "Disconnect",
+        "name": "Stop connection",
         "group": "08691a1abdc449f7",
         "order": 11,
         "width": 11,
         "height": 1,
         "passthru": false,
-        "label": "Disconnect",
+        "label": "Stop connection",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -3425,7 +3425,7 @@
         "payloadType": "json",
         "topic": "",
         "topicType": "str",
-        "x": 610,
+        "x": 620,
         "y": 240,
         "wires": [
             [
@@ -3512,31 +3512,6 @@
         "y": 300,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "7c979df0692bd173",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "status.text",
-                "v": "node-red:common.status.disconnected",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 210,
-        "y": 660,
-        "wires": [
-            [
-                "642df87e4871a1c4"
-            ]
         ]
     },
     {
