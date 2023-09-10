@@ -3522,7 +3522,7 @@
         "props": [
             {
                 "p": "status.text",
-                "v": "\"node-red:common.status.disconnected\"",
+                "v": "node-red:common.status.disconnected",
                 "vt": "str"
             }
         ],
