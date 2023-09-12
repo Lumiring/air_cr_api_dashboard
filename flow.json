@@ -45,12 +45,11 @@
             "31d364e6be3997dd",
             "8c8a2053b1a0ceea",
             "21734bc456624e52",
-            "0966a1bd21c735d1",
             "2bd91b34584ac591"
         ],
-        "x": -6,
+        "x": 34,
         "y": 1099,
-        "w": 812,
+        "w": 772,
         "h": 742
     },
     {
@@ -4231,26 +4230,6 @@
         ]
     },
     {
-        "id": "0966a1bd21c735d1",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "g": "3d00d5011b39e864",
-        "name": "function 3",
-        "func": "\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "let msg = {}\nmsg.payload = 0\nmsg.enabled = false\nreturn msg",
-        "finalize": "",
-        "libs": [],
-        "x": 120,
-        "y": 1320,
-        "wires": [
-            [
-                "3b2f1e24dd57ae16"
-            ]
-        ]
-    },
-    {
         "id": "2bd91b34584ac591",
         "type": "inject",
         "z": "692c798b6f9c61de",
@@ -4259,17 +4238,22 @@
         "props": [
             {
                 "p": "payload"
+            },
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
             }
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "34343",
+        "payload": "0",
         "payloadType": "num",
-        "x": 90,
-        "y": 1360,
+        "x": 150,
+        "y": 1320,
         "wires": [
             [
                 "3b2f1e24dd57ae16"
