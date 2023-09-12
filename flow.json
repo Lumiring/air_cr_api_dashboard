@@ -161,7 +161,6 @@
             "a9fc57cdad44cd14",
             "84d7a118ddd9842f",
             "5876e97090ffded2",
-            "04f885723e74da6d",
             "4cbd5dad0b25f599",
             "0e14c4ef8c608b83",
             "4a42fef97bd379c2",
@@ -3714,33 +3713,6 @@
         ]
     },
     {
-        "id": "04f885723e74da6d",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "7b1492e7d36d2570",
-        "name": "Door_sens_idx",
-        "label": "Door_sens_idx",
-        "tooltip": "",
-        "group": "70cafaf5a818dc3a",
-        "order": 8,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Door_sens_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 300,
-        "y": 2720,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
         "id": "4cbd5dad0b25f599",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
@@ -4329,7 +4301,7 @@
         "y": 2720,
         "wires": [
             [
-                "04f885723e74da6d"
+                "061aecc325f2ccf3"
             ]
         ]
     },
@@ -4364,10 +4336,12 @@
         "topic": "Door_sens_idx",
         "topicType": "str",
         "className": "",
-        "x": 660,
-        "y": 2600,
+        "x": 300,
+        "y": 2720,
         "wires": [
-            []
+            [
+                "a607e57b9c8d8cdd"
+            ]
         ]
     },
     {
