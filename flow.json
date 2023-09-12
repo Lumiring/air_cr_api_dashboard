@@ -204,8 +204,7 @@
             "4d74c64a6d551fbf",
             "689eaeb65ca4fba4",
             "c195fb1af7d90e90",
-            "3c691a45025ba009",
-            "cabf550e96028272"
+            "3c691a45025ba009"
         ],
         "x": 54,
         "y": 2439,
@@ -4228,26 +4227,6 @@
         "wires": [
             [
                 "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "cabf550e96028272",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "g": "7b1492e7d36d2570",
-        "name": "function 2",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nmsg.payload = 0\nmsg.enabled = false\nreturn msg",
-        "finalize": "",
-        "libs": [],
-        "x": 140,
-        "y": 2680,
-        "wires": [
-            [
-                "013b59aaa0a27b09"
             ]
         ]
     },
