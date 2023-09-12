@@ -44,10 +44,11 @@
             "f9854082c6f330fa",
             "31d364e6be3997dd",
             "8c8a2053b1a0ceea",
-            "21734bc456624e52"
+            "21734bc456624e52",
+            "0966a1bd21c735d1"
         ],
-        "x": -6,
-        "y": 1119,
+        "x": 34,
+        "y": 1099,
         "w": 772,
         "h": 742
     },
@@ -79,7 +80,7 @@
             "410d950420bd3341",
             "f9540f44c6078c17"
         ],
-        "x": 794,
+        "x": 834,
         "y": 1119,
         "w": 652,
         "h": 522
@@ -110,7 +111,7 @@
             "303f207717b36b47",
             "a61c2ed9c4cf49f7"
         ],
-        "x": 794,
+        "x": 834,
         "y": 1659,
         "w": 552,
         "h": 462
@@ -141,7 +142,7 @@
             "dfbd635c1022b71c",
             "c5f7a3022f0a71d4"
         ],
-        "x": 14,
+        "x": 54,
         "y": 1879,
         "w": 632,
         "h": 442
@@ -171,6 +172,44 @@
         "y": 179,
         "w": 672,
         "h": 282
+    },
+    {
+        "id": "7b1492e7d36d2570",
+        "type": "group",
+        "z": "692c798b6f9c61de",
+        "name": "Simple_settings",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "dde67e8d2e192164",
+            "a607e57b9c8d8cdd",
+            "a9fc57cdad44cd14",
+            "84d7a118ddd9842f",
+            "5876e97090ffded2",
+            "013b59aaa0a27b09",
+            "04f885723e74da6d",
+            "4cbd5dad0b25f599",
+            "0e14c4ef8c608b83",
+            "4a42fef97bd379c2",
+            "297191ec56ab0272",
+            "d8697b4c53aa26a1",
+            "d0c523e32a8ea14f",
+            "6966def13188175e",
+            "b6e08e3b73e4abd7",
+            "4e8e2f944e0fc36d",
+            "1dc6ecb687b4c702",
+            "940bef210d3fe68f",
+            "4d74c64a6d551fbf",
+            "689eaeb65ca4fba4",
+            "c195fb1af7d90e90",
+            "3c691a45025ba009",
+            "cabf550e96028272"
+        ],
+        "x": 54,
+        "y": 2439,
+        "w": 772,
+        "h": 802
     },
     {
         "id": "79737e067a3af084",
@@ -864,6 +903,17 @@
         "height": 1
     },
     {
+        "id": "70cafaf5a818dc3a",
+        "type": "ui_group",
+        "name": "Simple_settings",
+        "tab": "b76cefdaf9bc6c8b",
+        "order": 8,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "4fa2839622e9ccb5",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
@@ -989,8 +1039,8 @@
         "topic": "Rd0_dir",
         "topicType": "str",
         "className": "",
-        "x": 250,
-        "y": 1260,
+        "x": 290,
+        "y": 1240,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1009,8 +1059,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
-        "y": 1480,
+        "x": 710,
+        "y": 1460,
         "wires": [
             []
         ]
@@ -1027,8 +1077,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
-        "y": 1700,
+        "x": 670,
+        "y": 1680,
         "wires": [
             [
                 "8c8a2053b1a0ceea"
@@ -1071,8 +1121,8 @@
         "topic": "Door_sens_Condition",
         "topicType": "str",
         "className": "",
-        "x": 240,
-        "y": 1420,
+        "x": 280,
+        "y": 1400,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1098,8 +1148,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 190,
-        "y": 1300,
+        "x": 230,
+        "y": 1280,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1125,8 +1175,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 260,
-        "y": 1340,
+        "x": 300,
+        "y": 1320,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1152,8 +1202,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 260,
-        "y": 1380,
+        "x": 300,
+        "y": 1360,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1179,8 +1229,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 260,
-        "y": 1460,
+        "x": 300,
+        "y": 1440,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1206,8 +1256,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 260,
-        "y": 1500,
+        "x": 300,
+        "y": 1480,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1245,8 +1295,8 @@
         "topic": "Door_Lock_mode",
         "topicType": "str",
         "className": "",
-        "x": 250,
-        "y": 1540,
+        "x": 290,
+        "y": 1520,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1284,8 +1334,8 @@
         "topic": "Door_Lock_type",
         "topicType": "str",
         "className": "",
-        "x": 260,
-        "y": 1580,
+        "x": 300,
+        "y": 1560,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1311,8 +1361,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 180,
-        "y": 1620,
+        "x": 220,
+        "y": 1600,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1338,8 +1388,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 210,
-        "y": 1660,
+        "x": 250,
+        "y": 1640,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1373,8 +1423,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 240,
-        "y": 1700,
+        "x": 280,
+        "y": 1680,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1400,8 +1450,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 260,
-        "y": 1740,
+        "x": 300,
+        "y": 1720,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1427,8 +1477,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 260,
-        "y": 1780,
+        "x": 300,
+        "y": 1760,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1471,8 +1521,8 @@
         "topic": "Button_rex_Condition",
         "topicType": "str",
         "className": "",
-        "x": 180,
-        "y": 1820,
+        "x": 220,
+        "y": 1800,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1500,8 +1550,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 620,
-        "y": 1600,
+        "x": 660,
+        "y": 1580,
         "wires": [
             [
                 "36afbbbff6d2c65b"
@@ -1527,8 +1577,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 230,
-        "y": 1220,
+        "x": 270,
+        "y": 1200,
         "wires": [
             [
                 "500b54e0a15a8024"
@@ -1550,8 +1600,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 650,
-        "y": 1760,
+        "x": 690,
+        "y": 1740,
         "wires": []
     },
     {
@@ -1666,7 +1716,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 120,
+        "x": 160,
         "y": 2020,
         "wires": [
             [
@@ -1695,7 +1745,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 100,
+        "x": 140,
         "y": 2080,
         "wires": [
             [
@@ -1724,7 +1774,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 110,
+        "x": 150,
         "y": 2140,
         "wires": [
             [
@@ -1744,7 +1794,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
+        "x": 410,
         "y": 2080,
         "wires": [
             [
@@ -1767,7 +1817,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 570,
+        "x": 610,
         "y": 2140,
         "wires": []
     },
@@ -1790,7 +1840,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1000,
+        "x": 1040,
         "y": 1200,
         "wires": [
             [
@@ -1817,7 +1867,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 940,
+        "x": 980,
         "y": 1240,
         "wires": [
             [
@@ -1871,7 +1921,7 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "",
-        "x": 1000,
+        "x": 1040,
         "y": 1280,
         "wires": [
             [
@@ -1910,7 +1960,7 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "",
-        "x": 990,
+        "x": 1030,
         "y": 1320,
         "wires": [
             [
@@ -1949,7 +1999,7 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "",
-        "x": 980,
+        "x": 1020,
         "y": 1360,
         "wires": [
             [
@@ -1988,7 +2038,7 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "",
-        "x": 1000,
+        "x": 1040,
         "y": 1400,
         "wires": [
             [
@@ -2052,7 +2102,7 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "",
-        "x": 990,
+        "x": 1030,
         "y": 1440,
         "wires": [
             [
@@ -2079,7 +2129,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 990,
+        "x": 1030,
         "y": 1480,
         "wires": [
             [
@@ -2099,7 +2149,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1370,
+        "x": 1410,
         "y": 1380,
         "wires": [
             []
@@ -2126,7 +2176,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1210,
+        "x": 1250,
         "y": 1480,
         "wires": [
             [
@@ -2146,7 +2196,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1230,
+        "x": 1270,
         "y": 1540,
         "wires": [
             [
@@ -2169,7 +2219,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 1230,
+        "x": 1270,
         "y": 1600,
         "wires": []
     },
@@ -2192,7 +2242,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 130,
+        "x": 170,
         "y": 1960,
         "wires": [
             [
@@ -2212,7 +2262,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
+        "x": 420,
         "y": 1960,
         "wires": [
             []
@@ -2239,7 +2289,7 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 110,
+        "x": 150,
         "y": 2220,
         "wires": [
             [
@@ -2268,7 +2318,7 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 110,
+        "x": 150,
         "y": 2280,
         "wires": [
             [
@@ -2288,7 +2338,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
+        "x": 390,
         "y": 2220,
         "wires": [
             [
@@ -2315,7 +2365,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 930,
+        "x": 970,
         "y": 1740,
         "wires": [
             [
@@ -2342,7 +2392,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 930,
+        "x": 970,
         "y": 1780,
         "wires": [
             [
@@ -2369,7 +2419,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 930,
+        "x": 970,
         "y": 1820,
         "wires": [
             [
@@ -2404,7 +2454,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 910,
+        "x": 950,
         "y": 1900,
         "wires": [
             [
@@ -2431,7 +2481,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 910,
+        "x": 950,
         "y": 1940,
         "wires": [
             [
@@ -2605,7 +2655,7 @@
         "topic": "tz",
         "topicType": "str",
         "className": "",
-        "x": 900,
+        "x": 940,
         "y": 1860,
         "wires": [
             [
@@ -2634,7 +2684,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1190,
+        "x": 1230,
         "y": 1920,
         "wires": [
             [
@@ -2654,7 +2704,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1150,
+        "x": 1190,
         "y": 1820,
         "wires": [
             []
@@ -2672,7 +2722,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1230,
+        "x": 1270,
         "y": 2000,
         "wires": [
             [
@@ -2695,7 +2745,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 1250,
+        "x": 1290,
         "y": 2080,
         "wires": []
     },
@@ -2737,8 +2787,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 270,
-        "y": 1160,
+        "x": 310,
+        "y": 1140,
         "wires": [
             []
         ]
@@ -2759,7 +2809,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1020,
+        "x": 1060,
         "y": 1160,
         "wires": [
             []
@@ -2781,7 +2831,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 950,
+        "x": 990,
         "y": 1700,
         "wires": [
             []
@@ -2832,7 +2882,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 110,
+        "x": 150,
         "y": 1920,
         "wires": [
             []
@@ -3533,6 +3583,691 @@
         "y": 200,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "dde67e8d2e192164",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Direction (Rd0_dir)",
+        "label": "Direction (Rd0_dir)",
+        "tooltip": "",
+        "place": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 6,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "entry",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "exit",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Rd0_dir",
+        "topicType": "str",
+        "className": "",
+        "x": 310,
+        "y": 2760,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "a607e57b9c8d8cdd",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "SetCtpDoor",
+        "func": "\n// initialise the counter to 0 if it doesn't exist already\nlet stpDoorSet = global.get('stpDoorSet') || {};\n\nstpDoorSet = Object.assign(stpDoorSet, {[msg.topic]:msg.payload})\n\nglobal.set('stpDoorSet', stpDoorSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 2860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9fc57cdad44cd14",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "sendMqttMessage",
+        "func": "msg.payload = global.get('stpDoorSet');\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 3080,
+        "wires": [
+            [
+                "689eaeb65ca4fba4"
+            ]
+        ]
+    },
+    {
+        "id": "84d7a118ddd9842f",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Door_sens_Condition",
+        "label": "Door_sens_Condition",
+        "tooltip": "",
+        "place": "Door_sens_Condition",
+        "group": "70cafaf5a818dc3a",
+        "order": 7,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Open",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Close",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Change",
+                "value": 2,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_sens_Condition",
+        "topicType": "str",
+        "className": "",
+        "x": 300,
+        "y": 2800,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "5876e97090ffded2",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Control point index (Control_point_idx)",
+        "label": "Control point index (Control_point_idx)",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 3,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Control_point_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 250,
+        "y": 2640,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "013b59aaa0a27b09",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Door_sens_opt",
+        "label": "Door_sens_opt",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 5,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Door_sens_opt",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 320,
+        "y": 2680,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "04f885723e74da6d",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Door_sens_idx",
+        "label": "Door_sens_idx",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 9,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Door_sens_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 320,
+        "y": 2720,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "4cbd5dad0b25f599",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Lock_Relay_opt",
+        "label": "Lock_Relay_opt",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 10,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Lock_Relay_opt",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 320,
+        "y": 2840,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "0e14c4ef8c608b83",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Lock_Relay_idx",
+        "label": "Lock_Relay_idx",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 8,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Lock_Relay_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 320,
+        "y": 2880,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "4a42fef97bd379c2",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Door_Lock_mode",
+        "label": "Door_Lock_mode",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "70cafaf5a818dc3a",
+        "order": 15,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "trigger",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "impulse",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_Lock_mode",
+        "topicType": "str",
+        "className": "",
+        "x": 310,
+        "y": 2920,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "297191ec56ab0272",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Door_Lock_type",
+        "label": "Door_Lock_type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "70cafaf5a818dc3a",
+        "order": 13,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "N-Opened",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "N-Closed",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_Lock_type",
+        "topicType": "str",
+        "className": "",
+        "x": 320,
+        "y": 2960,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "d8697b4c53aa26a1",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Impulse duration (sec) (Door_Lock_puls)",
+        "label": "Impulse duration (sec) (Door_Lock_puls)",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 12,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Door_Lock_puls",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 240,
+        "y": 3000,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "d0c523e32a8ea14f",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Hold duration (sec) Door_Delay",
+        "label": "Hold duration (sec) Door_Delay",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 11,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Door_Delay",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 270,
+        "y": 3040,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "6966def13188175e",
+        "type": "ui_switch",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Door_Sens_Autolock",
+        "label": "Door_Sens_Autolock",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 19,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "Door_Sens_Autolock",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 300,
+        "y": 3080,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "b6e08e3b73e4abd7",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Button_rex_opt",
+        "label": "Button_rex_opt",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 16,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Button_rex_opt",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 320,
+        "y": 3120,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "4e8e2f944e0fc36d",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Button_rex_idx",
+        "label": "Button_rex_idx",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 18,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Button_rex_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 320,
+        "y": 3160,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "1dc6ecb687b4c702",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Button condition (Button_rex_Condition)",
+        "label": "Button condition (Button_rex_Condition)",
+        "tooltip": "",
+        "place": "Select button condition",
+        "group": "70cafaf5a818dc3a",
+        "order": 14,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Open",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Close",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Change",
+                "value": 2,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Button_rex_Condition",
+        "topicType": "str",
+        "className": "",
+        "x": 240,
+        "y": 3200,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "940bef210d3fe68f",
+        "type": "ui_button",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 23,
+        "width": 10,
+        "height": 1,
+        "passthru": false,
+        "label": "Submit stpDoor",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 680,
+        "y": 2980,
+        "wires": [
+            [
+                "a9fc57cdad44cd14"
+            ]
+        ]
+    },
+    {
+        "id": "4d74c64a6d551fbf",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Reader index (Rd1_idx)",
+        "label": "Reader index (Rd1_idx)",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 4,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Rd1_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 290,
+        "y": 2600,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "689eaeb65ca4fba4",
+        "type": "mqtt out",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "79737e067a3af084",
+        "x": 710,
+        "y": 3140,
+        "wires": []
+    },
+    {
+        "id": "c195fb1af7d90e90",
+        "type": "ui_template",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "group": "70cafaf5a818dc3a",
+        "name": "Door settings",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    #setDoorHeader{\n        text-align: center;\n        color: #0094CE;\n        font-size: 30px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"setDoorHeader\">\n    Door settings\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 330,
+        "y": 2480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c691a45025ba009",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Reader index (Rd0_idx)",
+        "label": "Reader index (Rd0_idx)",
+        "tooltip": "",
+        "group": "70cafaf5a818dc3a",
+        "order": 4,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Rd0_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 290,
+        "y": 2560,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "cabf550e96028272",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "function 2",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nmsg.payload = 0\nmsg.enabled = false\nreturn msg",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 2680,
+        "wires": [
+            [
+                "013b59aaa0a27b09"
+            ]
+        ]
+    },
+    {
+        "id": "0966a1bd21c735d1",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "3d00d5011b39e864",
+        "name": "function 3",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nmsg.payload = 0\nmsg.enabled = false\nreturn msg",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 1320,
+        "wires": [
+            [
+                "3b2f1e24dd57ae16"
+            ]
         ]
     },
     {
