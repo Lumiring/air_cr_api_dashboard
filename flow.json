@@ -1661,7 +1661,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "dashboardInit",
-        "func": "msg.payload.group = {\n    \"hide\": [\"AIR-CR_Control\", \"AIR-CR_Connection\"],\n    \"show\": [\"AIR-CR_Settings\", \"AIR-CR_Reader\", \"AIR-CR_DateTime\"]\n}\nreturn msg;",
+        "func": "msg.payload.group = {\n    \"hide\": [\"AIR-CR_Control\", \"AIR-CR_Connection\", \"AIR-CR_Simple_settings\"],\n    \"show\": [\"AIR-CR_Settings\", \"AIR-CR_Reader\", \"AIR-CR_DateTime\"]\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
