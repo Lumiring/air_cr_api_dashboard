@@ -156,20 +156,15 @@
             "label": true
         },
         "nodes": [
-            "dde67e8d2e192164",
             "a607e57b9c8d8cdd",
             "a9fc57cdad44cd14",
             "84d7a118ddd9842f",
             "5876e97090ffded2",
-            "4cbd5dad0b25f599",
-            "0e14c4ef8c608b83",
             "4a42fef97bd379c2",
             "297191ec56ab0272",
             "d8697b4c53aa26a1",
             "d0c523e32a8ea14f",
-            "6966def13188175e",
             "b6e08e3b73e4abd7",
-            "4e8e2f944e0fc36d",
             "1dc6ecb687b4c702",
             "940bef210d3fe68f",
             "4d74c64a6d551fbf",
@@ -179,12 +174,27 @@
             "fac062210ac59294",
             "8d0f58b9725145dc",
             "c92d749c3d3c71a5",
-            "061aecc325f2ccf3"
+            "061aecc325f2ccf3",
+            "963ed93528cda57e",
+            "d3a133d00b340e1b",
+            "b2474e59834ac54b",
+            "5eeae1b2e2b3c814",
+            "bff2a475aa26be41",
+            "00ecd6dbee19221f",
+            "84b05a9496fc7da5",
+            "9511360cabc09665",
+            "ca47d465a6b99a63",
+            "9d19323eaf34876e",
+            "1ae3d7c290a17078",
+            "e4e36f0ec9287fcb",
+            "3984a6135d0cec25",
+            "b083bea11642642c",
+            "86ed6e6d340e0de2"
         ],
         "x": 14,
         "y": 2439,
-        "w": 792,
-        "h": 802
+        "w": 932,
+        "h": 782
     },
     {
         "id": "79737e067a3af084",
@@ -3565,45 +3575,6 @@
         ]
     },
     {
-        "id": "dde67e8d2e192164",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "7b1492e7d36d2570",
-        "name": "Direction (Rd0_dir)",
-        "label": "Direction (Rd0_dir)",
-        "tooltip": "",
-        "place": "",
-        "group": "70cafaf5a818dc3a",
-        "order": 5,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "entry",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "exit",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd0_dir",
-        "topicType": "str",
-        "className": "",
-        "x": 290,
-        "y": 2760,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
         "id": "a607e57b9c8d8cdd",
         "type": "function",
         "z": "692c798b6f9c61de",
@@ -3615,7 +3586,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
+        "x": 850,
         "y": 2860,
         "wires": [
             []
@@ -3633,7 +3604,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
+        "x": 810,
         "y": 3080,
         "wires": [
             [
@@ -3666,19 +3637,14 @@
                 "label": "Close",
                 "value": 1,
                 "type": "num"
-            },
-            {
-                "label": "Change",
-                "value": 2,
-                "type": "num"
             }
         ],
         "payload": "",
         "topic": "Door_sens_Condition",
         "topicType": "str",
         "className": "",
-        "x": 280,
-        "y": 2800,
+        "x": 420,
+        "y": 2760,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3704,62 +3670,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 230,
+        "x": 370,
         "y": 2640,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "4cbd5dad0b25f599",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "7b1492e7d36d2570",
-        "name": "Lock_Relay_opt",
-        "label": "Lock_Relay_opt",
-        "tooltip": "",
-        "group": "70cafaf5a818dc3a",
-        "order": 9,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Lock_Relay_opt",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 300,
-        "y": 2840,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "0e14c4ef8c608b83",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "7b1492e7d36d2570",
-        "name": "Lock_Relay_idx",
-        "label": "Lock_Relay_idx",
-        "tooltip": "",
-        "group": "70cafaf5a818dc3a",
-        "order": 7,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Lock_Relay_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 300,
-        "y": 2880,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3797,8 +3709,8 @@
         "topic": "Door_Lock_mode",
         "topicType": "str",
         "className": "",
-        "x": 290,
-        "y": 2920,
+        "x": 430,
+        "y": 3000,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3822,12 +3734,12 @@
         "multiple": false,
         "options": [
             {
-                "label": "N-Opened",
+                "label": "NO (Normal opened)",
                 "value": 0,
                 "type": "num"
             },
             {
-                "label": "N-Closed",
+                "label": "NC (Normal closed)",
                 "value": 1,
                 "type": "num"
             }
@@ -3836,8 +3748,8 @@
         "topic": "Door_Lock_type",
         "topicType": "str",
         "className": "",
-        "x": 300,
-        "y": 2960,
+        "x": 440,
+        "y": 3040,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3863,8 +3775,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 220,
-        "y": 3000,
+        "x": 360,
+        "y": 3080,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3890,43 +3802,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 250,
-        "y": 3040,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "6966def13188175e",
-        "type": "ui_switch",
-        "z": "692c798b6f9c61de",
-        "g": "7b1492e7d36d2570",
-        "name": "Door_Sens_Autolock",
-        "label": "Door_Sens_Autolock",
-        "tooltip": "",
-        "group": "70cafaf5a818dc3a",
-        "order": 17,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "Door_Sens_Autolock",
-        "topicType": "str",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 280,
-        "y": 3080,
+        "x": 390,
+        "y": 3140,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3952,35 +3829,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 300,
-        "y": 3120,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "4e8e2f944e0fc36d",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "7b1492e7d36d2570",
-        "name": "Button_rex_idx",
-        "label": "Button_rex_idx",
-        "tooltip": "",
-        "group": "70cafaf5a818dc3a",
-        "order": 16,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Button_rex_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 300,
-        "y": 3160,
+        "x": 440,
+        "y": 2800,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -4012,19 +3862,14 @@
                 "label": "Close",
                 "value": 1,
                 "type": "num"
-            },
-            {
-                "label": "Change",
-                "value": 2,
-                "type": "num"
             }
         ],
         "payload": "",
         "topic": "Button_rex_Condition",
         "topicType": "str",
         "className": "",
-        "x": 220,
-        "y": 3200,
+        "x": 360,
+        "y": 2880,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -4052,7 +3897,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 660,
+        "x": 800,
         "y": 2980,
         "wires": [
             [
@@ -4079,7 +3924,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 270,
+        "x": 410,
         "y": 2600,
         "wires": [
             [
@@ -4102,7 +3947,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 690,
+        "x": 830,
         "y": 3140,
         "wires": []
     },
@@ -4122,7 +3967,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 230,
+        "x": 370,
         "y": 2480,
         "wires": [
             []
@@ -4147,7 +3992,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 270,
+        "x": 410,
         "y": 2560,
         "wires": [
             [
@@ -4209,7 +4054,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 110,
+        "x": 250,
         "y": 2680,
         "wires": [
             [
@@ -4228,8 +4073,8 @@
         "place": "Select option",
         "group": "70cafaf5a818dc3a",
         "order": 20,
-        "width": 0,
-        "height": 0,
+        "width": "10",
+        "height": "1",
         "passthru": true,
         "multiple": false,
         "options": [
@@ -4243,7 +4088,7 @@
         "topic": "Door_sens_opt",
         "topicType": "str",
         "className": "",
-        "x": 300,
+        "x": 440,
         "y": 2680,
         "wires": [
             [
@@ -4297,7 +4142,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 110,
+        "x": 250,
         "y": 2720,
         "wires": [
             [
@@ -4316,8 +4161,8 @@
         "place": "Select option",
         "group": "70cafaf5a818dc3a",
         "order": 20,
-        "width": 0,
-        "height": 0,
+        "width": "10",
+        "height": "1",
         "passthru": true,
         "multiple": false,
         "options": [
@@ -4336,11 +4181,458 @@
         "topic": "Door_sens_idx",
         "topicType": "str",
         "className": "",
-        "x": 300,
+        "x": 440,
         "y": 2720,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "963ed93528cda57e",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 250,
+        "y": 2760,
+        "wires": [
+            [
+                "84d7a118ddd9842f"
+            ]
+        ]
+    },
+    {
+        "id": "d3a133d00b340e1b",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 250,
+        "y": 2800,
+        "wires": [
+            [
+                "b6e08e3b73e4abd7"
+            ]
+        ]
+    },
+    {
+        "id": "b2474e59834ac54b",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Button_rex_idx",
+        "label": "Button_rex_idx",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "70cafaf5a818dc3a",
+        "order": 20,
+        "width": "10",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Pink",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Blue",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Button_rex_idx",
+        "topicType": "str",
+        "className": "",
+        "x": 440,
+        "y": 2840,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "5eeae1b2e2b3c814",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 250,
+        "y": 2840,
+        "wires": [
+            [
+                "b2474e59834ac54b"
+            ]
+        ]
+    },
+    {
+        "id": "bff2a475aa26be41",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 110,
+        "y": 2880,
+        "wires": [
+            [
+                "1dc6ecb687b4c702"
+            ]
+        ]
+    },
+    {
+        "id": "00ecd6dbee19221f",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Lock_Relay_opt",
+        "label": "Lock_Relay_opt",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "70cafaf5a818dc3a",
+        "order": 20,
+        "width": "10",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "ACU",
+                "value": 0,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Lock_Relay_opt",
+        "topicType": "str",
+        "className": "",
+        "x": 440,
+        "y": 2920,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "84b05a9496fc7da5",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 110,
+        "y": 2920,
+        "wires": [
+            [
+                "00ecd6dbee19221f"
+            ]
+        ]
+    },
+    {
+        "id": "9511360cabc09665",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Lock_Relay_idx",
+        "label": "Lock_Relay_idx",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "70cafaf5a818dc3a",
+        "order": 20,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Grey",
+                "value": 0,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Lock_Relay_idx",
+        "topicType": "str",
+        "className": "",
+        "x": 440,
+        "y": 2960,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "ca47d465a6b99a63",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 110,
+        "y": 2960,
+        "wires": [
+            [
+                "9511360cabc09665"
+            ]
+        ]
+    },
+    {
+        "id": "9d19323eaf34876e",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 110,
+        "y": 3000,
+        "wires": [
+            [
+                "4a42fef97bd379c2"
+            ]
+        ]
+    },
+    {
+        "id": "1ae3d7c290a17078",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 110,
+        "y": 3040,
+        "wires": [
+            [
+                "297191ec56ab0272"
+            ]
+        ]
+    },
+    {
+        "id": "e4e36f0ec9287fcb",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0.2",
+        "payloadType": "num",
+        "x": 110,
+        "y": 3080,
+        "wires": [
+            [
+                "d8697b4c53aa26a1"
+            ]
+        ]
+    },
+    {
+        "id": "3984a6135d0cec25",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 110,
+        "y": 3140,
+        "wires": [
+            [
+                "d0c523e32a8ea14f"
+            ]
+        ]
+    },
+    {
+        "id": "b083bea11642642c",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Door_Sens_Autolock",
+        "label": "Door_Sens_Autolock",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "70cafaf5a818dc3a",
+        "order": 20,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "ON",
+                "value": true,
+                "type": "bool"
+            },
+            {
+                "label": "OFF",
+                "value": false,
+                "type": "bool"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_Sens_Autolock",
+        "topicType": "str",
+        "className": "",
+        "x": 420,
+        "y": 3180,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "86ed6e6d340e0de2",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 110,
+        "y": 3180,
+        "wires": [
+            [
+                "b083bea11642642c"
             ]
         ]
     },
