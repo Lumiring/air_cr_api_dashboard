@@ -4323,13 +4323,13 @@
         "options": [
             {
                 "label": "Pink",
-                "value": "0",
-                "type": "str"
+                "value": 0,
+                "type": "num"
             },
             {
                 "label": "Blue",
-                "value": "1",
-                "type": "str"
+                "value": 1,
+                "type": "num"
             }
         ],
         "payload": "",
