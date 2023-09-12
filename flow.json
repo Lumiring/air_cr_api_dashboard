@@ -4259,7 +4259,7 @@
         "func": "\n",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nconsole.log(\"wwsdqweqweqw\")\nmsg.payload = 0\nmsg.enabled = false\nreturn msg",
+        "initialize": "let msg = {}\nmsg.payload = 0\nmsg.enabled = false\nreturn msg",
         "finalize": "",
         "libs": [],
         "x": 120,
