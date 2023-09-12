@@ -45,12 +45,11 @@
             "31d364e6be3997dd",
             "8c8a2053b1a0ceea",
             "21734bc456624e52",
-            "0966a1bd21c735d1",
-            "d5cc69b63e5360e5"
+            "0966a1bd21c735d1"
         ],
-        "x": 14,
+        "x": 34,
         "y": 1099,
-        "w": 792,
+        "w": 772,
         "h": 742
     },
     {
@@ -4257,40 +4256,14 @@
         "z": "692c798b6f9c61de",
         "g": "3d00d5011b39e864",
         "name": "function 3",
-        "func": "\nreturn msg;",
+        "func": "\n",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nmsg.payload = 0\nmsg.enabled = false\nreturn msg",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n\nmsg.payload = 0\nmsg.enabled = false\nreturn msg",
         "finalize": "",
         "libs": [],
         "x": 120,
         "y": 1320,
-        "wires": [
-            [
-                "3b2f1e24dd57ae16"
-            ]
-        ]
-    },
-    {
-        "id": "d5cc69b63e5360e5",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "3d00d5011b39e864",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "999",
-        "payloadType": "num",
-        "x": 110,
-        "y": 1360,
         "wires": [
             [
                 "3b2f1e24dd57ae16"
