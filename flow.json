@@ -45,11 +45,12 @@
             "31d364e6be3997dd",
             "8c8a2053b1a0ceea",
             "21734bc456624e52",
-            "0966a1bd21c735d1"
+            "0966a1bd21c735d1",
+            "2bd91b34584ac591"
         ],
-        "x": 34,
+        "x": -6,
         "y": 1099,
-        "w": 772,
+        "w": 812,
         "h": 742
     },
     {
@@ -4259,11 +4260,37 @@
         "func": "\n",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "let msg = {}\nmsg.payload = \"0\"\nmsg.enabled = false\nreturn msg",
+        "initialize": "let msg = {}\nmsg.payload = 0\nmsg.enabled = false\nreturn msg",
         "finalize": "",
         "libs": [],
         "x": 120,
         "y": 1320,
+        "wires": [
+            [
+                "3b2f1e24dd57ae16"
+            ]
+        ]
+    },
+    {
+        "id": "2bd91b34584ac591",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "3d00d5011b39e864",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 1360,
         "wires": [
             [
                 "3b2f1e24dd57ae16"
