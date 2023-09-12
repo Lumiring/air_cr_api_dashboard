@@ -178,7 +178,9 @@
             "c195fb1af7d90e90",
             "3c691a45025ba009",
             "fac062210ac59294",
-            "8d0f58b9725145dc"
+            "8d0f58b9725145dc",
+            "c92d749c3d3c71a5",
+            "061aecc325f2ccf3"
         ],
         "x": 14,
         "y": 2439,
@@ -4233,7 +4235,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
+        "payload": "0",
         "payloadType": "num",
         "x": 110,
         "y": 2680,
@@ -4303,6 +4305,69 @@
             [
                 "f35f7ebd59ad5459"
             ]
+        ]
+    },
+    {
+        "id": "c92d749c3d3c71a5",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 110,
+        "y": 2720,
+        "wires": [
+            [
+                "04f885723e74da6d"
+            ]
+        ]
+    },
+    {
+        "id": "061aecc325f2ccf3",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Door_sens_idx",
+        "label": "Door_sens_idx",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "70cafaf5a818dc3a",
+        "order": 20,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Pink",
+                "value": "0",
+                "type": "str"
+            },
+            {
+                "label": "Blue",
+                "value": "1",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_sens_idx",
+        "topicType": "str",
+        "className": "",
+        "x": 660,
+        "y": 2600,
+        "wires": [
+            []
         ]
     },
     {
