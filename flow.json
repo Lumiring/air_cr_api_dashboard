@@ -5549,7 +5549,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    #setDoorHeader{\n        text-align: center;\n        color: #0094CE;\n        font-size: 30px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"setDoorHeader\">\n    Reader 1 settings\n</div>",
+        "format": "<style>\n    #setDoorHeader{\n        text-align: center;\n        color: #0094CE;\n        font-size: 30px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"setDoorHeader\">\n    Reader 2 settings\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
