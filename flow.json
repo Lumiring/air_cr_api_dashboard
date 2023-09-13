@@ -2591,7 +2591,7 @@
         "width": 20,
         "height": 1,
         "passthru": false,
-        "label": "Submit control point settings",
+        "label": "Submit device settings",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -2601,7 +2601,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 760,
+        "x": 740,
         "y": 2320,
         "wires": [
             [
