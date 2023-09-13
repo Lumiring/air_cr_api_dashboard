@@ -41,8 +41,8 @@
             "dfbd635c1022b71c",
             "c5f7a3022f0a71d4"
         ],
-        "x": 1214,
-        "y": 1599,
+        "x": 1554,
+        "y": 2119,
         "w": 632,
         "h": 442
     },
@@ -72,44 +72,8 @@
             "e765f3e65a86622c",
             "aab5cc2445afa1e9"
         ],
-        "x": 1034,
-        "y": 2079,
-        "w": 932,
-        "h": 402
-    },
-    {
-        "id": "943ef020ca640a17",
-        "type": "group",
-        "z": "692c798b6f9c61de",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "d83cd52bb6d220f3",
-            "6a874cf39f52a41c",
-            "44eead080f6ff893",
-            "2c0e5a1f061ca6fb",
-            "60f424913e84a261",
-            "0ec93d1beaa5a9e4",
-            "6e20a4e8faad6ec9",
-            "3e7f179e8060b80f",
-            "d804063004b4fdfc",
-            "222ca6d9f33aad97",
-            "a473206c5a0b1c96",
-            "b2be50ecdbde2a5a",
-            "81d3f4b0ee91b226",
-            "b073da3186c96628",
-            "e88a08b7fd7c4345",
-            "e5a3acd7c9ec31f5"
-        ],
-        "x": 74,
-        "y": 2079,
+        "x": 1054,
+        "y": 2599,
         "w": 932,
         "h": 402
     },
@@ -143,7 +107,7 @@
         "y": 1319
     },
     {
-        "id": "995bfc59fd9df675",
+        "id": "197177ecce29c10c",
         "type": "group",
         "z": "692c798b6f9c61de",
         "style": {
@@ -156,6 +120,9 @@
             "color": "#a4a4a4"
         },
         "nodes": [
+            "aad987ee2a0c4f2c",
+            "d969e40c2e543dae",
+            "a902fb928a850e75",
             "a607e57b9c8d8cdd",
             "84d7a118ddd9842f",
             "5876e97090ffded2",
@@ -186,8 +153,6 @@
             "3984a6135d0cec25",
             "b083bea11642642c",
             "86ed6e6d340e0de2",
-            "06f8fc49ad425441",
-            "491decad184ecca2",
             "1decd6fb7be79a57",
             "ddab9916254d4a0e",
             "ebf4caecba2c3b0f",
@@ -197,12 +162,52 @@
             "c8960adebc938996",
             "341cca91a1fdb94a",
             "2f40703481bf226e",
-            "daca0544dd019614"
+            "daca0544dd019614",
+            "1c69858ef950135c",
+            "c04be96336935f33",
+            "b34c7c3825b2f296",
+            "5c869c44f8db9da9"
         ],
-        "x": 74,
-        "y": 1119,
-        "w": 1112,
+        "x": 34,
+        "y": 1059,
+        "w": 1452,
         "h": 942
+    },
+    {
+        "id": "d2c54d759744b825",
+        "type": "group",
+        "z": "692c798b6f9c61de",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "d83cd52bb6d220f3",
+            "6a874cf39f52a41c",
+            "44eead080f6ff893",
+            "2c0e5a1f061ca6fb",
+            "60f424913e84a261",
+            "0ec93d1beaa5a9e4",
+            "6e20a4e8faad6ec9",
+            "3e7f179e8060b80f",
+            "d804063004b4fdfc",
+            "222ca6d9f33aad97",
+            "a473206c5a0b1c96",
+            "b2be50ecdbde2a5a",
+            "81d3f4b0ee91b226",
+            "b073da3186c96628",
+            "e88a08b7fd7c4345",
+            "e5a3acd7c9ec31f5"
+        ],
+        "x": 94,
+        "y": 2639,
+        "w": 932,
+        "h": 402
     },
     {
         "id": "79737e067a3af084",
@@ -1336,8 +1341,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1320,
-        "y": 1740,
+        "x": 1660,
+        "y": 2260,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1365,8 +1370,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1300,
-        "y": 1800,
+        "x": 1640,
+        "y": 2320,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1394,8 +1399,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1310,
-        "y": 1860,
+        "x": 1650,
+        "y": 2380,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1414,8 +1419,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1570,
-        "y": 1800,
+        "x": 1910,
+        "y": 2320,
         "wires": [
             [
                 "8ceb1c5b5fb6e7d7"
@@ -1437,8 +1442,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 1770,
-        "y": 1860,
+        "x": 2110,
+        "y": 2380,
         "wires": []
     },
     {
@@ -1460,8 +1465,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1330,
-        "y": 1680,
+        "x": 1670,
+        "y": 2200,
         "wires": [
             [
                 "1cbac974e1dbb470"
@@ -1480,8 +1485,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1580,
-        "y": 1680,
+        "x": 1920,
+        "y": 2200,
         "wires": [
             []
         ]
@@ -1507,8 +1512,8 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 1310,
-        "y": 1940,
+        "x": 1650,
+        "y": 2460,
         "wires": [
             [
                 "dfbd635c1022b71c"
@@ -1536,8 +1541,8 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 1310,
-        "y": 2000,
+        "x": 1650,
+        "y": 2520,
         "wires": [
             [
                 "dfbd635c1022b71c"
@@ -1556,8 +1561,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1550,
-        "y": 1940,
+        "x": 1890,
+        "y": 2460,
         "wires": [
             [
                 "8ceb1c5b5fb6e7d7"
@@ -1629,8 +1634,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1310,
-        "y": 1640,
+        "x": 1650,
+        "y": 2160,
         "wires": [
             []
         ]
@@ -2081,9 +2086,7 @@
             [
                 "881c61e409196bd8"
             ],
-            [
-                "aad987ee2a0c4f2c"
-            ]
+            []
         ]
     },
     {
@@ -2323,276 +2326,21 @@
         ]
     },
     {
-        "id": "a607e57b9c8d8cdd",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "SetCtpDoor",
-        "func": "\n// initialise the counter to 0 if it doesn't exist already\nlet stpDoorSet = global.get('stpDoorSet') || {};\n\nstpDoorSet = Object.assign(stpDoorSet, {[msg.topic]:msg.payload})\n\nglobal.set('stpDoorSet', stpDoorSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1090,
-        "y": 1580,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "a9fc57cdad44cd14",
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "sendMqttMessage",
-        "func": "msg.payload = global.get('stpDoorSet');\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
+        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = Object.assign(global.get('stpDoorSet'), global.get('device_set_idxs'))\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 290,
-        "y": 2700,
+        "x": 1710,
+        "y": 1880,
         "wires": [
             [
                 "689eaeb65ca4fba4"
-            ]
-        ]
-    },
-    {
-        "id": "84d7a118ddd9842f",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Door_sens_Condition",
-        "label": "Door_sens_Condition",
-        "tooltip": "",
-        "place": "Door_sens_Condition",
-        "group": "91a9ce4bbf4bb377",
-        "order": 9,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Open",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Close",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Door_sens_Condition",
-        "topicType": "str",
-        "className": "",
-        "x": 660,
-        "y": 1480,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "5876e97090ffded2",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Control point index (Control_point_idx)",
-        "label": "Control point index (Control_point_idx)",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 2,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Control_point_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 610,
-        "y": 1360,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "4a42fef97bd379c2",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Door_Lock_mode",
-        "label": "Door_Lock_mode",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 10,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "trigger",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "impulse",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Door_Lock_mode",
-        "topicType": "str",
-        "className": "",
-        "x": 670,
-        "y": 1720,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "297191ec56ab0272",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Door_Lock_type",
-        "label": "Door_Lock_type",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 13,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "NO (Normal opened)",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "NC (Normal closed)",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Door_Lock_type",
-        "topicType": "str",
-        "className": "",
-        "x": 680,
-        "y": 1760,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "d8697b4c53aa26a1",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Impulse duration (sec) (Door_Lock_puls)",
-        "label": "Impulse duration (sec) (Door_Lock_puls)",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 11,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Door_Lock_puls",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 600,
-        "y": 1800,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "d0c523e32a8ea14f",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Hold duration (sec) Door_Delay",
-        "label": "Hold duration (sec) Door_Delay",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 12,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Door_Delay",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 630,
-        "y": 1860,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "1dc6ecb687b4c702",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Button condition (Button_rex_Condition)",
-        "label": "Button condition (Button_rex_Condition)",
-        "tooltip": "",
-        "place": "Select button condition",
-        "group": "91a9ce4bbf4bb377",
-        "order": 25,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Open",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Close",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Button_rex_Condition",
-        "topicType": "str",
-        "className": "",
-        "x": 600,
-        "y": 1600,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
             ]
         ]
     },
@@ -2616,38 +2364,11 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 300,
-        "y": 2600,
+        "x": 1620,
+        "y": 1760,
         "wires": [
             [
                 "a9fc57cdad44cd14"
-            ]
-        ]
-    },
-    {
-        "id": "4d74c64a6d551fbf",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Reader index (Rd1_idx)",
-        "label": "Reader index (Rd1_idx)",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 4,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Rd1_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 650,
-        "y": 1320,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
             ]
         ]
     },
@@ -2665,671 +2386,9 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 310,
-        "y": 2760,
+        "x": 1930,
+        "y": 1780,
         "wires": []
-    },
-    {
-        "id": "c195fb1af7d90e90",
-        "type": "ui_template",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "group": "91a9ce4bbf4bb377",
-        "name": "CP Settings label",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<style>\n    #CP_Header{\n        text-align: left;\n        color: #0094CE;\n        font-size: 20px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"CP_Header\">\n    Control point settings\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 1010,
-        "y": 1160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3c691a45025ba009",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Reader index (Rd0_idx)",
-        "label": "Reader index (Rd0_idx)",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 3,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Rd0_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 650,
-        "y": 1280,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "fac062210ac59294",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "enabled",
-                "v": "false",
-                "vt": "bool"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 490,
-        "y": 1400,
-        "wires": [
-            [
-                "8d0f58b9725145dc"
-            ]
-        ]
-    },
-    {
-        "id": "8d0f58b9725145dc",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "label": "Door_sens_opt",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 7,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "ACU",
-                "value": 0,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Door_sens_opt",
-        "topicType": "str",
-        "className": "",
-        "x": 680,
-        "y": 1400,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "c92d749c3d3c71a5",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 490,
-        "y": 1440,
-        "wires": [
-            [
-                "061aecc325f2ccf3"
-            ]
-        ]
-    },
-    {
-        "id": "061aecc325f2ccf3",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Door_sens_idx",
-        "label": "Door_sens_idx",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 8,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Pink",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Blue",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Door_sens_idx",
-        "topicType": "str",
-        "className": "",
-        "x": 680,
-        "y": 1440,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "963ed93528cda57e",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 490,
-        "y": 1480,
-        "wires": [
-            [
-                "84d7a118ddd9842f"
-            ]
-        ]
-    },
-    {
-        "id": "d3a133d00b340e1b",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "enabled",
-                "v": "false",
-                "vt": "bool"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 490,
-        "y": 1520,
-        "wires": [
-            [
-                "b21a19bb0acbfa9c"
-            ]
-        ]
-    },
-    {
-        "id": "b2474e59834ac54b",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Button_rex_idx",
-        "label": "Button_rex_idx",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 24,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Pink",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Blue",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Button_rex_idx",
-        "topicType": "str",
-        "className": "",
-        "x": 680,
-        "y": 1560,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "5eeae1b2e2b3c814",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 490,
-        "y": 1560,
-        "wires": [
-            [
-                "b2474e59834ac54b"
-            ]
-        ]
-    },
-    {
-        "id": "bff2a475aa26be41",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 350,
-        "y": 1600,
-        "wires": [
-            [
-                "1dc6ecb687b4c702"
-            ]
-        ]
-    },
-    {
-        "id": "00ecd6dbee19221f",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Lock_Relay_opt",
-        "label": "Lock_Relay_opt",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 19,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "ACU",
-                "value": 0,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Lock_Relay_opt",
-        "topicType": "str",
-        "className": "",
-        "x": 680,
-        "y": 1640,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "84b05a9496fc7da5",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "enabled",
-                "v": "false",
-                "vt": "bool"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 350,
-        "y": 1640,
-        "wires": [
-            [
-                "00ecd6dbee19221f"
-            ]
-        ]
-    },
-    {
-        "id": "9511360cabc09665",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Lock_Relay_idx",
-        "label": "Lock_Relay_idx",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 18,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Grey",
-                "value": 0,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Lock_Relay_idx",
-        "topicType": "str",
-        "className": "",
-        "x": 680,
-        "y": 1680,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "ca47d465a6b99a63",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "enabled",
-                "v": "false",
-                "vt": "bool"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 350,
-        "y": 1680,
-        "wires": [
-            [
-                "9511360cabc09665"
-            ]
-        ]
-    },
-    {
-        "id": "9d19323eaf34876e",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 350,
-        "y": 1720,
-        "wires": [
-            [
-                "4a42fef97bd379c2"
-            ]
-        ]
-    },
-    {
-        "id": "1ae3d7c290a17078",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 350,
-        "y": 1760,
-        "wires": [
-            [
-                "297191ec56ab0272"
-            ]
-        ]
-    },
-    {
-        "id": "e4e36f0ec9287fcb",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0.2",
-        "payloadType": "num",
-        "x": 350,
-        "y": 1800,
-        "wires": [
-            [
-                "d8697b4c53aa26a1"
-            ]
-        ]
-    },
-    {
-        "id": "3984a6135d0cec25",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "5",
-        "payloadType": "num",
-        "x": 350,
-        "y": 1860,
-        "wires": [
-            [
-                "d0c523e32a8ea14f"
-            ]
-        ]
-    },
-    {
-        "id": "b083bea11642642c",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "Door_Sens_Autolock",
-        "label": "Door_Sens_Autolock",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 14,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "ON",
-                "value": true,
-                "type": "bool"
-            },
-            {
-                "label": "OFF",
-                "value": false,
-                "type": "bool"
-            }
-        ],
-        "payload": "",
-        "topic": "Door_Sens_Autolock",
-        "topicType": "str",
-        "className": "",
-        "x": 660,
-        "y": 1900,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "86ed6e6d340e0de2",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 350,
-        "y": 1900,
-        "wires": [
-            [
-                "b083bea11642642c"
-            ]
-        ]
-    },
-    {
-        "id": "06f8fc49ad425441",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 170,
-        "y": 1280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "491decad184ecca2",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
-        "name": "function 2",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 1280,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "5aa9ba6b290b2fba",
@@ -3351,8 +2410,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1540,
-        "y": 2160,
+        "x": 1560,
+        "y": 2680,
         "wires": [
             []
         ]
@@ -3377,8 +2436,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1480,
-        "y": 2200,
+        "x": 1500,
+        "y": 2720,
         "wires": [
             []
         ]
@@ -3414,8 +2473,8 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "",
-        "x": 1530,
-        "y": 2280,
+        "x": 1550,
+        "y": 2800,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -3453,8 +2512,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "",
-        "x": 1450,
-        "y": 2320,
+        "x": 1470,
+        "y": 2840,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -3492,8 +2551,8 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "",
-        "x": 1540,
-        "y": 2360,
+        "x": 1560,
+        "y": 2880,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -3556,8 +2615,8 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "",
-        "x": 1530,
-        "y": 2400,
+        "x": 1550,
+        "y": 2920,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -3570,14 +2629,14 @@
         "z": "692c798b6f9c61de",
         "g": "a4444d4d6536d363",
         "name": "SetRd0",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nlet rdSet = global.get('rdSet') || {};\n\nrdSet = Object.assign(rdSet, { [msg.topic]: msg.payload })\n\nglobal.set('rdSet', rdSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
+        "func": "let rdSet = global.get('rd_0_set') || {};\nrdSet = Object.assign(rdSet, { [msg.topic]: msg.payload })\nglobal.set('rd_0_set', rdSet)\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1880,
-        "y": 2300,
+        "x": 1900,
+        "y": 2820,
         "wires": [
             []
         ]
@@ -3598,8 +2657,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1570,
-        "y": 2120,
+        "x": 1590,
+        "y": 2640,
         "wires": [
             []
         ]
@@ -3627,8 +2686,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1290,
-        "y": 2240,
+        "x": 1310,
+        "y": 2760,
         "wires": [
             [
                 "7bbd818e1ecdb3bd"
@@ -3661,8 +2720,8 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "",
-        "x": 1510,
-        "y": 2240,
+        "x": 1530,
+        "y": 2760,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -3687,8 +2746,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1290,
-        "y": 2280,
+        "x": 1310,
+        "y": 2800,
         "wires": [
             [
                 "c83813488be715e7"
@@ -3713,8 +2772,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 1150,
-        "y": 2320,
+        "x": 1170,
+        "y": 2840,
         "wires": [
             [
                 "60fc553922b7b14e"
@@ -3739,8 +2798,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 1150,
-        "y": 2360,
+        "x": 1170,
+        "y": 2880,
         "wires": [
             [
                 "b6369bb4f44f1bb6"
@@ -3765,8 +2824,8 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 1150,
-        "y": 2400,
+        "x": 1170,
+        "y": 2920,
         "wires": [
             [
                 "3bc21ed43f4c6e09"
@@ -3791,8 +2850,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1130,
-        "y": 2440,
+        "x": 1150,
+        "y": 2960,
         "wires": [
             [
                 "aab5cc2445afa1e9"
@@ -3830,8 +2889,8 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "",
-        "x": 1440,
-        "y": 2440,
+        "x": 1460,
+        "y": 2960,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -3843,7 +2902,7 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "d": true,
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "Rd_idx",
         "label": "Rd_idx",
         "tooltip": "",
@@ -3858,8 +2917,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 580,
-        "y": 2160,
+        "x": 600,
+        "y": 2720,
         "wires": [
             []
         ]
@@ -3869,7 +2928,7 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "d": true,
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "Control_point_idx_DUMMY",
         "label": "Control_point_idx",
         "tooltip": "",
@@ -3884,8 +2943,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 520,
-        "y": 2200,
+        "x": 540,
+        "y": 2760,
         "wires": [
             []
         ]
@@ -3894,7 +2953,7 @@
         "id": "44eead080f6ff893",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "Rd_Direction",
         "label": "Rd_Direction",
         "tooltip": "",
@@ -3921,8 +2980,8 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "",
-        "x": 570,
-        "y": 2280,
+        "x": 590,
+        "y": 2840,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -3933,7 +2992,7 @@
         "id": "2c0e5a1f061ca6fb",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "Rd_Key_endian (Reverse byte order)",
         "label": "Rd_Key_endian (Reverse byte order)",
         "tooltip": "",
@@ -3960,8 +3019,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "",
-        "x": 490,
-        "y": 2320,
+        "x": 510,
+        "y": 2880,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -3972,7 +3031,7 @@
         "id": "60f424913e84a261",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "Rd_beep",
         "label": "Rd_beep",
         "tooltip": "",
@@ -3999,8 +3058,8 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "",
-        "x": 580,
-        "y": 2360,
+        "x": 600,
+        "y": 2920,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -4011,7 +3070,7 @@
         "id": "0ec93d1beaa5a9e4",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "Rd_Wg_type",
         "label": "Rd_Wg_type",
         "tooltip": "",
@@ -4063,8 +3122,8 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "",
-        "x": 570,
-        "y": 2400,
+        "x": 590,
+        "y": 2960,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -4075,16 +3134,16 @@
         "id": "6e20a4e8faad6ec9",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "SetRd1",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nlet rdSet = global.get('rdSet') || {};\n\nrdSet = Object.assign(rdSet, { [msg.topic]: msg.payload })\n\nglobal.set('rdSet', rdSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
+        "func": "let rdSet = global.get('rd_1_set') || {};\nrdSet = Object.assign(rdSet, { [msg.topic]: msg.payload })\nglobal.set('rd_1_set', rdSet)\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 2300,
+        "x": 940,
+        "y": 2860,
         "wires": [
             []
         ]
@@ -4093,7 +3152,7 @@
         "id": "3e7f179e8060b80f",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "group": "01eefd96a559eaf3",
         "name": "Reader 2 settings",
         "order": 2,
@@ -4105,8 +3164,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 610,
-        "y": 2120,
+        "x": 630,
+        "y": 2680,
         "wires": [
             []
         ]
@@ -4115,7 +3174,7 @@
         "id": "d804063004b4fdfc",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -4134,8 +3193,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 330,
-        "y": 2240,
+        "x": 350,
+        "y": 2800,
         "wires": [
             [
                 "222ca6d9f33aad97"
@@ -4146,7 +3205,7 @@
         "id": "222ca6d9f33aad97",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "Rd_opt (Reader 1)",
         "label": "Rd_opt",
         "tooltip": "",
@@ -4168,8 +3227,8 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "",
-        "x": 530,
-        "y": 2240,
+        "x": 550,
+        "y": 2800,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -4180,7 +3239,7 @@
         "id": "a473206c5a0b1c96",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -4194,8 +3253,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 330,
-        "y": 2280,
+        "x": 350,
+        "y": 2840,
         "wires": [
             [
                 "44eead080f6ff893"
@@ -4206,7 +3265,7 @@
         "id": "b2be50ecdbde2a5a",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -4220,8 +3279,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 190,
-        "y": 2320,
+        "x": 210,
+        "y": 2880,
         "wires": [
             [
                 "2c0e5a1f061ca6fb"
@@ -4232,7 +3291,7 @@
         "id": "81d3f4b0ee91b226",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -4246,8 +3305,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 190,
-        "y": 2360,
+        "x": 210,
+        "y": 2920,
         "wires": [
             [
                 "60f424913e84a261"
@@ -4258,7 +3317,7 @@
         "id": "b073da3186c96628",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -4272,8 +3331,8 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 190,
-        "y": 2400,
+        "x": 210,
+        "y": 2960,
         "wires": [
             [
                 "0ec93d1beaa5a9e4"
@@ -4284,7 +3343,7 @@
         "id": "e88a08b7fd7c4345",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -4298,8 +3357,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 170,
-        "y": 2440,
+        "x": 190,
+        "y": 3000,
         "wires": [
             [
                 "e5a3acd7c9ec31f5"
@@ -4310,7 +3369,7 @@
         "id": "e5a3acd7c9ec31f5",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "943ef020ca640a17",
+        "g": "d2c54d759744b825",
         "name": "Rd_Wg_idx (INTERNAL/EXTERNAL ???)",
         "label": "Rd_Wg_idx",
         "tooltip": "",
@@ -4337,8 +3396,8 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "",
-        "x": 500,
-        "y": 2440,
+        "x": 520,
+        "y": 3000,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -4346,10 +3405,1115 @@
         ]
     },
     {
+        "id": "aad987ee2a0c4f2c",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "SetCtpDoor-Ack",
+        "func": "let messageId = global.get(\"messageId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 1720,
+        "wires": [
+            [
+                "d969e40c2e543dae"
+            ]
+        ]
+    },
+    {
+        "id": "5e407515e8c6f3ed",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "status.text",
+                "v": "start",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 210,
+        "y": 640,
+        "wires": [
+            [
+                "642df87e4871a1c4"
+            ]
+        ]
+    },
+    {
+        "id": "e1f5e92df617db85",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 690,
+        "y": 420,
+        "wires": [
+            [
+                "a941964922c99e0d"
+            ]
+        ]
+    },
+    {
+        "id": "9031de9f7e85ee74",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 690,
+        "y": 540,
+        "wires": [
+            [
+                "fb340be7e461e2fe"
+            ]
+        ]
+    },
+    {
+        "id": "59ba84765a4f6c18",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1883",
+        "payloadType": "num",
+        "x": 750,
+        "y": 760,
+        "wires": [
+            [
+                "a122ea34e40556e4"
+            ]
+        ]
+    },
+    {
+        "id": "e04d259dd35c690f",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "broker.emqx.io",
+        "payloadType": "str",
+        "x": 720,
+        "y": 620,
+        "wires": [
+            [
+                "0c769e6742acebb0"
+            ]
+        ]
+    },
+    {
+        "id": "d969e40c2e543dae",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "property": "ackInfo.topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Error",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Success",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1230,
+        "y": 1720,
+        "wires": [
+            [
+                "b34c7c3825b2f296"
+            ],
+            [
+                "a902fb928a850e75"
+            ]
+        ]
+    },
+    {
+        "id": "a902fb928a850e75",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "setReader1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 1780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a607e57b9c8d8cdd",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "SetCtpDoor",
+        "func": "let stpDoorSet = global.get('stpDoorSet') || {};\nstpDoorSet = Object.assign(stpDoorSet, {[msg.topic]:msg.payload})\nglobal.set('stpDoorSet', stpDoorSet)\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "84d7a118ddd9842f",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Door_sens_Condition",
+        "label": "Door_sens_Condition",
+        "tooltip": "",
+        "place": "Door_sens_Condition",
+        "group": "91a9ce4bbf4bb377",
+        "order": 9,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Open",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Close",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_sens_Condition",
+        "topicType": "str",
+        "className": "",
+        "x": 440,
+        "y": 1420,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "5876e97090ffded2",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Control point index (Control_point_idx)",
+        "label": "Control point index (Control_point_idx)",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 2,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Control_point_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 390,
+        "y": 1280,
+        "wires": [
+            [
+                "5c869c44f8db9da9"
+            ]
+        ]
+    },
+    {
+        "id": "4a42fef97bd379c2",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Door_Lock_mode",
+        "label": "Door_Lock_mode",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 10,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "trigger",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "impulse",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_Lock_mode",
+        "topicType": "str",
+        "className": "",
+        "x": 450,
+        "y": 1660,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "297191ec56ab0272",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Door_Lock_type",
+        "label": "Door_Lock_type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 13,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "NO (Normal opened)",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "NC (Normal closed)",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_Lock_type",
+        "topicType": "str",
+        "className": "",
+        "x": 460,
+        "y": 1700,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "d8697b4c53aa26a1",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Impulse duration (sec) (Door_Lock_puls)",
+        "label": "Impulse duration (sec) (Door_Lock_puls)",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 11,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Door_Lock_puls",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 380,
+        "y": 1740,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "d0c523e32a8ea14f",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Hold duration (sec) Door_Delay",
+        "label": "Hold duration (sec) Door_Delay",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 12,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Door_Delay",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 410,
+        "y": 1800,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "1dc6ecb687b4c702",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Button condition (Button_rex_Condition)",
+        "label": "Button condition (Button_rex_Condition)",
+        "tooltip": "",
+        "place": "Select button condition",
+        "group": "91a9ce4bbf4bb377",
+        "order": 25,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Open",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Close",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Button_rex_Condition",
+        "topicType": "str",
+        "className": "",
+        "x": 380,
+        "y": 1540,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "4d74c64a6d551fbf",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Reader index (Rd1_idx)",
+        "label": "Reader index (Rd1_idx)",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 4,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Rd1_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 430,
+        "y": 1240,
+        "wires": [
+            [
+                "5c869c44f8db9da9"
+            ]
+        ]
+    },
+    {
+        "id": "c195fb1af7d90e90",
+        "type": "ui_template",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "group": "91a9ce4bbf4bb377",
+        "name": "CP Settings label",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    #CP_Header{\n        text-align: left;\n        color: #0094CE;\n        font-size: 20px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"CP_Header\">\n    Control point settings\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3c691a45025ba009",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Reader index (Rd0_idx)",
+        "label": "Reader index (Rd0_idx)",
+        "tooltip": "",
+        "group": "91a9ce4bbf4bb377",
+        "order": 3,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "Rd0_idx",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 430,
+        "y": 1200,
+        "wires": [
+            [
+                "5c869c44f8db9da9"
+            ]
+        ]
+    },
+    {
+        "id": "fac062210ac59294",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 270,
+        "y": 1340,
+        "wires": [
+            [
+                "8d0f58b9725145dc"
+            ]
+        ]
+    },
+    {
+        "id": "8d0f58b9725145dc",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "label": "Door_sens_opt",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 7,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "ACU",
+                "value": 0,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_sens_opt",
+        "topicType": "str",
+        "className": "",
+        "x": 460,
+        "y": 1340,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "c92d749c3d3c71a5",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 270,
+        "y": 1380,
+        "wires": [
+            [
+                "061aecc325f2ccf3"
+            ]
+        ]
+    },
+    {
+        "id": "061aecc325f2ccf3",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Door_sens_idx",
+        "label": "Door_sens_idx",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 8,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Pink",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Blue",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_sens_idx",
+        "topicType": "str",
+        "className": "",
+        "x": 460,
+        "y": 1380,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "963ed93528cda57e",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 270,
+        "y": 1420,
+        "wires": [
+            [
+                "84d7a118ddd9842f"
+            ]
+        ]
+    },
+    {
+        "id": "d3a133d00b340e1b",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 270,
+        "y": 1460,
+        "wires": [
+            [
+                "b21a19bb0acbfa9c"
+            ]
+        ]
+    },
+    {
+        "id": "b2474e59834ac54b",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Button_rex_idx",
+        "label": "Button_rex_idx",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 24,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Pink",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Blue",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Button_rex_idx",
+        "topicType": "str",
+        "className": "",
+        "x": 460,
+        "y": 1500,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "5eeae1b2e2b3c814",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 270,
+        "y": 1500,
+        "wires": [
+            [
+                "b2474e59834ac54b"
+            ]
+        ]
+    },
+    {
+        "id": "bff2a475aa26be41",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1540,
+        "wires": [
+            [
+                "1dc6ecb687b4c702"
+            ]
+        ]
+    },
+    {
+        "id": "00ecd6dbee19221f",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Lock_Relay_opt",
+        "label": "Lock_Relay_opt",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 19,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "ACU",
+                "value": 0,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Lock_Relay_opt",
+        "topicType": "str",
+        "className": "",
+        "x": 460,
+        "y": 1580,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "84b05a9496fc7da5",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1580,
+        "wires": [
+            [
+                "00ecd6dbee19221f"
+            ]
+        ]
+    },
+    {
+        "id": "9511360cabc09665",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Lock_Relay_idx",
+        "label": "Lock_Relay_idx",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 18,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Grey",
+                "value": 0,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Lock_Relay_idx",
+        "topicType": "str",
+        "className": "",
+        "x": 460,
+        "y": 1620,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "ca47d465a6b99a63",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1620,
+        "wires": [
+            [
+                "9511360cabc09665"
+            ]
+        ]
+    },
+    {
+        "id": "9d19323eaf34876e",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1660,
+        "wires": [
+            [
+                "4a42fef97bd379c2"
+            ]
+        ]
+    },
+    {
+        "id": "1ae3d7c290a17078",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1700,
+        "wires": [
+            [
+                "297191ec56ab0272"
+            ]
+        ]
+    },
+    {
+        "id": "e4e36f0ec9287fcb",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0.2",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1740,
+        "wires": [
+            [
+                "d8697b4c53aa26a1"
+            ]
+        ]
+    },
+    {
+        "id": "3984a6135d0cec25",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1800,
+        "wires": [
+            [
+                "d0c523e32a8ea14f"
+            ]
+        ]
+    },
+    {
+        "id": "b083bea11642642c",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "Door_Sens_Autolock",
+        "label": "Door_Sens_Autolock",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "91a9ce4bbf4bb377",
+        "order": 14,
+        "width": 10,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "ON",
+                "value": true,
+                "type": "bool"
+            },
+            {
+                "label": "OFF",
+                "value": false,
+                "type": "bool"
+            }
+        ],
+        "payload": "",
+        "topic": "Door_Sens_Autolock",
+        "topicType": "str",
+        "className": "",
+        "x": 440,
+        "y": 1840,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "86ed6e6d340e0de2",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 130,
+        "y": 1840,
+        "wires": [
+            [
+                "b083bea11642642c"
+            ]
+        ]
+    },
+    {
         "id": "1decd6fb7be79a57",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
+        "g": "197177ecce29c10c",
         "name": "Timezone (tz)",
         "label": "Timezone (tz)",
         "tooltip": "",
@@ -4511,8 +4675,8 @@
         "topic": "tz",
         "topicType": "str",
         "className": "",
-        "x": 640,
-        "y": 2020,
+        "x": 420,
+        "y": 1960,
         "wires": [
             [
                 "ddab9916254d4a0e"
@@ -4523,7 +4687,7 @@
         "id": "ddab9916254d4a0e",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
+        "g": "197177ecce29c10c",
         "name": "setDT",
         "func": "// initialise the counter to 0 if it doesn't exist already\nlet dTSet = global.get('dTSet') || {};\n\ndTSet = Object.assign(dTSet, { [msg.topic]: msg.payload })\n\nglobal.set('dTSet', dTSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
         "outputs": 1,
@@ -4531,8 +4695,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
-        "y": 2020,
+        "x": 650,
+        "y": 1960,
         "wires": [
             []
         ]
@@ -4541,7 +4705,7 @@
         "id": "ebf4caecba2c3b0f",
         "type": "ui_switch",
         "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
+        "g": "197177ecce29c10c",
         "name": "DST_GMT",
         "label": "DST_GMT",
         "tooltip": "",
@@ -4564,8 +4728,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 630,
-        "y": 1980,
+        "x": 410,
+        "y": 1920,
         "wires": [
             [
                 "ddab9916254d4a0e"
@@ -4576,7 +4740,7 @@
         "id": "5dae369f8feb1f2b",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
+        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4590,8 +4754,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 350,
-        "y": 1980,
+        "x": 130,
+        "y": 1920,
         "wires": [
             [
                 "ebf4caecba2c3b0f"
@@ -4602,7 +4766,7 @@
         "id": "b21a19bb0acbfa9c",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
+        "g": "197177ecce29c10c",
         "name": "Button_rex_opt",
         "label": "Button_rex_opt",
         "tooltip": "",
@@ -4624,8 +4788,8 @@
         "topic": "Button_rex_opt",
         "topicType": "str",
         "className": "",
-        "x": 680,
-        "y": 1520,
+        "x": 460,
+        "y": 1460,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -4633,154 +4797,10 @@
         ]
     },
     {
-        "id": "aad987ee2a0c4f2c",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "name": "SetCtpDoor-Ack",
-        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n\n    }\n}\n\nreturn ackInfo;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1480,
-        "y": 340,
-        "wires": [
-            [
-                "6c8acdd459e657eb"
-            ]
-        ]
-    },
-    {
-        "id": "5e407515e8c6f3ed",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "status.text",
-                "v": "start",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 210,
-        "y": 640,
-        "wires": [
-            [
-                "642df87e4871a1c4"
-            ]
-        ]
-    },
-    {
-        "id": "e1f5e92df617db85",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 690,
-        "y": 420,
-        "wires": [
-            [
-                "a941964922c99e0d"
-            ]
-        ]
-    },
-    {
-        "id": "9031de9f7e85ee74",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.2",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 690,
-        "y": 540,
-        "wires": [
-            [
-                "fb340be7e461e2fe"
-            ]
-        ]
-    },
-    {
-        "id": "59ba84765a4f6c18",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1883",
-        "payloadType": "num",
-        "x": 750,
-        "y": 760,
-        "wires": [
-            [
-                "a122ea34e40556e4"
-            ]
-        ]
-    },
-    {
-        "id": "e04d259dd35c690f",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "broker.emqx.io",
-        "payloadType": "str",
-        "x": 720,
-        "y": 620,
-        "wires": [
-            [
-                "0c769e6742acebb0"
-            ]
-        ]
-    },
-    {
         "id": "b60a07a5f5df2db6",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
+        "g": "197177ecce29c10c",
         "group": "91a9ce4bbf4bb377",
         "name": "Door Settings label",
         "order": 6,
@@ -4792,8 +4812,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1010,
-        "y": 1280,
+        "x": 930,
+        "y": 1140,
         "wires": [
             []
         ]
@@ -4802,7 +4822,7 @@
         "id": "c8960adebc938996",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
+        "g": "197177ecce29c10c",
         "group": "91a9ce4bbf4bb377",
         "name": "Lock Settings label",
         "order": 17,
@@ -4814,8 +4834,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1010,
-        "y": 1320,
+        "x": 930,
+        "y": 1180,
         "wires": [
             []
         ]
@@ -4824,7 +4844,7 @@
         "id": "341cca91a1fdb94a",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
+        "g": "197177ecce29c10c",
         "group": "91a9ce4bbf4bb377",
         "name": "Button settings label",
         "order": 22,
@@ -4836,8 +4856,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1020,
-        "y": 1360,
+        "x": 940,
+        "y": 1220,
         "wires": [
             []
         ]
@@ -4846,7 +4866,7 @@
         "id": "2f40703481bf226e",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
+        "g": "197177ecce29c10c",
         "group": "91a9ce4bbf4bb377",
         "name": "Timezone settings label",
         "order": 27,
@@ -4858,8 +4878,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1030,
-        "y": 1400,
+        "x": 950,
+        "y": 1260,
         "wires": [
             []
         ]
@@ -4868,7 +4888,7 @@
         "id": "daca0544dd019614",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "995bfc59fd9df675",
+        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4882,12 +4902,98 @@
         "topic": "",
         "payload": "GMT0",
         "payloadType": "str",
-        "x": 350,
-        "y": 2020,
+        "x": 130,
+        "y": 1960,
         "wires": [
             [
                 "1decd6fb7be79a57"
             ]
+        ]
+    },
+    {
+        "id": "1c69858ef950135c",
+        "type": "mqtt in",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "79737e067a3af084",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 750,
+        "y": 1720,
+        "wires": [
+            [
+                "c04be96336935f33"
+            ]
+        ]
+    },
+    {
+        "id": "c04be96336935f33",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "",
+        "property": "payload.operator",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "SetCtpDoor-Ack",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 890,
+        "y": 1720,
+        "wires": [
+            [
+                "aad987ee2a0c4f2c"
+            ]
+        ]
+    },
+    {
+        "id": "b34c7c3825b2f296",
+        "type": "ui_toast",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Ack info",
+        "x": 1400,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "5c869c44f8db9da9",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "setDevicesIdx",
+        "func": "let device_set_idxs = global.get('device_set_idxs') || {};\ndevice_set_idxs = Object.assign(device_set_idxs, { [msg.topic]: msg.payload })\nglobal.set('device_set_idxs', device_set_idxs)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1420,
+        "wires": [
+            []
         ]
     },
     {
