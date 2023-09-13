@@ -1736,7 +1736,7 @@
         "width": 4,
         "height": 1,
         "passthru": false,
-        "label": "Settings (dev)",
+        "label": "Settings",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -1787,7 +1787,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "dashboardInit",
-        "func": "msg.payload.group = {\n    \"hide\": [\"AIR-CR_Control\", \"AIR-CR_Connection\", \"AIR-CR_Simple_settings\"],\n    \"show\": [\"AIR-CR_Settings\", \"AIR-CR_Reader\", \"AIR-CR_DateTime\"]\n}\nreturn msg;",
+        "func": "msg.payload.group = {\n    \"hide\": [\"AIR-CR_Settings\", \"AIR-CR_Control\", \"AIR-CR_r0\", \"AIR-CR_r1\"],\n    \"show\": [\"AIR-CR_Connection\"]\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2983,7 +2983,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_Reader\",\"AIR-CR_DateTime\",\"AIR-CR_Control\",\"AIR-CR_Simple_settings\"],\"show\":[\"AIR-CR_Connection\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_Control\",\"AIR-CR_Simple_settings\"],\"show\":[\"AIR-CR_Connection\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
@@ -4234,34 +4234,6 @@
         "wires": [
             [
                 "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
-        "id": "7ff0da7637c2aec3",
-        "type": "ui_button",
-        "z": "692c798b6f9c61de",
-        "name": "Settings (user)",
-        "group": "fc491a4cada0492f",
-        "order": 6,
-        "width": 4,
-        "height": 1,
-        "passthru": false,
-        "label": "Settings (user)",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "settings_btn",
-        "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\",\"AIR-CR_Connection\",\"AIR-CR_Settings\",\"AIR-CR_Reader\",\"AIR-CR_DateTime\"],\"show\":[\"AIR-CR_Simple_settings\"]}}",
-        "payloadType": "json",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 2100,
-        "y": 520,
-        "wires": [
-            [
-                "f35f7ebd59ad5459"
             ]
         ]
     },
