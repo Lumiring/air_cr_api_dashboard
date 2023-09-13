@@ -4638,8 +4638,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1500,
-        "y": 320,
+        "x": 1480,
+        "y": 340,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -4743,6 +4743,31 @@
         "wires": [
             [
                 "a122ea34e40556e4"
+            ]
+        ]
+    },
+    {
+        "id": "e04d259dd35c690f",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "broker.emqx.io",
+        "payloadType": "str",
+        "x": 720,
+        "y": 620,
+        "wires": [
+            [
+                "0c769e6742acebb0"
             ]
         ]
     },
