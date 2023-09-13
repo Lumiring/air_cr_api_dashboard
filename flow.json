@@ -63,7 +63,6 @@
             "297191ec56ab0272",
             "d8697b4c53aa26a1",
             "d0c523e32a8ea14f",
-            "b6e08e3b73e4abd7",
             "1dc6ecb687b4c702",
             "940bef210d3fe68f",
             "4d74c64a6d551fbf",
@@ -94,7 +93,8 @@
             "1decd6fb7be79a57",
             "ddab9916254d4a0e",
             "ebf4caecba2c3b0f",
-            "5dae369f8feb1f2b"
+            "5dae369f8feb1f2b",
+            "b21a19bb0acbfa9c"
         ],
         "x": 74,
         "y": 839,
@@ -167,76 +167,6 @@
         "y": 1939,
         "w": 932,
         "h": 402
-    },
-    {
-        "id": "3d00d5011b39e864",
-        "type": "group",
-        "z": "be9f64fbc3682d16",
-        "name": "",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "08668851e35452e7",
-            "500b54e0a15a8024",
-            "36afbbbff6d2c65b",
-            "ce7d8954c3709df1",
-            "faee72dd518c80d8",
-            "3b2f1e24dd57ae16",
-            "9abed7ada415d9df",
-            "441911e97e3e496a",
-            "fc779dbf7b54cf43",
-            "1d8a47cdf963be97",
-            "3670137b10bbba0d",
-            "14bd0ee69f8813fe",
-            "8c4c06114feb911e",
-            "f7faf28598d57587",
-            "6c4380ae11333540",
-            "6b1d8a7811858a5f",
-            "e23ab7d6df19c086",
-            "f9854082c6f330fa",
-            "31d364e6be3997dd",
-            "8c8a2053b1a0ceea",
-            "21734bc456624e52",
-            "2bd91b34584ac591"
-        ],
-        "x": 34,
-        "y": 539,
-        "w": 772,
-        "h": 742
-    },
-    {
-        "id": "b2257f44a2c51e87",
-        "type": "group",
-        "z": "be9f64fbc3682d16",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "7fd6557c497b4c1e",
-            "80534b3e373cf5db",
-            "af8dcc2750985ece",
-            "392bed8f5131614f",
-            "c49221a23de934fa",
-            "11814495f9387d3c",
-            "913abd1f5c57f1b2",
-            "f188d012945c3966",
-            "f7673a2b0876c467",
-            "edc132442e785b85",
-            "74d7e54cc946196e",
-            "410d950420bd3341",
-            "f9540f44c6078c17"
-        ],
-        "x": 854,
-        "y": 539,
-        "w": 652,
-        "h": 522
     },
     {
         "id": "56e641507ed69741",
@@ -522,7 +452,7 @@
         "className": ""
     },
     {
-        "id": "f04eed4084128e4a",
+        "id": "ab7792b40b56abd7",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -532,7 +462,7 @@
         "height": 1
     },
     {
-        "id": "5852bdc8b3218c29",
+        "id": "175f75ca7b98bf1e",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -542,7 +472,7 @@
         "height": 1
     },
     {
-        "id": "c0cc89bee11d4a64",
+        "id": "dbcbea51b7759fe2",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -552,7 +482,7 @@
         "height": 1
     },
     {
-        "id": "10f7927489a98d69",
+        "id": "d20a388239726faa",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -562,7 +492,7 @@
         "height": 1
     },
     {
-        "id": "a67aab9ab3667dd6",
+        "id": "1748e9376a86298d",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -572,7 +502,7 @@
         "height": 1
     },
     {
-        "id": "2a92a6035b9dd9f7",
+        "id": "d107e8f0fc38d182",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -582,7 +512,7 @@
         "height": 1
     },
     {
-        "id": "bf40f4d77aad8e0f",
+        "id": "7f95a1a876381b3e",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -592,7 +522,7 @@
         "height": 1
     },
     {
-        "id": "54e68d331b8a04ba",
+        "id": "42a1403b93cd8899",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -602,7 +532,7 @@
         "height": 1
     },
     {
-        "id": "d522cf6fedc844fc",
+        "id": "364f8c84b778cd15",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -612,7 +542,7 @@
         "height": 1
     },
     {
-        "id": "bc7268bc3db1de16",
+        "id": "4a61bb4925fa370a",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -622,7 +552,7 @@
         "height": 1
     },
     {
-        "id": "ac28a7848c85d9a6",
+        "id": "60147fdf321cf8dc",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -632,7 +562,7 @@
         "height": 1
     },
     {
-        "id": "f2aba220c1f04475",
+        "id": "9efed5340838df25",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -642,7 +572,7 @@
         "height": 1
     },
     {
-        "id": "6d18515bbd8999a3",
+        "id": "cf80babf7b30d26e",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -652,7 +582,7 @@
         "height": 1
     },
     {
-        "id": "06adc4d83cb742ac",
+        "id": "36f293d04927ce79",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -662,7 +592,7 @@
         "height": 1
     },
     {
-        "id": "4efbef3663bfee06",
+        "id": "897709d39cec1729",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -672,7 +602,7 @@
         "height": 1
     },
     {
-        "id": "1e78821ab920ff25",
+        "id": "46be798ea6a02a8f",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -682,7 +612,7 @@
         "height": 1
     },
     {
-        "id": "5a279f4f4f182946",
+        "id": "4140d13ea88587f7",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -692,7 +622,7 @@
         "height": 1
     },
     {
-        "id": "284163d52594f232",
+        "id": "74eb2879ab417e36",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -702,7 +632,7 @@
         "height": 1
     },
     {
-        "id": "a4891cc1aa3e27e0",
+        "id": "a9f55de90d19c2a4",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -712,7 +642,7 @@
         "height": 1
     },
     {
-        "id": "bbd6aa7f1825791a",
+        "id": "f6949b1d7eb93986",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -722,7 +652,7 @@
         "height": 1
     },
     {
-        "id": "63f241ad5934b6ca",
+        "id": "ab12dd37d5c459fb",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -732,7 +662,7 @@
         "height": 1
     },
     {
-        "id": "4620517eb1ae2b7f",
+        "id": "b01011b4eae7d6b4",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -742,7 +672,7 @@
         "height": 1
     },
     {
-        "id": "f1d5eebbd6d779bf",
+        "id": "f6789ac4a81111c0",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -752,7 +682,7 @@
         "height": 1
     },
     {
-        "id": "aecdf504fbf042bc",
+        "id": "ae4837605efcbdc4",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -762,7 +692,7 @@
         "height": 1
     },
     {
-        "id": "98456cc885fb4fd2",
+        "id": "11ba389ee13637c9",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -772,87 +702,147 @@
         "height": 1
     },
     {
-        "id": "7d897110e62356d3",
+        "id": "1bf1d112d1ffc4a3",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
-        "order": 3,
+        "order": 2,
         "width": 30,
         "height": 1
     },
     {
-        "id": "e2ca1dc701dbcd21",
+        "id": "4cc28f1bf84fdf97",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
-        "order": 30,
+        "order": 6,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "a8eb404ff193a5e7",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 15,
         "width": 10,
         "height": 1
     },
     {
-        "id": "b05c9ff0d93ed28c",
+        "id": "19a293dda7fc6a7b",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 18,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "73f37a2fad05ec3b",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 19,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "b84d50fac1acb5c2",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 22,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "a3d68654e63e82dc",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 23,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "096e34309131abf7",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 24,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "948d2b19edf78eeb",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 26,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "e2ba2a54c3d59572",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 27,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "4ee4b6cae063b184",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 28,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "dcfefeae5a467795",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 29,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "ca1bab5fd75364ed",
+        "type": "ui_spacer",
+        "z": "692c798b6f9c61de",
+        "name": "spacer",
+        "group": "91a9ce4bbf4bb377",
+        "order": 32,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ffab46f3bbe89537",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
         "group": "91a9ce4bbf4bb377",
         "order": 34,
-        "width": 10,
+        "width": 18,
         "height": 1
     },
     {
-        "id": "e714888b5bc8effd",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "91a9ce4bbf4bb377",
-        "order": 39,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "bdd474c5481c3afe",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "91a9ce4bbf4bb377",
-        "order": 41,
-        "width": 20,
-        "height": 1
-    },
-    {
-        "id": "e407dc90597a678b",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "91a9ce4bbf4bb377",
-        "order": 43,
-        "width": 20,
-        "height": 1
-    },
-    {
-        "id": "45d71b54e42e90c5",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "91a9ce4bbf4bb377",
-        "order": 44,
-        "width": 30,
-        "height": 1
-    },
-    {
-        "id": "b89738bde41b7693",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "91a9ce4bbf4bb377",
-        "order": 46,
-        "width": 20,
-        "height": 1
-    },
-    {
-        "id": "45527407664a539e",
+        "id": "9f19ca4ca204dffa",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -862,7 +852,7 @@
         "height": 1
     },
     {
-        "id": "991aa4f35b7fa18c",
+        "id": "e3c65c635f7307f6",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -872,7 +862,7 @@
         "height": 1
     },
     {
-        "id": "3ed4bea4478afc45",
+        "id": "8f87399560f9ea5e",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -882,7 +872,7 @@
         "height": 1
     },
     {
-        "id": "1f1170f37c064079",
+        "id": "207e2f361d1eed0a",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -892,7 +882,7 @@
         "height": 1
     },
     {
-        "id": "88cab30a2140298d",
+        "id": "de9b20266e386a94",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -902,7 +892,7 @@
         "height": 1
     },
     {
-        "id": "98cbfb814fc5e686",
+        "id": "5c076acd435ab708",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -912,7 +902,7 @@
         "height": 1
     },
     {
-        "id": "615e3e23eff03a46",
+        "id": "2d4558172a1eeeb4",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -922,57 +912,7 @@
         "height": 1
     },
     {
-        "id": "b8584c45bce9949d",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "a787b6f90a260b91",
-        "order": 2,
-        "width": 30,
-        "height": 1
-    },
-    {
-        "id": "1853adf151657340",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "a787b6f90a260b91",
-        "order": 10,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "a6176750bbe91372",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "a787b6f90a260b91",
-        "order": 12,
-        "width": 30,
-        "height": 1
-    },
-    {
-        "id": "434452a256d2781b",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "a787b6f90a260b91",
-        "order": 13,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "56a17b3311d3db05",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "a787b6f90a260b91",
-        "order": 15,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "9bf1fcab3e0de94b",
+        "id": "878bfe8a80f1272e",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -982,7 +922,7 @@
         "height": 1
     },
     {
-        "id": "7d0bca3b3f929d27",
+        "id": "0466a371ee290344",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -992,7 +932,7 @@
         "height": 1
     },
     {
-        "id": "7e7d1cd3f03698d2",
+        "id": "aaa8b5dcecaae4b9",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -1002,7 +942,7 @@
         "height": 1
     },
     {
-        "id": "fd1297f54c522025",
+        "id": "8b10b85e1b00840f",
         "type": "ui_spacer",
         "z": "692c798b6f9c61de",
         "name": "spacer",
@@ -2258,7 +2198,7 @@
         "tooltip": "",
         "place": "Door_sens_Condition",
         "group": "91a9ce4bbf4bb377",
-        "order": 12,
+        "order": 8,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2296,7 +2236,7 @@
         "label": "Control point index (Control_point_idx)",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 4,
+        "order": 3,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2324,7 +2264,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
-        "order": 26,
+        "order": 10,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2363,7 +2303,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
-        "order": 22,
+        "order": 13,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2401,7 +2341,7 @@
         "label": "Impulse duration (sec) (Door_Lock_puls)",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 20,
+        "order": 11,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2428,7 +2368,7 @@
         "label": "Hold duration (sec) Door_Delay",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 18,
+        "order": 12,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2447,33 +2387,6 @@
         ]
     },
     {
-        "id": "b6e08e3b73e4abd7",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "7b1492e7d36d2570",
-        "name": "Button_rex_opt",
-        "label": "Button_rex_opt",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 28,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Button_rex_opt",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 680,
-        "y": 1200,
-        "wires": [
-            [
-                "a607e57b9c8d8cdd"
-            ]
-        ]
-    },
-    {
         "id": "1dc6ecb687b4c702",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
@@ -2483,7 +2396,7 @@
         "tooltip": "",
         "place": "Select button condition",
         "group": "91a9ce4bbf4bb377",
-        "order": 24,
+        "order": 21,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2519,7 +2432,7 @@
         "g": "7b1492e7d36d2570",
         "name": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 32,
+        "order": 30,
         "width": 10,
         "height": 1,
         "passthru": false,
@@ -2550,7 +2463,7 @@
         "label": "Reader index (Rd1_idx)",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 6,
+        "order": 5,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2594,7 +2507,7 @@
         "g": "7b1492e7d36d2570",
         "group": "91a9ce4bbf4bb377",
         "name": "Door settings",
-        "order": 2,
+        "order": 1,
         "width": 0,
         "height": 0,
         "format": "<style>\n    #setDoorHeader{\n        text-align: center;\n        color: #0094CE;\n        font-size: 30px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"setDoorHeader\">\n    Control point settings\n</div>",
@@ -2618,7 +2531,7 @@
         "label": "Reader index (Rd0_idx)",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 9,
+        "order": 4,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2677,7 +2590,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
-        "order": 35,
+        "order": 9,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2737,7 +2650,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
-        "order": 36,
+        "order": 7,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2819,7 +2732,7 @@
         "y": 1200,
         "wires": [
             [
-                "b6e08e3b73e4abd7"
+                "b21a19bb0acbfa9c"
             ]
         ]
     },
@@ -2833,7 +2746,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
-        "order": 37,
+        "order": 20,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2924,7 +2837,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
-        "order": 38,
+        "order": 16,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -2989,7 +2902,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
-        "order": 40,
+        "order": 17,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -3158,7 +3071,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
-        "order": 42,
+        "order": 14,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -4273,7 +4186,7 @@
         "tooltip": "",
         "place": "Select timezone",
         "group": "91a9ce4bbf4bb377",
-        "order": 7,
+        "order": 31,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -4464,7 +4377,7 @@
         "label": "DST_GMT",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
-        "order": 13,
+        "order": 25,
         "width": 10,
         "height": 1,
         "passthru": true,
@@ -4513,6 +4426,40 @@
         "wires": [
             [
                 "ebf4caecba2c3b0f"
+            ]
+        ]
+    },
+    {
+        "id": "b21a19bb0acbfa9c",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "g": "7b1492e7d36d2570",
+        "name": "Button_rex_opt",
+        "label": "Button_rex_opt",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "ff66d7be436a7f37",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Controller",
+                "value": 0,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "Button_rex_opt",
+        "topicType": "str",
+        "className": "",
+        "x": 680,
+        "y": 1200,
+        "wires": [
+            [
+                "a607e57b9c8d8cdd"
             ]
         ]
     },
@@ -4779,1114 +4726,6 @@
         "x": 1520,
         "y": 500,
         "wires": []
-    },
-    {
-        "id": "08668851e35452e7",
-        "type": "ui_dropdown",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Direction (Rd0_dir)",
-        "label": "Direction (Rd0_dir)",
-        "tooltip": "",
-        "place": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 11,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "entry",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "exit",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd0_dir",
-        "topicType": "str",
-        "className": "",
-        "x": 290,
-        "y": 680,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "500b54e0a15a8024",
-        "type": "function",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "SetCtpDoor",
-        "func": "\n// initialise the counter to 0 if it doesn't exist already\nlet stpDoorSet = global.get('stpDoorSet') || {};\n\nstpDoorSet = Object.assign(stpDoorSet, {[msg.topic]:msg.payload})\n\nglobal.set('stpDoorSet', stpDoorSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 900,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "36afbbbff6d2c65b",
-        "type": "function",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "sendMqttMessage",
-        "func": "msg.payload = global.get('stpDoorSet');\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('stpDoorSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 670,
-        "y": 1120,
-        "wires": [
-            [
-                "8c8a2053b1a0ceea"
-            ]
-        ]
-    },
-    {
-        "id": "ce7d8954c3709df1",
-        "type": "ui_dropdown",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Door_sens_Condition",
-        "label": "Door_sens_Condition",
-        "tooltip": "",
-        "place": "Door_sens_Condition",
-        "group": "91a9ce4bbf4bb377",
-        "order": 14,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Open",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Close",
-                "value": 1,
-                "type": "num"
-            },
-            {
-                "label": "Change",
-                "value": 2,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Door_sens_Condition",
-        "topicType": "str",
-        "className": "",
-        "x": 280,
-        "y": 840,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "faee72dd518c80d8",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Control point index (Control_point_idx)",
-        "label": "Control point index (Control_point_idx)",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 5,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Control_point_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 230,
-        "y": 720,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "3b2f1e24dd57ae16",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Door_sens_opt",
-        "label": "Door_sens_opt",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 10,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Door_sens_opt",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 300,
-        "y": 760,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "9abed7ada415d9df",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Door_sens_idx",
-        "label": "Door_sens_idx",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 16,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Door_sens_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 300,
-        "y": 800,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "441911e97e3e496a",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Lock_Relay_opt",
-        "label": "Lock_Relay_opt",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 17,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Lock_Relay_opt",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 300,
-        "y": 880,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "fc779dbf7b54cf43",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Lock_Relay_idx",
-        "label": "Lock_Relay_idx",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 15,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Lock_Relay_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 300,
-        "y": 920,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "1d8a47cdf963be97",
-        "type": "ui_dropdown",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Door_Lock_mode",
-        "label": "Door_Lock_mode",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 27,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "trigger",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "impulse",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Door_Lock_mode",
-        "topicType": "str",
-        "className": "",
-        "x": 290,
-        "y": 960,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "3670137b10bbba0d",
-        "type": "ui_dropdown",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Door_Lock_type",
-        "label": "Door_Lock_type",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "91a9ce4bbf4bb377",
-        "order": 23,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "N-Opened",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "N-Closed",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Door_Lock_type",
-        "topicType": "str",
-        "className": "",
-        "x": 300,
-        "y": 1000,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "14bd0ee69f8813fe",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Impulse duration (sec) (Door_Lock_puls)",
-        "label": "Impulse duration (sec) (Door_Lock_puls)",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 21,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Door_Lock_puls",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 220,
-        "y": 1040,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "8c4c06114feb911e",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Hold duration (sec) Door_Delay",
-        "label": "Hold duration (sec) Door_Delay",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 19,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Door_Delay",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 250,
-        "y": 1080,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "f7faf28598d57587",
-        "type": "ui_switch",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Door_Sens_Autolock",
-        "label": "Door_Sens_Autolock",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 33,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "Door_Sens_Autolock",
-        "topicType": "str",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 280,
-        "y": 1120,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "6c4380ae11333540",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Button_rex_opt",
-        "label": "Button_rex_opt",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 29,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Button_rex_opt",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 300,
-        "y": 1160,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "6b1d8a7811858a5f",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Button_rex_idx",
-        "label": "Button_rex_idx",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 31,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Button_rex_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 300,
-        "y": 1200,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "e23ab7d6df19c086",
-        "type": "ui_dropdown",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Button condition (Button_rex_Condition)",
-        "label": "Button condition (Button_rex_Condition)",
-        "tooltip": "",
-        "place": "Select button condition",
-        "group": "91a9ce4bbf4bb377",
-        "order": 25,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Open",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Close",
-                "value": 1,
-                "type": "num"
-            },
-            {
-                "label": "Change",
-                "value": 2,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Button_rex_Condition",
-        "topicType": "str",
-        "className": "",
-        "x": 220,
-        "y": 1240,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "f9854082c6f330fa",
-        "type": "ui_button",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 45,
-        "width": 10,
-        "height": 1,
-        "passthru": false,
-        "label": "Submit stpDoor",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "topicType": "str",
-        "x": 660,
-        "y": 1020,
-        "wires": [
-            [
-                "36afbbbff6d2c65b"
-            ]
-        ]
-    },
-    {
-        "id": "31d364e6be3997dd",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "Reader index (Rd0_idx)",
-        "label": "Reader index (Rd0_idx)",
-        "tooltip": "",
-        "group": "91a9ce4bbf4bb377",
-        "order": 8,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Rd0_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 270,
-        "y": 640,
-        "wires": [
-            [
-                "500b54e0a15a8024"
-            ]
-        ]
-    },
-    {
-        "id": "8c8a2053b1a0ceea",
-        "type": "mqtt out",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "",
-        "topic": "",
-        "qos": "0",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "79737e067a3af084",
-        "x": 690,
-        "y": 1180,
-        "wires": []
-    },
-    {
-        "id": "21734bc456624e52",
-        "type": "ui_template",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "group": "91a9ce4bbf4bb377",
-        "name": "Door settings",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<style>\n    #setDoorHeader{\n        text-align: center;\n        color: #0094CE;\n        font-size: 30px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"setDoorHeader\">\n    Door settings\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 310,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2bd91b34584ac591",
-        "type": "inject",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "3d00d5011b39e864",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "enabled",
-                "v": "false",
-                "vt": "bool"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 150,
-        "y": 760,
-        "wires": [
-            [
-                "3b2f1e24dd57ae16"
-            ]
-        ]
-    },
-    {
-        "id": "7fd6557c497b4c1e",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_idx",
-        "label": "Rd_idx",
-        "tooltip": "",
-        "group": "a787b6f90a260b91",
-        "order": 4,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Rd_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 1060,
-        "y": 620,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "80534b3e373cf5db",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "Control_point_idx_DUMMY",
-        "label": "Control_point_idx",
-        "tooltip": "",
-        "group": "a787b6f90a260b91",
-        "order": 3,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Control_point_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 1000,
-        "y": 660,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "af8dcc2750985ece",
-        "type": "ui_dropdown",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_opt",
-        "label": "Rd_opt",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "a787b6f90a260b91",
-        "order": 7,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Embedded Reader",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Wiegand",
-                "value": 1,
-                "type": "num"
-            },
-            {
-                "label": "OSDP",
-                "value": 2,
-                "type": "num"
-            },
-            {
-                "label": "MQTT",
-                "value": 3,
-                "type": "num"
-            },
-            {
-                "label": "Ethernet",
-                "value": 4,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd_opt",
-        "topicType": "str",
-        "className": "",
-        "x": 1060,
-        "y": 700,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "392bed8f5131614f",
-        "type": "ui_dropdown",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_Direction",
-        "label": "Rd_Direction",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "a787b6f90a260b91",
-        "order": 6,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Entry",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Exit",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd_Direction",
-        "topicType": "str",
-        "className": "",
-        "x": 1050,
-        "y": 740,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "c49221a23de934fa",
-        "type": "ui_dropdown",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_Key_endian",
-        "label": "Rd_Key_endian",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "a787b6f90a260b91",
-        "order": 11,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Big endian",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Little endian",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd_Key_endian",
-        "topicType": "str",
-        "className": "",
-        "x": 1040,
-        "y": 780,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "11814495f9387d3c",
-        "type": "ui_dropdown",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_beep",
-        "label": "Rd_beep",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "a787b6f90a260b91",
-        "order": 8,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Sound on",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Sound off",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd_beep",
-        "topicType": "str",
-        "className": "",
-        "x": 1060,
-        "y": 820,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "913abd1f5c57f1b2",
-        "type": "ui_dropdown",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_Wg_type",
-        "label": "Rd_Wg_type",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "a787b6f90a260b91",
-        "order": 9,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Wiegand 4",
-                "value": "0",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 8",
-                "value": "1",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 26",
-                "value": "2",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 34",
-                "value": "3",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 37",
-                "value": "4",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 40",
-                "value": "5",
-                "type": "str"
-            },
-            {
-                "label": "Wiegand 42",
-                "value": "6",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "Rd_Wg_type",
-        "topicType": "str",
-        "className": "",
-        "x": 1050,
-        "y": 860,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "f188d012945c3966",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "Rd_Wg_idx",
-        "label": "Rd_Wg_idx",
-        "tooltip": "",
-        "group": "a787b6f90a260b91",
-        "order": 5,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Rd_Wg_idx",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 1050,
-        "y": 900,
-        "wires": [
-            [
-                "f7673a2b0876c467"
-            ]
-        ]
-    },
-    {
-        "id": "f7673a2b0876c467",
-        "type": "function",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "SetRd",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nlet rdSet = global.get('rdSet') || {};\n\nrdSet = Object.assign(rdSet, { [msg.topic]: msg.payload })\n\nglobal.set('rdSet', rdSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1430,
-        "y": 800,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "edc132442e785b85",
-        "type": "ui_button",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "",
-        "group": "a787b6f90a260b91",
-        "order": 14,
-        "width": 10,
-        "height": 1,
-        "passthru": false,
-        "label": "Submit Rd",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "topicType": "str",
-        "x": 1270,
-        "y": 900,
-        "wires": [
-            [
-                "74d7e54cc946196e"
-            ]
-        ]
-    },
-    {
-        "id": "74d7e54cc946196e",
-        "type": "function",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "sendMqttMessage",
-        "func": "msg.payload = global.get('rdSet');\nlet userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rdSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1290,
-        "y": 960,
-        "wires": [
-            [
-                "410d950420bd3341"
-            ]
-        ]
-    },
-    {
-        "id": "410d950420bd3341",
-        "type": "mqtt out",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "name": "",
-        "topic": "",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "79737e067a3af084",
-        "x": 1290,
-        "y": 1020,
-        "wires": []
-    },
-    {
-        "id": "f9540f44c6078c17",
-        "type": "ui_template",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "b2257f44a2c51e87",
-        "group": "a787b6f90a260b91",
-        "name": "Reader settings",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<style>\n    #setDoorHeader{\n        text-align: center;\n        color: #0094CE;\n        font-size: 30px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"setDoorHeader\">\n    Reader settings\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 1080,
-        "y": 580,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "d1a1fa1ee4361a96",
