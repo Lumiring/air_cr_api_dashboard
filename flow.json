@@ -2591,7 +2591,7 @@
         "width": 20,
         "height": 1,
         "passthru": false,
-        "label": "Submit stpDoor",
+        "label": "Submit control point settings",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -2601,7 +2601,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 720,
+        "x": 760,
         "y": 2320,
         "wires": [
             [
