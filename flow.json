@@ -2072,11 +2072,16 @@
                 "t": "eq",
                 "v": "Single_pass-Ack",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "SetCtpDoor-Ack",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 3,
+        "outputs": 4,
         "x": 1290,
         "y": 240,
         "wires": [
@@ -2088,6 +2093,9 @@
             ],
             [
                 "881c61e409196bd8"
+            ],
+            [
+                "aad987ee2a0c4f2c"
             ]
         ]
     },
@@ -2236,7 +2244,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1470,
+        "x": 1490,
         "y": 280,
         "wires": [
             [
@@ -4634,6 +4642,25 @@
         "wires": [
             [
                 "a607e57b9c8d8cdd"
+            ]
+        ]
+    },
+    {
+        "id": "aad987ee2a0c4f2c",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "SetCtpDoor-Ack",
+        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n\n    }\n}\n\nreturn ackInfo;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 320,
+        "wires": [
+            [
+                "6c8acdd459e657eb"
             ]
         ]
     },
