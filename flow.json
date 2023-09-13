@@ -1648,7 +1648,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 610,
+        "x": 710,
         "y": 420,
         "wires": [
             [
@@ -1674,7 +1674,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 620,
+        "x": 720,
         "y": 460,
         "wires": [
             [
@@ -1700,7 +1700,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 610,
+        "x": 710,
         "y": 500,
         "wires": [
             [
@@ -1726,7 +1726,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 610,
+        "x": 710,
         "y": 540,
         "wires": [
             [
@@ -1752,7 +1752,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 630,
+        "x": 730,
         "y": 580,
         "wires": [
             [
@@ -1778,7 +1778,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 620,
+        "x": 720,
         "y": 620,
         "wires": [
             [
@@ -1797,7 +1797,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
+        "x": 1000,
         "y": 520,
         "wires": [
             []
@@ -1815,7 +1815,6 @@
         "y": 580,
         "wires": [
             [
-                "573dd981aaaec8cc",
                 "642df87e4871a1c4",
                 "84cef9c2bb45ee64"
             ]
@@ -1826,7 +1825,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 1",
-        "func": "if (msg.status.text === \"node-red:common.status.connecting\") {\n    msg.enabled = false\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    msg.enabled = false\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    msg.enabled = true\n}\n\n\nreturn msg;",
+        "func": "if (msg.status.text === \"start\") {\n    msg.enabled = true\n} else if (msg.status.text === \"node-red:common.status.connecting\") {\n    msg.enabled = false\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    msg.enabled = false\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    msg.enabled = true\n}\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1845,23 +1844,6 @@
                 "5c0f4a3dd94ecbbf"
             ]
         ]
-    },
-    {
-        "id": "573dd981aaaec8cc",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 400,
-        "y": 660,
-        "wires": []
     },
     {
         "id": "6c8acdd459e657eb",
@@ -4661,6 +4643,31 @@
         "wires": [
             [
                 "6c8acdd459e657eb"
+            ]
+        ]
+    },
+    {
+        "id": "5e407515e8c6f3ed",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "status.text",
+                "v": "start",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 210,
+        "y": 640,
+        "wires": [
+            [
+                "642df87e4871a1c4"
             ]
         ]
     },
