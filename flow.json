@@ -4782,7 +4782,7 @@
         "order": 7,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    #door_settings{\n        text-align: center;\n        color: #0094CE;\n        font-size: 25px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"door_settings\">\n    Door settings\n</div>",
+        "format": "<style>\n    #door_settings{\n        text-align: left;\n        color: #0094CE;\n        font-size: 20px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"door_settings\">\n    Door settings\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
