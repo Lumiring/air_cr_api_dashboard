@@ -984,7 +984,7 @@
     {
         "id": "c642776b64f7474d",
         "type": "ui_group",
-        "name": "Simple_r0",
+        "name": "r0",
         "tab": "b76cefdaf9bc6c8b",
         "order": 2,
         "disp": false,
@@ -995,7 +995,7 @@
     {
         "id": "01eefd96a559eaf3",
         "type": "ui_group",
-        "name": "Simple_r1",
+        "name": "r1",
         "tab": "b76cefdaf9bc6c8b",
         "order": 10,
         "disp": false,
