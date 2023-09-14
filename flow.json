@@ -3265,7 +3265,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "SetCtpDoor-Ack",
-        "func": "let messageId = global.get(\"messageId\")\nconsole.log(messageId)\nconsole.log(msg.payload.message_id)\n\nif (messageId === msg.payload.message_id) {\n    console.log(\"111\")\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n        console.log(\"222\")\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n    } else {\n        console.log(\"333\")\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}\n\n",
+        "func": "let messageId = global.get(\"messageId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n        console.log(\"222\")\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n        console.log(\"333\")\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3410,17 +3410,17 @@
         "type": "switch",
         "z": "692c798b6f9c61de",
         "name": "",
-        "property": "topic",
+        "property": "result",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
-                "v": "Error",
+                "v": "error",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "Success",
+                "v": "success",
                 "vt": "str"
             }
         ],
