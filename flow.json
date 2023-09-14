@@ -171,7 +171,7 @@
         "x": 34,
         "y": 1059,
         "w": 1452,
-        "h": 942
+        "h": 1022
     },
     {
         "id": "d2c54d759744b825",
@@ -2330,7 +2330,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "sendMqttMessage",
-        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = Object.assign(global.get('stpDoorSet'), global.get('device_set_idxs'))\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
+        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = Object.assign(global.get('device_set_idxs'), global.get('stpDoorSet'))\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3589,7 +3589,7 @@
         "z": "692c798b6f9c61de",
         "g": "197177ecce29c10c",
         "name": "setReader1",
-        "func": "\nreturn msg;",
+        "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = Object.assign(global.get('device_set_idxs'), global.get('stpDoorSet'))\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -4676,7 +4676,7 @@
         "topicType": "str",
         "className": "",
         "x": 420,
-        "y": 1960,
+        "y": 2040,
         "wires": [
             [
                 "ddab9916254d4a0e"
@@ -4695,8 +4695,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 1960,
+        "x": 630,
+        "y": 2040,
         "wires": [
             []
         ]
@@ -4729,7 +4729,7 @@
         "animate": false,
         "className": "",
         "x": 410,
-        "y": 1920,
+        "y": 2000,
         "wires": [
             [
                 "ddab9916254d4a0e"
@@ -4755,7 +4755,7 @@
         "payload": "true",
         "payloadType": "bool",
         "x": 130,
-        "y": 1920,
+        "y": 2000,
         "wires": [
             [
                 "ebf4caecba2c3b0f"
@@ -4903,7 +4903,7 @@
         "payload": "GMT0",
         "payloadType": "str",
         "x": 130,
-        "y": 1960,
+        "y": 2040,
         "wires": [
             [
                 "1decd6fb7be79a57"
