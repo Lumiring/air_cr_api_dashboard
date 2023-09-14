@@ -1940,9 +1940,7 @@
             [
                 "881c61e409196bd8"
             ],
-            [
-                "aad987ee2a0c4f2c"
-            ]
+            []
         ]
     },
     {
@@ -2186,7 +2184,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "sendMqttMessage",
-        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = Object.assign(global.get('device_set_idxs'), global.get('stpDoorSet'))\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
+        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();;\nmsgWrapper.info = Object.assign(global.get('device_set_idxs'), global.get('stpDoorSet'))\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3271,8 +3269,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1580,
-        "y": 460,
+        "x": 1080,
+        "y": 1680,
         "wires": [
             [
                 "d969e40c2e543dae",
@@ -3427,8 +3425,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1750,
-        "y": 460,
+        "x": 1290,
+        "y": 1620,
         "wires": [
             [
                 "b34c7c3825b2f296"
@@ -3449,8 +3447,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1750,
-        "y": 520,
+        "x": 1290,
+        "y": 1680,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -4742,7 +4740,9 @@
         "x": 750,
         "y": 1720,
         "wires": [
-            []
+            [
+                "d78e7d49d8b2e3fb"
+            ]
         ]
     },
     {
@@ -4762,10 +4762,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1350,
-        "y": 480,
+        "x": 910,
+        "y": 1720,
         "wires": [
-            []
+            [
+                "aad987ee2a0c4f2c"
+            ]
         ]
     },
     {
@@ -4783,8 +4785,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1920,
-        "y": 380,
+        "x": 1460,
+        "y": 1540,
         "wires": []
     },
     {
@@ -4818,8 +4820,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 1910,
-        "y": 520,
+        "x": 1450,
+        "y": 1680,
         "wires": []
     },
     {
@@ -4835,8 +4837,24 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1720,
-        "y": 320,
+        "x": 1260,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "d78e7d49d8b2e3fb",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 1820,
         "wires": []
     },
     {
