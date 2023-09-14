@@ -78,37 +78,6 @@
         "h": 402
     },
     {
-        "id": "56e641507ed69741",
-        "type": "group",
-        "z": "be9f64fbc3682d16",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "d1a1fa1ee4361a96",
-            "c4a23bd25a45be18",
-            "96c4823bbbbc410f",
-            "06543f094dc2c8fb",
-            "f9c6eab7406e724e",
-            "7c32492725d11073",
-            "9e891e1dcb2b0b42",
-            "f302fdd67db34f28",
-            "c0dc0386461d30bd",
-            "303f207717b36b47",
-            "a61c2ed9c4cf49f7"
-        ],
-        "x": 34,
-        "y": 1319,
-        "w": 552,
-        "h": 462
-    },
-    {
         "id": "197177ecce29c10c",
         "type": "group",
         "z": "692c798b6f9c61de",
@@ -169,7 +138,8 @@
             "c04be96336935f33",
             "b34c7c3825b2f296",
             "5c869c44f8db9da9",
-            "62276b0a5748fef9"
+            "62276b0a5748fef9",
+            "3bad4d045874e7ba"
         ],
         "x": 34,
         "y": 1059,
@@ -429,56 +399,6 @@
         "width": "30",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "f2c6da5ece29f807",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "4e33cabd64714466",
-        "order": 1,
-        "width": 30,
-        "height": 1
-    },
-    {
-        "id": "7fa142a2553b09dc",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "4e33cabd64714466",
-        "order": 2,
-        "width": 30,
-        "height": 1
-    },
-    {
-        "id": "93ecd5ddf9f0b615",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "4e33cabd64714466",
-        "order": 10,
-        "width": 30,
-        "height": 1
-    },
-    {
-        "id": "ee99aaefe1d891ca",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "4e33cabd64714466",
-        "order": 11,
-        "width": 30,
-        "height": 1
-    },
-    {
-        "id": "81479b208e3d2799",
-        "type": "ui_spacer",
-        "z": "692c798b6f9c61de",
-        "name": "spacer",
-        "group": "4e33cabd64714466",
-        "order": 12,
-        "width": 20,
-        "height": 1
     },
     {
         "id": "6cbd42c7b26f3143",
@@ -4959,7 +4879,8 @@
         "y": 1720,
         "wires": [
             [
-                "aad987ee2a0c4f2c"
+                "aad987ee2a0c4f2c",
+                "3bad4d045874e7ba"
             ]
         ]
     },
@@ -5018,6 +4939,23 @@
         "broker": "79737e067a3af084",
         "x": 1390,
         "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "3bad4d045874e7ba",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "g": "197177ecce29c10c",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 1820,
         "wires": []
     },
     {
@@ -5283,441 +5221,5 @@
         "x": 1520,
         "y": 500,
         "wires": []
-    },
-    {
-        "id": "d1a1fa1ee4361a96",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "56e641507ed69741",
-        "name": "GMT",
-        "label": "GMT",
-        "tooltip": "",
-        "group": "",
-        "order": 6,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "GMT",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 170,
-        "y": 1400,
-        "wires": [
-            [
-                "f302fdd67db34f28"
-            ]
-        ]
-    },
-    {
-        "id": "c4a23bd25a45be18",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "56e641507ed69741",
-        "name": "NTP1",
-        "label": "NTP1",
-        "tooltip": "",
-        "group": "",
-        "order": 5,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "NTP1",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 170,
-        "y": 1440,
-        "wires": [
-            [
-                "f302fdd67db34f28"
-            ]
-        ]
-    },
-    {
-        "id": "96c4823bbbbc410f",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "56e641507ed69741",
-        "name": "NTP2",
-        "label": "NTP2",
-        "tooltip": "",
-        "group": "",
-        "order": 8,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "NTP2",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 170,
-        "y": 1480,
-        "wires": [
-            [
-                "f302fdd67db34f28"
-            ]
-        ]
-    },
-    {
-        "id": "06543f094dc2c8fb",
-        "type": "ui_switch",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "56e641507ed69741",
-        "name": "DST_GMT",
-        "label": "DST_GMT",
-        "tooltip": "",
-        "group": "",
-        "order": 7,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "DST_GMT",
-        "topicType": "str",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 150,
-        "y": 1560,
-        "wires": [
-            [
-                "f302fdd67db34f28"
-            ]
-        ]
-    },
-    {
-        "id": "f9c6eab7406e724e",
-        "type": "ui_text_input",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "56e641507ed69741",
-        "name": "DST_Shift",
-        "label": "DST_Shift",
-        "tooltip": "",
-        "group": "",
-        "order": 9,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "DST_Shift",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "str",
-        "x": 150,
-        "y": 1600,
-        "wires": [
-            [
-                "f302fdd67db34f28"
-            ]
-        ]
-    },
-    {
-        "id": "7c32492725d11073",
-        "type": "ui_dropdown",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "56e641507ed69741",
-        "name": "Timezone (tz)",
-        "label": "Timezone (tz)",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "",
-        "order": 4,
-        "width": 10,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "(UTC-12:00) International Date Line West",
-                "value": "<-12>12",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-11:00) Coordinated Universal Time-11",
-                "value": "SST11",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-10:00) Aleutian Islands, Hawaii",
-                "value": "HST10",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-09:00) Alaska",
-                "value": "<-09>9",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-08:00) Pacific Time (US & Canada)",
-                "value": "PST8PDT,M3.2.0,M11.1.0",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-07:00) Chihuahua, La Paz, Mazatlan, Arizona",
-                "value": "MST7MDT,M4.1.0,M10.5.0",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-06:00) Guadalajara, Mexico City, Monterrey, Saskatchewan, Easter Island",
-                "value": "CST6CDT,M4.1.0,M10.5.0",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-05:00) Bogota, Lima, Quito, Rio Branco, Chetumal, Haiti, Havana",
-                "value": "<-05>5",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-04:00) Georgetown, La Paz, Manaus, San Juan",
-                "value": "<-04>4",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-03:00) Araguaina, Brasilia, Cayenne, Fortaleza, Salvador",
-                "value": "<-03>3",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-02:00) Mid-Atlantic - Old",
-                "value": "<-02>2",
-                "type": "str"
-            },
-            {
-                "label": "(UTC-01:00) Azores",
-                "value": "<-01>1<+00>,M3.5.0/0,M10.5.0/1",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+00:00) Dublin, Edinburgh, Lisbon, London",
-                "value": "GMT0",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+01:00) Amsterdam, Berlin, Budapest, Ljubljana, Prague, Brussels, Copenhagen, Madrid, Paris",
-                "value": "CET-1CEST,M3.5.0,M10.5.0/3",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius, Jerusalem, Kaliningrad, Tripoli",
-                "value": "EET-2EEST,M3.5.0/3,M10.5.0/4",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+03:00) Kuwait, Riyadh, Baghdad, Istanbul, Minsk, Moscow, St. Petersburg, Volgograd",
-                "value": "MSK-3",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+03:30) Tehran",
-                "value": "<+0330>-3:30<+0430>,J79/24,J263/24",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+04:00) Abu Dhabi, Muscat, Astrakhan, Ulyanovsk, Baku, Izhevsk, Samara",
-                "value": "<+04>-4",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+04:30) Kabul",
-                "value": "<+0430>-4:30",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+05:00) Ashgabat, Tashkent, Ekaterinburg, Islamabad, Karachi",
-                "value": "PKT-5",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+06:00) Astana, Dhaka, Omsk",
-                "value": "<+06>-6",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+07:00) Bangkok, Hanoi, Jakarta, Barnaul, Gorno-Altaysk, Krasnoyarsk, Novosibirsk",
-                "value": "<+07>-7",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi, Irkutsk, Kuala Lumpur, Singapore",
-                "value": "HKT-8",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+09:00) Chita, Osaka, Sapporo, Tokyo, Seoul, Yakutsk",
-                "value": "JST-9",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+09:30) Adelaide, Darwin",
-                "value": "ACST-9:30",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+10:00) Brisbane, Canberra, Melbourne, Sydney, Vladivostok",
-                "value": "<+10>-10",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+11:00) Bougainville Island, Chokurdakh, Magadan, Norfolk Island, Sakhalin",
-                "value": "<+11>-11",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+12:00) Anadyr, Petropavlovsk-Kamchatsky, Auckland, Wellington",
-                "value": "NZST-12NZDT,M9.5.0,M4.1.0/3",
-                "type": "str"
-            },
-            {
-                "label": "(UTC+13:00) Nuku'alofa, Samoa",
-                "value": "<+13>-13",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "tz",
-        "topicType": "str",
-        "className": "",
-        "x": 140,
-        "y": 1520,
-        "wires": [
-            [
-                "f302fdd67db34f28"
-            ]
-        ]
-    },
-    {
-        "id": "9e891e1dcb2b0b42",
-        "type": "ui_button",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "56e641507ed69741",
-        "name": "Submit DateTime",
-        "group": "",
-        "order": 13,
-        "width": 10,
-        "height": 1,
-        "passthru": false,
-        "label": "Submit DateTime",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "topicType": "str",
-        "x": 430,
-        "y": 1580,
-        "wires": [
-            [
-                "c0dc0386461d30bd"
-            ]
-        ]
-    },
-    {
-        "id": "f302fdd67db34f28",
-        "type": "function",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "56e641507ed69741",
-        "name": "setDT",
-        "func": "// initialise the counter to 0 if it doesn't exist already\nlet dTSet = global.get('dTSet') || {};\n\ndTSet = Object.assign(dTSet, { [msg.topic]: msg.payload })\n\nglobal.set('dTSet', dTSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 390,
-        "y": 1480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c0dc0386461d30bd",
-        "type": "function",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "56e641507ed69741",
-        "name": "sendMqttMessage",
-        "func": "msg.payload = global.get('dTSet');\nlet userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetDateTime\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('dTSet');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 1660,
-        "wires": [
-            [
-                "303f207717b36b47"
-            ]
-        ]
-    },
-    {
-        "id": "303f207717b36b47",
-        "type": "mqtt out",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "56e641507ed69741",
-        "name": "",
-        "topic": "",
-        "qos": "0",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "79737e067a3af084",
-        "x": 490,
-        "y": 1740,
-        "wires": []
-    },
-    {
-        "id": "a61c2ed9c4cf49f7",
-        "type": "ui_template",
-        "z": "be9f64fbc3682d16",
-        "d": true,
-        "g": "56e641507ed69741",
-        "group": "",
-        "name": "Date settings",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "format": "<style>\n    #setDoorHeader{\n        text-align: center;\n        color: #0094CE;\n        font-size: 30px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"setDoorHeader\">\n    Date settings\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 190,
-        "y": 1360,
-        "wires": [
-            []
-        ]
     }
 ]
