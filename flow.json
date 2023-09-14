@@ -1119,7 +1119,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2840,
+        "x": 2740,
         "y": 480,
         "wires": [
             [
@@ -1147,7 +1147,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2830,
+        "x": 2730,
         "y": 440,
         "wires": [
             [
@@ -1160,10 +1160,10 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "dashboardInit",
-        "func": "msg.payload.group = {\n    \"hide\": [\"AIR-CR_Settings\", \"AIR-CR_Control\", \"AIR-CR_r0\", \"AIR-CR_r1\", \"AIR-CR_submit\"],\n    \"show\": [\"AIR-CR_Connection\"]\n}\nreturn msg;",
+        "func": "",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "",
+        "initialize": "msg.payload.group = {\n    \"hide\": [\"AIR-CR_Settings\", \"AIR-CR_Control\", \"AIR-CR_r0\", \"AIR-CR_r1\", \"AIR-CR_submit\"],\n    \"show\": [\"AIR-CR_Connection\"]\n}\nreturn msg;",
         "finalize": "",
         "libs": [],
         "x": 2780,
@@ -1438,8 +1438,8 @@
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 2940,
-        "y": 320,
+        "x": 2800,
+        "y": 180,
         "wires": [
             []
         ]
@@ -1464,7 +1464,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2830,
+        "x": 2730,
         "y": 400,
         "wires": [
             [
@@ -1675,7 +1675,7 @@
         "scope": [
             "9e5fe1c3fe6f0503"
         ],
-        "x": 220,
+        "x": 140,
         "y": 580,
         "wires": [
             [
@@ -1688,14 +1688,14 @@
         "id": "642df87e4871a1c4",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "function 1",
+        "name": "setEnabledStates",
         "func": "if (msg.status.text === \"start\") {\n    msg.enabled = true\n} else if (msg.status.text === \"node-red:common.status.connecting\") {\n    msg.enabled = false\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    msg.enabled = false\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    msg.enabled = true\n}\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
+        "x": 370,
         "y": 580,
         "wires": [
             [
@@ -3274,7 +3274,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "SetCtpDoor-Ack",
-        "func": "let messageId = global.get(\"messageId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n        console.log(\"222\")\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n        console.log(\"333\")\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}\n\n",
+        "func": "let messageId = global.get(\"messageId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3305,7 +3305,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 210,
+        "x": 170,
         "y": 640,
         "wires": [
             [
@@ -4793,7 +4793,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "setRd-Ack",
-        "func": "let messageId_rd_0 = global.get(\"messageId_rd_0\")\nlet messageId_rd_1 = global.get(\"messageId_rd_1\")\n\nconsole.log(\"RD_0 message = \" + messageId_rd_0 )\nconsole.log(\"RD_1 message = \" + messageId_rd_1)\n\nlet ackInfo_rd_0 = {}\nlet ackInfo_rd_1 = {}\n\nif (messageId_rd_0 === msg.payload.message_id) {\n    console.log(\"errorNo: \" + msg.payload.result.errorNo)\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_0.result = \"success\"\n        ackInfo_rd_0.payload = \"Done\"\n    } else {\n        ackInfo_rd_0.result = \"error\"\n        ackInfo_rd_0.payload = \"error\"\n    }\n} else if (messageId_rd_1 === msg.payload.message_id){\n    console.log(\"errorNo: \" + msg.payload.result.errorNo)\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_1.result = \"success\"\n        ackInfo_rd_1.payload = \"Done\"\n    } else {\n        ackInfo_rd_1.result = \"error\"\n        ackInfo_rd_1.payload = \"error\"\n    }\n}\n\nreturn [ackInfo_rd_0, ackInfo_rd_1]\n\n",
+        "func": "let messageId_rd_0 = global.get(\"messageId_rd_0\")\nlet messageId_rd_1 = global.get(\"messageId_rd_1\")\n\n\n\nlet ackInfo_rd_0 = {}\nlet ackInfo_rd_1 = {}\n\nif (messageId_rd_0 === msg.payload.message_id) {\n\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_0.result = \"success\"\n        ackInfo_rd_0.payload = \"Done\"\n    } else {\n        ackInfo_rd_0.result = \"error\"\n        ackInfo_rd_0.payload = \"error\"\n    }\n} else if (messageId_rd_1 === msg.payload.message_id){\n\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_1.result = \"success\"\n        ackInfo_rd_1.payload = \"Done\"\n    } else {\n        ackInfo_rd_1.result = \"error\"\n        ackInfo_rd_1.payload = \"error\"\n    }\n}\n\nreturn [ackInfo_rd_0, ackInfo_rd_1]\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
