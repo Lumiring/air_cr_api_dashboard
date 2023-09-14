@@ -1438,8 +1438,8 @@
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 2800,
-        "y": 180,
+        "x": 2760,
+        "y": 220,
         "wires": [
             []
         ]
@@ -1782,7 +1782,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "subscribe",
-        "func": "\n\nlet tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nglobal.set('userCreds', tempUserCreds)\nlet globalTopic = tempUserCreds.aid + \"/\" + tempUserCreds.cid + \"/\" + \"registration\" + \"/\" + tempUserCreds.deviceId + \"/\"\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\n\n\nlet obj = {}\nobj.payload = {}\nobj.payload.cid = \"Company ID: \" + tempUserCreds.cid\nobj.payload.aid = \"Account ID: \" + tempUserCreds.aid\nobj.payload.deviceId = \"Device ID: \" + tempUserCreds.deviceId\nreturn [msg, obj]\n",
+        "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nglobal.set('userCreds', tempUserCreds)\nlet globalTopic = tempUserCreds.aid + \"/\" + tempUserCreds.cid + \"/\" + \"registration\" + \"/\" + tempUserCreds.deviceId + \"/\"\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\n\n\nlet obj = {}\nobj.payload = {}\nobj.payload.cid = \"Company ID: \" + tempUserCreds.cid\nobj.payload.aid = \"Account ID: \" + tempUserCreds.aid\nobj.payload.deviceId = \"Device ID: \" + tempUserCreds.deviceId\nreturn [msg, obj]\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -2201,7 +2201,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1710,
+        "x": 1050,
         "y": 1880,
         "wires": [
             [
@@ -2229,7 +2229,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1620,
+        "x": 960,
         "y": 1760,
         "wires": [
             [
@@ -2251,7 +2251,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 1930,
+        "x": 1270,
         "y": 1780,
         "wires": []
     },
@@ -4968,6 +4968,23 @@
         "x": 1520,
         "y": 500,
         "wires": []
+    },
+    {
+        "id": "012249317b8c4510",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 1",
+        "func": "",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "let userCreds = global.get(\"userCreds\")\nconsole.log(userCreds)",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 140,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "1fddf0a8d296909f",
