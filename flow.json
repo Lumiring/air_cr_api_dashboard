@@ -4977,7 +4977,7 @@
         "func": "",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "let userCreds = global.get(\"userCreds\")\nconsole.log(userCreds)",
+        "initialize": "let userCreds = global.get(\"userCreds\")\nconsole.log(userCreds)\n\nreturn msg",
         "finalize": "",
         "libs": [],
         "x": 220,
