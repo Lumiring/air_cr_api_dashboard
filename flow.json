@@ -78,76 +78,6 @@
         "h": 402
     },
     {
-        "id": "197177ecce29c10c",
-        "type": "group",
-        "z": "692c798b6f9c61de",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "aad987ee2a0c4f2c",
-            "d969e40c2e543dae",
-            "a902fb928a850e75",
-            "a607e57b9c8d8cdd",
-            "84d7a118ddd9842f",
-            "5876e97090ffded2",
-            "4a42fef97bd379c2",
-            "297191ec56ab0272",
-            "d8697b4c53aa26a1",
-            "d0c523e32a8ea14f",
-            "1dc6ecb687b4c702",
-            "4d74c64a6d551fbf",
-            "c195fb1af7d90e90",
-            "3c691a45025ba009",
-            "fac062210ac59294",
-            "8d0f58b9725145dc",
-            "c92d749c3d3c71a5",
-            "061aecc325f2ccf3",
-            "963ed93528cda57e",
-            "d3a133d00b340e1b",
-            "b2474e59834ac54b",
-            "5eeae1b2e2b3c814",
-            "bff2a475aa26be41",
-            "00ecd6dbee19221f",
-            "84b05a9496fc7da5",
-            "9511360cabc09665",
-            "ca47d465a6b99a63",
-            "9d19323eaf34876e",
-            "1ae3d7c290a17078",
-            "e4e36f0ec9287fcb",
-            "3984a6135d0cec25",
-            "b083bea11642642c",
-            "86ed6e6d340e0de2",
-            "1decd6fb7be79a57",
-            "ddab9916254d4a0e",
-            "ebf4caecba2c3b0f",
-            "5dae369f8feb1f2b",
-            "b21a19bb0acbfa9c",
-            "b60a07a5f5df2db6",
-            "c8960adebc938996",
-            "341cca91a1fdb94a",
-            "2f40703481bf226e",
-            "daca0544dd019614",
-            "1c69858ef950135c",
-            "c04be96336935f33",
-            "b34c7c3825b2f296",
-            "5c869c44f8db9da9",
-            "62276b0a5748fef9",
-            "3bad4d045874e7ba",
-            "64a3cf27a03ee432"
-        ],
-        "x": 34,
-        "y": 1059,
-        "w": 1452,
-        "h": 1022
-    },
-    {
         "id": "d2c54d759744b825",
         "type": "group",
         "z": "692c798b6f9c61de",
@@ -2011,7 +1941,9 @@
             [
                 "881c61e409196bd8"
             ],
-            []
+            [
+                "aad987ee2a0c4f2c"
+            ]
         ]
     },
     {
@@ -3333,7 +3265,6 @@
         "id": "aad987ee2a0c4f2c",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "SetCtpDoor-Ack",
         "func": "let messageId = global.get(\"messageId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}\n\n",
         "outputs": 1,
@@ -3341,8 +3272,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1060,
-        "y": 1720,
+        "x": 1580,
+        "y": 460,
         "wires": [
             [
                 "d969e40c2e543dae"
@@ -3478,7 +3409,6 @@
         "id": "d969e40c2e543dae",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "property": "ackInfo.topic",
         "propertyType": "msg",
@@ -3497,8 +3427,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1230,
-        "y": 1720,
+        "x": 1750,
+        "y": 460,
         "wires": [
             [
                 "b34c7c3825b2f296"
@@ -3512,7 +3442,6 @@
         "id": "a902fb928a850e75",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "setReader1",
         "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rd_0_set');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('messageId', msgWrapper.message_id)\nreturn msg",
         "outputs": 1,
@@ -3520,8 +3449,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1230,
-        "y": 1780,
+        "x": 1750,
+        "y": 520,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -3532,7 +3461,6 @@
         "id": "a607e57b9c8d8cdd",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "SetCtpDoor",
         "func": "let stpDoorSet = global.get('stpDoorSet') || {};\nstpDoorSet = Object.assign(stpDoorSet, {[msg.topic]:msg.payload})\nglobal.set('stpDoorSet', stpDoorSet)\n\n",
         "outputs": 1,
@@ -3550,7 +3478,6 @@
         "id": "84d7a118ddd9842f",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Door_sens_Condition",
         "label": "Door_sens_Condition",
         "tooltip": "",
@@ -3589,7 +3516,6 @@
         "id": "5876e97090ffded2",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Control point index (Control_point_idx)",
         "label": "Control point index (Control_point_idx)",
         "tooltip": "",
@@ -3616,7 +3542,6 @@
         "id": "4a42fef97bd379c2",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Door_Lock_mode",
         "label": "Door_Lock_mode",
         "tooltip": "",
@@ -3655,7 +3580,6 @@
         "id": "297191ec56ab0272",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Door_Lock_type",
         "label": "Door_Lock_type",
         "tooltip": "",
@@ -3694,7 +3618,6 @@
         "id": "d8697b4c53aa26a1",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Impulse duration (sec) (Door_Lock_puls)",
         "label": "Impulse duration (sec) (Door_Lock_puls)",
         "tooltip": "",
@@ -3721,7 +3644,6 @@
         "id": "d0c523e32a8ea14f",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Hold duration (sec) Door_Delay",
         "label": "Hold duration (sec) Door_Delay",
         "tooltip": "",
@@ -3748,7 +3670,6 @@
         "id": "1dc6ecb687b4c702",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Button condition (Button_rex_Condition)",
         "label": "Button condition (Button_rex_Condition)",
         "tooltip": "",
@@ -3787,7 +3708,6 @@
         "id": "4d74c64a6d551fbf",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Reader index (Rd1_idx)",
         "label": "Reader index (Rd1_idx)",
         "tooltip": "",
@@ -3814,7 +3734,6 @@
         "id": "c195fb1af7d90e90",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "group": "91a9ce4bbf4bb377",
         "name": "CP Settings label",
         "order": 1,
@@ -3836,7 +3755,6 @@
         "id": "3c691a45025ba009",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Reader index (Rd0_idx)",
         "label": "Reader index (Rd0_idx)",
         "tooltip": "",
@@ -3863,7 +3781,6 @@
         "id": "fac062210ac59294",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -3894,7 +3811,6 @@
         "id": "8d0f58b9725145dc",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "label": "Door_sens_opt",
         "tooltip": "",
@@ -3928,7 +3844,6 @@
         "id": "c92d749c3d3c71a5",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -3954,7 +3869,6 @@
         "id": "061aecc325f2ccf3",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Door_sens_idx",
         "label": "Door_sens_idx",
         "tooltip": "",
@@ -3993,7 +3907,6 @@
         "id": "963ed93528cda57e",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4019,7 +3932,6 @@
         "id": "d3a133d00b340e1b",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4050,7 +3962,6 @@
         "id": "b2474e59834ac54b",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Button_rex_idx",
         "label": "Button_rex_idx",
         "tooltip": "",
@@ -4089,7 +4000,6 @@
         "id": "5eeae1b2e2b3c814",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4115,7 +4025,6 @@
         "id": "bff2a475aa26be41",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4141,7 +4050,6 @@
         "id": "00ecd6dbee19221f",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Lock_Relay_opt",
         "label": "Lock_Relay_opt",
         "tooltip": "",
@@ -4175,7 +4083,6 @@
         "id": "84b05a9496fc7da5",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4206,7 +4113,6 @@
         "id": "9511360cabc09665",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Lock_Relay_idx",
         "label": "Lock_Relay_idx",
         "tooltip": "",
@@ -4240,7 +4146,6 @@
         "id": "ca47d465a6b99a63",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4271,7 +4176,6 @@
         "id": "9d19323eaf34876e",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4297,7 +4201,6 @@
         "id": "1ae3d7c290a17078",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4323,7 +4226,6 @@
         "id": "e4e36f0ec9287fcb",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4349,7 +4251,6 @@
         "id": "3984a6135d0cec25",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4375,7 +4276,6 @@
         "id": "b083bea11642642c",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Door_Sens_Autolock",
         "label": "Door_Sens_Autolock",
         "tooltip": "",
@@ -4414,7 +4314,6 @@
         "id": "86ed6e6d340e0de2",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4440,7 +4339,6 @@
         "id": "1decd6fb7be79a57",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Timezone (tz)",
         "label": "Timezone (tz)",
         "tooltip": "",
@@ -4614,7 +4512,6 @@
         "id": "ddab9916254d4a0e",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "setDT",
         "func": "// initialise the counter to 0 if it doesn't exist already\nlet dTSet = global.get('dTSet') || {};\n\ndTSet = Object.assign(dTSet, { [msg.topic]: msg.payload })\n\nglobal.set('dTSet', dTSet)\n\n// msg.payload = inputSettings\n\n// return msg;",
         "outputs": 1,
@@ -4632,7 +4529,6 @@
         "id": "ebf4caecba2c3b0f",
         "type": "ui_switch",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "DST_GMT",
         "label": "DST_GMT",
         "tooltip": "",
@@ -4667,7 +4563,6 @@
         "id": "5dae369f8feb1f2b",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4693,7 +4588,6 @@
         "id": "b21a19bb0acbfa9c",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "Button_rex_opt",
         "label": "Button_rex_opt",
         "tooltip": "",
@@ -4727,7 +4621,6 @@
         "id": "b60a07a5f5df2db6",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "group": "91a9ce4bbf4bb377",
         "name": "Door Settings label",
         "order": 6,
@@ -4749,7 +4642,6 @@
         "id": "c8960adebc938996",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "group": "91a9ce4bbf4bb377",
         "name": "Lock Settings label",
         "order": 17,
@@ -4771,7 +4663,6 @@
         "id": "341cca91a1fdb94a",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "group": "91a9ce4bbf4bb377",
         "name": "Button settings label",
         "order": 22,
@@ -4793,7 +4684,6 @@
         "id": "2f40703481bf226e",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "group": "91a9ce4bbf4bb377",
         "name": "Timezone settings label",
         "order": 27,
@@ -4815,7 +4705,6 @@
         "id": "daca0544dd019614",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "props": [
             {
@@ -4841,7 +4730,6 @@
         "id": "1c69858ef950135c",
         "type": "mqtt in",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "topic": "",
         "qos": "2",
@@ -4854,17 +4742,13 @@
         "x": 750,
         "y": 1720,
         "wires": [
-            [
-                "c04be96336935f33",
-                "64a3cf27a03ee432"
-            ]
+            []
         ]
     },
     {
         "id": "c04be96336935f33",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "property": "payload.operator",
         "propertyType": "msg",
@@ -4878,20 +4762,16 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 890,
-        "y": 1720,
+        "x": 1350,
+        "y": 480,
         "wires": [
-            [
-                "aad987ee2a0c4f2c",
-                "3bad4d045874e7ba"
-            ]
+            []
         ]
     },
     {
         "id": "b34c7c3825b2f296",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -4903,15 +4783,14 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1400,
-        "y": 1640,
+        "x": 1920,
+        "y": 380,
         "wires": []
     },
     {
         "id": "5c869c44f8db9da9",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "setDevicesIdx",
         "func": "let device_set_idxs = global.get('device_set_idxs') || {};\ndevice_set_idxs = Object.assign(device_set_idxs, { [msg.topic]: msg.payload })\nglobal.set('device_set_idxs', device_set_idxs)",
         "outputs": 1,
@@ -4929,7 +4808,6 @@
         "id": "62276b0a5748fef9",
         "type": "mqtt out",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "",
         "topic": "",
         "qos": "0",
@@ -4940,17 +4818,16 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 1390,
-        "y": 1780,
+        "x": 1910,
+        "y": 520,
         "wires": []
     },
     {
         "id": "3bad4d045874e7ba",
         "type": "debug",
         "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
         "name": "debug 4",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4958,26 +4835,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1040,
-        "y": 1820,
-        "wires": []
-    },
-    {
-        "id": "64a3cf27a03ee432",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "g": "197177ecce29c10c",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 1820,
+        "x": 1440,
+        "y": 580,
         "wires": []
     },
     {
@@ -4985,7 +4844,7 @@
         "type": "debug",
         "z": "692c798b6f9c61de",
         "name": "debug 6",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
