@@ -1093,7 +1093,7 @@
         "z": "692c798b6f9c61de",
         "name": "",
         "events": "change",
-        "x": 2760,
+        "x": 3080,
         "y": 320,
         "wires": [
             []
@@ -1119,7 +1119,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2520,
+        "x": 2840,
         "y": 480,
         "wires": [
             [
@@ -1147,7 +1147,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2510,
+        "x": 2830,
         "y": 440,
         "wires": [
             [
@@ -1166,7 +1166,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2460,
+        "x": 2780,
         "y": 280,
         "wires": [
             [
@@ -1464,7 +1464,7 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2510,
+        "x": 2830,
         "y": 400,
         "wires": [
             [
@@ -1923,11 +1923,16 @@
                 "t": "eq",
                 "v": "SetCtpDoor-Ack",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "SetRd-Ack",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 4,
+        "outputs": 5,
         "x": 1290,
         "y": 260,
         "wires": [
@@ -1942,6 +1947,9 @@
             ],
             [
                 "aad987ee2a0c4f2c"
+            ],
+            [
+                "2c9973e0b952c269"
             ]
         ]
     },
@@ -3271,7 +3279,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1480,
+        "x": 1500,
         "y": 320,
         "wires": [
             [
@@ -3427,8 +3435,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1690,
-        "y": 360,
+        "x": 1830,
+        "y": 320,
         "wires": [
             [
                 "b34c7c3825b2f296"
@@ -3443,18 +3451,17 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "setReader1",
-        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rd_0_set');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('messageId', msgWrapper.message_id)\nreturn msg",
+        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rd_0_set');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId_rd_0', msgWrapper.message_id)\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 420,
+        "x": 2050,
+        "y": 320,
         "wires": [
             [
-                "62276b0a5748fef9",
-                "53a8247677b2cf5d"
+                "62276b0a5748fef9"
             ]
         ]
     },
@@ -4742,8 +4749,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1880,
-        "y": 340,
+        "x": 2060,
+        "y": 280,
         "wires": []
     },
     {
@@ -4777,25 +4784,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 1730,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "53a8247677b2cf5d",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1980,
-        "y": 420,
+        "x": 2250,
+        "y": 360,
         "wires": []
     },
     {
@@ -4811,9 +4801,171 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1740,
-        "y": 300,
+        "x": 1840,
+        "y": 280,
         "wires": []
+    },
+    {
+        "id": "2c9973e0b952c269",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "setRd-Ack",
+        "func": "let messageId_rd_0 = global.get(\"messageId_rd_0\")\nlet messageId_rd_1 = global.get(\"messageId_rd_1\")\n\nlet ackInfo_rd_0 = {}\nlet ackInfo_rd_1 = {}\n\nif (messageId_rd_0 === msg.payload.message_id) {\n    console.log(\"errorNo: \" + msg.payload.result.errorNo)\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_0.result = \"success\"\n        ackInfo_rd_0.payload = \"Done\"\n    } else {\n        ackInfo_rd_0.result = \"error\"\n        ackInfo_rd_0.payload = \"error\"\n    }\n} else if (messageId_rd_1 === msg.payload.message_id){\n    console.log(\"errorNo: \" + msg.payload.result.errorNo)\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_1.result = \"success\"\n        ackInfo_rd_1.payload = \"Done\"\n    } else {\n        ackInfo_rd_1.result = \"error\"\n        ackInfo_rd_1.payload = \"error\"\n    }\n}\n\nreturn [ackInfo_rd_0, ackInfo_rd_1]\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 380,
+        "wires": [
+            [
+                "e063be51f1201adf"
+            ],
+            [
+                "86a634f89955d0c9"
+            ]
+        ]
+    },
+    {
+        "id": "e063be51f1201adf",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "property": "result",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "success",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1830,
+        "y": 360,
+        "wires": [
+            [
+                "7416ec0179370582"
+            ],
+            [
+                "2027404e36d47db4"
+            ]
+        ]
+    },
+    {
+        "id": "2027404e36d47db4",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "setReader2",
+        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.aid + \"/\" + userCreds.cid + \"/\" + \"registration\" + \"/\" + userCreds.deviceId + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182);\nmsgWrapper.info = global.get('rd_1_set');\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId_rd_1', msgWrapper.message_id)\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2050,
+        "y": 400,
+        "wires": [
+            [
+                "62276b0a5748fef9"
+            ]
+        ]
+    },
+    {
+        "id": "7416ec0179370582",
+        "type": "ui_toast",
+        "z": "692c798b6f9c61de",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Ack info",
+        "x": 2060,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "86a634f89955d0c9",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "property": "result",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "success",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1830,
+        "y": 460,
+        "wires": [
+            [
+                "03ca1b1fdfc39f2d"
+            ],
+            [
+                "fdf6aa2ba915be6d"
+            ]
+        ]
+    },
+    {
+        "id": "03ca1b1fdfc39f2d",
+        "type": "ui_toast",
+        "z": "692c798b6f9c61de",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Ack info",
+        "x": 2020,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "fdf6aa2ba915be6d",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "setTimezone",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2030,
+        "y": 500,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "1fddf0a8d296909f",
