@@ -1160,7 +1160,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "dashboardInit",
-        "func": "msg.payload.group = {\n    \"hide\": [\"AIR-CR_Settings\", \"AIR-CR_Control\", \"AIR-CR_r0\", \"AIR-CR_r1\", \"AIR-CR_submit\"],\n    \"show\": [\"AIR-CR_Connection\"]\n}\nreturn msg;",
+        "func": "msg.payload = {}\n\nmsg.payload.group = {\n    \"hide\": [\"AIR-CR_Settings\", \"AIR-CR_Control\", \"AIR-CR_r0\", \"AIR-CR_r1\", \"AIR-CR_submit\"],\n    \"show\": [\"AIR-CR_Connection\"]\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
