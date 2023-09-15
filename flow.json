@@ -1802,8 +1802,7 @@
                 "aad987ee2a0c4f2c"
             ],
             [
-                "2c9973e0b952c269",
-                "0508d11902ff482c"
+                "2c9973e0b952c269"
             ]
         ]
     },
@@ -4781,23 +4780,6 @@
         ]
     },
     {
-        "id": "0508d11902ff482c",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1520,
-        "y": 500,
-        "wires": []
-    },
-    {
         "id": "012249317b8c4510",
         "type": "function",
         "z": "692c798b6f9c61de",
@@ -4970,7 +4952,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 890,
+        "x": 910,
         "y": 420,
         "wires": [
             [
