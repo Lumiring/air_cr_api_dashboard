@@ -1860,7 +1860,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1100,
+        "x": 1120,
         "y": 360,
         "wires": [
             []
@@ -4951,6 +4951,31 @@
         "y": 740,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "c3a71011f5973516",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload.deviceAddr",
+                "v": "Device address: N/A",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 890,
+        "y": 420,
+        "wires": [
+            [
+                "6ad93d3e94e2fe69"
+            ]
         ]
     },
     {
