@@ -1533,8 +1533,7 @@
         "wires": [
             [
                 "642df87e4871a1c4",
-                "84cef9c2bb45ee64",
-                "2371ee5f7755bd23"
+                "84cef9c2bb45ee64"
             ]
         ]
     },
@@ -3159,7 +3158,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 170,
+        "x": 150,
         "y": 640,
         "wires": [
             [
@@ -4835,40 +4834,6 @@
         ]
     },
     {
-        "id": "2371ee5f7755bd23",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 360,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "2a008d2b7a0dccc7",
-        "type": "complete",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "scope": [
-            "9e5fe1c3fe6f0503"
-        ],
-        "uncaught": false,
-        "x": 170,
-        "y": 720,
-        "wires": [
-            [
-                "2371ee5f7755bd23"
-            ]
-        ]
-    },
-    {
         "id": "9031de9f7e85ee74",
         "type": "inject",
         "z": "692c798b6f9c61de",
@@ -4963,8 +4928,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1200,
-        "y": 640,
+        "x": 1100,
+        "y": 680,
         "wires": [
             [
                 "33c8b93809af5d71"
@@ -4982,8 +4947,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1440,
-        "y": 640,
+        "x": 1120,
+        "y": 740,
         "wires": [
             []
         ]
