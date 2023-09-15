@@ -1965,7 +1965,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "buildStatusMessage",
-        "func": "let mqttSettings = global.get('mqtt_settings')\nlet message = {}\nmessage.payload = {}\n\nif (msg.status.text === \"node-red:common.status.connecting\") {\n    message.payload.connectionStatus = \"Status: Connecting...\"\n    msg.payload = \"Connecting to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    message.payload.connectionStatus = \"Status: Connected to \" + mqttSettings.broker + \":\" + mqttSettings.port\n    msg.payload = \"Connected to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    message.payload.connectionStatus = \"Status: Connection OFF\"\n    msg.payload = \"Mqtt disconnected\"\n}\n\nreturn [message, msg]\n\n",
+        "func": "let mqttSettings = global.get('mqtt_settings')\nlet message = {}\nmessage.payload = {}\n\nif (msg.status.text === \"node-red:common.status.connecting\") {\n    message.payload.connectionStatus = \"MQTT: Connecting...\"\n    msg.payload = \"Connecting to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    message.payload.connectionStatus = \"MQTT: Connected to \" + mqttSettings.broker + \":\" + mqttSettings.port\n    msg.payload = \"Connected to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    message.payload.connectionStatus = \"MQTT: Connection OFF\"\n    msg.payload = \"Mqtt disconnected\"\n}\n\nreturn [message, msg]\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -4975,6 +4975,31 @@
         "wires": [
             [
                 "6ad93d3e94e2fe69"
+            ]
+        ]
+    },
+    {
+        "id": "583517f12510f63c",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload.connectionStatus",
+                "v": "MQTT: Connection OFF",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "6cc4dd7e4806e9e6"
             ]
         ]
     },
