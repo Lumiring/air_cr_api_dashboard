@@ -3592,7 +3592,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 270,
+        "x": 150,
         "y": 1340,
         "wires": [
             [
@@ -3605,7 +3605,7 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "name": "",
-        "label": "Component source (Door_sens_opt)",
+        "label": "Door Sensor Input Location (Door_sens_opt)",
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
@@ -3625,14 +3625,13 @@
         "topic": "Door_sens_opt",
         "topicType": "str",
         "className": "",
-        "x": 395,
+        "x": 410,
         "y": 1340,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
             ]
-        ],
-        "l": false
+        ]
     },
     {
         "id": "c92d749c3d3c71a5",
