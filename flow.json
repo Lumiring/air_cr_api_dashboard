@@ -2881,8 +2881,8 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "d2c54d759744b825",
-        "name": "Rd_opt (Reader 1)",
-        "label": "Rd_opt",
+        "name": "Reader location (Rd_opt)",
+        "label": "Reader location (Rd_opt)",
         "tooltip": "",
         "place": "Select option",
         "group": "01eefd96a559eaf3",
@@ -2902,7 +2902,7 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "",
-        "x": 550,
+        "x": 570,
         "y": 2800,
         "wires": [
             [
