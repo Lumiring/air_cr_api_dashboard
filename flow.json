@@ -3429,7 +3429,7 @@
         "delay": 300,
         "topic": "Door_Delay",
         "sendOnBlur": true,
-        "className": "",
+        "className": "text_input",
         "topicType": "str",
         "x": 410,
         "y": 1800,
