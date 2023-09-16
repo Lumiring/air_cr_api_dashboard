@@ -1262,7 +1262,7 @@
         "delay": 300,
         "topic": "Control_point_idx",
         "sendOnBlur": true,
-        "className": "",
+        "className": "text_input",
         "topicType": "str",
         "x": 1670,
         "y": 2200,
