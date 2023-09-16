@@ -4404,7 +4404,7 @@
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
-        "className": "",
+        "className": "doorSettings",
         "x": 930,
         "y": 1140,
         "wires": [
