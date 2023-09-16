@@ -4322,8 +4322,8 @@
         "id": "ebf4caecba2c3b0f",
         "type": "ui_switch",
         "z": "692c798b6f9c61de",
-        "name": "DST_GMT",
-        "label": "DST_GMT",
+        "name": "Use DST/GTM (DST_GMT)",
+        "label": "Use DST/GTM (DST_GMT)",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
         "order": 28,
@@ -4344,7 +4344,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 410,
+        "x": 380,
         "y": 2000,
         "wires": [
             [
