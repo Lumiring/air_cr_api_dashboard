@@ -3605,7 +3605,7 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "name": "",
-        "label": "Component source (Door_sens_opt)",
+        "label": "Component source(Door_sens_opt)",
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
@@ -3625,7 +3625,7 @@
         "topic": "Door_sens_opt",
         "topicType": "str",
         "className": "",
-        "x": 530,
+        "x": 520,
         "y": 1340,
         "wires": [
             [
