@@ -5001,7 +5001,7 @@
         "order": 36,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    .text_input {\n        border: solid;\n        border-width: 3px;\n        font-size: 22px;\n        padding: 20px 0 20px 0;\n    }\n\n    .dropdown_input {\n        border: solid;\n        border-width: 3px;\n        font-size: 22px;\n    }\n\n</style>",
+        "format": "<style>\n    .text_input {\n        border: solid;\n        border-width: 3px;\n        font-size: 22px;\n        font-weight: 600;\n        padding: 20px 0 20px 0;\n\n    }\n\n    .dropdown_input {\n        border: solid;\n        border-width: 3px;\n        font-size: 22px;\n        font-weight: 600;\n    }\n\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
