@@ -3290,7 +3290,7 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "name": "Control point index (Control_point_idx)",
-        "label": "Control point index (Control_point_idx)",
+        "label": "Control point index (Control_point_idx):",
         "tooltip": "",
         "group": "91a9ce4bbf4bb377",
         "order": 2,
