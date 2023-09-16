@@ -108,8 +108,8 @@
             "e88a08b7fd7c4345",
             "e5a3acd7c9ec31f5"
         ],
-        "x": 94,
-        "y": 2639,
+        "x": 74,
+        "y": 2599,
         "w": 932,
         "h": 402
     },
@@ -2122,8 +2122,8 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "a4444d4d6536d363",
-        "name": "Rd_Direction",
-        "label": "Rd_Direction",
+        "name": "Direction (Rd_Direction)",
+        "label": "Direction (Rd_Direction)",
         "tooltip": "",
         "place": "Select option",
         "group": "c642776b64f7474d",
@@ -2148,7 +2148,7 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "",
-        "x": 1550,
+        "x": 1510,
         "y": 2800,
         "wires": [
             [
@@ -2200,8 +2200,8 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "a4444d4d6536d363",
-        "name": "Rd_beep",
-        "label": "Rd_beep",
+        "name": "Buzzer (Rd_beep)",
+        "label": "Buzzer (Rd_beep)",
         "tooltip": "",
         "place": "Select option",
         "group": "c642776b64f7474d",
@@ -2212,12 +2212,12 @@
         "multiple": false,
         "options": [
             {
-                "label": "Buzzer on",
+                "label": "On",
                 "value": true,
                 "type": "bool"
             },
             {
-                "label": "Buzzer off",
+                "label": "Off",
                 "value": false,
                 "type": "bool"
             }
@@ -2226,7 +2226,7 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "",
-        "x": 1560,
+        "x": 1590,
         "y": 2880,
         "wires": [
             [
@@ -2239,14 +2239,14 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "a4444d4d6536d363",
-        "name": "Rd_Wg_type",
-        "label": "Rd_Wg_type",
+        "name": "Wiegand protocol type (Rd_Wg_type)",
+        "label": "Wiegand protocol type (Rd_Wg_type)",
         "tooltip": "",
         "place": "Select option",
         "group": "c642776b64f7474d",
         "order": 7,
         "width": 10,
-        "height": 1,
+        "height": "2",
         "passthru": true,
         "multiple": false,
         "options": [
@@ -2290,7 +2290,7 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "",
-        "x": 1550,
+        "x": 1630,
         "y": 2920,
         "wires": [
             [
@@ -2374,8 +2374,8 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "a4444d4d6536d363",
-        "name": "Rd_opt (Reader 0)",
-        "label": "Rd_opt",
+        "name": "Reader location (Rd_opt)",
+        "label": "Reader location (Rd_opt)",
         "tooltip": "",
         "place": "Select option",
         "group": "c642776b64f7474d",
@@ -2395,7 +2395,7 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "",
-        "x": 1530,
+        "x": 1510,
         "y": 2760,
         "wires": [
             [
@@ -2538,8 +2538,8 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "a4444d4d6536d363",
-        "name": "Rd_Wg_idx (INTERNAL/EXTERNAL ???)",
-        "label": "Rd_Wg_idx",
+        "name": "Wiegand port (Rd_Wg_idx) (INTERNAL/EXTERNAL ???)",
+        "label": "Wiegand port (Rd_Wg_idx)",
         "tooltip": "",
         "place": "Select option",
         "group": "c642776b64f7474d",
@@ -2564,7 +2564,7 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "",
-        "x": 1460,
+        "x": 1510,
         "y": 2960,
         "wires": [
             [
@@ -2592,8 +2592,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 600,
-        "y": 2720,
+        "x": 580,
+        "y": 2680,
         "wires": [
             []
         ]
@@ -2618,8 +2618,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 540,
-        "y": 2760,
+        "x": 520,
+        "y": 2720,
         "wires": [
             []
         ]
@@ -2629,8 +2629,8 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "d2c54d759744b825",
-        "name": "Rd_Direction",
-        "label": "Rd_Direction",
+        "name": "Direction (Rd_Direction)",
+        "label": "Direction (Rd_Direction)",
         "tooltip": "",
         "place": "Select option",
         "group": "01eefd96a559eaf3",
@@ -2655,8 +2655,8 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "",
-        "x": 590,
-        "y": 2840,
+        "x": 530,
+        "y": 2800,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2694,8 +2694,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "",
-        "x": 510,
-        "y": 2880,
+        "x": 490,
+        "y": 2840,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2707,8 +2707,8 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "d2c54d759744b825",
-        "name": "Rd_beep",
-        "label": "Rd_beep",
+        "name": "Buzzer (Rd_beep)",
+        "label": "Buzzer (Rd_beep)",
         "tooltip": "",
         "place": "Select option",
         "group": "01eefd96a559eaf3",
@@ -2719,12 +2719,12 @@
         "multiple": false,
         "options": [
             {
-                "label": "Buzzer on",
+                "label": "On",
                 "value": true,
                 "type": "bool"
             },
             {
-                "label": "Buzzer off",
+                "label": "Off",
                 "value": false,
                 "type": "bool"
             }
@@ -2733,8 +2733,8 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "",
-        "x": 600,
-        "y": 2920,
+        "x": 550,
+        "y": 2880,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2746,14 +2746,14 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "d2c54d759744b825",
-        "name": "Rd_Wg_type",
-        "label": "Rd_Wg_type",
+        "name": "Wiegand protocol type (Rd_Wg_type)",
+        "label": "Wiegand protocol type (Rd_Wg_type)",
         "tooltip": "",
         "place": "Select option",
         "group": "01eefd96a559eaf3",
         "order": 7,
         "width": 10,
-        "height": 1,
+        "height": "2",
         "passthru": true,
         "multiple": false,
         "options": [
@@ -2797,8 +2797,8 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "",
-        "x": 590,
-        "y": 2960,
+        "x": 490,
+        "y": 2920,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2817,8 +2817,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 940,
-        "y": 2860,
+        "x": 920,
+        "y": 2820,
         "wires": [
             []
         ]
@@ -2839,8 +2839,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 630,
-        "y": 2680,
+        "x": 610,
+        "y": 2640,
         "wires": [
             []
         ]
@@ -2868,8 +2868,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 350,
-        "y": 2800,
+        "x": 330,
+        "y": 2760,
         "wires": [
             [
                 "222ca6d9f33aad97"
@@ -2902,8 +2902,8 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "",
-        "x": 570,
-        "y": 2800,
+        "x": 530,
+        "y": 2760,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2928,8 +2928,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 350,
-        "y": 2840,
+        "x": 330,
+        "y": 2800,
         "wires": [
             [
                 "44eead080f6ff893"
@@ -2954,8 +2954,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 210,
-        "y": 2880,
+        "x": 190,
+        "y": 2840,
         "wires": [
             [
                 "2c0e5a1f061ca6fb"
@@ -2980,8 +2980,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 210,
-        "y": 2920,
+        "x": 190,
+        "y": 2880,
         "wires": [
             [
                 "60f424913e84a261"
@@ -3006,8 +3006,8 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 210,
-        "y": 2960,
+        "x": 190,
+        "y": 2920,
         "wires": [
             [
                 "0ec93d1beaa5a9e4"
@@ -3032,8 +3032,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 190,
-        "y": 3000,
+        "x": 170,
+        "y": 2960,
         "wires": [
             [
                 "e5a3acd7c9ec31f5"
@@ -3045,8 +3045,8 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "d2c54d759744b825",
-        "name": "Rd_Wg_idx (INTERNAL/EXTERNAL ???)",
-        "label": "Rd_Wg_idx",
+        "name": "Wiegand port (Rd_Wg_idx) (INTERNAL/EXTERNAL ???)",
+        "label": "Wiegand port (Rd_Wg_idx)",
         "tooltip": "",
         "place": "Select option",
         "group": "01eefd96a559eaf3",
@@ -3071,8 +3071,8 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "",
-        "x": 520,
-        "y": 3000,
+        "x": 550,
+        "y": 2960,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
