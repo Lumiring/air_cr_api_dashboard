@@ -4943,6 +4943,27 @@
         ]
     },
     {
+        "id": "11dce9d495d2d8b5",
+        "type": "ui_template",
+        "z": "692c798b6f9c61de",
+        "group": "fc491a4cada0492f",
+        "name": "",
+        "order": 35,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    md-card {\n        border: solid;\n    }\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 220,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "1fddf0a8d296909f",
         "type": "inject",
         "z": "be9f64fbc3682d16",
