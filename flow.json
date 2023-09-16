@@ -3271,14 +3271,14 @@
         "id": "84d7a118ddd9842f",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "name": "Door_sens_Condition",
-        "label": "Door_sens_Condition",
+        "name": "Door sensor condition (Door_sens_Condition)",
+        "label": "Door sensor condition (Door_sens_Condition)",
         "tooltip": "",
-        "place": "Door_sens_Condition",
+        "place": "",
         "group": "91a9ce4bbf4bb377",
         "order": 9,
         "width": 10,
-        "height": 1,
+        "height": "2",
         "passthru": true,
         "multiple": false,
         "options": [
@@ -3297,7 +3297,7 @@
         "topic": "Door_sens_Condition",
         "topicType": "str",
         "className": "",
-        "x": 440,
+        "x": 400,
         "y": 1420,
         "wires": [
             [
@@ -3335,8 +3335,8 @@
         "id": "4a42fef97bd379c2",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "name": "Door_Lock_mode",
-        "label": "Door_Lock_mode",
+        "name": "Door lock mode (Door_Lock_mode)",
+        "label": "Door lock mode (Door_Lock_mode)",
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
@@ -3361,7 +3361,7 @@
         "topic": "Door_Lock_mode",
         "topicType": "str",
         "className": "",
-        "x": 450,
+        "x": 400,
         "y": 1660,
         "wires": [
             [
@@ -3373,8 +3373,8 @@
         "id": "297191ec56ab0272",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "name": "Door_Lock_type",
-        "label": "Door_Lock_type",
+        "name": "Door lock type (Door_Lock_type)",
+        "label": "Door lock type (Door_Lock_type)",
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
@@ -3399,7 +3399,7 @@
         "topic": "Door_Lock_type",
         "topicType": "str",
         "className": "",
-        "x": 460,
+        "x": 400,
         "y": 1700,
         "wires": [
             [
@@ -3604,8 +3604,8 @@
         "id": "8d0f58b9725145dc",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "name": "",
-        "label": "Door Sensor Input Location (Door_sens_opt)",
+        "name": "Door Sensor Input Location (Door_sens_opt)",
+        "label": "Door sensor input location (Door_sens_opt)",
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
@@ -3650,7 +3650,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 270,
+        "x": 130,
         "y": 1380,
         "wires": [
             [
@@ -3662,7 +3662,7 @@
         "id": "061aecc325f2ccf3",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "name": "Door_sens_idx",
+        "name": "Input index for door sensor (Door_sens_idx)",
         "label": "Input index for door sensor (Door_sens_idx)",
         "tooltip": "",
         "place": "Select option",
@@ -3688,7 +3688,7 @@
         "topic": "Door_sens_idx",
         "topicType": "str",
         "className": "",
-        "x": 460,
+        "x": 410,
         "y": 1380,
         "wires": [
             [
@@ -3713,7 +3713,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 270,
+        "x": 110,
         "y": 1420,
         "wires": [
             [
@@ -3743,7 +3743,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 270,
+        "x": 110,
         "y": 1460,
         "wires": [
             [
@@ -3755,7 +3755,7 @@
         "id": "b2474e59834ac54b",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "name": "Button_rex_idx",
+        "name": "Input index for exit button (Button_rex_idx)",
         "label": "Input index for exit button (Button_rex_idx)",
         "tooltip": "",
         "place": "Select option",
@@ -3781,7 +3781,7 @@
         "topic": "Button_rex_idx",
         "topicType": "str",
         "className": "",
-        "x": 460,
+        "x": 410,
         "y": 1500,
         "wires": [
             [
@@ -3806,7 +3806,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 270,
+        "x": 110,
         "y": 1500,
         "wires": [
             [
@@ -3843,14 +3843,14 @@
         "id": "00ecd6dbee19221f",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "name": "Lock_Relay_opt",
-        "label": "Lock_Relay_opt",
+        "name": "Lock relay location (Lock_Relay_opt)",
+        "label": "Lock relay location (Lock_Relay_opt)",
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
         "order": 19,
         "width": 10,
-        "height": 1,
+        "height": "2",
         "passthru": true,
         "multiple": false,
         "options": [
@@ -3864,7 +3864,7 @@
         "topic": "Lock_Relay_opt",
         "topicType": "str",
         "className": "",
-        "x": 460,
+        "x": 390,
         "y": 1580,
         "wires": [
             [
@@ -3906,8 +3906,8 @@
         "id": "9511360cabc09665",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "name": "Lock_Relay_idx",
-        "label": "Lock_Relay_idx",
+        "name": "Lock relay index (Lock_Relay_idx)",
+        "label": "Lock relay index (Lock_Relay_idx)",
         "tooltip": "",
         "place": "Select option",
         "group": "91a9ce4bbf4bb377",
@@ -3927,7 +3927,7 @@
         "topic": "Lock_Relay_idx",
         "topicType": "str",
         "className": "",
-        "x": 460,
+        "x": 400,
         "y": 1620,
         "wires": [
             [
@@ -4381,7 +4381,7 @@
         "id": "b21a19bb0acbfa9c",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "name": "Button_rex_opt",
+        "name": "Input location for exit button (Button_rex_opt)",
         "label": "Input location for exit button (Button_rex_opt)",
         "tooltip": "",
         "place": "Select option",
@@ -4402,7 +4402,7 @@
         "topic": "Button_rex_opt",
         "topicType": "str",
         "className": "",
-        "x": 460,
+        "x": 410,
         "y": 1460,
         "wires": [
             [
