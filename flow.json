@@ -3512,7 +3512,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    #CP_Header{\n        text-align: left;\n        color: #0094CE;\n        font-size: 20px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"CP_Header\">\n    Control point settings\n</div>",
+        "format": "<style>\n    #CP_Header{\n        text-align: left;\n        color: #0094CE;\n        font-size: 25px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"CP_Header\">\n    Control point settings\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
