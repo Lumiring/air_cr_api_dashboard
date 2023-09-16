@@ -4272,7 +4272,7 @@
         "payload": "",
         "topic": "tz",
         "topicType": "str",
-        "className": "",
+        "className": "dropdown_input",
         "x": 420,
         "y": 2040,
         "wires": [
@@ -4323,7 +4323,7 @@
         "officon": "",
         "offcolor": "",
         "animate": false,
-        "className": "",
+        "className": "dropdown_input",
         "x": 380,
         "y": 2000,
         "wires": [
