@@ -1705,7 +1705,7 @@
             {
                 "field": "Direction",
                 "title": "Direction",
-                "width": "",
+                "width": "7%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -1715,7 +1715,7 @@
             {
                 "field": "Key_id",
                 "title": "Key_id",
-                "width": "",
+                "width": "8%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -1725,7 +1725,7 @@
             {
                 "field": "Key_HEX",
                 "title": "Key_HEX",
-                "width": "",
+                "width": "8%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -1745,7 +1745,7 @@
             {
                 "field": "gmt",
                 "title": "gmt",
-                "width": "",
+                "width": "7%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
