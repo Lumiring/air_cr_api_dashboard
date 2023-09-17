@@ -1695,7 +1695,7 @@
             {
                 "field": "Ctp_idx",
                 "title": "Ctp_idx",
-                "width": "",
+                "width": "5px",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -1705,7 +1705,7 @@
             {
                 "field": "Event_id",
                 "title": "Event_id",
-                "width": "",
+                "width": "5px",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
