@@ -1685,7 +1685,7 @@
             {
                 "field": "Group",
                 "title": "Group",
-                "width": "30px",
+                "width": "5px",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
