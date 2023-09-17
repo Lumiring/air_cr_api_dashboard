@@ -1685,7 +1685,7 @@
             {
                 "field": "Group",
                 "title": "Group",
-                "width": "5px",
+                "width": "10%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -1695,7 +1695,7 @@
             {
                 "field": "Ctp_idx",
                 "title": "Ctp_idx",
-                "width": "10px",
+                "width": "10%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -1705,7 +1705,7 @@
             {
                 "field": "Event_id",
                 "title": "Event_id",
-                "width": "10px",
+                "width": "10%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
