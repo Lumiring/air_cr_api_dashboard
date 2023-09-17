@@ -2027,7 +2027,7 @@
         "order": 2,
         "width": 12,
         "height": 1,
-        "format": "<style>\n    #mqttStatus {\n        font-size: 25px;\n        display: flex;\n        margin-left: 5px;\n    }\n\n    #mqttStatus div {\n        margin-left: 20px;\n    }\n</style>\n\n<div id=\"mqttStatus\">\n    <div>{{msg.payload.connectionStatus}}</div>\n</div>",
+        "format": "<style>\n    #mqttStatus {\n        text-align: right;\n        font-size: 25px;\n        display: flex;\n        margin-left: 5px;\n    }\n\n    #mqttStatus div {\n        margin-left: 20px;\n    }\n</style>\n\n<div id=\"mqttStatus\">\n    <div>{{msg.payload.connectionStatus}}</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
