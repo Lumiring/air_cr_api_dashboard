@@ -3248,7 +3248,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "broker.emqx.io",
+        "payload": "158.85.225.154",
         "payloadType": "str",
         "x": 720,
         "y": 620,
