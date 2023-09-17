@@ -1685,7 +1685,7 @@
             {
                 "field": "Group",
                 "title": "Group",
-                "width": "",
+                "width": "30px",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -4808,23 +4808,6 @@
         ]
     },
     {
-        "id": "012249317b8c4510",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "name": "function 1",
-        "func": "",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "let userCreds = global.get(\"userCreds\")\nconsole.log(userCreds)\n",
-        "finalize": "",
-        "libs": [],
-        "x": 220,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "6505c8ff956b3f78",
         "type": "inject",
         "z": "692c798b6f9c61de",
@@ -5037,7 +5020,7 @@
         "type": "ui_template",
         "z": "692c798b6f9c61de",
         "group": "fc491a4cada0492f",
-        "name": "",
+        "name": "Head section",
         "order": 43,
         "width": 0,
         "height": 0,
@@ -5047,7 +5030,7 @@
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 220,
+        "x": 110,
         "y": 40,
         "wires": [
             []
