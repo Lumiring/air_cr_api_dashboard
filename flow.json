@@ -1705,7 +1705,7 @@
             {
                 "field": "Event_id",
                 "title": "Event_id",
-                "width": "10%",
+                "width": "30%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
