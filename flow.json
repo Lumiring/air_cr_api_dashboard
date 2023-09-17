@@ -1871,7 +1871,7 @@
         "order": 1,
         "width": 18,
         "height": 1,
-        "format": "<style>\n    #userCreds {\n        display: flex;\n        flex-direction: row;\n        font-size: 25px;\n        margin-left: 5px;\n    }\n\n    #userCreds div {\n        margin-left: 20px;\n    }\n\n</style>\n\n<div id=\"userCreds\">\n    <div>{{msg.payload.deviceAddr}}</div>\n</div>",
+        "format": "<style>\n    #userCreds {\n        display: flex;\n        flex-direction: row;\n        font-size: 25px;\n    }\n\n    #userCreds div {\n        margin-left: 20px;\n    }\n\n</style>\n\n<div id=\"userCreds\">\n    <div>{{msg.payload.deviceAddr}}</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
