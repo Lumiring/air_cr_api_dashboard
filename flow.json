@@ -2048,7 +2048,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "<style>\n    #connectionHeader{\n        text-align: centre;\n        color: #0094CE;\n        font-size: 30px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"connectionHeader\">\n    Connection options\n</div>",
+        "format": "<style>\n    #connectionHeader{\n        text-align: center;\n        color: #0094CE;\n        font-size: 30px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"connectionHeader\">\n    Connection options\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
