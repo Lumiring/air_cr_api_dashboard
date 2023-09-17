@@ -4932,7 +4932,7 @@
         "width": 8,
         "height": 2,
         "passthru": true,
-        "mode": "number",
+        "mode": "text",
         "delay": 300,
         "topic": "deviceAddr",
         "sendOnBlur": true,
