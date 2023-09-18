@@ -2490,7 +2490,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "0",
+        "payload": "1",
         "payloadType": "num",
         "x": 1310,
         "y": 2760,
@@ -2518,7 +2518,7 @@
         "options": [
             {
                 "label": "ACU",
-                "value": 0,
+                "value": 1,
                 "type": "num"
             }
         ],
@@ -2669,7 +2669,7 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "a4444d4d6536d363",
-        "name": "Wiegand port (Rd_Wg_idx) (INTERNAL/EXTERNAL ???)",
+        "name": "Wiegand port (Rd_Wg_idx)",
         "label": "Wiegand port (Rd_Wg_idx)",
         "tooltip": "",
         "place": "Select option",
@@ -2682,20 +2682,20 @@
         "options": [
             {
                 "label": "Internal",
-                "value": "0",
-                "type": "str"
+                "value": 1,
+                "type": "num"
             },
             {
                 "label": "External",
-                "value": "1",
-                "type": "str"
+                "value": 2,
+                "type": "num"
             }
         ],
         "payload": "",
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1510,
+        "x": 1420,
         "y": 2960,
         "wires": [
             [
@@ -2997,7 +2997,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "0",
+        "payload": "1",
         "payloadType": "num",
         "x": 330,
         "y": 2760,
@@ -3025,7 +3025,7 @@
         "options": [
             {
                 "label": "ACU",
-                "value": 0,
+                "value": 1,
                 "type": "num"
             }
         ],
@@ -3176,7 +3176,7 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "g": "d2c54d759744b825",
-        "name": "Wiegand port (Rd_Wg_idx) (INTERNAL/EXTERNAL ???)",
+        "name": "Wiegand port (Rd_Wg_idx)",
         "label": "Wiegand port (Rd_Wg_idx)",
         "tooltip": "",
         "place": "Select option",
@@ -3189,20 +3189,20 @@
         "options": [
             {
                 "label": "Internal",
-                "value": "0",
-                "type": "str"
+                "value": 1,
+                "type": "num"
             },
             {
                 "label": "External",
-                "value": "1",
-                "type": "str"
+                "value": 2,
+                "type": "num"
             }
         ],
         "payload": "",
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 550,
+        "x": 460,
         "y": 2960,
         "wires": [
             [
