@@ -41,8 +41,8 @@
             "dfbd635c1022b71c",
             "c5f7a3022f0a71d4"
         ],
-        "x": 1554,
-        "y": 2119,
+        "x": 2074,
+        "y": 1059,
         "w": 632,
         "h": 442
     },
@@ -72,8 +72,8 @@
             "e765f3e65a86622c",
             "aab5cc2445afa1e9"
         ],
-        "x": 1054,
-        "y": 2599,
+        "x": 1114,
+        "y": 1479,
         "w": 932,
         "h": 402
     },
@@ -108,8 +108,8 @@
             "e88a08b7fd7c4345",
             "e5a3acd7c9ec31f5"
         ],
-        "x": 74,
-        "y": 2599,
+        "x": 1114,
+        "y": 1059,
         "w": 932,
         "h": 402
     },
@@ -176,6 +176,67 @@
         "y": 159,
         "w": 2272,
         "h": 782
+    },
+    {
+        "id": "546743cc2e3aa106",
+        "type": "group",
+        "z": "692c798b6f9c61de",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a607e57b9c8d8cdd",
+            "84d7a118ddd9842f",
+            "5876e97090ffded2",
+            "4a42fef97bd379c2",
+            "297191ec56ab0272",
+            "d8697b4c53aa26a1",
+            "d0c523e32a8ea14f",
+            "1dc6ecb687b4c702",
+            "4d74c64a6d551fbf",
+            "c195fb1af7d90e90",
+            "3c691a45025ba009",
+            "fac062210ac59294",
+            "8d0f58b9725145dc",
+            "c92d749c3d3c71a5",
+            "061aecc325f2ccf3",
+            "963ed93528cda57e",
+            "d3a133d00b340e1b",
+            "b2474e59834ac54b",
+            "5eeae1b2e2b3c814",
+            "bff2a475aa26be41",
+            "00ecd6dbee19221f",
+            "84b05a9496fc7da5",
+            "9511360cabc09665",
+            "ca47d465a6b99a63",
+            "9d19323eaf34876e",
+            "1ae3d7c290a17078",
+            "e4e36f0ec9287fcb",
+            "3984a6135d0cec25",
+            "b083bea11642642c",
+            "86ed6e6d340e0de2",
+            "1decd6fb7be79a57",
+            "ddab9916254d4a0e",
+            "ebf4caecba2c3b0f",
+            "5dae369f8feb1f2b",
+            "b21a19bb0acbfa9c",
+            "b60a07a5f5df2db6",
+            "c8960adebc938996",
+            "341cca91a1fdb94a",
+            "2f40703481bf226e",
+            "daca0544dd019614",
+            "5c869c44f8db9da9"
+        ],
+        "x": 14,
+        "y": 1059,
+        "w": 1072,
+        "h": 1022
     },
     {
         "id": "79737e067a3af084",
@@ -1057,6 +1118,17 @@
         "height": 1
     },
     {
+        "id": "523171b4c91e1d14",
+        "type": "ui_group",
+        "name": "schedule",
+        "tab": "b76cefdaf9bc6c8b",
+        "order": 9,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "f35f7ebd59ad5459",
         "type": "ui_ui_control",
         "z": "692c798b6f9c61de",
@@ -1072,7 +1144,7 @@
         "id": "ec7459b197b9c702",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "name": "Settings (dev)",
+        "name": "Settings",
         "group": "fc491a4cada0492f",
         "order": 2,
         "width": 4,
@@ -1084,11 +1156,11 @@
         "bgcolor": "",
         "className": "settings_btn",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\",\"AIR-CR_Connection\",\"AIR-CR_Simple_settings\"],\"show\":[\"AIR-CR_Settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\",\"AIR-CR_Connection\",\"AIR-CR_Simple_settings\",\"AIR-CR_schedule\"],\"show\":[\"AIR-CR_Settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2740,
+        "x": 2720,
         "y": 480,
         "wires": [
             [
@@ -1112,7 +1184,7 @@
         "bgcolor": "",
         "className": "control_btn",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_r1\",\"AIR-CR_r0\",\"AIR-CR_submit\",\"AIR-CR_Connection\"],\"show\":[\"AIR-CR_Control\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_r1\",\"AIR-CR_r0\",\"AIR-CR_submit\",\"AIR-CR_Connection\",\"AIR-CR_schedule\"],\"show\":[\"AIR-CR_Control\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
@@ -1164,8 +1236,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1660,
-        "y": 2260,
+        "x": 2180,
+        "y": 1200,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1193,8 +1265,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1640,
-        "y": 2320,
+        "x": 2160,
+        "y": 1260,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1222,8 +1294,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 1650,
-        "y": 2380,
+        "x": 2170,
+        "y": 1320,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1242,8 +1314,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1910,
-        "y": 2320,
+        "x": 2430,
+        "y": 1260,
         "wires": [
             [
                 "8ceb1c5b5fb6e7d7"
@@ -1265,8 +1337,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2110,
-        "y": 2380,
+        "x": 2630,
+        "y": 1320,
         "wires": []
     },
     {
@@ -1288,8 +1360,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 1670,
-        "y": 2200,
+        "x": 2190,
+        "y": 1140,
         "wires": [
             [
                 "1cbac974e1dbb470"
@@ -1308,8 +1380,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1920,
-        "y": 2200,
+        "x": 2440,
+        "y": 1140,
         "wires": [
             []
         ]
@@ -1335,8 +1407,8 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 1650,
-        "y": 2460,
+        "x": 2170,
+        "y": 1400,
         "wires": [
             [
                 "dfbd635c1022b71c"
@@ -1364,8 +1436,8 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 1650,
-        "y": 2520,
+        "x": 2170,
+        "y": 1460,
         "wires": [
             [
                 "dfbd635c1022b71c"
@@ -1384,8 +1456,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1890,
-        "y": 2460,
+        "x": 2410,
+        "y": 1400,
         "wires": [
             [
                 "8ceb1c5b5fb6e7d7"
@@ -1408,7 +1480,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\",\"AIR-CR_Control\",\"AIR-CR_Simple_settings\"],\"show\":[\"AIR-CR_Connection\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\",\"AIR-CR_Control\",\"AIR-CR_Simple_settings\",\"AIR-CR_schedule\"],\"show\":[\"AIR-CR_Connection\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
@@ -1436,8 +1508,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1650,
-        "y": 2160,
+        "x": 2170,
+        "y": 1100,
         "wires": [
             []
         ]
@@ -2126,8 +2198,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1050,
-        "y": 1880,
+        "x": 2290,
+        "y": 1680,
         "wires": [
             [
                 "689eaeb65ca4fba4"
@@ -2154,8 +2226,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 960,
-        "y": 1760,
+        "x": 2200,
+        "y": 1560,
         "wires": [
             [
                 "a9fc57cdad44cd14"
@@ -2176,8 +2248,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 1270,
-        "y": 1780,
+        "x": 2510,
+        "y": 1580,
         "wires": []
     },
     {
@@ -2200,8 +2272,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1560,
-        "y": 2680,
+        "x": 1620,
+        "y": 1560,
         "wires": [
             []
         ]
@@ -2226,8 +2298,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1500,
-        "y": 2720,
+        "x": 1560,
+        "y": 1600,
         "wires": [
             []
         ]
@@ -2263,8 +2335,8 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1510,
-        "y": 2800,
+        "x": 1570,
+        "y": 1680,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -2302,8 +2374,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1470,
-        "y": 2840,
+        "x": 1530,
+        "y": 1720,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -2341,8 +2413,8 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1590,
-        "y": 2880,
+        "x": 1650,
+        "y": 1760,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -2405,8 +2477,8 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1630,
-        "y": 2920,
+        "x": 1690,
+        "y": 1800,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -2425,8 +2497,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1900,
-        "y": 2820,
+        "x": 1960,
+        "y": 1700,
         "wires": [
             []
         ]
@@ -2447,8 +2519,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1590,
-        "y": 2640,
+        "x": 1650,
+        "y": 1520,
         "wires": [
             []
         ]
@@ -2476,8 +2548,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 1310,
-        "y": 2760,
+        "x": 1370,
+        "y": 1640,
         "wires": [
             [
                 "7bbd818e1ecdb3bd"
@@ -2510,8 +2582,8 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1510,
-        "y": 2760,
+        "x": 1570,
+        "y": 1640,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -2536,8 +2608,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1310,
-        "y": 2800,
+        "x": 1370,
+        "y": 1680,
         "wires": [
             [
                 "c83813488be715e7"
@@ -2562,8 +2634,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 1170,
-        "y": 2840,
+        "x": 1230,
+        "y": 1720,
         "wires": [
             [
                 "60fc553922b7b14e"
@@ -2588,8 +2660,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 1170,
-        "y": 2880,
+        "x": 1230,
+        "y": 1760,
         "wires": [
             [
                 "b6369bb4f44f1bb6"
@@ -2614,8 +2686,8 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 1170,
-        "y": 2920,
+        "x": 1230,
+        "y": 1800,
         "wires": [
             [
                 "3bc21ed43f4c6e09"
@@ -2640,8 +2712,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1150,
-        "y": 2960,
+        "x": 1210,
+        "y": 1840,
         "wires": [
             [
                 "aab5cc2445afa1e9"
@@ -2679,8 +2751,8 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1420,
-        "y": 2960,
+        "x": 1480,
+        "y": 1840,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -2707,8 +2779,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 580,
-        "y": 2680,
+        "x": 1620,
+        "y": 1140,
         "wires": [
             []
         ]
@@ -2733,8 +2805,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 520,
-        "y": 2720,
+        "x": 1560,
+        "y": 1180,
         "wires": [
             []
         ]
@@ -2770,8 +2842,8 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 530,
-        "y": 2800,
+        "x": 1570,
+        "y": 1260,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2809,8 +2881,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 490,
-        "y": 2840,
+        "x": 1530,
+        "y": 1300,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2848,8 +2920,8 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 550,
-        "y": 2880,
+        "x": 1590,
+        "y": 1340,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2912,8 +2984,8 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 490,
-        "y": 2920,
+        "x": 1530,
+        "y": 1380,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2932,8 +3004,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 2820,
+        "x": 1960,
+        "y": 1280,
         "wires": [
             []
         ]
@@ -2954,8 +3026,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 610,
-        "y": 2640,
+        "x": 1650,
+        "y": 1100,
         "wires": [
             []
         ]
@@ -2983,8 +3055,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 330,
-        "y": 2760,
+        "x": 1370,
+        "y": 1220,
         "wires": [
             [
                 "222ca6d9f33aad97"
@@ -3017,8 +3089,8 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 530,
-        "y": 2760,
+        "x": 1570,
+        "y": 1220,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -3043,8 +3115,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 330,
-        "y": 2800,
+        "x": 1370,
+        "y": 1260,
         "wires": [
             [
                 "44eead080f6ff893"
@@ -3069,8 +3141,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 190,
-        "y": 2840,
+        "x": 1230,
+        "y": 1300,
         "wires": [
             [
                 "2c0e5a1f061ca6fb"
@@ -3095,8 +3167,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 190,
-        "y": 2880,
+        "x": 1230,
+        "y": 1340,
         "wires": [
             [
                 "60f424913e84a261"
@@ -3121,8 +3193,8 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 190,
-        "y": 2920,
+        "x": 1230,
+        "y": 1380,
         "wires": [
             [
                 "0ec93d1beaa5a9e4"
@@ -3147,8 +3219,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 170,
-        "y": 2960,
+        "x": 1210,
+        "y": 1420,
         "wires": [
             [
                 "e5a3acd7c9ec31f5"
@@ -3186,8 +3258,8 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 460,
-        "y": 2960,
+        "x": 1500,
+        "y": 1420,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -3350,6 +3422,7 @@
         "id": "a607e57b9c8d8cdd",
         "type": "function",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "SetCtpDoor",
         "func": "let stpDoorSet = global.get('stpDoorSet') || {};\nstpDoorSet = Object.assign(stpDoorSet, {[msg.topic]:msg.payload})\nglobal.set('stpDoorSet', stpDoorSet)\n\n",
         "outputs": 1,
@@ -3367,6 +3440,7 @@
         "id": "84d7a118ddd9842f",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Door sensor condition (Door_sens_Condition)",
         "label": "Door sensor condition (Door_sens_Condition)",
         "tooltip": "",
@@ -3405,6 +3479,7 @@
         "id": "5876e97090ffded2",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Control point index (Control_point_idx)",
         "label": "Control point index (Control_point_idx):",
         "tooltip": "",
@@ -3431,6 +3506,7 @@
         "id": "4a42fef97bd379c2",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Door lock mode (Door_Lock_mode)",
         "label": "Door lock mode (Door_Lock_mode)",
         "tooltip": "",
@@ -3469,6 +3545,7 @@
         "id": "297191ec56ab0272",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Door lock type (Door_Lock_type)",
         "label": "Door lock type (Door_Lock_type)",
         "tooltip": "",
@@ -3507,6 +3584,7 @@
         "id": "d8697b4c53aa26a1",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Impulse duration (sec) (Door_Lock_puls)",
         "label": "Impulse duration (sec) (Door_Lock_puls):",
         "tooltip": "",
@@ -3533,6 +3611,7 @@
         "id": "d0c523e32a8ea14f",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Hold duration, sec (Door_Delay)",
         "label": "Hold duration, sec (Door_Delay):",
         "tooltip": "",
@@ -3559,6 +3638,7 @@
         "id": "1dc6ecb687b4c702",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Button condition (Button_rex_Condition)",
         "label": "Button condition (Button_rex_Condition)",
         "tooltip": "",
@@ -3597,6 +3677,7 @@
         "id": "4d74c64a6d551fbf",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Reader 2 index (Rd1_idx)",
         "label": "Reader 2 index (Rd1_idx):",
         "tooltip": "",
@@ -3623,6 +3704,7 @@
         "id": "c195fb1af7d90e90",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "group": "91a9ce4bbf4bb377",
         "name": "CP Settings label",
         "order": 1,
@@ -3644,6 +3726,7 @@
         "id": "3c691a45025ba009",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Reader 1 index (Rd0_idx)",
         "label": "Reader 1 index (Rd0_idx):",
         "tooltip": "",
@@ -3670,6 +3753,7 @@
         "id": "fac062210ac59294",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -3700,6 +3784,7 @@
         "id": "8d0f58b9725145dc",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Door Sensor Input Location (Door_sens_opt)",
         "label": "Door sensor input location (Door_sens_opt)",
         "tooltip": "",
@@ -3733,6 +3818,7 @@
         "id": "c92d749c3d3c71a5",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -3758,6 +3844,7 @@
         "id": "061aecc325f2ccf3",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Input index for door sensor (Door_sens_idx)",
         "label": "Input index for door sensor (Door_sens_idx)",
         "tooltip": "",
@@ -3796,6 +3883,7 @@
         "id": "963ed93528cda57e",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -3821,6 +3909,7 @@
         "id": "d3a133d00b340e1b",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -3851,6 +3940,7 @@
         "id": "b2474e59834ac54b",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Input index for exit button (Button_rex_idx)",
         "label": "Input index for exit button (Button_rex_idx)",
         "tooltip": "",
@@ -3889,6 +3979,7 @@
         "id": "5eeae1b2e2b3c814",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -3914,6 +4005,7 @@
         "id": "bff2a475aa26be41",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -3939,6 +4031,7 @@
         "id": "00ecd6dbee19221f",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Lock relay location (Lock_Relay_opt)",
         "label": "Lock relay location (Lock_Relay_opt)",
         "tooltip": "",
@@ -3972,6 +4065,7 @@
         "id": "84b05a9496fc7da5",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4002,6 +4096,7 @@
         "id": "9511360cabc09665",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Lock relay index (Lock_Relay_idx)",
         "label": "Lock relay index (Lock_Relay_idx)",
         "tooltip": "",
@@ -4035,6 +4130,7 @@
         "id": "ca47d465a6b99a63",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4065,6 +4161,7 @@
         "id": "9d19323eaf34876e",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4090,6 +4187,7 @@
         "id": "1ae3d7c290a17078",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4115,6 +4213,7 @@
         "id": "e4e36f0ec9287fcb",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4140,6 +4239,7 @@
         "id": "3984a6135d0cec25",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4165,6 +4265,7 @@
         "id": "b083bea11642642c",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Autolock (Door_Sens_Autolock)",
         "label": "Autolock (Door_Sens_Autolock)",
         "tooltip": "",
@@ -4203,6 +4304,7 @@
         "id": "86ed6e6d340e0de2",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4228,6 +4330,7 @@
         "id": "1decd6fb7be79a57",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Timezone (tz)",
         "label": "Timezone (tz)",
         "tooltip": "",
@@ -4401,6 +4504,7 @@
         "id": "ddab9916254d4a0e",
         "type": "function",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "setDT",
         "func": "let dTSet = global.get('dTSet') || {};\ndTSet = Object.assign(dTSet, { [msg.topic]: msg.payload })\nglobal.set('dTSet', dTSet)\n",
         "outputs": 1,
@@ -4418,6 +4522,7 @@
         "id": "ebf4caecba2c3b0f",
         "type": "ui_switch",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Use DST/GTM (DST_GMT)",
         "label": "Use DST/GTM (DST_GMT)",
         "tooltip": "",
@@ -4452,6 +4557,7 @@
         "id": "5dae369f8feb1f2b",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4477,6 +4583,7 @@
         "id": "b21a19bb0acbfa9c",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "Input location for exit button (Button_rex_opt)",
         "label": "Input location for exit button (Button_rex_opt)",
         "tooltip": "",
@@ -4510,6 +4617,7 @@
         "id": "b60a07a5f5df2db6",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "group": "91a9ce4bbf4bb377",
         "name": "Door Settings label",
         "order": 6,
@@ -4531,6 +4639,7 @@
         "id": "c8960adebc938996",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "group": "91a9ce4bbf4bb377",
         "name": "Lock Settings label",
         "order": 18,
@@ -4552,6 +4661,7 @@
         "id": "341cca91a1fdb94a",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "group": "91a9ce4bbf4bb377",
         "name": "Button settings label",
         "order": 24,
@@ -4573,6 +4683,7 @@
         "id": "2f40703481bf226e",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "group": "91a9ce4bbf4bb377",
         "name": "Timezone settings label",
         "order": 29,
@@ -4594,6 +4705,7 @@
         "id": "daca0544dd019614",
         "type": "inject",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4639,6 +4751,7 @@
         "id": "5c869c44f8db9da9",
         "type": "function",
         "z": "692c798b6f9c61de",
+        "g": "546743cc2e3aa106",
         "name": "setDevicesIdx",
         "func": "let device_set_idxs = global.get('device_set_idxs') || {};\ndevice_set_idxs = Object.assign(device_set_idxs, { [msg.topic]: msg.payload })\nglobal.set('device_set_idxs', device_set_idxs)",
         "outputs": 1,
@@ -4995,6 +5108,59 @@
         "className": "",
         "x": 110,
         "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e819dd139f9e98f4",
+        "type": "ui_button",
+        "z": "692c798b6f9c61de",
+        "name": "Card registration",
+        "group": "523171b4c91e1d14",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Schedule",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "settings_btn",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\",\"AIR-CR_Connection\",\"AIR-CR_Simple_settings\",\"AIR-CR_Settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\"],\"show\":[\"AIR-CR_schedule\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 2740,
+        "y": 520,
+        "wires": [
+            [
+                "f35f7ebd59ad5459"
+            ]
+        ]
+    },
+    {
+        "id": "e08484aa84bed9e8",
+        "type": "ui_slider",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "523171b4c91e1d14",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "24",
+        "step": 1,
+        "className": "",
+        "x": 190,
+        "y": 2340,
         "wires": [
             []
         ]
