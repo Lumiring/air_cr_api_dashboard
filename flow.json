@@ -5354,7 +5354,7 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "",
-        "filename": "/.air_cr/mqtt_settings.json",
+        "filename": "/air_cr/mqtt_settings.json",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
