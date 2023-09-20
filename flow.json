@@ -176,8 +176,7 @@
             "a854989e94536e41",
             "bb1e67cbc6aec98f",
             "b4ff918b8b4b6bcd",
-            "c2c2313264fe8ffb",
-            "56dbed26332c5707"
+            "c2c2313264fe8ffb"
         ],
         "x": 34,
         "y": 219,
@@ -5377,7 +5376,7 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "persistDoor_settings",
-        "func": "let stpDoorSet = global.get('stpDoorSet') || {};\nlet device_set_idxs = global.get('device_set_idxs');\nlet rd = global.get('rd_0_set');\n\nlet json = {}\njson.door_settings = stpDoorSet\njson.door_settings.Control_point_idx = device_set_idxs.Control_point_idx\njson.door_settings.Rd0_idx = device_set_idxs.Rd0_idx\njson.door_settings.Rd1_idx = device_set_idxs.Rd1_idx\n\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_1_settings.Rd_idx = device_set_idxs.Rd0_idx\njson.reader_1_settings.Control_point_idx = device_set_idxs.Control_point_idx\n\njson.reader_2_settings = global.get('rd_1_set')\njson.reader_2_settings.Rd_idx = device_set_idxs.Rd1_idx\njson.reader_2_settings.Control_point_idx = device_set_idxs.Control_point_idx\n\njson.time_settings = global.get('dTSet')\n\nmsg.payload = json\nreturn msg;\n\n",
+        "func": "\nlet json = {}\njson.device_set_idxs = global.get('device_set_idxs')\njson.door_settings = global.get('stpDoorSet')\njson.time_settings = global.get('dTSet')\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_2_settings = global.get('rd_1_set')\n\nmsg.payload = json\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5453,10 +5452,45 @@
         ]
     },
     {
-        "id": "56dbed26332c5707",
+        "id": "03faeb90bf849ef1",
+        "type": "file in",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "filename": ".lumiring/air_cr/mqttSettings.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "91b7d7e42731c16e"
+            ]
+        ]
+    },
+    {
+        "id": "91b7d7e42731c16e",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c17a320ff42e127c",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "props": [
             {
@@ -5474,11 +5508,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1960,
-        "y": 460,
+        "x": 120,
+        "y": 120,
         "wires": [
             [
-                "bb1e67cbc6aec98f"
+                "03faeb90bf849ef1"
             ]
         ]
     },
