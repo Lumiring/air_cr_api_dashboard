@@ -5445,7 +5445,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
+        "x": 1380,
         "y": 120,
         "wires": [
             []
@@ -5463,7 +5463,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 410,
+        "x": 1250,
         "y": 60,
         "wires": [
             []
@@ -5490,11 +5490,94 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 560,
+        "x": 1200,
         "y": 120,
         "wires": [
             [
                 "a60e7bd06fc144ab"
+            ]
+        ]
+    },
+    {
+        "id": "90a7f4cb9c95b7d0",
+        "type": "fs-access",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "path": ".lumiring/air_cr/mqttSettings.json",
+        "pathType": "str",
+        "filename": "filename",
+        "filenameType": "msg",
+        "accessRead": true,
+        "accessWrite": true,
+        "x": 510,
+        "y": 120,
+        "wires": [
+            [
+                "a0fe8c10f1483ce3"
+            ],
+            [
+                "c38684b745b7ba59"
+            ]
+        ]
+    },
+    {
+        "id": "a0fe8c10f1483ce3",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c38684b745b7ba59",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "edb0b7232f72600a",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "90a7f4cb9c95b7d0"
             ]
         ]
     },
