@@ -5354,13 +5354,13 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "",
-        "filename": "",
+        "filename": ".air_cr/mqtt_settings.json",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": false,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 840,
+        "x": 890,
         "y": 380,
         "wires": [
             []
