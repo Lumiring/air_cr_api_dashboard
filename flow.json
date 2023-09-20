@@ -1525,7 +1525,7 @@
         "passthru": true,
         "mode": "text",
         "delay": 300,
-        "topic": "broker",
+        "topic": "host",
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
