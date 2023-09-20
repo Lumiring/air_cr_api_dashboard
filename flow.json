@@ -172,11 +172,12 @@
             "583517f12510f63c",
             "4eec54e042c9d037",
             "3880a03920b6f99c",
-            "8e24ab921c34bc34"
+            "9c089a6faed821bd",
+            "a854989e94536e41"
         ],
         "x": 14,
         "y": 179,
-        "w": 2272,
+        "w": 2452,
         "h": 782
     },
     {
@@ -1693,7 +1694,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1740,
+        "x": 1920,
         "y": 260,
         "wires": []
     },
@@ -1711,7 +1712,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 1,
-        "x": 1070,
+        "x": 1150,
         "y": 280,
         "wires": [
             [
@@ -1740,8 +1741,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 590,
-        "y": 380,
+        "x": 570,
+        "y": 460,
         "wires": [
             [
                 "2b2d85fbc2c145a5"
@@ -1760,12 +1761,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 380,
+        "x": 900,
+        "y": 460,
         "wires": [
             [
-                "9e5fe1c3fe6f0503",
-                "8e24ab921c34bc34"
+                "9e5fe1c3fe6f0503"
             ],
             [
                 "6ad93d3e94e2fe69"
@@ -1866,7 +1866,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1730,
+        "x": 1910,
         "y": 220,
         "wires": []
     },
@@ -1913,7 +1913,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 6,
-        "x": 1210,
+        "x": 1390,
         "y": 280,
         "wires": [
             [
@@ -1948,7 +1948,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1430,
+        "x": 1610,
         "y": 220,
         "wires": [
             [
@@ -1968,7 +1968,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1480,
+        "x": 1660,
         "y": 260,
         "wires": [
             [
@@ -1992,7 +1992,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1060,
+        "x": 1100,
         "y": 480,
         "wires": [
             []
@@ -2023,7 +2023,8 @@
         "y": 320,
         "wires": [
             [
-                "1f7ea9be7c722e68"
+                "1f7ea9be7c722e68",
+                "9c089a6faed821bd"
             ]
         ]
     },
@@ -2088,7 +2089,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1470,
+        "x": 1650,
         "y": 300,
         "wires": [
             [
@@ -3274,7 +3275,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1460,
+        "x": 1640,
         "y": 380,
         "wires": [
             [
@@ -3383,7 +3384,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1790,
+        "x": 1970,
         "y": 340,
         "wires": [
             [
@@ -3406,7 +3407,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2010,
+        "x": 2190,
         "y": 340,
         "wires": [
             [
@@ -4739,7 +4740,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2000,
+        "x": 2180,
         "y": 300,
         "wires": []
     },
@@ -4776,7 +4777,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2210,
+        "x": 2390,
         "y": 380,
         "wires": []
     },
@@ -4792,7 +4793,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1450,
+        "x": 1630,
         "y": 420,
         "wires": [
             [
@@ -4826,7 +4827,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1790,
+        "x": 1970,
         "y": 380,
         "wires": [
             [
@@ -4849,7 +4850,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2010,
+        "x": 2190,
         "y": 420,
         "wires": [
             [
@@ -4873,7 +4874,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2000,
+        "x": 2180,
         "y": 380,
         "wires": []
     },
@@ -4900,7 +4901,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1790,
+        "x": 1970,
         "y": 480,
         "wires": [
             [
@@ -4927,7 +4928,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2000,
+        "x": 2180,
         "y": 460,
         "wires": []
     },
@@ -4943,7 +4944,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2010,
+        "x": 2190,
         "y": 500,
         "wires": [
             [
@@ -5079,7 +5080,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1470,
+        "x": 1650,
         "y": 340,
         "wires": [
             [
@@ -5328,19 +5329,39 @@
         ]
     },
     {
-        "id": "8e24ab921c34bc34",
+        "id": "9c089a6faed821bd",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "497324ccb7313edb",
+        "name": "persistMqttSettings",
+        "func": "let mqttSettings = global.get('mqtt_settings')\nlet json = {}\n\njson.mqtt_settings = mqttSettings\n\nreturn json;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 320,
+        "wires": [
+            [
+                "a854989e94536e41"
+            ]
+        ]
+    },
+    {
+        "id": "a854989e94536e41",
         "type": "file",
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "",
-        "filename": ".air_cr/file.json",
+        "filename": "",
         "filenameType": "str",
         "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
+        "createDir": false,
+        "overwriteFile": "false",
         "encoding": "none",
-        "x": 1240,
-        "y": 540,
+        "x": 840,
+        "y": 380,
         "wires": [
             []
         ]
