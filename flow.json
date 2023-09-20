@@ -174,7 +174,10 @@
             "3880a03920b6f99c",
             "9c089a6faed821bd",
             "a854989e94536e41",
-            "3b2498ab3eaf57a1"
+            "3b2498ab3eaf57a1",
+            "bb1e67cbc6aec98f",
+            "d8ee4f01bf5c6ee6",
+            "b4ff918b8b4b6bcd"
         ],
         "x": 14,
         "y": 179,
@@ -3386,7 +3389,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1970,
-        "y": 340,
+        "y": 420,
         "wires": [
             [
                 "b34c7c3825b2f296"
@@ -3409,7 +3412,7 @@
         "finalize": "",
         "libs": [],
         "x": 2190,
-        "y": 340,
+        "y": 420,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -4742,7 +4745,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2180,
-        "y": 300,
+        "y": 380,
         "wires": []
     },
     {
@@ -4779,7 +4782,7 @@
         "expiry": "",
         "broker": "79737e067a3af084",
         "x": 2390,
-        "y": 380,
+        "y": 480,
         "wires": []
     },
     {
@@ -4829,7 +4832,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1970,
-        "y": 380,
+        "y": 460,
         "wires": [
             [
                 "7416ec0179370582"
@@ -4852,7 +4855,7 @@
         "finalize": "",
         "libs": [],
         "x": 2190,
-        "y": 420,
+        "y": 500,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -4876,7 +4879,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2180,
-        "y": 380,
+        "y": 460,
         "wires": []
     },
     {
@@ -4903,7 +4906,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1970,
-        "y": 480,
+        "y": 560,
         "wires": [
             [
                 "03ca1b1fdfc39f2d"
@@ -4930,7 +4933,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2180,
-        "y": 460,
+        "y": 540,
         "wires": []
     },
     {
@@ -4946,7 +4949,7 @@
         "finalize": "",
         "libs": [],
         "x": 2190,
-        "y": 500,
+        "y": 580,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -5075,7 +5078,7 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "handleSetDateTime-Ack",
-        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n\n    }\n}\n\nreturn ackInfo;",
+        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5355,14 +5358,14 @@
         "type": "file",
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
-        "name": "",
+        "name": "persistMqttSettings",
         "filename": ".lumiring/air_cr/mqttSettings.json",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 910,
+        "x": 850,
         "y": 380,
         "wires": [
             []
@@ -5384,6 +5387,74 @@
         "x": 1160,
         "y": 360,
         "wires": []
+    },
+    {
+        "id": "bb1e67cbc6aec98f",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "497324ccb7313edb",
+        "name": "function 1",
+        "func": "let stpDoorSet = global.get('stpDoorSet') || {};\nlet device_set_idxs = global.get('device_set_idxs');\nlet rd = global.get('rd_0_set');\n\nlet json = {}\njson.door_settings = stpDoorSet\n\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_1_settings.Rd_idx = device_set_idxs.Rd0_idx\njson.reader_1_settings.Control_point_idx = device_set_idxs.Control_point_idx\n\njson.reader_2_settings = global.get('rd_1_set')\njson.reader_2_settings.Rd_idx = device_set_idxs.Rd1_idx\njson.reader_2_settings.Control_point_idx = device_set_idxs.Control_point_idx\n\njson.time_settings = global.get('dTSet')\n\nmsg.payload = json\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 640,
+        "wires": [
+            [
+                "b4ff918b8b4b6bcd"
+            ]
+        ]
+    },
+    {
+        "id": "d8ee4f01bf5c6ee6",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "497324ccb7313edb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1420,
+        "y": 640,
+        "wires": [
+            [
+                "bb1e67cbc6aec98f"
+            ]
+        ]
+    },
+    {
+        "id": "b4ff918b8b4b6bcd",
+        "type": "file",
+        "z": "692c798b6f9c61de",
+        "g": "497324ccb7313edb",
+        "name": "persistMqttSettings",
+        "filename": ".lumiring/air_cr/door_settings.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1690,
+        "y": 720,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "1fddf0a8d296909f",
