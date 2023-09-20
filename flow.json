@@ -5559,23 +5559,13 @@
         "type": "inject",
         "z": "692c798b6f9c61de",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
+        "props": [],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 320,
+        "x": 310,
         "y": 120,
         "wires": [
             [
