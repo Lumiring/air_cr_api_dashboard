@@ -5499,6 +5499,39 @@
         ]
     },
     {
+        "id": "b5f50c291d0add73",
+        "type": "catch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "scope": [
+            "03faeb90bf849ef1"
+        ],
+        "uncaught": false,
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "c3d984907620ac85"
+            ]
+        ]
+    },
+    {
+        "id": "c3d984907620ac85",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 180,
+        "wires": []
+    },
+    {
         "id": "1fddf0a8d296909f",
         "type": "inject",
         "z": "be9f64fbc3682d16",
