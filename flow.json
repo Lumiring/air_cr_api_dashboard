@@ -1741,7 +1741,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 570,
+        "x": 590,
         "y": 460,
         "wires": [
             [
@@ -5334,7 +5334,7 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "persistMqttSettings",
-        "func": "let mqttSettings = global.get('mqtt_settings')\nlet json = {}\n\njson.mqtt_settings = mqttSettings\nconsole.log(json)\nreturn json;",
+        "func": "let mqttSettings = global.get('mqtt_settings')\nlet json = {}\njson.mqtt_settings = {}\njson.mqtt_settings.host = mqttSettings.host\njson.mqtt_settings.port = mqttSettings.port\njson.mqtt_settings.username = mqttSettings.username\njson.mqtt_settings.password = mqttSettings.password\n\nconsole.log(json)\n\nreturn json",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
