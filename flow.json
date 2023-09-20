@@ -5333,13 +5333,13 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "",
-        "filename": "%USERPROFILE%\\AppData\\AIR_CR\\sub.json",
+        "filename": ".air_cr/file.json",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1340,
+        "x": 1240,
         "y": 540,
         "wires": [
             []
