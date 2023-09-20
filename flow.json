@@ -5503,7 +5503,7 @@
         "type": "fs-access",
         "z": "692c798b6f9c61de",
         "name": "",
-        "path": ".lumiring/air_cr/mqttSettings.json",
+        "path": ".lumiring/air_cr/door_settings.json",
         "pathType": "str",
         "filename": "filename",
         "filenameType": "msg",
