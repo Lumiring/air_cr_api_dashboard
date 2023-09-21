@@ -4419,7 +4419,7 @@
         "width": 8,
         "height": 2,
         "passthru": true,
-        "mode": "text",
+        "mode": "number",
         "delay": 300,
         "topic": "device_id",
         "sendOnBlur": true,
