@@ -5439,7 +5439,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 1",
-        "func": "//console.log(JSON.parse(msg.payload))\n\n\n\n\n\n\njson.device_set_idxs = global.get('device_set_idxs')\njson.door_settings = global.get('stpDoorSet')\njson.time_settings = global.get('dTSet')\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_2_settings = global.get('rd_1_set')\n\n\n\n\n//return JSON.parse(msg.payload)",
+        "func": "//console.log(JSON.parse(msg.payload))\n\n\n\n\n\n\n// json.device_set_idxs = global.get('device_set_idxs')\n// json.door_settings = global.get('stpDoorSet')\n// json.time_settings = global.get('dTSet')\n// json.reader_1_settings = global.get('rd_0_set')\n// json.reader_2_settings = global.get('rd_1_set')\n\n\n\n\nreturn JSON.parse(msg.payload)",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5448,7 +5448,9 @@
         "x": 840,
         "y": 80,
         "wires": [
-            []
+            [
+                "538ecde8895046a0"
+            ]
         ]
     },
     {
@@ -5528,6 +5530,23 @@
                 "90a7f4cb9c95b7d0"
             ]
         ]
+    },
+    {
+        "id": "538ecde8895046a0",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 80,
+        "wires": []
     },
     {
         "id": "1fddf0a8d296909f",
