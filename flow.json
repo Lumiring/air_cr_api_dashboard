@@ -5353,7 +5353,7 @@
         "filenameType": "msg",
         "accessRead": true,
         "accessWrite": true,
-        "x": 290,
+        "x": 270,
         "y": 300,
         "wires": [
             [
@@ -5382,27 +5382,17 @@
         ]
     },
     {
-        "id": "ecbb89ba1d6a59a4",
+        "id": "3280cc3ecd2f397a",
         "type": "inject",
         "z": "692c798b6f9c61de",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
+        "props": [],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
+        "x": 110,
         "y": 300,
         "wires": [
             [
