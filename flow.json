@@ -2035,7 +2035,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "sendMqttMessage",
-        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();;\nmsgWrapper.info = Object.assign(global.get('device_set_idxs'), global.get('stpDoorSet'))\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nlet ackSubtopic = {}\nackSubtopic.action = \"subscribe\"\nackSubtopic.topic = globalTopic + \"Ack\" + \"/\"\n\nreturn [msg, ackSubtopic]",
+        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();;\nmsgWrapper.info = Object.assign(global.get('device_set_idxs'), global.get('stpDoorSet'))\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2256,7 +2256,7 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2510,
+        "x": 2450,
         "y": 2040,
         "wires": [
             [
@@ -2320,7 +2320,7 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2550,
+        "x": 2370,
         "y": 2080,
         "wires": [
             [
@@ -4457,8 +4457,8 @@
         "id": "2c20c6b6c69caf14",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "name": "",
-        "label": "",
+        "name": "Start",
+        "label": "Start",
         "tooltip": "",
         "group": "523171b4c91e1d14",
         "order": 1,
@@ -4467,15 +4467,15 @@
         "passthru": true,
         "mode": "time",
         "delay": 300,
-        "topic": "topic",
+        "topic": "TmStart",
         "sendOnBlur": true,
         "className": "",
-        "topicType": "msg",
-        "x": 180,
-        "y": 2500,
+        "topicType": "str",
+        "x": 170,
+        "y": 2480,
         "wires": [
             [
-                "4c93e7718fefbcb3"
+                "1858ddfbf99a4971"
             ]
         ]
     },
@@ -4483,8 +4483,8 @@
         "id": "c7f4ea3c6543a538",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "name": "",
-        "label": "",
+        "name": "End",
+        "label": "End",
         "tooltip": "",
         "group": "523171b4c91e1d14",
         "order": 2,
@@ -4493,51 +4493,17 @@
         "passthru": true,
         "mode": "time",
         "delay": 300,
-        "topic": "topic",
+        "topic": "TmEnd",
         "sendOnBlur": true,
         "className": "",
-        "topicType": "msg",
-        "x": 180,
-        "y": 2560,
+        "topicType": "str",
+        "x": 170,
+        "y": 2520,
         "wires": [
             [
-                "59b31a431b9480d5"
+                "1858ddfbf99a4971"
             ]
         ]
-    },
-    {
-        "id": "59b31a431b9480d5",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 340,
-        "y": 2560,
-        "wires": []
-    },
-    {
-        "id": "4c93e7718fefbcb3",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 340,
-        "y": 2500,
-        "wires": []
     },
     {
         "id": "3880a03920b6f99c",
@@ -5564,8 +5530,8 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 520,
-        "y": 2640,
+        "x": 1060,
+        "y": 2820,
         "wires": [
             []
         ]
@@ -5581,8 +5547,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 2640,
+        "x": 890,
+        "y": 2820,
         "wires": [
             [
                 "b292b34a273c98d4"
@@ -5610,12 +5576,100 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 2640,
+        "x": 680,
+        "y": 2820,
         "wires": [
             [
                 "777fb63c679ccffe"
             ]
+        ]
+    },
+    {
+        "id": "f07f82bb51cacf2a",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "Schedule name",
+        "label": "Schedule name",
+        "tooltip": "",
+        "group": "fc491a4cada0492f",
+        "order": 43,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "name",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 200,
+        "y": 2440,
+        "wires": [
+            [
+                "1858ddfbf99a4971"
+            ]
+        ]
+    },
+    {
+        "id": "eaee67ff04b85c54",
+        "type": "ui_button",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "group": "fc491a4cada0492f",
+        "order": 44,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 2600,
+        "wires": [
+            [
+                "d4b89e18ef3a2264"
+            ]
+        ]
+    },
+    {
+        "id": "1858ddfbf99a4971",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "setSchedule",
+        "func": "let schedule = global.get('schedule') || {};\nschedule = Object.assign(schedule, { [msg.topic]: msg.payload })\nglobal.set('schedule', schedule)\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 2480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4b89e18ef3a2264",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 33",
+        "func": "let device_set_idxs = global.get('device_set_idxs')\n\n\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetSdlDaily\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\nmsgWrapper.info = global.get('schedule')\nmsgWrapper.info.Shedule_id = Math.floor(Math.random() * 1692797271182).toString()\nmsgWrapper.info.Ctp_idx = device_set_idxs.Control_point_idx\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 2600,
+        "wires": [
+            []
         ]
     },
     {
