@@ -5535,7 +5535,7 @@
         "z": "692c798b6f9c61de",
         "name": "",
         "property": "payload",
-        "action": "",
+        "action": "obj",
         "pretty": false,
         "x": 770,
         "y": 80,
