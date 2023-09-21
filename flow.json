@@ -5319,7 +5319,7 @@
         "name": "",
         "filename": ".lumiring/air_cr/door_settings.json",
         "filenameType": "str",
-        "format": "lines",
+        "format": "utf8",
         "chunk": false,
         "sendError": false,
         "encoding": "none",
