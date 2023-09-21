@@ -5448,9 +5448,7 @@
         "x": 840,
         "y": 80,
         "wires": [
-            [
-                "d999ff0536669a3d"
-            ]
+            []
         ]
     },
     {
@@ -5530,22 +5528,6 @@
                 "90a7f4cb9c95b7d0"
             ]
         ]
-    },
-    {
-        "id": "d999ff0536669a3d",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 8",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1060,
-        "y": 80,
-        "wires": []
     },
     {
         "id": "1fddf0a8d296909f",
