@@ -179,13 +179,13 @@
             "99ae61b360355f68",
             "f74a6a22480189cc",
             "53da7a211480283e",
-            "5e407515e8c6f3ed",
             "4389b92844310dbf",
             "a7a7b24370fc4997",
-            "b5b19e6ec0f2a088"
+            "1090c7446b008215",
+            "65727af8ca7694b4"
         ],
         "x": 34,
-        "y": 539,
+        "y": 499,
         "w": 2452,
         "h": 622
     },
@@ -1475,7 +1475,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 910,
-        "y": 920,
+        "y": 880,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1502,7 +1502,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 910,
-        "y": 960,
+        "y": 920,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1529,7 +1529,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 890,
-        "y": 1000,
+        "y": 960,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1556,7 +1556,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 900,
-        "y": 1040,
+        "y": 1000,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1576,7 +1576,7 @@
         "finalize": "",
         "libs": [],
         "x": 1300,
-        "y": 1000,
+        "y": 960,
         "wires": [
             []
         ]
@@ -1591,7 +1591,7 @@
             "9e5fe1c3fe6f0503"
         ],
         "x": 140,
-        "y": 960,
+        "y": 920,
         "wires": [
             [
                 "642df87e4871a1c4",
@@ -1612,7 +1612,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 980,
+        "y": 940,
         "wires": [
             [
                 "5c0f4a3dd94ecbbf",
@@ -1640,7 +1640,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 1960,
-        "y": 620,
+        "y": 580,
         "wires": []
     },
     {
@@ -1657,8 +1657,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 1,
-        "x": 1190,
-        "y": 640,
+        "x": 1350,
+        "y": 600,
         "wires": [
             [
                 "4c30f9b315530f2a"
@@ -1687,10 +1687,11 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 630,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
-                "2b2d85fbc2c145a5"
+                "2b2d85fbc2c145a5",
+                "1090c7446b008215"
             ]
         ]
     },
@@ -1707,7 +1708,7 @@
         "finalize": "",
         "libs": [],
         "x": 940,
-        "y": 820,
+        "y": 780,
         "wires": [
             [
                 "9e5fe1c3fe6f0503"
@@ -1812,7 +1813,7 @@
         "outputs": 0,
         "cts": false,
         "x": 1970,
-        "y": 580,
+        "y": 540,
         "wires": []
     },
     {
@@ -1858,8 +1859,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 6,
-        "x": 1430,
-        "y": 640,
+        "x": 1470,
+        "y": 600,
         "wires": [
             [
                 "160ef0c3c55613af"
@@ -1894,7 +1895,7 @@
         "finalize": "",
         "libs": [],
         "x": 1650,
-        "y": 580,
+        "y": 540,
         "wires": [
             [
                 "32d53427bced070c"
@@ -1914,7 +1915,7 @@
         "finalize": "",
         "libs": [],
         "x": 1700,
-        "y": 620,
+        "y": 580,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -1938,7 +1939,7 @@
         "templateScope": "local",
         "className": "",
         "x": 1140,
-        "y": 840,
+        "y": 800,
         "wires": [
             []
         ]
@@ -1965,7 +1966,7 @@
         "topic": "",
         "topicType": "str",
         "x": 630,
-        "y": 680,
+        "y": 640,
         "wires": [
             [
                 "1f7ea9be7c722e68",
@@ -1986,7 +1987,7 @@
         "finalize": "",
         "libs": [],
         "x": 930,
-        "y": 620,
+        "y": 580,
         "wires": [
             [
                 "9e5fe1c3fe6f0503"
@@ -2015,7 +2016,7 @@
         "topic": "",
         "topicType": "str",
         "x": 620,
-        "y": 620,
+        "y": 580,
         "wires": [
             [
                 "1f7ea9be7c722e68"
@@ -2035,7 +2036,7 @@
         "finalize": "",
         "libs": [],
         "x": 1690,
-        "y": 660,
+        "y": 620,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -2055,7 +2056,7 @@
         "finalize": "",
         "libs": [],
         "x": 280,
-        "y": 740,
+        "y": 700,
         "wires": [
             [
                 "6cc4dd7e4806e9e6"
@@ -2082,7 +2083,7 @@
         "topic": "",
         "name": "",
         "x": 390,
-        "y": 800,
+        "y": 760,
         "wires": []
     },
     {
@@ -2102,7 +2103,7 @@
         "templateScope": "local",
         "className": "",
         "x": 310,
-        "y": 680,
+        "y": 640,
         "wires": [
             []
         ]
@@ -2124,7 +2125,7 @@
         "templateScope": "local",
         "className": "",
         "x": 630,
-        "y": 580,
+        "y": 540,
         "wires": [
             []
         ]
@@ -3221,7 +3222,7 @@
         "finalize": "",
         "libs": [],
         "x": 1680,
-        "y": 740,
+        "y": 700,
         "wires": [
             [
                 "d969e40c2e543dae"
@@ -3252,7 +3253,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1930,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
                 "b34c7c3825b2f296"
@@ -3275,7 +3276,7 @@
         "finalize": "",
         "libs": [],
         "x": 2150,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -4173,7 +4174,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2140,
-        "y": 840,
+        "y": 800,
         "wires": []
     },
     {
@@ -4209,7 +4210,7 @@
         "expiry": "",
         "broker": "79737e067a3af084",
         "x": 2350,
-        "y": 940,
+        "y": 900,
         "wires": []
     },
     {
@@ -4225,7 +4226,7 @@
         "finalize": "",
         "libs": [],
         "x": 1670,
-        "y": 780,
+        "y": 740,
         "wires": [
             [
                 "e063be51f1201adf"
@@ -4259,7 +4260,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1930,
-        "y": 920,
+        "y": 880,
         "wires": [
             [
                 "7416ec0179370582"
@@ -4282,7 +4283,7 @@
         "finalize": "",
         "libs": [],
         "x": 2150,
-        "y": 960,
+        "y": 920,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -4306,7 +4307,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2140,
-        "y": 920,
+        "y": 880,
         "wires": []
     },
     {
@@ -4333,7 +4334,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1930,
-        "y": 1020,
+        "y": 980,
         "wires": [
             [
                 "03ca1b1fdfc39f2d"
@@ -4360,7 +4361,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2140,
-        "y": 1000,
+        "y": 960,
         "wires": []
     },
     {
@@ -4376,7 +4377,7 @@
         "finalize": "",
         "libs": [],
         "x": 2150,
-        "y": 1040,
+        "y": 1000,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -4422,7 +4423,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 1240,
-        "y": 1120,
+        "y": 1080,
         "wires": [
             [
                 "33c8b93809af5d71"
@@ -4442,7 +4443,7 @@
         "finalize": "",
         "libs": [],
         "x": 1500,
-        "y": 1120,
+        "y": 1080,
         "wires": [
             []
         ]
@@ -4466,7 +4467,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 890,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
                 "6ad93d3e94e2fe69"
@@ -4492,7 +4493,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 290,
-        "y": 620,
+        "y": 580,
         "wires": [
             [
                 "6cc4dd7e4806e9e6"
@@ -4512,7 +4513,7 @@
         "finalize": "",
         "libs": [],
         "x": 1690,
-        "y": 700,
+        "y": 660,
         "wires": [
             [
                 "6c8acdd459e657eb",
@@ -4675,7 +4676,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 1200,
-        "y": 1060,
+        "y": 1020,
         "wires": [
             [
                 "33c8b93809af5d71"
@@ -4695,7 +4696,7 @@
         "finalize": "",
         "libs": [],
         "x": 870,
-        "y": 680,
+        "y": 640,
         "wires": [
             [
                 "a854989e94536e41"
@@ -4714,8 +4715,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 890,
-        "y": 740,
+        "x": 1070,
+        "y": 640,
         "wires": [
             []
         ]
@@ -4733,7 +4734,7 @@
         "finalize": "",
         "libs": [],
         "x": 2120,
-        "y": 700,
+        "y": 660,
         "wires": [
             [
                 "b4ff918b8b4b6bcd"
@@ -4753,7 +4754,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 2360,
-        "y": 700,
+        "y": 660,
         "wires": [
             []
         ]
@@ -4777,7 +4778,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1930,
-        "y": 700,
+        "y": 660,
         "wires": [
             [
                 "bb1e67cbc6aec98f"
@@ -4885,7 +4886,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 1940,
-        "y": 780,
+        "y": 740,
         "wires": [
             [
                 "bb1e67cbc6aec98f"
@@ -5394,7 +5395,7 @@
         "finalize": "",
         "libs": [],
         "x": 650,
-        "y": 920,
+        "y": 880,
         "wires": [
             [
                 "0c769e6742acebb0"
@@ -5414,7 +5415,7 @@
         "finalize": "",
         "libs": [],
         "x": 650,
-        "y": 960,
+        "y": 920,
         "wires": [
             [
                 "a122ea34e40556e4"
@@ -5434,7 +5435,7 @@
         "finalize": "",
         "libs": [],
         "x": 650,
-        "y": 1000,
+        "y": 960,
         "wires": [
             [
                 "ad3a558f7afdccbf"
@@ -5454,36 +5455,11 @@
         "finalize": "",
         "libs": [],
         "x": 650,
-        "y": 1040,
+        "y": 1000,
         "wires": [
             [
-                "58d2480b2eff322c",
-                "b5b19e6ec0f2a088"
+                "58d2480b2eff322c"
             ]
-        ]
-    },
-    {
-        "id": "5e407515e8c6f3ed",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
-        "name": "",
-        "props": [
-            {
-                "p": "status.text",
-                "v": "start",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 510,
-        "y": 1100,
-        "wires": [
-            []
         ]
     },
     {
@@ -5498,7 +5474,7 @@
         ],
         "uncaught": false,
         "x": 130,
-        "y": 1100,
+        "y": 1060,
         "wires": [
             [
                 "a7a7b24370fc4997"
@@ -5518,7 +5494,7 @@
         "finalize": "",
         "libs": [],
         "x": 290,
-        "y": 1100,
+        "y": 1060,
         "wires": [
             [
                 "642df87e4871a1c4"
@@ -5526,21 +5502,137 @@
         ]
     },
     {
-        "id": "b5b19e6ec0f2a088",
-        "type": "debug",
+        "id": "295e536ea69e5521",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 28",
+        "func": "let obj = JSON.parse(msg.payload)\n\n\nglobal.set('mqtt_settings', obj)\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6ff52813f3e6a3c",
+        "type": "file in",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "filename": ".lumiring/air_cr/device_location.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 560,
+        "y": 380,
+        "wires": [
+            [
+                "295e536ea69e5521"
+            ]
+        ]
+    },
+    {
+        "id": "423c33113f0cb4de",
+        "type": "fs-access",
+        "z": "692c798b6f9c61de",
+        "name": "readDeviceLocation",
+        "path": ".lumiring/air_cr/device_location.json",
+        "pathType": "str",
+        "filename": "filename",
+        "filenameType": "msg",
+        "accessRead": true,
+        "accessWrite": true,
+        "x": 280,
+        "y": 400,
+        "wires": [
+            [
+                "c6ff52813f3e6a3c"
+            ],
+            [
+                "8a94c5c1b70c9350"
+            ]
+        ]
+    },
+    {
+        "id": "8a94c5c1b70c9350",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 29",
+        "func": "\nglobal.set('mqtt_settings', {\n    host: \"\",\n    port: 1883,\n    username: \"\",\n    password: \"\"\n})\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "009238de90d962c6",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "423c33113f0cb4de"
+            ]
+        ]
+    },
+    {
+        "id": "1090c7446b008215",
+        "type": "function",
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 880,
-        "y": 1100,
-        "wires": []
+        "name": "persistDeviceLocation",
+        "func": "let mqttSettings = global.get('userCreds')\nlet json = {}\njson.host = mqttSettings.location\njson.port = mqttSettings.device_id\nmsg.payload = json\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 720,
+        "wires": [
+            [
+                "65727af8ca7694b4"
+            ]
+        ]
+    },
+    {
+        "id": "65727af8ca7694b4",
+        "type": "file",
+        "z": "692c798b6f9c61de",
+        "g": "497324ccb7313edb",
+        "name": "persistMqttSettings",
+        "filename": ".lumiring/air_cr/device_location.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 990,
+        "y": 720,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "1fddf0a8d296909f",
