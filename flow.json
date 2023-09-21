@@ -114,85 +114,6 @@
         "h": 402
     },
     {
-        "id": "497324ccb7313edb",
-        "type": "group",
-        "z": "692c798b6f9c61de",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "0c769e6742acebb0",
-            "a122ea34e40556e4",
-            "ad3a558f7afdccbf",
-            "58d2480b2eff322c",
-            "7184e0269f48110f",
-            "61dda110cb9d7f8a",
-            "642df87e4871a1c4",
-            "6c8acdd459e657eb",
-            "9e5fe1c3fe6f0503",
-            "1302f6d68dca2105",
-            "2b2d85fbc2c145a5",
-            "32d53427bced070c",
-            "4c30f9b315530f2a",
-            "160ef0c3c55613af",
-            "95c8a2503541cab9",
-            "6ad93d3e94e2fe69",
-            "5c0f4a3dd94ecbbf",
-            "1f7ea9be7c722e68",
-            "d81bab586132c7e4",
-            "881c61e409196bd8",
-            "84cef9c2bb45ee64",
-            "2f28a02598ca6e15",
-            "6cc4dd7e4806e9e6",
-            "8fecdfbd30a2545b",
-            "aad987ee2a0c4f2c",
-            "d969e40c2e543dae",
-            "a902fb928a850e75",
-            "b34c7c3825b2f296",
-            "62276b0a5748fef9",
-            "2c9973e0b952c269",
-            "e063be51f1201adf",
-            "2027404e36d47db4",
-            "7416ec0179370582",
-            "86a634f89955d0c9",
-            "03ca1b1fdfc39f2d",
-            "fdf6aa2ba915be6d",
-            "28a1c7a16938fbb3",
-            "33c8b93809af5d71",
-            "c3a71011f5973516",
-            "583517f12510f63c",
-            "4eec54e042c9d037",
-            "3880a03920b6f99c",
-            "9c089a6faed821bd",
-            "a854989e94536e41",
-            "bb1e67cbc6aec98f",
-            "b4ff918b8b4b6bcd",
-            "c2c2313264fe8ffb",
-            "d5479d55326e18b2",
-            "afdc7c0ee76e4a47",
-            "99ae61b360355f68",
-            "f74a6a22480189cc",
-            "53da7a211480283e",
-            "4389b92844310dbf",
-            "a7a7b24370fc4997",
-            "1090c7446b008215",
-            "65727af8ca7694b4",
-            "be4ec194f59155d0",
-            "45dadb28c9284a55",
-            "9711d2389203650e"
-        ],
-        "x": 34,
-        "y": 499,
-        "w": 2452,
-        "h": 622
-    },
-    {
         "id": "79737e067a3af084",
         "type": "mqtt-broker",
         "name": "",
@@ -1462,7 +1383,6 @@
         "id": "0c769e6742acebb0",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "Host",
         "label": "Host",
         "tooltip": "",
@@ -1477,8 +1397,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 910,
-        "y": 880,
+        "x": 930,
+        "y": 940,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1489,7 +1409,6 @@
         "id": "a122ea34e40556e4",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "Port",
         "label": "Port",
         "tooltip": "",
@@ -1504,8 +1423,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 910,
-        "y": 920,
+        "x": 930,
+        "y": 980,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1516,7 +1435,6 @@
         "id": "ad3a558f7afdccbf",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "Username",
         "label": "Username",
         "tooltip": "",
@@ -1531,8 +1449,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 890,
-        "y": 960,
+        "x": 910,
+        "y": 1020,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1543,7 +1461,6 @@
         "id": "58d2480b2eff322c",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "Password",
         "label": "Password",
         "tooltip": "",
@@ -1558,8 +1475,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 900,
-        "y": 1000,
+        "x": 920,
+        "y": 1060,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1570,7 +1487,6 @@
         "id": "7184e0269f48110f",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "setMqttSettings",
         "func": "\n// initialise the counter to 0 if it doesn't exist already\nlet mqtt_settings = global.get('mqtt_settings') || {};\n\nmqtt_settings = Object.assign(mqtt_settings, { [msg.topic]: msg.payload })\n\nglobal.set('mqtt_settings', mqtt_settings)\n\n// msg.payload = inputSettings\n\nreturn mqtt_settings;",
         "outputs": 1,
@@ -1578,8 +1494,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1300,
-        "y": 960,
+        "x": 1320,
+        "y": 1020,
         "wires": [
             []
         ]
@@ -1588,7 +1504,6 @@
         "id": "61dda110cb9d7f8a",
         "type": "status",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "scope": [
             "9e5fe1c3fe6f0503"
@@ -1606,7 +1521,6 @@
         "id": "642df87e4871a1c4",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "setEnabledStates",
         "func": "if (msg.status.text === \"start\") {\n    msg.enabled = true\n} else if (msg.status.text === \"node-red:common.status.connecting\") {\n    msg.enabled = false\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    msg.enabled = false\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    msg.enabled = true\n}\n\n\nreturn msg;",
         "outputs": 1,
@@ -1630,7 +1544,6 @@
         "id": "6c8acdd459e657eb",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -1642,7 +1555,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1960,
+        "x": 2040,
         "y": 580,
         "wires": []
     },
@@ -1650,7 +1563,6 @@
         "id": "9e5fe1c3fe6f0503",
         "type": "mqtt in",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "topic": "",
         "qos": "2",
@@ -1672,7 +1584,6 @@
         "id": "1302f6d68dca2105",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "Set device address",
         "group": "08691a1abdc449f7",
         "order": 14,
@@ -1702,7 +1613,6 @@
         "id": "2b2d85fbc2c145a5",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "subscribe",
         "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nglobal.set('userCreds', tempUserCreds)\nlet globalTopic = tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\n\n\nlet obj = {}\nobj.payload = {}\nobj.payload.deviceAddr = \"Device address: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\n\nreturn [msg, obj]\n",
         "outputs": 2,
@@ -1711,7 +1621,7 @@
         "finalize": "",
         "libs": [],
         "x": 940,
-        "y": 780,
+        "y": 620,
         "wires": [
             [
                 "9e5fe1c3fe6f0503"
@@ -1725,7 +1635,6 @@
         "id": "32d53427bced070c",
         "type": "ui_table",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "group": "78fe50a055b65ca2",
         "name": "",
         "order": 12,
@@ -1815,7 +1724,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1970,
+        "x": 2050,
         "y": 540,
         "wires": []
     },
@@ -1823,7 +1732,6 @@
         "id": "4c30f9b315530f2a",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "property": "payload.operator",
         "propertyType": "msg",
@@ -1862,7 +1770,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 6,
-        "x": 1470,
+        "x": 1490,
         "y": 600,
         "wires": [
             [
@@ -1889,7 +1797,6 @@
         "id": "160ef0c3c55613af",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "handleEvent",
         "func": "let eventList = {\n    \"1\": \"Access denied: Antipassback violation\",\n    \"2\": \"Access denied: A second cardholder is required\",\n    \"3\": \"Access denied: Denied by access rule\",\n    \"4\": \"Access denied: Max occupancy reached\",\n    \"5\": \"Access denied: Expired credential\",\n    \"6\": \"Access denied: First-person-in rule supervisor absent\",\n    \"7\": \"Access denied: Inactive cardholder\",\n    \"8\": \"Access denied: Interlock\",\n    \"9\": \"Access denied: Invalid PIN\",\n    \"10\": \"Access denied: Invalid RFID\",\n    \"11\": \"Access denied: Invalid BT PHONE\",\n    \"12\": \"Access denied: Invalid LINKEY\",\n    \"13\": \"Access denied: Invalid VIKEY\",\n    \"14\": \"Access denied: Lost credential\",\n    \"15\": \"Access denied: Stolen credential\",\n    \"16\": \"Access denied: Unknown credential\",\n    \"17\": \"Access denied: Out of schedule\",\n    \"18\": \"Antipassback violation\",\n    \"19\": \"Antipassback violation forgiven\",\n    \"20\": \"Access denied: Double credential requred \",\n    \"21\": \"Access denied: Double credential timeout\",\n    \"22\": \"Entry assumed\",\n    \"23\": \"Entry detected\",\n    \"24\": \"Access granted\",\n    \"25\": \"Entry\",\n    \"26\": \"Exit\",\n\n\n    \"116\": \"Door closed\",\n    \"117\": \"Door opened\",\n    \"118\": \"Door forced open\",\n    \"119\": \"Door open too long\",\n    \"120\": \"Request to exit\",\n    \"121\": \"Door manually unlocked\",\n    \"122\": \"Door manually locked\",\n    \"123\": \"Door manually Scheduled mode\",\n    \"124\": \"Door locked\",\n    \"125\": \"Door unlocked\"\n}\n\n\n\nfunction constructOutput(key) {\n    return key + \": \" + eventList[key]\n}\n\nfunction getFormattedTime(unixTime) {\n    let months = [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"];\n    let days = [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"];\n    let d = new Date(unixTime * 1000);\n    let day = days[d.getDay()];\n    let hr = d.getHours();\n    let min = d.getMinutes();\n    if (min < 10) {\n        min = \"0\" + min;\n    }\n    let ampm = \"am\";\n    if (hr > 12) {\n        hr -= 12;\n        ampm = \"pm\";\n    }\n    let date = d.getDate();\n    let month = months[d.getMonth()];\n    let year = d.getFullYear();\n    return day + \" \" + hr + \":\" + min + ampm + \" \" + date + \" \" + month + \" \" + year;\n}\n\n\nlet eventInfoWrapper = {}\nlet eventInfo = {}\n\neventInfo = msg.payload.info\neventInfo.Event_id = constructOutput(eventInfo.Event_id)\neventInfo.time = getFormattedTime(eventInfo.time)\n\neventInfoWrapper.payload = {}\neventInfoWrapper.payload.command = \"addData\"\neventInfoWrapper.payload.arguments = [eventInfo, true]\n\nreturn eventInfoWrapper;",
         "outputs": 1,
@@ -1897,7 +1804,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1650,
+        "x": 1710,
         "y": 540,
         "wires": [
             [
@@ -1909,7 +1816,6 @@
         "id": "95c8a2503541cab9",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "handleSetAccessMode-Ack",
         "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\n\nif (messageId === msg.payload.message_id) {\n\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
@@ -1917,7 +1823,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1700,
+        "x": 1760,
         "y": 580,
         "wires": [
             [
@@ -1929,7 +1835,6 @@
         "id": "6ad93d3e94e2fe69",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "group": "61a80ff8ccd60942",
         "name": "Device address",
         "order": 1,
@@ -1941,8 +1846,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1140,
-        "y": 800,
+        "x": 1120,
+        "y": 660,
         "wires": [
             []
         ]
@@ -1951,7 +1856,6 @@
         "id": "5c0f4a3dd94ecbbf",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "Connect to MQTT",
         "group": "08691a1abdc449f7",
         "order": 6,
@@ -1981,7 +1885,6 @@
         "id": "1f7ea9be7c722e68",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "handleMqttBroker",
         "func": "let mqttSettings = global.get('mqtt_settings')\n\nif (msg.payload.action === \"connect\"){\n    msg.action = \"connect\"\n    msg.broker = {\n        broker: mqttSettings.host,\n        port: mqttSettings.port,\n        username: mqttSettings.username,\n        password: mqttSettings.password\n    }\n} else if (msg.payload.action === \"disconnect\"){\n    msg.action = \"disconnect\"\n    console.log(\"disconnect\")\n}\n\n\n\nreturn msg;",
         "outputs": 1,
@@ -2001,7 +1904,6 @@
         "id": "d81bab586132c7e4",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "Stop connection",
         "group": "08691a1abdc449f7",
         "order": 8,
@@ -2030,7 +1932,6 @@
         "id": "881c61e409196bd8",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "handleSingle_pass-Ack",
         "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
@@ -2038,7 +1939,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
+        "x": 1750,
         "y": 620,
         "wires": [
             [
@@ -2050,7 +1951,6 @@
         "id": "84cef9c2bb45ee64",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "buildStatusMessage",
         "func": "let mqttSettings = global.get('mqtt_settings')\nlet message = {}\nmessage.payload = {}\n\nif (msg.status.text === \"node-red:common.status.connecting\") {\n    message.payload.connectionStatus = \"MQTT: Connecting...\"\n    msg.payload = \"Connecting to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    message.payload.connectionStatus = \"MQTT: Connected to \" + mqttSettings.broker + \":\" + mqttSettings.port\n    msg.payload = \"Connected to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    message.payload.connectionStatus = \"MQTT: Connection OFF\"\n    msg.payload = \"Mqtt disconnected\"\n}\n\nreturn [message, msg]\n\n",
         "outputs": 2,
@@ -2073,7 +1973,6 @@
         "id": "2f28a02598ca6e15",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -2093,7 +1992,6 @@
         "id": "6cc4dd7e4806e9e6",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "group": "61a80ff8ccd60942",
         "name": "Mqtt status",
         "order": 2,
@@ -2115,7 +2013,6 @@
         "id": "8fecdfbd30a2545b",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "group": "08691a1abdc449f7",
         "name": "Connection options",
         "order": 1,
@@ -3216,7 +3113,6 @@
         "id": "aad987ee2a0c4f2c",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "handleSetCtpDoor-Ack",
         "func": "let messageId = global.get(\"messageId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}\n\n",
         "outputs": 1,
@@ -3224,7 +3120,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1680,
+        "x": 1740,
         "y": 700,
         "wires": [
             [
@@ -3236,7 +3132,6 @@
         "id": "d969e40c2e543dae",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "property": "result",
         "propertyType": "msg",
@@ -3255,7 +3150,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1930,
+        "x": 2010,
         "y": 840,
         "wires": [
             [
@@ -3270,7 +3165,6 @@
         "id": "a902fb928a850e75",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "setReader1",
         "func": "\nlet userCreds = global.get('userCreds');\nlet device_set_idxs = global.get('device_set_idxs');\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info = global.get('rd_0_set');\n\nmsgWrapper.info.Rd_idx = device_set_idxs.Rd0_idx\nmsgWrapper.info.Control_point_idx = device_set_idxs.Control_point_idx\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId_rd_0', msgWrapper.message_id)\n\nreturn msg",
         "outputs": 1,
@@ -3278,7 +3172,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2150,
+        "x": 2230,
         "y": 840,
         "wires": [
             [
@@ -4164,7 +4058,6 @@
         "id": "b34c7c3825b2f296",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -4176,7 +4069,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2140,
+        "x": 2220,
         "y": 800,
         "wires": []
     },
@@ -4201,7 +4094,6 @@
         "id": "62276b0a5748fef9",
         "type": "mqtt out",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "topic": "",
         "qos": "0",
@@ -4212,7 +4104,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2350,
+        "x": 2430,
         "y": 900,
         "wires": []
     },
@@ -4220,7 +4112,6 @@
         "id": "2c9973e0b952c269",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "handleSetRd-Ack",
         "func": "let messageId_rd_0 = global.get(\"messageId_rd_0\")\nlet messageId_rd_1 = global.get(\"messageId_rd_1\")\n\n\n\nlet ackInfo_rd_0 = {}\nlet ackInfo_rd_1 = {}\n\nif (messageId_rd_0 === msg.payload.message_id) {\n\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_0.result = \"success\"\n        ackInfo_rd_0.payload = \"Done\"\n    } else {\n        ackInfo_rd_0.result = \"error\"\n        ackInfo_rd_0.payload = \"error\"\n    }\n} else if (messageId_rd_1 === msg.payload.message_id){\n\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_1.result = \"success\"\n        ackInfo_rd_1.payload = \"Done\"\n    } else {\n        ackInfo_rd_1.result = \"error\"\n        ackInfo_rd_1.payload = \"error\"\n    }\n}\n\nreturn [ackInfo_rd_0, ackInfo_rd_1]\n\n",
         "outputs": 2,
@@ -4228,7 +4119,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1670,
+        "x": 1730,
         "y": 740,
         "wires": [
             [
@@ -4243,7 +4134,6 @@
         "id": "e063be51f1201adf",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "property": "result",
         "propertyType": "msg",
@@ -4262,7 +4152,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1930,
+        "x": 2010,
         "y": 880,
         "wires": [
             [
@@ -4277,7 +4167,6 @@
         "id": "2027404e36d47db4",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "setReader2",
         "func": "let device_set_idxs = global.get('device_set_idxs');\n\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info = global.get('rd_1_set');\n\nmsgWrapper.info.Rd_idx = device_set_idxs.Rd1_idx\nmsgWrapper.info.Control_point_idx = device_set_idxs.Control_point_idx\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId_rd_1', msgWrapper.message_id)\n\nreturn msg",
         "outputs": 1,
@@ -4285,7 +4174,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2150,
+        "x": 2230,
         "y": 920,
         "wires": [
             [
@@ -4297,7 +4186,6 @@
         "id": "7416ec0179370582",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -4309,7 +4197,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2140,
+        "x": 2220,
         "y": 880,
         "wires": []
     },
@@ -4317,7 +4205,6 @@
         "id": "86a634f89955d0c9",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "property": "result",
         "propertyType": "msg",
@@ -4336,7 +4223,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1930,
+        "x": 2010,
         "y": 980,
         "wires": [
             [
@@ -4351,7 +4238,6 @@
         "id": "03ca1b1fdfc39f2d",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -4363,7 +4249,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2140,
+        "x": 2220,
         "y": 960,
         "wires": []
     },
@@ -4371,7 +4257,6 @@
         "id": "fdf6aa2ba915be6d",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "setTimezone",
         "func": "let userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetDateTime\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info = global.get('time_settings');\n\nmsgWrapper.info.DateTime = Date.now()\nmsgWrapper.info.GMT = 7200\nmsgWrapper.info.NTP1 = \"pool.ntp.org\"\nmsgWrapper.info.NTP2 = \"pool2.ntp.org:123\"\nmsgWrapper.info.DST_Shift = 3600\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
         "outputs": 1,
@@ -4379,7 +4264,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2150,
+        "x": 2230,
         "y": 1000,
         "wires": [
             [
@@ -4410,7 +4295,6 @@
         "id": "28a1c7a16938fbb3",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "Divice id",
         "label": "Divice id",
         "tooltip": "",
@@ -4425,8 +4309,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 1240,
-        "y": 1080,
+        "x": 1080,
+        "y": 1180,
         "wires": [
             [
                 "33c8b93809af5d71"
@@ -4437,16 +4321,15 @@
         "id": "33c8b93809af5d71",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
-        "name": "setUserCreds",
+        "name": "setDeviceLocalion",
         "func": "let tempUserCreds = global.get('tempUserCreds') || {};\n\ntempUserCreds = Object.assign(tempUserCreds, { [msg.topic]: msg.payload })\nglobal.set('tempUserCreds', tempUserCreds)\n\nlet obj = {}\nobj.payload = tempUserCreds\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1500,
-        "y": 1080,
+        "x": 1350,
+        "y": 1180,
         "wires": [
             []
         ]
@@ -4455,7 +4338,6 @@
         "id": "c3a71011f5973516",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "props": [
             {
@@ -4469,8 +4351,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 890,
-        "y": 840,
+        "x": 950,
+        "y": 680,
         "wires": [
             [
                 "6ad93d3e94e2fe69"
@@ -4481,7 +4363,6 @@
         "id": "583517f12510f63c",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "props": [
             {
@@ -4507,7 +4388,6 @@
         "id": "4eec54e042c9d037",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "handleSetDateTime-Ack",
         "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
@@ -4515,7 +4395,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1690,
+        "x": 1750,
         "y": 660,
         "wires": [
             [
@@ -4663,7 +4543,6 @@
         "id": "3880a03920b6f99c",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "Location",
         "label": "Location",
         "tooltip": "",
@@ -4678,8 +4557,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 1240,
-        "y": 1040,
+        "x": 1080,
+        "y": 1140,
         "wires": [
             [
                 "33c8b93809af5d71"
@@ -4690,7 +4569,6 @@
         "id": "9c089a6faed821bd",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "persistMqttSettings",
         "func": "let mqttSettings = global.get('mqtt_settings')\nlet json = {}\njson.host = mqttSettings.host\njson.port = mqttSettings.port\njson.username = mqttSettings.username\njson.password = mqttSettings.password\n\nmsg.payload = json\nreturn msg",
         "outputs": 1,
@@ -4698,8 +4576,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
-        "y": 640,
+        "x": 630,
+        "y": 680,
         "wires": [
             [
                 "a854989e94536e41"
@@ -4710,7 +4588,6 @@
         "id": "a854989e94536e41",
         "type": "file",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "persistMqttSettings",
         "filename": ".lumiring/air_cr/mqtt_settings.json",
         "filenameType": "str",
@@ -4718,8 +4595,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1070,
-        "y": 640,
+        "x": 630,
+        "y": 720,
         "wires": [
             []
         ]
@@ -4728,7 +4605,6 @@
         "id": "bb1e67cbc6aec98f",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "persistDoor_settings",
         "func": "\nlet json = {}\njson.device_set_idxs = global.get('device_set_idxs')\njson.door_settings = global.get('door_settings')\njson.time_settings = global.get('time_settings')\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_2_settings = global.get('rd_1_set')\n\nmsg.payload = json\nreturn msg;\n\n",
         "outputs": 1,
@@ -4736,7 +4612,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2120,
+        "x": 2200,
         "y": 660,
         "wires": [
             [
@@ -4748,7 +4624,6 @@
         "id": "b4ff918b8b4b6bcd",
         "type": "file",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "persistDoor_settings",
         "filename": ".lumiring/air_cr/door_settings.json",
         "filenameType": "str",
@@ -4756,7 +4631,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2360,
+        "x": 2440,
         "y": 660,
         "wires": [
             []
@@ -4766,7 +4641,6 @@
         "id": "c2c2313264fe8ffb",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "property": "result",
         "propertyType": "msg",
@@ -4780,7 +4654,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1930,
+        "x": 2010,
         "y": 660,
         "wires": [
             [
@@ -4870,7 +4744,6 @@
         "id": "d5479d55326e18b2",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "props": [
             {
@@ -4888,7 +4761,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1940,
+        "x": 2020,
         "y": 740,
         "wires": [
             [
@@ -5389,7 +5262,6 @@
         "id": "afdc7c0ee76e4a47",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "function 23",
         "func": "let mqtt_settings = global.get('mqtt_settings')\nmsg.payload = mqtt_settings.host\nreturn msg\n",
         "outputs": 1,
@@ -5397,8 +5269,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 880,
+        "x": 670,
+        "y": 940,
         "wires": [
             [
                 "0c769e6742acebb0"
@@ -5409,7 +5281,6 @@
         "id": "99ae61b360355f68",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "function 24",
         "func": "let mqtt_settings = global.get('mqtt_settings')\nmsg.payload = mqtt_settings.port\nreturn msg\n",
         "outputs": 1,
@@ -5417,8 +5288,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 920,
+        "x": 670,
+        "y": 980,
         "wires": [
             [
                 "a122ea34e40556e4"
@@ -5429,7 +5300,6 @@
         "id": "f74a6a22480189cc",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "function 25",
         "func": "let mqtt_settings = global.get('mqtt_settings')\nmsg.payload = mqtt_settings.username\nreturn msg",
         "outputs": 1,
@@ -5437,8 +5307,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 960,
+        "x": 670,
+        "y": 1020,
         "wires": [
             [
                 "ad3a558f7afdccbf"
@@ -5449,7 +5319,6 @@
         "id": "53da7a211480283e",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "function 26",
         "func": "let mqtt_settings = global.get('mqtt_settings')\nconsole.log(mqtt_settings)\nmsg.payload = mqtt_settings.password\nreturn msg",
         "outputs": 1,
@@ -5457,8 +5326,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 1000,
+        "x": 670,
+        "y": 1060,
         "wires": [
             [
                 "58d2480b2eff322c"
@@ -5469,7 +5338,6 @@
         "id": "4389b92844310dbf",
         "type": "complete",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "scope": [
             "8096f0b5ec80a327",
@@ -5488,7 +5356,6 @@
         "id": "a7a7b24370fc4997",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "function 27",
         "func": "msg.status = {}\nmsg.status.text = \"start\"\nreturn msg;",
         "outputs": 1,
@@ -5584,7 +5451,6 @@
         "id": "1090c7446b008215",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "persistDeviceLocation",
         "func": "let mqttSettings = global.get('userCreds')\nlet json = {}\njson.location = mqttSettings.location\njson.device_id = mqttSettings.device_id\nmsg.payload = json\nreturn msg",
         "outputs": 1,
@@ -5592,8 +5458,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
-        "y": 720,
+        "x": 640,
+        "y": 820,
         "wires": [
             [
                 "65727af8ca7694b4"
@@ -5604,7 +5470,6 @@
         "id": "65727af8ca7694b4",
         "type": "file",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "persistMqttSettings",
         "filename": ".lumiring/air_cr/device_location.json",
         "filenameType": "str",
@@ -5612,8 +5477,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 990,
-        "y": 720,
+        "x": 630,
+        "y": 860,
         "wires": [
             []
         ]
@@ -5622,15 +5487,13 @@
         "id": "be4ec194f59155d0",
         "type": "complete",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "",
         "scope": [
-            "8a94c5c1b70c9350",
             "295e536ea69e5521"
         ],
         "uncaught": false,
-        "x": 890,
-        "y": 1060,
+        "x": 730,
+        "y": 1160,
         "wires": [
             [
                 "45dadb28c9284a55",
@@ -5642,7 +5505,6 @@
         "id": "45dadb28c9284a55",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "function 30",
         "func": "let userCreds = global.get('userCreds')\nmsg.payload = userCreds.location\nreturn msg",
         "outputs": 1,
@@ -5650,8 +5512,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
-        "y": 1040,
+        "x": 910,
+        "y": 1140,
         "wires": [
             [
                 "3880a03920b6f99c"
@@ -5662,7 +5524,6 @@
         "id": "9711d2389203650e",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
         "name": "function 31",
         "func": "let userCreds = global.get('userCreds')\nmsg.payload = userCreds.device_id\nreturn msg",
         "outputs": 1,
@@ -5670,11 +5531,90 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
-        "y": 1080,
+        "x": 910,
+        "y": 1180,
         "wires": [
             [
                 "28a1c7a16938fbb3"
+            ]
+        ]
+    },
+    {
+        "id": "b292b34a273c98d4",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "523171b4c91e1d14",
+        "order": 43,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 520,
+        "y": 2640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "777fb63c679ccffe",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 32",
+        "func": "\nmsg.payload = [\"chois 1\", \"choise 2\"]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 2640,
+        "wires": [
+            [
+                "b292b34a273c98d4"
+            ]
+        ]
+    },
+    {
+        "id": "20f6b057f90346ec",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 2640,
+        "wires": [
+            [
+                "777fb63c679ccffe"
             ]
         ]
     },
