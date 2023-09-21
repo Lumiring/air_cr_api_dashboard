@@ -5435,8 +5435,7 @@
         "y": 1200,
         "wires": [
             [
-                "3c691a45025ba009",
-                "86b11ec6d774b9a9"
+                "3c691a45025ba009"
             ]
         ]
     },
@@ -5494,25 +5493,29 @@
             [
                 "b417a70c3198d0ed",
                 "3bdcb9943af21e2d",
-                "3ea8d5ce08c43c52"
+                "3ea8d5ce08c43c52",
+                "081099f2b9125117"
             ]
         ]
     },
     {
-        "id": "86b11ec6d774b9a9",
-        "type": "debug",
+        "id": "081099f2b9125117",
+        "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 1140,
-        "wires": []
+        "name": "function 6",
+        "func": "let door_settings = global.get('door_settings')\nmsg.payload = door_settings.Door_sens_opt\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1340,
+        "wires": [
+            [
+                "8d0f58b9725145dc"
+            ]
+        ]
     },
     {
         "id": "1fddf0a8d296909f",
