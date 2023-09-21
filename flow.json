@@ -5425,7 +5425,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 3",
-        "func": "let device_set_idxs = global.get('device_set_idxs')\nreturn device_set_idxs.Rd0_idx;",
+        "func": "let device_set_idxs = global.get('device_set_idxs')\nconsole.log(device_set_idxs.Rd0_idx)\nreturn device_set_idxs.Rd0_idx;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5484,8 +5484,8 @@
         "z": "692c798b6f9c61de",
         "name": "",
         "scope": [
-            "662967311ea5753e",
-            "a60e7bd06fc144ab"
+            "a60e7bd06fc144ab",
+            "662967311ea5753e"
         ],
         "uncaught": false,
         "x": 210,
