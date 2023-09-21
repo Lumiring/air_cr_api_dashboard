@@ -5445,7 +5445,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1280,
+        "x": 900,
         "y": 80,
         "wires": [
             []
@@ -5467,7 +5467,7 @@
         "y": 80,
         "wires": [
             [
-                "8dfd89f42b3c0555"
+                "7d0fe65308ebae46"
             ]
         ]
     },
@@ -5530,21 +5530,20 @@
         ]
     },
     {
-        "id": "8dfd89f42b3c0555",
-        "type": "debug",
+        "id": "7d0fe65308ebae46",
+        "type": "json",
         "z": "692c798b6f9c61de",
-        "name": "debug 8",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 960,
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 770,
         "y": 80,
-        "wires": []
+        "wires": [
+            [
+                "a60e7bd06fc144ab"
+            ]
+        ]
     },
     {
         "id": "1fddf0a8d296909f",
