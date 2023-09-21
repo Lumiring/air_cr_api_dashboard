@@ -5509,7 +5509,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 28",
-        "func": "let obj = JSON.parse(msg.payload)\n\n\nglobal.set('mqtt_settings', obj)\n\n",
+        "func": "let obj = JSON.parse(msg.payload)\n\n\nglobal.set('userCreds', obj)\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5558,25 +5558,6 @@
             [
                 "c6ff52813f3e6a3c"
             ],
-            [
-                "8a94c5c1b70c9350"
-            ]
-        ]
-    },
-    {
-        "id": "8a94c5c1b70c9350",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "name": "function 29",
-        "func": "\nglobal.set('mqtt_settings', {\n    host: \"\",\n    port: 1883,\n    username: \"\",\n    password: \"\"\n})\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 490,
-        "y": 420,
-        "wires": [
             []
         ]
     },
