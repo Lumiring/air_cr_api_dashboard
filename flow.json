@@ -5553,7 +5553,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 8",
-        "func": "let door_settings = global.get('door_settings')\nmsg.payload = door_settings.Door_sens_condition\nreturn msg",
+        "func": "let door_settings = global.get('door_settings')\nmsg.payload = door_settings.Door_sens_Condition\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
