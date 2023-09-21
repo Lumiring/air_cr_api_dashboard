@@ -5669,8 +5669,28 @@
         "x": 390,
         "y": 2600,
         "wires": [
-            []
+            [
+                "c6f8198164b0ed6e"
+            ]
         ]
+    },
+    {
+        "id": "c6f8198164b0ed6e",
+        "type": "mqtt out",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "79737e067a3af084",
+        "x": 610,
+        "y": 2600,
+        "wires": []
     },
     {
         "id": "1fddf0a8d296909f",
