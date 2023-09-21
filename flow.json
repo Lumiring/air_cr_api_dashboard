@@ -4862,7 +4862,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 1",
-        "func": "console.log(msg.payload)\n\n\nglobal.set('door_settings', msg.payload.door_settings)\nglobal.set('device_set_idxs', msg.payload.device_set_idxs)\nglobal.set('time_settings', msg.payload.time_settings)\nglobal.set('rd_0_set', msg.payload.reader_1_settings)\nglobal.set('rd_1_set', msg.payload.reader_2_settings)\n",
+        "func": "console.log(msg.payload)\nlet obj = JSON.parse(msg.payload)\n\n\nglobal.set('door_settings', obj.door_settings)\nglobal.set('device_set_idxs', obj.device_set_idxs)\nglobal.set('time_settings', obj.time_settings)\nglobal.set('rd_0_set', obj.reader_1_settings)\nglobal.set('rd_1_set', obj.reader_2_settings)\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
