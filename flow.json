@@ -5490,7 +5490,10 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "",
-        "scope": [],
+        "scope": [
+            "8096f0b5ec80a327",
+            "e8e91cdbbb5ed6c9"
+        ],
         "uncaught": false,
         "x": 130,
         "y": 1100,
