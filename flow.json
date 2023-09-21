@@ -5447,7 +5447,7 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "function 26",
-        "func": "let mqtt_settings = global.get('mqtt_settings')\nmsg.payload = mqtt_settings.password\nreturn msg",
+        "func": "let mqtt_settings = global.get('mqtt_settings')\nconsole.log(mqtt_settings)\nmsg.payload = mqtt_settings.password\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
