@@ -5509,7 +5509,7 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "function 27",
-        "func": "msg.status.text = \"start\"\nreturn msg;",
+        "func": "msg.status = {}\nmsg.status.text = \"start\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
