@@ -5575,7 +5575,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 32",
-        "func": "\nmsg.payload = [\"chois 1\", \"choise 2\"]\n\nreturn msg;",
+        "func": "\nmsg.payload = [\"Choice 1\", \"Choice 2\", { \"Choice 3\": \"3\" }]\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
