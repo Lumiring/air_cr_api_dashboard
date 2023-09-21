@@ -5440,18 +5440,16 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 1",
-        "func": "//console.log(JSON.parse(msg.payload))\n\n\n\n\n\n\n// json.device_set_idxs = global.get('device_set_idxs')\n// json.door_settings = global.get('stpDoorSet')\n// json.time_settings = global.get('dTSet')\n// json.reader_1_settings = global.get('rd_0_set')\n// json.reader_2_settings = global.get('rd_1_set')\n\n\n\n\nreturn JSON.parse(msg.payload)",
+        "func": "\n\n\n\nglobal.set('stpDoorSet', msg.payload.stpDoorSet'))\nglobal.set('device_set_idxs', global.get('device_set_idxs'))\nglobal.set('dTSet', global.get('dTSet'))\nglobal.set('rd_0_set', global.get('rd_0_set'))\nglobal.set('rd_1_set', global.get('rd_1_set'))\n",
         "outputs": 1,
-        "noerr": 0,
+        "noerr": 8,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
+        "x": 880,
         "y": 80,
         "wires": [
-            [
-                "538ecde8895046a0"
-            ]
+            []
         ]
     },
     {
@@ -5470,7 +5468,7 @@
         "y": 80,
         "wires": [
             [
-                "a60e7bd06fc144ab"
+                "538ecde8895046a0"
             ]
         ]
     },
@@ -5478,14 +5476,14 @@
         "id": "90a7f4cb9c95b7d0",
         "type": "fs-access",
         "z": "692c798b6f9c61de",
-        "name": "",
+        "name": "readDoorSettings",
         "path": ".lumiring/air_cr/door_settings.json",
         "pathType": "str",
         "filename": "filename",
         "filenameType": "msg",
         "accessRead": true,
         "accessWrite": true,
-        "x": 290,
+        "x": 270,
         "y": 120,
         "wires": [
             [
@@ -5545,8 +5543,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1120,
-        "y": 80,
+        "x": 820,
+        "y": 160,
         "wires": []
     },
     {
