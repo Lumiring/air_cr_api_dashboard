@@ -4799,7 +4799,7 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "persistDoor_settings",
-        "func": "\nlet json = {}\njson.device_set_idxs = global.get('device_set_idxs')\njson.door_settings = global.get('door_settings')\njson.time_settings = global.get('dTSet')\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_2_settings = global.get('rd_1_set')\n\nmsg.payload = json\nreturn msg;\n\n",
+        "func": "\nlet json = {}\njson.device_set_idxs = global.get('device_set_idxs')\njson.door_settings = global.get('door_settings')\njson.time_settings = global.get('time_settings')\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_2_settings = global.get('rd_1_set')\n\nmsg.payload = json\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
