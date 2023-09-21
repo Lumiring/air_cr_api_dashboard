@@ -5445,7 +5445,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
+        "x": 1200,
         "y": 80,
         "wires": [
             []
@@ -5458,7 +5458,7 @@
         "name": "",
         "filename": ".lumiring/air_cr/door_settings.json",
         "filenameType": "str",
-        "format": "lines",
+        "format": "utf8",
         "chunk": false,
         "sendError": false,
         "encoding": "none",
@@ -5467,7 +5467,8 @@
         "y": 80,
         "wires": [
             [
-                "7d0fe65308ebae46"
+                "7d0fe65308ebae46",
+                "d999ff0536669a3d"
             ]
         ]
     },
@@ -5537,13 +5538,29 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 770,
+        "x": 870,
         "y": 80,
         "wires": [
             [
                 "a60e7bd06fc144ab"
             ]
         ]
+    },
+    {
+        "id": "d999ff0536669a3d",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 140,
+        "wires": []
     },
     {
         "id": "1fddf0a8d296909f",
