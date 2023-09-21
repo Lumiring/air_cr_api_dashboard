@@ -182,7 +182,10 @@
             "4389b92844310dbf",
             "a7a7b24370fc4997",
             "1090c7446b008215",
-            "65727af8ca7694b4"
+            "65727af8ca7694b4",
+            "be4ec194f59155d0",
+            "45dadb28c9284a55",
+            "9711d2389203650e"
         ],
         "x": 34,
         "y": 499,
@@ -4675,8 +4678,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 1200,
-        "y": 1020,
+        "x": 1240,
+        "y": 1040,
         "wires": [
             [
                 "33c8b93809af5d71"
@@ -5632,6 +5635,66 @@
         "y": 720,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "be4ec194f59155d0",
+        "type": "complete",
+        "z": "692c798b6f9c61de",
+        "g": "497324ccb7313edb",
+        "name": "",
+        "scope": [
+            "8a94c5c1b70c9350",
+            "295e536ea69e5521"
+        ],
+        "uncaught": false,
+        "x": 890,
+        "y": 1060,
+        "wires": [
+            [
+                "45dadb28c9284a55",
+                "9711d2389203650e"
+            ]
+        ]
+    },
+    {
+        "id": "45dadb28c9284a55",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "497324ccb7313edb",
+        "name": "function 30",
+        "func": "let userCreds = global.get('userCreds')\nmsg.payload = userCreds.location\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 1040,
+        "wires": [
+            [
+                "3880a03920b6f99c"
+            ]
+        ]
+    },
+    {
+        "id": "9711d2389203650e",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "g": "497324ccb7313edb",
+        "name": "function 31",
+        "func": "let userCreds = global.get('userCreds')\nmsg.payload = userCreds.device_id\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 1080,
+        "wires": [
+            [
+                "28a1c7a16938fbb3"
+            ]
         ]
     },
     {
