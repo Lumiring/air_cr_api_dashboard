@@ -5427,7 +5427,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 3",
-        "func": "let device_set_idxs = global.get('device_set_idxs')\n\nconsole.log(device_set_idxs.Rd0_idx)\n\nreturn device_set_idxs.Rd0_idx;",
+        "func": "let device_set_idxs = global.get('device_set_idxs')\n\nconsole.log(device_set_idxs.Rd0_idx)\n\n//return device_set_idxs.Rd0_idx;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
