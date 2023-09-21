@@ -5602,7 +5602,7 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "persistDeviceLocation",
-        "func": "let mqttSettings = global.get('userCreds')\nlet json = {}\njson.host = mqttSettings.location\njson.port = mqttSettings.device_id\nmsg.payload = json\nreturn msg",
+        "func": "let mqttSettings = global.get('userCreds')\nlet json = {}\njson.location = mqttSettings.location\njson.device_id = mqttSettings.device_id\nmsg.payload = json\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
