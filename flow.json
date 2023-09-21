@@ -5439,7 +5439,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 1",
-        "func": "\n\n\n\n\n\n\njson.device_set_idxs = global.get('device_set_idxs')\njson.door_settings = global.get('stpDoorSet')\njson.time_settings = global.get('dTSet')\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_2_settings = global.get('rd_1_set')\n\n\n\n\nreturn JSON.parse(msg.payload)",
+        "func": "console.log(JSON.parse(msg.payload))\n\n\n\n\n\n\njson.device_set_idxs = global.get('device_set_idxs')\njson.door_settings = global.get('stpDoorSet')\njson.time_settings = global.get('dTSet')\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_2_settings = global.get('rd_1_set')\n\n\n\n\nreturn JSON.parse(msg.payload)",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
