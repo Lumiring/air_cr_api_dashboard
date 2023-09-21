@@ -5660,7 +5660,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 33",
-        "func": "let device_set_idxs = global.get('device_set_idxs')\n\n\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetSdlDaily\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\nmsgWrapper.info = global.get('schedule')\ndelete msgWrapper.info.name\nmsgWrapper.info.TmStart /= 1000\nmsgWrapper.info.TmEnd /= 1000\nmsgWrapper.info.Shedule_id = Math.floor(Math.random() * 1692797271182).toString()\nmsgWrapper.info.Ctp_idx = device_set_idxs.Control_point_idx\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "func": "let device_set_idxs = global.get('device_set_idxs')\n\n\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetSdlDaily\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\nmsgWrapper.info = RED.util.cloneMessage(global.get('schedule'))\ndelete msgWrapper.info.name\nmsgWrapper.info.Shedule_id = Math.floor(Math.random() * 1692797271182).toString()\nmsgWrapper.info.Ctp_idx = device_set_idxs.Control_point_idx\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
