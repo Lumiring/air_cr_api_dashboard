@@ -41,7 +41,7 @@
             "dfbd635c1022b71c",
             "c5f7a3022f0a71d4"
         ],
-        "x": 2074,
+        "x": 2954,
         "y": 1059,
         "w": 632,
         "h": 442
@@ -72,7 +72,7 @@
             "e765f3e65a86622c",
             "aab5cc2445afa1e9"
         ],
-        "x": 1114,
+        "x": 1994,
         "y": 1479,
         "w": 932,
         "h": 402
@@ -108,7 +108,7 @@
             "e88a08b7fd7c4345",
             "e5a3acd7c9ec31f5"
         ],
-        "x": 1114,
+        "x": 1994,
         "y": 1059,
         "w": 932,
         "h": 402
@@ -183,70 +183,6 @@
         "y": 219,
         "w": 2432,
         "h": 782
-    },
-    {
-        "id": "546743cc2e3aa106",
-        "type": "group",
-        "z": "692c798b6f9c61de",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "a607e57b9c8d8cdd",
-            "84d7a118ddd9842f",
-            "5876e97090ffded2",
-            "4a42fef97bd379c2",
-            "297191ec56ab0272",
-            "d8697b4c53aa26a1",
-            "d0c523e32a8ea14f",
-            "1dc6ecb687b4c702",
-            "4d74c64a6d551fbf",
-            "c195fb1af7d90e90",
-            "3c691a45025ba009",
-            "fac062210ac59294",
-            "8d0f58b9725145dc",
-            "c92d749c3d3c71a5",
-            "061aecc325f2ccf3",
-            "963ed93528cda57e",
-            "d3a133d00b340e1b",
-            "b2474e59834ac54b",
-            "5eeae1b2e2b3c814",
-            "bff2a475aa26be41",
-            "00ecd6dbee19221f",
-            "84b05a9496fc7da5",
-            "9511360cabc09665",
-            "ca47d465a6b99a63",
-            "9d19323eaf34876e",
-            "1ae3d7c290a17078",
-            "e4e36f0ec9287fcb",
-            "3984a6135d0cec25",
-            "b083bea11642642c",
-            "86ed6e6d340e0de2",
-            "1decd6fb7be79a57",
-            "ddab9916254d4a0e",
-            "ebf4caecba2c3b0f",
-            "5dae369f8feb1f2b",
-            "b21a19bb0acbfa9c",
-            "b60a07a5f5df2db6",
-            "c8960adebc938996",
-            "341cca91a1fdb94a",
-            "2f40703481bf226e",
-            "daca0544dd019614",
-            "5c869c44f8db9da9",
-            "798940211a98a110",
-            "9f6a6ff3f354674f",
-            "2d9c52e0ebe5b253"
-        ],
-        "x": -6,
-        "y": 1059,
-        "w": 1092,
-        "h": 1022
     },
     {
         "id": "79737e067a3af084",
@@ -1236,7 +1172,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 2180,
+        "x": 3060,
         "y": 1200,
         "wires": [
             [
@@ -1265,7 +1201,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 2160,
+        "x": 3040,
         "y": 1260,
         "wires": [
             [
@@ -1294,7 +1230,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 2170,
+        "x": 3050,
         "y": 1320,
         "wires": [
             [
@@ -1314,7 +1250,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2430,
+        "x": 3310,
         "y": 1260,
         "wires": [
             [
@@ -1337,7 +1273,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2630,
+        "x": 3510,
         "y": 1320,
         "wires": []
     },
@@ -1360,7 +1296,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 2190,
+        "x": 3070,
         "y": 1140,
         "wires": [
             [
@@ -1380,7 +1316,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2440,
+        "x": 3320,
         "y": 1140,
         "wires": [
             []
@@ -1407,7 +1343,7 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 2170,
+        "x": 3050,
         "y": 1400,
         "wires": [
             [
@@ -1436,7 +1372,7 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 2170,
+        "x": 3050,
         "y": 1460,
         "wires": [
             [
@@ -1456,7 +1392,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2410,
+        "x": 3290,
         "y": 1400,
         "wires": [
             [
@@ -1508,7 +1444,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2170,
+        "x": 3050,
         "y": 1100,
         "wires": [
             []
@@ -2199,7 +2135,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2290,
+        "x": 3170,
         "y": 1680,
         "wires": [
             [
@@ -2227,7 +2163,7 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 2200,
+        "x": 3080,
         "y": 1560,
         "wires": [
             [
@@ -2249,7 +2185,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2510,
+        "x": 3390,
         "y": 1580,
         "wires": []
     },
@@ -2273,7 +2209,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1620,
+        "x": 2500,
         "y": 1560,
         "wires": [
             []
@@ -2299,7 +2235,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1560,
+        "x": 2440,
         "y": 1600,
         "wires": [
             []
@@ -2336,7 +2272,7 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1570,
+        "x": 2450,
         "y": 1680,
         "wires": [
             [
@@ -2375,7 +2311,7 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1530,
+        "x": 2410,
         "y": 1720,
         "wires": [
             [
@@ -2414,7 +2350,7 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1650,
+        "x": 2530,
         "y": 1760,
         "wires": [
             [
@@ -2478,7 +2414,7 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1690,
+        "x": 2570,
         "y": 1800,
         "wires": [
             [
@@ -2498,7 +2434,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1960,
+        "x": 2840,
         "y": 1700,
         "wires": [
             []
@@ -2520,7 +2456,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1650,
+        "x": 2530,
         "y": 1520,
         "wires": [
             []
@@ -2549,7 +2485,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 1370,
+        "x": 2250,
         "y": 1640,
         "wires": [
             [
@@ -2583,7 +2519,7 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1570,
+        "x": 2450,
         "y": 1640,
         "wires": [
             [
@@ -2609,7 +2545,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1370,
+        "x": 2250,
         "y": 1680,
         "wires": [
             [
@@ -2635,7 +2571,7 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 1230,
+        "x": 2110,
         "y": 1720,
         "wires": [
             [
@@ -2661,7 +2597,7 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 1230,
+        "x": 2110,
         "y": 1760,
         "wires": [
             [
@@ -2687,7 +2623,7 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 1230,
+        "x": 2110,
         "y": 1800,
         "wires": [
             [
@@ -2713,7 +2649,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1210,
+        "x": 2090,
         "y": 1840,
         "wires": [
             [
@@ -2752,7 +2688,7 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1480,
+        "x": 2360,
         "y": 1840,
         "wires": [
             [
@@ -2780,7 +2716,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1620,
+        "x": 2500,
         "y": 1140,
         "wires": [
             []
@@ -2806,7 +2742,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 1560,
+        "x": 2440,
         "y": 1180,
         "wires": [
             []
@@ -2843,7 +2779,7 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1570,
+        "x": 2450,
         "y": 1260,
         "wires": [
             [
@@ -2882,7 +2818,7 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1530,
+        "x": 2410,
         "y": 1300,
         "wires": [
             [
@@ -2921,7 +2857,7 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1590,
+        "x": 2470,
         "y": 1340,
         "wires": [
             [
@@ -2985,7 +2921,7 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1530,
+        "x": 2410,
         "y": 1380,
         "wires": [
             [
@@ -3005,7 +2941,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1960,
+        "x": 2840,
         "y": 1280,
         "wires": [
             []
@@ -3027,7 +2963,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1650,
+        "x": 2530,
         "y": 1100,
         "wires": [
             []
@@ -3056,7 +2992,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 1370,
+        "x": 2250,
         "y": 1220,
         "wires": [
             [
@@ -3090,7 +3026,7 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1570,
+        "x": 2450,
         "y": 1220,
         "wires": [
             [
@@ -3116,7 +3052,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1370,
+        "x": 2250,
         "y": 1260,
         "wires": [
             [
@@ -3142,7 +3078,7 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 1230,
+        "x": 2110,
         "y": 1300,
         "wires": [
             [
@@ -3168,7 +3104,7 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 1230,
+        "x": 2110,
         "y": 1340,
         "wires": [
             [
@@ -3194,7 +3130,7 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 1230,
+        "x": 2110,
         "y": 1380,
         "wires": [
             [
@@ -3220,7 +3156,7 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 1210,
+        "x": 2090,
         "y": 1420,
         "wires": [
             [
@@ -3259,7 +3195,7 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1500,
+        "x": 2380,
         "y": 1420,
         "wires": [
             [
@@ -3423,15 +3359,14 @@
         "id": "a607e57b9c8d8cdd",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "SetCtpDoor",
-        "func": "let stpDoorSet = global.get('stpDoorSet') || {};\nstpDoorSet = Object.assign(stpDoorSet, {[msg.topic]:msg.payload})\nglobal.set('stpDoorSet', stpDoorSet)\n\n",
+        "func": "let door_settings = global.get('door_settings') || {};\ndoor_settings = Object.assign(door_settings, {[msg.topic]:msg.payload})\nglobal.set('door_settings', door_settings)\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
+        "x": 1130,
         "y": 1520,
         "wires": [
             []
@@ -3441,7 +3376,6 @@
         "id": "84d7a118ddd9842f",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Door sensor condition (Door_sens_Condition)",
         "label": "Door sensor condition (Door_sens_Condition)",
         "tooltip": "",
@@ -3468,7 +3402,7 @@
         "topic": "Door_sens_Condition",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 400,
+        "x": 660,
         "y": 1420,
         "wires": [
             [
@@ -3480,7 +3414,6 @@
         "id": "5876e97090ffded2",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Control point index (Control_point_idx)",
         "label": "Control point index (Control_point_idx):",
         "tooltip": "",
@@ -3495,7 +3428,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 390,
+        "x": 770,
         "y": 1280,
         "wires": [
             [
@@ -3507,7 +3440,6 @@
         "id": "4a42fef97bd379c2",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Door lock mode (Door_Lock_mode)",
         "label": "Door lock mode (Door_Lock_mode)",
         "tooltip": "",
@@ -3534,7 +3466,7 @@
         "topic": "Door_Lock_mode",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 400,
+        "x": 660,
         "y": 1660,
         "wires": [
             [
@@ -3546,7 +3478,6 @@
         "id": "297191ec56ab0272",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Door lock type (Door_Lock_type)",
         "label": "Door lock type (Door_Lock_type)",
         "tooltip": "",
@@ -3573,7 +3504,7 @@
         "topic": "Door_Lock_type",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 400,
+        "x": 660,
         "y": 1700,
         "wires": [
             [
@@ -3585,7 +3516,6 @@
         "id": "d8697b4c53aa26a1",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Impulse duration (sec) (Door_Lock_puls)",
         "label": "Impulse duration (sec) (Door_Lock_puls):",
         "tooltip": "",
@@ -3600,7 +3530,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 380,
+        "x": 640,
         "y": 1740,
         "wires": [
             [
@@ -3612,7 +3542,6 @@
         "id": "d0c523e32a8ea14f",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Hold duration, sec (Door_Delay)",
         "label": "Hold duration, sec (Door_Delay):",
         "tooltip": "",
@@ -3627,7 +3556,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 410,
+        "x": 670,
         "y": 1800,
         "wires": [
             [
@@ -3639,7 +3568,6 @@
         "id": "1dc6ecb687b4c702",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Button condition (Button_rex_Condition)",
         "label": "Button condition (Button_rex_Condition)",
         "tooltip": "",
@@ -3666,7 +3594,7 @@
         "topic": "Button_rex_Condition",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 380,
+        "x": 680,
         "y": 1540,
         "wires": [
             [
@@ -3678,7 +3606,6 @@
         "id": "4d74c64a6d551fbf",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Reader 2 index (Rd1_idx)",
         "label": "Reader 2 index (Rd1_idx):",
         "tooltip": "",
@@ -3693,7 +3620,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 430,
+        "x": 810,
         "y": 1240,
         "wires": [
             [
@@ -3705,7 +3632,6 @@
         "id": "c195fb1af7d90e90",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "group": "91a9ce4bbf4bb377",
         "name": "CP Settings label",
         "order": 1,
@@ -3717,7 +3643,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 930,
+        "x": 1190,
         "y": 1100,
         "wires": [
             []
@@ -3727,7 +3653,6 @@
         "id": "3c691a45025ba009",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Reader 1 index (Rd0_idx)",
         "label": "Reader 1 index (Rd0_idx):",
         "tooltip": "",
@@ -3742,7 +3667,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 430,
+        "x": 810,
         "y": 1200,
         "wires": [
             [
@@ -3754,7 +3679,6 @@
         "id": "fac062210ac59294",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -3773,19 +3697,16 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 150,
+        "x": 90,
         "y": 1340,
         "wires": [
-            [
-                "8d0f58b9725145dc"
-            ]
+            []
         ]
     },
     {
         "id": "8d0f58b9725145dc",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Door Sensor Input Location (Door_sens_opt)",
         "label": "Door sensor input location (Door_sens_opt)",
         "tooltip": "",
@@ -3807,7 +3728,7 @@
         "topic": "Door_sens_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 410,
+        "x": 670,
         "y": 1340,
         "wires": [
             [
@@ -3819,7 +3740,6 @@
         "id": "c92d749c3d3c71a5",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -3833,19 +3753,16 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 130,
+        "x": 110,
         "y": 1380,
         "wires": [
-            [
-                "061aecc325f2ccf3"
-            ]
+            []
         ]
     },
     {
         "id": "061aecc325f2ccf3",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Input index for door sensor (Door_sens_idx)",
         "label": "Input index for door sensor (Door_sens_idx)",
         "tooltip": "",
@@ -3872,7 +3789,7 @@
         "topic": "Door_sens_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 410,
+        "x": 670,
         "y": 1380,
         "wires": [
             [
@@ -3884,7 +3801,6 @@
         "id": "963ed93528cda57e",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -3898,19 +3814,16 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 110,
+        "x": 90,
         "y": 1420,
         "wires": [
-            [
-                "84d7a118ddd9842f"
-            ]
+            []
         ]
     },
     {
         "id": "d3a133d00b340e1b",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -3929,19 +3842,16 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 110,
+        "x": 90,
         "y": 1460,
         "wires": [
-            [
-                "b21a19bb0acbfa9c"
-            ]
+            []
         ]
     },
     {
         "id": "b2474e59834ac54b",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Input index for exit button (Button_rex_idx)",
         "label": "Input index for exit button (Button_rex_idx)",
         "tooltip": "",
@@ -3968,7 +3878,7 @@
         "topic": "Button_rex_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 410,
+        "x": 670,
         "y": 1500,
         "wires": [
             [
@@ -3980,7 +3890,29 @@
         "id": "5eeae1b2e2b3c814",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 90,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bff2a475aa26be41",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
         "name": "",
         "props": [
             {
@@ -3995,44 +3927,15 @@
         "payload": "1",
         "payloadType": "num",
         "x": 110,
-        "y": 1500,
-        "wires": [
-            [
-                "b2474e59834ac54b"
-            ]
-        ]
-    },
-    {
-        "id": "bff2a475aa26be41",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 130,
         "y": 1540,
         "wires": [
-            [
-                "1dc6ecb687b4c702"
-            ]
+            []
         ]
     },
     {
         "id": "00ecd6dbee19221f",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Lock relay location (Lock_Relay_opt)",
         "label": "Lock relay location (Lock_Relay_opt)",
         "tooltip": "",
@@ -4054,7 +3957,7 @@
         "topic": "Lock_Relay_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 390,
+        "x": 650,
         "y": 1580,
         "wires": [
             [
@@ -4066,7 +3969,6 @@
         "id": "84b05a9496fc7da5",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4085,19 +3987,16 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 130,
+        "x": 110,
         "y": 1580,
         "wires": [
-            [
-                "00ecd6dbee19221f"
-            ]
+            []
         ]
     },
     {
         "id": "9511360cabc09665",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Lock relay index (Lock_Relay_idx)",
         "label": "Lock relay index (Lock_Relay_idx)",
         "tooltip": "",
@@ -4119,7 +4018,7 @@
         "topic": "Lock_Relay_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 400,
+        "x": 660,
         "y": 1620,
         "wires": [
             [
@@ -4131,7 +4030,6 @@
         "id": "ca47d465a6b99a63",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4150,19 +4048,16 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 130,
+        "x": 110,
         "y": 1620,
         "wires": [
-            [
-                "9511360cabc09665"
-            ]
+            []
         ]
     },
     {
         "id": "9d19323eaf34876e",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4176,19 +4071,16 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 130,
+        "x": 110,
         "y": 1660,
         "wires": [
-            [
-                "4a42fef97bd379c2"
-            ]
+            []
         ]
     },
     {
         "id": "1ae3d7c290a17078",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4202,19 +4094,16 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 130,
+        "x": 110,
         "y": 1700,
         "wires": [
-            [
-                "297191ec56ab0272"
-            ]
+            []
         ]
     },
     {
         "id": "e4e36f0ec9287fcb",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4228,19 +4117,16 @@
         "topic": "",
         "payload": "0.2",
         "payloadType": "num",
-        "x": 130,
+        "x": 110,
         "y": 1740,
         "wires": [
-            [
-                "d8697b4c53aa26a1"
-            ]
+            []
         ]
     },
     {
         "id": "3984a6135d0cec25",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4254,19 +4140,16 @@
         "topic": "",
         "payload": "5",
         "payloadType": "num",
-        "x": 130,
+        "x": 110,
         "y": 1800,
         "wires": [
-            [
-                "d0c523e32a8ea14f"
-            ]
+            []
         ]
     },
     {
         "id": "b083bea11642642c",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Autolock (Door_Sens_Autolock)",
         "label": "Autolock (Door_Sens_Autolock)",
         "tooltip": "",
@@ -4293,7 +4176,7 @@
         "topic": "Door_Sens_Autolock",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 410,
+        "x": 670,
         "y": 1840,
         "wires": [
             [
@@ -4305,7 +4188,6 @@
         "id": "86ed6e6d340e0de2",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4319,19 +4201,16 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 130,
+        "x": 110,
         "y": 1840,
         "wires": [
-            [
-                "b083bea11642642c"
-            ]
+            []
         ]
     },
     {
         "id": "1decd6fb7be79a57",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Timezone (tz)",
         "label": "Timezone (tz)",
         "tooltip": "",
@@ -4493,7 +4372,7 @@
         "topic": "tz",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 420,
+        "x": 680,
         "y": 2040,
         "wires": [
             [
@@ -4505,15 +4384,14 @@
         "id": "ddab9916254d4a0e",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "setDT",
-        "func": "let dTSet = global.get('dTSet') || {};\ndTSet = Object.assign(dTSet, { [msg.topic]: msg.payload })\nglobal.set('dTSet', dTSet)\n",
+        "func": "let time_settings = global.get('time_settings') || {};\ntime_settings = Object.assign(time_settings, { [msg.topic]: msg.payload })\nglobal.set('time_settings', time_settings)\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
+        "x": 890,
         "y": 2040,
         "wires": [
             []
@@ -4523,7 +4401,6 @@
         "id": "ebf4caecba2c3b0f",
         "type": "ui_switch",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Use DST/GTM (DST_GMT)",
         "label": "Use DST/GTM (DST_GMT)",
         "tooltip": "",
@@ -4546,7 +4423,7 @@
         "offcolor": "",
         "animate": false,
         "className": "dropdown_input",
-        "x": 380,
+        "x": 640,
         "y": 2000,
         "wires": [
             [
@@ -4558,7 +4435,6 @@
         "id": "5dae369f8feb1f2b",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4572,7 +4448,7 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 130,
+        "x": 170,
         "y": 2000,
         "wires": [
             [
@@ -4584,7 +4460,6 @@
         "id": "b21a19bb0acbfa9c",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "Input location for exit button (Button_rex_opt)",
         "label": "Input location for exit button (Button_rex_opt)",
         "tooltip": "",
@@ -4606,7 +4481,7 @@
         "topic": "Button_rex_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 410,
+        "x": 670,
         "y": 1460,
         "wires": [
             [
@@ -4618,7 +4493,6 @@
         "id": "b60a07a5f5df2db6",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "group": "91a9ce4bbf4bb377",
         "name": "Door Settings label",
         "order": 6,
@@ -4630,7 +4504,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 930,
+        "x": 1190,
         "y": 1140,
         "wires": [
             []
@@ -4640,7 +4514,6 @@
         "id": "c8960adebc938996",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "group": "91a9ce4bbf4bb377",
         "name": "Lock Settings label",
         "order": 18,
@@ -4652,7 +4525,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 930,
+        "x": 1190,
         "y": 1180,
         "wires": [
             []
@@ -4662,7 +4535,6 @@
         "id": "341cca91a1fdb94a",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "group": "91a9ce4bbf4bb377",
         "name": "Button settings label",
         "order": 24,
@@ -4674,7 +4546,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 940,
+        "x": 1200,
         "y": 1220,
         "wires": [
             []
@@ -4684,7 +4556,6 @@
         "id": "2f40703481bf226e",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "group": "91a9ce4bbf4bb377",
         "name": "Timezone settings label",
         "order": 29,
@@ -4696,7 +4567,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 950,
+        "x": 1210,
         "y": 1260,
         "wires": [
             []
@@ -4706,7 +4577,6 @@
         "id": "daca0544dd019614",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -4720,7 +4590,7 @@
         "topic": "",
         "payload": "GMT0",
         "payloadType": "str",
-        "x": 130,
+        "x": 170,
         "y": 2040,
         "wires": [
             [
@@ -4752,7 +4622,6 @@
         "id": "5c869c44f8db9da9",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "setDevicesIdx",
         "func": "let device_set_idxs = global.get('device_set_idxs') || {};\ndevice_set_idxs = Object.assign(device_set_idxs, { [msg.topic]: msg.payload })\nglobal.set('device_set_idxs', device_set_idxs)",
         "outputs": 1,
@@ -4760,7 +4629,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
+        "x": 1140,
         "y": 1420,
         "wires": [
             []
@@ -4942,7 +4811,7 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "setTimezone",
-        "func": "let userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetDateTime\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info = global.get('dTSet');\n\nmsgWrapper.info.DateTime = Date.now()\nmsgWrapper.info.GMT = 7200\nmsgWrapper.info.NTP1 = \"pool.ntp.org\"\nmsgWrapper.info.NTP2 = \"pool2.ntp.org:123\"\nmsgWrapper.info.DST_Shift = 3600\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "func": "let userCreds = global.get('userCreds');\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetDateTime\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info = global.get('time_settings');\n\nmsgWrapper.info.DateTime = Date.now()\nmsgWrapper.info.GMT = 7200\nmsgWrapper.info.NTP1 = \"pool.ntp.org\"\nmsgWrapper.info.NTP2 = \"pool2.ntp.org:123\"\nmsgWrapper.info.DST_Shift = 3600\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5259,7 +5128,6 @@
         "id": "798940211a98a110",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -5273,19 +5141,16 @@
         "topic": "",
         "payload": "1001",
         "payloadType": "num",
-        "x": 90,
+        "x": 70,
         "y": 1280,
         "wires": [
-            [
-                "5876e97090ffded2"
-            ]
+            []
         ]
     },
     {
         "id": "9f6a6ff3f354674f",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -5299,19 +5164,16 @@
         "topic": "",
         "payload": "2002",
         "payloadType": "num",
-        "x": 90,
+        "x": 70,
         "y": 1240,
         "wires": [
-            [
-                "4d74c64a6d551fbf"
-            ]
+            []
         ]
     },
     {
         "id": "2d9c52e0ebe5b253",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "546743cc2e3aa106",
         "name": "",
         "props": [
             {
@@ -5325,12 +5187,10 @@
         "topic": "",
         "payload": "2001",
         "payloadType": "num",
-        "x": 90,
+        "x": 70,
         "y": 1200,
         "wires": [
-            [
-                "3c691a45025ba009"
-            ]
+            []
         ]
     },
     {
@@ -5377,7 +5237,7 @@
         "z": "692c798b6f9c61de",
         "g": "497324ccb7313edb",
         "name": "persistDoor_settings",
-        "func": "\nlet json = {}\njson.device_set_idxs = global.get('device_set_idxs')\njson.door_settings = global.get('stpDoorSet')\njson.time_settings = global.get('dTSet')\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_2_settings = global.get('rd_1_set')\n\nmsg.payload = json\nreturn msg;\n\n",
+        "func": "\nlet json = {}\njson.device_set_idxs = global.get('device_set_idxs')\njson.door_settings = global.get('door_settings')\njson.time_settings = global.get('dTSet')\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_2_settings = global.get('rd_1_set')\n\nmsg.payload = json\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5440,13 +5300,13 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 1",
-        "func": "\n\n\n\nglobal.set('stpDoorSet', msg.payload.stpDoorSet'))\nglobal.set('device_set_idxs', global.get('device_set_idxs'))\nglobal.set('dTSet', global.get('dTSet'))\nglobal.set('rd_0_set', global.get('rd_0_set'))\nglobal.set('rd_1_set', global.get('rd_1_set'))\n",
+        "func": "\nglobal.set('door_settings', msg.payload.door_settings)\nglobal.set('device_set_idxs', msg.payload.device_set_idxs)\nglobal.set('time_settings', msg.payload.time_settings)\nglobal.set('rd_0_set', msg.payload.reader_1_settings)\nglobal.set('rd_1_set', msg.payload.reader_2_settings)\n",
         "outputs": 1,
-        "noerr": 8,
+        "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
+        "x": 780,
         "y": 80,
         "wires": [
             []
@@ -5468,7 +5328,7 @@
         "y": 80,
         "wires": [
             [
-                "538ecde8895046a0"
+                "a60e7bd06fc144ab"
             ]
         ]
     },
@@ -5490,26 +5350,9 @@
                 "03faeb90bf849ef1"
             ],
             [
-                "c38684b745b7ba59"
+                "662967311ea5753e"
             ]
         ]
-    },
-    {
-        "id": "c38684b745b7ba59",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 7",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 500,
-        "y": 160,
-        "wires": []
     },
     {
         "id": "edb0b7232f72600a",
@@ -5529,23 +5372,6 @@
                 "90a7f4cb9c95b7d0"
             ]
         ]
-    },
-    {
-        "id": "538ecde8895046a0",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 8",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 820,
-        "y": 160,
-        "wires": []
     },
     {
         "id": "d5479d55326e18b2",
@@ -5574,6 +5400,100 @@
         "wires": [
             [
                 "bb1e67cbc6aec98f"
+            ]
+        ]
+    },
+    {
+        "id": "662967311ea5753e",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 2",
+        "func": "\nglobal.set('door_settings', {\n    \"Door_sens_opt\": 0,\n    \"Door_sens_idx\": 0,\n    \"Door_sens_Condition\": 0,\n    \"Button_rex_opt\": 0,\n    \"Button_rex_idx\": 1,\n    \"Button_rex_Condition\": 1,\n    \"Lock_Relay_opt\": 0,\n    \"Lock_Relay_idx\": 0,\n    \"Door_Lock_mode\": 0,\n    \"Door_Lock_type\": 0,\n    \"Door_Lock_puls\": 0.2,\n    \"Door_Delay\": 5,\n    \"Door_Sens_Autolock\": false\n})\nglobal.set('device_set_idxs', {\n    \"Control_point_idx\": 1001,\n    \"Rd1_idx\": 2002,\n    \"Rd0_idx\": 2001\n})\nglobal.set('time_settings', {\n    \"DST_GMT\": true,\n    \"tz\": \"GMT0\"\n})\nglobal.set('rd_0_set', {\n    \"Rd_opt\": 1,\n    \"Rd_Direction\": 0,\n    \"Rd_Key_endian\": false,\n    \"Rd_beep\": true,\n    \"Rd_Wg_type\": 3\n})\nglobal.set('rd_1_set', {\n    \"Rd_opt\": 1,\n    \"Rd_Direction\": 1,\n    \"Rd_Key_endian\": true,\n    \"Rd_beep\": true,\n    \"Rd_Wg_type\": 3\n})\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b417a70c3198d0ed",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 3",
+        "func": "let device_set_idxs = global.get('device_set_idxs')\nreturn device_set_idxs.Rd0_idx;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1200,
+        "wires": [
+            [
+                "3c691a45025ba009"
+            ]
+        ]
+    },
+    {
+        "id": "3bdcb9943af21e2d",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 4",
+        "func": "let device_set_idxs = global.get('device_set_idxs')\nreturn device_set_idxs.Rd1_idx;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1240,
+        "wires": [
+            [
+                "4d74c64a6d551fbf"
+            ]
+        ]
+    },
+    {
+        "id": "3ea8d5ce08c43c52",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 5",
+        "func": "let device_set_idxs = global.get('device_set_idxs')\nreturn device_set_idxs.Control_point_idx",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1280,
+        "wires": [
+            [
+                "5876e97090ffded2"
+            ]
+        ]
+    },
+    {
+        "id": "3546195198d65dd9",
+        "type": "complete",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "scope": [
+            "662967311ea5753e",
+            "a60e7bd06fc144ab"
+        ],
+        "uncaught": false,
+        "x": 210,
+        "y": 1240,
+        "wires": [
+            [
+                "b417a70c3198d0ed",
+                "3bdcb9943af21e2d",
+                "3ea8d5ce08c43c52"
             ]
         ]
     },
