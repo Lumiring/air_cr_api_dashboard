@@ -152,7 +152,6 @@
             "6cc4dd7e4806e9e6",
             "8fecdfbd30a2545b",
             "aad987ee2a0c4f2c",
-            "5e407515e8c6f3ed",
             "d969e40c2e543dae",
             "a902fb928a850e75",
             "b34c7c3825b2f296",
@@ -179,11 +178,12 @@
             "afdc7c0ee76e4a47",
             "99ae61b360355f68",
             "f74a6a22480189cc",
-            "53da7a211480283e"
+            "53da7a211480283e",
+            "69ae942f9b8d4eb1"
         ],
-        "x": 34,
+        "x": 14,
         "y": 519,
-        "w": 2432,
+        "w": 2452,
         "h": 622
     },
     {
@@ -1609,7 +1609,7 @@
         "finalize": "",
         "libs": [],
         "x": 350,
-        "y": 940,
+        "y": 960,
         "wires": [
             [
                 "5c0f4a3dd94ecbbf",
@@ -3222,32 +3222,6 @@
         "wires": [
             [
                 "d969e40c2e543dae"
-            ]
-        ]
-    },
-    {
-        "id": "5e407515e8c6f3ed",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "g": "497324ccb7313edb",
-        "name": "",
-        "props": [
-            {
-                "p": "status.text",
-                "v": "start",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 130,
-        "y": 1000,
-        "wires": [
-            [
-                "642df87e4871a1c4"
             ]
         ]
     },
@@ -5320,8 +5294,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
-        "y": 260,
+        "x": 830,
+        "y": 240,
         "wires": [
             []
         ]
@@ -5338,8 +5312,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 580,
-        "y": 260,
+        "x": 560,
+        "y": 240,
         "wires": [
             [
                 "e8e91cdbbb5ed6c9"
@@ -5358,7 +5332,7 @@
         "accessRead": true,
         "accessWrite": true,
         "x": 270,
-        "y": 300,
+        "y": 260,
         "wires": [
             [
                 "91fbbfa1127d9d40"
@@ -5379,8 +5353,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
-        "y": 320,
+        "x": 490,
+        "y": 280,
         "wires": [
             []
         ]
@@ -5397,7 +5371,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 110,
-        "y": 300,
+        "y": 260,
         "wires": [
             [
                 "70a3ca8c2448c43c"
@@ -5481,6 +5455,25 @@
         "wires": [
             [
                 "58d2480b2eff322c"
+            ]
+        ]
+    },
+    {
+        "id": "69ae942f9b8d4eb1",
+        "type": "complete",
+        "z": "692c798b6f9c61de",
+        "g": "497324ccb7313edb",
+        "name": "",
+        "scope": [
+            "8096f0b5ec80a327",
+            "e8e91cdbbb5ed6c9"
+        ],
+        "uncaught": false,
+        "x": 110,
+        "y": 1000,
+        "wires": [
+            [
+                "642df87e4871a1c4"
             ]
         ]
     },
