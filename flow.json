@@ -5439,14 +5439,14 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 1",
-        "func": "//let mqtt_settings = global.get('mqtt_settings') || {};\n\n\nlet fs = require(\"fs\");\nif (fs.existsSync(\".lumiring/air_cr/door_settings.json\")) {\n   console.log(\"OK\")\n} else {\n    console.log(\"NOT OK\")\n}\n\n\n\nreturn msg;",
+        "func": "\n\n\n\n\n\n\njson.device_set_idxs = global.get('device_set_idxs')\njson.door_settings = global.get('stpDoorSet')\njson.time_settings = global.get('dTSet')\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_2_settings = global.get('rd_1_set')\n\n\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1380,
-        "y": 120,
+        "x": 1280,
+        "y": 80,
         "wires": [
             []
         ]
@@ -5456,45 +5456,18 @@
         "type": "file in",
         "z": "692c798b6f9c61de",
         "name": "",
-        "filename": ".lumiring/air_cr/mqttSettings.json",
+        "filename": ".lumiring/air_cr/door_settings.json",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 1250,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c17a320ff42e127c",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1200,
-        "y": 120,
+        "x": 560,
+        "y": 80,
         "wires": [
             [
-                "a60e7bd06fc144ab"
+                "8dfd89f42b3c0555"
             ]
         ]
     },
@@ -5509,33 +5482,16 @@
         "filenameType": "msg",
         "accessRead": true,
         "accessWrite": true,
-        "x": 510,
+        "x": 290,
         "y": 120,
         "wires": [
             [
-                "a0fe8c10f1483ce3"
+                "03faeb90bf849ef1"
             ],
             [
                 "c38684b745b7ba59"
             ]
         ]
-    },
-    {
-        "id": "a0fe8c10f1483ce3",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 680,
-        "y": 80,
-        "wires": []
     },
     {
         "id": "c38684b745b7ba59",
@@ -5550,8 +5506,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 140,
+        "x": 500,
+        "y": 160,
         "wires": []
     },
     {
@@ -5562,16 +5518,32 @@
         "props": [],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 310,
+        "x": 110,
         "y": 120,
         "wires": [
             [
                 "90a7f4cb9c95b7d0"
             ]
         ]
+    },
+    {
+        "id": "8dfd89f42b3c0555",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 80,
+        "wires": []
     },
     {
         "id": "1fddf0a8d296909f",
