@@ -5740,6 +5740,41 @@
         ]
     },
     {
+        "id": "b6add89f36a98656",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "name",
+                "v": "weqweqw",
+                "vt": "str"
+            },
+            {
+                "p": "TmStart",
+                "v": "334234",
+                "vt": "num"
+            },
+            {
+                "p": "TmEnd",
+                "v": "234234",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 1590,
+        "y": 760,
+        "wires": [
+            [
+                "242eb494f6f99039"
+            ]
+        ]
+    },
+    {
         "id": "1fddf0a8d296909f",
         "type": "inject",
         "z": "be9f64fbc3682d16",
