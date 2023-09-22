@@ -5740,37 +5740,40 @@
         ]
     },
     {
-        "id": "b6add89f36a98656",
+        "id": "9e5dd8894064b7bd",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 35",
+        "func": "let eventInfoWrapper = {}\nlet eventInfo = {}\n\neventInfo = {\n    name: \"sdfsdf\",\n    TmStart: \"20:20\",\n    TmStop: \"21:00\"\n}\n\n\neventInfoWrapper.payload = {}\neventInfoWrapper.payload.command = \"addData\"\neventInfoWrapper.payload.arguments = [eventInfo, true]\n\nreturn eventInfoWrapper;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1630,
+        "y": 760,
+        "wires": [
+            [
+                "242eb494f6f99039"
+            ]
+        ]
+    },
+    {
+        "id": "24008ecfcffb6e0f",
         "type": "inject",
         "z": "692c798b6f9c61de",
         "name": "",
-        "props": [
-            {
-                "p": "name",
-                "v": "weqweqw",
-                "vt": "str"
-            },
-            {
-                "p": "TmStart",
-                "v": "334234",
-                "vt": "num"
-            },
-            {
-                "p": "TmEnd",
-                "v": "234234",
-                "vt": "num"
-            }
-        ],
+        "props": [],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1590,
+        "x": 1430,
         "y": 760,
         "wires": [
             [
-                "242eb494f6f99039"
+                "9e5dd8894064b7bd"
             ]
         ]
     },
