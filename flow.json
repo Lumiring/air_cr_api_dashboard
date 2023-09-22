@@ -5570,7 +5570,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 33",
-        "func": "let schedule_list = global.get(\"schedule_list\");\n\nlet device_set_idxs = global.get('device_set_idxs')\nlet userCreds = global.get('userCreds');\n\nlet schedule_instance = RED.util.cloneMessage(global.get('schedule'))\ndelete schedule_instance.name\nschedule_instance.Shedule_id = Math.floor(Math.random() * 1692797271182)\nschedule_instance.Ctp_idx = device_set_idxs.Control_point_idx\nschedule_instance.TmStart /= 1000\nschedule_instance.TmEnd /= 1000\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetSdlDaily\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = schedule_instance\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "func": "\n\nlet device_set_idxs = global.get('device_set_idxs')\nlet userCreds = global.get('userCreds');\n\nlet schedule_instance = RED.util.cloneMessage(global.get('schedule'))\ndelete schedule_instance.name\nschedule_instance.Shedule_id = Math.floor(Math.random() * 1692797271182)\nschedule_instance.Ctp_idx = device_set_idxs.Control_point_idx\nschedule_instance.TmStart /= 1000\nschedule_instance.TmEnd /= 1000\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetSdlDaily\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = schedule_instance\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('messageId', msgWrapper.message_id)\n\nglobal.set(\"schedule_instance\", schedule_instance)\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5643,8 +5643,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1810,
-        "y": 620,
+        "x": 1730,
+        "y": 580,
         "wires": [
             [
                 "a5009491338db9ad"
@@ -5669,8 +5669,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2040,
-        "y": 680,
+        "x": 1900,
+        "y": 580,
         "wires": []
     },
     {
@@ -5716,8 +5716,8 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1970,
-        "y": 760,
+        "x": 1950,
+        "y": 800,
         "wires": []
     },
     {
@@ -5725,18 +5725,19 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 34",
-        "func": "let schedule = global.get('schedule')\n\n\nreturn schedule;",
-        "outputs": 1,
+        "func": "let schedule_instance = global.get('schedule_instance')\nlet schedule_list = global.get(\"schedule_list\");\nschedule_list.push(schedule_instance)\n\n\nreturn [schedule_list, schedule_instance]",
+        "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1790,
+        "x": 1730,
         "y": 680,
         "wires": [
             [
-                "242eb494f6f99039"
-            ]
+                "f6dffb08204572bf"
+            ],
+            []
         ]
     },
     {
@@ -5750,8 +5751,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1790,
-        "y": 760,
+        "x": 1750,
+        "y": 800,
         "wires": [
             [
                 "242eb494f6f99039"
@@ -5769,8 +5770,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1630,
-        "y": 760,
+        "x": 1590,
+        "y": 800,
         "wires": [
             [
                 "9e5dd8894064b7bd"
@@ -5870,6 +5871,23 @@
             [
                 "5e76e13f8720948e"
             ]
+        ]
+    },
+    {
+        "id": "f6dffb08204572bf",
+        "type": "file",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "filename": ".lumiring/air_cr/schedule_list.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 2020,
+        "y": 680,
+        "wires": [
+            []
         ]
     },
     {
