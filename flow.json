@@ -1807,8 +1807,8 @@
                 "2c9973e0b952c269"
             ],
             [
-                "08833f2284a62f7e",
-                "d1e26b38fdd7fb08"
+                "d1e26b38fdd7fb08",
+                "b34a359c80292f28"
             ]
         ]
     },
@@ -5604,25 +5604,6 @@
         "wires": []
     },
     {
-        "id": "08833f2284a62f7e",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "name": "handleSetSdlDaily-Ack",
-        "func": "let messageId_rd_0 = global.get(\"messageId_rd_0\")\nlet messageId_rd_1 = global.get(\"messageId_rd_1\")\n\n\n\nlet ackInfo_rd_0 = {}\nlet ackInfo_rd_1 = {}\n\nif (messageId_rd_0 === msg.payload.message_id) {\n\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_0.result = \"success\"\n        ackInfo_rd_0.payload = \"Done\"\n    } else {\n        ackInfo_rd_0.result = \"error\"\n        ackInfo_rd_0.payload = \"error\"\n    }\n} else if (messageId_rd_1 === msg.payload.message_id){\n\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_1.result = \"success\"\n        ackInfo_rd_1.payload = \"Done\"\n    } else {\n        ackInfo_rd_1.result = \"error\"\n        ackInfo_rd_1.payload = \"error\"\n    }\n}\n\nreturn [ackInfo_rd_0, ackInfo_rd_1]\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1760,
-        "y": 520,
-        "wires": [
-            [
-                "a07a6a7f1f8b3b3f"
-            ]
-        ]
-    },
-    {
         "id": "a07a6a7f1f8b3b3f",
         "type": "switch",
         "z": "692c798b6f9c61de",
@@ -5906,6 +5887,25 @@
         "x": 1540,
         "y": 560,
         "wires": []
+    },
+    {
+        "id": "b34a359c80292f28",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "handleSetSdlDaily-Ack",
+        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n\n    }\n}\n\nreturn ackInfo;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1760,
+        "y": 500,
+        "wires": [
+            [
+                "a07a6a7f1f8b3b3f"
+            ]
+        ]
     },
     {
         "id": "1fddf0a8d296909f",
