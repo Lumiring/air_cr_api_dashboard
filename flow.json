@@ -5712,6 +5712,16 @@
                 "formatterParams": {
                     "target": "_blank"
                 }
+            },
+            {
+                "field": "tick",
+                "title": "tick",
+                "width": "",
+                "align": "left",
+                "formatter": "tickCross",
+                "formatterParams": {
+                    "target": "_blank"
+                }
             }
         ],
         "outputs": 0,
