@@ -5744,7 +5744,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 35",
-        "func": "let eventInfoWrapper = {}\nlet eventInfo = {}\n\neventInfo = {\n    name: \"sdfsdf\",\n    TmStart: \"20:20\",\n    TmStop: \"21:00\"\n}\n\n\neventInfoWrapper.payload = {}\neventInfoWrapper.payload.command = \"addData\"\neventInfoWrapper.payload.arguments = [eventInfo, true]\n\nreturn eventInfoWrapper;",
+        "func": "let eventInfoWrapper = {}\nlet eventInfo = {}\n\neventInfo = {\n    name: \"sdfsdf\",\n    TmStart: \"20:20\",\n    TmEnd: \"21:00\"\n}\n\n\neventInfoWrapper.payload = {}\neventInfoWrapper.payload.command = \"addData\"\neventInfoWrapper.payload.arguments = [eventInfo, true]\n\nreturn eventInfoWrapper;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
