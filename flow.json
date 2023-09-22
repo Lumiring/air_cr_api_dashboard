@@ -5631,7 +5631,8 @@
                 "a5009491338db9ad"
             ],
             [
-                "092fbd16dc09d3e3"
+                "092fbd16dc09d3e3",
+                "d1e26b38fdd7fb08"
             ]
         ]
     },
@@ -5883,8 +5884,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2000,
-        "y": 640,
+        "x": 1900,
+        "y": 740,
         "wires": []
     },
     {
@@ -5902,8 +5903,7 @@
         "y": 500,
         "wires": [
             [
-                "a07a6a7f1f8b3b3f",
-                "d1e26b38fdd7fb08"
+                "a07a6a7f1f8b3b3f"
             ]
         ]
     },
