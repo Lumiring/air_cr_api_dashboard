@@ -4407,7 +4407,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "handleSetDateTime-Ack",
-        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n\n    }\n}\n\nreturn ackInfo;",
+        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"error\"\n\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -5867,7 +5867,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 2020,
-        "y": 680,
+        "y": 720,
         "wires": [
             []
         ]
@@ -5885,8 +5885,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1940,
-        "y": 620,
+        "x": 1920,
+        "y": 640,
         "wires": []
     },
     {
@@ -5894,7 +5894,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "handleSetSdlDaily-Ack",
-        "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"error\"\n\n    }\n}\n\nreturn ackInfo;",
+        "func": "let messageId = global.get(\"messageId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
