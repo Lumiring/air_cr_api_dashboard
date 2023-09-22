@@ -5682,7 +5682,38 @@
         "order": 7,
         "width": 30,
         "height": 4,
-        "columns": [],
+        "columns": [
+            {
+                "field": "name",
+                "title": "name",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "TmStart",
+                "title": "TmStart",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "TmEnd",
+                "title": "TmEnd",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
         "outputs": 0,
         "cts": false,
         "x": 1830,
