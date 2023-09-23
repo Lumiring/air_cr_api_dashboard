@@ -5990,7 +5990,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 38",
-        "func": "let schedule_list = global.get(\"schedule_list\").list\nlet options = []\n\nschedule_list.array.forEach(function(element) {\n    options.push({[element.name]: element.Shedule_id })\n});\n\nmsg.options = options\n\nreturn msg;",
+        "func": "let schedule_list = global.get(\"schedule_list\").list\nconsole.log(schedule_list)\n\nlet options = []\n\nschedule_list.array.forEach(function(element) {\n    options.push({[element.name]: element.Shedule_id })\n});\n\nmsg.options = options\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
