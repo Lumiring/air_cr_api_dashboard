@@ -5979,12 +5979,10 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 680,
+        "x": 600,
         "y": 3000,
         "wires": [
-            [
-                "63099e30931c2250"
-            ]
+            []
         ]
     },
     {
@@ -5998,7 +5996,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
+        "x": 410,
         "y": 3000,
         "wires": [
             [
@@ -6007,50 +6005,22 @@
         ]
     },
     {
-        "id": "54443f484ddf1973",
-        "type": "inject",
+        "id": "13a9613731ae952f",
+        "type": "complete",
         "z": "692c798b6f9c61de",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
+        "scope": [
+            "9316588f6e7f3466",
+            "f60fe4acd866cd02"
         ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 160,
+        "uncaught": false,
+        "x": 210,
         "y": 3000,
         "wires": [
             [
                 "cdcfb93280054d6e"
             ]
         ]
-    },
-    {
-        "id": "63099e30931c2250",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 940,
-        "y": 3000,
-        "wires": []
     },
     {
         "id": "1fddf0a8d296909f",
