@@ -6012,7 +6012,7 @@
         "width": 10,
         "height": 1,
         "passthru": true,
-        "multiple": false,
+        "multiple": true,
         "options": [
             {
                 "label": "",
