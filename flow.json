@@ -5706,7 +5706,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 34",
-        "func": "let schedule_instance = global.get('schedule_instance')\nlet schedule_list = global.get(\"schedule_list\");\n\n\nschedule_list.list.push(schedule_instance)\n\n\nreturn [schedule_list, schedule_instance]",
+        "func": "let schedule_instance = global.get('schedule_instance')\nlet schedule_list = global.get(\"schedule_list\");\n\n\nschedule_list.list.push(schedule_instance)\n\nmsg.payload = schedule_list\nreturn [msg, schedule_instance]",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -5866,8 +5866,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2020,
-        "y": 720,
+        "x": 2120,
+        "y": 700,
         "wires": [
             []
         ]
@@ -5885,8 +5885,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1720,
-        "y": 740,
+        "x": 2020,
+        "y": 760,
         "wires": []
     },
     {
