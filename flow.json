@@ -6027,7 +6027,9 @@
         "x": 620,
         "y": 3000,
         "wires": [
-            []
+            [
+                "dd8805d6127ef871"
+            ]
         ]
     },
     {
@@ -6109,6 +6111,22 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "dd8805d6127ef871",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 3000,
+        "wires": []
     },
     {
         "id": "1fddf0a8d296909f",
