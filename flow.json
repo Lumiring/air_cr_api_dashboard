@@ -6167,16 +6167,35 @@
         "order": 16,
         "width": 18,
         "height": 3,
-        "format": "<style>\n    #topicsInfo {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n\n</style>\n\n<div id=\"topicsInfo\">\n    <div>{{msg.payload.deviceAddr}}/Events</div>\n    <div>{{msg.payload.deviceAddr}}/Operate</div>\n    <div>{{msg.payload.deviceAddr}}/Ack</div>\n</div>",
+        "format": "<style>\n    #topicsInfo {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n\n</style>\n\n<div id=\"topicsInfo\">\n    <div>Events topic: {{msg.payload.events}}</div>\n    <div>Operate topic: {{msg.payload.operate}}</div>\n    <div>Acknowledge topic: {{msg.payload.ack}}</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 250,
+        "x": 430,
         "y": 1400,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "e6bc21e1b963fbf6",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 39",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 1400,
+        "wires": [
+            [
+                "ff147062542040ed"
+            ]
         ]
     },
     {
