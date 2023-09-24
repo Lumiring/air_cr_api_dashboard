@@ -6490,10 +6490,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2150,
+        "x": 2190,
         "y": 720,
         "wires": [
-            []
+            [
+                "939ee531e2a85a60"
+            ]
         ]
     },
     {
@@ -6513,6 +6515,24 @@
         "name": "Ack info",
         "x": 2000,
         "y": 760,
+        "wires": []
+    },
+    {
+        "id": "939ee531e2a85a60",
+        "type": "mqtt out",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "79737e067a3af084",
+        "x": 2350,
+        "y": 720,
         "wires": []
     },
     {
