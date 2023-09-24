@@ -1740,7 +1740,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 610,
+        "x": 690,
         "y": 940,
         "wires": [
             [
@@ -5520,7 +5520,7 @@
         "finalize": "",
         "libs": [],
         "x": 620,
-        "y": 980,
+        "y": 1000,
         "wires": [
             [
                 "65727af8ca7694b4"
@@ -5539,7 +5539,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 610,
-        "y": 1020,
+        "y": 1040,
         "wires": [
             []
         ]
@@ -6173,7 +6173,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1050,
+        "x": 1270,
         "y": 940,
         "wires": [
             []
@@ -6184,13 +6184,13 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 39",
-        "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\n\nlet globalTopic = tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\n\nlet obj = {}\nobj.payload = {}\nobj.payload.events = \"Events topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Events\"\nobj.payload.operate = \"Operate topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Operate\"\nobj.payload.ack = \"Acknowledge topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Ack\"\nreturn obj\n\n",
+        "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nlet globalTopic = tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\nif (tempUserCreds.location === \"\" || tempUserCreds.device_id===null){\n    return\n}\n\n\nlet obj = {}\nobj.payload = {}\nobj.payload.events = \"Events topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Events\"\nobj.payload.operate = \"Operate topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Operate\"\nobj.payload.ack = \"Acknowledge topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Ack\"\nreturn obj\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
+        "x": 950,
         "y": 940,
         "wires": [
             [
