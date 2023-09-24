@@ -1911,11 +1911,21 @@
                 "t": "eq",
                 "v": "SetSdlDaily-Ack",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "SetCardKeys-Ack",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "EndCardKey-Ack",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 7,
+        "outputs": 9,
         "x": 1510,
         "y": 320,
         "wires": [
@@ -1939,6 +1949,12 @@
             ],
             [
                 "b34a359c80292f28"
+            ],
+            [
+                "32e87a6a3d7b9fae"
+            ],
+            [
+                "f681efedd61143dc"
             ]
         ]
     },
@@ -3299,7 +3315,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2030,
+        "x": 2110,
         "y": 460,
         "wires": [
             [
@@ -3321,7 +3337,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2250,
+        "x": 2330,
         "y": 460,
         "wires": [
             [
@@ -4218,7 +4234,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2240,
+        "x": 2320,
         "y": 420,
         "wires": []
     },
@@ -4253,7 +4269,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2450,
+        "x": 2530,
         "y": 520,
         "wires": []
     },
@@ -4301,7 +4317,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2030,
+        "x": 2110,
         "y": 500,
         "wires": [
             [
@@ -4323,7 +4339,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2250,
+        "x": 2330,
         "y": 540,
         "wires": [
             [
@@ -4346,7 +4362,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2240,
+        "x": 2320,
         "y": 500,
         "wires": []
     },
@@ -4372,7 +4388,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2030,
+        "x": 2110,
         "y": 540,
         "wires": [
             [
@@ -4398,7 +4414,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2240,
+        "x": 2340,
         "y": 580,
         "wires": []
     },
@@ -4413,7 +4429,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2250,
+        "x": 2350,
         "y": 620,
         "wires": [
             [
@@ -5731,13 +5747,14 @@
         "repair": false,
         "outputs": 2,
         "x": 1730,
-        "y": 580,
+        "y": 540,
         "wires": [
             [
                 "a5009491338db9ad"
             ],
             [
-                "092fbd16dc09d3e3"
+                "092fbd16dc09d3e3",
+                "a5009491338db9ad"
             ]
         ]
     },
@@ -5756,8 +5773,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1900,
-        "y": 580,
+        "x": 1940,
+        "y": 540,
         "wires": []
     },
     {
@@ -5804,8 +5821,8 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1950,
-        "y": 800,
+        "x": 2090,
+        "y": 940,
         "wires": []
     },
     {
@@ -5819,8 +5836,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 680,
+        "x": 1750,
+        "y": 620,
         "wires": [
             [
                 "f6dffb08204572bf"
@@ -5840,8 +5857,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1750,
-        "y": 800,
+        "x": 1890,
+        "y": 940,
         "wires": [
             [
                 "242eb494f6f99039"
@@ -5860,8 +5877,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1590,
-        "y": 800,
+        "x": 1730,
+        "y": 940,
         "wires": [
             [
                 "9e5dd8894064b7bd"
@@ -5974,8 +5991,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2120,
-        "y": 700,
+        "x": 2000,
+        "y": 600,
         "wires": [
             []
         ]
@@ -5996,35 +6013,6 @@
         "wires": [
             [
                 "a07a6a7f1f8b3b3f"
-            ]
-        ]
-    },
-    {
-        "id": "41df99e0ea305fa0",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1520,
-        "y": 600,
-        "wires": [
-            [
-                "092fbd16dc09d3e3"
             ]
         ]
     },
@@ -6283,7 +6271,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "addCard",
-        "func": "function createKeySet(ctp_idx, schedule_id, key_id, key_hex,) {\n    return `/${key_id};${ctp_idx};7;${key_hex};1;${schedule_id};1;0;-1;-1;-1;0;0;0;/`\n}\n\nlet card_options = global.get('card_options')\nlet device_set_idxs = global.get('device_set_idxs')\nlet userCreds = global.get('userCreds');\n\nconsole.log(card_options)\n\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCardKeys\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = device_set_idxs.Control_point_idx\nmsgWrapper.info.KeysCount = 1\nmsgWrapper.info.Keys = createKeySet(device_set_idxs.Control_point_idx, card_options.schedule_id, card_options.key_id, card_options.key_hex)\nmsgWrapper.info.KeysDataLength = msgWrapper.info.Keys.length\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('messageId', msgWrapper.message_id)\n\nreturn msg",
+        "func": "function createKeySet(ctp_idx, schedule_id, key_id, key_hex,) {\n    return `/${key_id};${ctp_idx};7;${key_hex};1;${schedule_id};1;0;-1;-1;-1;0;0;0;/`\n}\n\nlet card_options = global.get('card_options')\nlet device_set_idxs = global.get('device_set_idxs')\nlet userCreds = global.get('userCreds');\n\nconsole.log(card_options)\n\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCardKeys\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = device_set_idxs.Control_point_idx\nmsgWrapper.info.KeysCount = 1\nmsgWrapper.info.Keys = createKeySet(device_set_idxs.Control_point_idx, card_options.schedule_id, card_options.key_id, card_options.key_hex)\nmsgWrapper.info.KeysDataLength = msgWrapper.info.Keys.length\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('setCardMessId', msgWrapper.message_id)\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6400,6 +6388,132 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "32e87a6a3d7b9fae",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "handleSetCardKeys-Ack",
+        "func": "let messageId = global.get(\"setCardMessId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1770,
+        "y": 680,
+        "wires": [
+            [
+                "87e4455cfb6d992b"
+            ]
+        ]
+    },
+    {
+        "id": "87e4455cfb6d992b",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "property": "result",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "success",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1990,
+        "y": 680,
+        "wires": [
+            [
+                "ab9407c55052fb9e"
+            ],
+            [
+                "40dc0361ade51989"
+            ]
+        ]
+    },
+    {
+        "id": "ab9407c55052fb9e",
+        "type": "ui_toast",
+        "z": "692c798b6f9c61de",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Ack info",
+        "x": 2140,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "f681efedd61143dc",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "handleEndCardKey-Ack",
+        "func": "let messageId = global.get(\"setCardMessId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1770,
+        "y": 760,
+        "wires": [
+            [
+                "4c5d44476d630125"
+            ]
+        ]
+    },
+    {
+        "id": "40dc0361ade51989",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 41",
+        "func": "let userCreds = global.get('userCreds');\nlet device_set_idxs = global.get('device_set_idxs');\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"EndCardKey\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = global.get('setCardMessId')\nmsgWrapper.info = {}\nmsgWrapper.info.KeysCount = 1\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2150,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c5d44476d630125",
+        "type": "ui_toast",
+        "z": "692c798b6f9c61de",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Ack info",
+        "x": 2000,
+        "y": 760,
+        "wires": []
     },
     {
         "id": "1fddf0a8d296909f",
