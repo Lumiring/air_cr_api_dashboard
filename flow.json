@@ -6551,7 +6551,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "showScedule",
-        "func": "let schedule_list = global.get(\"schedule_list\").list\nlet instance = schedule_list.find(function (el) { return el.Shedule_id === msg.payload})\nmsg.payload.name = instance.name\nmsg.payload.start = instance.TmStart\nmsg.payload.end = instance.TmEnd\nconsole.log(msg.payload)\n\n\nreturn msg;",
+        "func": "let schedule_list = global.get(\"schedule_list\").list\nlet instance = schedule_list.find(function (el) { return el.Shedule_id === msg.payload})\nmsg.payload.name = instance.name\nmsg.payload.start = instance.TmStart\nmsg.payload.end = instance.TmEnd\nconsole.log(instance)\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
