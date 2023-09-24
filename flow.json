@@ -5661,7 +5661,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 230,
-        "y": 2860,
+        "y": 2840,
         "wires": [
             [
                 "d4b89e18ef3a2264"
@@ -5697,7 +5697,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 2860,
+        "y": 2840,
         "wires": [
             [
                 "c6f8198164b0ed6e"
@@ -5719,7 +5719,7 @@
         "expiry": "",
         "broker": "79737e067a3af084",
         "x": 630,
-        "y": 2860,
+        "y": 2840,
         "wires": []
     },
     {
@@ -6287,8 +6287,47 @@
         "x": 380,
         "y": 3220,
         "wires": [
-            []
+            [
+                "2f78343e81efe375"
+            ]
         ]
+    },
+    {
+        "id": "2f78343e81efe375",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "addCard",
+        "func": "let card_options = global.get('card_options')\nlet device_set_idxs = global.get('device_set_idxs')\nlet userCreds = global.get('userCreds');\n\n\n\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCardKeys\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = device_set_idxs.Ctp_idx\nmsgWrapper.info.KeysCount = 1\n\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('messageId', msgWrapper.message_id)\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 3220,
+        "wires": [
+            [
+                "ccb4b2f8e2e0d3ed"
+            ]
+        ]
+    },
+    {
+        "id": "ccb4b2f8e2e0d3ed",
+        "type": "mqtt out",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "79737e067a3af084",
+        "x": 730,
+        "y": 3220,
+        "wires": []
     },
     {
         "id": "1fddf0a8d296909f",
