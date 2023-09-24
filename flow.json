@@ -6344,7 +6344,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 40",
-        "func": "let currentCardKey = global.get(\"currentCardKey\")\n\n\nreturn [currentCardKey.key_id, currentCardKey.key_hex];",
+        "func": "let currentCardKey = global.get(\"currentCardKey\")\nlet msg1 = {}, msg2 = {}\nmsg1.payload = currentCardKey.key_id\nmsg2.payload = currentCardKey.key_hex\n\nreturn [msg1, msg2];",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
