@@ -6371,7 +6371,7 @@
         "width": 8,
         "height": 1,
         "passthru": false,
-        "label": "button",
+        "label": "Add last presented credentionals",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
