@@ -1755,7 +1755,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "subscribe",
-        "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nglobal.set('userCreds', tempUserCreds)\nlet globalTopic = tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\n\n\nlet obj = {}\nobj.payload = {}\nobj.payload.deviceAddr = \"Device address: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\n\nreturn [msg, obj]\n",
+        "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nglobal.set('userCreds', tempUserCreds)\nlet globalTopic = tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\n\n\nlet obj = {}\nobj.payload = {}\n\nif (tempUserCreds.location === \"\" || tempUserCreds.device_id === null) {\n    obj.payload.deviceAddr = \"Device address: N/A\"\n} else {\n    obj.payload.deviceAddr = \"Device address: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\n}\n\n\n\nreturn [msg, obj]\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
