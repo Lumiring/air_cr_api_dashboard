@@ -6184,7 +6184,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 39",
-        "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\n\nlet globalTopic = tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\n\nlet obj = {}\nobj.payload = {}\nobj.payload.events = \"Events topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Events\"\nobj.payload.events = \"Operate topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Operate\"\nobj.payload.events = \"Acknowledge topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Ack\"\nreturn obj\n\n",
+        "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\n\nlet globalTopic = tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\n\nlet obj = {}\nobj.payload = {}\nobj.payload.events = \"Events topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Events\"\nobj.payload.operate = \"Operate topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Operate\"\nobj.payload.ack = \"Acknowledge topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Ack\"\nreturn obj\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
