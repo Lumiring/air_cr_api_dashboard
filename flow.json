@@ -378,10 +378,11 @@
             "f681efedd61143dc",
             "40dc0361ade51989",
             "4c5d44476d630125",
-            "939ee531e2a85a60"
+            "939ee531e2a85a60",
+            "b41158a68dfc5a8f"
         ],
         "x": 14,
-        "y": 659,
+        "y": 719,
         "w": 3292,
         "h": 722
     },
@@ -521,11 +522,11 @@
     {
         "id": "91a9ce4bbf4bb377",
         "type": "ui_group",
-        "name": "Settings",
+        "name": "Advanced_settings",
         "tab": "b76cefdaf9bc6c8b",
         "order": 4,
         "disp": false,
-        "width": 30,
+        "width": "30",
         "collapse": false,
         "className": ""
     },
@@ -1445,7 +1446,7 @@
         "name": "",
         "events": "change",
         "x": 3220,
-        "y": 1040,
+        "y": 1100,
         "wires": [
             []
         ]
@@ -1455,7 +1456,7 @@
         "type": "ui_button",
         "z": "692c798b6f9c61de",
         "g": "ccfbaa574e4c13f7",
-        "name": "Settings",
+        "name": "Advanced Settings",
         "group": "fc491a4cada0492f",
         "order": 17,
         "width": 4,
@@ -1467,12 +1468,12 @@
         "bgcolor": "",
         "className": "settings_btn",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\",\"AIR-CR_Connection\",\"AIR-CR_Simple_settings\",\"AIR-CR_schedule\"],\"show\":[\"AIR-CR_Settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\",\"AIR-CR_Connection\",\"AIR-CR_Simple_settings\",\"AIR-CR_schedule\"],\"show\":[\"AIR-CR_Advanced_settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2860,
-        "y": 1200,
+        "x": 2830,
+        "y": 1340,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1496,12 +1497,12 @@
         "bgcolor": "",
         "className": "control_btn",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_r1\",\"AIR-CR_r0\",\"AIR-CR_submit\",\"AIR-CR_Connection\",\"AIR-CR_schedule\"],\"show\":[\"AIR-CR_Control\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Advanced_settings\",\"AIR-CR_Simple_settings\",\"AIR-CR_r1\",\"AIR-CR_r0\",\"AIR-CR_submit\",\"AIR-CR_Connection\",\"AIR-CR_schedule\"],\"show\":[\"AIR-CR_Control\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
         "x": 2850,
-        "y": 1160,
+        "y": 1220,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1521,7 +1522,7 @@
         "finalize": "",
         "libs": [],
         "x": 2920,
-        "y": 1000,
+        "y": 1060,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1794,12 +1795,12 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\",\"AIR-CR_Control\",\"AIR-CR_Simple_settings\",\"AIR-CR_schedule\"],\"show\":[\"AIR-CR_Connection\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Advanced_settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\",\"AIR-CR_Control\",\"AIR-CR_Simple_settings\",\"AIR-CR_schedule\"],\"show\":[\"AIR-CR_Connection\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
         "x": 2870,
-        "y": 1120,
+        "y": 1180,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1848,7 +1849,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 910,
-        "y": 1100,
+        "y": 1160,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1875,7 +1876,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 910,
-        "y": 1140,
+        "y": 1200,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1902,7 +1903,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 890,
-        "y": 1180,
+        "y": 1240,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1929,7 +1930,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 900,
-        "y": 1220,
+        "y": 1280,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1949,7 +1950,7 @@
         "finalize": "",
         "libs": [],
         "x": 1300,
-        "y": 1180,
+        "y": 1240,
         "wires": [
             []
         ]
@@ -1964,7 +1965,7 @@
             "9e5fe1c3fe6f0503"
         ],
         "x": 120,
-        "y": 1080,
+        "y": 1140,
         "wires": [
             [
                 "642df87e4871a1c4",
@@ -1985,7 +1986,7 @@
         "finalize": "",
         "libs": [],
         "x": 350,
-        "y": 1100,
+        "y": 1160,
         "wires": [
             [
                 "5c0f4a3dd94ecbbf",
@@ -2013,7 +2014,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2060,
-        "y": 740,
+        "y": 800,
         "wires": []
     },
     {
@@ -2031,7 +2032,7 @@
         "rh": 0,
         "inputs": 1,
         "x": 1330,
-        "y": 760,
+        "y": 820,
         "wires": [
             [
                 "4c30f9b315530f2a"
@@ -2060,7 +2061,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 690,
-        "y": 940,
+        "y": 1000,
         "wires": [
             [
                 "2b2d85fbc2c145a5",
@@ -2082,7 +2083,7 @@
         "finalize": "",
         "libs": [],
         "x": 920,
-        "y": 780,
+        "y": 840,
         "wires": [
             [
                 "9e5fe1c3fe6f0503"
@@ -2187,7 +2188,7 @@
         "outputs": 0,
         "cts": false,
         "x": 2070,
-        "y": 700,
+        "y": 760,
         "wires": []
     },
     {
@@ -2249,7 +2250,7 @@
         "repair": false,
         "outputs": 9,
         "x": 1510,
-        "y": 760,
+        "y": 820,
         "wires": [
             [
                 "160ef0c3c55613af"
@@ -2293,7 +2294,7 @@
         "finalize": "",
         "libs": [],
         "x": 1730,
-        "y": 700,
+        "y": 760,
         "wires": [
             [
                 "32d53427bced070c"
@@ -2313,7 +2314,7 @@
         "finalize": "",
         "libs": [],
         "x": 1780,
-        "y": 740,
+        "y": 800,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -2337,7 +2338,7 @@
         "templateScope": "local",
         "className": "",
         "x": 1100,
-        "y": 820,
+        "y": 880,
         "wires": [
             []
         ]
@@ -2364,7 +2365,7 @@
         "topic": "",
         "topicType": "str",
         "x": 610,
-        "y": 800,
+        "y": 860,
         "wires": [
             [
                 "1f7ea9be7c722e68",
@@ -2385,7 +2386,7 @@
         "finalize": "",
         "libs": [],
         "x": 910,
-        "y": 740,
+        "y": 800,
         "wires": [
             [
                 "9e5fe1c3fe6f0503"
@@ -2414,7 +2415,7 @@
         "topic": "",
         "topicType": "str",
         "x": 600,
-        "y": 740,
+        "y": 800,
         "wires": [
             [
                 "1f7ea9be7c722e68"
@@ -2434,7 +2435,7 @@
         "finalize": "",
         "libs": [],
         "x": 1770,
-        "y": 780,
+        "y": 840,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -2454,7 +2455,7 @@
         "finalize": "",
         "libs": [],
         "x": 260,
-        "y": 860,
+        "y": 920,
         "wires": [
             [
                 "6cc4dd7e4806e9e6"
@@ -2481,7 +2482,7 @@
         "topic": "",
         "name": "",
         "x": 370,
-        "y": 920,
+        "y": 980,
         "wires": []
     },
     {
@@ -2501,7 +2502,7 @@
         "templateScope": "local",
         "className": "",
         "x": 290,
-        "y": 800,
+        "y": 860,
         "wires": [
             []
         ]
@@ -2523,7 +2524,7 @@
         "templateScope": "local",
         "className": "",
         "x": 610,
-        "y": 700,
+        "y": 760,
         "wires": [
             []
         ]
@@ -2952,7 +2953,7 @@
         "finalize": "",
         "libs": [],
         "x": 1760,
-        "y": 860,
+        "y": 920,
         "wires": [
             [
                 "d969e40c2e543dae"
@@ -2983,7 +2984,7 @@
         "repair": false,
         "outputs": 2,
         "x": 2110,
-        "y": 900,
+        "y": 960,
         "wires": [
             [
                 "b34c7c3825b2f296"
@@ -3006,7 +3007,7 @@
         "finalize": "",
         "libs": [],
         "x": 2330,
-        "y": 900,
+        "y": 960,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -3929,7 +3930,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2320,
-        "y": 860,
+        "y": 920,
         "wires": []
     },
     {
@@ -3966,7 +3967,7 @@
         "expiry": "",
         "broker": "79737e067a3af084",
         "x": 2530,
-        "y": 960,
+        "y": 1020,
         "wires": []
     },
     {
@@ -3982,7 +3983,7 @@
         "finalize": "",
         "libs": [],
         "x": 1750,
-        "y": 900,
+        "y": 960,
         "wires": [
             [
                 "e063be51f1201adf"
@@ -4016,7 +4017,7 @@
         "repair": false,
         "outputs": 2,
         "x": 2110,
-        "y": 940,
+        "y": 1000,
         "wires": [
             [
                 "7416ec0179370582"
@@ -4039,7 +4040,7 @@
         "finalize": "",
         "libs": [],
         "x": 2330,
-        "y": 980,
+        "y": 1040,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -4063,7 +4064,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2320,
-        "y": 940,
+        "y": 1000,
         "wires": []
     },
     {
@@ -4090,7 +4091,7 @@
         "repair": false,
         "outputs": 2,
         "x": 2110,
-        "y": 980,
+        "y": 1040,
         "wires": [
             [
                 "03ca1b1fdfc39f2d"
@@ -4116,8 +4117,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2340,
-        "y": 1020,
+        "x": 2320,
+        "y": 1080,
         "wires": []
     },
     {
@@ -4132,8 +4133,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2350,
-        "y": 1060,
+        "x": 2330,
+        "y": 1120,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -4153,7 +4154,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 2730,
-        "y": 1000,
+        "y": 1060,
         "wires": [
             [
                 "6d7ac608b771c09f"
@@ -4180,7 +4181,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 1060,
-        "y": 1340,
+        "y": 1400,
         "wires": [
             [
                 "33c8b93809af5d71"
@@ -4200,7 +4201,7 @@
         "finalize": "",
         "libs": [],
         "x": 1330,
-        "y": 1340,
+        "y": 1400,
         "wires": [
             []
         ]
@@ -4224,7 +4225,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 270,
-        "y": 740,
+        "y": 800,
         "wires": [
             [
                 "6cc4dd7e4806e9e6"
@@ -4244,7 +4245,7 @@
         "finalize": "",
         "libs": [],
         "x": 1770,
-        "y": 820,
+        "y": 880,
         "wires": [
             [
                 "6c8acdd459e657eb",
@@ -4290,12 +4291,12 @@
         "bgcolor": "",
         "className": "settings_btn",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\",\"AIR-CR_Connection\",\"AIR-CR_Simple_settings\",\"AIR-CR_Settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\"],\"show\":[\"AIR-CR_schedule\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\",\"AIR-CR_Connection\",\"AIR-CR_Simple_settings\",\"AIR-CR_Advanced_settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\"],\"show\":[\"AIR-CR_schedule\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
         "x": 2860,
-        "y": 1240,
+        "y": 1300,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -4376,7 +4377,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 1060,
-        "y": 1300,
+        "y": 1360,
         "wires": [
             [
                 "33c8b93809af5d71"
@@ -4396,7 +4397,7 @@
         "finalize": "",
         "libs": [],
         "x": 610,
-        "y": 840,
+        "y": 900,
         "wires": [
             [
                 "a854989e94536e41"
@@ -4416,7 +4417,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 610,
-        "y": 880,
+        "y": 940,
         "wires": [
             []
         ]
@@ -4434,7 +4435,7 @@
         "finalize": "",
         "libs": [],
         "x": 2220,
-        "y": 820,
+        "y": 880,
         "wires": [
             [
                 "b4ff918b8b4b6bcd"
@@ -4454,7 +4455,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 2460,
-        "y": 820,
+        "y": 880,
         "wires": [
             []
         ]
@@ -4478,7 +4479,7 @@
         "repair": false,
         "outputs": 1,
         "x": 2030,
-        "y": 820,
+        "y": 880,
         "wires": [
             [
                 "bb1e67cbc6aec98f"
@@ -5094,7 +5095,7 @@
         "finalize": "",
         "libs": [],
         "x": 650,
-        "y": 1100,
+        "y": 1160,
         "wires": [
             [
                 "0c769e6742acebb0"
@@ -5114,7 +5115,7 @@
         "finalize": "",
         "libs": [],
         "x": 650,
-        "y": 1140,
+        "y": 1200,
         "wires": [
             [
                 "a122ea34e40556e4"
@@ -5134,7 +5135,7 @@
         "finalize": "",
         "libs": [],
         "x": 650,
-        "y": 1180,
+        "y": 1240,
         "wires": [
             [
                 "ad3a558f7afdccbf"
@@ -5154,7 +5155,7 @@
         "finalize": "",
         "libs": [],
         "x": 650,
-        "y": 1220,
+        "y": 1280,
         "wires": [
             [
                 "58d2480b2eff322c"
@@ -5173,7 +5174,7 @@
         ],
         "uncaught": false,
         "x": 110,
-        "y": 1220,
+        "y": 1280,
         "wires": [
             [
                 "a7a7b24370fc4997"
@@ -5193,7 +5194,7 @@
         "finalize": "",
         "libs": [],
         "x": 270,
-        "y": 1220,
+        "y": 1280,
         "wires": [
             [
                 "642df87e4871a1c4"
@@ -5293,7 +5294,7 @@
         "finalize": "",
         "libs": [],
         "x": 620,
-        "y": 1000,
+        "y": 1060,
         "wires": [
             [
                 "65727af8ca7694b4"
@@ -5313,7 +5314,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 610,
-        "y": 1040,
+        "y": 1100,
         "wires": [
             []
         ]
@@ -5329,7 +5330,7 @@
         ],
         "uncaught": false,
         "x": 710,
-        "y": 1320,
+        "y": 1380,
         "wires": [
             [
                 "45dadb28c9284a55",
@@ -5350,7 +5351,7 @@
         "finalize": "",
         "libs": [],
         "x": 890,
-        "y": 1300,
+        "y": 1360,
         "wires": [
             [
                 "3880a03920b6f99c"
@@ -5370,7 +5371,7 @@
         "finalize": "",
         "libs": [],
         "x": 890,
-        "y": 1340,
+        "y": 1400,
         "wires": [
             [
                 "28a1c7a16938fbb3"
@@ -5514,7 +5515,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1730,
-        "y": 980,
+        "y": 1040,
         "wires": [
             [
                 "a5009491338db9ad"
@@ -5542,7 +5543,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 1940,
-        "y": 980,
+        "y": 1040,
         "wires": []
     },
     {
@@ -5591,7 +5592,7 @@
         "outputs": 0,
         "cts": false,
         "x": 2030,
-        "y": 1280,
+        "y": 1340,
         "wires": []
     },
     {
@@ -5607,7 +5608,7 @@
         "finalize": "",
         "libs": [],
         "x": 1750,
-        "y": 1060,
+        "y": 1120,
         "wires": [
             [
                 "f6dffb08204572bf"
@@ -5629,7 +5630,7 @@
         "finalize": "",
         "libs": [],
         "x": 1830,
-        "y": 1280,
+        "y": 1340,
         "wires": [
             [
                 "242eb494f6f99039"
@@ -5650,7 +5651,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 1670,
-        "y": 1280,
+        "y": 1340,
         "wires": [
             [
                 "9e5dd8894064b7bd"
@@ -5770,7 +5771,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 2000,
-        "y": 1040,
+        "y": 1100,
         "wires": [
             []
         ]
@@ -5788,7 +5789,7 @@
         "finalize": "",
         "libs": [],
         "x": 1760,
-        "y": 940,
+        "y": 1000,
         "wires": [
             [
                 "a07a6a7f1f8b3b3f"
@@ -5949,7 +5950,7 @@
         "templateScope": "local",
         "className": "",
         "x": 1270,
-        "y": 940,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -5967,7 +5968,7 @@
         "finalize": "",
         "libs": [],
         "x": 950,
-        "y": 940,
+        "y": 1000,
         "wires": [
             [
                 "ff147062542040ed"
@@ -6199,7 +6200,7 @@
         "finalize": "",
         "libs": [],
         "x": 1770,
-        "y": 1120,
+        "y": 1180,
         "wires": [
             [
                 "87e4455cfb6d992b"
@@ -6230,7 +6231,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1990,
-        "y": 1120,
+        "y": 1180,
         "wires": [
             [
                 "ab9407c55052fb9e"
@@ -6257,7 +6258,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2140,
-        "y": 1080,
+        "y": 1140,
         "wires": []
     },
     {
@@ -6273,7 +6274,7 @@
         "finalize": "",
         "libs": [],
         "x": 1770,
-        "y": 1200,
+        "y": 1260,
         "wires": [
             [
                 "4c5d44476d630125"
@@ -6293,7 +6294,7 @@
         "finalize": "",
         "libs": [],
         "x": 2190,
-        "y": 1160,
+        "y": 1220,
         "wires": [
             [
                 "939ee531e2a85a60"
@@ -6317,7 +6318,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2000,
-        "y": 1200,
+        "y": 1260,
         "wires": []
     },
     {
@@ -6336,7 +6337,7 @@
         "expiry": "",
         "broker": "79737e067a3af084",
         "x": 2350,
-        "y": 1160,
+        "y": 1220,
         "wires": []
     },
     {
@@ -6874,7 +6875,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2190,
+        "x": 2130,
         "y": 1500,
         "wires": [
             []
@@ -7094,6 +7095,35 @@
         "wires": [
             [
                 "aab5cc2445afa1e9"
+            ]
+        ]
+    },
+    {
+        "id": "b41158a68dfc5a8f",
+        "type": "ui_button",
+        "z": "692c798b6f9c61de",
+        "g": "ccfbaa574e4c13f7",
+        "name": "Settings",
+        "group": "fc491a4cada0492f",
+        "order": 17,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Settings",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "settings_btn",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"AIR-CR_Control\",\"AIR-CR_Connection\",\"AIR-CR_schedule\",\"AIR-CR_Advanced_settings\",\"AIR-CR_r0\",\"AIR-CR_r1\",\"AIR-CR_submit\"],\"show\":[\"AIR-CR_Simple_settings\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 2860,
+        "y": 1260,
+        "wires": [
+            [
+                "f35f7ebd59ad5459"
             ]
         ]
     }
