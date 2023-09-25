@@ -6682,7 +6682,7 @@
         "order": 17,
         "width": 11,
         "height": 1,
-        "format": "<style>\n    #controlPanelHeader{\n        text-align: left;\n        color: #0094CE;\n        font-size: 30px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"controlPanelHeader\">\n    Last card used credentials\n</div>",
+        "format": "<style>\n    #controlPanelHeader{\n        text-align: left;\n        color: #0094CE;\n        font-size: 28px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"controlPanelHeader\">\n    Last card used credentials\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
