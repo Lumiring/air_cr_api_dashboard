@@ -78,42 +78,6 @@
         "h": 402
     },
     {
-        "id": "d2c54d759744b825",
-        "type": "group",
-        "z": "692c798b6f9c61de",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "d83cd52bb6d220f3",
-            "6a874cf39f52a41c",
-            "44eead080f6ff893",
-            "2c0e5a1f061ca6fb",
-            "60f424913e84a261",
-            "0ec93d1beaa5a9e4",
-            "6e20a4e8faad6ec9",
-            "3e7f179e8060b80f",
-            "d804063004b4fdfc",
-            "222ca6d9f33aad97",
-            "a473206c5a0b1c96",
-            "b2be50ecdbde2a5a",
-            "81d3f4b0ee91b226",
-            "b073da3186c96628",
-            "e88a08b7fd7c4345",
-            "e5a3acd7c9ec31f5"
-        ],
-        "x": 1974,
-        "y": 1339,
-        "w": 932,
-        "h": 402
-    },
-    {
         "id": "79737e067a3af084",
         "type": "mqtt-broker",
         "name": "",
@@ -2758,7 +2722,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "0",
+        "payload": "2",
         "payloadType": "num",
         "x": 2070,
         "y": 2120,
@@ -2812,7 +2776,6 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "d": true,
-        "g": "d2c54d759744b825",
         "name": "Rd_idx",
         "label": "Rd_idx",
         "tooltip": "",
@@ -2838,7 +2801,6 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "d": true,
-        "g": "d2c54d759744b825",
         "name": "Control_point_idx_DUMMY",
         "label": "Control_point_idx",
         "tooltip": "",
@@ -2863,7 +2825,6 @@
         "id": "44eead080f6ff893",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "Direction (Rd_Direction)",
         "label": "Direction (Rd_Direction)",
         "tooltip": "",
@@ -2902,7 +2863,6 @@
         "id": "2c0e5a1f061ca6fb",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": " Reverse byte order (Rd_Key_endian)",
         "label": " Reverse byte order (Rd_Key_endian)",
         "tooltip": "",
@@ -2941,7 +2901,6 @@
         "id": "60f424913e84a261",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "Buzzer (Rd_beep)",
         "label": "Buzzer (Rd_beep)",
         "tooltip": "",
@@ -2980,7 +2939,6 @@
         "id": "0ec93d1beaa5a9e4",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "Wiegand protocol type (Rd_Wg_type)",
         "label": "Wiegand protocol type (Rd_Wg_type)",
         "tooltip": "",
@@ -3044,7 +3002,6 @@
         "id": "6e20a4e8faad6ec9",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "SetRd1",
         "func": "let rdSet = global.get('rd_1_set') || {};\nrdSet = Object.assign(rdSet, { [msg.topic]: msg.payload })\nglobal.set('rd_1_set', rdSet)\n",
         "outputs": 1,
@@ -3062,7 +3019,6 @@
         "id": "3e7f179e8060b80f",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "group": "01eefd96a559eaf3",
         "name": "Reader 2 settings",
         "order": 2,
@@ -3084,7 +3040,6 @@
         "id": "d804063004b4fdfc",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -3103,19 +3058,16 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 2230,
+        "x": 1750,
         "y": 1500,
         "wires": [
-            [
-                "222ca6d9f33aad97"
-            ]
+            []
         ]
     },
     {
         "id": "222ca6d9f33aad97",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "Reader location (Rd_opt)",
         "label": "Reader location (Rd_opt)",
         "tooltip": "",
@@ -3149,7 +3101,6 @@
         "id": "a473206c5a0b1c96",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -3163,19 +3114,16 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 2230,
+        "x": 1930,
         "y": 1540,
         "wires": [
-            [
-                "44eead080f6ff893"
-            ]
+            []
         ]
     },
     {
         "id": "b2be50ecdbde2a5a",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -3189,19 +3137,16 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 2090,
+        "x": 1930,
         "y": 1580,
         "wires": [
-            [
-                "2c0e5a1f061ca6fb"
-            ]
+            []
         ]
     },
     {
         "id": "81d3f4b0ee91b226",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -3215,19 +3160,16 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 2090,
+        "x": 1930,
         "y": 1620,
         "wires": [
-            [
-                "60f424913e84a261"
-            ]
+            []
         ]
     },
     {
         "id": "b073da3186c96628",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -3241,19 +3183,16 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 2090,
+        "x": 1930,
         "y": 1660,
         "wires": [
-            [
-                "0ec93d1beaa5a9e4"
-            ]
+            []
         ]
     },
     {
         "id": "e88a08b7fd7c4345",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "",
         "props": [
             {
@@ -3265,21 +3204,18 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "0",
+        "payload": "1",
         "payloadType": "num",
-        "x": 2070,
+        "x": 1930,
         "y": 1700,
         "wires": [
-            [
-                "e5a3acd7c9ec31f5"
-            ]
+            []
         ]
     },
     {
         "id": "e5a3acd7c9ec31f5",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "d2c54d759744b825",
         "name": "Wiegand port (Rd_Wg_idx)",
         "label": "Wiegand port (Rd_Wg_idx)",
         "tooltip": "",
@@ -6692,6 +6628,43 @@
         "y": 3280,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "04c1d5dbdd8f38ac",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 42",
+        "func": "let reader_settings = global.get('rd_0_set')\nmsg.payload = reader_settings.Rd_opt\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2190,
+        "y": 1500,
+        "wires": [
+            [
+                "222ca6d9f33aad97"
+            ]
+        ]
+    },
+    {
+        "id": "d7d095cc69820735",
+        "type": "complete",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "scope": [
+            "a60e7bd06fc144ab",
+            "662967311ea5753e"
+        ],
+        "uncaught": false,
+        "x": 2070,
+        "y": 1580,
+        "wires": [
+            [
+                "04c1d5dbdd8f38ac"
+            ]
         ]
     },
     {
