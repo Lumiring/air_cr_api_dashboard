@@ -72,8 +72,8 @@
             "e765f3e65a86622c",
             "aab5cc2445afa1e9"
         ],
-        "x": 1974,
-        "y": 1759,
+        "x": 2434,
+        "y": 919,
         "w": 932,
         "h": 402
     },
@@ -2284,8 +2284,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 2480,
-        "y": 1840,
+        "x": 2940,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -2310,8 +2310,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 2420,
-        "y": 1880,
+        "x": 2880,
+        "y": 1040,
         "wires": [
             []
         ]
@@ -2347,8 +2347,8 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2430,
-        "y": 1960,
+        "x": 2890,
+        "y": 1120,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -2386,8 +2386,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2390,
-        "y": 2000,
+        "x": 2850,
+        "y": 1160,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -2425,8 +2425,8 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2450,
-        "y": 2040,
+        "x": 2910,
+        "y": 1200,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -2489,8 +2489,8 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2370,
-        "y": 2080,
+        "x": 2830,
+        "y": 1240,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -2509,8 +2509,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2820,
-        "y": 1980,
+        "x": 3280,
+        "y": 1140,
         "wires": [
             []
         ]
@@ -2531,8 +2531,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2510,
-        "y": 1800,
+        "x": 2970,
+        "y": 960,
         "wires": [
             []
         ]
@@ -2560,8 +2560,8 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 2230,
-        "y": 1920,
+        "x": 2690,
+        "y": 1080,
         "wires": [
             [
                 "7bbd818e1ecdb3bd"
@@ -2594,8 +2594,8 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2430,
-        "y": 1920,
+        "x": 2890,
+        "y": 1080,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -2620,8 +2620,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 2230,
-        "y": 1960,
+        "x": 2690,
+        "y": 1120,
         "wires": [
             [
                 "c83813488be715e7"
@@ -2646,8 +2646,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 2090,
-        "y": 2000,
+        "x": 2550,
+        "y": 1160,
         "wires": [
             [
                 "60fc553922b7b14e"
@@ -2672,8 +2672,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 2090,
-        "y": 2040,
+        "x": 2550,
+        "y": 1200,
         "wires": [
             [
                 "b6369bb4f44f1bb6"
@@ -2698,8 +2698,8 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 2090,
-        "y": 2080,
+        "x": 2550,
+        "y": 1240,
         "wires": [
             [
                 "3bc21ed43f4c6e09"
@@ -2724,8 +2724,8 @@
         "topic": "",
         "payload": "2",
         "payloadType": "num",
-        "x": 2070,
-        "y": 2120,
+        "x": 2530,
+        "y": 1280,
         "wires": [
             [
                 "aab5cc2445afa1e9"
@@ -2763,8 +2763,8 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2340,
-        "y": 2120,
+        "x": 2800,
+        "y": 1280,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -6635,7 +6635,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 42",
-        "func": "let reader_settings = global.get('rd_0_set')\nmsg.payload = reader_settings.Rd_opt\nreturn msg",
+        "func": "let reader_settings = global.get('rd_0_set')\nmsg.payload = reader_settings.Rd_opt\nmsg.enabled = false\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
