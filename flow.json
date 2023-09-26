@@ -1439,6 +1439,17 @@
         "height": 1
     },
     {
+        "id": "b5b06fdb86579748",
+        "type": "ui_group",
+        "name": "Simple_settings",
+        "tab": "b76cefdaf9bc6c8b",
+        "order": 10,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "f35f7ebd59ad5459",
         "type": "ui_ui_control",
         "z": "692c798b6f9c61de",
@@ -7125,6 +7136,66 @@
             [
                 "f35f7ebd59ad5459"
             ]
+        ]
+    },
+    {
+        "id": "0601d627be2326ac",
+        "type": "ui_text_input",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "b5b06fdb86579748",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 80,
+        "y": 3020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e4157227de9f69c",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Reader set",
+        "label": "Reader set",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "b5b06fdb86579748",
+        "order": 0,
+        "width": "4",
+        "height": "2",
+        "passthru": true,
+        "multiple": true,
+        "options": [
+            {
+                "label": "Input reader",
+                "value": "input",
+                "type": "str"
+            },
+            {
+                "label": "Output reader",
+                "value": "output",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 90,
+        "y": 3080,
+        "wires": [
+            []
         ]
     }
 ]
