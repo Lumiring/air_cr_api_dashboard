@@ -8270,7 +8270,7 @@
         "multiple": false,
         "options": [
             {
-                "label": "",
+                "label": "Create new control point",
                 "value": "",
                 "type": "str"
             }
@@ -8280,32 +8280,6 @@
         "topicType": "msg",
         "className": "dropdown_input",
         "x": 570,
-        "y": 3080,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f5430b14f0806194",
-        "type": "ui_button",
-        "z": "692c798b6f9c61de",
-        "name": "Create new control point",
-        "group": "b5b06fdb86579748",
-        "order": 4,
-        "width": 10,
-        "height": 1,
-        "passthru": false,
-        "label": "Create new control point",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 850,
         "y": 3080,
         "wires": [
             []
