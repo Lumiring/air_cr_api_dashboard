@@ -8401,7 +8401,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 58",
-        "func": "\n\nconsole.log(msg.device_set_idx)\nreturn msg.device_set_idx.name;",
+        "func": "\nreturn msg.device_set_idxs.name;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
