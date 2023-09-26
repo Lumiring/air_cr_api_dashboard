@@ -8223,8 +8223,8 @@
             },
             {
                 "label": "CP_2",
-                "value": "1002",
-                "type": "str"
+                "value": 1002,
+                "type": "num"
             }
         ],
         "payload": "",
