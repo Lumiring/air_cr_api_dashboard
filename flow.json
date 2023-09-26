@@ -7142,8 +7142,8 @@
         "id": "0601d627be2326ac",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "name": "",
-        "label": "",
+        "name": "Control point name",
+        "label": "Control point name",
         "tooltip": "",
         "group": "b5b06fdb86579748",
         "order": 1,
@@ -7156,7 +7156,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "msg",
-        "x": 80,
+        "x": 110,
         "y": 3020,
         "wires": [
             []
