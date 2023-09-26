@@ -8401,7 +8401,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 58",
-        "func": "\nreturn msg.device_set_idx.name;",
+        "func": "\n\n\nreturn msg.payload.device_set_idx.name;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
