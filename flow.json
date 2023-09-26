@@ -8270,7 +8270,7 @@
         "multiple": false,
         "options": [
             {
-                "label": "Create new control point",
+                "label": "Create new control point...",
                 "value": "",
                 "type": "str"
             }
