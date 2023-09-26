@@ -8468,7 +8468,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 61",
-        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.reader_1.Rd_Key_endian;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8477,7 +8477,9 @@
         "x": 350,
         "y": 3300,
         "wires": [
-            []
+            [
+                "fdf58eb0529e87d4"
+            ]
         ]
     },
     {
@@ -8485,7 +8487,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 62",
-        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.reader_1.Rd_Wg_idx;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8494,7 +8496,9 @@
         "x": 350,
         "y": 3340,
         "wires": [
-            []
+            [
+                "7c1d7e49523a72de"
+            ]
         ]
     },
     {
@@ -8502,7 +8506,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 63",
-        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.reader_2.Rd_Key_endian;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8511,7 +8515,9 @@
         "x": 350,
         "y": 3420,
         "wires": [
-            []
+            [
+                "84507c7374840699"
+            ]
         ]
     },
     {
@@ -8519,7 +8525,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 64",
-        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.reader_2.Rd_Wg_idx;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8528,7 +8534,9 @@
         "x": 350,
         "y": 3460,
         "wires": [
-            []
+            [
+                "1049fe0d5aa63d8e"
+            ]
         ]
     },
     {
@@ -8536,7 +8544,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 65",
-        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Lock_Relay_idx;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8545,7 +8553,9 @@
         "x": 350,
         "y": 3540,
         "wires": [
-            []
+            [
+                "092ad2d4e05e6f38"
+            ]
         ]
     },
     {
@@ -8553,7 +8563,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 66",
-        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_Lock_mode;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8562,7 +8572,9 @@
         "x": 350,
         "y": 3580,
         "wires": [
-            []
+            [
+                "758369828faf4d49"
+            ]
         ]
     },
     {
@@ -8570,7 +8582,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 67",
-        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_Lock_type;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8579,7 +8591,9 @@
         "x": 350,
         "y": 3620,
         "wires": [
-            []
+            [
+                "1ba7d629c1996369"
+            ]
         ]
     },
     {
@@ -8587,7 +8601,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 68",
-        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_Lock_puls;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8596,7 +8610,9 @@
         "x": 350,
         "y": 3660,
         "wires": [
-            []
+            [
+                "9ef9a17afa57a3e5"
+            ]
         ]
     },
     {
@@ -8604,7 +8620,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 69",
-        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_Delay;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8613,7 +8629,9 @@
         "x": 350,
         "y": 3700,
         "wires": [
-            []
+            [
+                "9c9834c73fe1f9c8"
+            ]
         ]
     },
     {
@@ -8621,7 +8639,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 70",
-        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_Sens_Autolock;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8630,7 +8648,9 @@
         "x": 350,
         "y": 3740,
         "wires": [
-            []
+            [
+                "98a10bcf8f8a2ede"
+            ]
         ]
     },
     {
@@ -8649,5 +8669,138 @@
         "x": 140,
         "y": 3380,
         "wires": []
+    },
+    {
+        "id": "1de98a2302ed3992",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 71",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_sens_opt;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3820,
+        "wires": [
+            [
+                "28f813b1c3d96cb8"
+            ]
+        ]
+    },
+    {
+        "id": "af5de4997ceb866d",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 72",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_sens_idx;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3860,
+        "wires": [
+            [
+                "2fcb7fb866b2e2c6"
+            ]
+        ]
+    },
+    {
+        "id": "c1b4f944a68e0923",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 73",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_Sens_Autolock;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3900,
+        "wires": [
+            [
+                "98c57186314b92bb"
+            ]
+        ]
+    },
+    {
+        "id": "d83c22dabbb49ac9",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 74",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Button_rex_idx;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3980,
+        "wires": [
+            [
+                "5231f93447f62a9b"
+            ]
+        ]
+    },
+    {
+        "id": "83034b19577de322",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 75",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Button_rex_Condition;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 4020,
+        "wires": [
+            [
+                "d370ea024eac4ba2"
+            ]
+        ]
+    },
+    {
+        "id": "948af29ed74c2ca7",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 76",
+        "func": "let obj = {}\nobj.payload = msg.time_settings.DST_GMT;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 4100,
+        "wires": [
+            [
+                "aaa39df9dc063069"
+            ]
+        ]
+    },
+    {
+        "id": "837c0f31c2912143",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 77",
+        "func": "let obj = {}\nobj.payload = msg.time_settings.tz;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 4140,
+        "wires": [
+            [
+                "073eb22fe85ed834"
+            ]
+        ]
     }
 ]
