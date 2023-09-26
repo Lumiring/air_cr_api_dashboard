@@ -8208,7 +8208,7 @@
         "payload": "",
         "topic": "topic",
         "topicType": "msg",
-        "className": "",
+        "className": "dropdown_input",
         "x": 570,
         "y": 3080,
         "wires": [
