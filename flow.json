@@ -8335,7 +8335,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 58",
-        "func": "let obj = {}\nobj.payload = msg.info.name;\nreturn obj",
+        "func": "let obj = {}\nconsole.log(msg.info.name)\nobj.payload = msg.info.name;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
