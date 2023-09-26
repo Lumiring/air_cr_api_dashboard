@@ -8271,7 +8271,12 @@
         "options": [
             {
                 "label": "Create new control point...",
-                "value": "",
+                "value": "0",
+                "type": "str"
+            },
+            {
+                "label": "CP_1",
+                "value": "1",
                 "type": "str"
             }
         ],
