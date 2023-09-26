@@ -8213,7 +8213,8 @@
         "wires": [
             [
                 "2fa1e95de24b795c",
-                "cc2679d4506e3cb4"
+                "cc2679d4506e3cb4",
+                "01c4bada7b74ba16"
             ]
         ]
     },
@@ -8334,7 +8335,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 58",
-        "func": "let obj = {}\nconsole.log(msg.info)\nobj.payload = msg.info.name;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.info.name;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8344,8 +8345,7 @@
         "y": 3140,
         "wires": [
             [
-                "0601d627be2326ac",
-                "57214ab26eee5357"
+                "0601d627be2326ac"
             ]
         ]
     },
@@ -8447,7 +8447,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 60",
-        "func": "let obj = {}\nobj.payload = msg.device_set_idxs.Control_point_idx;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.info.input_reader;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8460,21 +8460,5 @@
                 "6d1605e5a77008dc"
             ]
         ]
-    },
-    {
-        "id": "57214ab26eee5357",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 3060,
-        "wires": []
     }
 ]
