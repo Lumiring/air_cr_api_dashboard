@@ -7333,7 +7333,7 @@
         "topicType": "msg",
         "className": "dropdown_input",
         "x": 550,
-        "y": 3200,
+        "y": 3220,
         "wires": [
             [
                 "ba9f4042784ab416"
@@ -8232,7 +8232,7 @@
         "topicType": "msg",
         "className": "dropdown_input",
         "x": 110,
-        "y": 3060,
+        "y": 3080,
         "wires": [
             [
                 "b63e03fb455d84b2",
@@ -8277,8 +8277,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 190,
-        "y": 3340,
+        "x": 150,
+        "y": 3280,
         "wires": [
             [
                 "2fa1e95de24b795c",
@@ -8450,5 +8450,22 @@
         "x": 340,
         "y": 3060,
         "wires": []
+    },
+    {
+        "id": "cc2679d4506e3cb4",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 59",
+        "func": "let obj = {}\nobj.payload = msg.device_set_idxs.name;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3220,
+        "wires": [
+            []
+        ]
     }
 ]
