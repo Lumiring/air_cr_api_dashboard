@@ -8167,8 +8167,7 @@
         "y": 3080,
         "wires": [
             [
-                "b63e03fb455d84b2",
-                "6c90db7338eed615"
+                "b63e03fb455d84b2"
             ]
         ]
     },
@@ -8214,7 +8213,6 @@
         "wires": [
             [
                 "2fa1e95de24b795c",
-                "269cf01b4cc6dec7",
                 "cc2679d4506e3cb4"
             ]
         ]
@@ -8346,50 +8344,17 @@
         "y": 3140,
         "wires": [
             [
-                "0601d627be2326ac"
+                "0601d627be2326ac",
+                "57214ab26eee5357"
             ]
         ]
-    },
-    {
-        "id": "269cf01b4cc6dec7",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 360,
-        "y": 3440,
-        "wires": []
-    },
-    {
-        "id": "6c90db7338eed615",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 340,
-        "y": 3060,
-        "wires": []
     },
     {
         "id": "cc2679d4506e3cb4",
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 59",
-        "func": "let obj = {}\nobj.payload = msg.device_set_idxs.Control_point_idx;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.info.input_reader;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8495,5 +8460,21 @@
                 "6d1605e5a77008dc"
             ]
         ]
+    },
+    {
+        "id": "57214ab26eee5357",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 3060,
+        "wires": []
     }
 ]
