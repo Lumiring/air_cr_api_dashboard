@@ -113,47 +113,6 @@
         "h": 402
     },
     {
-        "id": "a584824fe780e05a",
-        "type": "group",
-        "z": "692c798b6f9c61de",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "a60e7bd06fc144ab",
-            "03faeb90bf849ef1",
-            "90a7f4cb9c95b7d0",
-            "edb0b7232f72600a",
-            "662967311ea5753e",
-            "e8e91cdbbb5ed6c9",
-            "91fbbfa1127d9d40",
-            "70a3ca8c2448c43c",
-            "8096f0b5ec80a327",
-            "3280cc3ecd2f397a",
-            "295e536ea69e5521",
-            "c6ff52813f3e6a3c",
-            "423c33113f0cb4de",
-            "009238de90d962c6",
-            "f60fe4acd866cd02",
-            "c89510f1a22adf68",
-            "5e76e13f8720948e",
-            "9316588f6e7f3466",
-            "600fd15cb7fa4699",
-            "83224f0537a00157",
-            "488af26924904fc2"
-        ],
-        "x": 14,
-        "y": 99,
-        "w": 912,
-        "h": 402
-    },
-    {
         "id": "0c11b1b8bfa778ea",
         "type": "group",
         "z": "692c798b6f9c61de",
@@ -4479,7 +4438,7 @@
         "resendOnRefresh": true,
         "templateScope": "global",
         "className": "",
-        "x": 110,
+        "x": 90,
         "y": 40,
         "wires": [
             []
@@ -4701,7 +4660,6 @@
         "id": "a60e7bd06fc144ab",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "function 1",
         "func": "let obj = JSON.parse(msg.payload)\n\nglobal.set('door_settings', obj.door_settings)\nglobal.set('device_set_idxs', obj.device_set_idxs)\nglobal.set('time_settings', obj.time_settings)\nglobal.set('rd_0_set', obj.reader_1_settings)\nglobal.set('rd_1_set', obj.reader_2_settings)\n",
         "outputs": 1,
@@ -4719,7 +4677,6 @@
         "id": "03faeb90bf849ef1",
         "type": "file in",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "",
         "filename": ".lumiring/air_cr/door_settings.json",
         "filenameType": "str",
@@ -4740,7 +4697,6 @@
         "id": "90a7f4cb9c95b7d0",
         "type": "fs-access",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "readDoorSettings",
         "path": ".lumiring/air_cr/door_settings.json",
         "pathType": "str",
@@ -4763,7 +4719,6 @@
         "id": "edb0b7232f72600a",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "",
         "props": [],
         "repeat": "",
@@ -4783,7 +4738,6 @@
         "id": "662967311ea5753e",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "function 2",
         "func": "\nglobal.set('door_settings', {\n    Door_sens_opt: 0,\n    Door_sens_idx: 0,\n    Door_sens_Condition: 0,\n    Button_rex_opt: 0,\n    Button_rex_idx: 1,\n    Button_rex_Condition: 1,\n    Lock_Relay_opt: 0,\n    Lock_Relay_idx: 0,\n    Door_Lock_mode: 0,\n    Door_Lock_type: 0,\n    Door_Lock_puls: 0.2,\n    Door_Delay: 5,\n    Door_Sens_Autolock: false\n})\nglobal.set('device_set_idxs', {\n    Control_point_idx: 1001,\n    Rd1_idx: 2002,\n    Rd0_idx: 2001\n})\nglobal.set('time_settings', {\n    DST_GMT: true,\n    tz: \"GMT0\"\n})\nglobal.set('rd_0_set', {\n    Rd_opt: 1,\n    Rd_Direction: 0,\n    Rd_Key_endian: false,\n    Rd_beep: true,\n    Rd_Wg_type: 3\n})\nglobal.set('rd_1_set', {\n    Rd_opt: 1,\n    Rd_Direction: 1,\n    Rd_Key_endian: true,\n    Rd_beep: true,\n    Rd_Wg_type: 3\n})\n",
         "outputs": 1,
@@ -5197,7 +5151,6 @@
         "id": "e8e91cdbbb5ed6c9",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "function 21",
         "func": "let obj = JSON.parse(msg.payload)\n\n\nglobal.set('mqtt_settings', obj)\n\n",
         "outputs": 1,
@@ -5215,7 +5168,6 @@
         "id": "91fbbfa1127d9d40",
         "type": "file in",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "",
         "filename": ".lumiring/air_cr/mqtt_settings.json",
         "filenameType": "str",
@@ -5236,7 +5188,6 @@
         "id": "70a3ca8c2448c43c",
         "type": "fs-access",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "readMqttSettings",
         "path": ".lumiring/air_cr/mqtt_settings.json",
         "pathType": "str",
@@ -5259,7 +5210,6 @@
         "id": "8096f0b5ec80a327",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "function 22",
         "func": "\nglobal.set('mqtt_settings', {\n    host: \"\",\n    port: 1883,\n    username: \"\",\n    password: \"\"\n})\n",
         "outputs": 1,
@@ -5277,7 +5227,6 @@
         "id": "3280cc3ecd2f397a",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "",
         "props": [],
         "repeat": "",
@@ -5416,7 +5365,6 @@
         "id": "295e536ea69e5521",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "function 28",
         "func": "let obj = JSON.parse(msg.payload)\n\n\nglobal.set('userCreds', obj)\n\n",
         "outputs": 1,
@@ -5434,7 +5382,6 @@
         "id": "c6ff52813f3e6a3c",
         "type": "file in",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "",
         "filename": ".lumiring/air_cr/device_location.json",
         "filenameType": "str",
@@ -5455,7 +5402,6 @@
         "id": "423c33113f0cb4de",
         "type": "fs-access",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "readDeviceLocation",
         "path": ".lumiring/air_cr/device_location.json",
         "pathType": "str",
@@ -5476,7 +5422,6 @@
         "id": "009238de90d962c6",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "",
         "props": [],
         "repeat": "",
@@ -5873,7 +5818,6 @@
         "id": "f60fe4acd866cd02",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "function 36",
         "func": "let obj = JSON.parse(msg.payload)\n\n\nglobal.set('schedule_list', obj)\n\n",
         "outputs": 1,
@@ -5891,7 +5835,6 @@
         "id": "c89510f1a22adf68",
         "type": "file in",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "",
         "filename": ".lumiring/air_cr/schedule_list.json",
         "filenameType": "str",
@@ -5912,7 +5855,6 @@
         "id": "5e76e13f8720948e",
         "type": "fs-access",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "readScheduleList",
         "path": ".lumiring/air_cr/schedule_list.json",
         "pathType": "str",
@@ -5935,7 +5877,6 @@
         "id": "9316588f6e7f3466",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "function 37",
         "func": "global.set('schedule_list', {list: []})\n",
         "outputs": 1,
@@ -5953,7 +5894,6 @@
         "id": "600fd15cb7fa4699",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "",
         "props": [],
         "repeat": "",
@@ -6364,7 +6304,6 @@
         "id": "83224f0537a00157",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "",
         "props": [],
         "repeat": "",
@@ -6384,7 +6323,6 @@
         "id": "488af26924904fc2",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "a584824fe780e05a",
         "name": "declareМariables",
         "func": "global.set(\"currentCardKey\", {\n    key_id: null,\n    key_hex: null\n})\nreturn msg;",
         "outputs": 1,
@@ -7357,9 +7295,11 @@
         "className": "text_input",
         "topicType": "msg",
         "x": 570,
-        "y": 3120,
+        "y": 3160,
         "wires": [
-            []
+            [
+                "ba9f4042784ab416"
+            ]
         ]
     },
     {
@@ -7393,9 +7333,11 @@
         "topicType": "msg",
         "className": "dropdown_input",
         "x": 550,
-        "y": 3160,
+        "y": 3200,
         "wires": [
-            []
+            [
+                "ba9f4042784ab416"
+            ]
         ]
     },
     {
@@ -7414,7 +7356,7 @@
         "templateScope": "local",
         "className": "",
         "x": 550,
-        "y": 3220,
+        "y": 3260,
         "wires": [
             []
         ]
@@ -7434,8 +7376,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1370,
-        "y": 3220,
+        "x": 550,
+        "y": 3380,
         "wires": [
             []
         ]
@@ -7470,8 +7412,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1460,
-        "y": 3260,
+        "x": 640,
+        "y": 3420,
         "wires": [
             []
         ]
@@ -7507,7 +7449,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 640,
-        "y": 3260,
+        "y": 3300,
         "wires": [
             []
         ]
@@ -7543,7 +7485,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 610,
-        "y": 3300,
+        "y": 3340,
         "wires": [
             []
         ]
@@ -7578,8 +7520,8 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1430,
-        "y": 3300,
+        "x": 610,
+        "y": 3460,
         "wires": [
             []
         ]
@@ -7600,7 +7542,7 @@
         "templateScope": "local",
         "className": "",
         "x": 550,
-        "y": 3440,
+        "y": 3500,
         "wires": [
             []
         ]
@@ -7631,7 +7573,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 620,
-        "y": 3480,
+        "y": 3540,
         "wires": [
             []
         ]
@@ -7667,7 +7609,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 620,
-        "y": 3520,
+        "y": 3580,
         "wires": [
             []
         ]
@@ -7703,7 +7645,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 620,
-        "y": 3560,
+        "y": 3620,
         "wires": [
             []
         ]
@@ -7727,7 +7669,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 640,
-        "y": 3600,
+        "y": 3660,
         "wires": [
             []
         ]
@@ -7751,7 +7693,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 610,
-        "y": 3640,
+        "y": 3700,
         "wires": [
             []
         ]
@@ -7772,7 +7714,7 @@
         "templateScope": "local",
         "className": "",
         "x": 580,
-        "y": 3760,
+        "y": 3780,
         "wires": [
             []
         ]
@@ -7803,7 +7745,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 650,
-        "y": 3800,
+        "y": 3820,
         "wires": [
             []
         ]
@@ -7839,7 +7781,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 650,
-        "y": 3840,
+        "y": 3860,
         "wires": [
             []
         ]
@@ -7875,7 +7817,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 660,
-        "y": 3880,
+        "y": 3900,
         "wires": [
             []
         ]
@@ -7896,7 +7838,7 @@
         "templateScope": "local",
         "className": "",
         "x": 570,
-        "y": 3960,
+        "y": 3940,
         "wires": [
             []
         ]
@@ -7932,7 +7874,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 640,
-        "y": 4040,
+        "y": 4020,
         "wires": [
             []
         ]
@@ -7968,7 +7910,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 650,
-        "y": 4000,
+        "y": 3980,
         "wires": [
             []
         ]
@@ -7989,7 +7931,7 @@
         "templateScope": "local",
         "className": "",
         "x": 590,
-        "y": 4140,
+        "y": 4060,
         "wires": [
             []
         ]
@@ -8021,7 +7963,7 @@
         "animate": false,
         "className": "dropdown_input",
         "x": 600,
-        "y": 4180,
+        "y": 4100,
         "wires": [
             []
         ]
@@ -8192,7 +8134,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 560,
-        "y": 4220,
+        "y": 4140,
         "wires": [
             []
         ]
@@ -8228,7 +8170,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 610,
-        "y": 3680,
+        "y": 3740,
         "wires": [
             []
         ]
@@ -8249,7 +8191,7 @@
         "templateScope": "local",
         "className": "",
         "x": 540,
-        "y": 4360,
+        "y": 4220,
         "wires": [
             []
         ]
@@ -8271,12 +8213,17 @@
         "options": [
             {
                 "label": "Create new control point...",
-                "value": "0",
-                "type": "str"
+                "value": 0,
+                "type": "num"
             },
             {
                 "label": "CP_1",
-                "value": "1",
+                "value": 1002,
+                "type": "num"
+            },
+            {
+                "label": "CP_2",
+                "value": "1001",
                 "type": "str"
             }
         ],
@@ -8284,10 +8231,12 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "dropdown_input",
-        "x": 570,
-        "y": 3080,
+        "x": 110,
+        "y": 3060,
         "wires": [
-            []
+            [
+                "b63e03fb455d84b2"
+            ]
         ]
     },
     {
@@ -8311,9 +8260,173 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 540,
-        "y": 4320,
+        "y": 4180,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "b63e03fb455d84b2",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 54",
+        "func": "let cpoint_idx = msg.payload\nlet main_settings_arr = global.get('main_settings').list\nlet instance = main_settings_arr.find(function (el) { return el.device_set_idxs.Control_point_idx === msg.payload })\n\nreturn instance",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 3180,
+        "wires": [
+            [
+                "2259784b01925130"
+            ]
+        ]
+    },
+    {
+        "id": "ba9f4042784ab416",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 55",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 3260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e95f3e2f8d4f89e4",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 56",
+        "func": "let obj = JSON.parse(msg.payload)\n\nglobal.set('main_settings', obj)\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5dbbea59ec3729b2",
+        "type": "file in",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "filename": ".lumiring/air_cr/main_settings.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 560,
+        "y": 520,
+        "wires": [
+            [
+                "e95f3e2f8d4f89e4"
+            ]
+        ]
+    },
+    {
+        "id": "52baa74694d72c0b",
+        "type": "fs-access",
+        "z": "692c798b6f9c61de",
+        "name": "readScheduleList",
+        "path": ".lumiring/air_cr/main_settings.json",
+        "pathType": "str",
+        "filename": "filename",
+        "filenameType": "msg",
+        "accessRead": true,
+        "accessWrite": true,
+        "x": 270,
+        "y": 540,
+        "wires": [
+            [
+                "5dbbea59ec3729b2"
+            ],
+            [
+                "ff2307c110713c11"
+            ]
+        ]
+    },
+    {
+        "id": "ff2307c110713c11",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 57",
+        "func": "global.set('main_settings', {list: []})\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b367354fa1091fcb",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 540,
+        "wires": [
+            [
+                "52baa74694d72c0b"
+            ]
+        ]
+    },
+    {
+        "id": "2fa1e95de24b795c",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 58",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 3260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2259784b01925130",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 3080,
+        "wires": []
     }
 ]
