@@ -8401,7 +8401,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 58",
-        "func": "\nreturn msg.device_set_idxs.name;",
+        "func": "let obj = {}\nobj.payload = msg.device_set_idxs.name;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
