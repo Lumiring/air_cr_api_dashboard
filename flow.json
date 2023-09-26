@@ -8214,7 +8214,8 @@
         "wires": [
             [
                 "2fa1e95de24b795c",
-                "269cf01b4cc6dec7"
+                "269cf01b4cc6dec7",
+                "cc2679d4506e3cb4"
             ]
         ]
     },
@@ -8474,6 +8475,25 @@
         "y": 3220,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "01c4bada7b74ba16",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 60",
+        "func": "let obj = {}\nobj.payload = msg.device_set_idxs.Control_point_idx;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3220,
+        "wires": [
+            [
+                "6d1605e5a77008dc"
+            ]
         ]
     }
 ]
