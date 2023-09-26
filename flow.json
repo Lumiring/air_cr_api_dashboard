@@ -8728,7 +8728,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 73",
-        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_Sens_Autolock;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_Sens_Condition;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
