@@ -8276,11 +8276,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 210,
-        "y": 3180,
+        "x": 190,
+        "y": 3340,
         "wires": [
             [
-                "2259784b01925130"
+                "2fa1e95de24b795c"
             ]
         ]
     },
@@ -8401,33 +8401,18 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 58",
-        "func": "\nreturn msg;",
+        "func": "\nreturn msg.device_set_idx.name;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 3260,
+        "x": 350,
+        "y": 3180,
         "wires": [
-            []
+            [
+                "0601d627be2326ac"
+            ]
         ]
-    },
-    {
-        "id": "2259784b01925130",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 380,
-        "y": 3080,
-        "wires": []
     }
 ]
