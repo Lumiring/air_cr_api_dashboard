@@ -8225,7 +8225,7 @@
         "width": 10,
         "height": 1,
         "passthru": false,
-        "label": "Add new control point",
+        "label": "Create new control point",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
