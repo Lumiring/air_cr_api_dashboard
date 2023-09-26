@@ -6293,14 +6293,14 @@
         "id": "488af26924904fc2",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "declareМariables",
-        "func": "global.set(\"currentCardKey\", {\n    key_id: null,\n    key_hex: null\n})\nreturn msg;",
+        "name": "declareVariables",
+        "func": "global.set(\"currentCardKey\", {\n    key_id: null,\n    key_hex: null\n})\n\nglobal.set(\"default_settings\", {\n    info: {\n        name: \"Cpoint_\" + Math.floor(Math.random() * 999999999).toString(),\n        input_reader: true,\n        output_reader: true\n    },\n    device_set_idxs: {\n        Control_point_idx: Math.floor(Math.random() * 4294967295),\n        Rd1_idx: 2002,\n        Rd0_idx: 2001\n    },\n    door_settings: {\n        Door_sens_opt: 0,\n        Door_sens_idx: 0,\n        Door_sens_Condition: 1,\n        Button_rex_opt: 0,\n        Button_rex_idx: 1,\n        Button_rex_Condition: 1,\n        Lock_Relay_opt: 0,\n        Lock_Relay_idx: 0,\n        Door_Lock_mode: 0,\n        Door_Lock_type: 0,\n        Door_Lock_puls: 0.2,\n        Door_Delay: 5,\n        Door_Sens_Autolock: false\n    },\n    time_settings: {\n        DST_GMT: true,\n        tz: \"EET-2EEST,M3.5.0/3,M10.5.0/4\"\n    },\n    reader_1_settings: {\n        Rd_opt: 1,\n        Rd_Direction: 0,\n        Rd_Key_endian: false,\n        Rd_beep: true,\n        Rd_Wg_type: 3,\n        Rd_Wg_idx: 1\n    },\n    reader_2_settings: {\n        Rd_opt: 1,\n        Rd_Direction: 1,\n        Rd_Key_endian: true,\n        Rd_beep: true,\n        Rd_Wg_type: 3,\n        Rd_Wg_idx: 2\n    }\n})",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 290,
+        "x": 280,
         "y": 140,
         "wires": [
             []
@@ -8202,7 +8202,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 54",
-        "func": "let cpoint_idx = msg.payload\nlet main_settings_arr = global.get('main_settings').list\n\nlet instance = main_settings_arr.find(function (el) { return el.device_set_idxs.Control_point_idx === msg.payload })\nconsole.log(main_settings_arr)\nreturn instance",
+        "func": "let cpoint_idx = msg.payload\nlet instance;\nif (cpoint_idx === 0){\n    instance = global.get('default_settings')\n} else {\n    let main_settings_arr = global.get('main_settings').list\n    instance = main_settings_arr.find(function (el) { return el.device_set_idxs.Control_point_idx === msg.payload })\n    console.log(main_settings_arr)\n    return instance\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8276,7 +8276,7 @@
         "id": "52baa74694d72c0b",
         "type": "fs-access",
         "z": "692c798b6f9c61de",
-        "name": "readScheduleList",
+        "name": "readMainSettings",
         "path": ".lumiring/air_cr/main_settings.json",
         "pathType": "str",
         "filename": "filename",
@@ -8345,8 +8345,7 @@
         "y": 3140,
         "wires": [
             [
-                "0601d627be2326ac",
-                "cb7605098dbb262f"
+                "0601d627be2326ac"
             ]
         ]
     },
@@ -8463,19 +8462,173 @@
         ]
     },
     {
-        "id": "cb7605098dbb262f",
-        "type": "debug",
+        "id": "249c8170bcc728a6",
+        "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 3080,
-        "wires": []
+        "name": "function 61",
+        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4f26692a416214e",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 62",
+        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6df0c9b3eceddfc",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 63",
+        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70e4d55a04f8a7e8",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 64",
+        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "455d14c4fb5ea94b",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 65",
+        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35650dc01ea576d8",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 66",
+        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43bc89a0c56b5eac",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 67",
+        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d9e8c311223a79e",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 68",
+        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "734d82a1f755bc98",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 69",
+        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad65b12aed8dc8b3",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 70",
+        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 3740,
+        "wires": [
+            []
+        ]
     }
 ]
