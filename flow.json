@@ -8415,7 +8415,7 @@
         "width": 10,
         "height": 2,
         "passthru": true,
-        "multiple": true,
+        "multiple": false,
         "options": [
             {
                 "label": "Yes",
@@ -8453,7 +8453,7 @@
         "width": 10,
         "height": 2,
         "passthru": true,
-        "multiple": true,
+        "multiple": false,
         "options": [
             {
                 "label": "Yes",
