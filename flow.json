@@ -8448,7 +8448,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 60",
-        "func": "let obj = {}\nobj.payload = msg.info.input_reader;\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.info.output_reader;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
