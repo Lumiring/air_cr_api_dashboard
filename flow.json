@@ -8849,7 +8849,7 @@
         "z": "692c798b6f9c61de",
         "g": "ccfbaa574e4c13f7",
         "name": "persistMainSettings",
-        "func": "let json = {}\n\n\nlet main_settings_arr = global.get('main_settings').list\nlet cpoint_instance = global.get('cpoint_instance')\n\n\n\n\nif (main_settings_arr.includes(cpoint_instance)){\n    console.log(true)\n} else{\n   console.log(false)\n}\n\n// let obj = {}\n// obj.payload = {}\n// obj.payload.list = json\n\n\n// return obj;\n\n",
+        "func": "let main_settings_arr = global.get('main_settings').list\nlet cpoint_instance = global.get('cpoint_instance')\n\nif (!main_settings_arr.includes(cpoint_instance)){\n    main_settings_arr.push(cpoint_instance)\n}\n\nlet obj = {}\nobj.payload = {}\nobj.payload.list = main_settings_arr\n\nreturn obj;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8858,7 +8858,9 @@
         "x": 2470,
         "y": 780,
         "wires": [
-            []
+            [
+                "5a4ff491dc97afe1"
+            ]
         ]
     },
     {
