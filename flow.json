@@ -2139,7 +2139,7 @@
             },
             {
                 "field": "Ctp_idx",
-                "title": "Ctp_idx",
+                "title": "Control point name",
                 "width": "17%",
                 "align": "left",
                 "formatter": "plaintext",
@@ -2149,7 +2149,7 @@
             },
             {
                 "field": "Event_id",
-                "title": "Event_id",
+                "title": "Event description",
                 "width": "30%",
                 "align": "left",
                 "formatter": "plaintext",
@@ -2179,7 +2179,7 @@
             },
             {
                 "field": "Key_HEX",
-                "title": "Key_HEX",
+                "title": "Key (hex)",
                 "width": "8%",
                 "align": "left",
                 "formatter": "plaintext",
@@ -2189,7 +2189,7 @@
             },
             {
                 "field": "time",
-                "title": "time",
+                "title": "Time",
                 "width": "20%",
                 "align": "left",
                 "formatter": "plaintext",
