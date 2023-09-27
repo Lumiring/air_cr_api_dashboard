@@ -102,8 +102,7 @@
             "1858ddfbf99a4971",
             "d4b89e18ef3a2264",
             "c6f8198164b0ed6e",
-            "adfb9d881a6b97ef",
-            "5a2672e7d1d2794a"
+            "adfb9d881a6b97ef"
         ],
         "x": 14,
         "y": 2279,
@@ -144,7 +143,7 @@
             "3b9303cd7cd894e2"
         ],
         "x": 14,
-        "y": 2559,
+        "y": 2539,
         "w": 1172,
         "h": 382
     },
@@ -2197,16 +2196,6 @@
                 "formatterParams": {
                     "target": "_blank"
                 }
-            },
-            {
-                "field": "gmt",
-                "title": "gmt",
-                "width": "7%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
             }
         ],
         "outputs": 0,
@@ -2311,7 +2300,7 @@
         "z": "692c798b6f9c61de",
         "g": "ccfbaa574e4c13f7",
         "name": "handleEvent",
-        "func": "let eventList = {\n    \"1\": \"Access denied: Antipassback violation\",\n    \"2\": \"Access denied: A second cardholder is required\",\n    \"3\": \"Access denied: Denied by access rule\",\n    \"4\": \"Access denied: Max occupancy reached\",\n    \"5\": \"Access denied: Expired credential\",\n    \"6\": \"Access denied: First-person-in rule supervisor absent\",\n    \"7\": \"Access denied: Inactive cardholder\",\n    \"8\": \"Access denied: Interlock\",\n    \"9\": \"Access denied: Invalid PIN\",\n    \"10\": \"Access denied: Invalid RFID\",\n    \"11\": \"Access denied: Invalid BT PHONE\",\n    \"12\": \"Access denied: Invalid LINKEY\",\n    \"13\": \"Access denied: Invalid VIKEY\",\n    \"14\": \"Access denied: Lost credential\",\n    \"15\": \"Access denied: Stolen credential\",\n    \"16\": \"Access denied: Unknown credential\",\n    \"17\": \"Access denied: Out of schedule\",\n    \"18\": \"Antipassback violation\",\n    \"19\": \"Antipassback violation forgiven\",\n    \"20\": \"Access denied: Double credential requred \",\n    \"21\": \"Access denied: Double credential timeout\",\n    \"22\": \"Entry assumed\",\n    \"23\": \"Entry detected\",\n    \"24\": \"Access granted\",\n    \"25\": \"Entry\",\n    \"26\": \"Exit\",\n\n\n    \"116\": \"Door closed\",\n    \"117\": \"Door opened\",\n    \"118\": \"Door forced open\",\n    \"119\": \"Door open too long\",\n    \"120\": \"Request to exit\",\n    \"121\": \"Door manually unlocked\",\n    \"122\": \"Door manually locked\",\n    \"123\": \"Door manually Scheduled mode\",\n    \"124\": \"Door locked\",\n    \"125\": \"Door unlocked\"\n}\n\n\n\nfunction constructOutput(key) {\n    return key + \": \" + eventList[key]\n}\n\nfunction getFormattedTime(unixTime) {\n    let months = [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"];\n    let days = [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"];\n    let d = new Date(unixTime * 1000);\n    let day = days[d.getDay()];\n    let hr = d.getHours();\n    let min = d.getMinutes();\n    if (min < 10) {\n        min = \"0\" + min;\n    }\n    let ampm = \"am\";\n    if (hr > 12) {\n        hr -= 12;\n        ampm = \"pm\";\n    }\n    let date = d.getDate();\n    let month = months[d.getMonth()];\n    let year = d.getFullYear();\n    return day + \" \" + hr + \":\" + min + ampm + \" \" + date + \" \" + month + \" \" + year;\n}\n\n\nlet eventInfoWrapper = {}\nlet eventInfo = {}\n\neventInfo = msg.payload.info\neventInfo.Event_id = constructOutput(eventInfo.Event_id)\neventInfo.time = getFormattedTime(eventInfo.time)\neventInfoWrapper.payload = {}\neventInfoWrapper.payload.command = \"addData\"\neventInfoWrapper.payload.arguments = [eventInfo, true]\n\n\nlet currentCardKey = {\n    key_id: eventInfo.Key_id,\n    key_hex: eventInfo.Key_HEX\n}\n\nglobal.set(\"currentCardKey\", currentCardKey)\n\nconsole.log(currentCardKey)\nconsole.log(eventInfo)\n\n\nreturn eventInfoWrapper;",
+        "func": "let eventList = {\n    \"1\": \"Access denied: Antipassback violation\",\n    \"2\": \"Access denied: A second cardholder is required\",\n    \"3\": \"Access denied: Denied by access rule\",\n    \"4\": \"Access denied: Max occupancy reached\",\n    \"5\": \"Access denied: Expired credential\",\n    \"6\": \"Access denied: First-person-in rule supervisor absent\",\n    \"7\": \"Access denied: Inactive cardholder\",\n    \"8\": \"Access denied: Interlock\",\n    \"9\": \"Access denied: Invalid PIN\",\n    \"10\": \"Access denied: Invalid RFID\",\n    \"11\": \"Access denied: Invalid BT PHONE\",\n    \"12\": \"Access denied: Invalid LINKEY\",\n    \"13\": \"Access denied: Invalid VIKEY\",\n    \"14\": \"Access denied: Lost credential\",\n    \"15\": \"Access denied: Stolen credential\",\n    \"16\": \"Access denied: Unknown credential\",\n    \"17\": \"Access denied: Out of schedule\",\n    \"18\": \"Antipassback violation\",\n    \"19\": \"Antipassback violation forgiven\",\n    \"20\": \"Access denied: Double credential requred \",\n    \"21\": \"Access denied: Double credential timeout\",\n    \"22\": \"Entry assumed\",\n    \"23\": \"Entry detected\",\n    \"24\": \"Access granted\",\n    \"25\": \"Entry\",\n    \"26\": \"Exit\",\n\n\n    \"116\": \"Door closed\",\n    \"117\": \"Door opened\",\n    \"118\": \"Door forced open\",\n    \"119\": \"Door open too long\",\n    \"120\": \"Request to exit\",\n    \"121\": \"Door manually unlocked\",\n    \"122\": \"Door manually locked\",\n    \"123\": \"Door manually Scheduled mode\",\n    \"124\": \"Door locked\",\n    \"125\": \"Door unlocked\"\n}\n\nlet groupList = {\n    \"0\": \"System event\",\n    \"1\": \"User event\",\n    \"2\": \"Alarm event\",\n}\n\nlet directionList = {\n    \"0\": \"Entry\",\n    \"1\": \"Exit\"\n}\n\nfunction constructDirection(key) {\n    return key + \": \" + directionList[key]\n}\n\nfunction constructGroup(key) {\n    return key + \": \" + eventList[key]\n}\n\nfunction constructOutput(key) {\n    return key + \": \" + groupList[key]\n}\n\nfunction getFormattedTime(unixTime) {\n    let months = [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"];\n    let days = [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"];\n    let d = new Date(unixTime * 1000);\n    let day = days[d.getDay()];\n    let hr = d.getHours();\n    let min = d.getMinutes();\n    if (min < 10) {\n        min = \"0\" + min;\n    }\n    let ampm = \"am\";\n    if (hr > 12) {\n        hr -= 12;\n        ampm = \"pm\";\n    }\n    let date = d.getDate();\n    let month = months[d.getMonth()];\n    let year = d.getFullYear();\n    return day + \" \" + hr + \":\" + min + ampm + \" \" + date + \" \" + month + \" \" + year;\n}\n\n\n\n\nlet eventInfoWrapper = {}\nlet eventInfo = {}\n\neventInfo = msg.payload.info\n\n\neventInfo.Event_id = constructOutput(eventInfo.Event_id)\neventInfo.time = getFormattedTime(eventInfo.time)\neventInfo.Group = constructGroup(eventInfo.Group)\neventInfo.Direction = constructDirection(eventInfo.Direction)\n\neventInfoWrapper.payload = {}\neventInfoWrapper.payload.command = \"addData\"\neventInfoWrapper.payload.arguments = [eventInfo, true]\n\nlet main_settings_arr = global.get('main_settings').list\nlet instance = main_settings_arr.find(function (el) {return el.device_set_idxs.Control_point_idx === eventInfo.Ctp_idx})\n\nif(instance){\n    eventInfo.Ctp_idx = instance.info.name\n} else{\n    eventInfo.Ctp_idx = \"Unknown\"\n}\n\n\n\nlet currentCardKey = {\n    key_id: eventInfo.Key_id,\n    key_hex: eventInfo.Key_HEX\n}\n\nglobal.set(\"currentCardKey\", currentCardKey)\n\nconsole.log(currentCardKey)\nconsole.log(eventInfo)\n\n\nreturn eventInfoWrapper;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3221,7 +3210,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 790,
+        "x": 730,
         "y": 2060,
         "wires": [
             [
@@ -4352,8 +4341,7 @@
         "y": 2400,
         "wires": [
             [
-                "1858ddfbf99a4971",
-                "5a2672e7d1d2794a"
+                "1858ddfbf99a4971"
             ]
         ]
     },
@@ -4380,8 +4368,7 @@
         "y": 2440,
         "wires": [
             [
-                "1858ddfbf99a4971",
-                "5a2672e7d1d2794a"
+                "1858ddfbf99a4971"
             ]
         ]
     },
@@ -5782,7 +5769,7 @@
         "finalize": "",
         "libs": [],
         "x": 850,
-        "y": 2700,
+        "y": 2680,
         "wires": [
             []
         ]
@@ -5814,7 +5801,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 640,
-        "y": 2660,
+        "y": 2640,
         "wires": [
             [
                 "06c80f09630e9c1f",
@@ -5835,7 +5822,7 @@
         "finalize": "",
         "libs": [],
         "x": 630,
-        "y": 2600,
+        "y": 2580,
         "wires": [
             [
                 "5a3655d37cbf67da"
@@ -5855,7 +5842,7 @@
         ],
         "uncaught": false,
         "x": 450,
-        "y": 2600,
+        "y": 2580,
         "wires": [
             [
                 "cdcfb93280054d6e"
@@ -5901,7 +5888,7 @@
         "templateScope": "local",
         "className": "",
         "x": 240,
-        "y": 2600,
+        "y": 2580,
         "wires": [
             []
         ]
@@ -5968,7 +5955,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 610,
-        "y": 2720,
+        "y": 2700,
         "wires": [
             [
                 "06c80f09630e9c1f"
@@ -5995,7 +5982,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 620,
-        "y": 2760,
+        "y": 2740,
         "wires": [
             [
                 "06c80f09630e9c1f"
@@ -6024,7 +6011,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 620,
-        "y": 2800,
+        "y": 2780,
         "wires": [
             [
                 "2f78343e81efe375"
@@ -6044,7 +6031,7 @@
         "finalize": "",
         "libs": [],
         "x": 800,
-        "y": 2800,
+        "y": 2780,
         "wires": [
             [
                 "ccb4b2f8e2e0d3ed"
@@ -6067,7 +6054,7 @@
         "expiry": "",
         "broker": "79737e067a3af084",
         "x": 970,
-        "y": 2800,
+        "y": 2780,
         "wires": []
     },
     {
@@ -6083,7 +6070,7 @@
         "finalize": "",
         "libs": [],
         "x": 430,
-        "y": 2740,
+        "y": 2720,
         "wires": [
             [
                 "ea4817b58c74e471"
@@ -6115,7 +6102,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 180,
-        "y": 2740,
+        "y": 2720,
         "wires": [
             [
                 "1c62bd8daee77ef6"
@@ -6324,7 +6311,7 @@
         "finalize": "",
         "libs": [],
         "x": 850,
-        "y": 2640,
+        "y": 2620,
         "wires": [
             [
                 "ec0a0d0db4482c0a"
@@ -6348,7 +6335,7 @@
         "templateScope": "local",
         "className": "",
         "x": 1080,
-        "y": 2640,
+        "y": 2620,
         "wires": [
             []
         ]
@@ -6370,7 +6357,7 @@
         "templateScope": "local",
         "className": "",
         "x": 710,
-        "y": 2900,
+        "y": 2880,
         "wires": [
             []
         ]
@@ -6386,7 +6373,7 @@
         ],
         "uncaught": false,
         "x": 270,
-        "y": 2880,
+        "y": 2860,
         "wires": [
             [
                 "ef458d9470a09f94"
@@ -6406,7 +6393,7 @@
         "finalize": "",
         "libs": [],
         "x": 490,
-        "y": 2880,
+        "y": 2860,
         "wires": [
             [
                 "71657acdb10fab6a"
@@ -6430,7 +6417,7 @@
         "templateScope": "local",
         "className": "",
         "x": 710,
-        "y": 2860,
+        "y": 2840,
         "wires": [
             []
         ]
@@ -8961,22 +8948,5 @@
                 "1cbac974e1dbb470"
             ]
         ]
-    },
-    {
-        "id": "5a2672e7d1d2794a",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "g": "0c11b1b8bfa778ea",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 340,
-        "y": 2320,
-        "wires": []
     }
 ]
