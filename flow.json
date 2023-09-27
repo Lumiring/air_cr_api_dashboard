@@ -2128,7 +2128,7 @@
         "height": 12,
         "columns": [
             {
-                "field": "Group",
+                "field": "Grou",
                 "title": "Group",
                 "width": "10%",
                 "align": "left",
