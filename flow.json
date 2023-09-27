@@ -8813,13 +8813,13 @@
         "z": "692c798b6f9c61de",
         "g": "ccfbaa574e4c13f7",
         "name": "",
-        "filename": ".lumiring/air_cr/test.json",
+        "filename": ".lumiring/air_cr/main_settings.json",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2690,
+        "x": 2720,
         "y": 860,
         "wires": [
             []
