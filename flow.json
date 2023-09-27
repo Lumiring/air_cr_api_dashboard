@@ -133,13 +133,11 @@
             "1858ddfbf99a4971",
             "d4b89e18ef3a2264",
             "c6f8198164b0ed6e",
-            "adfb9d881a6b97ef",
-            "09f42d6ad1ee9508",
-            "2f45ab7ce51d5437"
+            "adfb9d881a6b97ef"
         ],
         "x": 14,
         "y": 2299,
-        "w": 612,
+        "w": 592,
         "h": 242
     },
     {
@@ -4471,7 +4469,7 @@
         "y": 2420,
         "wires": [
             [
-                "09f42d6ad1ee9508"
+                "1858ddfbf99a4971"
             ]
         ]
     },
@@ -4498,7 +4496,7 @@
         "y": 2460,
         "wires": [
             [
-                "09f42d6ad1ee9508"
+                "1858ddfbf99a4971"
             ]
         ]
     },
@@ -5539,7 +5537,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 530,
+        "x": 370,
         "y": 2420,
         "wires": [
             []
@@ -5551,7 +5549,7 @@
         "z": "692c798b6f9c61de",
         "g": "0c11b1b8bfa778ea",
         "name": "function 33",
-        "func": "\n\nlet device_set_idxs = global.get('device_set_idxs')\nlet userCreds = global.get('userCreds');\n\nlet schedule_instance = RED.util.cloneMessage(global.get('schedule'))\nschedule_instance.Shedule_id = Math.floor(Math.random() * 4294967295)\nschedule_instance.Ctp_idx = device_set_idxs.Control_point_idx\nschedule_instance.TmStart /= 1000\nschedule_instance.TmEnd /= 1000\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetSdlDaily\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = RED.util.cloneMessage(schedule_instance)\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('messageId', msgWrapper.message_id)\n\nglobal.set(\"schedule_instance\", schedule_instance)\n\n\nreturn msg",
+        "func": "\n\nlet device_set_idxs = global.get('device_set_idxs')\nlet userCreds = global.get('userCreds');\n\nlet schedule_instance = RED.util.cloneMessage(global.get('schedule'))\nschedule_instance.Shedule_id = Math.floor(Math.random() * 4294967295)\nschedule_instance.Ctp_idx = device_set_idxs.Control_point_idx\nschedule_instance.TmStart /= 1000\nschedule_instance.TmEnd /= 1000\n\nschedule_instance.TmStart = schedule_instance.TmStart.toString()\nschedule_instance.TmEnd = schedule_instance.TmEnd.toString()\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetSdlDaily\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = RED.util.cloneMessage(schedule_instance)\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('messageId', msgWrapper.message_id)\n\nglobal.set(\"schedule_instance\", schedule_instance)\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9028,43 +9026,5 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "09f42d6ad1ee9508",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "g": "0c11b1b8bfa778ea",
-        "name": "toString",
-        "func": "msg.payload = msg.payload.toString()\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 240,
-        "y": 2440,
-        "wires": [
-            [
-                "1858ddfbf99a4971",
-                "2f45ab7ce51d5437"
-            ]
-        ]
-    },
-    {
-        "id": "2f45ab7ce51d5437",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "g": "0c11b1b8bfa778ea",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 420,
-        "y": 2360,
-        "wires": []
     }
 ]
