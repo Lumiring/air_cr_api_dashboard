@@ -7449,7 +7449,7 @@
         "id": "9ef9a17afa57a3e5",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "name": "Impulse duration (sec) (Door_Lock_puls)",
+        "name": "Impulse duration (milliseconds) (Door_Lock_puls)",
         "label": "Impulse duration (sec) (Door_Lock_puls):",
         "tooltip": "",
         "group": "b5b06fdb86579748",
@@ -7463,7 +7463,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 980,
+        "x": 950,
         "y": 3640,
         "wires": [
             [
@@ -8475,7 +8475,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
+        "x": 670,
         "y": 3640,
         "wires": [
             [
