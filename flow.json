@@ -2128,8 +2128,8 @@
         "height": 12,
         "columns": [
             {
-                "field": "Grou",
-                "title": "Group",
+                "field": "Group",
+                "title": "Event Type",
                 "width": "10%",
                 "align": "left",
                 "formatter": "plaintext",
