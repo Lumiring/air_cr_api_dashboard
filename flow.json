@@ -7229,8 +7229,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 570,
-        "y": 3140,
+        "x": 910,
+        "y": 3120,
         "wires": [
             [
                 "6f5df0aece82fdd9"
@@ -7252,8 +7252,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 550,
-        "y": 3260,
+        "x": 890,
+        "y": 3240,
         "wires": [
             []
         ]
@@ -7273,8 +7273,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 550,
-        "y": 3380,
+        "x": 890,
+        "y": 3360,
         "wires": [
             []
         ]
@@ -7309,8 +7309,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 640,
-        "y": 3420,
+        "x": 980,
+        "y": 3400,
         "wires": [
             [
                 "bcb61ab8f00a2478"
@@ -7347,8 +7347,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 640,
-        "y": 3300,
+        "x": 980,
+        "y": 3280,
         "wires": [
             [
                 "3190b74c02239e23"
@@ -7385,8 +7385,8 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 610,
-        "y": 3340,
+        "x": 950,
+        "y": 3320,
         "wires": [
             [
                 "3190b74c02239e23"
@@ -7423,8 +7423,8 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 610,
-        "y": 3460,
+        "x": 950,
+        "y": 3440,
         "wires": [
             [
                 "bcb61ab8f00a2478"
@@ -7446,8 +7446,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 550,
-        "y": 3500,
+        "x": 890,
+        "y": 3480,
         "wires": [
             []
         ]
@@ -7477,8 +7477,8 @@
         "topic": "Lock_Relay_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 620,
-        "y": 3540,
+        "x": 960,
+        "y": 3520,
         "wires": [
             [
                 "9fc7e6688e61a606"
@@ -7515,8 +7515,8 @@
         "topic": "Door_Lock_mode",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 620,
-        "y": 3580,
+        "x": 960,
+        "y": 3560,
         "wires": [
             [
                 "9fc7e6688e61a606"
@@ -7553,8 +7553,8 @@
         "topic": "Door_Lock_type",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 620,
-        "y": 3620,
+        "x": 960,
+        "y": 3600,
         "wires": [
             [
                 "9fc7e6688e61a606"
@@ -7579,8 +7579,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 640,
-        "y": 3660,
+        "x": 980,
+        "y": 3640,
         "wires": [
             [
                 "9fc7e6688e61a606"
@@ -7605,8 +7605,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 610,
-        "y": 3700,
+        "x": 950,
+        "y": 3680,
         "wires": [
             [
                 "9fc7e6688e61a606"
@@ -7628,8 +7628,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 580,
-        "y": 3780,
+        "x": 920,
+        "y": 3760,
         "wires": [
             []
         ]
@@ -7659,8 +7659,8 @@
         "topic": "Door_sens_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 650,
-        "y": 3820,
+        "x": 990,
+        "y": 3800,
         "wires": [
             [
                 "9fc7e6688e61a606"
@@ -7697,8 +7697,8 @@
         "topic": "Door_sens_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 650,
-        "y": 3860,
+        "x": 990,
+        "y": 3840,
         "wires": [
             [
                 "9fc7e6688e61a606"
@@ -7735,8 +7735,8 @@
         "topic": "Door_sens_Condition",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 660,
-        "y": 3900,
+        "x": 1000,
+        "y": 3880,
         "wires": [
             [
                 "9fc7e6688e61a606"
@@ -7758,8 +7758,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 570,
-        "y": 3940,
+        "x": 910,
+        "y": 3920,
         "wires": [
             []
         ]
@@ -7794,8 +7794,8 @@
         "topic": "Button_rex_Condition",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 640,
-        "y": 3980,
+        "x": 980,
+        "y": 3960,
         "wires": [
             [
                 "9fc7e6688e61a606"
@@ -7832,8 +7832,8 @@
         "topic": "Button_rex_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 650,
-        "y": 4020,
+        "x": 990,
+        "y": 4000,
         "wires": [
             [
                 "9fc7e6688e61a606"
@@ -7855,8 +7855,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 590,
-        "y": 4060,
+        "x": 930,
+        "y": 4040,
         "wires": [
             []
         ]
@@ -7887,8 +7887,8 @@
         "offcolor": "",
         "animate": false,
         "className": "dropdown_input",
-        "x": 600,
-        "y": 4100,
+        "x": 940,
+        "y": 4080,
         "wires": [
             [
                 "a3c8152adc4c7dcd"
@@ -8060,8 +8060,8 @@
         "topic": "tz",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 560,
-        "y": 4140,
+        "x": 900,
+        "y": 4120,
         "wires": [
             [
                 "a3c8152adc4c7dcd"
@@ -8098,8 +8098,8 @@
         "topic": "Door_Sens_Autolock",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 610,
-        "y": 3740,
+        "x": 950,
+        "y": 3720,
         "wires": [
             [
                 "9fc7e6688e61a606"
@@ -8121,8 +8121,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 540,
-        "y": 4320,
+        "x": 880,
+        "y": 4300,
         "wires": [
             []
         ]
@@ -8146,24 +8146,14 @@
                 "label": "Create new control point...",
                 "value": 0,
                 "type": "num"
-            },
-            {
-                "label": "CP_1",
-                "value": 1001,
-                "type": "num"
-            },
-            {
-                "label": "CP_2",
-                "value": 1002,
-                "type": "num"
             }
         ],
         "payload": "",
         "topic": "topic",
         "topicType": "msg",
         "className": "dropdown_input",
-        "x": 110,
-        "y": 3140,
+        "x": 410,
+        "y": 3400,
         "wires": [
             [
                 "b63e03fb455d84b2"
@@ -8190,8 +8180,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 720,
-        "y": 4320,
+        "x": 1060,
+        "y": 4300,
         "wires": [
             [
                 "98f21910ed797484"
@@ -8209,8 +8199,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 130,
-        "y": 3520,
+        "x": 470,
+        "y": 3500,
         "wires": [
             [
                 "2fa1e95de24b795c",
@@ -8341,8 +8331,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3140,
+        "x": 690,
+        "y": 3120,
         "wires": [
             [
                 "0601d627be2326ac"
@@ -8360,8 +8350,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3180,
+        "x": 690,
+        "y": 3160,
         "wires": [
             [
                 "8e4157227de9f69c"
@@ -8398,8 +8388,8 @@
         "topic": "input_reader",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 550,
-        "y": 3180,
+        "x": 890,
+        "y": 3160,
         "wires": [
             [
                 "6f5df0aece82fdd9"
@@ -8436,8 +8426,8 @@
         "topic": "output_reader",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 560,
-        "y": 3220,
+        "x": 900,
+        "y": 3200,
         "wires": [
             [
                 "6f5df0aece82fdd9"
@@ -8455,8 +8445,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3220,
+        "x": 690,
+        "y": 3200,
         "wires": [
             [
                 "6d1605e5a77008dc"
@@ -8474,8 +8464,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3300,
+        "x": 690,
+        "y": 3280,
         "wires": [
             [
                 "fdf58eb0529e87d4"
@@ -8493,8 +8483,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3340,
+        "x": 690,
+        "y": 3320,
         "wires": [
             [
                 "7c1d7e49523a72de"
@@ -8512,8 +8502,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3420,
+        "x": 690,
+        "y": 3400,
         "wires": [
             [
                 "84507c7374840699"
@@ -8531,8 +8521,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3460,
+        "x": 690,
+        "y": 3440,
         "wires": [
             [
                 "1049fe0d5aa63d8e"
@@ -8550,8 +8540,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3540,
+        "x": 690,
+        "y": 3520,
         "wires": [
             [
                 "092ad2d4e05e6f38"
@@ -8569,8 +8559,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3580,
+        "x": 690,
+        "y": 3560,
         "wires": [
             [
                 "758369828faf4d49"
@@ -8588,8 +8578,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3620,
+        "x": 690,
+        "y": 3600,
         "wires": [
             [
                 "1ba7d629c1996369"
@@ -8607,8 +8597,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3660,
+        "x": 690,
+        "y": 3640,
         "wires": [
             [
                 "9ef9a17afa57a3e5"
@@ -8626,8 +8616,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3700,
+        "x": 690,
+        "y": 3680,
         "wires": [
             [
                 "9c9834c73fe1f9c8"
@@ -8645,8 +8635,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3740,
+        "x": 690,
+        "y": 3720,
         "wires": [
             [
                 "98a10bcf8f8a2ede"
@@ -8664,8 +8654,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3820,
+        "x": 690,
+        "y": 3800,
         "wires": [
             [
                 "28f813b1c3d96cb8"
@@ -8683,8 +8673,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3860,
+        "x": 690,
+        "y": 3840,
         "wires": [
             [
                 "2fcb7fb866b2e2c6"
@@ -8702,8 +8692,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3900,
+        "x": 690,
+        "y": 3880,
         "wires": [
             [
                 "98c57186314b92bb"
@@ -8721,8 +8711,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 4020,
+        "x": 690,
+        "y": 4000,
         "wires": [
             [
                 "5231f93447f62a9b"
@@ -8740,8 +8730,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 3980,
+        "x": 690,
+        "y": 3960,
         "wires": [
             [
                 "d370ea024eac4ba2"
@@ -8759,8 +8749,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 4100,
+        "x": 690,
+        "y": 4080,
         "wires": [
             [
                 "aaa39df9dc063069"
@@ -8778,8 +8768,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 4140,
+        "x": 690,
+        "y": 4120,
         "wires": [
             [
                 "073eb22fe85ed834"
@@ -8797,8 +8787,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
-        "y": 3180,
+        "x": 1250,
+        "y": 3160,
         "wires": [
             []
         ]
@@ -8852,8 +8842,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 3320,
+        "x": 1330,
+        "y": 3300,
         "wires": [
             []
         ]
@@ -8869,8 +8859,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 3440,
+        "x": 1330,
+        "y": 3420,
         "wires": [
             []
         ]
@@ -8886,8 +8876,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1050,
-        "y": 3740,
+        "x": 1390,
+        "y": 3720,
         "wires": [
             []
         ]
@@ -8903,8 +8893,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
-        "y": 4120,
+        "x": 1250,
+        "y": 4100,
         "wires": [
             []
         ]
@@ -8923,8 +8913,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 1170,
-        "y": 4320,
+        "x": 1510,
+        "y": 4300,
         "wires": []
     },
     {
@@ -8938,8 +8928,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
-        "y": 4320,
+        "x": 1270,
+        "y": 4300,
         "wires": [
             [
                 "5c7f730ba49ae67c"
@@ -8990,6 +8980,43 @@
         "wires": [
             [
                 "08d971dd14813356"
+            ]
+        ]
+    },
+    {
+        "id": "15a5d49a78c345b7",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 79",
+        "func": "let main_settings_arr =  global.get('main_settings').list\nlet cpointName_list = []\n\nmain_settings_arr.forEach(function(element) {\n    cpointName_list.push({ [element.info.name]: element.device_set_idxs.Control_point_idx })\n});\n\nmsg.options = cpointName_list\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 3400,
+        "wires": [
+            [
+                "ae3c047e4b745ae6"
+            ]
+        ]
+    },
+    {
+        "id": "265543961152abce",
+        "type": "complete",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "scope": [
+            "ff2307c110713c11",
+            "e95f3e2f8d4f89e4"
+        ],
+        "uncaught": false,
+        "x": 210,
+        "y": 3280,
+        "wires": [
+            [
+                "15a5d49a78c345b7"
             ]
         ]
     }
