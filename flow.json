@@ -8982,7 +8982,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 79",
-        "func": "let main_settings_arr =  global.get('main_settings').list\nlet cpointName_list = [{ \"Create new control point..\": 0 }]\n\n\nmain_settings_arr.forEach(function(element) {\n    cpointName_list.push({ [element.info.name]: element.device_set_idxs.Control_point_idx })\n});\n\nconsole.log(cpointName_list)\n\nmsg.options = cpointName_list\n\nreturn msg;\n\n\n\n",
+        "func": "let main_settings_arr =  global.get('main_settings').list\nlet cpointName_list = [{ \"Create new control point..\": 0 }]\nconsole.log(main_settings_arr)\n\nmain_settings_arr.forEach(function(element) {\n    cpointName_list.push({ [element.info.name]: element.device_set_idxs.Control_point_idx })\n});\n\nconsole.log(cpointName_list)\n\nmsg.options = cpointName_list\n\nreturn msg;\n\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
