@@ -6474,7 +6474,7 @@
         "order": 19,
         "width": 11,
         "height": 2,
-        "format": "<style>\n    #lastCardInfo {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"lastCardInfo\">\n    <div>Key ID: {{msg.payload.key_id}}</div>\n    <div>Key hex: {{msg.payload.key_hex}}</div>\n</div>",
+        "format": "<style>\n    #lastCardInfo {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"lastCardInfo\">\n    <div>Key ID:   {{msg.payload.key_id}}</div>\n    <div>Key hex:   {{msg.payload.key_hex}}</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
