@@ -8256,7 +8256,6 @@
                 "cc2679d4506e3cb4",
                 "01c4bada7b74ba16",
                 "249c8170bcc728a6",
-                "610a3bced45affec",
                 "a6df0c9b3eceddfc",
                 "70e4d55a04f8a7e8",
                 "455d14c4fb5ea94b",
@@ -8692,23 +8691,6 @@
                 "98a10bcf8f8a2ede"
             ]
         ]
-    },
-    {
-        "id": "610a3bced45affec",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 120,
-        "y": 3660,
-        "wires": []
     },
     {
         "id": "1de98a2302ed3992",
