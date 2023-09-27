@@ -8368,12 +8368,12 @@
         "multiple": false,
         "options": [
             {
-                "label": "Yes",
+                "label": "ON",
                 "value": true,
                 "type": "bool"
             },
             {
-                "label": "No",
+                "label": "OFF",
                 "value": false,
                 "type": "bool"
             }
@@ -8406,12 +8406,12 @@
         "multiple": false,
         "options": [
             {
-                "label": "Yes",
+                "label": "ON",
                 "value": true,
                 "type": "bool"
             },
             {
-                "label": "No",
+                "label": "OFF",
                 "value": false,
                 "type": "bool"
             }
