@@ -341,7 +341,8 @@
             "b41158a68dfc5a8f",
             "08d971dd14813356",
             "5a4ff491dc97afe1",
-            "6cd6687986548c35"
+            "6cd6687986548c35",
+            "5ca21ea96e5532f4"
         ],
         "x": 14,
         "y": 719,
@@ -4592,7 +4593,7 @@
         "z": "692c798b6f9c61de",
         "g": "ccfbaa574e4c13f7",
         "name": "persistDoor_settings",
-        "filename": ".lumiring/air_cr/door_settings.json",
+        "filename": ".lumiring/air_cr/main_settings.json",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -6298,7 +6299,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "declareVariables",
-        "func": "global.set(\"currentCardKey\", {\n    key_id: null,\n    key_hex: null\n})\n\nglobal.set(\"default_settings\", {\n    info: {\n        name: \"Cpoint_\" + Math.floor(Math.random() * 999999999).toString(),\n        input_reader: true,\n        output_reader: true\n    },\n    device_set_idxs: {\n        Control_point_idx: Math.floor(Math.random() * 4294967295),\n        Rd1_idx: 2002,\n        Rd0_idx: 2001\n    },\n    door_settings: {\n        Door_sens_opt: 0,\n        Door_sens_idx: 0,\n        Door_sens_Condition: 1,\n        Button_rex_opt: 0,\n        Button_rex_idx: 1,\n        Button_rex_Condition: 1,\n        Lock_Relay_opt: 0,\n        Lock_Relay_idx: 0,\n        Door_Lock_mode: 0,\n        Door_Lock_type: 0,\n        Door_Lock_puls: 0.2,\n        Door_Delay: 5,\n        Door_Sens_Autolock: false\n    },\n    time_settings: {\n        DST_GMT: true,\n        tz: \"EET-2EEST,M3.5.0/3,M10.5.0/4\"\n    },\n    reader_1_settings: {\n        Rd_opt: 1,\n        Rd_Direction: 0,\n        Rd_Key_endian: false,\n        Rd_beep: true,\n        Rd_Wg_type: 3,\n        Rd_Wg_idx: 1\n    },\n    reader_2_settings: {\n        Rd_opt: 1,\n        Rd_Direction: 1,\n        Rd_Key_endian: true,\n        Rd_beep: true,\n        Rd_Wg_type: 3,\n        Rd_Wg_idx: 2\n    }\n})\n\n\n\n\n",
+        "func": "global.set(\"currentCardKey\", {\n    key_id: null,\n    key_hex: null\n})\n\nglobal.set(\"default_settings\", {\n    info: {\n        name: \"Cpoint_\" + Math.floor(Math.random() * 999999999).toString(),\n        input_reader: true,\n        output_reader: true\n    },\n    device_set_idxs: {\n        Control_point_idx: Math.floor(Math.random() * 4294967295),\n        Rd1_idx: 2002,\n        Rd0_idx: 2001\n    },\n    door_settings: {\n        Door_sens_opt: 0,\n        Door_sens_idx: 0,\n        Door_sens_Condition: 1,\n        Button_rex_opt: 0,\n        Button_rex_idx: 1,\n        Button_rex_Condition: 1,\n        Lock_Relay_opt: 0,\n        Lock_Relay_idx: 0,\n        Door_Lock_mode: 0,\n        Door_Lock_type: 0,\n        Door_Lock_puls: 0.2,\n        Door_Delay: 5,\n        Door_Sens_Autolock: false\n    },\n    time_settings: {\n        DST_GMT: true,\n        tz: \"EET-2EEST,M3.5.0/3,M10.5.0/4\"\n    },\n    reader_1_settings: {\n        Rd_opt: 1,\n        Rd_Direction: 0,\n        Rd_Key_endian: false,\n        Rd_beep: true,\n        Rd_Wg_type: 3,\n        Rd_Wg_idx: 1\n    },\n    reader_2_settings: {\n        Rd_opt: 1,\n        Rd_Direction: 1,\n        Rd_Key_endian: true,\n        Rd_beep: true,\n        Rd_Wg_type: 3,\n        Rd_Wg_idx: 2\n    }\n})\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8242,7 +8243,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 54",
-        "func": "let cpoint_idx = msg.payload\nlet cpoint_instance;\nif (cpoint_idx === 0){\n    cpoint_instance = global.get('default_settings')\n} else {\n    let main_settings_arr = global.get('main_settings').list\n    cpoint_instance = main_settings_arr.find(function (el) { return el.device_set_idxs.Control_point_idx === msg.payload })\n}\n\nconsole.log(cpoint_instance)\nglobal.set(\"cpoint_instance\", cpoint_instance)\nreturn cpoint_instance",
+        "func": "let cpoint_idx = msg.payload\nlet cpoint_instance;\nif (cpoint_idx === 0){\n    cpoint_instance = RED.util.cloneMessage(global.get('default_settings'))\n} else {\n    let main_settings_arr = global.get('main_settings').list\n    cpoint_instance = main_settings_arr.find(function (el) { return el.device_set_idxs.Control_point_idx === msg.payload })\n}\n\nglobal.set(\"cpoint_instance\", cpoint_instance)\nreturn cpoint_instance",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8848,7 +8849,7 @@
         "z": "692c798b6f9c61de",
         "g": "ccfbaa574e4c13f7",
         "name": "persistMainSettings",
-        "func": "let json = {}\n\njson.info = global.get('info')\njson.device_set_idxs = global.get('device_set_idxs')\njson.door_settings = global.get('door_settings')\njson.time_settings = global.get('time_settings')\njson.reader_1_settings = global.get('rd_0_set')\njson.reader_2_settings = global.get('rd_1_set')\n\nlet main_settings_arr = global.get('main_settings').list\nlet instance = main_settings_arr.find(function (el) { return el.device_set_idxs.Control_point_idx === msg.payload })\n\nif(instance){\n    instance = json\n} else{\n    main_settings_arr.push(json)\n}\n\nlet obj = {}\nobj.payload = {}\nobj.payload.list = json\nreturn obj;\n\n",
+        "func": "let json = {}\n\n\nlet main_settings_arr = global.get('main_settings').list\nlet cpoint_instance = global.get('cpoint_instance')\n\n\n\n\nif (main_settings_arr.includes(cpoint_instance)){\n    console.log(true)\n} else{\n   console.log(false)\n}\n\n// let obj = {}\n// obj.payload = {}\n// obj.payload.list = json\n\n\n// return obj;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8857,9 +8858,7 @@
         "x": 2470,
         "y": 780,
         "wires": [
-            [
-                "5a4ff491dc97afe1"
-            ]
+            []
         ]
     },
     {
@@ -9001,5 +9000,35 @@
         "x": 1500,
         "y": 1140,
         "wires": []
+    },
+    {
+        "id": "5ca21ea96e5532f4",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "ccfbaa574e4c13f7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2260,
+        "y": 780,
+        "wires": [
+            [
+                "08d971dd14813356"
+            ]
+        ]
     }
 ]
