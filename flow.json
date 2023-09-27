@@ -7450,7 +7450,7 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "name": "Impulse duration (milliseconds) (Door_Lock_puls)",
-        "label": "Impulse duration (sec) (Door_Lock_puls):",
+        "label": "Impulse duration (milliseconds) (Door_Lock_puls):",
         "tooltip": "",
         "group": "b5b06fdb86579748",
         "order": 24,
