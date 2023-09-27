@@ -8,37 +8,6 @@
         "env": []
     },
     {
-        "id": "673990432da8bf57",
-        "type": "group",
-        "z": "692c798b6f9c61de",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "88f9361be756f961",
-            "7bda40ae5d0419f4",
-            "0b88f25bf185f363",
-            "d6765f34883a6bc1",
-            "8ceb1c5b5fb6e7d7",
-            "02f2de19b7b337bc",
-            "1cbac974e1dbb470",
-            "5e83605c1e8b1345",
-            "804d8ac17c0ee538",
-            "dfbd635c1022b71c",
-            "c5f7a3022f0a71d4"
-        ],
-        "x": 2694,
-        "y": 1859,
-        "w": 632,
-        "h": 442
-    },
-    {
         "id": "10f19757a09301a8",
         "type": "group",
         "z": "692c798b6f9c61de",
@@ -1674,7 +1643,6 @@
         "id": "88f9361be756f961",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
         "name": "Forced Unlock",
         "group": "78fe50a055b65ca2",
         "order": 5,
@@ -1691,8 +1659,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 2800,
-        "y": 2000,
+        "x": 2820,
+        "y": 1980,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1703,7 +1671,6 @@
         "id": "7bda40ae5d0419f4",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
         "name": "Locked",
         "group": "78fe50a055b65ca2",
         "order": 8,
@@ -1720,8 +1687,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 2780,
-        "y": 2060,
+        "x": 2800,
+        "y": 2040,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1732,7 +1699,6 @@
         "id": "0b88f25bf185f363",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
         "name": "Credential",
         "group": "78fe50a055b65ca2",
         "order": 11,
@@ -1749,8 +1715,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 2790,
-        "y": 2120,
+        "x": 2810,
+        "y": 2100,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1761,7 +1727,6 @@
         "id": "d6765f34883a6bc1",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
         "name": "sendMqttMessage",
         "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet control_cpIdx = global.get('control_cpIdx');\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetAccessMode\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\n\nmsgWrapper.info = {}\nmsgWrapper.info.Control_point_idx = control_cpIdx\nmsgWrapper.info.Access_mode = msg.payload\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
         "outputs": 1,
@@ -1769,8 +1734,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3050,
-        "y": 2060,
+        "x": 3070,
+        "y": 2040,
         "wires": [
             [
                 "8ceb1c5b5fb6e7d7"
@@ -1781,7 +1746,6 @@
         "id": "8ceb1c5b5fb6e7d7",
         "type": "mqtt out",
         "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
         "name": "",
         "topic": "",
         "qos": "0",
@@ -1792,42 +1756,14 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 3250,
-        "y": 2120,
+        "x": 3270,
+        "y": 2100,
         "wires": []
-    },
-    {
-        "id": "02f2de19b7b337bc",
-        "type": "ui_text_input",
-        "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
-        "name": "Control_point_idx",
-        "label": "Control_point_idx",
-        "tooltip": "",
-        "group": "78fe50a055b65ca2",
-        "order": 2,
-        "width": 14,
-        "height": 2,
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "Control_point_idx",
-        "sendOnBlur": true,
-        "className": "text_input",
-        "topicType": "str",
-        "x": 2810,
-        "y": 1940,
-        "wires": [
-            [
-                "1cbac974e1dbb470"
-            ]
-        ]
     },
     {
         "id": "1cbac974e1dbb470",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
         "name": "setCpIdx",
         "func": "global.set('control_cpIdx', msg.payload)\n\n",
         "outputs": 1,
@@ -1835,8 +1771,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3060,
-        "y": 1940,
+        "x": 3020,
+        "y": 1880,
         "wires": [
             []
         ]
@@ -1845,7 +1781,6 @@
         "id": "5e83605c1e8b1345",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
         "name": "Single Exit",
         "group": "78fe50a055b65ca2",
         "order": 6,
@@ -1862,8 +1797,8 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 2790,
-        "y": 2200,
+        "x": 2810,
+        "y": 2180,
         "wires": [
             [
                 "dfbd635c1022b71c"
@@ -1874,7 +1809,6 @@
         "id": "804d8ac17c0ee538",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
         "name": "SingleEntry",
         "group": "78fe50a055b65ca2",
         "order": 9,
@@ -1891,8 +1825,8 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 2790,
-        "y": 2260,
+        "x": 2810,
+        "y": 2240,
         "wires": [
             [
                 "dfbd635c1022b71c"
@@ -1903,7 +1837,6 @@
         "id": "dfbd635c1022b71c",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
         "name": "sendMqttMessage",
         "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet control_cpIdx = global.get('control_cpIdx');\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"Single_pass\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\n\nmsgWrapper.info = {}\nmsgWrapper.info.Control_point_idx = control_cpIdx\nmsgWrapper.info.Direction = msg.payload\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
         "outputs": 1,
@@ -1911,8 +1844,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3030,
-        "y": 2200,
+        "x": 3050,
+        "y": 2180,
         "wires": [
             [
                 "8ceb1c5b5fb6e7d7"
@@ -1952,7 +1885,6 @@
         "id": "c5f7a3022f0a71d4",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "673990432da8bf57",
         "group": "78fe50a055b65ca2",
         "name": "Control panel",
         "order": 1,
@@ -1964,8 +1896,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2790,
-        "y": 1900,
+        "x": 2810,
+        "y": 1880,
         "wires": [
             []
         ]
@@ -9006,6 +8938,71 @@
         "y": 3220,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "7042bebaeb2bef2f",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 80",
+        "func": "let main_settings_arr =  global.get('main_settings').list\nlet cpointName_list = [{ \"Create new control point..\": 0 }]\nconsole.log(main_settings_arr)\n\nmain_settings_arr.forEach(function(element) {\n    cpointName_list.push({ [element.info.name]: element.device_set_idxs.Control_point_idx })\n});\n\nconsole.log(cpointName_list)\n\nmsg.options = cpointName_list\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2830,
+        "y": 1740,
+        "wires": [
+            [
+                "d843a8db1ed8bbba"
+            ]
+        ]
+    },
+    {
+        "id": "ad246df039ee34ec",
+        "type": "complete",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "scope": [
+            "e95f3e2f8d4f89e4",
+            "ff2307c110713c11",
+            "08d971dd14813356"
+        ],
+        "uncaught": false,
+        "x": 2790,
+        "y": 1680,
+        "wires": [
+            [
+                "7042bebaeb2bef2f"
+            ]
+        ]
+    },
+    {
+        "id": "d843a8db1ed8bbba",
+        "type": "ui_dropdown",
+        "z": "692c798b6f9c61de",
+        "name": "Control point",
+        "label": "Control point",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "78fe50a055b65ca2",
+        "order": 12,
+        "width": "14",
+        "height": "2",
+        "passthru": true,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 2810,
+        "y": 1820,
+        "wires": [
+            [
+                "1cbac974e1dbb470"
+            ]
         ]
     }
 ]
