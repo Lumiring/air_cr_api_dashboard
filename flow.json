@@ -8856,7 +8856,7 @@
         "order": 4,
         "width": 30,
         "height": 2,
-        "format": "<style>\n    #scheduleTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"scheduleTip\">\n    <div>This is a simple example of how to set a schedule. Set the starting and ending daily validity times for the user's card</div>\n\n</div>",
+        "format": "<style>\n    #scheduleTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"scheduleTip\">\n    <div>This is a simple example of how to set a schedule. Set the starting and ending daily validity times for the user's card.\n    Also enter the name of the schedule.</div>\n\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
