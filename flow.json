@@ -8731,7 +8731,7 @@
         "order": 17,
         "width": 11,
         "height": 2,
-        "format": "<style>\n    #CardTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"CardTip\">\n    <div>Select the required schedule from the list and present the card to the reader to read the card code, then press \"ADD CARD\" button</div>\n\n</div>",
+        "format": "<style>\n    #CardTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 24px;\n    }\n</style>\n\n<div id=\"CardTip\">\n    <div>Select the required schedule from the list and present the card to the reader to read the card code, then press \"ADD CARD\" button</div>\n\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
