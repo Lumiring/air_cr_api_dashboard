@@ -9228,7 +9228,7 @@
         "props": [
             {
                 "p": "enabled",
-                "v": "false",
+                "v": "true",
                 "vt": "bool"
             }
         ],
