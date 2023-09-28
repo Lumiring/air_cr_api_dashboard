@@ -8949,7 +8949,7 @@
         "order": 17,
         "width": 7,
         "height": 2,
-        "format": "<style>\n    #AutodiingTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 15px;\n    }\n</style>\n\n<div id=\"AutodiingTip\">\n    <div>Code of the last card presented</div>\n\n</div>",
+        "format": "<style>\n    #AutodiingTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 20px;\n    }\n</style>\n\n<div id=\"AutodiingTip\">\n    <div>Code of the last card presented</div>\n\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
