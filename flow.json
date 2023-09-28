@@ -8688,7 +8688,7 @@
         "outputs": 0,
         "cts": false,
         "x": 930,
-        "y": 3060,
+        "y": 3200,
         "wires": []
     },
     {
@@ -8954,6 +8954,25 @@
         "wires": [
             [
                 "cd3e41f3d6b01780"
+            ]
+        ]
+    },
+    {
+        "id": "424694b7b4f92b28",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 83",
+        "func": "let card_options = RED.util.cloneMessage(global.get('card_options'))\nlet wrapper = {}\n\nconsole.log(card_options)\n\nwrapper.payload = {}\nwrapper.payload.command = \"addData\"\nwrapper.payload.arguments = [card_options, true]\n\nreturn wrapper;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 3200,
+        "wires": [
+            [
+                "6f68a39d47cd50b8"
             ]
         ]
     }
