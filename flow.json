@@ -8873,6 +8873,26 @@
                 "formatterParams": {
                     "target": "_blank"
                 }
+            },
+            {
+                "field": "init_time",
+                "title": " Registration date",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "exp_time",
+                "title": "Expiration date",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
             }
         ],
         "outputs": 0,
