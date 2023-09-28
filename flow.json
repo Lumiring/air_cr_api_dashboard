@@ -110,40 +110,6 @@
         "h": 242
     },
     {
-        "id": "10c9566e318026ec",
-        "type": "group",
-        "z": "692c798b6f9c61de",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "06c80f09630e9c1f",
-            "5a3655d37cbf67da",
-            "cdcfb93280054d6e",
-            "13a9613731ae952f",
-            "11d7af559c3d0e8a",
-            "8af952eed320495d",
-            "7f3750083f1d1bb9",
-            "2f78343e81efe375",
-            "ccb4b2f8e2e0d3ed",
-            "1c62bd8daee77ef6",
-            "cbfed432c63d2613",
-            "ec0a0d0db4482c0a",
-            "6d9eccdf3e2e94e2",
-            "3c7e43b6cf0318b5"
-        ],
-        "x": 14,
-        "y": 2539,
-        "w": 1032,
-        "h": 282
-    },
-    {
         "id": "b2d513ab7bca448d",
         "type": "group",
         "z": "692c798b6f9c61de",
@@ -5816,7 +5782,6 @@
         "id": "06c80f09630e9c1f",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "name": "setCardKey",
         "func": "let card_options = global.get('card_options') || {};\ncard_options = Object.assign(card_options, { [msg.topic]: msg.payload })\nglobal.set('card_options', card_options)",
         "outputs": 1,
@@ -5834,7 +5799,6 @@
         "id": "5a3655d37cbf67da",
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "name": "Select schedule",
         "label": "Select schedule",
         "tooltip": "",
@@ -5869,7 +5833,6 @@
         "id": "cdcfb93280054d6e",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "name": "function 38",
         "func": "let schedule_list = global.get(\"schedule_list\").list\n\n\nlet options = []\n\nschedule_list.forEach(function(element) {\n    options.push({[element.name]: element.Shedule_id })\n});\n\nmsg.options = options\n\nreturn msg;",
         "outputs": 1,
@@ -5889,7 +5852,6 @@
         "id": "13a9613731ae952f",
         "type": "complete",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "name": "",
         "scope": [
             "f60fe4acd866cd02",
@@ -5931,7 +5893,6 @@
         "id": "11d7af559c3d0e8a",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "group": "523171b4c91e1d14",
         "name": "Add card",
         "order": 14,
@@ -5995,7 +5956,6 @@
         "id": "8af952eed320495d",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "name": "Key of the last card presented ",
         "label": "Key of the last card presented ",
         "tooltip": "",
@@ -6022,7 +5982,6 @@
         "id": "7f3750083f1d1bb9",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "name": "Add card",
         "group": "523171b4c91e1d14",
         "order": 27,
@@ -6039,7 +5998,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 480,
+        "x": 200,
         "y": 2780,
         "wires": [
             [
@@ -6051,7 +6010,6 @@
         "id": "2f78343e81efe375",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "name": "addCard",
         "func": "\nfunction createKeySet(ctp_idx, schedule_id, key_id, key_hex,) {\n    return `/${key_id};${ctp_idx};7;${key_hex};1;${schedule_id};1;0;-1;-1;-1;0;0;0;/`\n}\n\nlet card_options = global.get('card_options')\nlet device_set_idxs = global.get('device_set_idxs')\nlet userCreds = global.get('userCreds');\n\nconsole.log(card_options)\n\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCardKeys\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = device_set_idxs.Control_point_idx\nmsgWrapper.info.KeysCount = 1\nmsgWrapper.info.Keys = createKeySet(device_set_idxs.Control_point_idx, card_options.schedule_id, card_options.key_id, card_options.key_hex)\nmsgWrapper.info.KeysDataLength = msgWrapper.info.Keys.length\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('setCardMessId', msgWrapper.message_id)\n\nreturn msg",
         "outputs": 1,
@@ -6059,7 +6017,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
+        "x": 380,
         "y": 2780,
         "wires": [
             [
@@ -6071,7 +6029,6 @@
         "id": "ccb4b2f8e2e0d3ed",
         "type": "mqtt out",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "name": "",
         "topic": "",
         "qos": "0",
@@ -6082,7 +6039,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 830,
+        "x": 550,
         "y": 2780,
         "wires": []
     },
@@ -6090,7 +6047,6 @@
         "id": "1c62bd8daee77ef6",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "name": "function 40",
         "func": "let currentCardKey = global.get(\"currentCardKey\")\nmsg2.payload = currentCardKey.key_hex\n\nreturn msg2",
         "outputs": 1,
@@ -6299,7 +6255,6 @@
         "id": "cbfed432c63d2613",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "name": "showScedule",
         "func": "let schedule_list = global.get(\"schedule_list\").list\nlet instance = schedule_list.find(function (el) { return el.Shedule_id === msg.payload})\nlet obj = {}\nobj.payload = {}\n\nobj.payload.name = \"Schedule name: \" + instance.name\nobj.payload.start = \"Start time: \" + new Date(instance.TmStart * 1000).toISOString().substring(11, 16)\nobj.payload.end = \"End time: \" + new Date(instance.TmEnd * 1000).toISOString().substring(11, 16)\n\n\n\nreturn obj;",
         "outputs": 1,
@@ -6319,7 +6274,6 @@
         "id": "ec0a0d0db4482c0a",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "group": "523171b4c91e1d14",
         "name": "Schedule desk",
         "order": 18,
@@ -8868,7 +8822,6 @@
         "id": "6d9eccdf3e2e94e2",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "group": "523171b4c91e1d14",
         "name": "Card  Tip",
         "order": 16,
@@ -8890,7 +8843,6 @@
         "id": "3c7e43b6cf0318b5",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "10c9566e318026ec",
         "group": "523171b4c91e1d14",
         "name": "Schedule Tip",
         "order": 4,
@@ -8907,5 +8859,52 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "6f68a39d47cd50b8",
+        "type": "ui_table",
+        "z": "692c798b6f9c61de",
+        "group": "523171b4c91e1d14",
+        "name": "",
+        "order": 35,
+        "width": "10",
+        "height": "3",
+        "columns": [
+            {
+                "field": "username",
+                "title": "Username",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "key_hex",
+                "title": "Card code",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "schedule",
+                "title": "Schedule",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 790,
+        "y": 2780,
+        "wires": []
     }
 ]
