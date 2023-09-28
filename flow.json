@@ -251,10 +251,7 @@
             "9711d2389203650e",
             "a07a6a7f1f8b3b3f",
             "a5009491338db9ad",
-            "242eb494f6f99039",
             "092fbd16dc09d3e3",
-            "9e5dd8894064b7bd",
-            "24008ecfcffb6e0f",
             "f6dffb08204572bf",
             "b34a359c80292f28",
             "ff147062542040ed",
@@ -269,7 +266,10 @@
             "b41158a68dfc5a8f",
             "08d971dd14813356",
             "5a4ff491dc97afe1",
-            "5ca21ea96e5532f4"
+            "5ca21ea96e5532f4",
+            "106fa200f52c52c9",
+            "634cfcd97dec7739",
+            "950a518d545ed7ae"
         ],
         "x": 34,
         "y": 799,
@@ -5604,55 +5604,6 @@
         "wires": []
     },
     {
-        "id": "242eb494f6f99039",
-        "type": "ui_table",
-        "z": "692c798b6f9c61de",
-        "d": true,
-        "g": "ccfbaa574e4c13f7",
-        "group": "523171b4c91e1d14",
-        "name": "",
-        "order": 46,
-        "width": 30,
-        "height": 4,
-        "columns": [
-            {
-                "field": "name",
-                "title": "name",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "TmStart",
-                "title": "TmStart",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "TmEnd",
-                "title": "TmEnd",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 0,
-        "cts": false,
-        "x": 2050,
-        "y": 1420,
-        "wires": []
-    },
-    {
         "id": "092fbd16dc09d3e3",
         "type": "function",
         "z": "692c798b6f9c61de",
@@ -5665,54 +5616,12 @@
         "finalize": "",
         "libs": [],
         "x": 1770,
-        "y": 1200,
+        "y": 1180,
         "wires": [
             [
                 "f6dffb08204572bf"
             ],
             []
-        ]
-    },
-    {
-        "id": "9e5dd8894064b7bd",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "d": true,
-        "g": "ccfbaa574e4c13f7",
-        "name": "function 35",
-        "func": "let eventInfoWrapper = {}\nlet eventInfo = {}\n\neventInfo = {\n    name: \"sdfsdf\",\n    TmStart: \"20:20\",\n    TmEnd: \"21:00\"\n}\n\n\neventInfoWrapper.payload = {}\neventInfoWrapper.payload.command = \"addData\"\neventInfoWrapper.payload.arguments = [eventInfo, true]\n\nreturn eventInfoWrapper;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1850,
-        "y": 1420,
-        "wires": [
-            [
-                "242eb494f6f99039"
-            ]
-        ]
-    },
-    {
-        "id": "24008ecfcffb6e0f",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "d": true,
-        "g": "ccfbaa574e4c13f7",
-        "name": "",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 1690,
-        "y": 1420,
-        "wires": [
-            [
-                "9e5dd8894064b7bd"
-            ]
         ]
     },
     {
@@ -5890,7 +5799,7 @@
         "topic": "schedule_id",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 500,
+        "x": 440,
         "y": 2960,
         "wires": [
             [
@@ -6068,8 +5977,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 180,
-        "y": 3240,
+        "x": 140,
+        "y": 3300,
         "wires": [
             [
                 "2f78343e81efe375"
@@ -6087,8 +5996,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 3240,
+        "x": 300,
+        "y": 3300,
         "wires": [
             [
                 "ccb4b2f8e2e0d3ed"
@@ -6109,8 +6018,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 530,
-        "y": 3240,
+        "x": 430,
+        "y": 3300,
         "wires": []
     },
     {
@@ -6255,10 +6164,11 @@
         "finalize": "",
         "libs": [],
         "x": 1790,
-        "y": 1340,
+        "y": 1300,
         "wires": [
             [
-                "4c5d44476d630125"
+                "4c5d44476d630125",
+                "106fa200f52c52c9"
             ]
         ]
     },
@@ -6274,8 +6184,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2210,
-        "y": 1300,
+        "x": 2170,
+        "y": 1260,
         "wires": [
             [
                 "939ee531e2a85a60"
@@ -6298,8 +6208,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2020,
-        "y": 1340,
+        "x": 2160,
+        "y": 1300,
         "wires": []
     },
     {
@@ -6317,8 +6227,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2370,
-        "y": 1300,
+        "x": 2330,
+        "y": 1260,
         "wires": []
     },
     {
@@ -8973,8 +8883,8 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 130,
-        "y": 3300,
+        "x": 930,
+        "y": 3060,
         "wires": []
     },
     {
@@ -9147,6 +9057,99 @@
         "wires": [
             [
                 "06c80f09630e9c1f"
+            ]
+        ]
+    },
+    {
+        "id": "106fa200f52c52c9",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "g": "ccfbaa574e4c13f7",
+        "name": "",
+        "property": "result",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "success",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1990,
+        "y": 1360,
+        "wires": [
+            [
+                "cd3e41f3d6b01780"
+            ]
+        ]
+    },
+    {
+        "id": "cd3e41f3d6b01780",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "persistCardsSettings",
+        "func": "let cards_settings = global.get('cards_settings')\nlet obj = {}\nobj.payload = cards_settings\n\nreturn obj;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2180,
+        "y": 1380,
+        "wires": [
+            [
+                "634cfcd97dec7739"
+            ]
+        ]
+    },
+    {
+        "id": "634cfcd97dec7739",
+        "type": "file",
+        "z": "692c798b6f9c61de",
+        "g": "ccfbaa574e4c13f7",
+        "name": "",
+        "filename": ".lumiring/air_cr/cards.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 2430,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "950a518d545ed7ae",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "g": "ccfbaa574e4c13f7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1980,
+        "y": 1420,
+        "wires": [
+            [
+                "cd3e41f3d6b01780"
             ]
         ]
     }
