@@ -8982,7 +8982,7 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "name": "Cardholder`s name:",
-        "label": "cardholder`s name",
+        "label": "Cardholder`s name:",
         "tooltip": "",
         "group": "523171b4c91e1d14",
         "order": 17,
