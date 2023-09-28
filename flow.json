@@ -6163,7 +6163,7 @@
         "order": 22,
         "width": 7,
         "height": 1,
-        "format": "<style>\n    #scheduleInfo {\n        display: flex;\n        font-size: 25px;\n        justify-content: space-between;\n    }\n</style>\n\n<div id=\"scheduleInfo\">\n    <div>{{msg.payload.start}}</div>\n    <div>{{msg.payload.end}}</div>\n</div>",
+        "format": "<style>\n    #scheduleInfo {\n        display: flex;\n        font-size: 20px;\n        justify-content: space-between;\n    }\n</style>\n\n<div id=\"scheduleInfo\">\n    <div>{{msg.payload.start}}</div>\n    <div>{{msg.payload.end}}</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
