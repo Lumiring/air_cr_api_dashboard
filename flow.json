@@ -9219,5 +9219,30 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "eec6db315b6ca9ba",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 870,
+        "y": 2900,
+        "wires": [
+            [
+                "6f68a39d47cd50b8"
+            ]
+        ]
     }
 ]
