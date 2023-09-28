@@ -9085,7 +9085,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "persistCardsSettings",
-        "func": "let cards_settings_arr = global.get('cards_settings').list\nlet card_instance = RED.util.cloneMessage(global.get('card_options'))\n\nlet instance = cards_settings_arr.find(function (el) { return el.key_hex === card_instance.key_hex})\n\nconsole.log(card_instance)\n\nif (instance){\n    instance = card_instance\n} else {\n    cards_settings_arr.push(card_instance)\n}\n\n\nlet obj = {}\nobj.payload = {list: cards_settings_arr}\n\nreturn obj;\n\n",
+        "func": "let cards_settings_arr = global.get('cards_settings').list\nlet card_instance = RED.util.cloneMessage(global.get('card_options'))\n\nlet instance = cards_settings_arr.find(function (el) { return el.key_hex === card_instance.key_hex})\n\n\nconsole.log(instance)\nconsole.log(card_instance)\n\nif (instance){\n    instance = card_instance\n} else {\n    cards_settings_arr.push(card_instance)\n}\n\n\n\nlet obj = {}\nobj.payload = {list: cards_settings_arr}\n\nreturn obj;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
