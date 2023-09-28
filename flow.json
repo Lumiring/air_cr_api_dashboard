@@ -9218,7 +9218,7 @@
         "order": 15,
         "width": 9,
         "height": 1,
-        "format": "<style>\n    #editCardHeader{\n        text-align: left;\n        color: #0094CE;\n        font-size: 25px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"editCardHeader\">\n    Edit card\n</div>",
+        "format": "<style>\n    #deleteCardHeader{\n        text-align: left;\n        color: #0094CE;\n        font-size: 25px;\n        font-weight: 700\n    }\n</style>\n\n\n<div id=\"deleteCardHeader\">\n    Delete card\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
