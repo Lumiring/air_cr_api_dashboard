@@ -6219,7 +6219,7 @@
         "order": 19,
         "width": 9,
         "height": 2,
-        "format": "<style>\n    #scheduleInfo {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"scheduleInfo\">\n    <div>{{msg.payload.name}}</div>\n    <div>{{msg.payload.start}}</div>\n    <div>{{msg.payload.end}}</div>\n</div>",
+        "format": "<style>\n    #scheduleInfo {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"scheduleInfo\">\n    <div>{{msg.payload.start}}</div>\n    <div>{{msg.payload.end}}</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
