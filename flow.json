@@ -8635,8 +8635,8 @@
         "height": 12,
         "columns": [
             {
-                "field": "username",
-                "title": "Username",
+                "field": "cardholder_name",
+                "title": "Cardholder`s name",
                 "width": "",
                 "align": "left",
                 "formatter": "plaintext",
@@ -8655,7 +8655,7 @@
                 }
             },
             {
-                "field": "schedule",
+                "field": "schedule_id",
                 "title": "Schedule",
                 "width": "",
                 "align": "left",
