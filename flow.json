@@ -8962,7 +8962,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 83",
-        "func": "let card_options = RED.util.cloneMessage(global.get('card_options'))\nlet wrapper = {}\n\nconsole.log(card_options)\n\nwrapper.payload = {}\nwrapper.payload.command = \"addData\"\nwrapper.payload.arguments = [card_options, true]\n\nreturn wrapper;\n",
+        "func": "let card_options = RED.util.cloneMessage(global.get('card_options'))\nlet card_list = RED.util.cloneMessage(global.get('cards_settings'))\nlet wrapper = {}\n\nconsole.log(card_options)\n\nwrapper.payload = {}\n// wrapper.payload.command = \"addData\"\n// wrapper.payload.arguments = [card_options, true]\n\nreturn wrapper;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
