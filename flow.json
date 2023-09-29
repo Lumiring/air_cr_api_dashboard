@@ -8837,7 +8837,7 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 1010,
+        "x": 950,
         "y": 2980,
         "wires": [
             [
@@ -9116,7 +9116,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 83",
-        "func": "let card_options = RED.util.cloneMessage(global.get('card_options'))\nlet card_list = RED.util.cloneMessage(global.get('cards_settings'))\nlet wrapper = {}\n\nconsole.log(card_options)\n\nwrapper.payload = card_list.list\n// wrapper.payload.command = \"addData\"\n// wrapper.payload.arguments = [card_options, true]\n\nreturn wrapper;\n",
+        "func": "let card_options = RED.util.cloneMessage(global.get('card_options'))\nlet card_list = RED.util.cloneMessage(global.get('cards_settings'))\nlet schedule_list = global.get('schedule_list')\nlet wrapper = {}\n\nconsole.log(card_options)\n\nwrapper.payload = card_list.list\n\n\n\n\n// wrapper.payload.command = \"addData\"\n// wrapper.payload.arguments = [card_options, true]\n\nreturn wrapper;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9205,7 +9205,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1260,
+        "x": 1140,
         "y": 2980,
         "wires": []
     },
