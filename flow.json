@@ -7859,7 +7859,7 @@
         "templateScope": "local",
         "className": "",
         "x": 880,
-        "y": 4980,
+        "y": 4960,
         "wires": [
             []
         ]
@@ -7912,7 +7912,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 1060,
-        "y": 4980,
+        "y": 4960,
         "wires": [
             [
                 "98f21910ed797484"
@@ -8645,7 +8645,7 @@
         "expiry": "",
         "broker": "79737e067a3af084",
         "x": 1510,
-        "y": 4980,
+        "y": 4960,
         "wires": []
     },
     {
@@ -8660,7 +8660,7 @@
         "finalize": "",
         "libs": [],
         "x": 1270,
-        "y": 4980,
+        "y": 4960,
         "wires": [
             [
                 "5c7f730ba49ae67c"
@@ -9348,36 +9348,6 @@
         "y": 2920,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "c6c9bd92979ee139",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "enabled",
-                "v": "false",
-                "vt": "bool"
-            },
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 710,
-        "y": 4440,
-        "wires": [
-            [
-                "28f813b1c3d96cb8"
-            ]
         ]
     },
     {
