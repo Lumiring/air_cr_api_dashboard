@@ -8885,7 +8885,7 @@
                 }
             },
             {
-                "field": "schedule_id",
+                "field": "schedule_name",
                 "title": "Schedule",
                 "width": "",
                 "align": "left",
@@ -9196,7 +9196,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 83",
-        "func": "let card_options = RED.util.cloneMessage(global.get('card_options'))\nlet card_list = RED.util.cloneMessage(global.get('cards_settings'))\nlet schedule_list = global.get('schedule_list')\nlet wrapper = {}\n\n\nconsole.log(card_list.list)\n\nwrapper.payload = card_list.list\n\n\n\n\n// wrapper.payload.command = \"addData\"\n// wrapper.payload.arguments = [card_options, true]\n\nreturn wrapper;\n",
+        "func": "let card_options = RED.util.cloneMessage(global.get('card_options'))\nlet card_list = RED.util.cloneMessage(global.get('cards_settings'))\nlet schedule_list = global.get('schedule_list')\nlet wrapper = {}\n\nfunction getScheduleNameById(id){\n    let instance = schedule_list.find(function(el){\n        return el.Shedule_id === id\n    })\n\n    return instance.name\n}\n\nconsole.log(card_list.list)\n\ncard_list.list.forEach(function(el) {\n    el.schedule_name = getScheduleNameById(el.schedule_id)\n});\n\nwrapper.payload = card_list.list\n\n\n\n\n// wrapper.payload.command = \"addData\"\n// wrapper.payload.arguments = [card_options, true]\n\nreturn wrapper;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
