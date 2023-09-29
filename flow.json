@@ -8736,18 +8736,6 @@
         ]
     },
     {
-        "id": "635a0cebc8a3a544",
-        "type": "status",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "scope": null,
-        "x": 120,
-        "y": 3900,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "7042bebaeb2bef2f",
         "type": "function",
         "z": "692c798b6f9c61de",
@@ -9379,7 +9367,7 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": true,
+        "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "0",
