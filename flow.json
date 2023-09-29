@@ -9401,7 +9401,7 @@
         "order": 27,
         "width": 17,
         "height": 1,
-        "format": "<style>\n    #delTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"delTip\">\n    <div>To be able to delete information about cards, switch the table to delete mode.</div>\n</div>",
+        "format": "<style>\n    #delTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"delTip\">\n    <div>To be able to delete cards information, switch the table to delete mode.</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
