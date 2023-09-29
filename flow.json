@@ -6979,7 +6979,7 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "name": " OR Reverse byte order (Rd_Key_endian)",
-        "label": " OR Reverse byte order (Rd_Key_endian)",
+        "label": "Reverse byte order",
         "tooltip": "",
         "place": "Select option",
         "group": "b5b06fdb86579748",
