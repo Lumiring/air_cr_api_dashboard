@@ -7249,7 +7249,7 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "name": "Hold duration, sec (Door_Delay)",
-        "label": "Hold duration, sec (Door_Delay):",
+        "label": "<div>Door open time, s</div><div>Time allowed for an access door</div>",
         "tooltip": "",
         "group": "b5b06fdb86579748",
         "order": 24,
