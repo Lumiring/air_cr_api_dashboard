@@ -7236,7 +7236,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 950,
+        "x": 1010,
         "y": 4320,
         "wires": [
             [
@@ -8248,7 +8248,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
+        "x": 690,
         "y": 4320,
         "wires": [
             [
@@ -8299,13 +8299,13 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 71",
-        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_sens_opt;\nobj.enabled = false\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.door_settings.Door_sens_opt;\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
+        "x": 710,
         "y": 4480,
         "wires": [
             [
@@ -9280,6 +9280,36 @@
         "y": 2920,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "c6c9bd92979ee139",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 450,
+        "y": 4480,
+        "wires": [
+            [
+                "1de98a2302ed3992"
+            ]
         ]
     }
 ]
