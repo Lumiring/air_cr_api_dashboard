@@ -7367,7 +7367,7 @@
         "type": "ui_dropdown",
         "z": "692c798b6f9c61de",
         "name": "Door sensor condition (Door_sens_Condition)",
-        "label": "Door sensor condition (Door_sens_Condition)",
+        "label": "<div>Closed door sensor status</div><div>Set the status of sensor when door is closed<div/>",
         "tooltip": "",
         "place": "",
         "group": "b5b06fdb86579748",
