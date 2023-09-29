@@ -7223,7 +7223,7 @@
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
         "name": "Impulse duration (milliseconds) (Door_Lock_puls)",
-        "label": "<div style=\"color:green;\">Impulse time, s</div>",
+        "label": "Impulse time, s",
         "tooltip": "",
         "group": "b5b06fdb86579748",
         "order": 23,
