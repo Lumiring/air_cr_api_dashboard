@@ -9097,17 +9097,18 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 84",
-        "func": "let info = global.get('main_settings')\nconsole.log(info)\nreturn info;",
+        "func": "let info = global.get('cpoint_instance').info;\n\nreturn info;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2170,
+        "x": 2210,
         "y": 1000,
         "wires": [
             [
-                "be089296ec3c54f0"
+                "be089296ec3c54f0",
+                "4f1f9b5782fdc72f"
             ]
         ]
     },
@@ -9128,7 +9129,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 2350,
+        "x": 2530,
         "y": 980,
         "wires": [
             []
@@ -9162,5 +9163,21 @@
                 "770b753a51e0e70a"
             ]
         ]
+    },
+    {
+        "id": "4f1f9b5782fdc72f",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2380,
+        "y": 1020,
+        "wires": []
     }
 ]
