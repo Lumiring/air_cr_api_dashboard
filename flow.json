@@ -39,8 +39,8 @@
             "35d5c1041e47bc34",
             "532a28a158a27751"
         ],
-        "x": 1394,
-        "y": 1959,
+        "x": 2634,
+        "y": 3199,
         "w": 1112,
         "h": 402
     },
@@ -76,8 +76,8 @@
             "24d296461956b528",
             "cf8bb1c46db881f8"
         ],
-        "x": 1394,
-        "y": 1539,
+        "x": 2634,
+        "y": 2779,
         "w": 1152,
         "h": 402
     },
@@ -169,112 +169,10 @@
             "69a80012105d56fc",
             "2f92527cf6cd24ad"
         ],
-        "x": 14,
-        "y": 1539,
+        "x": 1254,
+        "y": 2779,
         "w": 1352,
         "h": 782
-    },
-    {
-        "id": "ccfbaa574e4c13f7",
-        "type": "group",
-        "z": "692c798b6f9c61de",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "f35f7ebd59ad5459",
-            "ec7459b197b9c702",
-            "cc2c84ed43d311b3",
-            "6d7ac608b771c09f",
-            "bcb697e124c3a95e",
-            "0c769e6742acebb0",
-            "a122ea34e40556e4",
-            "ad3a558f7afdccbf",
-            "58d2480b2eff322c",
-            "7184e0269f48110f",
-            "61dda110cb9d7f8a",
-            "642df87e4871a1c4",
-            "6c8acdd459e657eb",
-            "9e5fe1c3fe6f0503",
-            "2b2d85fbc2c145a5",
-            "32d53427bced070c",
-            "4c30f9b315530f2a",
-            "160ef0c3c55613af",
-            "95c8a2503541cab9",
-            "6ad93d3e94e2fe69",
-            "5c0f4a3dd94ecbbf",
-            "1f7ea9be7c722e68",
-            "d81bab586132c7e4",
-            "881c61e409196bd8",
-            "84cef9c2bb45ee64",
-            "2f28a02598ca6e15",
-            "6cc4dd7e4806e9e6",
-            "8fecdfbd30a2545b",
-            "aad987ee2a0c4f2c",
-            "d969e40c2e543dae",
-            "a902fb928a850e75",
-            "b34c7c3825b2f296",
-            "62276b0a5748fef9",
-            "2c9973e0b952c269",
-            "e063be51f1201adf",
-            "2027404e36d47db4",
-            "7416ec0179370582",
-            "86a634f89955d0c9",
-            "03ca1b1fdfc39f2d",
-            "fdf6aa2ba915be6d",
-            "6505c8ff956b3f78",
-            "28a1c7a16938fbb3",
-            "33c8b93809af5d71",
-            "583517f12510f63c",
-            "4eec54e042c9d037",
-            "e819dd139f9e98f4",
-            "3880a03920b6f99c",
-            "9c089a6faed821bd",
-            "a854989e94536e41",
-            "c2c2313264fe8ffb",
-            "afdc7c0ee76e4a47",
-            "99ae61b360355f68",
-            "f74a6a22480189cc",
-            "53da7a211480283e",
-            "4389b92844310dbf",
-            "a7a7b24370fc4997",
-            "1090c7446b008215",
-            "65727af8ca7694b4",
-            "be4ec194f59155d0",
-            "45dadb28c9284a55",
-            "9711d2389203650e",
-            "a07a6a7f1f8b3b3f",
-            "a5009491338db9ad",
-            "092fbd16dc09d3e3",
-            "f6dffb08204572bf",
-            "b34a359c80292f28",
-            "ff147062542040ed",
-            "e6bc21e1b963fbf6",
-            "32e87a6a3d7b9fae",
-            "87e4455cfb6d992b",
-            "ab9407c55052fb9e",
-            "f681efedd61143dc",
-            "40dc0361ade51989",
-            "4c5d44476d630125",
-            "939ee531e2a85a60",
-            "b41158a68dfc5a8f",
-            "08d971dd14813356",
-            "5a4ff491dc97afe1",
-            "5ca21ea96e5532f4",
-            "106fa200f52c52c9",
-            "634cfcd97dec7739",
-            "950a518d545ed7ae"
-        ],
-        "x": 34,
-        "y": 799,
-        "w": 3292,
-        "h": 702
     },
     {
         "id": "79737e067a3af084",
@@ -1583,11 +1481,10 @@
         "id": "f35f7ebd59ad5459",
         "type": "ui_ui_control",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "events": "change",
-        "x": 3240,
-        "y": 1180,
+        "x": 4360,
+        "y": 1380,
         "wires": [
             []
         ]
@@ -1596,7 +1493,6 @@
         "id": "ec7459b197b9c702",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Advanced Settings",
         "group": "fc491a4cada0492f",
         "order": 17,
@@ -1613,8 +1509,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2850,
-        "y": 1420,
+        "x": 3970,
+        "y": 1620,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1625,7 +1521,6 @@
         "id": "cc2c84ed43d311b3",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Control panel",
         "group": "fc491a4cada0492f",
         "order": 6,
@@ -1642,8 +1537,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2870,
-        "y": 1300,
+        "x": 3990,
+        "y": 1500,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1654,7 +1549,6 @@
         "id": "6d7ac608b771c09f",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "dashboardInit",
         "func": "msg.payload = {}\n\nmsg.payload.group = {\n    \"hide\": [\"AIR-CR_Advanced_settings\", \"AIR-CR_Simple_settings\",\"AIR-CR_Control\", \"AIR-CR_r0\", \"AIR-CR_r1\", \"AIR-CR_submit\", \"AIR-CR_schedule\"],\n    \"show\": [\"AIR-CR_Connection\"]\n}\nreturn msg;",
         "outputs": 1,
@@ -1662,8 +1556,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2940,
-        "y": 1140,
+        "x": 4060,
+        "y": 1340,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1690,8 +1584,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 2820,
-        "y": 2040,
+        "x": 4060,
+        "y": 3280,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1718,8 +1612,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 2800,
-        "y": 2100,
+        "x": 4040,
+        "y": 3340,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1746,8 +1640,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 2810,
-        "y": 2160,
+        "x": 4050,
+        "y": 3400,
         "wires": [
             [
                 "d6765f34883a6bc1"
@@ -1765,8 +1659,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3070,
-        "y": 2100,
+        "x": 4310,
+        "y": 3340,
         "wires": [
             [
                 "8ceb1c5b5fb6e7d7"
@@ -1787,8 +1681,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 3270,
-        "y": 2160,
+        "x": 4510,
+        "y": 3400,
         "wires": []
     },
     {
@@ -1802,8 +1696,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3020,
-        "y": 1940,
+        "x": 4260,
+        "y": 3180,
         "wires": [
             []
         ]
@@ -1828,8 +1722,8 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 2810,
-        "y": 2240,
+        "x": 4050,
+        "y": 3480,
         "wires": [
             [
                 "dfbd635c1022b71c"
@@ -1856,8 +1750,8 @@
         "payloadType": "num",
         "topic": "",
         "topicType": "str",
-        "x": 2810,
-        "y": 2300,
+        "x": 4050,
+        "y": 3540,
         "wires": [
             [
                 "dfbd635c1022b71c"
@@ -1875,8 +1769,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3050,
-        "y": 2240,
+        "x": 4290,
+        "y": 3480,
         "wires": [
             [
                 "8ceb1c5b5fb6e7d7"
@@ -1887,7 +1781,6 @@
         "id": "bcb697e124c3a95e",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Connection options",
         "group": "fc491a4cada0492f",
         "order": 1,
@@ -1904,8 +1797,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2890,
-        "y": 1260,
+        "x": 4010,
+        "y": 1460,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -1927,8 +1820,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2810,
-        "y": 1940,
+        "x": 4050,
+        "y": 3180,
         "wires": [
             []
         ]
@@ -1937,7 +1830,6 @@
         "id": "0c769e6742acebb0",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Host",
         "label": "Host",
         "tooltip": "",
@@ -1953,7 +1845,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 930,
-        "y": 1240,
+        "y": 1200,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1964,7 +1856,6 @@
         "id": "a122ea34e40556e4",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Port",
         "label": "Port",
         "tooltip": "",
@@ -1980,7 +1871,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 930,
-        "y": 1280,
+        "y": 1240,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -1991,7 +1882,6 @@
         "id": "ad3a558f7afdccbf",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Username",
         "label": "Username",
         "tooltip": "",
@@ -2007,7 +1897,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 910,
-        "y": 1320,
+        "y": 1280,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -2018,7 +1908,6 @@
         "id": "58d2480b2eff322c",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Password",
         "label": "Password",
         "tooltip": "",
@@ -2034,7 +1923,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 920,
-        "y": 1360,
+        "y": 1320,
         "wires": [
             [
                 "7184e0269f48110f"
@@ -2045,7 +1934,6 @@
         "id": "7184e0269f48110f",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "setMqttSettings",
         "func": "\n// initialise the counter to 0 if it doesn't exist already\nlet mqtt_settings = global.get('mqtt_settings') || {};\n\nmqtt_settings = Object.assign(mqtt_settings, { [msg.topic]: msg.payload })\n\nglobal.set('mqtt_settings', mqtt_settings)\n\n// msg.payload = inputSettings\n\nreturn mqtt_settings;",
         "outputs": 1,
@@ -2054,7 +1942,7 @@
         "finalize": "",
         "libs": [],
         "x": 1320,
-        "y": 1320,
+        "y": 1280,
         "wires": [
             []
         ]
@@ -2063,13 +1951,12 @@
         "id": "61dda110cb9d7f8a",
         "type": "status",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "scope": [
             "9e5fe1c3fe6f0503"
         ],
         "x": 140,
-        "y": 1220,
+        "y": 1180,
         "wires": [
             [
                 "642df87e4871a1c4",
@@ -2081,7 +1968,6 @@
         "id": "642df87e4871a1c4",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "setEnabledStates",
         "func": "if (msg.status.text === \"start\") {\n    msg.enabled = true\n} else if (msg.status.text === \"node-red:common.status.connecting\") {\n    msg.enabled = false\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    msg.enabled = false\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    msg.enabled = true\n}\n\n\nreturn msg;",
         "outputs": 1,
@@ -2090,7 +1976,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 1240,
+        "y": 1200,
         "wires": [
             [
                 "5c0f4a3dd94ecbbf",
@@ -2107,7 +1993,6 @@
         "id": "6c8acdd459e657eb",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -2120,14 +2005,13 @@
         "topic": "",
         "name": "Ack info",
         "x": 2080,
-        "y": 880,
+        "y": 840,
         "wires": []
     },
     {
         "id": "9e5fe1c3fe6f0503",
         "type": "mqtt in",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "topic": "",
         "qos": "2",
@@ -2138,7 +2022,7 @@
         "rh": 0,
         "inputs": 1,
         "x": 1350,
-        "y": 900,
+        "y": 860,
         "wires": [
             [
                 "4c30f9b315530f2a"
@@ -2149,7 +2033,6 @@
         "id": "2b2d85fbc2c145a5",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "subscribe",
         "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nglobal.set('userCreds', tempUserCreds)\nlet globalTopic = tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\nmsg.action = \"subscribe\"\nmsg.topic = globalTopic + \"#\"\n\n\n\nlet obj = {}\nobj.payload = {}\n\nif (tempUserCreds.location === \"\" || tempUserCreds.device_id === null) {\n    obj.payload.deviceAddr = \"Device address: N/A\"\n} else {\n    obj.payload.deviceAddr = \"Device address: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\n}\n\n\n\nreturn [msg, obj]\n",
         "outputs": 2,
@@ -2158,7 +2041,7 @@
         "finalize": "",
         "libs": [],
         "x": 940,
-        "y": 920,
+        "y": 880,
         "wires": [
             [
                 "9e5fe1c3fe6f0503"
@@ -2172,7 +2055,6 @@
         "id": "32d53427bced070c",
         "type": "ui_table",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "group": "78fe50a055b65ca2",
         "name": "",
         "order": 12,
@@ -2253,14 +2135,13 @@
         "outputs": 0,
         "cts": false,
         "x": 2090,
-        "y": 840,
+        "y": 800,
         "wires": []
     },
     {
         "id": "4c30f9b315530f2a",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "property": "payload.operator",
         "propertyType": "msg",
@@ -2315,7 +2196,7 @@
         "repair": false,
         "outputs": 9,
         "x": 1530,
-        "y": 900,
+        "y": 860,
         "wires": [
             [
                 "160ef0c3c55613af"
@@ -2350,7 +2231,6 @@
         "id": "160ef0c3c55613af",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "handleEvent",
         "func": "let eventList = {\n    \"1\": \"Access denied: Antipassback violation\",\n    \"2\": \"Access denied: A second cardholder is required\",\n    \"3\": \"Access denied: Denied by access rule\",\n    \"4\": \"Access denied: Max occupancy reached\",\n    \"5\": \"Access denied: Expired credential\",\n    \"6\": \"Access denied: First-person-in rule supervisor absent\",\n    \"7\": \"Access denied: Inactive cardholder\",\n    \"8\": \"Access denied: Interlock\",\n    \"9\": \"Access denied: Invalid PIN\",\n    \"10\": \"Access denied: Invalid RFID\",\n    \"11\": \"Access denied: Invalid BT PHONE\",\n    \"12\": \"Access denied: Invalid LINKEY\",\n    \"13\": \"Access denied: Invalid VIKEY\",\n    \"14\": \"Access denied: Lost credential\",\n    \"15\": \"Access denied: Stolen credential\",\n    \"16\": \"Access denied: Unknown credential\",\n    \"17\": \"Access denied: Out of schedule\",\n    \"18\": \"Antipassback violation\",\n    \"19\": \"Antipassback violation forgiven\",\n    \"20\": \"Access denied: Double credential requred \",\n    \"21\": \"Access denied: Double credential timeout\",\n    \"22\": \"Entry assumed\",\n    \"23\": \"Entry detected\",\n    \"24\": \"Access granted\",\n    \"25\": \"Entry\",\n    \"26\": \"Exit\",\n\n\n    \"116\": \"Door closed\",\n    \"117\": \"Door opened\",\n    \"118\": \"Door forced open\",\n    \"119\": \"Door open too long\",\n    \"120\": \"Request to exit\",\n    \"121\": \"Door manually unlocked\",\n    \"122\": \"Door manually locked\",\n    \"123\": \"Door manually Scheduled mode\",\n    \"124\": \"Door locked\",\n    \"125\": \"Door unlocked\"\n}\n\nlet groupList = {\n    0: \"System event\",\n    1: \"User event\",\n    2: \"Alarm event\",\n}\n\nlet directionList = {\n    \"-1\": \"Entry/Exit\",\n    \"0\": \"Entry\",\n    \"1\": \"Exit\"\n}\n\nfunction constructDirection(key) {\n    return key + \": \" + directionList[key]\n}\n\nfunction constructGroup(key) {\n    return key + \": \" + groupList[key]\n}\n\nfunction constructOutput(key) {\n    console.log(key)\n    console.log(groupList[key])\n    \n    return key + \": \" + eventList[key]\n}\n\nfunction getFormattedTime(unixTime) {\n    let months = [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"];\n    let days = [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"];\n    let d = new Date(unixTime * 1000);\n    let day = days[d.getDay()];\n    let hr = d.getHours();\n    let min = d.getMinutes();\n    if (min < 10) {\n        min = \"0\" + min;\n    }\n    let ampm = \"am\";\n    if (hr > 12) {\n        hr -= 12;\n        ampm = \"pm\";\n    }\n    let date = d.getDate();\n    let month = months[d.getMonth()];\n    let year = d.getFullYear();\n    return day + \" \" + hr + \":\" + min + ampm + \" \" + date + \" \" + month + \" \" + year;\n}\n\n\n\n\nlet eventInfoWrapper = {}\nlet eventInfo = {}\n\neventInfo = msg.payload.info\n\n\neventInfo.Event_id = constructOutput(eventInfo.Event_id)\neventInfo.time = getFormattedTime(eventInfo.time)\neventInfo.Group = constructGroup(eventInfo.Group)\neventInfo.Direction = constructDirection(eventInfo.Direction)\n\neventInfoWrapper.payload = {}\neventInfoWrapper.payload.command = \"addData\"\neventInfoWrapper.payload.arguments = [eventInfo, true]\n\nlet main_settings_arr = global.get('main_settings').list\nlet instance = main_settings_arr.find(function (el) {return el.device_set_idxs.Control_point_idx === eventInfo.Ctp_idx})\n\nif(instance){\n    eventInfo.Ctp_idx = instance.info.name\n} else{\n    eventInfo.Ctp_idx = \"Unknown\"\n}\n\n\n\nlet currentCardKey = {\n    key_id: eventInfo.Key_id,\n    key_hex: eventInfo.Key_HEX\n}\n\nglobal.set(\"currentCardKey\", currentCardKey)\n\n\n\nreturn eventInfoWrapper;",
         "outputs": 1,
@@ -2359,7 +2239,7 @@
         "finalize": "",
         "libs": [],
         "x": 1750,
-        "y": 840,
+        "y": 800,
         "wires": [
             [
                 "32d53427bced070c"
@@ -2370,7 +2250,6 @@
         "id": "95c8a2503541cab9",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "handleSetAccessMode-Ack",
         "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\n\nif (messageId === msg.payload.message_id) {\n\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"Error\"\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
@@ -2379,7 +2258,7 @@
         "finalize": "",
         "libs": [],
         "x": 1800,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -2390,7 +2269,6 @@
         "id": "6ad93d3e94e2fe69",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "group": "61a80ff8ccd60942",
         "name": "Device address",
         "order": 1,
@@ -2403,7 +2281,7 @@
         "templateScope": "local",
         "className": "",
         "x": 1120,
-        "y": 960,
+        "y": 920,
         "wires": [
             []
         ]
@@ -2412,7 +2290,6 @@
         "id": "5c0f4a3dd94ecbbf",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Connect to MQTT",
         "group": "08691a1abdc449f7",
         "order": 11,
@@ -2430,7 +2307,7 @@
         "topic": "",
         "topicType": "str",
         "x": 630,
-        "y": 940,
+        "y": 900,
         "wires": [
             [
                 "1f7ea9be7c722e68",
@@ -2444,7 +2321,6 @@
         "id": "1f7ea9be7c722e68",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "handleMqttBroker",
         "func": "let mqttSettings = global.get('mqtt_settings')\n\nif (msg.payload.action === \"connect\"){\n    msg.action = \"connect\"\n    msg.broker = {\n        broker: mqttSettings.host,\n        port: mqttSettings.port,\n        username: mqttSettings.username,\n        password: mqttSettings.password\n    }\n} else if (msg.payload.action === \"disconnect\"){\n    msg.action = \"disconnect\"\n    console.log(\"disconnect\")\n}\n\n\n\nreturn msg;",
         "outputs": 1,
@@ -2453,7 +2329,7 @@
         "finalize": "",
         "libs": [],
         "x": 930,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
                 "9e5fe1c3fe6f0503"
@@ -2464,7 +2340,6 @@
         "id": "d81bab586132c7e4",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Stop connection",
         "group": "08691a1abdc449f7",
         "order": 12,
@@ -2482,7 +2357,7 @@
         "topic": "",
         "topicType": "str",
         "x": 620,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
                 "1f7ea9be7c722e68"
@@ -2493,7 +2368,6 @@
         "id": "881c61e409196bd8",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "handleSingle_pass-Ack",
         "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.payload = \"Error\"\n\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
@@ -2502,7 +2376,7 @@
         "finalize": "",
         "libs": [],
         "x": 1790,
-        "y": 920,
+        "y": 880,
         "wires": [
             [
                 "6c8acdd459e657eb"
@@ -2513,7 +2387,6 @@
         "id": "84cef9c2bb45ee64",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "buildStatusMessage",
         "func": "let mqttSettings = global.get('mqtt_settings')\nlet message = {}\nmessage.payload = {}\n\nif (msg.status.text === \"node-red:common.status.connecting\") {\n    message.payload.connectionStatus = \"MQTT: Connecting...\"\n    msg.payload = \"Connecting to \" + mqttSettings.broker + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.connected\") {\n    message.payload.connectionStatus = \"MQTT: Connected to \" + mqttSettings.host + \":\" + mqttSettings.port\n    msg.payload = \"Connected to \" + mqttSettings.host + \":\" + mqttSettings.port\n} else if (msg.status.text === \"node-red:common.status.disconnected\") {\n    message.payload.connectionStatus = \"MQTT: Connection OFF\"\n    msg.payload = \"Mqtt disconnected\"\n}\n\nreturn [message, msg]\n\n",
         "outputs": 2,
@@ -2522,7 +2395,7 @@
         "finalize": "",
         "libs": [],
         "x": 280,
-        "y": 1000,
+        "y": 960,
         "wires": [
             [
                 "6cc4dd7e4806e9e6"
@@ -2536,7 +2409,6 @@
         "id": "2f28a02598ca6e15",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -2549,14 +2421,13 @@
         "topic": "",
         "name": "",
         "x": 390,
-        "y": 1060,
+        "y": 1020,
         "wires": []
     },
     {
         "id": "6cc4dd7e4806e9e6",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "group": "61a80ff8ccd60942",
         "name": "Mqtt status",
         "order": 2,
@@ -2569,7 +2440,7 @@
         "templateScope": "local",
         "className": "",
         "x": 310,
-        "y": 940,
+        "y": 900,
         "wires": [
             []
         ]
@@ -2578,7 +2449,6 @@
         "id": "8fecdfbd30a2545b",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "group": "08691a1abdc449f7",
         "name": "Connection options",
         "order": 1,
@@ -2591,7 +2461,7 @@
         "templateScope": "local",
         "className": "",
         "x": 630,
-        "y": 840,
+        "y": 800,
         "wires": [
             []
         ]
@@ -2607,8 +2477,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2910,
-        "y": 2540,
+        "x": 4130,
+        "y": 3760,
         "wires": [
             [
                 "689eaeb65ca4fba4"
@@ -2635,8 +2505,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 2820,
-        "y": 2420,
+        "x": 4040,
+        "y": 3640,
         "wires": [
             [
                 "a9fc57cdad44cd14"
@@ -2657,8 +2527,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 3130,
-        "y": 2440,
+        "x": 4350,
+        "y": 3660,
         "wires": []
     },
     {
@@ -2681,8 +2551,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 2080,
-        "y": 2040,
+        "x": 3320,
+        "y": 3280,
         "wires": [
             []
         ]
@@ -2707,8 +2577,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 2020,
-        "y": 2080,
+        "x": 3260,
+        "y": 3320,
         "wires": [
             []
         ]
@@ -2744,8 +2614,8 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2030,
-        "y": 2160,
+        "x": 3270,
+        "y": 3400,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2783,8 +2653,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1990,
-        "y": 2200,
+        "x": 3230,
+        "y": 3440,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2822,8 +2692,8 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2050,
-        "y": 2240,
+        "x": 3290,
+        "y": 3480,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2886,8 +2756,8 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1990,
-        "y": 2280,
+        "x": 3230,
+        "y": 3520,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2906,8 +2776,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2420,
-        "y": 2180,
+        "x": 3660,
+        "y": 3420,
         "wires": [
             []
         ]
@@ -2928,8 +2798,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2110,
-        "y": 2000,
+        "x": 3350,
+        "y": 3240,
         "wires": [
             []
         ]
@@ -2960,8 +2830,8 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2030,
-        "y": 2120,
+        "x": 3270,
+        "y": 3360,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -2999,8 +2869,8 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1960,
-        "y": 2320,
+        "x": 3200,
+        "y": 3560,
         "wires": [
             [
                 "6e20a4e8faad6ec9"
@@ -3011,7 +2881,6 @@
         "id": "aad987ee2a0c4f2c",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "handleSetCtpDoor-Ack",
         "func": "let messageId = global.get(\"messageId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}\n\n",
         "outputs": 1,
@@ -3020,7 +2889,7 @@
         "finalize": "",
         "libs": [],
         "x": 1780,
-        "y": 1000,
+        "y": 960,
         "wires": [
             [
                 "d969e40c2e543dae"
@@ -3031,7 +2900,6 @@
         "id": "d969e40c2e543dae",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "property": "result",
         "propertyType": "msg",
@@ -3050,14 +2918,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2130,
-        "y": 1040,
+        "x": 2010,
+        "y": 960,
         "wires": [
             [
                 "b34c7c3825b2f296"
             ],
             [
-                "a902fb928a850e75"
+                "770b753a51e0e70a"
             ]
         ]
     },
@@ -3065,7 +2933,6 @@
         "id": "a902fb928a850e75",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "setReader1",
         "func": "\nlet userCreds = global.get('userCreds');\nlet device_set_idxs = global.get('device_set_idxs');\nlet cpoint_instance = global.get('cpoint_instance')\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info = cpoint_instance.reader_1_settings;\n\nmsgWrapper.info.Control_point_idx = cpoint_instance.device_set_idxs.Control_point_idx\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId_rd_0', msgWrapper.message_id)\n\nreturn msg\n\n\n\n\n\n\n\n\n\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\n\nmsgWrapper.info = Object.assign(cpoint_instance.device_set_idxs,\n    cpoint_instance.door_settings)\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
         "outputs": 1,
@@ -3073,8 +2940,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2350,
-        "y": 1040,
+        "x": 2510,
+        "y": 1060,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -3093,8 +2960,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1270,
-        "y": 1900,
+        "x": 2510,
+        "y": 3140,
         "wires": [
             []
         ]
@@ -3130,8 +2997,8 @@
         "topic": "Door_sens_Condition",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 740,
-        "y": 1800,
+        "x": 1980,
+        "y": 3040,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3157,8 +3024,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 850,
-        "y": 1660,
+        "x": 2090,
+        "y": 2900,
         "wires": [
             [
                 "5c869c44f8db9da9"
@@ -3196,8 +3063,8 @@
         "topic": "Door_Lock_mode",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 780,
-        "y": 2040,
+        "x": 2020,
+        "y": 3280,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3235,8 +3102,8 @@
         "topic": "Door_Lock_type",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 780,
-        "y": 2080,
+        "x": 2020,
+        "y": 3320,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3262,8 +3129,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 730,
-        "y": 2120,
+        "x": 1970,
+        "y": 3360,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3289,8 +3156,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 790,
-        "y": 2160,
+        "x": 2030,
+        "y": 3400,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3328,8 +3195,8 @@
         "topic": "Button_rex_Condition",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 760,
-        "y": 1920,
+        "x": 2000,
+        "y": 3160,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3355,8 +3222,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 890,
-        "y": 1620,
+        "x": 2130,
+        "y": 2860,
         "wires": [
             [
                 "5c869c44f8db9da9"
@@ -3379,8 +3246,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1210,
-        "y": 2020,
+        "x": 2450,
+        "y": 3260,
         "wires": [
             []
         ]
@@ -3404,8 +3271,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 890,
-        "y": 1580,
+        "x": 2130,
+        "y": 2820,
         "wires": [
             [
                 "5c869c44f8db9da9"
@@ -3438,8 +3305,8 @@
         "topic": "Door_sens_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 750,
-        "y": 1720,
+        "x": 1990,
+        "y": 2960,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3477,8 +3344,8 @@
         "topic": "Door_sens_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 750,
-        "y": 1760,
+        "x": 1990,
+        "y": 3000,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3516,8 +3383,8 @@
         "topic": "Button_rex_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 750,
-        "y": 1880,
+        "x": 1990,
+        "y": 3120,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3550,8 +3417,8 @@
         "topic": "Lock_Relay_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 770,
-        "y": 1960,
+        "x": 2010,
+        "y": 3200,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3584,8 +3451,8 @@
         "topic": "Lock_Relay_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 780,
-        "y": 2000,
+        "x": 2020,
+        "y": 3240,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3623,8 +3490,8 @@
         "topic": "Door_Sens_Autolock",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 790,
-        "y": 2200,
+        "x": 2030,
+        "y": 3440,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3797,8 +3664,8 @@
         "topic": "tz",
         "topicType": "str",
         "className": "timezone",
-        "x": 760,
-        "y": 2280,
+        "x": 2000,
+        "y": 3520,
         "wires": [
             [
                 "ddab9916254d4a0e"
@@ -3817,8 +3684,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
-        "y": 2280,
+        "x": 2220,
+        "y": 3520,
         "wires": [
             []
         ]
@@ -3850,8 +3717,8 @@
         "offcolor": "",
         "animate": false,
         "className": "dropdown_input",
-        "x": 720,
-        "y": 2240,
+        "x": 1960,
+        "y": 3480,
         "wires": [
             [
                 "ddab9916254d4a0e"
@@ -3884,8 +3751,8 @@
         "topic": "Button_rex_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 750,
-        "y": 1840,
+        "x": 1990,
+        "y": 3080,
         "wires": [
             [
                 "a607e57b9c8d8cdd"
@@ -3908,8 +3775,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1210,
-        "y": 2060,
+        "x": 2450,
+        "y": 3300,
         "wires": [
             []
         ]
@@ -3930,8 +3797,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1210,
-        "y": 2100,
+        "x": 2450,
+        "y": 3340,
         "wires": [
             []
         ]
@@ -3952,8 +3819,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1220,
-        "y": 2140,
+        "x": 2460,
+        "y": 3380,
         "wires": [
             []
         ]
@@ -3974,8 +3841,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1230,
-        "y": 2180,
+        "x": 2470,
+        "y": 3420,
         "wires": [
             []
         ]
@@ -3984,7 +3851,6 @@
         "id": "b34c7c3825b2f296",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -3996,8 +3862,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2340,
-        "y": 1000,
+        "x": 2220,
+        "y": 940,
         "wires": []
     },
     {
@@ -4012,8 +3878,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1220,
-        "y": 1620,
+        "x": 2460,
+        "y": 2860,
         "wires": [
             []
         ]
@@ -4022,7 +3888,6 @@
         "id": "62276b0a5748fef9",
         "type": "mqtt out",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "topic": "",
         "qos": "0",
@@ -4033,15 +3898,14 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2550,
-        "y": 1100,
+        "x": 2610,
+        "y": 1180,
         "wires": []
     },
     {
         "id": "2c9973e0b952c269",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "handleSetRd-Ack",
         "func": "let messageId_rd_0 = global.get(\"messageId_rd_0\")\nlet messageId_rd_1 = global.get(\"messageId_rd_1\")\n\n\n\nlet ackInfo_rd_0 = {}\nlet ackInfo_rd_1 = {}\n\nif (messageId_rd_0 === msg.payload.message_id) {\n\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_0.result = \"success\"\n        ackInfo_rd_0.payload = \"Done\"\n    } else {\n        ackInfo_rd_0.result = \"error\"\n        ackInfo_rd_0.payload = \"error\"\n    }\n} else if (messageId_rd_1 === msg.payload.message_id){\n\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo_rd_1.result = \"success\"\n        ackInfo_rd_1.payload = \"Done\"\n    } else {\n        ackInfo_rd_1.result = \"error\"\n        ackInfo_rd_1.payload = \"error\"\n    }\n}\n\nreturn [ackInfo_rd_0, ackInfo_rd_1]\n\n",
         "outputs": 2,
@@ -4050,7 +3914,7 @@
         "finalize": "",
         "libs": [],
         "x": 1770,
-        "y": 1040,
+        "y": 1000,
         "wires": [
             [
                 "e063be51f1201adf"
@@ -4064,7 +3928,6 @@
         "id": "e063be51f1201adf",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "property": "result",
         "propertyType": "msg",
@@ -4084,7 +3947,7 @@
         "repair": false,
         "outputs": 2,
         "x": 2130,
-        "y": 1080,
+        "y": 1100,
         "wires": [
             [
                 "7416ec0179370582"
@@ -4098,7 +3961,6 @@
         "id": "2027404e36d47db4",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "setReader2",
         "func": "\nlet userCreds = global.get('userCreds');\nlet device_set_idxs = global.get('device_set_idxs');\nlet cpoint_instance = global.get('cpoint_instance')\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetRd\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info = cpoint_instance.reader_2_settings;\n\nmsgWrapper.info.Control_point_idx = cpoint_instance.device_set_idxs.Control_point_idx\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId_rd_1', msgWrapper.message_id)\n\nreturn msg",
         "outputs": 1,
@@ -4106,7 +3968,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2350,
+        "x": 2370,
         "y": 1120,
         "wires": [
             [
@@ -4118,7 +3980,6 @@
         "id": "7416ec0179370582",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -4130,7 +3991,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2340,
+        "x": 2360,
         "y": 1080,
         "wires": []
     },
@@ -4138,7 +3999,6 @@
         "id": "86a634f89955d0c9",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "property": "result",
         "propertyType": "msg",
@@ -4158,7 +4018,7 @@
         "repair": false,
         "outputs": 2,
         "x": 2130,
-        "y": 1120,
+        "y": 1140,
         "wires": [
             [
                 "03ca1b1fdfc39f2d"
@@ -4172,7 +4032,6 @@
         "id": "03ca1b1fdfc39f2d",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -4184,7 +4043,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2340,
+        "x": 2360,
         "y": 1160,
         "wires": []
     },
@@ -4192,7 +4051,6 @@
         "id": "fdf6aa2ba915be6d",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "setTimezone",
         "func": "let userCreds = global.get('userCreds');\nlet cpoint_instance = global.get('cpoint_instance')\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetDateTime\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info = cpoint_instance.time_settings\n\nmsgWrapper.info.DateTime = Date.now()\nmsgWrapper.info.GMT = 7200\nmsgWrapper.info.NTP1 = \"pool.ntp.org\"\nmsgWrapper.info.NTP2 = \"pool2.ntp.org:123\"\nmsgWrapper.info.DST_Shift = 3600\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nreturn msg",
         "outputs": 1,
@@ -4200,7 +4058,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2350,
+        "x": 2370,
         "y": 1200,
         "wires": [
             [
@@ -4212,7 +4070,6 @@
         "id": "6505c8ff956b3f78",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "props": [],
         "repeat": "",
@@ -4220,8 +4077,8 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 2750,
-        "y": 1140,
+        "x": 3870,
+        "y": 1340,
         "wires": [
             [
                 "6d7ac608b771c09f"
@@ -4232,7 +4089,6 @@
         "id": "28a1c7a16938fbb3",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Divice id",
         "label": "Divice id",
         "tooltip": "",
@@ -4248,7 +4104,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 920,
-        "y": 1460,
+        "y": 1420,
         "wires": [
             [
                 "33c8b93809af5d71"
@@ -4259,7 +4115,6 @@
         "id": "33c8b93809af5d71",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "setDeviceLocalion",
         "func": "let tempUserCreds = global.get('tempUserCreds') || {};\n\ntempUserCreds = Object.assign(tempUserCreds, { [msg.topic]: msg.payload })\nglobal.set('tempUserCreds', tempUserCreds)\n\nlet obj = {}\nobj.payload = tempUserCreds\nreturn obj",
         "outputs": 1,
@@ -4268,7 +4123,7 @@
         "finalize": "",
         "libs": [],
         "x": 1110,
-        "y": 1460,
+        "y": 1420,
         "wires": [
             []
         ]
@@ -4277,7 +4132,6 @@
         "id": "583517f12510f63c",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "props": [
             {
@@ -4292,7 +4146,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 290,
-        "y": 880,
+        "y": 840,
         "wires": [
             [
                 "6cc4dd7e4806e9e6"
@@ -4303,7 +4157,6 @@
         "id": "4eec54e042c9d037",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "handleSetDateTime-Ack",
         "func": "let ackInfo = {}\nlet messageId = global.get(\"messageId\")\n\n\nif (messageId === msg.payload.message_id) {\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.topic = \"Success\"\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n\n\n    } else {\n        ackInfo.topic = \"Error\"\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"Error\"\n\n    }\n}\n\nreturn ackInfo;",
         "outputs": 1,
@@ -4312,7 +4165,7 @@
         "finalize": "",
         "libs": [],
         "x": 1790,
-        "y": 960,
+        "y": 920,
         "wires": [
             [
                 "6c8acdd459e657eb",
@@ -4345,7 +4198,6 @@
         "id": "e819dd139f9e98f4",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Card Options",
         "group": "fc491a4cada0492f",
         "order": 4,
@@ -4362,8 +4214,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2890,
-        "y": 1380,
+        "x": 4010,
+        "y": 1580,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -4428,7 +4280,6 @@
         "id": "3880a03920b6f99c",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Location",
         "label": "Location",
         "tooltip": "",
@@ -4444,7 +4295,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 920,
-        "y": 1420,
+        "y": 1380,
         "wires": [
             [
                 "33c8b93809af5d71"
@@ -4455,7 +4306,6 @@
         "id": "9c089a6faed821bd",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "persistMqttSettings",
         "func": "let mqttSettings = global.get('mqtt_settings')\nlet json = {}\njson.host = mqttSettings.host\njson.port = mqttSettings.port\njson.username = mqttSettings.username\njson.password = mqttSettings.password\n\nmsg.payload = json\nreturn msg",
         "outputs": 1,
@@ -4464,7 +4314,7 @@
         "finalize": "",
         "libs": [],
         "x": 630,
-        "y": 980,
+        "y": 940,
         "wires": [
             [
                 "a854989e94536e41"
@@ -4475,7 +4325,6 @@
         "id": "a854989e94536e41",
         "type": "file",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "persistMqttSettings",
         "filename": ".lumiring/air_cr/mqtt_settings.json",
         "filenameType": "str",
@@ -4484,7 +4333,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 630,
-        "y": 1020,
+        "y": 980,
         "wires": [
             [
                 "1090c7446b008215"
@@ -4495,7 +4344,6 @@
         "id": "c2c2313264fe8ffb",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "property": "result",
         "propertyType": "msg",
@@ -4510,7 +4358,7 @@
         "repair": false,
         "outputs": 1,
         "x": 2050,
-        "y": 960,
+        "y": 920,
         "wires": [
             [
                 "08d971dd14813356"
@@ -4624,8 +4472,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 1580,
+        "x": 1700,
+        "y": 2820,
         "wires": [
             [
                 "3c691a45025ba009"
@@ -4644,8 +4492,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 1620,
+        "x": 1700,
+        "y": 2860,
         "wires": [
             [
                 "4d74c64a6d551fbf"
@@ -4664,8 +4512,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 1660,
+        "x": 1700,
+        "y": 2900,
         "wires": [
             [
                 "5876e97090ffded2"
@@ -4683,8 +4531,8 @@
             "662967311ea5753e"
         ],
         "uncaught": false,
-        "x": 110,
-        "y": 1900,
+        "x": 1350,
+        "y": 3140,
         "wires": [
             [
                 "b417a70c3198d0ed",
@@ -4720,8 +4568,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 1720,
+        "x": 1700,
+        "y": 2960,
         "wires": [
             [
                 "8d0f58b9725145dc"
@@ -4740,8 +4588,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 1760,
+        "x": 1700,
+        "y": 3000,
         "wires": [
             [
                 "061aecc325f2ccf3"
@@ -4760,8 +4608,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 1800,
+        "x": 1700,
+        "y": 3040,
         "wires": [
             [
                 "84d7a118ddd9842f"
@@ -4780,8 +4628,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 1840,
+        "x": 1700,
+        "y": 3080,
         "wires": [
             [
                 "b21a19bb0acbfa9c"
@@ -4800,8 +4648,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 1880,
+        "x": 1690,
+        "y": 3120,
         "wires": [
             [
                 "b2474e59834ac54b"
@@ -4820,8 +4668,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 1920,
+        "x": 1690,
+        "y": 3160,
         "wires": [
             [
                 "1dc6ecb687b4c702"
@@ -4840,8 +4688,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 1960,
+        "x": 1690,
+        "y": 3200,
         "wires": [
             [
                 "00ecd6dbee19221f"
@@ -4860,8 +4708,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 2000,
+        "x": 1690,
+        "y": 3240,
         "wires": [
             [
                 "9511360cabc09665"
@@ -4880,8 +4728,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 2040,
+        "x": 1690,
+        "y": 3280,
         "wires": [
             [
                 "4a42fef97bd379c2"
@@ -4900,8 +4748,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 2080,
+        "x": 1690,
+        "y": 3320,
         "wires": [
             [
                 "297191ec56ab0272"
@@ -4920,8 +4768,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 2120,
+        "x": 1690,
+        "y": 3360,
         "wires": [
             [
                 "d8697b4c53aa26a1"
@@ -4940,8 +4788,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 2160,
+        "x": 1690,
+        "y": 3400,
         "wires": [
             [
                 "d0c523e32a8ea14f"
@@ -4960,8 +4808,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 2200,
+        "x": 1690,
+        "y": 3440,
         "wires": [
             [
                 "b083bea11642642c"
@@ -4980,8 +4828,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 2240,
+        "x": 1690,
+        "y": 3480,
         "wires": [
             [
                 "ebf4caecba2c3b0f"
@@ -5000,8 +4848,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 2280,
+        "x": 1690,
+        "y": 3520,
         "wires": [
             [
                 "1decd6fb7be79a57"
@@ -5107,7 +4955,6 @@
         "id": "afdc7c0ee76e4a47",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "function 23",
         "func": "let mqtt_settings = global.get('mqtt_settings')\nmsg.payload = mqtt_settings.host\nreturn msg\n",
         "outputs": 1,
@@ -5116,7 +4963,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 1240,
+        "y": 1200,
         "wires": [
             [
                 "0c769e6742acebb0"
@@ -5127,7 +4974,6 @@
         "id": "99ae61b360355f68",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "function 24",
         "func": "let mqtt_settings = global.get('mqtt_settings')\nmsg.payload = mqtt_settings.port\nreturn msg\n",
         "outputs": 1,
@@ -5136,7 +4982,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 1280,
+        "y": 1240,
         "wires": [
             [
                 "a122ea34e40556e4"
@@ -5147,7 +4993,6 @@
         "id": "f74a6a22480189cc",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "function 25",
         "func": "let mqtt_settings = global.get('mqtt_settings')\nmsg.payload = mqtt_settings.username\nreturn msg",
         "outputs": 1,
@@ -5156,7 +5001,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 1320,
+        "y": 1280,
         "wires": [
             [
                 "ad3a558f7afdccbf"
@@ -5167,7 +5012,6 @@
         "id": "53da7a211480283e",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "function 26",
         "func": "let mqtt_settings = global.get('mqtt_settings')\nmsg.payload = mqtt_settings.password\nreturn msg",
         "outputs": 1,
@@ -5176,7 +5020,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 1360,
+        "y": 1320,
         "wires": [
             [
                 "58d2480b2eff322c"
@@ -5187,7 +5031,6 @@
         "id": "4389b92844310dbf",
         "type": "complete",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "scope": [
             "8096f0b5ec80a327",
@@ -5195,7 +5038,7 @@
         ],
         "uncaught": false,
         "x": 130,
-        "y": 1360,
+        "y": 1320,
         "wires": [
             [
                 "a7a7b24370fc4997"
@@ -5206,7 +5049,6 @@
         "id": "a7a7b24370fc4997",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "function 27",
         "func": "msg.status = {}\nmsg.status.text = \"start\"\nreturn msg;",
         "outputs": 1,
@@ -5215,7 +5057,7 @@
         "finalize": "",
         "libs": [],
         "x": 290,
-        "y": 1360,
+        "y": 1320,
         "wires": [
             [
                 "642df87e4871a1c4"
@@ -5302,7 +5144,6 @@
         "id": "1090c7446b008215",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "persistDeviceLocation",
         "func": "let mqttSettings = global.get('userCreds')\nlet json = {}\njson.location = mqttSettings.location\njson.device_id = mqttSettings.device_id\nmsg.payload = json\nreturn msg",
         "outputs": 1,
@@ -5311,7 +5152,7 @@
         "finalize": "",
         "libs": [],
         "x": 640,
-        "y": 1080,
+        "y": 1040,
         "wires": [
             [
                 "65727af8ca7694b4"
@@ -5322,7 +5163,6 @@
         "id": "65727af8ca7694b4",
         "type": "file",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "persistMqttSettings",
         "filename": ".lumiring/air_cr/device_location.json",
         "filenameType": "str",
@@ -5331,7 +5171,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 650,
-        "y": 1140,
+        "y": 1100,
         "wires": [
             []
         ]
@@ -5340,14 +5180,13 @@
         "id": "be4ec194f59155d0",
         "type": "complete",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "scope": [
             "295e536ea69e5521"
         ],
         "uncaught": false,
         "x": 170,
-        "y": 1440,
+        "y": 1400,
         "wires": [
             [
                 "45dadb28c9284a55",
@@ -5359,7 +5198,6 @@
         "id": "45dadb28c9284a55",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "function 30",
         "func": "let userCreds = global.get('userCreds')\nmsg.payload = userCreds.location\nreturn msg",
         "outputs": 1,
@@ -5368,7 +5206,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 1420,
+        "y": 1380,
         "wires": [
             [
                 "3880a03920b6f99c"
@@ -5379,7 +5217,6 @@
         "id": "9711d2389203650e",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "function 31",
         "func": "let userCreds = global.get('userCreds')\nmsg.payload = userCreds.device_id\nreturn msg",
         "outputs": 1,
@@ -5388,7 +5225,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 1460,
+        "y": 1420,
         "wires": [
             [
                 "28a1c7a16938fbb3"
@@ -5512,7 +5349,6 @@
         "id": "a07a6a7f1f8b3b3f",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "property": "result",
         "propertyType": "msg",
@@ -5532,7 +5368,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1750,
-        "y": 1120,
+        "y": 1080,
         "wires": [
             [
                 "a5009491338db9ad"
@@ -5547,7 +5383,6 @@
         "id": "a5009491338db9ad",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -5559,15 +5394,14 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1960,
-        "y": 1120,
+        "x": 1900,
+        "y": 1080,
         "wires": []
     },
     {
         "id": "092fbd16dc09d3e3",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "function 34",
         "func": "let schedule_instance = global.get('schedule_instance')\nlet schedule_list = global.get(\"schedule_list\");\n\n\nschedule_list.list.push(schedule_instance)\n\nmsg.payload = schedule_list\nreturn [msg, schedule_instance]",
         "outputs": 2,
@@ -5576,7 +5410,7 @@
         "finalize": "",
         "libs": [],
         "x": 1770,
-        "y": 1180,
+        "y": 1200,
         "wires": [
             [
                 "f6dffb08204572bf"
@@ -5683,7 +5517,6 @@
         "id": "f6dffb08204572bf",
         "type": "file",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "filename": ".lumiring/air_cr/schedule_list.json",
         "filenameType": "str",
@@ -5701,7 +5534,6 @@
         "id": "b34a359c80292f28",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "handleSetSdlDaily-Ack",
         "func": "let messageId = global.get(\"messageId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"Error\"\n    }\n    return ackInfo;\n}",
         "outputs": 1,
@@ -5710,7 +5542,7 @@
         "finalize": "",
         "libs": [],
         "x": 1780,
-        "y": 1080,
+        "y": 1040,
         "wires": [
             [
                 "a07a6a7f1f8b3b3f"
@@ -5847,7 +5679,6 @@
         "id": "ff147062542040ed",
         "type": "ui_template",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "group": "08691a1abdc449f7",
         "name": "topics Info",
         "order": 4,
@@ -5860,7 +5691,7 @@
         "templateScope": "local",
         "className": "",
         "x": 1130,
-        "y": 1000,
+        "y": 960,
         "wires": [
             []
         ]
@@ -5869,7 +5700,6 @@
         "id": "e6bc21e1b963fbf6",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "function 39",
         "func": "let tempUserCreds = RED.util.cloneMessage(global.get('tempUserCreds'))\nlet globalTopic = tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\"\n\nlet obj = {}\nobj.payload = {}\n\nif (tempUserCreds.location === \"\" || tempUserCreds.device_id===null){\n    obj.payload.events = \"Events topic: N/A\"\n    obj.payload.operate = \"Operate topic: N/A\" \n    obj.payload.ack = \"Acknowledge topic: N/A\" \n} else{\n    obj.payload.events = \"Events topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Events\"\n    obj.payload.operate = \"Operate topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Operate\"\n    obj.payload.ack = \"Acknowledge topic: \" + tempUserCreds.location + \"/\" + tempUserCreds.device_id + \"/\" + \"Ack\"\n}\n\n\n\n\n\nreturn obj\n\n",
         "outputs": 1,
@@ -5878,7 +5708,7 @@
         "finalize": "",
         "libs": [],
         "x": 950,
-        "y": 1000,
+        "y": 960,
         "wires": [
             [
                 "ff147062542040ed"
@@ -6035,7 +5865,6 @@
         "id": "32e87a6a3d7b9fae",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "handleSetCardKeys-Ack",
         "func": "let messageId = global.get(\"setCardMessId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"Error\"\n    }\n    return ackInfo;\n}\n\n",
         "outputs": 1,
@@ -6055,7 +5884,6 @@
         "id": "87e4455cfb6d992b",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "property": "result",
         "propertyType": "msg",
@@ -6089,7 +5917,6 @@
         "id": "ab9407c55052fb9e",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -6101,7 +5928,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2160,
+        "x": 2200,
         "y": 1220,
         "wires": []
     },
@@ -6109,7 +5936,6 @@
         "id": "f681efedd61143dc",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "handleEndCardKey-Ack",
         "func": "let messageId = global.get(\"setCardMessId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"Error\"\n    }\n    return ackInfo;\n}\n\n",
         "outputs": 1,
@@ -6130,7 +5956,6 @@
         "id": "40dc0361ade51989",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "function 41",
         "func": "let userCreds = global.get('userCreds');\nlet device_set_idxs = global.get('device_set_idxs');\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"EndCardKey\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = global.get('setCardMessId')\nmsgWrapper.info = {}\nmsgWrapper.info.KeysCount = 1\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nreturn msg",
         "outputs": 1,
@@ -6138,7 +5963,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2170,
+        "x": 2210,
         "y": 1260,
         "wires": [
             [
@@ -6150,7 +5975,6 @@
         "id": "4c5d44476d630125",
         "type": "ui_toast",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "position": "top right",
         "displayTime": "3",
         "highlight": "",
@@ -6170,7 +5994,6 @@
         "id": "939ee531e2a85a60",
         "type": "mqtt out",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "topic": "",
         "qos": "0",
@@ -6181,7 +6004,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2330,
+        "x": 2390,
         "y": 1260,
         "wires": []
     },
@@ -6237,8 +6060,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 2120,
+        "x": 2970,
+        "y": 3360,
         "wires": [
             [
                 "222ca6d9f33aad97"
@@ -6256,8 +6079,8 @@
             "662967311ea5753e"
         ],
         "uncaught": false,
-        "x": 1490,
-        "y": 2240,
+        "x": 2730,
+        "y": 3480,
         "wires": [
             [
                 "04c1d5dbdd8f38ac",
@@ -6281,8 +6104,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 2160,
+        "x": 2970,
+        "y": 3400,
         "wires": [
             [
                 "44eead080f6ff893"
@@ -6301,8 +6124,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 2200,
+        "x": 2970,
+        "y": 3440,
         "wires": [
             [
                 "2c0e5a1f061ca6fb"
@@ -6321,8 +6144,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 2240,
+        "x": 2970,
+        "y": 3480,
         "wires": [
             [
                 "60f424913e84a261"
@@ -6341,8 +6164,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 2280,
+        "x": 2970,
+        "y": 3520,
         "wires": [
             [
                 "0ec93d1beaa5a9e4"
@@ -6361,8 +6184,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 2320,
+        "x": 2970,
+        "y": 3560,
         "wires": [
             [
                 "e5a3acd7c9ec31f5"
@@ -6389,8 +6212,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 2120,
-        "y": 1620,
+        "x": 3360,
+        "y": 2860,
         "wires": [
             []
         ]
@@ -6415,8 +6238,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "str",
-        "x": 2060,
-        "y": 1660,
+        "x": 3300,
+        "y": 2900,
         "wires": [
             []
         ]
@@ -6452,8 +6275,8 @@
         "topic": "Rd_Direction",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2070,
-        "y": 1740,
+        "x": 3310,
+        "y": 2980,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -6491,8 +6314,8 @@
         "topic": "Rd_Key_endian",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2030,
-        "y": 1780,
+        "x": 3270,
+        "y": 3020,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -6530,8 +6353,8 @@
         "topic": "Rd_beep",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2090,
-        "y": 1820,
+        "x": 3330,
+        "y": 3060,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -6594,8 +6417,8 @@
         "topic": "Rd_Wg_type",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2010,
-        "y": 1860,
+        "x": 3250,
+        "y": 3100,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -6614,8 +6437,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2460,
-        "y": 1760,
+        "x": 3700,
+        "y": 3000,
         "wires": [
             []
         ]
@@ -6636,8 +6459,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2090,
-        "y": 1580,
+        "x": 3330,
+        "y": 2820,
         "wires": [
             []
         ]
@@ -6668,8 +6491,8 @@
         "topic": "Rd_opt",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2070,
-        "y": 1700,
+        "x": 3310,
+        "y": 2940,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -6707,8 +6530,8 @@
         "topic": "Rd_Wg_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 1980,
-        "y": 1900,
+        "x": 3220,
+        "y": 3140,
         "wires": [
             [
                 "c8de1c77f62aa5e1"
@@ -6727,8 +6550,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 1700,
+        "x": 2970,
+        "y": 2940,
         "wires": [
             [
                 "7bbd818e1ecdb3bd"
@@ -6746,8 +6569,8 @@
             "662967311ea5753e"
         ],
         "uncaught": false,
-        "x": 1490,
-        "y": 1820,
+        "x": 2730,
+        "y": 3060,
         "wires": [
             [
                 "d8678eed801b4b21",
@@ -6771,8 +6594,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 1740,
+        "x": 2970,
+        "y": 2980,
         "wires": [
             [
                 "c83813488be715e7"
@@ -6791,8 +6614,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 1780,
+        "x": 2970,
+        "y": 3020,
         "wires": [
             [
                 "60fc553922b7b14e"
@@ -6811,8 +6634,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 1820,
+        "x": 2970,
+        "y": 3060,
         "wires": [
             [
                 "b6369bb4f44f1bb6"
@@ -6831,8 +6654,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 1860,
+        "x": 2970,
+        "y": 3100,
         "wires": [
             [
                 "3bc21ed43f4c6e09"
@@ -6851,8 +6674,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1730,
-        "y": 1900,
+        "x": 2970,
+        "y": 3140,
         "wires": [
             [
                 "aab5cc2445afa1e9"
@@ -6863,7 +6686,6 @@
         "id": "b41158a68dfc5a8f",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "Settings",
         "group": "fc491a4cada0492f",
         "order": 3,
@@ -6880,8 +6702,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 2880,
-        "y": 1340,
+        "x": 4000,
+        "y": 1540,
         "wires": [
             [
                 "f35f7ebd59ad5459"
@@ -8468,7 +8290,6 @@
         "id": "08d971dd14813356",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "persistMainSettings",
         "func": "let main_settings_arr = global.get('main_settings').list\nlet cpoint_instance = global.get('cpoint_instance')\n\nif (!main_settings_arr.includes(cpoint_instance)){\n    main_settings_arr.push(cpoint_instance)\n}\n\nlet obj = {}\nobj.payload = {}\nobj.payload.list = main_settings_arr\n\nreturn obj;\n\n",
         "outputs": 1,
@@ -8477,7 +8298,7 @@
         "finalize": "",
         "libs": [],
         "x": 2390,
-        "y": 940,
+        "y": 900,
         "wires": [
             [
                 "5a4ff491dc97afe1"
@@ -8488,7 +8309,6 @@
         "id": "5a4ff491dc97afe1",
         "type": "file",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "filename": ".lumiring/air_cr/main_settings.json",
         "filenameType": "str",
@@ -8497,7 +8317,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 2700,
-        "y": 940,
+        "y": 900,
         "wires": [
             []
         ]
@@ -8611,7 +8431,6 @@
         "id": "5ca21ea96e5532f4",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "props": [
             {
@@ -8630,7 +8449,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 2260,
-        "y": 840,
+        "y": 800,
         "wires": [
             [
                 "08d971dd14813356"
@@ -8686,8 +8505,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2830,
-        "y": 1800,
+        "x": 4050,
+        "y": 3020,
         "wires": [
             [
                 "d843a8db1ed8bbba"
@@ -8705,8 +8524,8 @@
             "08d971dd14813356"
         ],
         "uncaught": false,
-        "x": 2790,
-        "y": 1740,
+        "x": 4010,
+        "y": 2960,
         "wires": [
             [
                 "7042bebaeb2bef2f"
@@ -8732,8 +8551,8 @@
         "topic": "",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 2810,
-        "y": 1880,
+        "x": 4050,
+        "y": 3120,
         "wires": [
             [
                 "1cbac974e1dbb470"
@@ -9028,7 +8847,6 @@
         "id": "106fa200f52c52c9",
         "type": "switch",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "property": "result",
         "propertyType": "msg",
@@ -9043,7 +8861,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1990,
-        "y": 1360,
+        "y": 1380,
         "wires": [
             [
                 "cd3e41f3d6b01780"
@@ -9073,7 +8891,6 @@
         "id": "634cfcd97dec7739",
         "type": "file",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "filename": ".lumiring/air_cr/cards.json",
         "filenameType": "str",
@@ -9082,7 +8899,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 2430,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             []
         ]
@@ -9091,7 +8908,6 @@
         "id": "950a518d545ed7ae",
         "type": "inject",
         "z": "692c798b6f9c61de",
-        "g": "ccfbaa574e4c13f7",
         "name": "",
         "props": [
             {
@@ -9110,7 +8926,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 1980,
-        "y": 1420,
+        "y": 1440,
         "wires": [
             [
                 "cd3e41f3d6b01780"
@@ -9274,6 +9090,94 @@
         "y": 2760,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "770b753a51e0e70a",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 84",
+        "func": "let info = global.get('main_settings').info\n\nreturn info;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2170,
+        "y": 1000,
+        "wires": [
+            [
+                "be089296ec3c54f0",
+                "7e2845dba7cb46b9"
+            ]
+        ]
+    },
+    {
+        "id": "be089296ec3c54f0",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2350,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e2845dba7cb46b9",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2540,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "e69aebcd369c4e13",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2040,
+        "y": 1040,
+        "wires": [
+            [
+                "770b753a51e0e70a"
+            ]
         ]
     }
 ]
