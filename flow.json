@@ -3920,7 +3920,7 @@
                 "e063be51f1201adf"
             ],
             [
-                "03ca1b1fdfc39f2d"
+                "bc76cb99e8d741fc"
             ]
         ]
     },
@@ -3946,8 +3946,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2130,
-        "y": 1100,
+        "x": 2110,
+        "y": 1060,
         "wires": [
             [
                 "7416ec0179370582"
@@ -3991,27 +3991,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2140,
-        "y": 1040,
-        "wires": []
-    },
-    {
-        "id": "03ca1b1fdfc39f2d",
-        "type": "ui_toast",
-        "z": "692c798b6f9c61de",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": false,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "Ack info",
-        "x": 2160,
-        "y": 1140,
+        "x": 2100,
+        "y": 1020,
         "wires": []
     },
     {
@@ -8238,8 +8219,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2730,
-        "y": 1160,
+        "x": 2410,
+        "y": 1180,
         "wires": [
             [
                 "5a4ff491dc97afe1"
@@ -8257,8 +8238,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 3040,
-        "y": 1160,
+        "x": 2620,
+        "y": 1240,
         "wires": [
             []
         ]
@@ -9130,8 +9111,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2690,
-        "y": 1200,
+        "x": 2670,
+        "y": 1140,
         "wires": [
             [
                 "3e1faa4820110952"
@@ -9153,8 +9134,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2880,
-        "y": 1200,
+        "x": 2860,
+        "y": 1140,
         "wires": []
     },
     {
@@ -9189,5 +9170,58 @@
                 "fdf6aa2ba915be6d"
             ]
         ]
+    },
+    {
+        "id": "bc76cb99e8d741fc",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "property": "result",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "success",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2110,
+        "y": 1100,
+        "wires": [
+            [
+                "5e67349072bd813e"
+            ],
+            [
+                "5e67349072bd813e",
+                "08d971dd14813356"
+            ]
+        ]
+    },
+    {
+        "id": "5e67349072bd813e",
+        "type": "ui_toast",
+        "z": "692c798b6f9c61de",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Ack info",
+        "x": 2260,
+        "y": 1100,
+        "wires": []
     }
 ]
