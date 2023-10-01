@@ -2004,7 +2004,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2080,
+        "x": 2120,
         "y": 840,
         "wires": []
     },
@@ -2163,12 +2163,12 @@
             },
             {
                 "t": "eq",
-                "v": "SetDateTime-Ack",
+                "v": "SetCtpDoor-Ack",
                 "vt": "str"
             },
             {
                 "t": "eq",
-                "v": "SetCtpDoor-Ack",
+                "v": "SetDateTime-Ack",
                 "vt": "str"
             },
             {
@@ -2208,10 +2208,10 @@
                 "881c61e409196bd8"
             ],
             [
-                "4eec54e042c9d037"
+                "aad987ee2a0c4f2c"
             ],
             [
-                "aad987ee2a0c4f2c"
+                "4eec54e042c9d037"
             ],
             [
                 "2c9973e0b952c269"
@@ -2889,10 +2889,10 @@
         "finalize": "",
         "libs": [],
         "x": 1780,
-        "y": 960,
+        "y": 920,
         "wires": [
             [
-                "d969e40c2e543dae"
+                "87fae78443f92019"
             ]
         ]
     },
@@ -2940,8 +2940,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2510,
-        "y": 1060,
+        "x": 2650,
+        "y": 980,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -3862,7 +3862,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2220,
+        "x": 2260,
         "y": 940,
         "wires": []
     },
@@ -3898,8 +3898,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2610,
-        "y": 1180,
+        "x": 2850,
+        "y": 1080,
         "wires": []
     },
     {
@@ -3920,7 +3920,7 @@
                 "e063be51f1201adf"
             ],
             [
-                "86a634f89955d0c9"
+                "03ca1b1fdfc39f2d"
             ]
         ]
     },
@@ -3953,7 +3953,7 @@
                 "7416ec0179370582"
             ],
             [
-                "2027404e36d47db4"
+                "914448cec51bf657"
             ]
         ]
     },
@@ -3968,8 +3968,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2370,
-        "y": 1120,
+        "x": 2650,
+        "y": 1080,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -3991,42 +3991,9 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2360,
-        "y": 1080,
+        "x": 2140,
+        "y": 1040,
         "wires": []
-    },
-    {
-        "id": "86a634f89955d0c9",
-        "type": "switch",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "property": "result",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "error",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "success",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 2130,
-        "y": 1140,
-        "wires": [
-            [
-                "03ca1b1fdfc39f2d"
-            ],
-            [
-                "fdf6aa2ba915be6d"
-            ]
-        ]
     },
     {
         "id": "03ca1b1fdfc39f2d",
@@ -4043,26 +4010,26 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2360,
-        "y": 1160,
+        "x": 2160,
+        "y": 1140,
         "wires": []
     },
     {
         "id": "fdf6aa2ba915be6d",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "setTimezone",
+        "name": "setDateTime",
         "func": "let userCreds = global.get('userCreds');\nlet cpoint_instance = global.get('cpoint_instance')\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetDateTime\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info = cpoint_instance.time_settings\n\nmsgWrapper.info.DateTime = Date.now()\nmsgWrapper.info.GMT = 7200\nmsgWrapper.info.NTP1 = \"pool.ntp.org\"\nmsgWrapper.info.NTP2 = \"pool2.ntp.org:123\"\nmsgWrapper.info.DST_Shift = 3600\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2370,
-        "y": 1200,
+        "x": 2170,
+        "y": 900,
         "wires": [
             [
-                "62276b0a5748fef9"
+                "8990bcfaab163a75"
             ]
         ]
     },
@@ -4165,11 +4132,10 @@
         "finalize": "",
         "libs": [],
         "x": 1790,
-        "y": 920,
+        "y": 960,
         "wires": [
             [
-                "6c8acdd459e657eb",
-                "c2c2313264fe8ffb"
+                "d969e40c2e543dae"
             ]
         ]
     },
@@ -4337,31 +4303,6 @@
         "wires": [
             [
                 "1090c7446b008215"
-            ]
-        ]
-    },
-    {
-        "id": "c2c2313264fe8ffb",
-        "type": "switch",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "property": "result",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "success",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 2050,
-        "y": 920,
-        "wires": [
-            [
-                "08d971dd14813356"
             ]
         ]
     },
@@ -5525,7 +5466,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 2020,
-        "y": 1180,
+        "y": 1200,
         "wires": [
             []
         ]
@@ -5903,7 +5844,7 @@
         "repair": false,
         "outputs": 2,
         "x": 2010,
-        "y": 1260,
+        "y": 1280,
         "wires": [
             [
                 "ab9407c55052fb9e"
@@ -5928,8 +5869,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2200,
-        "y": 1220,
+        "x": 2220,
+        "y": 1280,
         "wires": []
     },
     {
@@ -5963,8 +5904,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2210,
-        "y": 1260,
+        "x": 2230,
+        "y": 1320,
         "wires": [
             [
                 "939ee531e2a85a60"
@@ -5987,7 +5928,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2160,
-        "y": 1300,
+        "y": 1360,
         "wires": []
     },
     {
@@ -6004,8 +5945,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2390,
-        "y": 1260,
+        "x": 2410,
+        "y": 1300,
         "wires": []
     },
     {
@@ -8297,8 +8238,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2390,
-        "y": 900,
+        "x": 2730,
+        "y": 1160,
         "wires": [
             [
                 "5a4ff491dc97afe1"
@@ -8316,8 +8257,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2700,
-        "y": 900,
+        "x": 3040,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -8424,35 +8365,6 @@
         "wires": [
             [
                 "5c7f730ba49ae67c"
-            ]
-        ]
-    },
-    {
-        "id": "5ca21ea96e5532f4",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 2260,
-        "y": 800,
-        "wires": [
-            [
-                "08d971dd14813356"
             ]
         ]
     },
@@ -8861,7 +8773,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1990,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "cd3e41f3d6b01780"
@@ -8879,8 +8791,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2180,
-        "y": 1380,
+        "x": 2200,
+        "y": 1420,
         "wires": [
             [
                 "634cfcd97dec7739"
@@ -8898,8 +8810,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2430,
-        "y": 1400,
+        "x": 2470,
+        "y": 1460,
         "wires": [
             []
         ]
@@ -8926,7 +8838,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 1980,
-        "y": 1440,
+        "y": 1460,
         "wires": [
             [
                 "cd3e41f3d6b01780"
@@ -9096,19 +9008,18 @@
         "id": "770b753a51e0e70a",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "function 84",
+        "name": "checkInputReader",
         "func": "let info = global.get('cpoint_instance').info;\n\nreturn info;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2210,
-        "y": 1000,
+        "x": 2250,
+        "y": 980,
         "wires": [
             [
-                "be089296ec3c54f0",
-                "4f1f9b5782fdc72f"
+                "be089296ec3c54f0"
             ]
         ]
     },
@@ -9117,68 +9028,166 @@
         "type": "switch",
         "z": "692c798b6f9c61de",
         "name": "",
-        "property": "payload",
+        "property": "input_reader",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2450,
+        "y": 980,
+        "wires": [
+            [
+                "a902fb928a850e75"
+            ],
+            [
+                "914448cec51bf657"
+            ]
+        ]
+    },
+    {
+        "id": "914448cec51bf657",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "checkOutputReader",
+        "func": "let info = global.get('cpoint_instance').info;\nreturn info;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2420,
+        "y": 1040,
+        "wires": [
+            [
+                "43686ad6c178d6ca"
+            ]
+        ]
+    },
+    {
+        "id": "43686ad6c178d6ca",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "property": "output_reader",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2450,
+        "y": 1100,
+        "wires": [
+            [
+                "2027404e36d47db4"
+            ],
+            [
+                "08d971dd14813356",
+                "fd2158123fcacc98"
+            ]
+        ]
+    },
+    {
+        "id": "8990bcfaab163a75",
+        "type": "mqtt out",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "79737e067a3af084",
+        "x": 2350,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "fd2158123fcacc98",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "done",
+        "func": "let ackInfo = {}\n\nackInfo.result = \"success\"\nackInfo.payload = \"Done\"\n\nreturn ackInfo;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2690,
+        "y": 1200,
+        "wires": [
+            [
+                "3e1faa4820110952"
+            ]
+        ]
+    },
+    {
+        "id": "3e1faa4820110952",
+        "type": "ui_toast",
+        "z": "692c798b6f9c61de",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Ack info",
+        "x": 2880,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "87fae78443f92019",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "property": "result",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
-                "v": "",
+                "v": "error",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "success",
                 "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 1,
-        "x": 2530,
-        "y": 980,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e69aebcd369c4e13",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 2040,
-        "y": 1040,
+        "outputs": 2,
+        "x": 1970,
+        "y": 920,
         "wires": [
             [
-                "770b753a51e0e70a"
+                "6c8acdd459e657eb"
+            ],
+            [
+                "fdf6aa2ba915be6d"
             ]
         ]
-    },
-    {
-        "id": "4f1f9b5782fdc72f",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2380,
-        "y": 1020,
-        "wires": []
     }
 ]
