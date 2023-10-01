@@ -9097,7 +9097,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 84",
-        "func": "let info = global.get('main_settings').info\n\nreturn info;",
+        "func": "let info = global.get('main_settings').info\nconsole.log(info)\nreturn info;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9107,8 +9107,7 @@
         "y": 1000,
         "wires": [
             [
-                "be089296ec3c54f0",
-                "7e2845dba7cb46b9"
+                "be089296ec3c54f0"
             ]
         ]
     },
@@ -9134,23 +9133,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "7e2845dba7cb46b9",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2540,
-        "y": 1000,
-        "wires": []
     },
     {
         "id": "e69aebcd369c4e13",
