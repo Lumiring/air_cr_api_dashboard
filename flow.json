@@ -7736,7 +7736,7 @@
         "payload": "",
         "topic": "tz",
         "topicType": "str",
-        "className": "dropdown_input",
+        "className": "timezone",
         "x": 900,
         "y": 4800,
         "wires": [
