@@ -1493,6 +1493,7 @@
         "id": "ec7459b197b9c702",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
+        "d": true,
         "name": "Advanced Settings",
         "group": "fc491a4cada0492f",
         "order": 17,
