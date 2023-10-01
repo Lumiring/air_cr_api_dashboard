@@ -9097,7 +9097,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 84",
-        "func": "let info = global.get('main_settings').info\nconsole.log(info)\nreturn info;",
+        "func": "let info = global.get('main_settings')\nconsole.log(info)\nreturn info;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
