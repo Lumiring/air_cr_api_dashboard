@@ -8697,12 +8697,11 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 440,
-        "y": 2960,
+        "x": 180,
+        "y": 3020,
         "wires": [
             [
-                "06c80f09630e9c1f",
-                "07ea6f25d7643c83"
+                "cfdf6c6bef6b7a9a"
             ]
         ]
     },
@@ -8725,7 +8724,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 420,
-        "y": 3000,
+        "y": 3080,
         "wires": [
             [
                 "06c80f09630e9c1f"
@@ -9362,7 +9361,7 @@
         "finalize": "",
         "libs": [],
         "x": 250,
-        "y": 3080,
+        "y": 3140,
         "wires": [
             [
                 "daa51ac186123a53"
@@ -9381,7 +9380,7 @@
         ],
         "uncaught": false,
         "x": 90,
-        "y": 3080,
+        "y": 3140,
         "wires": [
             [
                 "2729add65fd2ae39"
@@ -9408,7 +9407,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 430,
-        "y": 3080,
+        "y": 3140,
         "wires": [
             [
                 "06c80f09630e9c1f"
@@ -9481,7 +9480,33 @@
         ]
     },
     {
-        "id": "07ea6f25d7643c83",
+        "id": "cfdf6c6bef6b7a9a",
+        "type": "moment",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Europe/Kiev",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "en-US",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "Europe/Kiev",
+        "x": 400,
+        "y": 3020,
+        "wires": [
+            [
+                "06c80f09630e9c1f",
+                "ff1c454eb09f3e71"
+            ]
+        ]
+    },
+    {
+        "id": "ff1c454eb09f3e71",
         "type": "debug",
         "z": "692c798b6f9c61de",
         "name": "debug 1",
@@ -9492,28 +9517,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 2960,
+        "x": 660,
+        "y": 3020,
         "wires": []
-    },
-    {
-        "id": "f376e114eb791b2f",
-        "type": "ui_date_picker",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "label": "date",
-        "group": "fc491a4cada0492f",
-        "order": 82,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 130,
-        "y": 3160,
-        "wires": [
-            []
-        ]
     }
 ]
