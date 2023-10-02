@@ -9487,7 +9487,7 @@
         "topic": "",
         "input": "payload",
         "inputType": "msg",
-        "inTz": "Europe/Kiev",
+        "inTz": "ETC/GMT",
         "adjAmount": 0,
         "adjType": "days",
         "adjDir": "add",
@@ -9495,7 +9495,7 @@
         "locale": "en-US",
         "output": "payload",
         "outputType": "msg",
-        "outTz": "ETC/GMT",
+        "outTz": "Europe/Kiev",
         "x": 400,
         "y": 3020,
         "wires": [
