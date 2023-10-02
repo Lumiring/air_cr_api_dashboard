@@ -5504,7 +5504,7 @@
         "topicType": "str",
         "className": "dropdown_input",
         "x": 420,
-        "y": 2740,
+        "y": 2800,
         "wires": [
             [
                 "06c80f09630e9c1f",
@@ -8577,7 +8577,7 @@
         "className": "text_input",
         "topicType": "str",
         "x": 400,
-        "y": 2920,
+        "y": 2940,
         "wires": [
             [
                 "06c80f09630e9c1f"
@@ -8697,12 +8697,12 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 180,
+        "x": 80,
         "y": 3020,
         "wires": [
             [
                 "cfdf6c6bef6b7a9a",
-                "a105d31689b2e932"
+                "3380927a0a235c15"
             ]
         ]
     },
@@ -8724,11 +8724,11 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 420,
+        "x": 160,
         "y": 3080,
         "wires": [
             [
-                "06c80f09630e9c1f"
+                "38838693b9ddac8b"
             ]
         ]
     },
@@ -9502,12 +9502,66 @@
         "wires": [
             [
                 "06c80f09630e9c1f",
-                "ff1c454eb09f3e71"
+                "4d254cdc1c471b13"
             ]
         ]
     },
     {
-        "id": "ff1c454eb09f3e71",
+        "id": "38838693b9ddac8b",
+        "type": "moment",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Europe/Kiev",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "X",
+        "locale": "en-US",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "ETC/GMT",
+        "x": 400,
+        "y": 3080,
+        "wires": [
+            [
+                "06c80f09630e9c1f"
+            ]
+        ]
+    },
+    {
+        "id": "a451b3d94736c547",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 2980,
+        "wires": [
+            [
+                "cfdf6c6bef6b7a9a"
+            ]
+        ]
+    },
+    {
+        "id": "4d254cdc1c471b13",
         "type": "debug",
         "z": "692c798b6f9c61de",
         "name": "debug 1",
@@ -9523,7 +9577,7 @@
         "wires": []
     },
     {
-        "id": "a105d31689b2e932",
+        "id": "3380927a0a235c15",
         "type": "debug",
         "z": "692c798b6f9c61de",
         "name": "debug 2",
@@ -9534,8 +9588,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 360,
-        "y": 2960,
+        "x": 340,
+        "y": 2980,
         "wires": []
     }
 ]
