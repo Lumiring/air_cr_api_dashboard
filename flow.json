@@ -7893,7 +7893,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 62",
-        "func": "let obj = {}\nobj.payload = msg.reader_1_settings.Rd_Wg_idx;\nobj.enabled = false\n\nreturn obj",
+        "func": "let obj = {}\nobj.payload = msg.reader_1_settings.Rd_Wg_idx;\n\n\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9296,12 +9296,12 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 370,
-        "y": 3960,
+        "x": 730,
+        "y": 3920,
         "wires": [
             [
-                "249c8170bcc728a6",
-                "a4f26692a416214e"
+                "fdf58eb0529e87d4",
+                "7c1d7e49523a72de"
             ]
         ]
     }
