@@ -8204,7 +8204,7 @@
         "finalize": "",
         "libs": [],
         "x": 1230,
-        "y": 3760,
+        "y": 3840,
         "wires": [
             []
         ]
@@ -9272,6 +9272,32 @@
         "libs": [],
         "x": 470,
         "y": 3880,
+        "wires": [
+            [
+                "249c8170bcc728a6",
+                "a4f26692a416214e"
+            ]
+        ]
+    },
+    {
+        "id": "bd824c3f059e2271",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 370,
+        "y": 3960,
         "wires": [
             [
                 "249c8170bcc728a6",
