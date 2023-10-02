@@ -9280,15 +9280,37 @@
         ]
     },
     {
-        "id": "bd824c3f059e2271",
+        "id": "da084ccca27b9a18",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 85",
+        "func": "let instance = global.get(\"cpoint_instance\")\nmsg.enabled = instance.info.output_reader\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 3980,
+        "wires": [
+            [
+                "fdf58eb0529e87d4",
+                "7c1d7e49523a72de"
+            ]
+        ]
+    },
+    {
+        "id": "a0e79bac689444d0",
         "type": "inject",
         "z": "692c798b6f9c61de",
         "name": "",
         "props": [
             {
-                "p": "enabled",
-                "v": "false",
-                "vt": "bool"
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
             }
         ],
         "repeat": "",
@@ -9296,12 +9318,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 730,
-        "y": 3920,
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 3940,
         "wires": [
             [
-                "fdf58eb0529e87d4",
-                "7c1d7e49523a72de"
+                "da084ccca27b9a18"
             ]
         ]
     }
