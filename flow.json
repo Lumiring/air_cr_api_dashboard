@@ -9300,27 +9300,15 @@
         ]
     },
     {
-        "id": "a0e79bac689444d0",
-        "type": "inject",
+        "id": "138342efa9181f47",
+        "type": "complete",
         "z": "692c798b6f9c61de",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
+        "scope": [
+            "6d1605e5a77008dc"
         ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 300,
+        "uncaught": false,
+        "x": 430,
         "y": 3940,
         "wires": [
             [
