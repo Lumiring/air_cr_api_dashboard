@@ -8701,7 +8701,8 @@
         "y": 2960,
         "wires": [
             [
-                "06c80f09630e9c1f"
+                "06c80f09630e9c1f",
+                "07ea6f25d7643c83"
             ]
         ]
     },
@@ -9360,7 +9361,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 270,
+        "x": 250,
         "y": 3080,
         "wires": [
             [
@@ -9406,8 +9407,8 @@
         "topic": "control_point",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 450,
-        "y": 3060,
+        "x": 430,
+        "y": 3080,
         "wires": [
             [
                 "06c80f09630e9c1f"
@@ -9478,5 +9479,21 @@
                 "1858ddfbf99a4971"
             ]
         ]
+    },
+    {
+        "id": "07ea6f25d7643c83",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 2960,
+        "wires": []
     }
 ]
