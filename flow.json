@@ -9495,7 +9495,7 @@
         "locale": "en-US",
         "output": "payload",
         "outputType": "msg",
-        "outTz": "locale",
+        "outTz": "Etc/Greenwich",
         "x": 400,
         "y": 3020,
         "wires": [
