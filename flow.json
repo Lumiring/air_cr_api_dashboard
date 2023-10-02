@@ -7569,7 +7569,7 @@
         "topicType": "msg",
         "className": "dropdown_input",
         "x": 410,
-        "y": 4080,
+        "y": 4180,
         "wires": [
             [
                 "b63e03fb455d84b2"
@@ -7616,7 +7616,7 @@
         "finalize": "",
         "libs": [],
         "x": 470,
-        "y": 4180,
+        "y": 4280,
         "wires": [
             [
                 "2fa1e95de24b795c",
@@ -9314,6 +9314,44 @@
         "wires": [
             [
                 "da084ccca27b9a18"
+            ]
+        ]
+    },
+    {
+        "id": "01918502f2a0eba5",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 86",
+        "func": "let instance = RED.util.cloneMessage(global.get(\"cpoint_instance\"))\nlet obj\nobj = {}\nif (instance.info.output_reader){\n    obj.enabled = true\n} else {\n    obj.enabled = false\n}\n\nreturn obj;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 4100,
+        "wires": [
+            [
+                "84507c7374840699",
+                "1049fe0d5aa63d8e",
+                "5987ebc432c3d3bc"
+            ]
+        ]
+    },
+    {
+        "id": "4880eb164fec560a",
+        "type": "complete",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "scope": [
+            "6f5df0aece82fdd9"
+        ],
+        "uncaught": false,
+        "x": 410,
+        "y": 4040,
+        "wires": [
+            [
+                "01918502f2a0eba5"
             ]
         ]
     }
