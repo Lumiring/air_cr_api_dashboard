@@ -9487,7 +9487,7 @@
         "topic": "",
         "input": "payload",
         "inputType": "msg",
-        "inTz": "locale",
+        "inTz": "Europe/Kiev",
         "adjAmount": 0,
         "adjType": "days",
         "adjDir": "add",
