@@ -9534,7 +9534,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 320,
+        "x": 360,
         "y": 2960,
         "wires": []
     }
