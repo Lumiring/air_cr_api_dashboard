@@ -5650,7 +5650,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 390,
+        "x": 350,
         "y": 2880,
         "wires": [
             [
@@ -8576,7 +8576,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 400,
+        "x": 340,
         "y": 2940,
         "wires": [
             [
@@ -8697,7 +8697,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 80,
+        "x": 180,
         "y": 3020,
         "wires": [
             [
@@ -9484,33 +9484,7 @@
         "type": "moment",
         "z": "692c798b6f9c61de",
         "name": "",
-        "topic": "",
-        "input": "payload",
-        "inputType": "msg",
-        "inTz": "Europe/Kiev",
-        "adjAmount": 0,
-        "adjType": "days",
-        "adjDir": "add",
-        "format": "X",
-        "locale": "en-US",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "Europe/Kiev",
-        "x": 400,
-        "y": 3020,
-        "wires": [
-            [
-                "06c80f09630e9c1f",
-                "4d254cdc1c471b13"
-            ]
-        ]
-    },
-    {
-        "id": "38838693b9ddac8b",
-        "type": "moment",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "topic": "",
+        "topic": "init_time",
         "input": "payload",
         "inputType": "msg",
         "inTz": "Europe/Kiev",
@@ -9522,8 +9496,8 @@
         "output": "payload",
         "outputType": "msg",
         "outTz": "ETC/GMT",
-        "x": 400,
-        "y": 3080,
+        "x": 360,
+        "y": 3020,
         "wires": [
             [
                 "06c80f09630e9c1f"
@@ -9531,65 +9505,28 @@
         ]
     },
     {
-        "id": "a451b3d94736c547",
-        "type": "inject",
+        "id": "38838693b9ddac8b",
+        "type": "moment",
         "z": "692c798b6f9c61de",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "init_time",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 2980,
+        "topic": "exp_time",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Europe/Kiev",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "X",
+        "locale": "en-US",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "ETC/GMT",
+        "x": 360,
+        "y": 3080,
         "wires": [
             [
-                "cfdf6c6bef6b7a9a",
-                "3380927a0a235c15"
+                "06c80f09630e9c1f"
             ]
         ]
-    },
-    {
-        "id": "4d254cdc1c471b13",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 3020,
-        "wires": []
-    },
-    {
-        "id": "3380927a0a235c15",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 460,
-        "y": 2980,
-        "wires": []
     }
 ]
