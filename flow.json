@@ -9284,7 +9284,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 85",
-        "func": "let instance = global.get(\"cpoint_instance\")\nmsg.enabled = instance.info.output_reader\nreturn msg;",
+        "func": "let instance = RED.util.cloneMessage(global.get(\"cpoint_instance\"))\nmsg.enabled = instance.info.output_reader\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9293,7 +9293,10 @@
         "x": 390,
         "y": 4000,
         "wires": [
-            []
+            [
+                "fdf58eb0529e87d4",
+                "7c1d7e49523a72de"
+            ]
         ]
     },
     {
