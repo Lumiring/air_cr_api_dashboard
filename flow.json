@@ -9284,7 +9284,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 85",
-        "func": "let instance = RED.util.cloneMessage(global.get(\"cpoint_instance\"))\nmsg.enabled = instance.info.output_reader\nreturn msg;",
+        "func": "let instance = RED.util.cloneMessage(global.get(\"cpoint_instance\"))\nlet obj\nobj = {}\nif (instance.info.output_reader){\n    obj.enabled = true\n} else {\n    obj.enabled = false\n}\n\nreturn obj;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
