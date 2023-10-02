@@ -9495,5 +9495,25 @@
         "x": 680,
         "y": 2960,
         "wires": []
+    },
+    {
+        "id": "f376e114eb791b2f",
+        "type": "ui_date_picker",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "label": "date",
+        "group": "fc491a4cada0492f",
+        "order": 82,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 130,
+        "y": 3160,
+        "wires": [
+            []
+        ]
     }
 ]
