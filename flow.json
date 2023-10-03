@@ -5690,18 +5690,19 @@
         "id": "2f78343e81efe375",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "addCard",
-        "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet card_list = JSON.parse(msg.payload).list\n\nfunction createKeySet(ctp_idx, schedule_id, key_id, key_hex, init, exp) {\n    return `${key_id};${ctp_idx};7;${key_hex};1;${schedule_id};1;0;-1;-1;-1;0;${init !== undefined ? init : \"0\"};${exp !== undefined ? exp : \"0\"};/`\n}\n\nfunction createCortege(arr) {\n    if (arr.length === 0) return undefined\n    let str = \"/\"\n    arr.forEach((el) => {\n        str += createKeySet(el.control_point, el.schedule_id, el.key_id, el.key_hex, el.init_time, el.exp_time)\n    })\n    return str\n}\n\nlet card_options = global.get('card_options')\n\nconsole.log(card_options)\ncard_options.key_id = Math.floor(Math.random() * 4294967295)\n\nlet new_card = {\n    \"cardholder_name\": card_options.cardholder_name,\n    \"control_point\": card_options.control_point,\n    \"schedule_id\": card_options.schedule_id,\n    \"key_hex\": card_options.key_hex,\n    \"key_id\": card_options.key_id,\n    \"init_time\": card_options.init_time,\n    \"exp_time\": card_options.exp_time\n}\n\ncard_list.push(new_card)\n\n\n\n\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCardKeys\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = card_options.control_point\nmsgWrapper.info.KeysCount = card_list.length\nmsgWrapper.info.Keys = createCortege(card_list)\nmsgWrapper.info.KeysDataLength = msgWrapper.info.Keys.length\n\nconsole.log(msgWrapper)\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('setCardMessId', msgWrapper.message_id)\n\nreturn msg",
+        "name": "AddCard",
+        "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet card_list = JSON.parse(msg.payload).list\n\nfunction createKeySet(ctp_idx, schedule_id, key_id, key_hex, init, exp) {\n    return `${key_id};${ctp_idx};7;${key_hex};1;${schedule_id};1;0;-1;-1;-1;0;${init !== undefined ? init : \"0\"};${exp !== undefined ? exp : \"0\"};/`\n}\n\nfunction createCortege(arr) {\n    if (arr.length === 0) return undefined\n    let str = \"/\"\n    arr.forEach((el) => {\n        str += createKeySet(el.control_point, el.schedule_id, el.key_id, el.key_hex, el.init_time, el.exp_time)\n    })\n    return str\n}\n\nlet card_options = global.get('card_options')\n\nconsole.log(card_options)\ncard_options.key_id = Math.floor(Math.random() * 4294967295)\n\nlet new_card = {\n    \"cardholder_name\": card_options.cardholder_name,\n    \"control_point\": card_options.control_point,\n    \"schedule_id\": card_options.schedule_id,\n    \"key_hex\": card_options.key_hex,\n    \"key_id\": card_options.key_id,\n    \"init_time\": card_options.init_time,\n    \"exp_time\": card_options.exp_time\n}\n\ncard_list.push(new_card)\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCardKeys\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = card_options.control_point\nmsgWrapper.info.KeysCount = card_list.length\nmsgWrapper.info.Keys = createCortege(card_list)\nmsgWrapper.info.KeysDataLength = msgWrapper.info.Keys.length\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('setCardMessId', msgWrapper.message_id)\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 640,
-        "y": 3200,
+        "x": 680,
+        "y": 3220,
         "wires": [
             [
-                "ccb4b2f8e2e0d3ed"
+                "ccb4b2f8e2e0d3ed",
+                "80c098bc85d9aaa0"
             ]
         ]
     },
@@ -5719,8 +5720,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 850,
-        "y": 3200,
+        "x": 890,
+        "y": 3260,
         "wires": []
     },
     {
@@ -8556,7 +8557,8 @@
         "y": 3340,
         "wires": [
             [
-                "2ea91759fbeb0e7a"
+                "2ea91759fbeb0e7a",
+                "7431ae8e36e04646"
             ]
         ]
     },
@@ -8834,7 +8836,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
+        "x": 310,
         "y": 3340,
         "wires": [
             [
@@ -9535,17 +9537,19 @@
         "id": "7431ae8e36e04646",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "function 89",
-        "func": "\nreturn msg;",
+        "name": "DelCard",
+        "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet key_id = msg.payload.key_id\nlet card_list = RED.util.cloneMessage(global.get('cards_settings')).list\n\nlet elem_to_del = card_list.find((el) => {\n    return el.key_id === key_id\n})\n\nlet new_card_list = card_list.filter((el) => {\n    return el.key_id !== key_id\n})\n\n\nfunction createKeySet(ctp_idx, schedule_id, key_id, key_hex, init, exp) {\n    return `${key_id};${ctp_idx};7;${key_hex};1;${schedule_id};1;0;-1;-1;-1;0;${init !== undefined ? init : \"0\"};${exp !== undefined ? exp : \"0\"};/`\n}\n\nfunction createCortege(arr) {\n    if (arr.length === 0) return undefined\n    let str = \"/\"\n    arr.forEach((el) => {\n        str += createKeySet(el.control_point, el.schedule_id, el.key_id, el.key_hex, el.init_time, el.exp_time)\n    })\n    return str\n}\n\n\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCardKeys\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = elem_to_del.control_point\nmsgWrapper.info.KeysCount = new_card_list.length\nmsgWrapper.info.Keys = createCortege(new_card_list)\nmsgWrapper.info.KeysDataLength = msgWrapper.info.Keys.length\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('setCardMessId', msgWrapper.message_id)\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
-        "y": 3400,
+        "x": 680,
+        "y": 3280,
         "wires": [
-            []
+            [
+                "ccb4b2f8e2e0d3ed"
+            ]
         ]
     },
     {
@@ -9600,8 +9604,41 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
+        "x": 700,
         "y": 3340,
+        "wires": []
+    },
+    {
+        "id": "05caf55bfe3725ef",
+        "type": "complete",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "scope": [
+            "634cfcd97dec7739"
+        ],
+        "uncaught": false,
+        "x": 90,
+        "y": 680,
+        "wires": [
+            [
+                "b6d5d71c1bfb77a0"
+            ]
+        ]
+    },
+    {
+        "id": "80c098bc85d9aaa0",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 3180,
         "wires": []
     }
 ]
