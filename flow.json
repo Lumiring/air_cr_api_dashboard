@@ -5678,11 +5678,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 340,
-        "y": 3280,
+        "x": 100,
+        "y": 3220,
         "wires": [
             [
-                "2f78343e81efe375"
+                "a054ded73a28aad1"
             ]
         ]
     },
@@ -5691,14 +5691,14 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "addCard",
-        "func": "\nfunction createKeySet(ctp_idx, schedule_id, key_id, key_hex,) {\n    return `/${key_id};${ctp_idx};7;${key_hex};1;${schedule_id};1;0;-1;-1;-1;0;0;0;0/`\n}\n\nlet card_options = global.get('card_options')\ncard_options.key_id = Math.floor(Math.random() * 4294967295)\n\nlet userCreds = global.get('userCreds');\n\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCardKeys\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = card_options.control_point\nmsgWrapper.info.KeysCount = 1\nmsgWrapper.info.Keys = createKeySet(card_options.control_point, card_options.schedule_id, card_options.key_id, card_options.key_hex)\nmsgWrapper.info.KeysDataLength = msgWrapper.info.Keys.length\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('setCardMessId', msgWrapper.message_id)\n\nreturn msg",
+        "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet card_list = JSON.parse(msg.payload).list\n\nfunction createKeySet(ctp_idx, schedule_id, key_id, key_hex, init, exp) {\n    return `${key_id};${ctp_idx};7;${key_hex};1;${schedule_id};1;0;-1;-1;-1;0;${init !== undefined ? init : \"0\"};${exp !== undefined ? exp : \"0\"};/`\n}\n\nfunction createCortege(arr) {\n    if (arr.length === 0) return undefined\n    let str = \"/\"\n    arr.forEach((el) => {\n        str += createKeySet(el.control_point, el.schedule_id, el.key_id, el.key_hex, el.init_time, el.exp_time)\n    })\n    return str\n}\n\nlet card_options = global.get('card_options')\n\nconsole.log(card_options)\ncard_options.key_id = Math.floor(Math.random() * 4294967295)\nlet new_card = {\n    \"cardholder_name\": \"asdasd\",\n    \"control_point\": card_options.control_point,\n    \"schedule_id\": card_options.schedule_id,\n    \"key_hex\": card_options.key_hex,\n    \"key_id\": card_options.key_id,\n    \"init_time\": \"1696340460\",\n    \"exp_time\": \"1754228700\"\n}\n\n\n\n\n\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCardKeys\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = card_options.control_point\nmsgWrapper.info.KeysCount = 1\nmsgWrapper.info.Keys = createKeySet(card_options.control_point, card_options.schedule_id, card_options.key_id, card_options.key_hex)\nmsgWrapper.info.KeysDataLength = msgWrapper.info.Keys.length\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('setCardMessId', msgWrapper.message_id)\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
-        "y": 3280,
+        "x": 640,
+        "y": 3200,
         "wires": [
             [
                 "ccb4b2f8e2e0d3ed"
@@ -5719,8 +5719,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 630,
-        "y": 3280,
+        "x": 850,
+        "y": 3200,
         "wires": []
     },
     {
@@ -8552,8 +8552,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 1150,
-        "y": 3280,
+        "x": 510,
+        "y": 3340,
         "wires": [
             []
         ]
@@ -8832,8 +8832,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 970,
-        "y": 3280,
+        "x": 330,
+        "y": 3340,
         "wires": [
             [
                 "6f68a39d47cd50b8"
@@ -8849,8 +8849,8 @@
             "cd3e41f3d6b01780"
         ],
         "uncaught": false,
-        "x": 790,
-        "y": 3280,
+        "x": 90,
+        "y": 3340,
         "wires": [
             [
                 "424694b7b4f92b28"
@@ -8878,8 +8878,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 740,
-        "y": 3380,
+        "x": 100,
+        "y": 3440,
         "wires": [
             [
                 "424694b7b4f92b28"
@@ -9526,6 +9526,63 @@
         "wires": [
             [
                 "06c80f09630e9c1f"
+            ]
+        ]
+    },
+    {
+        "id": "7431ae8e36e04646",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 89",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 3340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a054ded73a28aad1",
+        "type": "fs-access",
+        "z": "692c798b6f9c61de",
+        "name": "readCardsSettings",
+        "path": ".lumiring/air_cr/cards.json",
+        "pathType": "str",
+        "filename": "filename",
+        "filenameType": "msg",
+        "accessRead": true,
+        "accessWrite": true,
+        "x": 270,
+        "y": 3220,
+        "wires": [
+            [
+                "a5692d5d2af9accd"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a5692d5d2af9accd",
+        "type": "file in",
+        "z": "692c798b6f9c61de",
+        "name": "readCards",
+        "filename": ".lumiring/air_cr/cards.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 470,
+        "y": 3200,
+        "wires": [
+            [
+                "2f78343e81efe375"
             ]
         ]
     }
