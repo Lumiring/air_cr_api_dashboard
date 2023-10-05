@@ -9556,7 +9556,7 @@
         "topic": "TmStart",
         "input": "payload",
         "inputType": "msg",
-        "inTz": "Europe/Kiev",
+        "inTz": "ETC/GMT",
         "adjAmount": 0,
         "adjType": "days",
         "adjDir": "add",
