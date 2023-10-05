@@ -4190,11 +4190,12 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 510,
-        "y": 1860,
+        "x": 430,
+        "y": 1680,
         "wires": [
             [
-                "1858ddfbf99a4971"
+                "1858ddfbf99a4971",
+                "dedd076d79db98a4"
             ]
         ]
     },
@@ -4216,8 +4217,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 510,
-        "y": 1900,
+        "x": 430,
+        "y": 1720,
         "wires": [
             [
                 "1858ddfbf99a4971"
@@ -5173,8 +5174,8 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 540,
-        "y": 1820,
+        "x": 580,
+        "y": 1640,
         "wires": [
             [
                 "1858ddfbf99a4971"
@@ -5201,8 +5202,8 @@
         "payloadType": "str",
         "topic": "",
         "topicType": "str",
-        "x": 170,
-        "y": 2020,
+        "x": 210,
+        "y": 1840,
         "wires": [
             [
                 "d4b89e18ef3a2264"
@@ -5220,8 +5221,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 810,
-        "y": 1860,
+        "x": 850,
+        "y": 1680,
         "wires": [
             []
         ]
@@ -5237,8 +5238,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 2020,
+        "x": 450,
+        "y": 1840,
         "wires": [
             [
                 "c6f8198164b0ed6e"
@@ -5259,8 +5260,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 590,
-        "y": 2020,
+        "x": 630,
+        "y": 1840,
         "wires": []
     },
     {
@@ -5565,8 +5566,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 540,
-        "y": 1780,
+        "x": 580,
+        "y": 1600,
         "wires": [
             []
         ]
@@ -9418,8 +9419,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 1940,
+        "x": 370,
+        "y": 1760,
         "wires": [
             [
                 "9bd32b5b33db3136"
@@ -9437,8 +9438,8 @@
             "08d971dd14813356"
         ],
         "uncaught": false,
-        "x": 130,
-        "y": 1940,
+        "x": 170,
+        "y": 1760,
         "wires": [
             [
                 "66ee10e78404ba0f"
@@ -9464,8 +9465,8 @@
         "topic": "Ctp_idx",
         "topicType": "str",
         "className": "dropdown_input",
-        "x": 530,
-        "y": 1940,
+        "x": 570,
+        "y": 1760,
         "wires": [
             [
                 "1858ddfbf99a4971"
@@ -9557,5 +9558,21 @@
                 "b6d5d71c1bfb77a0"
             ]
         ]
+    },
+    {
+        "id": "dedd076d79db98a4",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 1760,
+        "wires": []
     }
 ]
