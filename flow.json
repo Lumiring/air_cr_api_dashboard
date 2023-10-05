@@ -9600,7 +9600,7 @@
         "output": "payload",
         "outputType": "msg",
         "outTz": "Europe/Kiev",
-        "x": 480,
+        "x": 520,
         "y": 1760,
         "wires": [
             [
