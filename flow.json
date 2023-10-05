@@ -9641,32 +9641,6 @@
         ]
     },
     {
-        "id": "db3ac11d8b769dba",
-        "type": "ui_popup-timepicker",
-        "z": "692c798b6f9c61de",
-        "order": 5,
-        "name": "Timepicker",
-        "group": "fc491a4cada0492f",
-        "width": 4,
-        "height": 1,
-        "class": "",
-        "position": "center",
-        "label": "Timepicker",
-        "labelCancelButton": "cancel",
-        "labelOkButton": "ok",
-        "payload": "payload",
-        "payloadType": "msg",
-        "sendValueTo": "payload",
-        "sendValueToType": "msg",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 270,
-        "y": 2040,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "11e833804441a5d0",
         "type": "inject",
         "z": "692c798b6f9c61de",
@@ -9686,9 +9660,7 @@
         "x": 90,
         "y": 2040,
         "wires": [
-            [
-                "db3ac11d8b769dba"
-            ]
+            []
         ]
     }
 ]
