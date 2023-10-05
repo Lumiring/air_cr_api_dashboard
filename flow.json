@@ -9706,5 +9706,51 @@
         "x": 560,
         "y": 3480,
         "wires": []
+    },
+    {
+        "id": "2eb10ed4197a4c2e",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 2060,
+        "wires": [
+            [
+                "72e2ebefa12fed8f"
+            ]
+        ]
+    },
+    {
+        "id": "72e2ebefa12fed8f",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 89",
+        "func": "let timezone = new Date().getTimezoneOffset();\n\n\nreturn timezone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 2060,
+        "wires": [
+            []
+        ]
     }
 ]
