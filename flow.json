@@ -9641,49 +9641,6 @@
         ]
     },
     {
-        "id": "11e833804441a5d0",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "00:00",
-        "payloadType": "str",
-        "x": 90,
-        "y": 2040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "78b5bf08e1f36b3c",
-        "type": "ui_date_picker",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "label": "date",
-        "group": "fc491a4cada0492f",
-        "order": 43,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 230,
-        "y": 2020,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "0ee6b405e8e3c772",
         "type": "sme-timepicker",
         "z": "692c798b6f9c61de",
@@ -9691,10 +9648,39 @@
         "title": "Title",
         "buttonText": "Select time",
         "required": "0",
-        "x": 250,
-        "y": 2060,
+        "x": 310,
+        "y": 2000,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "2322eca71ffa82b4",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 2000,
+        "wires": [
+            [
+                "0ee6b405e8e3c772"
+            ]
         ]
     }
 ]
