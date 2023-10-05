@@ -9624,5 +9624,30 @@
         "x": 860,
         "y": 1760,
         "wires": []
+    },
+    {
+        "id": "e552b62cc8eb598b",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 150,
+        "y": 1680,
+        "wires": [
+            [
+                "2c20c6b6c69caf14"
+            ]
+        ]
     }
 ]
