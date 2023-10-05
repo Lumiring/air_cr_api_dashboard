@@ -9660,10 +9660,35 @@
         "sendValueToType": "msg",
         "topic": "topic",
         "topicType": "msg",
-        "x": 190,
+        "x": 270,
         "y": 2040,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "11e833804441a5d0",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "00:00",
+        "payloadType": "str",
+        "x": 90,
+        "y": 2040,
+        "wires": [
+            [
+                "db3ac11d8b769dba"
+            ]
         ]
     }
 ]
