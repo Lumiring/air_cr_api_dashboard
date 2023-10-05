@@ -4194,8 +4194,7 @@
         "y": 1660,
         "wires": [
             [
-                "3f3d51f7aae6ea76",
-                "6855786285eeef7a"
+                "3f3d51f7aae6ea76"
             ]
         ]
     },
@@ -9579,7 +9578,7 @@
         "z": "692c798b6f9c61de",
         "name": "",
         "topic": "",
-        "input": "",
+        "input": "payload",
         "inputType": "msg",
         "inTz": "Europe/Kiev",
         "adjAmount": 0,
@@ -9587,7 +9586,7 @@
         "adjDir": "add",
         "format": "X",
         "locale": "en-US",
-        "output": "",
+        "output": "payload",
         "outputType": "msg",
         "outTz": "Europe/Kiev",
         "x": 520,
@@ -9597,21 +9596,5 @@
                 "dedd076d79db98a4"
             ]
         ]
-    },
-    {
-        "id": "6855786285eeef7a",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 380,
-        "y": 1620,
-        "wires": []
     }
 ]
