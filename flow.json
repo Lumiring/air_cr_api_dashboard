@@ -8556,7 +8556,6 @@
         "y": 3340,
         "wires": [
             [
-                "2ea91759fbeb0e7a",
                 "7431ae8e36e04646"
             ]
         ]
@@ -8592,7 +8591,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 81",
-        "func": "let obj = JSON.parse(msg.payload)\n\nglobal.set('cards_settings', obj)\n\n",
+        "func": "let obj = JSON.parse(msg.payload)\nconsole.log(msg.payload)\n\n\nglobal.set('cards_settings', obj)\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9541,22 +9540,6 @@
                 "ccb4b2f8e2e0d3ed"
             ]
         ]
-    },
-    {
-        "id": "2ea91759fbeb0e7a",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 700,
-        "y": 3340,
-        "wires": []
     },
     {
         "id": "05caf55bfe3725ef",
