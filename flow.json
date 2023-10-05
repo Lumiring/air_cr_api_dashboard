@@ -9563,7 +9563,7 @@
         "type": "moment",
         "z": "692c798b6f9c61de",
         "name": "",
-        "topic": "",
+        "topic": "TmStart",
         "input": "payload",
         "inputType": "msg",
         "inTz": "Europe/Kiev",
@@ -9575,7 +9575,7 @@
         "output": "payload",
         "outputType": "msg",
         "outTz": "Europe/Kiev",
-        "x": 520,
+        "x": 480,
         "y": 1680,
         "wires": [
             [
@@ -9588,7 +9588,7 @@
         "type": "moment",
         "z": "692c798b6f9c61de",
         "name": "",
-        "topic": "",
+        "topic": "TmEnd",
         "input": "payload",
         "inputType": "msg",
         "inTz": "Europe/Kiev",
@@ -9600,7 +9600,7 @@
         "output": "payload",
         "outputType": "msg",
         "outTz": "Europe/Kiev",
-        "x": 520,
+        "x": 480,
         "y": 1760,
         "wires": [
             [
