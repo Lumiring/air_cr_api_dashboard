@@ -4194,7 +4194,8 @@
         "y": 1680,
         "wires": [
             [
-                "3f3d51f7aae6ea76"
+                "3f3d51f7aae6ea76",
+                "d940fd78ad79fdd3"
             ]
         ]
     },
@@ -9575,11 +9576,12 @@
         "output": "payload",
         "outputType": "msg",
         "outTz": "Europe/Kiev",
-        "x": 480,
+        "x": 520,
         "y": 1680,
         "wires": [
             [
-                "1858ddfbf99a4971"
+                "1858ddfbf99a4971",
+                "eb9e57702bcc1c58"
             ]
         ]
     },
@@ -9607,5 +9609,39 @@
                 "1858ddfbf99a4971"
             ]
         ]
+    },
+    {
+        "id": "d940fd78ad79fdd3",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "eb9e57702bcc1c58",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 1740,
+        "wires": []
     }
 ]
