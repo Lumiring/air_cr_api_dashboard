@@ -9649,7 +9649,7 @@
         "timeZone": "Africa/Abidjan",
         "storeName": "",
         "commandResponseMsgOutput": "output1",
-        "defaultLocation": "",
+        "defaultLocation": "48.98622658179456 31.55395209789276",
         "defaultLocationType": "fixed",
         "outputs": 1,
         "options": [],
