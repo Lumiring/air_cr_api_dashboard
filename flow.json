@@ -5874,7 +5874,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 41",
-        "func": "let userCreds = global.get('userCreds');\nlet device_set_idxs = global.get('device_set_idxs');\nlet key_count = global.get('key_count')\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"EndCardKeys\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = global.get('setCardMessId')\nmsgWrapper.info = {}\nmsgWrapper.info.KeysCount = key_count\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nreturn msg",
+        "func": "let userCreds = global.get('userCreds');\nlet device_set_idxs = global.get('device_set_idxs');\nlet key_count = global.get('key_count')\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet msgWrapper = {}\nmsgWrapper.operator = \"EndCardKey\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = global.get('setCardMessId')\nmsgWrapper.info = {}\nmsgWrapper.info.KeysCount = key_count\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
