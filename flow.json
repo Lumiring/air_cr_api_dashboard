@@ -9662,5 +9662,39 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "78b5bf08e1f36b3c",
+        "type": "ui_date_picker",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "label": "date",
+        "group": "fc491a4cada0492f",
+        "order": 43,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 230,
+        "y": 2020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ee6b405e8e3c772",
+        "type": "sme-timepicker",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "title": "Title",
+        "buttonText": "Select time",
+        "required": "0",
+        "x": 250,
+        "y": 2060,
+        "wires": [
+            []
+        ]
     }
 ]
