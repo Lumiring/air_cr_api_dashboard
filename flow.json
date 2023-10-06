@@ -9731,7 +9731,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 89",
-        "func": "\nlet schedule_list = global.get(\"schedule_list_to_update\");\n\n\n\nmsg.payload.list = schedule_list\nreturn msg",
+        "func": "let obj = {}\nobj.payload = {}\nobj.payload.list = global.get(\"schedule_list_to_update\");\n\n\n\n\n\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
