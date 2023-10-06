@@ -9560,7 +9560,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 89",
-        "func": "let timezone = new Date().getTimezoneOffset();\n\nmsg.payload = timezone\nreturn msg;",
+        "func": "let timezone = new Date().getTimezoneOffset();\n\nmsg.payload = timezone*60\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
