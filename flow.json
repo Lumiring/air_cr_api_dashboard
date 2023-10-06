@@ -4160,11 +4160,11 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 310,
+        "x": 550,
         "y": 1680,
         "wires": [
             [
-                "3f3d51f7aae6ea76"
+                "1858ddfbf99a4971"
             ]
         ]
     },
@@ -4186,11 +4186,11 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 330,
-        "y": 1760,
+        "x": 550,
+        "y": 1740,
         "wires": [
             [
-                "766be6408444d9bf"
+                "1858ddfbf99a4971"
             ]
         ]
     },
@@ -5190,8 +5190,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
-        "y": 1680,
+        "x": 790,
+        "y": 1720,
         "wires": [
             []
         ]
@@ -5201,7 +5201,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 33",
-        "func": "\n\nlet device_set_idxs = global.get('device_set_idxs')\nlet userCreds = global.get('userCreds');\n\nlet schedule_instance = RED.util.cloneMessage(global.get('schedule'))\n\n\nlet schedule_to_mqtt = {}\n\n\nschedule_to_mqtt.TmStart = schedule_instance.TmStart\nschedule_to_mqtt.TmEnd = schedule_instance.TmEnd\n\n// schedule_to_mqtt.TmStart += 10800\n// schedule_to_mqtt.TmEnd += 10800\n\n\n// schedule_to_mqtt.TmStart = schedule_to_mqtt.TmStart.toString()\n// schedule_to_mqtt.TmEnd = schedule_to_mqtt.TmEnd.toString()\n\nschedule_to_mqtt.Ctp_idx = schedule_instance.Ctp_idx\nschedule_to_mqtt.Shedule_id = Math.floor(Math.random() * 4294967295)\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetSdlDaily\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = RED.util.cloneMessage(schedule_to_mqtt)\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('messageId', msgWrapper.message_id)\n\nschedule_to_mqtt.name = schedule_instance.name\nglobal.set(\"schedule_instance\", schedule_to_mqtt)\n\n\nreturn msg",
+        "func": "let timezone_delta = new Date().getTimezoneOffset()*60\n\nlet device_set_idxs = global.get('device_set_idxs')\nlet userCreds = global.get('userCreds');\n\nlet schedule_instance = RED.util.cloneMessage(global.get('schedule'))\n\n\nlet schedule_to_mqtt = {}\n\n\nschedule_to_mqtt.TmStart = schedule_instance.TmStart / 1000\nschedule_to_mqtt.TmEnd = schedule_instance.TmEnd / 1000\n\n\n\nschedule_to_mqtt.TmStart +=  (10800 + timezone_delta)\nschedule_to_mqtt.TmEnd += (10800 + timezone_delta)\n\n\nschedule_to_mqtt.TmStart = schedule_to_mqtt.TmStart.toString()\nschedule_to_mqtt.TmEnd = schedule_to_mqtt.TmEnd.toString()\n\nschedule_to_mqtt.Ctp_idx = schedule_instance.Ctp_idx\nschedule_to_mqtt.Shedule_id = Math.floor(Math.random() * 4294967295)\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetSdlDaily\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = RED.util.cloneMessage(schedule_to_mqtt)\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('messageId', msgWrapper.message_id)\n\nschedule_to_mqtt.name = schedule_instance.name\nglobal.set(\"schedule_instance\", schedule_to_mqtt)\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9473,56 +9473,6 @@
         "wires": [
             [
                 "b6d5d71c1bfb77a0"
-            ]
-        ]
-    },
-    {
-        "id": "3f3d51f7aae6ea76",
-        "type": "moment",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "topic": "TmStart",
-        "input": "payload",
-        "inputType": "msg",
-        "inTz": "ETC/GMT",
-        "adjAmount": 0,
-        "adjType": "days",
-        "adjDir": "add",
-        "format": "X",
-        "locale": "en-US",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "ETC/GMT",
-        "x": 520,
-        "y": 1680,
-        "wires": [
-            [
-                "1858ddfbf99a4971"
-            ]
-        ]
-    },
-    {
-        "id": "766be6408444d9bf",
-        "type": "moment",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "topic": "TmEnd",
-        "input": "payload",
-        "inputType": "msg",
-        "inTz": "Europe/Kiev",
-        "adjAmount": 0,
-        "adjType": "days",
-        "adjDir": "add",
-        "format": "X",
-        "locale": "en-US",
-        "output": "payload",
-        "outputType": "msg",
-        "outTz": "Europe/Kiev",
-        "x": 520,
-        "y": 1760,
-        "wires": [
-            [
-                "1858ddfbf99a4971"
             ]
         ]
     },
