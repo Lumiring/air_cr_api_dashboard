@@ -2228,7 +2228,8 @@
                 "b34a359c80292f28"
             ],
             [
-                "746bb3e6d6acd877"
+                "746bb3e6d6acd877",
+                "9aa52f6aa799447a"
             ],
             [
                 "32e87a6a3d7b9fae"
@@ -9684,7 +9685,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1770,
+        "x": 1790,
         "y": 1160,
         "wires": [
             [
@@ -9787,6 +9788,22 @@
         "statusType": "auto",
         "x": 1060,
         "y": 440,
+        "wires": []
+    },
+    {
+        "id": "9aa52f6aa799447a",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 1240,
         "wires": []
     }
 ]
