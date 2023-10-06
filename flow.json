@@ -5240,7 +5240,7 @@
         "id": "d4b89e18ef3a2264",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "function 33",
+        "name": "addSchedule",
         "func": "let timezone_delta = new Date().getTimezoneOffset()*60\n\nlet device_set_idxs = global.get('device_set_idxs')\nlet userCreds = global.get('userCreds');\n\nlet schedule_instance = RED.util.cloneMessage(global.get('schedule'))\n\n\nlet schedule_to_mqtt = {}\n\n\nschedule_to_mqtt.TmStart = schedule_instance.TmStart / 1000\nschedule_to_mqtt.TmEnd = schedule_instance.TmEnd / 1000\n\n\n\nschedule_to_mqtt.TmStart +=  (10800 + timezone_delta)\nschedule_to_mqtt.TmEnd += (10800 + timezone_delta)\n\n\nschedule_to_mqtt.TmStart = schedule_to_mqtt.TmStart.toString()\nschedule_to_mqtt.TmEnd = schedule_to_mqtt.TmEnd.toString()\n\nschedule_to_mqtt.Ctp_idx = schedule_instance.Ctp_idx\nschedule_to_mqtt.Shedule_id = Math.floor(Math.random() * 4294967295)\n\n\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetSdlDaily\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = RED.util.cloneMessage(schedule_to_mqtt)\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\nglobal.set('messageId', msgWrapper.message_id)\n\nschedule_to_mqtt.name = schedule_instance.name\nglobal.set(\"schedule_instance\", schedule_to_mqtt)\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
@@ -9557,11 +9557,15 @@
                 }
             }
         ],
-        "outputs": 0,
-        "cts": false,
-        "x": 1130,
-        "y": 2000,
-        "wires": []
+        "outputs": 1,
+        "cts": true,
+        "x": 510,
+        "y": 2060,
+        "wires": [
+            [
+                "d29ad60d779229c8"
+            ]
+        ]
     },
     {
         "id": "f8374808cfeb9147",
@@ -9574,8 +9578,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
-        "y": 2000,
+        "x": 340,
+        "y": 2060,
         "wires": [
             [
                 "7fd7bed9e154358e"
@@ -9652,8 +9656,8 @@
         "once": true,
         "onceDelay": "0.2",
         "topic": "",
-        "x": 750,
-        "y": 2060,
+        "x": 130,
+        "y": 2120,
         "wires": [
             [
                 "f8374808cfeb9147"
@@ -9670,12 +9674,45 @@
             "9316588f6e7f3466"
         ],
         "uncaught": false,
-        "x": 730,
-        "y": 2000,
+        "x": 110,
+        "y": 2060,
         "wires": [
             [
                 "f8374808cfeb9147"
             ]
         ]
+    },
+    {
+        "id": "872029bff6dbb4ca",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "DelCard",
+        "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet key_id = msg.payload.key_id\nlet card_list = RED.util.cloneMessage(global.get('cards_settings')).list\n\nlet elem_to_del = card_list.find((el) => {\n    return el.key_id === key_id\n})\n\nlet new_card_list = card_list.filter((el) => {\n    return el.key_id !== key_id\n})\n\n\n\n\n\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"DellShedule\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = elem_to_del.control_point\nmsgWrapper.info.Shedule_id = \n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 2180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d29ad60d779229c8",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 2060,
+        "wires": []
     }
 ]
