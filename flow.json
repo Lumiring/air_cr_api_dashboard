@@ -9541,7 +9541,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "fillTable",
-        "func": "let schedule_list = RED.util.cloneMessage(global.get('schedule_list').list)\nlet wrapper = {}\n\nnode.log(\"info\");\n\n\nfunction getFormattedTime(ut) {\n    const result = new Date(ut * 1000)\n        .toISOString()\n        .slice(11, 19)\n    return result\n}\n\nschedule_list.forEach((el) => {\n\n    el.TmStart = getFormattedTime(Number.parseInt(el.TmStart))\n    el.TmEnd = getFormattedTime(Number.parseInt(el.TmEnd))\n});\n\n\n\n\nwrapper.payload = schedule_list\n\n\n\nreturn wrapper;\n",
+        "func": "let schedule_list = RED.util.cloneMessage(global.get('schedule_list').list)\nlet wrapper = {}\n\nnode.log(schedule_list);\n\n\nfunction getFormattedTime(ut) {\n    const result = new Date(ut * 1000)\n        .toISOString()\n        .slice(11, 19)\n    return result\n}\n\nschedule_list.forEach((el) => {\n\n    el.TmStart = getFormattedTime(Number.parseInt(el.TmStart))\n    el.TmEnd = getFormattedTime(Number.parseInt(el.TmEnd))\n});\n\n\n\n\nwrapper.payload = schedule_list\n\n\n\nreturn wrapper;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
