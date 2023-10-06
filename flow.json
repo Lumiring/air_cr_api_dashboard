@@ -9541,7 +9541,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "fillTable",
-        "func": "let schedule_list = RED.util.cloneMessage(global.get('schedule_list').list)\nlet wrapper = {}\n\nnode.log(schedule_list);\n\n\nfunction getFormattedTime(ut) {\n    const result = new Date(ut * 1000)\n        .toISOString()\n        .slice(11, 19)\n    return result\n}\n\nschedule_list.forEach((el) => {\n\n    el.TmStart = getFormattedTime(Number.parseInt(el.TmStart))\n    el.TmEnd = getFormattedTime(Number.parseInt(el.TmEnd))\n});\n\n\n\n\nwrapper.payload = schedule_list\n\n\n\nreturn wrapper;\n",
+        "func": "let schedule_list = RED.util.cloneMessage(global.get('schedule_list').list)\nlet wrapper = {}\n\nconsole.log(schedule_list);\n\n\nfunction getFormattedTime(ut) {\n    const result = new Date(ut * 1000)\n        .toISOString()\n        .slice(11, 19)\n    return result\n}\n\nschedule_list.forEach((el) => {\n\n    el.TmStart = getFormattedTime(Number.parseInt(el.TmStart))\n    el.TmEnd = getFormattedTime(Number.parseInt(el.TmEnd))\n});\n\n\n\n\nwrapper.payload = schedule_list\n\n\n\nreturn wrapper;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9647,8 +9647,7 @@
         "y": 2060,
         "wires": [
             [
-                "f8374808cfeb9147",
-                "7d99c6f5a0a84d3c"
+                "f8374808cfeb9147"
             ]
         ]
     },
@@ -9667,8 +9666,7 @@
         "y": 2060,
         "wires": [
             [
-                "c6f8198164b0ed6e",
-                "aa51bbae24e34e02"
+                "c6f8198164b0ed6e"
             ]
         ]
     },
@@ -9744,22 +9742,6 @@
         ]
     },
     {
-        "id": "aa51bbae24e34e02",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 2080,
-        "wires": []
-    },
-    {
         "id": "30d3e7e8375eab73",
         "type": "inject",
         "z": "692c798b6f9c61de",
@@ -9787,21 +9769,5 @@
                 "872029bff6dbb4ca"
             ]
         ]
-    },
-    {
-        "id": "7d99c6f5a0a84d3c",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 280,
-        "y": 2000,
-        "wires": []
     }
 ]
