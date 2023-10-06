@@ -8841,7 +8841,7 @@
         "once": true,
         "onceDelay": "0.2",
         "topic": "",
-        "x": 150,
+        "x": 130,
         "y": 3380,
         "wires": [
             [
@@ -9525,73 +9525,6 @@
                 "1858ddfbf99a4971"
             ]
         ]
-    },
-    {
-        "id": "577932b3f2839b05",
-        "type": "cronplus",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "outputField": "payload",
-        "timeZone": "Africa/Abidjan",
-        "storeName": "",
-        "commandResponseMsgOutput": "output1",
-        "defaultLocation": "48.98622658179456 31.55395209789276",
-        "defaultLocationType": "default",
-        "outputs": 1,
-        "options": [],
-        "x": 360,
-        "y": 3480,
-        "wires": [
-            [
-                "7bd10fc8520ae9aa"
-            ]
-        ]
-    },
-    {
-        "id": "141f4ee03bc82933",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 3480,
-        "wires": [
-            [
-                "577932b3f2839b05"
-            ]
-        ]
-    },
-    {
-        "id": "7bd10fc8520ae9aa",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 560,
-        "y": 3480,
-        "wires": []
     },
     {
         "id": "2eb10ed4197a4c2e",
