@@ -9605,7 +9605,8 @@
         "z": "692c798b6f9c61de",
         "name": "",
         "scope": [
-            "092fbd16dc09d3e3"
+            "092fbd16dc09d3e3",
+            "2e01a9fd66ae5e18"
         ],
         "uncaught": false,
         "x": 90,
@@ -9729,7 +9730,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 89",
-        "func": "\nlet schedule_list = global.get(\"schedule_list_to_update\");\n\n\n\nmsg.payload = schedule_list\nreturn msg",
+        "func": "\nlet schedule_list = global.get(\"schedule_list_to_update\");\n\nconsole.log(schedule_list)\n\nmsg.payload = schedule_list\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
