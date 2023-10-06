@@ -9475,5 +9475,122 @@
                 "b6d5d71c1bfb77a0"
             ]
         ]
+    },
+    {
+        "id": "7fd7bed9e154358e",
+        "type": "ui_table",
+        "z": "692c798b6f9c61de",
+        "group": "fc491a4cada0492f",
+        "name": "",
+        "order": 43,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "name",
+                "title": "Daily shedule name",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "From",
+                "title": "TmStart",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "TmEnd",
+                "title": "To",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1030,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "b05d4c18c8b3a2a0",
+        "type": "moment",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "input": "",
+        "inputType": "msg",
+        "inTz": "Europe/Moscow",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "h:mm:ss",
+        "locale": "en-US",
+        "output": "",
+        "outputType": "msg",
+        "outTz": "Europe/Moscow",
+        "x": 580,
+        "y": 2120,
+        "wires": [
+            [
+                "d5c53896e3e76b68"
+            ]
+        ]
+    },
+    {
+        "id": "e605e901b8560891",
+        "type": "inject",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 2100,
+        "wires": [
+            [
+                "b05d4c18c8b3a2a0"
+            ]
+        ]
+    },
+    {
+        "id": "d5c53896e3e76b68",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 2120,
+        "wires": []
     }
 ]
