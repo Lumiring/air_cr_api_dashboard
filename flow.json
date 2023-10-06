@@ -9507,8 +9507,8 @@
                 }
             },
             {
-                "field": "From",
-                "title": "TmStart",
+                "field": "TmStart",
+                "title": "From",
                 "width": "",
                 "align": "left",
                 "formatter": "plaintext",
