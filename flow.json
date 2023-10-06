@@ -2196,6 +2196,11 @@
             },
             {
                 "t": "eq",
+                "v": "DellShedule-Ack",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
                 "v": "SetCardKeys-Ack",
                 "vt": "str"
             },
@@ -2207,7 +2212,7 @@
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 9,
+        "outputs": 10,
         "x": 1530,
         "y": 860,
         "wires": [
@@ -2231,6 +2236,9 @@
             ],
             [
                 "b34a359c80292f28"
+            ],
+            [
+                "746bb3e6d6acd877"
             ],
             [
                 "32e87a6a3d7b9fae"
@@ -2953,7 +2961,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2650,
+        "x": 2750,
         "y": 980,
         "wires": [
             [
@@ -3911,7 +3919,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2850,
+        "x": 2930,
         "y": 1080,
         "wires": []
     },
@@ -3959,7 +3967,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2110,
+        "x": 2270,
         "y": 1060,
         "wires": [
             [
@@ -3981,7 +3989,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2650,
+        "x": 2750,
         "y": 1080,
         "wires": [
             [
@@ -4004,7 +4012,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2080,
+        "x": 2280,
         "y": 1020,
         "wires": []
     },
@@ -5269,7 +5277,7 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 630,
+        "x": 730,
         "y": 1940,
         "wires": []
     },
@@ -5322,7 +5330,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1900,
+        "x": 1960,
         "y": 1080,
         "wires": []
     },
@@ -5337,8 +5345,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1770,
-        "y": 1200,
+        "x": 1790,
+        "y": 1120,
         "wires": [
             [
                 "f6dffb08204572bf"
@@ -5452,8 +5460,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2020,
-        "y": 1200,
+        "x": 2140,
+        "y": 1140,
         "wires": [
             []
         ]
@@ -8224,7 +8232,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2410,
+        "x": 2470,
         "y": 1180,
         "wires": [
             [
@@ -8243,7 +8251,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2620,
+        "x": 2760,
         "y": 1240,
         "wires": [
             []
@@ -8805,35 +8813,6 @@
         ]
     },
     {
-        "id": "950a518d545ed7ae",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1980,
-        "y": 1460,
-        "wires": [
-            [
-                "cd3e41f3d6b01780"
-            ]
-        ]
-    },
-    {
         "id": "424694b7b4f92b28",
         "type": "function",
         "z": "692c798b6f9c61de",
@@ -8942,7 +8921,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2250,
+        "x": 2390,
         "y": 980,
         "wires": [
             [
@@ -8968,7 +8947,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2450,
+        "x": 2550,
         "y": 980,
         "wires": [
             [
@@ -8990,7 +8969,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2420,
+        "x": 2540,
         "y": 1040,
         "wires": [
             [
@@ -9016,7 +8995,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2450,
+        "x": 2570,
         "y": 1100,
         "wires": [
             [
@@ -9057,7 +9036,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2670,
+        "x": 2770,
         "y": 1140,
         "wires": [
             [
@@ -9080,7 +9059,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2860,
+        "x": 2960,
         "y": 1140,
         "wires": []
     },
@@ -9139,7 +9118,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2110,
+        "x": 2190,
         "y": 1100,
         "wires": [
             [
@@ -9166,7 +9145,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2260,
+        "x": 2340,
         "y": 1100,
         "wires": []
     },
@@ -9559,11 +9538,11 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 510,
+        "x": 450,
         "y": 2060,
         "wires": [
             [
-                "d29ad60d779229c8"
+                "872029bff6dbb4ca"
             ]
         ]
     },
@@ -9578,7 +9557,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
+        "x": 300,
         "y": 2060,
         "wires": [
             [
@@ -9686,21 +9665,95 @@
         "id": "872029bff6dbb4ca",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "DelCard",
-        "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet key_id = msg.payload.key_id\nlet card_list = RED.util.cloneMessage(global.get('cards_settings')).list\n\nlet elem_to_del = card_list.find((el) => {\n    return el.key_id === key_id\n})\n\nlet new_card_list = card_list.filter((el) => {\n    return el.key_id !== key_id\n})\n\n\n\n\n\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"DellShedule\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = elem_to_del.control_point\nmsgWrapper.info.Shedule_id = \n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\n\n\nreturn msg;",
+        "name": "DelSchedule",
+        "func": "let userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\n\nlet Shedule_id = msg.payload.Shedule_id\nlet schedule_list = RED.util.cloneMessage(global.get('schedule_list')).list\n\n\n\nlet elem_to_del = schedule_list.find((el) => {\n    return el.key_id === Shedule_id\n})\n\nlet new_schedule_list = schedule_list.filter((el) => {\n    return el.key_id !== Shedule_id\n})\n\n\n\n\n\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"DellShedule\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString()\n\nmsgWrapper.info = {}\nmsgWrapper.info.Ctp_idx = elem_to_del.control_point\nmsgWrapper.info.Shedule_id = Shedule_id\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('schedule_list_to_update', new_schedule_list)\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 2180,
+        "x": 610,
+        "y": 2060,
         "wires": [
-            []
+            [
+                "c6f8198164b0ed6e",
+                "aa51bbae24e34e02"
+            ]
         ]
     },
     {
-        "id": "d29ad60d779229c8",
+        "id": "746bb3e6d6acd877",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "handleDelSchedule",
+        "func": "let messageId = global.get(\"messageId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"Error\"\n    }\n    return ackInfo;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1750,
+        "y": 1180,
+        "wires": [
+            [
+                "c4101cd3edf7986e"
+            ]
+        ]
+    },
+    {
+        "id": "c4101cd3edf7986e",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "property": "result",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "success",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1810,
+        "y": 1220,
+        "wires": [
+            [
+                "2e01a9fd66ae5e18"
+            ],
+            [
+                "ab9407c55052fb9e"
+            ]
+        ]
+    },
+    {
+        "id": "2e01a9fd66ae5e18",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 89",
+        "func": "\nlet schedule_list = global.get(\"schedule_list_to_update\");\n\n\n\nmsg.payload = schedule_list\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1970,
+        "y": 1200,
+        "wires": [
+            [
+                "f6dffb08204572bf"
+            ]
+        ]
+    },
+    {
+        "id": "aa51bbae24e34e02",
         "type": "debug",
         "z": "692c798b6f9c61de",
         "name": "debug 1",
@@ -9711,8 +9764,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 2060,
+        "x": 840,
+        "y": 2040,
         "wires": []
     }
 ]
