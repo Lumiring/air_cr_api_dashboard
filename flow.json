@@ -4180,7 +4180,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 330,
+        "x": 310,
         "y": 1680,
         "wires": [
             [
@@ -8894,6 +8894,7 @@
         "id": "2e94c826c9bf116d",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
+        "d": true,
         "name": "Delete mode",
         "group": "523171b4c91e1d14",
         "order": 33,
@@ -8920,6 +8921,7 @@
         "id": "3c8e5324e60ed7f3",
         "type": "ui_button",
         "z": "692c798b6f9c61de",
+        "d": true,
         "name": "Observer mode",
         "group": "523171b4c91e1d14",
         "order": 31,
@@ -8951,7 +8953,7 @@
         "order": 29,
         "width": 17,
         "height": 1,
-        "format": "<style>\n    #delTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"delTip\">\n    <div>To be able to delete cards information, switch the table to delete mode.</div>\n</div>",
+        "format": "<style>\n    #delTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"delTip\">\n    <div>To delete cards information, click on the card row.</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -9569,8 +9571,7 @@
         "y": 1680,
         "wires": [
             [
-                "1858ddfbf99a4971",
-                "836d887ddb7015a9"
+                "1858ddfbf99a4971"
             ]
         ]
     },
@@ -9596,47 +9597,6 @@
         "wires": [
             [
                 "1858ddfbf99a4971"
-            ]
-        ]
-    },
-    {
-        "id": "836d887ddb7015a9",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 860,
-        "y": 1760,
-        "wires": []
-    },
-    {
-        "id": "e552b62cc8eb598b",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 150,
-        "y": 1680,
-        "wires": [
-            [
-                "2c20c6b6c69caf14"
             ]
         ]
     },
