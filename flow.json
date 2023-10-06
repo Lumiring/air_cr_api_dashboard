@@ -2186,7 +2186,7 @@
             },
             {
                 "t": "eq",
-                "v": "DellShedule-Ack",
+                "v": "DelSdlDaily-Ack",
                 "vt": "str"
             },
             {
