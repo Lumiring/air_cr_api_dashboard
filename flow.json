@@ -9587,7 +9587,7 @@
         "order": 7,
         "width": 17,
         "height": 3,
-        "format": "<style>\n    #delTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"delTip\">\n    <div>To delete schedule information, click on the schedule row.</div>\n    <div>All maps linked to the deleted schedule will become inactive.</div>\n</div>",
+        "format": "<style>\n    #delTip {\n        display: flex;\n        flex-direction: column;\n        font-size: 25px;\n    }\n</style>\n\n<div id=\"delTip\">\n    <div>To delete schedule information, click on the schedule row.</div>\n    <div>All cards linked to the deleted schedule will become inactive.</div>\n</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
