@@ -2137,12 +2137,10 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 1970,
-        "y": 760,
+        "x": 2010,
+        "y": 780,
         "wires": [
-            [
-                "e18faffd1d08fec3"
-            ]
+            []
         ]
     },
     {
@@ -9744,157 +9742,6 @@
         "statusType": "auto",
         "x": 1060,
         "y": 440,
-        "wires": []
-    },
-    {
-        "id": "7b65437d3b8cefec",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "name": "function 90",
-        "func": "let tableData = context.get(\"tableData\") || []\n\n\nmsg.payload = tableData\ncontext.set(\"tableData\", tableData) \n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1770,
-        "y": 700,
-        "wires": [
-            [
-                "32d53427bced070c"
-            ]
-        ]
-    },
-    {
-        "id": "6aef3ebd12a61092",
-        "type": "ui_table",
-        "z": "692c798b6f9c61de",
-        "group": "78fe50a055b65ca2",
-        "name": "",
-        "order": 12,
-        "width": 30,
-        "height": 12,
-        "columns": [
-            {
-                "field": "Group",
-                "title": "Event Type",
-                "width": "11%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Ctp_idx",
-                "title": "Control point name",
-                "width": "11%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Event_id",
-                "title": "Event description",
-                "width": "30%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Direction",
-                "title": "Direction",
-                "width": "7%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Key_id",
-                "title": "Key_id",
-                "width": "8%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "Key_HEX",
-                "title": "Key (hex)",
-                "width": "13%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "time",
-                "title": "Time",
-                "width": "20%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 0,
-        "cts": false,
-        "x": 2270,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "02e32a265dadc426",
-        "type": "inject",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1580,
-        "y": 700,
-        "wires": [
-            [
-                "7b65437d3b8cefec"
-            ]
-        ]
-    },
-    {
-        "id": "e18faffd1d08fec3",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2180,
-        "y": 760,
         "wires": []
     }
 ]
