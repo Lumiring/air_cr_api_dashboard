@@ -2077,7 +2077,7 @@
             {
                 "field": "Ctp_idx",
                 "title": "Control point name",
-                "width": "10%",
+                "width": "11%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
