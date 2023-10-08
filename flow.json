@@ -2117,7 +2117,7 @@
             {
                 "field": "Key_HEX",
                 "title": "Key (hex)",
-                "width": "8%",
+                "width": "13%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
