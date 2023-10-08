@@ -2067,7 +2067,7 @@
             {
                 "field": "Group",
                 "title": "Event Type",
-                "width": "12%",
+                "width": "11%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
