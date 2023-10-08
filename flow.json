@@ -9751,7 +9751,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 90",
-        "func": "let tableData = context.get(\"tableData\")\n\n\nmsg.payload = []\nreturn msg;",
+        "func": "let tableData = context.get(\"tableData\") || []\n\n\nmsg.payload = tableData\ncontext.set(\"tableData\", tableData) \n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
