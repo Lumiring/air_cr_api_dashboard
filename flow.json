@@ -2008,7 +2008,7 @@
         "topic": "",
         "name": "Ack info",
         "x": 2120,
-        "y": 840,
+        "y": 880,
         "wires": []
     },
     {
@@ -2173,6 +2173,11 @@
             },
             {
                 "t": "eq",
+                "v": "DelCtpDoor-Ack",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
                 "v": "SetDateTime-Ack",
                 "vt": "str"
             },
@@ -2204,7 +2209,7 @@
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 10,
+        "outputs": 11,
         "x": 1530,
         "y": 860,
         "wires": [
@@ -2219,6 +2224,9 @@
             ],
             [
                 "aad987ee2a0c4f2c"
+            ],
+            [
+                "c61ecea6ed433bf2"
             ],
             [
                 "4eec54e042c9d037"
@@ -2931,8 +2939,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2010,
-        "y": 960,
+        "x": 2070,
+        "y": 1180,
         "wires": [
             [
                 "b34c7c3825b2f296"
@@ -2954,7 +2962,7 @@
         "finalize": "",
         "libs": [],
         "x": 2750,
-        "y": 980,
+        "y": 1180,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -3875,8 +3883,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2260,
-        "y": 940,
+        "x": 2300,
+        "y": 1140,
         "wires": []
     },
     {
@@ -3911,8 +3919,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2930,
-        "y": 1080,
+        "x": 2950,
+        "y": 1240,
         "wires": []
     },
     {
@@ -3926,8 +3934,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1770,
-        "y": 1000,
+        "x": 1790,
+        "y": 1340,
         "wires": [
             [
                 "e063be51f1201adf"
@@ -3959,8 +3967,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2270,
-        "y": 1060,
+        "x": 2090,
+        "y": 1280,
         "wires": [
             [
                 "7416ec0179370582"
@@ -3981,8 +3989,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2750,
-        "y": 1080,
+        "x": 2670,
+        "y": 1240,
         "wires": [
             [
                 "62276b0a5748fef9"
@@ -4004,8 +4012,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2280,
-        "y": 1020,
+        "x": 2100,
+        "y": 1240,
         "wires": []
     },
     {
@@ -4019,8 +4027,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2170,
-        "y": 900,
+        "x": 2130,
+        "y": 920,
         "wires": [
             [
                 "8990bcfaab163a75"
@@ -4125,8 +4133,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1790,
-        "y": 960,
+        "x": 1810,
+        "y": 1260,
         "wires": [
             [
                 "d969e40c2e543dae"
@@ -5295,8 +5303,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1750,
-        "y": 1080,
+        "x": 1950,
+        "y": 1440,
         "wires": [
             [
                 "a5009491338db9ad"
@@ -5322,8 +5330,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 1960,
-        "y": 1080,
+        "x": 2140,
+        "y": 1400,
         "wires": []
     },
     {
@@ -5337,8 +5345,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1790,
-        "y": 1120,
+        "x": 2130,
+        "y": 1440,
         "wires": [
             [
                 "f6dffb08204572bf"
@@ -5454,8 +5462,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2140,
-        "y": 1140,
+        "x": 2420,
+        "y": 1480,
         "wires": [
             []
         ]
@@ -5472,7 +5480,7 @@
         "finalize": "",
         "libs": [],
         "x": 1780,
-        "y": 1040,
+        "y": 1440,
         "wires": [
             [
                 "a07a6a7f1f8b3b3f"
@@ -5801,8 +5809,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1790,
-        "y": 1260,
+        "x": 1770,
+        "y": 1620,
         "wires": [
             [
                 "87e4455cfb6d992b"
@@ -5831,11 +5839,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2010,
-        "y": 1280,
+        "x": 1990,
+        "y": 1620,
         "wires": [
             [
-                "ab9407c55052fb9e"
+                "e3ba3b33e28af4c1"
             ],
             [
                 "40dc0361ade51989"
@@ -5857,8 +5865,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2160,
-        "y": 1240,
+        "x": 2180,
+        "y": 1540,
         "wires": []
     },
     {
@@ -5872,12 +5880,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1790,
-        "y": 1300,
+        "x": 1770,
+        "y": 1660,
         "wires": [
             [
-                "4c5d44476d630125",
-                "106fa200f52c52c9"
+                "ba7550833636a73b"
             ]
         ]
     },
@@ -5892,8 +5899,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2230,
-        "y": 1320,
+        "x": 2190,
+        "y": 1620,
         "wires": [
             [
                 "939ee531e2a85a60"
@@ -5915,8 +5922,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2160,
-        "y": 1360,
+        "x": 2140,
+        "y": 1700,
         "wires": []
     },
     {
@@ -5934,7 +5941,7 @@
         "expiry": "",
         "broker": "79737e067a3af084",
         "x": 2410,
-        "y": 1300,
+        "y": 1620,
         "wires": []
     },
     {
@@ -7575,7 +7582,7 @@
         "topicType": "msg",
         "className": "dropdown_input",
         "x": 410,
-        "y": 4180,
+        "y": 4200,
         "wires": [
             [
                 "b63e03fb455d84b2"
@@ -8226,8 +8233,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2470,
-        "y": 1180,
+        "x": 2410,
+        "y": 1360,
         "wires": [
             [
                 "5a4ff491dc97afe1"
@@ -8245,8 +8252,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2760,
-        "y": 1240,
+        "x": 2420,
+        "y": 1440,
         "wires": [
             []
         ]
@@ -8360,7 +8367,7 @@
         "id": "15a5d49a78c345b7",
         "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "function 79",
+        "name": "updateCpointList",
         "func": "let main_settings_arr =  global.get('main_settings').list\nlet cpointName_list = [{ \"Create new control point..\": 0 }]\n\n\nmain_settings_arr.forEach(function(element) {\n    cpointName_list.push({ [element.info.name]: element.device_set_idxs.Control_point_idx })\n});\n\n\n\nmsg.options = cpointName_list\n\nreturn msg;\n\n\n\n",
         "outputs": 1,
         "noerr": 0,
@@ -8368,7 +8375,7 @@
         "finalize": "",
         "libs": [],
         "x": 170,
-        "y": 4080,
+        "y": 4200,
         "wires": [
             [
                 "ae3c047e4b745ae6"
@@ -8383,11 +8390,12 @@
         "scope": [
             "e95f3e2f8d4f89e4",
             "ff2307c110713c11",
-            "08d971dd14813356"
+            "08d971dd14813356",
+            "acfa78350ae5a985"
         ],
         "uncaught": false,
-        "x": 130,
-        "y": 3960,
+        "x": 150,
+        "y": 4140,
         "wires": [
             [
                 "15a5d49a78c345b7"
@@ -8746,31 +8754,6 @@
         ]
     },
     {
-        "id": "106fa200f52c52c9",
-        "type": "switch",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "property": "result",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "success",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1990,
-        "y": 1400,
-        "wires": [
-            [
-                "cd3e41f3d6b01780"
-            ]
-        ]
-    },
-    {
         "id": "cd3e41f3d6b01780",
         "type": "function",
         "z": "692c798b6f9c61de",
@@ -8781,8 +8764,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2200,
-        "y": 1420,
+        "x": 2180,
+        "y": 1660,
         "wires": [
             [
                 "634cfcd97dec7739"
@@ -8800,8 +8783,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 2470,
-        "y": 1420,
+        "x": 2450,
+        "y": 1680,
         "wires": [
             []
         ]
@@ -8915,8 +8898,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2390,
-        "y": 980,
+        "x": 2330,
+        "y": 1180,
         "wires": [
             [
                 "be089296ec3c54f0"
@@ -8942,7 +8925,7 @@
         "repair": false,
         "outputs": 2,
         "x": 2550,
-        "y": 980,
+        "y": 1160,
         "wires": [
             [
                 "a902fb928a850e75"
@@ -8963,8 +8946,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2540,
-        "y": 1040,
+        "x": 2320,
+        "y": 1220,
         "wires": [
             [
                 "43686ad6c178d6ca"
@@ -8989,8 +8972,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2570,
-        "y": 1100,
+        "x": 2290,
+        "y": 1280,
         "wires": [
             [
                 "2027404e36d47db4"
@@ -9015,8 +8998,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 2350,
-        "y": 900,
+        "x": 2330,
+        "y": 920,
         "wires": []
     },
     {
@@ -9030,8 +9013,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2770,
-        "y": 1140,
+        "x": 2650,
+        "y": 1300,
         "wires": [
             [
                 "3e1faa4820110952"
@@ -9053,8 +9036,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2960,
-        "y": 1140,
+        "x": 2940,
+        "y": 1300,
         "wires": []
     },
     {
@@ -9112,8 +9095,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 2190,
-        "y": 1100,
+        "x": 1990,
+        "y": 1360,
         "wires": [
             [
                 "5e67349072bd813e"
@@ -9139,8 +9122,8 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2340,
-        "y": 1100,
+        "x": 2160,
+        "y": 1340,
         "wires": []
     },
     {
@@ -9667,8 +9650,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1790,
-        "y": 1160,
+        "x": 1750,
+        "y": 1580,
         "wires": [
             [
                 "c4101cd3edf7986e"
@@ -9697,8 +9680,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1810,
-        "y": 1220,
+        "x": 1950,
+        "y": 1560,
         "wires": [
             [
                 "2e01a9fd66ae5e18",
@@ -9720,8 +9703,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2010,
-        "y": 1180,
+        "x": 2130,
+        "y": 1480,
         "wires": [
             [
                 "f6dffb08204572bf"
@@ -9773,28 +9756,11 @@
         ]
     },
     {
-        "id": "39f94eacab66216d",
-        "type": "function",
-        "z": "692c798b6f9c61de",
-        "name": "delCpoint",
-        "func": "let cpoint_instance = global.get(\"cpoint_instance\")\nlet main_settings_arr = global.get('main_settings').list\n\nlet new_arr = main_settings_arr.filter((el) => {\n    return el.device_set_idxs.Control_point_idx !== cpoint_instance.device_set_idxs.Control_point_idx\n})\n\nmsg.options = new_arr\n\nreturn msg;\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 100,
-        "y": 4700,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3be035a39318e6f5",
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 90",
-        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet cpoint_instance = RED.util.cloneMessage(global.get('cpoint_instance'))\n\nlet main_settings_arr = RED.util.cloneMessage(global.get('main_settings').list)\n\n\nlet new_arr = main_settings_arr.filter((el) => {\n    return el.device_set_idxs.Control_point_idx !== cpoint_instance.device_set_idxs.Control_point_idx\n})\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"DelCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info = {}\nmsgWrapper.info.Control_point_idx = cpoint_instance.device_set_idxs.Control_point_idx\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet cpoint_instance = RED.util.cloneMessage(global.get('cpoint_instance'))\n\nlet main_settings_arr = RED.util.cloneMessage(global.get('main_settings').list)\n\n\nlet new_arr = main_settings_arr.filter((el) => {\n    return el.device_set_idxs.Control_point_idx !== cpoint_instance.device_set_idxs.Control_point_idx\n})\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"DelCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info = {}\nmsgWrapper.info.Control_point_idx = cpoint_instance.device_set_idxs.Control_point_idx\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\nglobal.set(\"ctp_door_to_update\", new_arr)\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9842,5 +9808,166 @@
         "x": 400,
         "y": 4500,
         "wires": []
+    },
+    {
+        "id": "e3ba3b33e28af4c1",
+        "type": "ui_toast",
+        "z": "692c798b6f9c61de",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Ack info",
+        "x": 2180,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "ba7550833636a73b",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "property": "result",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "success",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1990,
+        "y": 1680,
+        "wires": [
+            [
+                "cd3e41f3d6b01780",
+                "4c5d44476d630125"
+            ],
+            [
+                "4c5d44476d630125"
+            ]
+        ]
+    },
+    {
+        "id": "c61ecea6ed433bf2",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "handleDelCtpDoor-Ack",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1780,
+        "y": 980,
+        "wires": [
+            [
+                "ad0bfe6a7a5bfe4d"
+            ]
+        ]
+    },
+    {
+        "id": "ad0bfe6a7a5bfe4d",
+        "type": "switch",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "property": "result",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "success",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1970,
+        "y": 980,
+        "wires": [
+            [
+                "b54658fbb208ac5b"
+            ],
+            [
+                "acfa78350ae5a985",
+                "b54658fbb208ac5b"
+            ]
+        ]
+    },
+    {
+        "id": "acfa78350ae5a985",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "persist_del_MainSettings",
+        "func": "let obj = {}\nobj.payload = {}\nobj.payload.list = global.get(\"ctp_door_to_update\");\n\n\n\n\n\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2030,
+        "y": 1060,
+        "wires": [
+            [
+                "6d92a92327be827c"
+            ]
+        ]
+    },
+    {
+        "id": "b54658fbb208ac5b",
+        "type": "ui_toast",
+        "z": "692c798b6f9c61de",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Ack info",
+        "x": 2120,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "6d92a92327be827c",
+        "type": "file",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "filename": ".lumiring/air_cr/main_settings.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 2400,
+        "y": 1060,
+        "wires": [
+            []
+        ]
     }
 ]
