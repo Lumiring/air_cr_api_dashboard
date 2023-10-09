@@ -9867,7 +9867,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "handleDelCtpDoor-Ack",
-        "func": "\nreturn msg;",
+        "func": "let messageId = global.get(\"messageId\")\n\nif (messageId === msg.payload.message_id) {\n    let ackInfo = {}\n    if (msg.payload.result.errorNo === 0) {\n\n        ackInfo.result = \"success\"\n        ackInfo.payload = \"Done\"\n    } else {\n\n        ackInfo.result = \"error\"\n        ackInfo.payload = \"error\"\n    }\n    return ackInfo;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9949,7 +9949,7 @@
         "className": "",
         "topic": "",
         "name": "Ack info",
-        "x": 2120,
+        "x": 2180,
         "y": 980,
         "wires": []
     },
