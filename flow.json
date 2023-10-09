@@ -7585,7 +7585,8 @@
         "y": 4200,
         "wires": [
             [
-                "b63e03fb455d84b2"
+                "b63e03fb455d84b2",
+                "9b6e645c76e64b92"
             ]
         ]
     },
@@ -8378,8 +8379,7 @@
         "y": 4200,
         "wires": [
             [
-                "ae3c047e4b745ae6",
-                "f9fdc96dd8f9bf3e"
+                "ae3c047e4b745ae6"
             ]
         ]
     },
@@ -9748,8 +9748,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 110,
-        "y": 4460,
+        "x": 170,
+        "y": 4440,
         "wires": [
             [
                 "3be035a39318e6f5"
@@ -9767,8 +9767,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 130,
-        "y": 4560,
+        "x": 170,
+        "y": 4500,
         "wires": [
             [
                 "6996e160e06270ca"
@@ -9789,25 +9789,8 @@
         "correl": "",
         "expiry": "",
         "broker": "79737e067a3af084",
-        "x": 330,
-        "y": 4560,
-        "wires": []
-    },
-    {
-        "id": "f9fdc96dd8f9bf3e",
-        "type": "debug",
-        "z": "692c798b6f9c61de",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 160,
-        "y": 4300,
+        "x": 350,
+        "y": 4500,
         "wires": []
     },
     {
@@ -9969,6 +9952,25 @@
         "y": 1060,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "9b6e645c76e64b92",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 91",
+        "func": "let cpoint_idx = msg.payload\nlet cpoint_instance;\nlet obj = {}\n\nif (cpoint_idx === 0 || cpoint_idx === undefined) {\n    obj.enabled = false\n} else {\n    obj.enabled = true\n}\n\nreturn obj",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 150,
+        "y": 4280,
+        "wires": [
+            [
+                "dddcbff327856641"
+            ]
         ]
     }
 ]
