@@ -7615,7 +7615,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "function 54",
-        "func": "let cpoint_idx = msg.payload\nlet cpoint_instance;\nif (cpoint_idx === 0){\n    cpoint_instance = RED.util.cloneMessage(global.get('default_settings'))\n    let cp_random = Math.floor(Math.random() * 2147483647)\n\n    cpoint_instance.info.name = \"Cpoint_\" + cp_random.toString()\n    cpoint_instance.device_set_idxs.Control_point_idx = cp_random\n} else {\n    let main_settings_arr = global.get('main_settings').list\n    cpoint_instance = main_settings_arr.find(function (el) { return el.device_set_idxs.Control_point_idx === msg.payload })\n}\n\nconsole.log(cpoint_instance)\nglobal.set(\"cpoint_instance\", cpoint_instance)\nreturn cpoint_instance\n",
+        "func": "\nlet cpoint_idx = msg.payload\nlet cpoint_instance;\nif (cpoint_idx === 0){\n    cpoint_instance = RED.util.cloneMessage(global.get('default_settings'))\n    let cp_random = Math.floor(Math.random() * 2147483647)\n\n    cpoint_instance.info.name = \"Cpoint_\" + cp_random.toString()\n    cpoint_instance.device_set_idxs.Control_point_idx = cp_random\n} else {\n    let main_settings_arr = global.get('main_settings').list\n    cpoint_instance = main_settings_arr.find(function (el) { return el.device_set_idxs.Control_point_idx === msg.payload })\n}\n\n\nglobal.set(\"cpoint_instance\", cpoint_instance)\n\nreturn cpoint_instance\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8342,7 +8342,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "sendMqttMessage",
-        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet cpoint_instance = RED.util.cloneMessage(global.get('cpoint_instance'))\n\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\n\nmsgWrapper.info = cpoint_instance.door_settings\nmsgWrapper.info.Control_point_idx = cpoint_instance.device_set_idxs.Control_point_idx\nmsgWrapper.info.Door_Lock_puls *= 1000\n\nif (cpoint_instance.info.input_reader){\n    msgWrapper.info.Rd0_idx = cpoint_instance.reader_1_settings.Rd_idx\n    msgWrapper.info.Rd0_dir = cpoint_instance.reader_1_settings.Rd_Direction\n}\n\nif (cpoint_instance.info.output_reader) {\n    msgWrapper.info.Rd1_idx = cpoint_instance.reader_2_settings.Rd_idx\n    msgWrapper.info.Rd1_dir = cpoint_instance.reader_2_settings.Rd_Direction\n}\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\nconsole.log(msg)\n\nreturn msg",
+        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet cpoint_instance = RED.util.cloneMessage(global.get('cpoint_instance'))\n\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"SetCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\n\nmsgWrapper.info = cpoint_instance.door_settings\nmsgWrapper.info.Control_point_idx = cpoint_instance.device_set_idxs.Control_point_idx\nmsgWrapper.info.Door_Lock_puls *= 1000\n\nif (cpoint_instance.info.input_reader){\n    msgWrapper.info.Rd0_idx = cpoint_instance.reader_1_settings.Rd_idx\n    msgWrapper.info.Rd0_dir = cpoint_instance.reader_1_settings.Rd_Direction\n}\n\nif (cpoint_instance.info.output_reader) {\n    msgWrapper.info.Rd1_idx = cpoint_instance.reader_2_settings.Rd_idx\n    msgWrapper.info.Rd1_dir = cpoint_instance.reader_2_settings.Rd_Direction\n}\n\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9764,8 +9764,44 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1550,
-        "y": 3900,
+        "x": 110,
+        "y": 4460,
+        "wires": [
+            [
+                "3be035a39318e6f5"
+            ]
+        ]
+    },
+    {
+        "id": "39f94eacab66216d",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "delCpoint",
+        "func": "let cpoint_instance = global.get(\"cpoint_instance\")\nlet main_settings_arr = global.get('main_settings').list\n\nlet new_arr = main_settings_arr.filter((el) => {\n    return el.device_set_idxs.Control_point_idx !== cpoint_instance.device_set_idxs.Control_point_idx\n})\n\nmsg.options = new_arr\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 100,
+        "y": 4700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3be035a39318e6f5",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "function 90",
+        "func": "\nlet userCreds = global.get('userCreds');\nlet globalTopic = userCreds.location + \"/\" + userCreds.device_id + \"/\"\nlet cpoint_instance = RED.util.cloneMessage(global.get('cpoint_instance'))\n\nlet main_settings_arr = RED.util.cloneMessage(global.get('main_settings').list)\n\nlet new_arr = main_settings_arr.filter((el) => {\n    return el.device_set_idxs.Control_point_idx !== cpoint_instance.device_set_idxs.Control_point_idx\n})\n\n\nlet msgWrapper = {}\nmsgWrapper.operator = \"DelCtpDoor\"\nmsgWrapper.session_id = \"0\"\nmsgWrapper.message_id = Math.floor(Math.random() * 1692797271182).toString();\nmsgWrapper.info.Control_point_idx = cpoint_instance.device_set_idxs.Control_point_idx\n\nmsg.payload = msgWrapper\nmsg.topic = globalTopic + \"Operate\" + \"/\"\n\nglobal.set('messageId', msgWrapper.message_id)\n\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 130,
+        "y": 4560,
         "wires": [
             []
         ]
