@@ -9921,7 +9921,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "persist_del_MainSettings",
-        "func": "let obj = {}\nobj.payload = {}\nobj.payload.list = global.get(\"ctp_door_to_update\");\n\n\n\n\n\nreturn obj",
+        "func": "let obj = {}\nobj.payload = {}\n\nobj.payload.list = global.get(\"ctp_door_to_update\");\nglobal.set('main_settings', obj.payload)\n\n\n\n\n\n\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9969,24 +9969,6 @@
         "y": 1060,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "3605cafd202f50a4",
-        "type": "complete",
-        "z": "692c798b6f9c61de",
-        "name": "",
-        "scope": [
-            "6d92a92327be827c",
-            "5a4ff491dc97afe1"
-        ],
-        "uncaught": false,
-        "x": 90,
-        "y": 600,
-        "wires": [
-            [
-                "52baa74694d72c0b"
-            ]
         ]
     }
 ]
