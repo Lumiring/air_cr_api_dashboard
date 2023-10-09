@@ -9803,7 +9803,27 @@
         "x": 130,
         "y": 4560,
         "wires": [
-            []
+            [
+                "6996e160e06270ca"
+            ]
         ]
+    },
+    {
+        "id": "6996e160e06270ca",
+        "type": "mqtt out",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "topic": "",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "79737e067a3af084",
+        "x": 330,
+        "y": 4560,
+        "wires": []
     }
 ]
