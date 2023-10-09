@@ -8368,7 +8368,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "updateCpointList",
-        "func": "let main_settings_arr =  global.get('main_settings').list\nlet cpointName_list = [{ \"Create new control point..\": 0 }]\n\n\nmain_settings_arr.forEach(function(element) {\n    cpointName_list.push({ [element.info.name]: element.device_set_idxs.Control_point_idx })\n});\n\n\n\nmsg.options = cpointName_list\n\nreturn msg;\n\n\n\n",
+        "func": "let obj = {}\n\n\nlet main_settings_arr =  global.get('main_settings').list\nlet cpointName_list = [{ \"Create new control point..\": 0 }]\n\n\nmain_settings_arr.forEach(function(element) {\n    cpointName_list.push({ [element.info.name]: element.device_set_idxs.Control_point_idx })\n});\n\n\n\nobj.options = cpointName_list\n\nreturn obj;\n\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
