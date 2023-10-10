@@ -5222,7 +5222,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "setSchedule",
-        "func": "let schedule = global.get('schedule') || {};\nschedule = Object.assign(schedule, { [msg.topic]: msg.payload })\n\nconsole.log(schedule)\nglobal.set('schedule', schedule)\n",
+        "func": "let schedule = global.get('schedule') || {};\nschedule = Object.assign(schedule, { [msg.topic]: msg.payload })\n\nglobal.set('schedule', schedule)\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
