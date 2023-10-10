@@ -10105,7 +10105,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "getSeconds",
-        "func": "\nlet t = new Date(msg.payload)\nconsole.log(t.getUTCMilliseconds())\n\nreturn t.getUTCMilliseconds();",
+        "func": "\nlet t = new Date(msg.payload)\nmsg.payload = t.getUTCMilliseconds()\n\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
