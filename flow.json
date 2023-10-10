@@ -256,7 +256,7 @@
             "hideToolbar": "false",
             "allowSwipe": "false",
             "lockMenu": "false",
-            "allowTempTheme": "true",
+            "allowTempTheme": "none",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
                 "sx": 48,
@@ -9980,6 +9980,18 @@
             [
                 "9b6e645c76e64b92"
             ]
+        ]
+    },
+    {
+        "id": "45827966979be967",
+        "type": "ui_ui_control",
+        "z": "692c798b6f9c61de",
+        "name": "",
+        "events": "all",
+        "x": 140,
+        "y": 1620,
+        "wires": [
+            []
         ]
     }
 ]
