@@ -10081,7 +10081,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "getSeconds",
-        "func": "\nlet t = new Date(msg.payload)\n\nmsg.payload = t.getUTCSeconds\n\n\nmsg.topic = \"TmStart\"\n\nreturn msg",
+        "func": "\nlet t = new Date(msg.payload)\n\nmsg.payload = t.getUTCSeconds()\n\n\nmsg.topic = \"TmStart\"\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
