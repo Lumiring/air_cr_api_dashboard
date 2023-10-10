@@ -4224,6 +4224,7 @@
         "id": "c7f4ea3c6543a538",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
+        "d": true,
         "name": "End",
         "label": "End",
         "tooltip": "",
@@ -4238,12 +4239,10 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 570,
-        "y": 1780,
+        "x": 290,
+        "y": 1600,
         "wires": [
-            [
-                "1858ddfbf99a4971"
-            ]
+            []
         ]
     },
     {
@@ -10043,9 +10042,11 @@
         "delay": 300,
         "topic": "TmStart",
         "x": 340,
-        "y": 1720,
+        "y": 1740,
         "wires": [
-            []
+            [
+                "896c9a7874fa9d36"
+            ]
         ]
     },
     {
@@ -10069,7 +10070,7 @@
         "delay": 300,
         "topic": "TmEnd",
         "x": 340,
-        "y": 1760,
+        "y": 1780,
         "wires": [
             []
         ]
@@ -10078,6 +10079,7 @@
         "id": "2c20c6b6c69caf14",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
+        "d": true,
         "name": "Start",
         "label": "Start",
         "tooltip": "",
@@ -10092,12 +10094,45 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 570,
+        "x": 290,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "896c9a7874fa9d36",
+        "type": "function",
+        "z": "692c798b6f9c61de",
+        "name": "getSeconds",
+        "func": "\nlet t = new Date(msg.payload)\nreturn t.getUTCMilliseconds;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
         "y": 1740,
         "wires": [
             [
-                "1858ddfbf99a4971"
+                "9ea75ef50451a564"
             ]
         ]
+    },
+    {
+        "id": "9ea75ef50451a564",
+        "type": "debug",
+        "z": "692c798b6f9c61de",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 1800,
+        "wires": []
     }
 ]
