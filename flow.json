@@ -10081,7 +10081,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "getSeconds",
-        "func": "\n\nfunction getTime(ut) {\n    const result = new Date(ut)\n        .toISOString()\n        .slice(11, 19)\n    return result\n}\n\n\n\nmsg.payload = getTime(msg.payload)\n\nmsg.topic = \"TmStart\"\n\nreturn msg",
+        "func": "let obj = {}\nobj.payload = new Date(msg.payload)\n\n\n\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
