@@ -9996,32 +9996,6 @@
         ]
     },
     {
-        "id": "e9402f88b2021140",
-        "type": "ui_text-input",
-        "z": "692c798b6f9c61de",
-        "action": "set",
-        "actionType": "str",
-        "write": "payload",
-        "writeType": "msg",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "group": "fc491a4cada0492f",
-        "order": 44,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "text",
-        "change": true,
-        "delay": 300,
-        "topic": "",
-        "x": 180,
-        "y": 1660,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8a6143d895605137",
         "type": "ui_text-input",
         "z": "692c798b6f9c61de",
@@ -10041,7 +10015,7 @@
         "change": true,
         "delay": 300,
         "topic": "TmStart",
-        "x": 260,
+        "x": 360,
         "y": 1740,
         "wires": [
             [
@@ -10069,10 +10043,12 @@
         "change": true,
         "delay": 300,
         "topic": "TmEnd",
-        "x": 340,
+        "x": 360,
         "y": 1780,
         "wires": [
-            []
+            [
+                "b128fd9cef13c8b2"
+            ]
         ]
     },
     {
@@ -10111,29 +10087,31 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
+        "x": 550,
         "y": 1740,
         "wires": [
             [
-                "9ea75ef50451a564"
+                "1858ddfbf99a4971"
             ]
         ]
     },
     {
-        "id": "9ea75ef50451a564",
-        "type": "debug",
+        "id": "b128fd9cef13c8b2",
+        "type": "function",
         "z": "692c798b6f9c61de",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 820,
-        "y": 1800,
-        "wires": []
+        "name": "getSeconds",
+        "func": "\nlet t = new Date(msg.payload)\nmsg.payload = t.getUTCMilliseconds()\nmsg.topic = \"TmEnd\"\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1780,
+        "wires": [
+            [
+                "1858ddfbf99a4971"
+            ]
+        ]
     }
 ]
