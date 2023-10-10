@@ -10081,7 +10081,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "getSeconds",
-        "func": "\nlet t = new Date(msg.payload)\nconsole.log(t)\nconsole.log(t.toTimeString())\n\n\n\nmsg.payload = t.getSeconds()\n\n\nmsg.topic = \"TmStart\"\n\nreturn msg",
+        "func": "\n\nfunction getTime(ut) {\n    const result = new Date(ut)\n        .toISOString()\n        .slice(11, 19)\n    return result\n}\n\n\n\nmsg.payload = getTime(msg.payload)\n\nmsg.topic = \"TmStart\"\n\nreturn msg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
