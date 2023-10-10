@@ -10081,7 +10081,7 @@
         "type": "function",
         "z": "692c798b6f9c61de",
         "name": "getSeconds",
-        "func": "let obj = {}\nobj.payload = new Date(msg.payload).getUTCSeconds()\n\n\n\nreturn obj",
+        "func": "let obj = {}\nobj.payload = new Date(msg.payload).getSeconds()\n\n\n\nreturn obj",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
