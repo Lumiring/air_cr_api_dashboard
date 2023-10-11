@@ -8634,8 +8634,8 @@
         "id": "539a9b62122a5bdd",
         "type": "ui_text_input",
         "z": "692c798b6f9c61de",
-        "name": "Initial time",
-        "label": "Initial time:",
+        "name": "Initial date",
+        "label": "Initial date:",
         "tooltip": "",
         "group": "523171b4c91e1d14",
         "order": 44,
@@ -8648,7 +8648,7 @@
         "sendOnBlur": true,
         "className": "text_input",
         "topicType": "str",
-        "x": 180,
+        "x": 190,
         "y": 3020,
         "wires": [
             [
@@ -9199,9 +9199,7 @@
         "x": 250,
         "y": 3140,
         "wires": [
-            [
-                "daa51ac186123a53"
-            ]
+            []
         ]
     },
     {
@@ -9220,33 +9218,6 @@
         "wires": [
             [
                 "2729add65fd2ae39"
-            ]
-        ]
-    },
-    {
-        "id": "daa51ac186123a53",
-        "type": "ui_dropdown",
-        "z": "692c798b6f9c61de",
-        "name": "Control point",
-        "label": "Control point",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "523171b4c91e1d14",
-        "order": 40,
-        "width": 11,
-        "height": 1,
-        "passthru": true,
-        "multiple": false,
-        "options": [],
-        "payload": "",
-        "topic": "control_point",
-        "topicType": "str",
-        "className": "dropdown_input",
-        "x": 430,
-        "y": 3140,
-        "wires": [
-            [
-                "06c80f09630e9c1f"
             ]
         ]
     },
@@ -9929,7 +9900,7 @@
         "write": "payload",
         "writeType": "msg",
         "name": "schedule_start",
-        "label": "schedule_start",
+        "label": "From",
         "tooltip": "",
         "group": "523171b4c91e1d14",
         "order": 16,
@@ -9957,7 +9928,7 @@
         "write": "payload",
         "writeType": "msg",
         "name": "schedule_end",
-        "label": "schedule_end",
+        "label": "To",
         "tooltip": "",
         "group": "523171b4c91e1d14",
         "order": 18,
